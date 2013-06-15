@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         tasks: ['jshint:lib_test', 'qunit']
       }
     },
-    
+
     recess: {
       dist: {
         options: {
@@ -101,6 +101,18 @@ module.exports = function(grunt) {
         src: '<%= recess.distResponsive.dest %>',
         dest: 'dist/css/<%= pkg.name %>-responsive.min.css'
       }
+    },
+
+    copy: {
+      jquery: {
+        files: [{
+          expand: true,
+          flatten: true,
+          src: 'src/jquery/current/*.js',
+          dest: 'dist/js/',
+          filter: 'isFile'
+        }]
+      }
     }
   });
 
@@ -108,12 +120,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
+  //For use later
   //grunt.loadNpmTasks('grunt-contrib-qunit');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
   //grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['concat', 'uglify', 'recess']);
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy']);
 
 };
