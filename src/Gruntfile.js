@@ -120,7 +120,7 @@ module.exports = function(grunt) {
     },
     
     recess: {
-      // Core
+      // Core(Bootstrap)
       dist: {
         options: {
           compile: true
@@ -128,6 +128,7 @@ module.exports = function(grunt) {
         src: 'lib/worldvision/less/core.less',
         dest: '../css/<%= pkg.name %>.core.css'
       },
+      //Core Responive 
       distResponsive: {
         options:{
           compile: true
@@ -135,6 +136,7 @@ module.exports = function(grunt) {
         src: 'lib/worldvision/less/core.responsive.less',
         dest: '../css/<%= pkg.name %>.core.responsive.css'
       },
+      //Core Minified
       distMin: {
         options: {
           compress: true
@@ -142,6 +144,7 @@ module.exports = function(grunt) {
         src: '<%= recess.dist.dest %>',
         dest: '../css/<%= pkg.name %>.core.min.css'
       },
+      //Core Responsive Minified
       distResponsiveMin: {
         options: {
           compress: true
@@ -149,7 +152,7 @@ module.exports = function(grunt) {
         src: '<%= recess.distResponsive.dest %>',
         dest: '../css/<%= pkg.name %>.core.responsive.min.css'
       },
-      // Extra
+      // Extra (FuelUX, etc.)
       distExtra: {
         options: {
           compile: true
@@ -157,6 +160,7 @@ module.exports = function(grunt) {
         src: 'lib/worldvision/less/extra.less',
         dest: '../css/<%= pkg.name %>.extra.css'
       },
+      // Extra Responsive
       distExtraResponsive: {
         options:{
           compile: true
