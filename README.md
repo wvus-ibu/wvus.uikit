@@ -4,7 +4,7 @@ World Vision UI Kit
 This self-containing kit is the basis of World Vision US website styling.
 
 ### Getting Started
-* Clone the repo: `git@github.com:wvus-ibu/UI-Kit.git`
+* Clone the repo: `git@github.com:wvus-ibu/wvus.uikit.git`
 * Production ready files are located in the css, img, and js folders
 * To customize, modify the JS and LESS files under the src/lib folder then run `grunt` in src folder to compile
 
