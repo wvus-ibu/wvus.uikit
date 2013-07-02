@@ -13,6 +13,7 @@ echo "Updating Font Awesome..."
 rm -Rf lib/font-awesome >/dev/null
 volo add -nostamp font-awesome lib/font-awesome
 rm -f lib/font-awesome/* &>/dev/null
+rm -Rf lib/font-awesome/sass &>/dev/null
 echo "Font Awesome updated successful"
 
 echo "Updating jQuery..."
