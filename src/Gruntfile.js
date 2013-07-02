@@ -240,6 +240,14 @@ module.exports = function(grunt) {
     clean: {
       options: {force:true},
       src:'../<%= pkg.name %>'
+    },
+    shell: {
+      script: {
+        command: 'sh update-libs.sh',
+        options: {
+          stdout: true
+        }
+      }
     }
   });
 
@@ -250,6 +258,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-shell');
 
   //grunt.loadNpmTasks('grunt-contrib-qunit');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -257,5 +266,5 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']);
-
+  grunt.registerTask('update', ['shell']);
 };
