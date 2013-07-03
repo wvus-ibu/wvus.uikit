@@ -1,4 +1,4 @@
-/*global module:false*/
+ /*global module:false*/
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         banner: '<%= banner %>',
         stripBanners: false
       },
-      dist: {
+      dist: { //core
         src: [// Bootstrap
         	  'lib/bootstrap/js/bootstrap-transition.js',
         	  'lib/bootstrap/js/bootstrap-alert.js',
@@ -34,18 +34,7 @@ module.exports = function(grunt) {
         dest: '../js/<%= pkg.name %>.core.js'
       },
       distExtra: {
-        src: [// FuelUX
-        	  'lib/fuel-ux/js/checkbox.js',
-        	  'lib/fuel-ux/js/util.js',
-        	  'lib/fuel-ux/js/combobox.js',
-        	  'lib/fuel-ux/js/datagrid.js',
-        	  'lib/fuel-ux/js/pillbox.js',
-        	  'lib/fuel-ux/js/radio.js',
-        	  'lib/fuel-ux/js/search.js',
-			      'lib/fuel-ux/js/spinner.js',
-			      'lib/fuel-ux/js/select.js',
-			      'lib/fuel-ux/js/tree.js',
-			      'lib/fuel-ux/js/wizard.js'],
+        src: [],
         dest: '../js/<%= pkg.name %>.extra.js'
       },
       distAll: {
@@ -128,7 +117,6 @@ module.exports = function(grunt) {
         src: 'lib/worldvision/less/core.less',
         dest: '../css/<%= pkg.name %>.core.css'
       },
-      //Core Responive 
       distResponsive: {
         options:{
           compile: true
@@ -160,7 +148,6 @@ module.exports = function(grunt) {
         src: 'lib/worldvision/less/extra.less',
         dest: '../css/<%= pkg.name %>.extra.css'
       },
-      // Extra Responsive
       distExtraResponsive: {
         options:{
           compile: true
@@ -216,7 +203,6 @@ module.exports = function(grunt) {
       images: {
         files: [
           {expand:true, cwd:'lib/bootstrap/img', src: '*', dest: '../img', filter: 'isFile'},
-          {expand:true, cwd:'lib/fuel-ux/img', src: '*', dest: '../img', filter: 'isFile'},
           {expand:true, cwd:'lib/worldvision/img', src: '**/*', dest: '../img'}
         ]
       },
@@ -265,6 +251,8 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']);
-  grunt.registerTask('update', ['shell']);
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); //all
+  grunt.registerTask('update', ['shell']); //Update libs
+  grunt.registerTask('compile', ['concat', 'uglify', 'recess']); 
+
 };
