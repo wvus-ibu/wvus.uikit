@@ -9,7 +9,7 @@ This self-containing kit is the basis of World Vision US website styling.
 * To customize, modify the JS and LESS files under the src/lib folder then run `grunt` in src folder to compile
 
 ### Contents
-The World Vision UiKit is built on top of Twitter's [Bootstrap](http://twitter.github.io/bootstrap/), [Fuel UX](http://exacttarget.github.io/fuelux/), and [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
+The World Vision UiKit is built on top of Twitter's [Bootstrap](http://twitter.github.io/bootstrap/) and [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
 The source of these libraries can be found in the src/lib folder.  
 
