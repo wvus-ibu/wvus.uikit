@@ -1,4 +1,4 @@
-/*! wvus.uikit - v0.1.0 - 2013-06-17
+/*! wvus.uikit - v0.1.0 - 2013-07-11
 * Copyright (c) 2013 ; Licensed  */
 /* ===================================================
  * bootstrap-transition.js v2.3.2
