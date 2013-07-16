@@ -10,7 +10,10 @@ module.exports = function(grunt) {
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-    // Task configuration.
+    
+    /*
+    Concat JS
+     */
     concat: {
       options: {
         banner: '<%= banner %>',
@@ -33,30 +36,22 @@ module.exports = function(grunt) {
         	  'lib/bootstrap/js/bootstrap-affix.js'],
         dest: '../js/<%= pkg.name %>.core.js'
       },
-      distExtra: {
-        src: [],
-        dest: '../js/<%= pkg.name %>.extra.js'
-      },
       distAll: {
-        src: [// Core (Bootstrap)
+        src: // Core 
         	  '<%= concat.dist.dest %>',
-        	  // Extra (FuelUX)
-        	  '<%= concat.distExtra.dest %>'],
         dest: '../js/<%= pkg.name %>.all.js'
-      }
-    },
-
-    uglify: {
+    }
+  },
+    /*
+    Minify JS
+     */
+    uglify: { 
       options: {
         banner: '<%= banner %>'
       },
       dist: {
         src: '<%= concat.dist.dest %>',
         dest: '../js/<%= pkg.name %>.core.min.js'
-      },
-      distExtra: {
-        src: '<%= concat.distExtra.dest %>',
-        dest: '../js/<%= pkg.name %>.extra.min.js'
       },
       distAll: {
         src: '<%= concat.distAll.dest %>',
@@ -107,7 +102,9 @@ module.exports = function(grunt) {
         tasks: ['jshint:lib_test', 'qunit']
       }
     },
-    
+    /*
+    Compile and Minify less
+     */
     recess: {
       // Core(Bootstrap)
       dist: {
@@ -139,35 +136,6 @@ module.exports = function(grunt) {
         },
         src: '<%= recess.distResponsive.dest %>',
         dest: '../css/<%= pkg.name %>.core.responsive.min.css'
-      },
-      // Extra (FuelUX, etc.)
-      distExtra: {
-        options: {
-          compile: true
-        },
-        src: 'lib/worldvision/less/extra.less',
-        dest: '../css/<%= pkg.name %>.extra.css'
-      },
-      distExtraResponsive: {
-        options:{
-          compile: true
-        },
-        src: 'lib/worldvision/less/extra.responsive.less',
-        dest: '../css/<%= pkg.name %>.extra.responsive.css'
-      },
-      distExtraMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distExtra.dest %>',
-        dest: '../css/<%= pkg.name %>.extra.min.css'
-      },
-      distExtraResponsiveMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distExtraResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.extra.responsive.min.css'
       },
       // All
        distAll: {
@@ -202,7 +170,7 @@ module.exports = function(grunt) {
     copy: {
       images: {
         files: [
-          {expand:true, cwd:'lib/bootstrap/img', src: '*', dest: '../img', filter: 'isFile'},
+          {expand:true, cwd:'lib/font-awesome/font', src: '*', dest: '../font'},
           {expand:true, cwd:'lib/worldvision/img', src: '**/*', dest: '../img'}
         ]
       },
