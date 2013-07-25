@@ -1,7 +1,7 @@
 ---
 layout: default
 title: World Vision UiKit
-name: gettingStarted
+name: index
 lead: Overview of the project, its contents, and how to get started with a simple template.
 ---
 <section id="introduction">
@@ -11,6 +11,18 @@ lead: Overview of the project, its contents, and how to get started with a simpl
   <p class="lead">
     The World Vision UiKit is used for styling of elements and JavaScript widgets used across the World Vision sites.
   </p>
+  <section id="contents">
+    <h2>Contents</h2>
+    <p>The UiKit contains HTML, CSS and JS to get you up running quickly with a WVUS Brand. The different elements have been categoried in groups that make sense. These are across the top, but for more detials: </p>
+    <h4><a href="{{ site.baseurl }}/styles">Styles</a></h4>
+    <p>Basic and Fluid grid systems with examples show the how easy it is to layout your site along with styling typography and more.</p>
+    <h4><a href="{{ site.baseurl }}/icons">Icons</a></h4>
+    <p>300+ icons from Font Awesome displayed in a list so you see every possible one. (We also provided a PDF cheatsheet for another view)</p>
+    <h4><a href="{{ site.baseurl }}/ui-elements">UI Elements</a></h4>
+    <p>The elements every site wants. Buttons, Navs, breadcrumbs, alerts, progress bars and more can all be found here</p>
+    <h4><a href="{{ site.baseurl }}/widgets">Widgets</a></h4>
+    <p>Bring our elements to life. Widgets are the JavaScript components that take your site into the modern era.</p>
+  </section>
   <!-- File Structure ============================================= -->
   <section id="file-structure">
     <h2>File Structure</h2>
@@ -30,7 +42,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     │   ├── wvus.uikit.core.js
     │   ├── wvus.uikit.core.min.js
     ├── img/
-    │   ├── World Vision Images
+    │   ├── {World Vision Images}
     │   └── 
     └── font/
         ├── FontAwesome.otf
@@ -44,12 +56,44 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <div class="alert alert-danger">
       <i class="icon-warning-sign"></i> DO NOT modify the font folder or its contents. Doing so can cause Font Awesome to not work.
     </div>
-  </section>
+  </section><!-- end of file structure -->
 
-  <!-- HTML Example =================================== -->
+</section>
+
+<!-- Designers ================================== -->
+<section id="designers">
+  <div class="page-header">
+    <h1>Designers</h1>
+  </div>
+    <p class="lead">Designers, we've built the UiKit with you in mind. </p>
+    <p>Included in the UiKit are many elements styled to the World Vision brand. Below is a preview of them. You can find all of these and more through out this documentation. Take a look around if you would like to see the way <a href="{{ site.baseurl}}/widgets-basic/#navs"></a>navigation works, look at the <a href="{{ site.baseurl }}/icons/">300+ icons</a> to use at your discretion or check out the fancy <a href="{{ site.baseurl }}/widgets-basic/#carousel">carousel</a> to display images.
+    <p>Also, the PSDs that give you a "kitchen sink" look at what elements you have to create your design around are shown below.</p>
+  <section id="button-elements">
+    <h2>Buttons</h2>
+    <p>All the buttons inside the World Vision brand.</p>
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-button.jpg" class="img-polaroid">
+  </section>
+  <section id="custom-elements">
+    <h2>Custom Elements</h2>
+    <p>Custom elelments used on different parts of the site.</p>
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-customelements.jpg" class="img-polaroid">
+  </section>
+  <section id="form-elements">
+    <h2>Form elements</h2>
+    <p>Standard form elements get a face lift.</p>
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-form.jpg" class="img-polaroid">
+  </section>
+</section>
+
+<!-- Developers ========================== -->
+<section id="developers">
+  <div class="page-header">
+    <h1>Developers</h1>
+  </div>
+  <p class="lead">{Lead in to devs section}</p>
   <section id="html-example">
     <h2>HTML Example</h2>
-    <p class="lead">Including the World Vision UiKit is easy, but for the visual learners, we have provided a typical HTML example.</p>
+    <p class="lead">Including the World Vision UiKit is easy. Here's an example to prove it.</p>
     <p>Here's a typical <strong>HTML File:</strong></p>
     <pre class="prettyprint linenums">
       &lt;!DOCTYPE html&gt;
@@ -60,7 +104,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
         &lt;/head&gt;
         &lt;body&gt;
           &lt;h1&gt;Hello World!&lt;/h1&gt;
-          &lt;script type="text/javascript" src="http://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
         &lt;/body&gt;
       &lt;/html&gt;
     </pre>
@@ -76,29 +120,12 @@ lead: Overview of the project, its contents, and how to get started with a simpl
         &lt;/head&gt;
         &lt;body&gt;
           &lt;h1&gt;Hello World!&lt;/h1&gt;
-          &lt;script type="text/javascript" src="http://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
           &lt;script type="text/javascript" src="js/wvus.uikit.all.min.js"&gt;&lt;/script&gt;
         &lt;/body&gt;
       &lt;/html&gt;
   </pre>
-  <p><strong>And it's that easy!</strong> Those two files will get you on your way to developing a site with the World Vision brand.
-  </section>
-</section>
-
-<section id="designers">
-  <div class="page-header">
-    <h1>Designers</h1>
-  </div>
-    <p class="lead">Designers, we've built the UiKit with you in mind. </p>
-    <p>Included in the UiKit are many elements styled to the World Vision brand. Below is a preview of them. You can find all of these and more through out this documentation. Take a look around if you would like to see the way <a href="/widgets-basic/#navs"></a>navigation works, look at the <a href="/icons/">300+ icons</a> to use at your discretion or check out the fancy <a href="/widgets-basic/#carousel">carousel</a> to display images.
-    <p>Also, the PSDs that give you a "kitchen sink" look at what elements you have to create your design around are shown below.</p>
-    <h2>Buttons</h2>
-    <p>All the buttons inside the World Vision brand.</p>
-    <img src="/assets/img/wvus/wv-button.jpg" class="img-polaroid">
-    <h2>Custom Elements</h2>
-    <p>Custom elelments used on different parts of the site.</p>
-    <img src="/assets/img/wvus/wv-customelements.jpg" class="img-polaroid">
-    <h2>Form elements</h2>
-    <p>Standard form elements get a face lift.</p>
-    <img src="/assets/img/wvus/wv-form.jpg" class="img-polaroid">
+  <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.all.min.css</code> and <code>wvus.uikit.all.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
+  <p></p>
+  </section><!-- end of HTML example -->
 </section>
