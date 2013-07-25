@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}} | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include head.html %}
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    {% include top-nav.html %}
+    {% include  header.html%} 
+    <div class="container">
+        <!-- Left nav (Docs)
+        ================================================= -->
+        <div class="row">
+            <div class="span3 bs-docs-sidebar" >
+                <ul class="nav nav-list bs-docs-sidenav">
+                    {% case page.name %}
+                        {% when "gettingStarted" %}
+                            {% include nav-getting-started.html %}
+                        {% when "styles" %}
+                            {% include nav-styles.html %}
+                        {% when "icons" %}
+                            {% include nav-icons.html %}
+                        {% when "widgetsBasic" %}
+                            {% include nav-widgets-basic.html %}
+                        {% when "widgetsAdvanced" %}
+                            {% include nav-widgets-advanced.html %}
+                        {% endcase %}
+                </ul>
+            </div>
+            <div class="span9">
+                {{content}}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+
+{% include js-files.html %}
+
+    </body>
+</html>
+
+
