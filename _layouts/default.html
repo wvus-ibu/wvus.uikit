@@ -15,16 +15,16 @@
             <div class="span3 bs-docs-sidebar" >
                 <ul class="nav nav-list bs-docs-sidenav">
                     {% case page.name %}
-                        {% when "gettingStarted" %}
-                            {% include nav-getting-started.html %}
+                        {% when "index" %}
+                            {% include nav-index.html %}
                         {% when "styles" %}
                             {% include nav-styles.html %}
                         {% when "icons" %}
                             {% include nav-icons.html %}
-                        {% when "widgetsBasic" %}
-                            {% include nav-widgets-basic.html %}
-                        {% when "widgetsAdvanced" %}
-                            {% include nav-widgets-advanced.html %}
+                        {% when "uiElements" %}
+                            {% include nav-ui-elements.html %}
+                        {% when "widgets" %}
+                            {% include nav-widgets.html %}
                         {% endcase %}
                 </ul>
             </div>
