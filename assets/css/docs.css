@@ -818,11 +818,21 @@ form.bs-docs-example {
      -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
           box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
 }
+
+/* Sub Nav */
+.bs-docs-sidenav > li > ul > li > a{
+  padding:8px 14px 8px 44px;
+  border: 1px solid #e5e5e5;
+
+}
 /* Chevrons */
 .bs-docs-sidenav .icon-chevron-right {
   float: right;
   margin-top: 2px;
   margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav .active > ul .icon-chevron-right {
   opacity: .25;
 }
 .bs-docs-sidenav > li > a:hover {
@@ -831,6 +841,7 @@ form.bs-docs-example {
 .bs-docs-sidenav a:hover .icon-chevron-right {
   opacity: .5;
 }
+
 .bs-docs-sidenav .active .icon-chevron-right,
 .bs-docs-sidenav .active a:hover .icon-chevron-right {
   background-image: url(../img/glyphicons-halflings-white.png);
