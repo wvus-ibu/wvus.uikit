@@ -797,6 +797,7 @@ form.bs-docs-example {
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
+  font-weight: bold;
 }
 .bs-docs-sidenav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
@@ -820,6 +821,20 @@ form.bs-docs-example {
 }
 
 /* Sub Nav */
+/* Attempt to create collapsing nav
+.bs-docs-sidenav > li > ul li{
+  display: none;
+}
+.bs-docs-sidenav > .active > ul li{
+  display: block;
+}
+.bs-docs-sidenav .active{
+  display: block;
+}
+.bs-docs-sidenav .active ~ * {
+  display: block;
+}
+*/
 .bs-docs-sidenav > li > ul > li > a{
   padding:8px 14px 8px 44px;
   border: 1px solid #e5e5e5;
