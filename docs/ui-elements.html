@@ -163,22 +163,323 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/ul&gt;
 </pre>
 
+
+            <h2>Dropdown Effects <small>bootstrap-dropdown.js</small></h2>
+
+
+
+          <h3>Examples</h3>
+          <p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+
+          <h4>Within a navbar</h4>
+          <div class="bs-docs-example">
+            <div id="navbar-example" class="navbar navbar-static">
+              <div class="navbar-inner">
+                <div class="container" style="width: auto;">
+                  <a class="brand" href="#">Project Name</a>
+                  <ul class="nav" role="navigation">
+                    <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav pull-right">
+                    <li id="fat-menu" class="dropdown">
+                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- /navbar-example -->
+          </div> 
+
+          <h4>Within tabs</h4>
+          <div class="bs-docs-example">
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Regular link</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul> <!-- /tabs -->
+          </div> 
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h3>Usage</h3>
+
+          <h4>Via data attributes</h4>
+          <p>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.</p>
+<pre class="prettyprint linenums">
+&lt;div class="dropdown"&gt;
+  &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;Dropdown trigger&lt;/a&gt;
+  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+          <p>To keep URLs intact, use the <code>data-target</code> attribute instead of <code>href="#"</code>.</p>
+<pre class="prettyprint linenums">
+&lt;div class="dropdown"&gt;
+  &lt;a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html"&gt;
+    Dropdown
+    &lt;b class="caret"&gt;&lt;/b&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+          <h4>Via JavaScript</h4>
+          <p>Call the dropdowns via JavaScript:</p>
+          <pre class="prettyprint linenums">$('.dropdown-toggle').dropdown()</pre>
+
+          <h4>Options</h4>
+          <p><em>None</em></p>
+
+          <h4>Methods</h4>
+          <h4>$().dropdown('toggle')</h4>
+          <p>A programmatic api for toggling menus for a given navbar or tabbed navigation.</p>
         </section>
 
 
 
+        </section><!-- /dropdowns -->
+
+<!-- Buttons 
+  ================================================= -->
+<section id="buttons">
+  <div class="page-header">
+    <h1>Buttons</h1>  
+  </div>
+  <p class="lead">{buttons}</p>
+
+        <!-- basic Buttons
+        ________________________ -->
+        <section id="basicButtons">
+
+          <h2>Default buttons</h2>
+          <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Primary</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-info">Info</button></td>
+                <td><code>btn btn-info</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+                <td><code>btn btn-success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-warning">Warning</button></td>
+                <td><code>btn btn-warning</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-danger">Danger</button></td>
+                <td><code>btn btn-danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Cross browser compatibility</h4>
+          <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
+
+
+          <h2>Button sizes</h2>
+          <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
+          <div class="bs-docs-example">
+            <p>
+              <button type="button" class="btn btn-large btn-primary">Large button</button>
+              <button type="button" class="btn btn-large">Large button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary">Default button</button>
+              <button type="button" class="btn">Default button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-small btn-primary">Small button</button>
+              <button type="button" class="btn btn-small">Small button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-mini btn-primary">Mini button</button>
+              <button type="button" class="btn btn-mini">Mini button</button>
+            </p>
+          </div>
+<pre class="prettyprint linenums">
+&lt;p&gt;
+  &lt;button class="btn btn-large btn-primary" type="button"&gt;Large button&lt;/button&gt;
+  &lt;button class="btn btn-large" type="button"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-primary" type="button"&gt;Default button&lt;/button&gt;
+  &lt;button class="btn" type="button"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-small btn-primary" type="button"&gt;Small button&lt;/button&gt;
+  &lt;button class="btn btn-small" type="button"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button class="btn btn-mini btn-primary" type="button"&gt;Mini button&lt;/button&gt;
+  &lt;button class="btn btn-mini" type="button"&gt;Mini button&lt;/button&gt;
+&lt;/p&gt;
+</pre>
+          <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+          <div class="bs-docs-example">
+            <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+              <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
+              <button type="button" class="btn btn-large btn-block">Block level button</button>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
+&lt;button class="btn btn-large btn-block" type="button"&gt;Block level button&lt;/button&gt;
+</pre>
+
+
+          <h2>Disabled state</h2>
+          <p>Make buttons look unclickable by fading them back 50%.</p>
+
+          <h3>Anchor element</h3>
+          <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+            <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
+            <a href="#" class="btn btn-large disabled">Link</a>
+          </p>
+<pre class="prettyprint linenums">
+&lt;a href="#" class="btn btn-large btn-primary disabled"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-large disabled"&gt;Link&lt;/a&gt;
+</pre>
+          <p>
+            <span class="label label-info">Heads up!</span>
+            We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+          </p>
+
+          <h3>Button element</h3>
+          <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+            <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
+            <button type="button" class="btn btn-large" disabled>Button</button>
+          </p>
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-large btn-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-large" disabled&gt;Button&lt;/button&gt;
+</pre>
+
+
+          <h2>One class, multiple tags</h2>
+          <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+          <form class="bs-docs-example">
+            <a class="btn" href="">Link</a>
+            <button class="btn" type="submit">Button</button>
+            <input class="btn" type="button" value="Input">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+<pre class="prettyprint linenums">
+&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn" type="button" value="Input"&gt;
+&lt;input class="btn" type="submit" value="Submit"&gt;
+</pre>
+          <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
+
+        </section> <!-- /button element -->
+
+      <hr class="bs-docs-seperator">
+
 
         <!-- Button Groups
-        ================================================== -->
+        ____________________________ -->
         <section id="buttonGroups">
-          <div class="page-header">
-            <h1>Button groups</h1>
-          </div>
+            <h2>Button groups</h2>
 
-          <h2>Examples</h2>
+
+          <h3>Examples</h3>
           <p>Two basic options, along with two more specific variations.</p>
 
-          <h3>Single button group</h3>
+          <h4>Single button group</h4>
           <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
           <div class="bs-docs-example">
             <div class="btn-group" style="margin: 9px 0 5px;">
@@ -195,7 +496,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-          <h3>Multiple button groups</h3>
+          <h4>Multiple button groups</h4>
           <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
           <div class="bs-docs-example">
             <div class="btn-toolbar" style="margin: 0;">
@@ -223,7 +524,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-          <h3>Vertical button groups</h3>
+          <h4>Vertical button groups</h4>
           <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
           <div class="bs-docs-example">
             <div class="btn-group btn-group-vertical">
@@ -243,24 +544,21 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
           <hr class="bs-docs-separator">
 
 
-          <h4>Checkbox and radio flavors</h4>
+          <h5>Checkbox and radio flavors</h5>
           <p>Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View <a href="./javascript.html#buttons">the JavaScript docs</a> for that.</p>
 
-          <h4>Dropdowns in button groups</h4>
+          <h5>Dropdowns in button groups</h5>
           <p><span class="label label-info">Heads up!</span> Buttons with dropdowns must be individually wrapped in their own <code>.btn-group</code> within a <code>.btn-toolbar</code> for proper rendering.</p>
-        </section>
+        </section> <!-- /buttonGroups -->
 
-
+        <hr class="bs-docs-seperator">
 
         <!-- Split button dropdowns
-        ================================================== -->
+        ________________________________________ -->
         <section id="buttonDropdowns">
-          <div class="page-header">
-            <h1>Button dropdown menus</h1>
-          </div>
+            <h2>Button dropdown menus</h2>
 
-
-          <h2>Overview and examples</h2>
+          <h3>Overview and examples</h3>
           <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
           <div class="bs-docs-example">
             <div class="btn-toolbar" style="margin: 0;">
@@ -348,7 +646,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-          <h3>Works with all button sizes</h3>
+          <h4>Works with all button sizes</h4>
           <p>Button dropdowns work at any size:  <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code>.</p>
           <div class="bs-docs-example">
             <div class="btn-toolbar" style="margin: 0;">
@@ -385,7 +683,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
             </div><!-- /btn-toolbar -->
           </div>
 
-          <h3>Requires JavaScript</h3>
+          <h4>Requires JavaScript</h4>
           <p>Button dropdowns require the <a href="./javascript.html#dropdowns">Bootstrap dropdown plugin</a> to function.</p>
           <p>In some cases&mdash;like mobile&mdash;dropdown menus will extend outside the viewport. You need to resolve the alignment manually or with custom JavaScript.</p>
 
@@ -393,7 +691,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
           <hr class="bs-docs-separator">
 
 
-          <h2>Split button dropdowns</h2>
+          <h3>Split button dropdowns</h3>
           <p>Building on the button group styles and markup, we can easily create a split button. Split buttons feature a standard action on the left and a dropdown toggle on the right with contextual links.</p>
           <div class="bs-docs-example">
             <div class="btn-toolbar" style="margin: 0;">
@@ -488,7 +786,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-          <h3>Sizes</h3>
+          <h4>Sizes</h4>
           <p>Utilize the extra button classes <code>.btn-mini</code>, <code>.btn-small</code>, or <code>.btn-large</code> for sizing.</p>
           <div class="bs-docs-example">
             <div class="btn-toolbar">
@@ -543,7 +841,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-          <h3>Dropup menus</h3>
+          <h4>Dropup menus</h4>
           <p>Dropdown menus can also be toggled from the bottom up by adding a single class to the immediate parent of <code>.dropdown-menu</code>. It will flip the direction of the <code>.caret</code> and reposition the menu itself to move from the bottom up instead of top down.</p>
           <div class="bs-docs-example">
             <div class="btn-toolbar" style="margin: 0;">
@@ -583,8 +881,110 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-        </section>
+        </section><!-- /button-dropdowns -->
 
+<hr class="bs-docs-seperator">
+
+
+          <!-- Buttons Effects
+          _______________________________ -->
+          <section id="button-effects">
+              <h2>Button Effects <small>bootstrap-button.js</small></h2>
+
+            <h3>Example uses</h3>
+            <p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+
+            <h5>Stateful</h5>
+            <p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
+            <div class="bs-docs-example" style="padding-bottom: 24px;">
+              <button type="button" id="fat-btn" data-loading-text="loading..." class="btn btn-primary">
+                Loading state
+              </button>
+            </div>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-loading-text="Loading..."&gt;Loading state&lt;/button&gt;</pre>
+
+            <h5>Single toggle</h5>
+            <p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
+            <div class="bs-docs-example" style="padding-bottom: 24px;">
+              <button type="button" class="btn btn-primary" data-toggle="button">Single Toggle</button>
+            </div>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
+
+            <h5>Checkbox</h5>
+            <p>Add <code>data-toggle="buttons-checkbox"</code> for checkbox style toggling on btn-group.</p>
+            <div class="bs-docs-example" style="padding-bottom: 24px;">
+              <div class="btn-group" data-toggle="buttons-checkbox">
+                <button type="button" class="btn btn-primary">Left</button>
+                <button type="button" class="btn btn-primary">Middle</button>
+                <button type="button" class="btn btn-primary">Right</button>
+              </div>
+            </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+            <h5>Radio</h5>
+            <p>Add <code>data-toggle="buttons-radio"</code> for radio style toggling on btn-group.</p>
+            <div class="bs-docs-example" style="padding-bottom: 24px;">
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn btn-primary">Left</button>
+                <button type="button" class="btn btn-primary">Middle</button>
+                <button type="button" class="btn btn-primary">Right</button>
+              </div>
+            </div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group" data-toggle="buttons-radio"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+
+            <hr class="bs-docs-separator">
+
+
+            <h3>Usage</h3>
+            <p>Enable buttons via JavaScript:</p>
+            <pre class="prettyprint linenums">$('.nav-tabs').button()</pre>
+
+            <h4>Markup</h4>
+            <p>Data attributes are integral to the button plugin. Check out the example code below for the various markup types.</p>
+
+            <h4>Options</h4>
+            <p><em>None</em></p>
+
+            <h4>Methods</h4>
+            <h5>$().button('toggle')</h5>
+            <p>Toggles push state. Gives the button the appearance that it has been activated.</p>
+            <div class="alert alert-info">
+              <strong>Heads up!</strong>
+              You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
+            </div>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-toggle="button" &gt;…&lt;/button&gt;</pre>
+            <h5>$().button('loading')</h5>
+            <p>Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
+            </p>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-loading-text="loading stuff..." &gt;...&lt;/button&gt;</pre>
+            <div class="alert alert-info">
+              <strong>Heads up!</strong>
+              <a href="https://github.com/twitter/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
+            </div>
+            <h5>$().button('reset')</h5>
+            <p>Resets button state - swaps text to original text.</p>
+            <h5>$().button(string)</h5>
+            <p>Resets button state - swaps text to any data defined text state.</p>
+<pre class="prettyprint linenums">&lt;button type="button" class="btn" data-complete-text="finished!" &gt;...&lt;/button&gt;
+&lt;script&gt;
+  $('.btn').button('complete')
+&lt;/script&gt;
+</pre>
+          </section><!-- button-effects -->
+</section> <!-- buttons -->
 
 
         <!-- Nav, Tabs, & Pills
@@ -658,7 +1058,9 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 
           <hr class="bs-docs-separator">
 
-
+          <!-- Stackable
+          _______________________ -->
+        <section id="stackable">
           <h2>Stackable</h2>
           <p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
 
@@ -689,11 +1091,14 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
   ...
 &lt;/ul&gt;
 </pre>
-
+        </section>
+<!-- /stackable -->
 
           <hr class="bs-docs-separator">
 
-
+          <!-- Dropdowns
+          ___________________________ -->
+        <section id="tab-dropdowns">
           <h2>Dropdowns</h2>
           <p>Add dropdown menus with a little extra HTML and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
 
@@ -762,11 +1167,14 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-
+    </section>
+  <!-- /dropdowns -->
 
           <hr class="bs-docs-separator">
 
-
+<!-- Nav Lists
+  ______________________ -->
+  <section id="nav-list">
           <h2>Nav lists</h2>
           <p>A simple and easy way to build groups of nav links with optional headers. They're best used in sidebars like the Finder in OS X.</p>
 
@@ -809,11 +1217,13 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
   ...
 &lt;/ul&gt;
 </pre>
-
-
+</section>
+<!-- /nav-lists -->
           <hr class="bs-docs-separator">
 
-
+          <!-- Tabbable nav 
+          _____________________________ -->
+        <section id="tabbable-nav">
           <h2>Tabbable nav</h2>
           <p>Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.</p>
 
@@ -962,10 +1372,127 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
+</section>
+<!-- /tabbable-nav -->
 
+        <!-- Tab Effects
+        __________________________-->
+        <section id="tab-effects">
+            <h2>Togglable tabs <small>bootstrap-tab.js</small></h2>
+
+          <h3>Example tabs</h3>
+          <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+          <div class="bs-docs-example">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
+                  <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="home">
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h3>Usage</h3>
+          <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+<pre class="prettyprint linenums">
+$('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})</pre>
+          <p>You can activate individual tabs in several ways:</p>
+<pre class="prettyprint linenums">
+$('#myTab a[href="#profile"]').tab('show'); // Select tab by name
+$('#myTab a:first').tab('show'); // Select first tab
+$('#myTab a:last').tab('show'); // Select last tab
+$('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
+</pre>
+
+          <h4>Markup</h4>
+          <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap tab styling.</p>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#settings" data-toggle="tab"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+          <h4>Methods</h4>
+          <h5>$().tab</h5>
+          <p>
+            Activates a tab element and content container. Tab should have either a <code>data-target</code> or an <code>href</code> targeting a container node in the DOM.
+          </p>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs" id="myTab"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages"&gt;Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#settings"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab-content"&gt;
+  &lt;div class="tab-pane active" id="home"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane" id="profile"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane" id="messages"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane" id="settings"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+&lt;/script&gt;
+</pre>
+
+          <h4>Events</h4>
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 150px;">Event</th>
+               <th>Description</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>show</td>
+               <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+            </tr>
+            <tr>
+               <td>shown</td>
+               <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+             </tr>
+            </tbody>
+          </table>
+<pre class="prettyprint linenums">
+$('a[data-toggle="tab"]').on('shown', function (e) {
+  e.target // activated tab
+  e.relatedTarget // previous tab
+})
+</pre>
         </section>
-
-
+      </section><!-- /tabs -->
 
         <!-- Navbar
         ================================================== -->
@@ -1128,7 +1655,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 
           <hr class="bs-docs-separator">
 
-
+        <section id="options">
           <h2>Optional display variations</h2>
           <p>Fix the navbar to the top or bottom of the viewport with an additional class on the outermost div, <code>.navbar</code>.</p>
 
@@ -1197,11 +1724,11 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
   ...
 &lt;/div&gt;
 </pre>
-
+</section> <!-- /options -->
 
           <hr class="bs-docs-separator">
 
-
+      <section id="responsive-nav">
           <h2>Responsive navbar</h2>
           <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
           <div class="bs-docs-example">
@@ -1281,12 +1808,12 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
           <div class="alert alert-info">
             <strong>Heads up!</strong> The responsive navbar requires the <a href="./javascript.html#collapse">collapse plugin</a> and <a href="./scaffolding.html#responsive">responsive Bootstrap CSS file</a>.
           </div>
-
+      </section>
 
           <hr class="bs-docs-separator">
 
 
-          <h2>Inverted variation</h2>
+          <h3>Inverted variation</h3>
           <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
           <div class="bs-docs-example">
             <div class="navbar navbar-inverse" style="position: static;">
@@ -2068,7 +2595,77 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 &lt;/div&gt;
 </pre>
 
-        </section>
+ <hr class="bs-docs-separator">
+          <h2>Alert messages <small>bootstrap-alert.js</small></h2>
+
+
+        <h3>Example alerts</h3>
+        <p>Add dismiss functionality to all alert messages with this plugin.</p>
+        <div class="bs-docs-example">
+          <div class="alert fade in">
+            <button type="button" class="close">&times;</button>
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+          </div>
+        </div>
+
+        <div class="bs-docs-example">
+          <div class="alert alert-block alert-error fade in">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4 class="alert-heading">Oh snap! You got an error!</h4>
+            <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>
+              <a class="btn btn-danger" href="#">Take this action</a> <a class="btn" href="#">Or do this</a>
+            </p>
+          </div>
+        </div>
+
+
+        <hr class="bs-docs-separator">
+
+
+        <h3>Usage</h3>
+        <p>Enable dismissal of an alert via JavaScript:</p>
+        <pre class="prettyprint linenums">$(".alert").alert()</pre>
+
+        <h4>Markup</h4>
+        <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
+        <pre class="prettyprint linenums">&lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
+
+        <h4>Methods</h4>
+        <h5>$().alert()</h5>
+        <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+        <h5>.alert('close')</h5>
+        <p>Closes an alert.</p>
+        <pre class="prettyprint linenums">$(".alert").alert('close')</pre>
+
+
+        <h4>Events</h4>
+        <p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
+        <table class="table table-bordered table-striped">
+          <thead>
+           <tr>
+             <th style="width: 150px;">Event</th>
+             <th>Description</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+             <td>close</td>
+             <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+           </tr>
+           <tr>
+             <td>closed</td>
+             <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
+           </tr>
+          </tbody>
+        </table>
+<pre class="prettyprint linenums">
+$('#my-alert').bind('closed', function () {
+  // do something…
+})
+</pre>
+      </section>
+
 
 
 
