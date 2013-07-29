@@ -11,7 +11,8 @@ In order to compile the World Vision UiKit, there are a couple of prerequisites 
 Your development environment is now setup!
 
 To update the libraries (Bootstrap, jQuery, Font Awesome) in the World Vision UiKit:
-*Node Package Manager needs to be installed (See above)
+
+*Note: Node Package Manager needs to be installed (See above)
 
 * Run `grunt update`
 
