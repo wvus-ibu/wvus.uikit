@@ -4,32 +4,22 @@ World Vision UiKit
 This self-containing kit is the basis of World Vision US website styling.
 
 ### Getting Started
-* Clone the repo: `git@github.com:wvus-ibu/wvus.uikit.git`
-* Production ready files are located in the css, img, and js folders
-* To customize, modify the JS and LESS files under the src/lib folder then run `grunt` in src folder to compile
+Visit the docs, [wvus-ibu.github.io/wvus.uikit](http://wvus-ibu.github.io/wvus.uikit), to learn more about what is included and how to use the UiKit.
+To start using it right now:
+1. Download `wvus.uikit.zip` from the repository
+2. Extract the contents
+3. Link `css/wvus.uikit.all.min.css` in the `head` of the site. 
+4. For a responsive design, also link `css/wvus.uikit.all.responsive.min.css` after `wvus.uikit.all.min.css`
+5. Add jQuery `/js/jquery.min.js`. We will update jQuery in new versions of the UiKit 
+6. Add `wvus.uikit.all.min.js` to the footer of the site
+
+That's it! Be sure to visit the [docs](http://wvus-ibu.github.io/wvus.uikit) to learn how to include the different components and widgets.
+
 
 ### Contents
 The World Vision UiKit is built on top of Twitter's [Bootstrap](http://twitter.github.io/bootstrap/) and [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
 The source of these libraries can be found in the src/lib folder.  
 
-### Prerequisites
-In order to compile the World Vision UiKit, there are a couple of prerequisites that need to be installed.
-1. Install the [Node Package Manager (npm)](http://nodejs.org/download/)
-2. Install [Grunt](http://gruntjs.com/getting-started) using `npm install -g grunt-cli`
-That will allow the World Vision US UiKit to be compiled
-
-To update the libraries in the World Vision UiKit:
-* Node Package Manager needs to be installed (See above step 1)
-1. Install [Volo](http://volojs.org/) `npm install -g volo`
-2. Navigate to src/ directory
-3. Run `grunt update`
-This will update jQuery, Bootstrap, and Font Awesome.
-
-### Customize
-To customize the World Vision UiKit, put custom World Vision files in the corresponding img, js, or less folders located at src/lib/worldvision/.
-
-* Modify variables.less for custom CSS
-* Create or modify js files 
-* Include images 
-* Run `grunt` under src directory to generate the css, js, img folders and zip archive.
+### What's new in the next version?
+Checkout the [Release Notes](ReleaseNotes.md) for upcoming and previous changes.
