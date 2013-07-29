@@ -6,6 +6,7 @@ This self-containing kit is the basis of World Vision US website styling.
 ### Getting Started
 Visit the docs, [wvus-ibu.github.io/wvus.uikit](http://wvus-ibu.github.io/wvus.uikit), to learn more about what is included and how to use the UiKit.
 To start using it right now:
+
 1. Download `wvus.uikit.zip` from the repository
 2. Extract the contents
 3. Link `css/wvus.uikit.all.min.css` in the `head` of the site. 
