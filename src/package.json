@@ -1,12 +1,12 @@
 {
   "name": "wvus.uikit",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Base UI styles and controls for worldvision.org",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage" : "http://wvus-ibu.github.io/wvus.uikit/"
+  "homepage" : "http://wvus-ibu.github.io/wvus.uikit/",
   "repository": {
     "type": "git",
     "url": "https://github.com/wvus-ibu/wvus.uikit.git"
