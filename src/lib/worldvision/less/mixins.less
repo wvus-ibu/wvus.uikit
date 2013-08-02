@@ -543,9 +543,18 @@
   margin-top: (@navbarHeight - @elementHeight) / 2;
 }
 
-// Nav 
+// Nav (overrides navs.less)
 // ---
 // 
+// TABS AND PILLS
+// --------------
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: 2px;
+  line-height: 14px; // keeps the overall height an even number
+}
 // Tabs
 // ----
 // overrides tabs in navs.less
@@ -558,8 +567,8 @@
 }
 // Actual tabs (as links)
 .nav-tabs > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 4px;
   line-height: @baseLineHeight;
   border: 1px solid transparent;
   .border-radius(4px 4px 0 0);
@@ -658,12 +667,31 @@
 .tabs-below > .nav-tabs > .active > a:focus {
   border-color: transparent @nav-border-color @nav-border-color @nav-border-color;
 }
+
+
 // Left & Right
 // ------------
+
+// Common Styles
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 185px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
 // Tabs on the left
 .tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
   border-right: 1px solid @nav-border-color;
 }
+.tabs-left > .nav-tabs > li > a {
+  position: relative;
+  margin-right: -1px;
+  .border-radius(0);
+}
+
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
   border-color: @nav-border-color;
@@ -688,6 +716,17 @@
 .tabs-right > .nav-tabs .active > a:focus {
   border-color: @nav-border-color @nav-border-color @nav-border-color  transparent;
   *border-left-color: @white;
+}
+.tabs-left > .nav-tabs .active > a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: -1px;
+  border-left: 10px solid @nav-border-color;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
 }
 
 
