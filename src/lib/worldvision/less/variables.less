@@ -8,7 +8,7 @@
 
 //Image path
 //--------------------------
-@imgPath:				"../img/";
+@imgPath:       "../img/";
 
 // Grays
 // -------------------------
@@ -32,6 +32,11 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// Primary colors
+// -------------------------
+@wv-orange:             #ff6600;
+@wv-orange-highlight:   #ff9d29;
+
 
 // Scaffolding
 // -------------------------
@@ -41,8 +46,8 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             #2d78ab;
+@linkColorHover:        @linkColor;
 
 
 // Typography
@@ -73,9 +78,9 @@
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:      14px;
+@borderRadiusLarge:     20px;
+@borderRadiusSmall:     12px;
 
 
 // Tables
@@ -91,8 +96,9 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @wv-orange;
+@btnPrimaryBackgroundHighlight:     @wv-orange-highlight;
+
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -217,6 +223,11 @@
 
 @navbarInverseBrandColor:                @navbarInverseLinkColor;
 
+
+// Nav-Tabs
+// -------------------------
+@nav-background-active:                   #2d78ab;
+@nav-border-color:                        @nav-background-active;
 
 // Pagination
 // -------------------------

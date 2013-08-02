@@ -512,22 +512,27 @@
 // ------------------
 .buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
-  .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+  .gradientBar(@endColor, @startColor, @textColor, @textShadow);
   *background-color: @endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   .reset-filter();
 
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
     color: @textColor;
-    background-color: @endColor;
-    *background-color: darken(@endColor, 5%);
+    background-color: @startColor;
+    *background-color: @startColor;
+    opacity: .7;
   }
 
   // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
   &:active,
-  &.active {
-    background-color: darken(@endColor, 10%) e("\9");
+  &.active{
+    .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+    opacity: .7;
+    background-position: 0 0px;
+
   }
+
 }
 
 // Navbar vertical align
@@ -538,6 +543,152 @@
   margin-top: (@navbarHeight - @elementHeight) / 2;
 }
 
+// Nav 
+// ---
+// 
+// Tabs
+// ----
+// overrides tabs in navs.less
+.nav-tabs {
+  border-bottom: 1px solid @nav-border-color;
+}
+// Make the list-items overlay the bottom border
+.nav-tabs > li {
+  margin-bottom: -1px;
+}
+// Actual tabs (as links)
+.nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: @baseLineHeight;
+  border: 1px solid transparent;
+  .border-radius(4px 4px 0 0);
+  &:hover,
+  &:focus {
+    border-color: @nav-border-color @nav-border-color;
+  }
+}
+// Active state, and it's :hover/:focus to override normal :hover/:focus
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: @white;
+  background-color: @nav-background-active;
+  border: 1px solid @nav-border-color;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+
+// PILLS
+// -----
+
+// Links rendered as pills
+.nav-pills > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  .border-radius(5px);
+}
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: @white;
+  background-color: @linkColor;
+}
+
+
+// STACKED NAV
+// -----------
+// overrides stacked nav in navs.less
+// Stacked tabs and pills
+.nav-stacked > li {
+  float: none;
+  margin-bottom: -1px;
+}
+.nav-stacked > li > a {
+  margin-right: 0; // no need for the gap between nav items
+}
+
+// Tabs
+.nav-tabs.nav-stacked {
+  border-bottom: 0;
+}
+.nav-tabs.nav-stacked > li > a {
+  border: 1px solid @nav-border-color;
+  .border-radius(0);
+}
+.nav-tabs.nav-stacked > li:first-child > a {
+  .border-top-radius(4px);
+}
+.nav-tabs.nav-stacked > li:last-child > a {
+  .border-bottom-radius(4px);
+}
+.nav-tabs.nav-stacked > li > a:hover,
+.nav-tabs.nav-stacked > li > a:focus {
+  border: 1px solid @nav-border-color;
+  z-index: 2;
+}
+
+// TABBABLE
+// --------
+// BOTTOM
+// ------
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid @nav-border-color;
+}
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+.tabs-below > .nav-tabs > li > a {
+  .border-radius(0 0 4px 4px);
+  &:hover,
+  &:focus {
+    border-bottom-color: @nav-border-color;
+    border-top-color: @nav-border-color;
+  }
+}
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent @nav-border-color @nav-border-color @nav-border-color;
+}
+// Left & Right
+// ------------
+// Tabs on the left
+.tabs-left > .nav-tabs {
+  border-right: 1px solid @nav-border-color;
+}
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: @nav-border-color;
+}
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: @nav-border-color transparent @nav-border-color @nav-border-color;
+  *border-right-color: @white;
+}
+
+// Tabs on the right
+.tabs-right > .nav-tabs {
+  border-left: 1px solid @nav-border-color;
+}
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: @nav-border-color;
+}
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: @nav-border-color @nav-border-color @nav-border-color  transparent;
+  *border-left-color: @white;
+}
 
 
 // Grid System
