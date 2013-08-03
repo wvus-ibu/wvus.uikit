@@ -172,14 +172,34 @@
 .tabs-left > .nav-tabs > li > a,
 .tabs-right > .nav-tabs > li > a {
   min-width: 185px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   margin-right: 0;
   margin-bottom: 3px;
+  color: #ffffff;
+  background-color: rgba(45, 120, 171, 0.5);
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a {
+  background-color: #2d78ab;
+}
+
+.tabs-right > .nav-tabs .active > a:after,
+.tabs-left > .nav-tabs .active > a:after {
+  position: absolute;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  content: "";
 }
 
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #2d78ab;
+  border-right: none;
 }
 
 .tabs-left > .nav-tabs > li > a {
@@ -198,12 +218,28 @@
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus {
+  border-right: none;
   border-color: #2d78ab transparent #2d78ab #2d78ab;
   *border-right-color: #ffffff;
 }
 
+.tabs-left > .nav-tabs .active > a:after {
+  left: 100%;
+  border-left: 20px solid #2d78ab;
+}
+
 .tabs-right > .nav-tabs {
-  border-left: 1px solid #2d78ab;
+  float: right;
+  margin-left: 19px;
+  border-left: none;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  position: relative;
+  margin-left: -1px;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
 }
 
 .tabs-right > .nav-tabs > li > a:hover,
@@ -214,20 +250,22 @@
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .nav-tabs .active > a:focus {
+  border-left: none;
   border-color: #2d78ab #2d78ab #2d78ab transparent;
   *border-left-color: #ffffff;
 }
 
-.tabs-left > .nav-tabs .active > a:after {
-  position: absolute;
-  top: -1px;
-  left: 100%;
-  width: 0;
-  height: 0;
-  border-top: 23px solid transparent;
-  border-bottom: 23px solid transparent;
-  border-left: 10px solid #2d78ab;
-  content: "";
+.tabs-right > .nav-tabs .active > a:after {
+  right: 100%;
+  border-right: 20px solid #2d78ab;
+}
+
+.breadcrumb > li > .divider {
+  color: #9f9480;
+}
+
+.breadcrumb > .active {
+  color: #9f9480;
 }
 
 @-ms-viewport {
