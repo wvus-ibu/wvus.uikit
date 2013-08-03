@@ -521,14 +521,14 @@
     color: @textColor;
     background-color: @startColor;
     *background-color: @startColor;
-    opacity: .7;
+    .opacity(70);
   }
 
   // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
   &:active,
   &.active{
     .gradientBar(@startColor, @endColor, @textColor, @textShadow);
-    opacity: .7;
+    .opacity(70);
     background-position: 0 0px;
 
   }
@@ -678,13 +678,31 @@
   min-width: 185px;
   margin-right: 0;
   margin-bottom: 3px;
+  color: @white;
+  background-color: fadeout(@nav-border-color, 50%);
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.tabs-left > .nav-tabs .active  > a,
+.tabs-right > .nav-tabs .active > a {
+  background-color: @nav-border-color;
+}
+.tabs-right > .nav-tabs .active > a:after,
+.tabs-left > .nav-tabs .active > a:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -1px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
 }
 
 // Tabs on the left
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid @nav-border-color;
+  border-right: none;
 }
 .tabs-left > .nav-tabs > li > a {
   position: relative;
@@ -698,14 +716,26 @@
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
+.tabs-left > .nav-tabs .active > a:focus{
   border-color: @nav-border-color transparent @nav-border-color @nav-border-color;
+  border-right: none;
   *border-right-color: @white;
+}
+.tabs-left > .nav-tabs .active > a:after{
+  left: 100%;
+  border-left: 20px solid @nav-border-color;
 }
 
 // Tabs on the right
 .tabs-right > .nav-tabs {
-  border-left: 1px solid @nav-border-color;
+  float: right;
+  margin-left: 19px;
+  border-left: none;
+}
+.tabs-right > .nav-tabs > li > a {
+  position: relative;
+  margin-left: -1px;
+  .border-radius(0);
 }
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
@@ -716,19 +746,23 @@
 .tabs-right > .nav-tabs .active > a:focus {
   border-color: @nav-border-color @nav-border-color @nav-border-color  transparent;
   *border-left-color: @white;
+  border-left: none;
 }
-.tabs-left > .nav-tabs .active > a:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 100%;
-  top: -1px;
-  border-left: 10px solid @nav-border-color;
-  border-top: 23px solid transparent;
-  border-bottom: 23px solid transparent;
+.tabs-right > .nav-tabs .active > a:after{
+  right: 100%;
+  border-right: 20px solid @nav-border-color;
 }
 
+// Breadcrumbs
+// -----------
+.breadcrumb {
+  > li > .divider{
+    color: @breadcrumb-inactive;
+  }
+  > .active{
+    color: @breadcrumb-inactive;
+  }
+}
 
 // Grid System
 // -----------
