@@ -260,6 +260,12 @@
   border-right: 20px solid #2d78ab;
 }
 
+.breadcrumb > li:first-child > a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 .breadcrumb > li > .divider {
   color: #9f9480;
 }

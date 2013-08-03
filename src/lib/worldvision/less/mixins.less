@@ -756,6 +756,10 @@
 // Breadcrumbs
 // -----------
 .breadcrumb {
+  > li:first-child > a:hover{
+    text-decoration: none;
+    .opacity(50);
+  }
   > li > .divider{
     color: @breadcrumb-inactive;
   }
@@ -763,6 +767,10 @@
     color: @breadcrumb-inactive;
   }
 }
+
+// Pagination
+// ----------
+
 
 // Grid System
 // -----------
