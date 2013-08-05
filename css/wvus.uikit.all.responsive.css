@@ -274,6 +274,56 @@
   color: #9f9480;
 }
 
+.pagination ul {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+  padding: 4px 7px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  font-weight: normal;
+  color: #666666;
+  background-color: transparent;
+}
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span,
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  padding: 0 5px;
+  margin-top: 4px;
+  color: #ffffff;
+  background-color: #ff6600;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  margin-right: 7px;
+}
+
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  margin-left: 7px;
+}
+
 @-ms-viewport {
   width: device-width;
 }
