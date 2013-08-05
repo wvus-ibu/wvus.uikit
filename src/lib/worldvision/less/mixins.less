@@ -691,8 +691,7 @@
 .tabs-left > .nav-tabs .active > a:after{
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
+  .size(0, 0);
   top: -1px;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
@@ -770,8 +769,45 @@
 
 // Pagination
 // ----------
+.pagination ul {
+  .border-radius(0);
+  .box-shadow(none);
+}
 
+.pagination ul > li > a,
+.pagination ul > li > span {
+  background-color: transparent;
+  border: none;
+  .border-radius(0);
+  font-weight: bold;
+  padding: 4px 7px;
+}
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  color: @gray;
+  font-weight: normal;
+  background-color: transparent;
 
+}
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span,
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  margin-top: 4px;
+  color: @white;
+  background-color: @paginationBackground;
+  padding: 0 5px;
+  .border-radius(20px);
+}
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span{
+  margin-right: 7px;
+}
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  margin-left: 7px;
+}
 // Grid System
 // -----------
 
