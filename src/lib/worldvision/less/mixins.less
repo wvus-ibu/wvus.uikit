@@ -196,7 +196,16 @@
   }
 }
 
+input.search-query{
+  .border-radius(4px);
+}
 
+.uneditable-input{
+  background-color: @grayLighter;
+  color: @grayLight;
+  .box-shadow(0 0 0 2px fade(multiply(@black, @white), 15%) inset);
+
+}
 
 // CSS3 PROPERTIES
 // --------------------------------------------------
@@ -543,7 +552,8 @@
   margin-top: (@navbarHeight - @elementHeight) / 2;
 }
 
-// Nav (overrides navs.less)
+
+// Nav - overrides Bootstrap's navs.less
 // ---
 // 
 // TABS AND PILLS
@@ -808,6 +818,10 @@
 .pagination ul > li:last-child > span {
   margin-left: 7px;
 }
+
+
+
+
 // Grid System
 // -----------
 
