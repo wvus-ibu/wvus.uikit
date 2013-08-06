@@ -107,7 +107,7 @@ hr.soften {
 }
 .jumbotron h1 {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: -1px;
   line-height: 1;
 }
@@ -797,7 +797,7 @@ form.bs-docs-example {
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
-  font-weight: bold;
+  font-weight: normal;
 }
 .bs-docs-sidenav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
