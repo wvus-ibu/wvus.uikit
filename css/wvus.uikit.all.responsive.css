@@ -321,21 +321,8 @@ input.search-query {
 .pagination ul > li:last-child > span {
   padding: 0 5px;
   margin-top: 4px;
-  color: #ffffff;
-  background-color: #ff6600;
-  -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-          border-radius: 20px;
-}
-
-.pagination ul > li:first-child > a,
-.pagination ul > li:first-child > span {
-  margin-right: 7px;
-}
-
-.pagination ul > li:last-child > a,
-.pagination ul > li:last-child > span {
-  margin-left: 7px;
+  color: #ff6600;
+  background-color: #ffffff;
 }
 
 @-ms-viewport {
