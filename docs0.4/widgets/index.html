@@ -9,12 +9,12 @@
 
     <!-- Le styles -->
   <!-- Main css -->
-    <link href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/css/wvus.uikit.all.css" rel="stylesheet">
-    <link href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/css/wvus.uikit.all.responsive.css" rel="stylesheet">
+    <link href="http://wvus-ibu.github.io/wvus.uikit/assets/css/wvus.uikit.all.css" rel="stylesheet">
+    <link href="http://wvus-ibu.github.io/wvus.uikit/assets/css/wvus.uikit.all.responsive.css" rel="stylesheet">
     <!-- CSS libraries -->
-    <link href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="http://wvus-ibu.github.io/wvus.uikit/assets/google-code-prettify/prettify.css" rel="stylesheet">
     <!-- Bootstrap Docs Specific -->
-    <link rel="stylesheet" type="text/css" href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="http://wvus-ibu.github.io/wvus.uikit/assets/css/docs.css">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,11 +22,11 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wvus-ibu.github.io/wvus.uikit/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wvus-ibu.github.io/wvus.uikit/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wvus-ibu.github.io/wvus.uikit/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://wvus-ibu.github.io/wvus.uikit/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://wvus-ibu.github.io/wvus.uikit/assets/ico/favicon.png">
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
         <!-- Navbar
@@ -43,22 +43,22 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li >
-                <a href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/">Getting Started</a>
+                <a href="http://wvus-ibu.github.io/wvus.uikit/">Getting Started</a>
               </li>
               <li >
-                <a href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/styles">Styles</a>
+                <a href="http://wvus-ibu.github.io/wvus.uikit/styles">Styles</a>
               </li>
               <li >
-               <a href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/effects/"> Effects</a>
+               <a href="http://wvus-ibu.github.io/wvus.uikit/effects/"> Effects</a>
               </li>
               <li >
-               <a href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/ui-elements/"> UI Elements</a>
+               <a href="http://wvus-ibu.github.io/wvus.uikit/ui-elements/"> UI Elements</a>
               </li>
               <li class="active">
-                <a href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/widgets/">Widgets</a>
+                <a href="http://wvus-ibu.github.io/wvus.uikit/widgets/">Widgets</a>
               </li>
               <li >
-                <a href="http://wvus-ibu.github.io/wvus.uikit/docs0.4/icons">Icons</a>
+                <a href="http://wvus-ibu.github.io/wvus.uikit/icons">Icons</a>
               </li>
             </ul>
           </div>
@@ -85,6 +85,7 @@
 <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
 <li><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
 <li><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
+<li><a href="#accordion"><i class="icon-chevron-right"></i> Accordion</a></li>
                         
                 </ul>
             </div>
@@ -600,6 +601,194 @@ $('.carousel').carousel({
 
 
 
+
+
+          <!-- Accordion
+          ================================================== -->
+          <section id="accordion">
+            <div class="page-header">
+              <h1>Accordion <small>bootstrap-collapse.js</small></h1>
+            </div>
+
+            <h3>About</h3>
+            <p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
+            <p class="muted"><strong>*</strong> Requires the Transitions plugin to be included.</p>
+
+            <h2>Example accordion</h2>
+            <p>Using the collapse plugin, we built a simple accordion style widget:</p>
+
+            <div class="bs-docs-example">
+              <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<pre class="prettyprint linenums">
+&lt;div class="accordion" id="accordion2"&gt;
+  &lt;div class="accordion-group"&gt;
+    &lt;div class="accordion-heading"&gt;
+      &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"&gt;
+        Collapsible Group Item #1
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseOne" class="accordion-body collapse in"&gt;
+      &lt;div class="accordion-inner"&gt;
+        Anim pariatur cliche...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-group"&gt;
+    &lt;div class="accordion-heading"&gt;
+      &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"&gt;
+        Collapsible Group Item #2
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseTwo" class="accordion-body collapse"&gt;
+      &lt;div class="accordion-inner"&gt;
+        Anim pariatur cliche...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+...
+</pre>
+            <p>You can also use the plugin without the accordion markup. Make a button toggle the expanding and collapsing of another element.</p>
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo"&gt;
+  simple collapsible
+&lt;/button&gt;
+
+&lt;div id="demo" class="collapse in"&gt; … &lt;/div&gt;
+</pre>
+
+
+            <hr class="bs-docs-separator">
+
+
+            <h2>Usage</h2>
+
+            <h3>Via data attributes</h3>
+            <p>Just add <code>data-toggle="collapse"</code> and a <code>data-target</code> to element to automatically assign control of a collapsible element. The <code>data-target</code> attribute accepts a css selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you'd like it to default open, add the additional class <code>in</code>.</p>
+            <p>To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+
+            <h3>Via JavaScript</h3>
+            <p>Enable manually with:</p>
+            <pre class="prettyprint linenums">$(".collapse").collapse()</pre>
+
+            <h3>Options</h3>
+            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-parent=""</code>.</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+               <tr>
+                 <th style="width: 100px;">Name</th>
+                 <th style="width: 50px;">type</th>
+                 <th style="width: 50px;">default</th>
+                 <th>description</th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                 <td>parent</td>
+                 <td>selector</td>
+                 <td>false</td>
+                 <td>If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior)</td>
+               </tr>
+               <tr>
+                 <td>toggle</td>
+                 <td>boolean</td>
+                 <td>true</td>
+                 <td>Toggles the collapsible element on invocation</td>
+               </tr>
+              </tbody>
+            </table>
+
+
+            <h3>Methods</h3>
+            <h4>.collapse(options)</h4>
+            <p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.
+<pre class="prettyprint linenums">
+$('#myCollapsible').collapse({
+  toggle: false
+})
+</pre>
+            <h4>.collapse('toggle')</h4>
+            <p>Toggles a collapsible element to shown or hidden.</p>
+            <h4>.collapse('show')</h4>
+            <p>Shows a collapsible element.</p>
+            <h4>.collapse('hide')</h4>
+            <p>Hides a collapsible element.</p>
+
+            <h3>Events</h3>
+            <p>Bootstrap's collapse class exposes a few events for hooking into collapse functionality.</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+               <tr>
+                 <th style="width: 150px;">Event</th>
+                 <th>Description</th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                 <td>show</td>
+                 <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+               </tr>
+               <tr>
+                 <td>shown</td>
+                 <td>This event is fired when a collapse element has been made visible to the user (will wait for css transitions to complete).</td>
+               </tr>
+               <tr>
+                 <td>hide</td>
+                 <td>
+                  This event is fired immediately when the <code>hide</code> method has been called.
+                 </td>
+               </tr>
+               <tr>
+                 <td>hidden</td>
+                 <td>This event is fired when a collapse element has been hidden from the user (will wait for css transitions to complete).</td>
+               </tr>
+              </tbody>
+            </table>
+<pre class="prettyprint linenums">
+$('#myCollapsible').on('hidden', function () {
+  // do something…
+})</pre>
+          </section><!-- accordion -->
+
+
             </div>
         </div>
     </div>
@@ -624,15 +813,15 @@ $('.carousel').carousel({
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
-    <script src="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/js/jquery.min.js"></script>
-    <script src="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/js/wvus.uikit.all.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/assets/js/jquery.min.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/assets/js/wvus.uikit.all.js"></script>
 
     <!-- external Libraries -->
-    <script src="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/js/holder/holder.js"></script>
-    <script src="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/google-code-prettify/prettify.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/assets/js/holder/holder.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/assets/google-code-prettify/prettify.js"></script>
 
         <!-- Bootstrap Docs JS file (ONLY USED FOR THEIR DOCS) -->
-    <script src="http://wvus-ibu.github.io/wvus.uikit/docs0.4/assets/js/application.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/assets/js/application.js"></script>
 
     </body>
 </html>
