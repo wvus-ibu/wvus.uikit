@@ -325,6 +325,10 @@ input.search-query {
   background-color: #ffffff;
 }
 
+.table-striped thead {
+  background-color: #b3cad8;
+}
+
 article,
 aside,
 details,
@@ -2281,7 +2285,7 @@ legend + .control-group {
 
 table {
   max-width: 100%;
-  background-color: transparent;
+  background-color: #f1f1f1;
   border-collapse: collapse;
   border-spacing: 0;
 }

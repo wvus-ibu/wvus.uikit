@@ -325,6 +325,10 @@ input.search-query {
   background-color: #ffffff;
 }
 
+.table-striped thead {
+  background-color: #b3cad8;
+}
+
 @-ms-viewport {
   width: device-width;
 }
