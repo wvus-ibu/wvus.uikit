@@ -229,10 +229,13 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-qunit');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  // Default task.
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); //all
-  grunt.registerTask('update', ['shell']); //Update libs
-  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs']); //no minify
-  grunt.registerTask('watch', ['watch']);
+  // Default task. Compile, concatenate, min, and build zip
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); 
+
+  // Updates Bootstrap, jQuery, and Font Awesome via volo
+  grunt.registerTask('update', ['shell']); 
+
+  // Compiles and concatenates js and less
+  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs']); 
 
 };
