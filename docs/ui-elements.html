@@ -1886,21 +1886,18 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <p>A single example shown as it might be displayed across multiple pages.</p>
           <div class="bs-docs-example">
             <ul class="breadcrumb">
-              <li class="active">Home</li>
-            </ul>
-            <ul class="breadcrumb">
-              <li><a href="#">Home</a> <span class="divider">/</span></li>
+              <li><a href="#"><i class="icon-home icon-large"></i></a> <span class="divider">&gt;</span></li>
               <li class="active">Library</li>
             </ul>
             <ul class="breadcrumb" style="margin-bottom: 5px;">
-              <li><a href="#">Home</a> <span class="divider">/</span></li>
-              <li><a href="#">Library</a> <span class="divider">/</span></li>
+              <li><a href="#"><i class="icon-home icon-large"></i></a> <span class="divider">&gt;</span></li>
+              <li><a href="#">Library</a> <span class="divider">&gt;</span></li>
               <li class="active">Data</li>
             </ul>
           </div>
 <pre class="prettyprint linenums">
 &lt;ul class="breadcrumb"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-home icon-large"&gt;&lt;/i&gt;&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
   &lt;li class="active"&gt;Data&lt;/li&gt;
 &lt;/ul&gt;
@@ -1922,26 +1919,26 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <div class="bs-docs-example">
             <div class="pagination">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
               </ul>
             </div>
           </div>
 <pre class="prettyprint linenums">
 &lt;div class="pagination"&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-chevron-sign-left icon-large"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-chevron-sign-right icon-large"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
@@ -1957,20 +1954,20 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <div class="bs-docs-example">
             <div class="pagination pagination-centered">
               <ul>
-                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="disabled"><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
              </ul>
             </div>
           </div>
 <pre class="prettyprint linenums">
 &lt;div class="pagination"&gt;
   &lt;ul&gt;
-    &lt;li class="disabled"&gt;&lt;a href="#"&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="disabled"&gt;&lt;a href="#"&gt;&lt;i class="icon-chevron-sign-left icon-large"&gt;&lt;/i&gt;;&lt;/a&gt;&lt;/li&gt;
     &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
     ...
   &lt;/ul&gt;
@@ -1980,7 +1977,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 <pre class="prettyprint linenums">
 &lt;div class="pagination"&gt;
   &lt;ul&gt;
-    &lt;li class="disabled"&gt;&lt;span&gt;&amp;laquo;&lt;/span&gt;&lt;/li&gt;
+    &lt;li class="disabled"&gt;&lt;span&gt;&lt;i class="icon-chevron-sign-left icon-large"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
     &lt;li class="active"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
     ...
   &lt;/ul&gt;
@@ -1992,46 +1989,46 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <div class="bs-docs-example">
             <div class="pagination pagination-large">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
               </ul>
             </div>
             <div class="pagination">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
              </ul>
             </div>
             <div class="pagination pagination-small">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
               </ul>
             </div>
             <div class="pagination pagination-mini">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
               </ul>
             </div>
           </div>
@@ -2063,13 +2060,13 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <div class="bs-docs-example">
             <div class="pagination pagination-centered">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
              </ul>
             </div>
           </div>
@@ -2081,13 +2078,13 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <div class="bs-docs-example">
             <div class="pagination pagination-right">
               <ul>
-                <li><a href="#">&laquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
               </ul>
             </div>
           </div>

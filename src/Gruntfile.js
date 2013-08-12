@@ -97,10 +97,11 @@ module.exports = function(grunt) {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile']
       },
-      lib_test: {
-        files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'qunit']
-      }
+      wvless: {
+        files: ['lib/worldvision/less/mixins.less',
+                'lib/worldvision/less/variables.less'],
+        tasks: ['concat', 'uglify', 'recess', 'copy:docs']
+      },
     },
     /*
     Compile and Minify less
@@ -178,7 +179,14 @@ module.exports = function(grunt) {
         files: [
           {expand:true, cwd:'../', src:['**/*', '!src/**'], dest:'../<%= pkg.name %>'}
         ]
-      }
+      },
+      docs: {
+        files: [
+          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'}
+           /*TODO: copy js to docs*/
+        ]
+      } 
+
     },
     compress: {
       zip: {
@@ -204,6 +212,9 @@ module.exports = function(grunt) {
       }
     }
   });
+ grunt.event.on('watch', function(action, filepath, target){
+  grunt.log.writeln(target + ": " + filepath + ' has ' + action);
+ });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -213,14 +224,18 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   //grunt.loadNpmTasks('grunt-contrib-qunit');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
-  //grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task.
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); //all
-  grunt.registerTask('update', ['shell']); //Update libs
-  grunt.registerTask('compile', ['concat', 'uglify', 'recess']); 
+  // Default task. Compile, concatenate, min, and build zip
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); 
+
+  // Updates Bootstrap, jQuery, and Font Awesome via volo
+  grunt.registerTask('update', ['shell']); 
+
+  // Compiles and concatenates js and less
+  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs']); 
 
 };

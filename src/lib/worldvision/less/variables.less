@@ -8,14 +8,14 @@
 
 //Image path
 //--------------------------
-@imgPath:				"../img/";
+@imgPath:       "../img/";
 
 // Grays
 // -------------------------
 @black:                 #000;
 @grayDarker:            #222;
 @grayDark:              #333;
-@gray:                  #555;
+@gray:                  #666;
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
@@ -32,6 +32,13 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// Primary colors
+// -------------------------
+@wv-orange:             #ff6600;
+@wv-orange-highlight:   #ff9d29;
+@breadcrumb-inactive:   #9f9480;
+
+
 
 // Scaffolding
 // -------------------------
@@ -41,23 +48,23 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             #2d78ab;
+@linkColorHover:        @linkColor;
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "Gill Sans", Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          16px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -65,7 +72,7 @@
 // -------------------------
 // Based on 14px font-size and 20px line-height
 
-@fontSizeLarge:         @baseFontSize * 1.25; // ~18px
+@fontSizeLarge:         @baseFontSize * 1.25; // ~20px
 @fontSizeSmall:         @baseFontSize * 0.85; // ~12px
 @fontSizeMini:          @baseFontSize * 0.75; // ~11px
 
@@ -73,17 +80,18 @@
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:      14px;
+@borderRadiusLarge:     20px;
+@borderRadiusSmall:     12px;
 
 
 // Tables
 // -------------------------
-@tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackground:                   #f1f1f1; // overall background-color
+@tableBackgroundAccent:             #dfe4e8; // for striping
 @tableBackgroundHover:              #f5f5f5; // for hover
 @tableBorder:                       #ddd; // table and cell border
+@tableHeader:                       #b3cad8;
 
 // Buttons
 // -------------------------
@@ -91,8 +99,9 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @wv-orange;
+@btnPrimaryBackgroundHighlight:     @wv-orange-highlight;
+
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -113,8 +122,8 @@
 // Forms
 // -------------------------
 @inputBackground:               @white;
-@inputBorder:                   #ccc;
-@inputBorderRadius:             @baseBorderRadius;
+@inputBorder:                   #ddd;
+@inputBorderRadius:             4px;
 @inputDisabledBackground:       @grayLighter;
 @formActionsBackground:         #f5f5f5;
 @inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
@@ -218,9 +227,14 @@
 @navbarInverseBrandColor:                @navbarInverseLinkColor;
 
 
+// Nav-Tabs
+// -------------------------
+@nav-background-active:                   #2d78ab;
+@nav-border-color:                        @nav-background-active;
+
 // Pagination
 // -------------------------
-@paginationBackground:                #fff;
+@paginationBackground:                @wv-orange;
 @paginationBorder:                    #ddd;
 @paginationActiveBackground:          #f5f5f5;
 
