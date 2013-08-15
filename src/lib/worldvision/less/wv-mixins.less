@@ -277,7 +277,7 @@
   width: 41px;
   height: 41px;
   margin-top: -20px;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 100;
   line-height: 30px;
   color: @white;
@@ -287,20 +287,39 @@
   .border-radius(30px);
   .opacity(100);
 
+    &.left > [class^="icon-"]{
+      position: relative;
+      top: 5px;
+      right: 2px;
+    }
     &.right {
     left: auto;
     right: 15px;
 
     > [class^="icon-"] {
       position: relative;
-      top: 2px;
-      left:4px;
+      top: 5px;
+      left: 2px;
     }
   }
-    &:hover,
+  &:hover,
   &:focus {
+    background-color: @control-hover;
     color: @white;
     text-decoration: none;
     .opacity(100);
   }
+  &:active{
+    background-color: @control-active;
+    text-decoration: none;
+    color: @white;
+    .opacity(100);
+  }
+}
+
+// Carousel indicator pips
+// -----------------------------
+.carousel-indicators .active {
+  background-color: @wv-orange;
+  .box-shadow(0 1px 0 1px fadeout(#000, 60%));
 }
