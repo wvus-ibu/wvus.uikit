@@ -10,20 +10,22 @@ In order to compile the World Vision UiKit, there are a couple of prerequisites 
 
 Your development environment is now setup!
 
-To update the libraries (Bootstrap, jQuery, Font Awesome) in the World Vision UiKit:
-
-*Note: Node Package Manager needs to be installed (See above)
-
-* Run `grunt update`
-
-This will update jQuery, Bootstrap, and Font Awesome or output any errors.
-
 ### Customize
-To customize the World Vision UiKit, put custom World Vision files in the corresponding img, js, or less folders located at src/lib/worldvision/.
+To customize the World Vision UiKit, put custom World Vision files in the corresponding img, js, or less folders located at `src/lib/worldvision`.
 
-* Modify `variables.less` & `mixins.less` for custom CSS
+* Modify `variables.less` & `wv-mixins.less` for custom CSS
 * Create or modify JavaScript files in the `js` folder
 * Add images to the `img` folder
-* Run `grunt` under src directory to compile the css and js, and create a zip of the UiKit for you to merge into the repository.
+* Run `grunt` under src directory to compile the LESS and JS, and create a zip. *See options below.
 
 *Note: Do NOT modify the libraries in the `wvus.uikit/src/lib` except for `worldvision`.  These 3rd party libraries must be kept original in order for the UiKit to compile correctly.
+
+####Grunt Tasks
+[Grunt](http://gruntjs.com/getting-started) is a task runner that automates simple tasks during development. The UiKit includes several tasks to make compiling and updating easier. 
+
+*Note: All tasks are run from the `path/to/wvus.uikit/src` directory.
+
+* `grunt`:  the essential task; Compiles, minifies, and zips to a single zip file
+* `grunt update`: updates Bootstrap, jQuery and Font Awesome to the latest stable version from Github
+* `grunt watch`: monitors the Grunt config and all LESS files in `lib/worldvision/less`. When changes occur, `grunt watch` compiles the LESS.
+* `grunt compile`: compiles LESS and JS (does not minify files. `grunt compile` should be used when simple changes are made otherwise `grunt watch` is the preferred method during development)
