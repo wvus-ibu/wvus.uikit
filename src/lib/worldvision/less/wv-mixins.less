@@ -1,4 +1,34 @@
-// Nav - overrides Bootstrap's navs.less
+/*
+  WVUS UiKit Mixins
+  -----------------
+  Custom styles for the WVUS Brand
+
+ */
+
+
+// Button backgrounds
+// ------------------
+.buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+  // gradientBar will set the background to a pleasing blend of these, to support IE<=9
+  .gradientBar(@endColor, @startColor, @textColor, @textShadow);
+  
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @startColor;
+    *background-color: @startColor;
+    .opacity(70);
+  }
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active{
+    .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+    .opacity(70);
+    background-position: 0 0px;
+
+  }
+}
+
+// Nav 
 // ---
 // 
 // TABS AND PILLS
@@ -271,7 +301,7 @@
 // ---------------------------
 
 .carousel-control {
-  position: absolute;
+  position: absolute; 
   top: 40%;
   left: 15px;
   width: 41px;
@@ -319,7 +349,25 @@
 
 // Carousel indicator pips
 // -----------------------------
-.carousel-indicators .active {
-  background-color: @wv-orange;
-  .box-shadow(0 1px 0 1px fadeout(#000, 60%));
+.carousel-indicators{
+  left: 50%;
+  bottom: -20px;
+  top: auto;
+  right: auto;
+
+  .active {
+    background-color: @pips-active;
+    .box-shadow(0 1px 0 1px fadeout(#000, 75%)); 
+  }
+
+  li{
+    background-color: @pips-inactive;
+    .box-shadow(0 1px 0 1px fadeout(#000, 75%));
+    &:hover{
+      background-color: @pips-hover;
+    }
+    &:active{
+       .active;
+    }
+  }
 }
