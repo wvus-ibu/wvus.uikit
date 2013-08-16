@@ -8,24 +8,41 @@
 
 // Button backgrounds
 // ------------------
-.buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+.buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 2px 1px rgba(0,0,0,.75)) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
-  .gradientBar(@endColor, @startColor, @textColor, @textShadow);
-  
+  .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+  background-position: 0 0;
+
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
-    background-color: @startColor;
-    *background-color: @startColor;
-    .opacity(70);
+    background-color: fade(@startColor, 80%);
+    *background-color: fade(@startColor, 80%);
+    .gradientBar(fade(@startColor, 40%), fade(@endColor, 40%), @textColor, @textShadow);
+    background-position: 0 0;
   }
   // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
   &:active,
   &.active{
-    .gradientBar(@startColor, @endColor, @textColor, @textShadow);
-    .opacity(70);
-    background-position: 0 0px;
+    .gradientBar(fade(@endColor, 40%), fade(@startColor, 40%), @textColor, @textShadow);
+    background-position: 0 0;
 
   }
+}
+
+//Buttons
+//-----------------
+//
+.btn{
+  .box-shadow(none);
+  &:hover,
+  &:focus{
+    background-position: 0 0;
+    .box-shadow(none);
+  }
+}
+
+.btn-primary{
+  .buttonBackground (@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
 }
 
 // Nav 
