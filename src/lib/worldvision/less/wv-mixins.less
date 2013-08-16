@@ -45,6 +45,7 @@
   .buttonBackground (@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
 }
 
+
 // Nav 
 // ---
 // 
@@ -385,6 +386,53 @@
     }
     &:active{
        .active;
+    }
+  }
+}
+
+
+// Accordion
+// --------------------------------------------------
+// Group == heading + body
+.accordion-group {
+  margin-bottom: 2px;
+  border: none;
+  .border-radius(0);
+}
+
+// Inner needs the styles because you can't animate properly with any styles on the element
+.accordion-inner {
+  padding: 9px 15px;
+  margin-left: 38px;
+  border-top: none;
+}
+
+.accordion-toggle{
+  color: #000;
+  font-size: @fontSizeLarge;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: #000;
+  }
+  > [class^="icon-"]{
+    background-color: @wv-orange;
+    color: #fff;
+    font-size: @fontSizeLarge;
+    .border-radius(20px);
+    -moz-padding: 4px 7px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: inline-block;
+    margin-left: 2px;
+
+
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      background-color: @wv-orange-hover;
     }
   }
 }
