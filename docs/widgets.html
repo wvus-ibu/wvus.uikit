@@ -535,9 +535,9 @@ $('.carousel').carousel({
               <div class="accordion" id="accordion2">
                 <div class="accordion-group">
                   <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                      Collapsible Group Item #1
-                    </a>
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" data-target="#collapseOne">
+                      <i class="icon-minus"></i> Group Heading 1
+                    </a> 
                   </div>
                   <div id="collapseOne" class="accordion-body collapse in">
                     <div class="accordion-inner">
@@ -547,8 +547,8 @@ $('.carousel').carousel({
                 </div>
                 <div class="accordion-group">
                   <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                      Collapsible Group Item #2
+                    <a class="accordion-icon accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      <i class="icon-plus"></i> Group Heading 2
                     </a>
                   </div>
                   <div id="collapseTwo" class="accordion-body collapse">
@@ -560,10 +560,22 @@ $('.carousel').carousel({
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                      Collapsible Group Item #3
+                      <i class="icon-plus"></i> Group Heading 3
                     </a>
                   </div>
                   <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                      <i class="icon-plus"></i> Group Heading 4
+                    </a>
+                  </div>
+                  <div id="collapseFour" class="accordion-body collapse">
                     <div class="accordion-inner">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
@@ -609,6 +621,19 @@ $('.carousel').carousel({
 &lt;div id="demo" class="collapse in"&gt; … &lt;/div&gt;
 </pre>
 
+<h4>JS setup</h4>
+<p>This example changes the plus and minus icons when a collapse section is shown or hidden.</p>
+<pre class="prettyprint linenums">
+$('.collapse').on('show', function(){
+  $(this).prev().find('.accordion-toggle > i')
+  .removeClass('icon-plus').addClass('icon-minus');
+});
+
+$('.collapse').on('hide', function(){
+  $(this).prev().find('.accordion-toggle > i')
+  .removeClass('icon-minus').addClass('icon-plus');
+});
+</pre>
 
             <hr class="bs-docs-separator">
 
