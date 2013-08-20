@@ -13,7 +13,7 @@ Your development environment is now setup!
 ### Customize
 To customize the World Vision UiKit, put custom World Vision files in the corresponding img, js, or less folders located at `src/lib/worldvision`.
 
-* Modify `variables.less` & `wv-mixins.less` for custom CSS
+* Modify `variables.less` & `wv-styles.less` for custom CSS
 * Create or modify JavaScript files in the `js` folder
 * Add images to the `img` folder
 * Run `grunt` under src directory to compile the LESS and JS, and create a zip. *See options below.
