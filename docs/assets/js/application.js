@@ -70,6 +70,18 @@
     // carousel demo
     $('#myCarousel').carousel()
 
+    //accordion
+  $('.collapse').on('show', function(){
+    $(this).prev().find('.accordion-toggle > i')
+    .removeClass('icon-plus').addClass('icon-minus');
+  });
+
+  $('.collapse').on('hide', function(){
+    $(this).prev().find('.accordion-toggle > i')
+    .removeClass('icon-minus').addClass('icon-plus');
+  });
+
+
     // javascript build logic
     var inputsComponent = $("#components.download input")
       , inputsPlugin = $("#plugins.download input")
