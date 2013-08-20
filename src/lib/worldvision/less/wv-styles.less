@@ -1,7 +1,8 @@
 /*
-  WVUS UiKit Mixins
+  WVUS UiKit Overrides
   -----------------
   Custom styles for the WVUS Brand
+  lib/worldvision/less/wv-styles.less
 
  */
 
@@ -32,17 +33,25 @@
 //Buttons
 //-----------------
 //
-.btn{
+.btn {
   .box-shadow(none);
   &:hover,
   &:focus{
     background-position: 0 0;
     .box-shadow(none);
+    outline: invert none medium;
   }
 }
 
-.btn-primary{
-  .buttonBackground (@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
+.btn-primary {
+  .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-image: none;
+    .opacity(65);
+    .box-shadow(none);
+  }
 }
 
 
@@ -301,6 +310,13 @@
   background-color: @white;
   padding: 0 5px;
 }
+.pagination-large ul > li:first-child > a,
+.pagination-large ul > li:first-child > span,
+.pagination-large ul > li:last-child > a,
+.pagination-large ul > li:last-child > span {
+  margin-top: 0
+}
+
 
 // TABLES
 // ------
