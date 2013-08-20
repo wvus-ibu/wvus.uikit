@@ -15,20 +15,28 @@ lead: Overview of the project, its contents, and how to get started with a simpl
   <section id="getDownload">
     <h2>Download</h2>
     <p>Download the latest release of the UiKit.</p>
-    <a href="https://github.com/wvus-ibu/wvus.uikit/archive/v0.4.zip" class="btn btn-primary btn-large">
+    <a href="{{ site.download }}" class="btn btn-primary btn-large">
       Download
     </a>
   <section id="contents">
     <h2>Contents</h2>
     <p>The UiKit contains HTML, CSS and JS to get you up running quickly with a WVUS Brand. The different elements have been categoried in groups that make sense. These are across the top, but for more detials: </p>
+    
+    
     <h4><a href="{{ site.baseurl }}/styles">Styles</a></h4>
     <p>Basic and Fluid grid systems with examples show the how easy it is to layout your site along with styling typography and more.</p>
-    <h4><a href="{{ site.baseurl }}/icons">Icons</a></h4>
-    <p>300+ icons from Font Awesome displayed in a list so you see every possible one. (We also provided a PDF cheatsheet for another view)</p>
+    
+    <h4><a href="{{ site.baseurl }}/effects">Effects</a></h4>
+    <p>Added different effects like tooltips, popovers and transitions.</p>
+    
     <h4><a href="{{ site.baseurl }}/ui-elements">UI Elements</a></h4>
     <p>The elements every site wants. Buttons, Navs, breadcrumbs, alerts, progress bars and more can all be found here</p>
+    
     <h4><a href="{{ site.baseurl }}/widgets">Widgets</a></h4>
     <p>Bring our elements to life. Widgets are the JavaScript components that take your site into the modern era.</p>
+
+      <h4><a href="{{ site.baseurl }}/icons">Icons</a></h4>
+      <p>300+ icons from Font Awesome displayed in a list so you see every possible one. (We also provided a PDF cheatsheet for another view)</p>
   </section>
   <!-- File Structure ============================================= -->
   <section id="file-structure">
@@ -58,7 +66,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
         ├── fontawesome-webfont.ttf
         └── fontawesome-webfont.woff
     </pre>
-    <p>This is the basic, out of the box form of the WVUS UiKit. We provide the compiled CSS and JS from Bootstrap and Font Awesome <code>(core)</code>. Any other libraries that are included in the kit will be identified with <code>extra</code> in the file name. The <code>all</code> identifier includes <code>core</code> and <code>extra</code> in one CSS and JS file.</p>
+    <p>This is the basic, out of the box form of the WVUS UiKit. We provide the compiled CSS and JS from <a href="{{ site.bootstrap }}">Bootstrap</a> and <a href="{{ site.font-awesome }}">Font Awesome</a> <code>(core)</code>. Any other libraries that are included in the kit will be identified with <code>extra</code> in the file name. The <code>all</code> identifier includes <code>core</code> and <code>extra</code> in one CSS and JS file.</p>
     <p>The <code>img</code> directory contains all images from Bootstrap, Font Awesome and World Vision. The <code>font</code> folder contains the default fonts included in Font Awesome</p> 
     <div class="alert alert-danger">
       <i class="icon-warning-sign"></i> DO NOT modify the font folder or its contents. Doing so can cause Font Awesome to not work.
@@ -73,7 +81,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <h1>Designers</h1>
   </div>
     <p class="lead">Designers, we've built the UiKit with you in mind. </p>
-    <p>Included in the UiKit are many elements styled to the World Vision brand. Below is a preview of them. You can find all of these and more through out this documentation. Take a look around if you would like to see the way <a href="{{ site.baseurl}}/widgets-basic/#navs"></a>navigation works, look at the <a href="{{ site.baseurl }}/icons/">300+ icons</a> to use at your discretion or check out the fancy <a href="{{ site.baseurl }}/widgets-basic/#carousel">carousel</a> to display images.
+    <p>Included in the UiKit are many elements styled to the World Vision brand. Below is a preview of them. You can find all of these and more through out this documentation. Take a look around to see how the <a href="{{ site.baseurl}}/widgets-basic/#navs"></a>navigation works, look at the <a href="{{ site.baseurl }}/icons/">300+ icons</a> to use at your discretion or check out the fancy <a href="{{ site.baseurl }}/widgets-basic/#carousel">carousel</a> to display images.
     <p>Also, the PSDs that give you a "kitchen sink" look at what elements you have to create your design around are shown below.</p>
   <section id="button-elements">
     <h2>Buttons</h2>
@@ -133,11 +141,14 @@ lead: Overview of the project, its contents, and how to get started with a simpl
       &lt;/html&gt;
   </pre>
   <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.all.min.css</code> and <code>wvus.uikit.all.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
-  <p></p>
+  <div class="alert alert-info">
+    <i class="icon-info-sign"></i>
+    The UiKit requires jQuery to be included before the <code>wvus.uikit.all.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
+  </div>
   </section><!-- end of HTML example -->
   <section id="contribute">
     <h1>Looking to Contribute</h1>
-    <p>If your a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="https://github.com/wvus-ibu/wvus.uikit">Github project</a> to checkout the source.</p>
+    <p>If your a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="{{ site.repo }}">Github project</a> to checkout the source.</p>
     
   </section>
 </section>

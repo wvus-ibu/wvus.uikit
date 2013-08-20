@@ -3,3 +3,10 @@ pygments: true
 permalink: pretty
 
 baseurl: http://wvus-ibu.github.io/wvus.uikit
+
+
+# vars
+repo: https://github.com/wvus-ibu/wvus.uikit
+download: https://github.com/wvus-ibu/wvus.uikit/archive/v0.4.zip
+bootstrap: http://getbootstrap.com/
+font-awesome: http://fortawesome.github.io/Font-Awesome/

@@ -98,9 +98,8 @@ module.exports = function(grunt) {
         tasks: ['jshint:gruntfile']
       },
       wvless: {
-        files: ['lib/worldvision/less/mixins.less',
-                'lib/worldvision/less/variables.less'],
-        tasks: ['concat', 'uglify', 'recess', 'copy:docs']
+        files: ['lib/worldvision/less/*.less'],
+        tasks: ['recess', 'copy:docs']
       },
     },
     /*
@@ -212,9 +211,6 @@ module.exports = function(grunt) {
       }
     }
   });
- grunt.event.on('watch', function(action, filepath, target){
-  grunt.log.writeln(target + ": " + filepath + ' has ' + action);
- });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');

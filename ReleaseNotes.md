@@ -3,6 +3,20 @@
 ## Work In Progress
 * Checkout the project issue tracker [wvus-ibu/wvus.uikit](https://github.com/wvus-ibu/wvus.uikit/issues?state=open) and current [pull requests](https://github.com/wvus-ibu/wvus.uikit/pull/7) 
 
+## 0.4.1 Continue Branding
+* Finished branding of buttons, pagination, tables, breadcrumbs, carousel, accordion, tabs, pills, stackable tabs & pills
+* Setup `grunt watch` to watch files in `lib/worldvision/less`
+* Added some variables for futher customization of text
+* Restructured customization file; `wv-styles.less` is the WVUS Branding Overrides to Bootstrap's base
+* Minor text changes to documentation
+
+
+## 0.4 Branding
+* Styled buttons, tables, breadcrumbs, pagination and navigation 
+* Added contribution link to docs
+* Added Release Notes page
+* Minor organization tweaks to the docs
+
 ## 0.3 Documentation
 * Reorganized the Bootstrap docs 
 * Setup plan to store historical documentation
