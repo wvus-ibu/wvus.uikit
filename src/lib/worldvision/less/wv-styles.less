@@ -20,21 +20,24 @@
 .buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 2px 1px rgba(0,0,0,.75)) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+  .reset-filter();
   background-position: 0 0;
 
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
     background-color: fade(@startColor, 80%);
-    *background-color: fade(@startColor, 80%);
+    *background-color: lighten(@startColor, 80%);
     .gradientBar(fade(@startColor, 40%), fade(@endColor, 40%), @textColor, @textShadow);
+    .reset-filter();
     background-position: 0 0;
   }
-  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  // IE 7 + 8 can't handle box-shadow to show active, we override base active and lighten rather then darken.
   &:active,
   &.active{
+    background-color: lighten(@endColor, 10%) e("\9");
     .gradientBar(fade(@endColor, 40%), fade(@startColor, 40%), @textColor, @textShadow);
+    .reset-filter();
     background-position: 0 0;
-
   }
 }
 
@@ -53,9 +56,11 @@
 
 .btn-primary {
   .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
+
   &.disabled,
   &[disabled] {
     cursor: default;
+    color: #fff;
     background-image: none;
     .opacity(65);
     .box-shadow(none);
