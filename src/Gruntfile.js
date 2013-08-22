@@ -106,6 +106,37 @@ module.exports = function(grunt) {
     Compile and Minify less
      */
     recess: {
+            // Bare(Bootstrap without customizations)
+      distBare: {
+        options: {
+          compile: true
+        },
+        src: 'lib/worldvision/less/bare.less',
+        dest: '../css/<%= pkg.name %>.bare.css'
+      },
+      distBareResponsive: {
+        options:{
+          compile: true
+        },
+        src: 'lib/worldvision/less/bare.responsive.less',
+        dest: '../css/<%= pkg.name %>.bare.responsive.css'
+      },
+      //Bare Minified
+      distBareMin: {
+        options: {
+          compress: true
+        },
+        src: '<%= recess.dist.dest %>',
+        dest: '../css/<%= pkg.name %>.bare.min.css'
+      },
+      //Bare Responsive Minified
+      distBareResponsiveMin: {
+        options: {
+          compress: true
+        },
+        src: '<%= recess.distResponsive.dest %>',
+        dest: '../css/<%= pkg.name %>.bare.responsive.min.css'
+      },
       // Core(Bootstrap)
       dist: {
         options: {
