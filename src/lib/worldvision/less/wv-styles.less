@@ -204,7 +204,7 @@
   margin-right: 0;
   margin-bottom: 3px;
   color: @white;
-  background-color: fadeout(@nav-border-color, 50%);
+  background-color: @nav-background-inactive;
   padding-top: 19px;
   padding-bottom: 19px;
 }
@@ -222,10 +222,11 @@
   border-bottom: 30px solid transparent;
 }
 
+
 // Tabs on the left
 .tabs-left > .nav-tabs {
   float: left;
-  margin-right: 19px;
+  margin-right: 0;
   border-right: none;
 }
 .tabs-left > .nav-tabs > li > a {
@@ -249,11 +250,16 @@
   left: 100%;
   border-left: 20px solid @nav-border-color;
 }
+.tabs-left > .tab-content{
+  padding: 20px 20px 20px 30px;
+  background-color: @tab-content-background;
+  .box-shadow(0 0 8px @tab-content-shadow);
+}
 
 // Tabs on the right
 .tabs-right > .nav-tabs {
   float: right;
-  margin-left: 19px;
+  margin-left: 0;
   border-left: none;
 }
 .tabs-right > .nav-tabs > li > a {
@@ -275,6 +281,11 @@
 .tabs-right > .nav-tabs .active > a:after{
   right: 100%;
   border-right: 20px solid @nav-border-color;
+}
+.tabs-right > .tab-content{
+  padding: 20px 30px 20px 20px;
+  background-color: @tab-content-background;
+  .box-shadow(0 0 8px @tab-content-shadow);
 }
 
 // Breadcrumbs
