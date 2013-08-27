@@ -221,7 +221,13 @@
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
 }
-
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus,
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: @nav-border-color;
+  background-color: @linkColor;
+}
 
 // Tabs on the left
 .tabs-left > .nav-tabs {
@@ -233,11 +239,6 @@
   position: relative;
   margin-right: -1px;
   .border-radius(0);
-}
-
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: @nav-border-color;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
@@ -266,10 +267,6 @@
   position: relative;
   margin-left: -1px;
   .border-radius(0);
-}
-.tabs-right > .nav-tabs > li > a:hover,
-.tabs-right > .nav-tabs > li > a:focus {
-  border-color: @nav-border-color;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
