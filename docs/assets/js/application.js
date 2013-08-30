@@ -70,7 +70,7 @@
     // carousel demo
     $('#myCarousel').carousel()
 
-    //accordion
+    //accordion demo
   $('.collapse').on('show', function(){
     $(this).prev().find('.accordion-toggle > i')
     .removeClass('icon-plus').addClass('icon-minus');
@@ -166,4 +166,4 @@ $.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
   }
 })
 
-}(window.jQuery)
+}(window.uikit)
