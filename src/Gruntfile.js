@@ -52,7 +52,7 @@ module.exports = function(grunt) {
     /*
     Minify JS
      */
-    uglify: { 
+    uglify: {
       options: {
         banner: '<%= banner %>'
       },
@@ -219,8 +219,8 @@ module.exports = function(grunt) {
       },
       docs: {
         files: [
-          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'}
-           /*TODO: copy js to docs*/
+          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
+          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'}
         ]
       } 
 
