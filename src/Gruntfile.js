@@ -19,26 +19,33 @@ module.exports = function(grunt) {
         banner: '<%= banner %>',
         stripBanners: false
       },
+      distJquery: {
+        src: [
+          'lib/jquery/jquery.js',
+          'lib/jquery/noconflict-jquery.js'
+        ],
+        dest: '../js/jquery.js'
+      },
       dist: { //core
-        src: [// Bootstrap
-        	  'lib/bootstrap/js/bootstrap-transition.js',
-        	  'lib/bootstrap/js/bootstrap-alert.js',
-        	  'lib/bootstrap/js/bootstrap-button.js',
-        	  'lib/bootstrap/js/bootstrap-carousel.js',
-        	  'lib/bootstrap/js/bootstrap-collapse.js',
-        	  'lib/bootstrap/js/bootstrap-dropdown.js',
-        	  'lib/bootstrap/js/bootstrap-modal.js',
-        	  'lib/bootstrap/js/bootstrap-tooltip.js',
-        	  'lib/bootstrap/js/bootstrap-popover.js',
-        	  'lib/bootstrap/js/bootstrap-scrollspy.js',
-        	  'lib/bootstrap/js/bootstrap-tab.js',
-        	  'lib/bootstrap/js/bootstrap-typeahead.js',
-        	  'lib/bootstrap/js/bootstrap-affix.js'],
+        src: [
+            'lib/bootstrap/js/bootstrap-transition.js',
+            'lib/bootstrap/js/bootstrap-alert.js',
+            'lib/bootstrap/js/bootstrap-button.js',
+            'lib/bootstrap/js/bootstrap-carousel.js',
+            'lib/bootstrap/js/bootstrap-collapse.js',
+            'lib/bootstrap/js/bootstrap-dropdown.js',
+            'lib/bootstrap/js/bootstrap-modal.js',
+            'lib/bootstrap/js/bootstrap-tooltip.js',
+            'lib/bootstrap/js/bootstrap-popover.js',
+            'lib/bootstrap/js/bootstrap-scrollspy.js',
+            'lib/bootstrap/js/bootstrap-tab.js',
+            'lib/bootstrap/js/bootstrap-typeahead.js',
+            'lib/bootstrap/js/bootstrap-affix.js'],
         dest: '../js/<%= pkg.name %>.core.js'
       },
       distAll: {
         src: // Core 
-        	  '<%= concat.dist.dest %>',
+            '<%= concat.dist.dest %>',
         dest: '../js/<%= pkg.name %>.all.js'
     }
   },
@@ -58,9 +65,9 @@ module.exports = function(grunt) {
         dest: '../js/<%= pkg.name %>.all.min.js'
       },
       distJquery: {
-        src: 'lib/jquery/jquery.js',
+        src: '../js/jquery.js',
         dest: '../js/jquery.min.js'
-      }           
+      }
     },
 
     jshint: {
@@ -196,7 +203,7 @@ module.exports = function(grunt) {
         },
         src: '<%= recess.distAllResponsive.dest %>',
         dest: '../css/<%= pkg.name %>.all.responsive.min.css'
-      },              
+      },
     },
     copy: {
       images: {
