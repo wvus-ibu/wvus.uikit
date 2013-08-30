@@ -114,4 +114,4 @@
   })
 
 
-}(window.jQuery);
+}(window.uikit);

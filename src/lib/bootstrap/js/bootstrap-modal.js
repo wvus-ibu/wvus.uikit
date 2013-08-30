@@ -244,4 +244,4 @@
       })
   })
 
-}(window.jQuery);
+}(window.uikit);

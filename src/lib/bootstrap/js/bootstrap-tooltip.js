@@ -358,4 +358,4 @@
     return this
   }
 
-}(window.jQuery);
+}(window.uikit);

@@ -332,4 +332,4 @@
     $this.typeahead($this.data())
   })
 
-}(window.jQuery);
+}(window.uikit);

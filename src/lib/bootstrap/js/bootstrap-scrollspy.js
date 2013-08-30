@@ -159,4 +159,4 @@
     })
   })
 
-}(window.jQuery);
+}(window.uikit);
