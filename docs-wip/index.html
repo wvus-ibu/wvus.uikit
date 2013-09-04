@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="wvus-uikit">
+  <head>
+    <meta charset="utf-8">
+    <title>World Vision UiKit | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+  <!-- Main css -->
+    <link href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/css/wvus.uikit.all.css" rel="stylesheet">
+    <link href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/css/wvus.uikit.all.responsive.css" rel="stylesheet">
+    <!-- CSS libraries -->
+    <link href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/google-code-prettify/prettify.css" rel="stylesheet">
+    <!-- Bootstrap Docs Specific -->
+    <link rel="stylesheet" type="text/css" href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/css/docs.css">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/ico/favicon.png">
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+        <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">World Vision</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/">Getting Started</a>
+              </li>
+              <li >
+                <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/styles">Styles</a>
+              </li>
+              <li >
+               <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/effects/"> Effects</a>
+              </li>
+              <li >
+               <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/ui-elements/"> UI Elements</a>
+              </li>
+              <li >
+                <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/widgets/">Widgets</a>
+              </li>
+              <li >
+                <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/icons">Icons</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>World Vision UiKit</h1>
+    <p class="lead">Overview of the project, its contents, and how to get started with a simple template.</p>
+    <a href="https://github.com/wvus-ibu/wvus.uikit" target="_blank">Github Project</a> 
+  </div>
+</header> 
+    <div class="container">
+        <!-- Left nav (Docs)
+        ================================================= -->
+        <div class="row">
+            <div class="span3 bs-docs-sidebar" >
+                <ul class="nav nav-list bs-docs-sidenav">
+                    
+                            <li>
+	<a href="#introduction"><i class="icon-chevron-right"></i> Introduction</a>
+	<ul class="nav nav-list">
+
+		<li>
+			<a href="#contents"><i class="icon-chevron-right"></i> Contents</a>
+		</li>
+		<li>
+			<a href="#file-structure"><i class="icon-chevron-right"></i> File Structure</a>
+		</li>
+	</ul>
+</li>
+<li>
+	<a href="#designers"><i class="icon-chevron-right"></i> Designers</a>
+	<ul class="nav nav-list">
+		<li>
+			<a href="#button-elements"><i class="icon-chevron-right"></i> Button Elements</a>
+		</li>
+			<li>
+			<a href="#custom-elements"><i class="icon-chevron-right"></i> Custom Elements</a>
+		</li>
+			<li>
+			<a href="#form-elements"><i class="icon-chevron-right"></i> Form Elements</a>
+		</li>
+	</ul>
+</li>
+<li>
+	<a href="#developers"><i class="icon-chevron-right"></i> Developers</a>
+	<ul class="nav nav-list">
+			<li>
+			<a href="#html-example"><i class="icon-chevron-right"></i> HTML Example</a>
+		</li>
+		<li>
+			<a href="#namespace"><i class="icon-chevron-right"></i> Namespace</a>
+		</li>
+	</ul>
+</li>
+<li>
+	<a href="#contribute"><i class="icon-chevron-right"></i> Contribute</a>
+</li>
+
+                        
+                </ul>
+            </div>
+            <div class="span9">
+                <section id="introduction">
+  <div class="page-header">
+    <h1>Introduction</h1>
+  </div>
+  <p class="lead">
+    The World Vision UiKit is used for styling of elements and JavaScript widgets used across the World Vision sites.
+  </p>
+  
+  <section id="getDownload">
+    <h2>Download</h2>
+    <p>Download the latest release of the UiKit.</p>
+    <a href="https://github.com/wvus-ibu/wvus.uikit/archive/v0.4.1.zip" class="btn btn-primary btn-large">
+      Download
+    </a>
+  <section id="contents">
+    <h2>Contents</h2>
+    <p>The UiKit contains HTML, CSS and JS to get you up running quickly with a WVUS Brand. The different elements have been categoried in groups that make sense. These are across the top, but for more detials: </p>
+    
+    
+    <h4><a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/styles">Styles</a></h4>
+    <p>Basic and Fluid grid systems with examples show the how easy it is to layout your site along with styling typography and more.</p>
+    
+    <h4><a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/effects">Effects</a></h4>
+    <p>Added different effects like tooltips, popovers and transitions.</p>
+    
+    <h4><a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/ui-elements">UI Elements</a></h4>
+    <p>The elements every site wants. Buttons, Navs, breadcrumbs, alerts, progress bars and more can all be found here</p>
+    
+    <h4><a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/widgets">Widgets</a></h4>
+    <p>Bring our elements to life. Widgets are the JavaScript components that take your site into the modern era.</p>
+
+      <h4><a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/icons">Icons</a></h4>
+      <p>300+ icons from Font Awesome displayed in a list so you see every possible one. (We also provided a PDF cheatsheet for another view)</p>
+  </section>
+  <!-- File Structure ============================================= -->
+  <section id="file-structure">
+    <h2>File Structure</h2>
+    <p class="lead">Within the UiKit, you can easily find the files to link in your site</p>
+    <p>Once downloaded, unzip the folder to see the structure of the kit. You will see this:</p>
+    <pre class="prettyprints">
+  wvus.uikit/
+    ├── css/
+    │   ├── wvus.uikit.all.css
+    │   ├── wvus.uikit.all.min.css
+    │   ├── wvus.uikit.core.css
+    │   ├── wvus.uikit.core.min.css
+    ├── js/
+    │   ├── jquery.js
+    │   ├── jquery.min.js
+    │   ├── wvus.uikit.all.js
+    │   ├── wvus.uikit.all.min.js
+    │   ├── wvus.uikit.core.js
+    │   ├── wvus.uikit.core.min.js
+    ├── img/
+    │   ├── {World Vision Images}
+    │   └── 
+    └── font/
+        ├── FontAwesome.otf
+        ├── fontawesome-webfont.eot
+        ├── fontawesome-webfont.svg
+        ├── fontawesome-webfont.ttf
+        └── fontawesome-webfont.woff
+    </pre>
+    <p>This is the basic, out of the box form of the WVUS UiKit. We provide the compiled CSS and JS from <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://fontawesome.github.io/Font-Awesome/">Font Awesome</a> <code>(core)</code>. Any other libraries that are included in the kit will be identified with <code>extra</code> in the file name. The <code>all</code> identifier includes <code>core</code> and <code>extra</code> in one CSS and JS file.</p>
+    <p>The <code>img</code> directory contains all images from Bootstrap, Font Awesome and World Vision. The <code>font</code> folder contains the default fonts included in Font Awesome</p> 
+    <div class="alert alert-danger">
+      <i class="icon-warning-sign"></i> DO NOT modify the font folder or its contents. Doing so can cause Font Awesome to not work.
+    </div>
+  </section><!-- end of file structure -->
+
+</section>
+
+<!-- Designers ================================== -->
+<section id="designers">
+  <div class="page-header">
+    <h1>Designers</h1>
+  </div>
+    <p class="lead">Designers, we've built the UiKit with you in mind. </p>
+    <p>Included in the UiKit are many elements styled to the World Vision brand. Below is a preview of them. You can find all of these and more through out this documentation. Take a look around to see how the <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/widgets-basic/#navs"></a>navigation works, look at the <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/icons/">300+ icons</a> to use at your discretion or check out the fancy <a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/widgets-basic/#carousel">carousel</a> to display images.
+    <p>Also, the PSDs that give you a "kitchen sink" look at what elements you have to create your design around are shown below.</p>
+  <section id="button-elements">
+    <h2>Buttons</h2>
+    <p>All the buttons inside the World Vision brand.</p>
+    <img src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/img/wvus/wv-button.jpg" class="img-polaroid">
+  </section>
+  <section id="custom-elements">
+    <h2>Custom Elements</h2>
+    <p>Custom elelments used on different parts of the site.</p>
+    <img src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/img/wvus/wv-customelements.jpg" class="img-polaroid">
+  </section>
+  <section id="form-elements">
+    <h2>Form elements</h2>
+    <p>Standard form elements get a face lift.</p>
+    <img src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/img/wvus/wv-form.jpg" class="img-polaroid">
+  </section>
+</section>
+
+<!-- Developers ========================== -->
+<section id="developers">
+  <div class="page-header">
+    <h1>Developers</h1>
+  </div>
+  <p class="lead">{Lead in to devs section}</p>
+  <section id="html-example">
+    <h2>HTML Example</h2>
+    <p class="lead">Including the World Vision UiKit is easy. Here's an example to prove it.</p>
+    <p>Here's a typical <strong>HTML File:</strong></p>
+    <pre class="prettyprint linenums">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+          &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+  <p>To make it UiKit compatible, just include the CSS and JS files:</p>
+  <pre class="prettyprint linenums">
+    &lt;!DOCTYPE html&gt;
+      &lt;html class="uikit"&gt;
+        &lt;head&gt;
+          &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;!-- WVUS UiKit --&gt;
+          &lt;link rel="stylesheet" type="text/css" href="css/wvus.uikit.all.min.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+          &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="js/wvus.uikit.all.min.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+  </pre>
+  <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.all.min.css</code> and <code>wvus.uikit.all.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
+  <div class="alert alert-info">
+    <i class="icon-info-sign"></i>
+    The UiKit requires jQuery to be included before the <code>wvus.uikit.all.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
+  </div>
+  <section id="namespace">
+    <h2>Namespace</h2>
+    <p class="lead">The UiKit namespaces the CSS and JavaScript to avoid any issues with other sites, JavaScript libraries and other versions of jQuery</p>
+    <h3>Less </h3>
+    <p><span class="label label-info">Watch Out!</span> The UiKit keeps it's CSS in a namespace of <code>wvus-uikit</code> so other CSS won't conflict with it. What this means is the class <code>wvus-uikit</code> needs to be added before calling the class of the component being used.</p>
+    <p><code class="prettyprint">
+      &lt;button class="wvus-uikit btn btn-primary"&gt;Sample Button&lt;/button&gt;
+    </code></p>
+    <p><strong>OR</strong></p>
+    <p>Add <code>class="wvus-uikit"</code> to the <code>&lt;html&gt;</code> element. These docs use this method.</p>
+    <h3>jQuery</h3>
+    <p><span class="label label-info">Heads Up!</span> The UiKit uses a custom form of jQuery. It <strong>does not</strong> use the <code>$</code> or <code>jQuery</code> object. Instead, the UiKit has an assigned variable of <code>wvusUikit</code> that it uses. This is to prevent JavaScript and other jQuery libraries from conflicting with the UiKit plugins.</p>
+  </section>
+  </section><!-- end of HTML example -->
+  <section id="contribute">
+    <h1>Looking to Contribute</h1>
+    <p>If your a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="https://github.com/wvus-ibu/wvus.uikit">Github project</a> to checkout the source.</p>    
+  </section>
+</section>
+            </div>
+        </div>
+    </div>
+        <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.github.io/Font-Awesome/">Font Awesome</a></p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <!-- NO Blog Yet
+          <li><a href="http://wvus-ibu.github.io/wvus.uikit/docs-wip/blog">Blog</a></li>
+          <li class="muted">&middot;</li>
+        -->
+          <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/wvus-ibu/wvus.uikit/blob/master/ReleaseNotes.md">Changelog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+        <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/js/jquery.min.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/js/wvus.uikit.all.js"></script>
+
+    <!-- external Libraries -->
+    <script src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/js/holder/holder.js"></script>
+    <script src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/google-code-prettify/prettify.js"></script>
+
+        <!-- Bootstrap Docs JS file (ONLY USED FOR THEIR DOCS) -->
+    <script src="http://wvus-ibu.github.io/wvus.uikit/docs-wip/assets/js/application.js"></script>
+
+    </body>
+</html>
+
+
