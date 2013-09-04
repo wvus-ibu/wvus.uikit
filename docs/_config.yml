@@ -2,7 +2,7 @@ pygments: true
 #Permalink
 permalink: pretty
 
-baseurl: http://wvus-ibu.github.io/wvus.uikit/docs-wip
+baseurl: http://wvus-ibu.github.io/wvus.uikit
 
 
 exclude: ['tests']
