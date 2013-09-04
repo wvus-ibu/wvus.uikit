@@ -355,6 +355,46 @@ pre {
   font-size: @baseFontSize - 4;
 }
 
+
+// Progress Bars
+// Danger (red)
+.progress-danger .bar, .progress .bar-danger {
+  #gradient > .vertical(lighten(@progressDanger, 30%), @progressDanger);
+}
+.progress-danger.progress-striped .bar, .progress-striped .bar-danger {
+  #gradient > .striped(@progressDanger);
+}
+
+// Success (green)
+.progress-success .bar, .progress .bar-success {
+  #gradient > .vertical(lighten(@progressSuccess, 30%), @progressSuccess);
+}
+.progress-success.progress-striped .bar, .progress-striped .bar-success {
+  #gradient > .striped(@progressSuccess);
+}
+
+// Info (teal)
+.progress-info .bar, .progress .bar-info {
+  #gradient > .vertical(lighten(@progressInfo, 10%), @progressInfo);
+}
+.progress-info.progress-striped .bar, .progress-striped .bar-info {
+  #gradient > .striped(@progressInfo);
+}
+
+// Warning (orange)
+.progress-warning .bar, .progress .bar-warning {
+  #gradient > .vertical(lighten(@progressWarning, 15%), @progressWarning);
+}
+.progress-warning.progress-striped .bar, .progress-striped .bar-warning {
+  #gradient > .striped(lighten(@progressWarning, 15%));
+}
+
+
+
+
+
+
+
 // CAROUSEL
 // --------------
 
