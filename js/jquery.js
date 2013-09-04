@@ -1,4 +1,4 @@
-/*! wvus.uikit - v0.4.1 - 2013-08-30
+/*! wvus.uikit - v0.4.2-beta - 2013-09-04
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 ; Licensed  */
 /*!
@@ -9475,4 +9475,4 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 })( window );
 
 /* Establishes uikit as the object to use with UiKit JS plugins*/
-var uikit = jQuery.noConflict(true);
+var wvusUikit = jQuery.noConflict(true);

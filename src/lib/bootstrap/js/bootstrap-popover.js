@@ -111,4 +111,4 @@
     return this
   }
 
-}(window.uikit);
+}(window.wvusUikit);

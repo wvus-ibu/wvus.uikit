@@ -57,4 +57,4 @@
 
   })
 
-}(window.uikit);
+}(window.wvusUikit);

@@ -159,4 +159,4 @@
     })
   })
 
-}(window.uikit);
+}(window.wvusUikit);

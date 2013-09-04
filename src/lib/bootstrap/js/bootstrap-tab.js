@@ -141,4 +141,4 @@
     $(this).tab('show')
   })
 
-}(window.uikit);
+}(window.wvusUikit);

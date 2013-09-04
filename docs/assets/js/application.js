@@ -166,4 +166,4 @@ $.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
   }
 })
 
-}(window.uikit)
+}(window.wvusUikit)

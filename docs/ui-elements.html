@@ -284,13 +284,13 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 
           <h4>Via JavaScript</h4>
           <p>Call the dropdowns via JavaScript:</p>
-          <pre class="prettyprint linenums">uikit('.dropdown-toggle').dropdown()</pre>
+          <pre class="prettyprint linenums">wvusUikit('.dropdown-toggle').dropdown()</pre>
 
           <h4>Options</h4>
           <p><em>None</em></p>
 
           <h4>Methods</h4>
-          <h4>uikit().dropdown('toggle')</h4>
+          <h4>wvusUikit().dropdown('toggle')</h4>
           <p>A programmatic api for toggling menus for a given navbar or tabbed navigation.</p>
         </section>
 
@@ -950,7 +950,7 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
 
             <h3>Usage</h3>
             <p>Enable buttons via JavaScript:</p>
-            <pre class="prettyprint linenums">uikit('.nav-tabs').button()</pre>
+            <pre class="prettyprint linenums">wvusUikit('.nav-tabs').button()</pre>
 
             <h4>Markup</h4>
             <p>Data attributes are integral to the button plugin. Check out the example code below for the various markup types.</p>
@@ -959,14 +959,14 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
             <p><em>None</em></p>
 
             <h4>Methods</h4>
-            <h5>uikit().button('toggle')</h5>
+            <h5>wvusUikit().button('toggle')</h5>
             <p>Toggles push state. Gives the button the appearance that it has been activated.</p>
             <div class="alert alert-info">
               <strong>Heads up!</strong>
               You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
             </div>
             <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-toggle="button" &gt;…&lt;/button&gt;</pre>
-            <h5>uikit().button('loading')</h5>
+            <h5>wvusUikit().button('loading')</h5>
             <p>Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
             </p>
             <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-loading-text="loading stuff..." &gt;...&lt;/button&gt;</pre>
@@ -974,13 +974,13 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
               <strong>Heads up!</strong>
               <a href="https://github.com/twbs/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
             </div>
-            <h5>uikit().button('reset')</h5>
+            <h5>wvusUikit().button('reset')</h5>
             <p>Resets button state - swaps text to original text.</p>
-            <h5>uikit().button(string)</h5>
+            <h5>wvusUikit().button(string)</h5>
             <p>Resets button state - swaps text to any data defined text state.</p>
 <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-complete-text="finished!" &gt;...&lt;/button&gt;
 &lt;script&gt;
-  uikit('.btn').button('complete')
+  wvusUikit('.btn').button('complete')
 &lt;/script&gt;
 </pre>
           </section><!-- button-effects -->
@@ -1417,16 +1417,16 @@ lead: Dozens of reusable components built to provide navigation, alerts, popover
           <h3>Usage</h3>
           <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 <pre class="prettyprint linenums">
-uikit('#myTab a').click(function (e) {
+wvusUikit('#myTab a').click(function (e) {
   e.preventDefault();
-  uikit(this).tab('show');
+  wvusUikit(this).tab('show');
 })</pre>
           <p>You can activate individual tabs in several ways:</p>
 <pre class="prettyprint linenums">
-uikit('#myTab a[href="#profile"]').tab('show'); // Select tab by name
-uikit('#myTab a:first').tab('show'); // Select first tab
-uikit('#myTab a:last').tab('show'); // Select last tab
-uikit('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
+wvusUikit('#myTab a[href="#profile"]').tab('show'); // Select tab by name
+wvusUikit('#myTab a:first').tab('show'); // Select first tab
+wvusUikit('#myTab a:last').tab('show'); // Select last tab
+wvusUikit('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 </pre>
 
           <h4>Markup</h4>
@@ -1440,7 +1440,7 @@ uikit('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 &lt;/ul&gt;</pre>
 
           <h4>Methods</h4>
-          <h5>uikit().tab</h5>
+          <h5>wvusUikit().tab</h5>
           <p>
             Activates a tab element and content container. Tab should have either a <code>data-target</code> or an <code>href</code> targeting a container node in the DOM.
           </p>
@@ -1460,8 +1460,8 @@ uikit('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 &lt;/div&gt;
 
 &lt;script&gt;
-  uikit(function () {
-    uikit('#myTab a:last').tab('show');
+  wvusUikit(function () {
+    wvusUikit('#myTab a:last').tab('show');
   })
 &lt;/script&gt;
 </pre>
@@ -1486,7 +1486,7 @@ uikit('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
             </tbody>
           </table>
 <pre class="prettyprint linenums">
-uikit('a[data-toggle="tab"]').on('shown', function (e) {
+wvusUikit('a[data-toggle="tab"]').on('shown', function (e) {
   e.target // activated tab
   e.relatedTarget // previous tab
 })
@@ -2622,18 +2622,18 @@ uikit('a[data-toggle="tab"]').on('shown', function (e) {
 
         <h3>Usage</h3>
         <p>Enable dismissal of an alert via JavaScript:</p>
-        <pre class="prettyprint linenums">uikit(".alert").alert()</pre>
+        <pre class="prettyprint linenums">wvusUikit(".alert").alert()</pre>
 
         <h4>Markup</h4>
         <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
         <pre class="prettyprint linenums">&lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
 
         <h4>Methods</h4>
-        <h5>uikit().alert()</h5>
+        <h5>wvusUikit().alert()</h5>
         <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
         <h5>.alert('close')</h5>
         <p>Closes an alert.</p>
-        <pre class="prettyprint linenums">uikit(".alert").alert('close')</pre>
+        <pre class="prettyprint linenums">wvusUikit(".alert").alert('close')</pre>
 
 
         <h4>Events</h4>
@@ -2657,7 +2657,7 @@ uikit('a[data-toggle="tab"]').on('shown', function (e) {
           </tbody>
         </table>
 <pre class="prettyprint linenums">
-uikit('#my-alert').bind('closed', function () {
+wvusUikit('#my-alert').bind('closed', function () {
   // do something…
 })
 </pre>

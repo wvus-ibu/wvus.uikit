@@ -114,4 +114,4 @@
   })
 
 
-}(window.uikit);
+}(window.wvusUikit);

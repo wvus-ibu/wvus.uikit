@@ -1,7 +1,7 @@
-/*! wvus.uikit - v0.4.1 - 2013-08-30
+/*! wvus.uikit - v0.4.2-beta - 2013-09-04
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 ; Licensed  */
-/*! wvus.uikit - v0.4.1 - 2013-08-30
+/*! wvus.uikit - v0.4.2-beta - 2013-09-04
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 ; Licensed  */
 /* ===================================================
@@ -63,7 +63,7 @@
 
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 /* ==========================================================
  * bootstrap-alert.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#alerts
@@ -162,7 +162,7 @@
 
   $(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
 
-}(window.uikit);
+}(window.wvusUikit);
 /* ============================================================
  * bootstrap-button.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#buttons
@@ -267,7 +267,7 @@
     $btn.button('toggle')
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 /* ==========================================================
  * bootstrap-carousel.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#carousel
@@ -474,7 +474,7 @@
     e.preventDefault()
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 /* =============================================================
  * bootstrap-collapse.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#collapse
@@ -641,7 +641,7 @@
     $(target).collapse(option)
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 /* ============================================================
  * bootstrap-dropdown.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
@@ -810,7 +810,7 @@
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
-}(window.uikit);
+}(window.wvusUikit);
 
 /* =========================================================
  * bootstrap-modal.js v2.3.2
@@ -1058,7 +1058,7 @@
       })
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 
 /* ===========================================================
  * bootstrap-tooltip.js v2.3.2
@@ -1420,7 +1420,7 @@
     return this
   }
 
-}(window.uikit);
+}(window.wvusUikit);
 
 /* ===========================================================
  * bootstrap-popover.js v2.3.2
@@ -1535,7 +1535,7 @@
     return this
   }
 
-}(window.uikit);
+}(window.wvusUikit);
 
 /* =============================================================
  * bootstrap-scrollspy.js v2.3.2
@@ -1698,7 +1698,7 @@
     })
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 /* ========================================================
  * bootstrap-tab.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#tabs
@@ -1842,7 +1842,7 @@
     $(this).tab('show')
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 /* =============================================================
  * bootstrap-typeahead.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
@@ -2177,7 +2177,7 @@
     $this.typeahead($this.data())
   })
 
-}(window.uikit);
+}(window.wvusUikit);
 
 /* ==========================================================
  * bootstrap-affix.js v2.3.2
@@ -2295,4 +2295,4 @@
   })
 
 
-}(window.uikit);
+}(window.wvusUikit);

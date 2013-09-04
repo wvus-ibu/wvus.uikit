@@ -102,4 +102,4 @@
     $btn.button('toggle')
   })
 
-}(window.uikit);
+}(window.wvusUikit);
