@@ -2,7 +2,10 @@ pygments: true
 #Permalink
 permalink: pretty
 
-baseurl: http://wvus-ibu.github.io/wvus.uikit
+baseurl: http://wvus-ibu.github.io/wvus.uikit/docs-wip
+
+paginate: 2
+paginate_path: "blog/page:num"
 
 exclude: ['tests']
 
@@ -12,4 +15,4 @@ issues: https://github.com/wvus-ibu/wvus.uikit/issues?state=open
 changelog: https://github.com/wvus-ibu/wvus.uikit/blob/master/ReleaseNotes.md
 download: https://github.com/wvus-ibu/wvus.uikit/archive/v0.4.1.zip
 bootstrap: http://getbootstrap.com/
-font-awesome: http://fortawesome.github.io/Font-Awesome/
+font-awesome: http://fontawesome.github.io/Font-Awesome/

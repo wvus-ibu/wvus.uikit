@@ -1,6 +1,6 @@
 {
   "name": "wvus.uikit",
-  "version": "0.4.1",
+  "version": "0.4.2-beta",
   "description": "Base UI styles and controls for worldvision.org",
   "main": "Gruntfile.js",
   "scripts": {

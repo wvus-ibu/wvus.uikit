@@ -3,9 +3,10 @@
 ## Work In Progress
 * Checkout the project issue tracker [wvus-ibu/wvus.uikit](https://github.com/wvus-ibu/wvus.uikit/issues?state=open) and current [pull requests](https://github.com/wvus-ibu/wvus.uikit/pull/7) 
 
-## 
+## 0.4.2-beta
 * Updated Holder.js and html5shiv.js to work with IE<9
-
+* Finishing Branding 
+* Namespaced CSS and JS to use `wvus-uikit` and `wvusUikit`, respectively
 * Bug Fixes
 
 ## 0.4.1 Continue Branding
