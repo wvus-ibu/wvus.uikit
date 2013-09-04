@@ -4,7 +4,7 @@
   Bootstrap's documentation styles
   Special styles for presenting Bootstrap's documentation and examples
 */
-.uikit {
+.wvus-uikit {
   /* Body and structure
 -------------------------------------------------- */
 
@@ -161,18 +161,18 @@
 ------------------------- */
 
 }
-.uikit body {
+.wvus-uikit body {
   position: relative;
   padding-top: 40px;
 }
-.uikit h3 code {
+.wvus-uikit h3 code {
   font-size: 14px;
   font-weight: normal;
 }
-.uikit body > .navbar {
+.wvus-uikit body > .navbar {
   font-size: 13px;
 }
-.uikit body > .navbar .brand {
+.wvus-uikit body > .navbar .brand {
   padding-right: 0;
   padding-left: 0;
   margin-left: 20px;
@@ -184,24 +184,24 @@
   -moz-transition: all .2s linear;
   transition: all .2s linear;
 }
-.uikit body > .navbar .brand:hover {
+.wvus-uikit body > .navbar .brand:hover {
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.4);
 }
-.uikit section {
+.wvus-uikit section {
   padding-top: 30px;
 }
-.uikit section > .page-header,
-.uikit section > .lead {
+.wvus-uikit section > .page-header,
+.wvus-uikit section > .lead {
   color: #5a5a5a;
 }
-.uikit section > ul li {
+.wvus-uikit section > ul li {
   margin-bottom: 5px;
 }
-.uikit .bs-docs-separator {
+.wvus-uikit .bs-docs-separator {
   margin: 40px 0 39px;
 }
-.uikit hr.soften {
+.wvus-uikit hr.soften {
   height: 1px;
   margin: 70px 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
@@ -210,7 +210,7 @@
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   border: 0;
 }
-.uikit .jumbotron {
+.wvus-uikit .jumbotron {
   position: relative;
   padding: 40px 0;
   color: #fff;
@@ -244,30 +244,30 @@
   -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
 }
-.uikit .jumbotron h1 {
+.wvus-uikit .jumbotron h1 {
   font-size: 80px;
   font-weight: normal;
   letter-spacing: -1px;
   line-height: 1;
 }
-.uikit .jumbotron p {
+.wvus-uikit .jumbotron p {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
   margin-bottom: 30px;
 }
-.uikit .jumbotron a {
+.wvus-uikit .jumbotron a {
   color: #fff;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.uikit .jumbotron a:hover {
+.wvus-uikit .jumbotron a:hover {
   color: #fff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
-.uikit .masthead .btn {
+.wvus-uikit .masthead .btn {
   padding: 19px 24px;
   font-size: 24px;
   font-weight: 200;
@@ -285,21 +285,21 @@
   -moz-transition: none;
   transition: none;
 }
-.uikit .masthead .btn:hover {
+.wvus-uikit .masthead .btn:hover {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
 }
-.uikit .masthead .btn:active {
+.wvus-uikit .masthead .btn:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
-.uikit .jumbotron .container {
+.wvus-uikit .jumbotron .container {
   position: relative;
   z-index: 2;
 }
-.uikit .jumbotron:after {
+.wvus-uikit .jumbotron:after {
   content: '';
   display: block;
   position: absolute;
@@ -311,124 +311,124 @@
   opacity: .4;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1) {
-  .uikit .jumbotron:after {
+  .wvus-uikit .jumbotron:after {
     background-size: 150px 150px;
   }
 }
-.uikit .masthead {
+.wvus-uikit .masthead {
   padding: 70px 0 80px;
   margin-bottom: 0;
   color: #fff;
 }
-.uikit .masthead h1 {
+.wvus-uikit .masthead h1 {
   font-size: 120px;
   line-height: 1;
   letter-spacing: -2px;
 }
-.uikit .masthead p {
+.wvus-uikit .masthead p {
   font-size: 40px;
   font-weight: 200;
   line-height: 1.25;
 }
-.uikit .masthead-links {
+.wvus-uikit .masthead-links {
   margin: 0;
   list-style: none;
 }
-.uikit .masthead-links li {
+.wvus-uikit .masthead-links li {
   display: inline;
   padding: 0 10px;
   color: rgba(255, 255, 255, 0.25);
 }
-.uikit .bs-docs-social {
+.wvus-uikit .bs-docs-social {
   padding: 15px 0;
   text-align: center;
   background-color: #f5f5f5;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ddd;
 }
-.uikit .bs-docs-social-buttons {
+.wvus-uikit .bs-docs-social-buttons {
   margin-left: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
-.uikit .bs-docs-social-buttons li {
+.wvus-uikit .bs-docs-social-buttons li {
   display: inline-block;
   padding: 5px 8px;
   line-height: 1;
   *display: inline;
   *zoom: 1;
 }
-.uikit .subhead {
+.wvus-uikit .subhead {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-.uikit .subhead h1 {
+.wvus-uikit .subhead h1 {
   font-size: 60px;
 }
-.uikit .subhead p {
+.wvus-uikit .subhead p {
   margin-bottom: 20px;
 }
-.uikit .subhead .navbar {
+.wvus-uikit .subhead .navbar {
   display: none;
 }
-.uikit .marketing {
+.wvus-uikit .marketing {
   text-align: center;
   color: #5a5a5a;
 }
-.uikit .marketing h1 {
+.wvus-uikit .marketing h1 {
   margin: 60px 0 10px;
   font-size: 60px;
   font-weight: 200;
   line-height: 1;
   letter-spacing: -1px;
 }
-.uikit .marketing h2 {
+.wvus-uikit .marketing h2 {
   font-weight: 200;
   margin-bottom: 5px;
 }
-.uikit .marketing p {
+.wvus-uikit .marketing p {
   font-size: 16px;
   line-height: 1.5;
 }
-.uikit .marketing .marketing-byline {
+.wvus-uikit .marketing .marketing-byline {
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.25;
   color: #999;
 }
-.uikit .marketing-img {
+.wvus-uikit .marketing-img {
   display: block;
   margin: 0 auto 30px;
   max-height: 145px;
 }
-.uikit .footer {
+.wvus-uikit .footer {
   text-align: center;
   padding: 30px 0;
   margin-top: 70px;
   border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
 }
-.uikit .footer p {
+.wvus-uikit .footer p {
   margin-bottom: 0;
   color: #777;
 }
-.uikit .footer-links {
+.wvus-uikit .footer-links {
   margin: 10px 0;
 }
-.uikit .footer-links li {
+.wvus-uikit .footer-links li {
   display: inline;
   padding: 0 2px;
 }
-.uikit .footer-links li:first-child {
+.wvus-uikit .footer-links li:first-child {
   padding-left: 0;
 }
-.uikit .show-grid {
+.wvus-uikit .show-grid {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.uikit .show-grid [class*="span"] {
+.wvus-uikit .show-grid [class*="span"] {
   background-color: #eee;
   text-align: center;
   -webkit-border-radius: 3px;
@@ -437,23 +437,23 @@
   min-height: 40px;
   line-height: 40px;
 }
-.uikit .show-grid [class*="span"]:hover {
+.wvus-uikit .show-grid [class*="span"]:hover {
   background-color: #ddd;
 }
-.uikit .show-grid .show-grid {
+.wvus-uikit .show-grid .show-grid {
   margin-top: 0;
   margin-bottom: 0;
 }
-.uikit .show-grid .show-grid [class*="span"] {
+.wvus-uikit .show-grid .show-grid [class*="span"] {
   margin-top: 5px;
 }
-.uikit .show-grid [class*="span"] [class*="span"] {
+.wvus-uikit .show-grid [class*="span"] [class*="span"] {
   background-color: #ccc;
 }
-.uikit .show-grid [class*="span"] [class*="span"] [class*="span"] {
+.wvus-uikit .show-grid [class*="span"] [class*="span"] [class*="span"] {
   background-color: #999;
 }
-.uikit .mini-layout {
+.wvus-uikit .mini-layout {
   border: 1px solid #ddd;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -462,61 +462,61 @@
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 }
-.uikit .mini-layout,
-.uikit .mini-layout .mini-layout-body,
-.uikit .mini-layout.fluid .mini-layout-sidebar {
+.wvus-uikit .mini-layout,
+.wvus-uikit .mini-layout .mini-layout-body,
+.wvus-uikit .mini-layout.fluid .mini-layout-sidebar {
   height: 300px;
 }
-.uikit .mini-layout {
+.wvus-uikit .mini-layout {
   margin-bottom: 20px;
   padding: 9px;
 }
-.uikit .mini-layout div {
+.wvus-uikit .mini-layout div {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.uikit .mini-layout .mini-layout-body {
+.wvus-uikit .mini-layout .mini-layout-body {
   background-color: #dceaf4;
   margin: 0 auto;
   width: 70%;
 }
-.uikit .mini-layout.fluid .mini-layout-sidebar,
-.uikit .mini-layout.fluid .mini-layout-header,
-.uikit .mini-layout.fluid .mini-layout-body {
+.wvus-uikit .mini-layout.fluid .mini-layout-sidebar,
+.wvus-uikit .mini-layout.fluid .mini-layout-header,
+.wvus-uikit .mini-layout.fluid .mini-layout-body {
   float: left;
 }
-.uikit .mini-layout.fluid .mini-layout-sidebar {
+.wvus-uikit .mini-layout.fluid .mini-layout-sidebar {
   background-color: #bbd8e9;
   width: 20%;
 }
-.uikit .mini-layout.fluid .mini-layout-body {
+.wvus-uikit .mini-layout.fluid .mini-layout-body {
   width: 77.5%;
   margin-left: 2.5%;
 }
-.uikit .download .page-header {
+.wvus-uikit .download .page-header {
   margin-top: 36px;
 }
-.uikit .page-header .toggle-all {
+.wvus-uikit .page-header .toggle-all {
   margin-top: 5px;
 }
-.uikit .download h3 {
+.wvus-uikit .download h3 {
   margin-bottom: 5px;
 }
-.uikit .download-builder input + h3,
-.uikit .download-builder .checkbox + h3 {
+.wvus-uikit .download-builder input + h3,
+.wvus-uikit .download-builder .checkbox + h3 {
   margin-top: 9px;
 }
-.uikit .download-builder input[type=text] {
+.wvus-uikit .download-builder input[type=text] {
   margin-bottom: 9px;
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 12px;
   color: #d14;
 }
-.uikit .download-builder input[type=text]:focus {
+.wvus-uikit .download-builder input[type=text]:focus {
   background-color: #fff;
 }
-.uikit .download .checkbox {
+.wvus-uikit .download .checkbox {
   padding: 6px 10px 6px 25px;
   font-size: 13px;
   line-height: 18px;
@@ -527,34 +527,34 @@
   border-radius: 3px;
   cursor: pointer;
 }
-.uikit .download .checkbox:hover {
+.wvus-uikit .download .checkbox:hover {
   color: #333;
   background-color: #f5f5f5;
 }
-.uikit .download .checkbox small {
+.wvus-uikit .download .checkbox small {
   font-size: 12px;
   color: #777;
 }
-.uikit #variables label {
+.wvus-uikit #variables label {
   margin-bottom: 0;
 }
-.uikit .download-btn {
+.wvus-uikit .download-btn {
   margin: 36px 0 108px;
 }
-.uikit #download p,
-.uikit #download h4 {
+.wvus-uikit #download p,
+.wvus-uikit #download h4 {
   max-width: 50%;
   margin: 0 auto;
   color: #999;
   text-align: center;
 }
-.uikit #download h4 {
+.wvus-uikit #download h4 {
   margin-bottom: 0;
 }
-.uikit #download p {
+.wvus-uikit #download p {
   margin-bottom: 18px;
 }
-.uikit .download-btn .btn {
+.wvus-uikit .download-btn .btn {
   display: block;
   width: auto;
   padding: 19px 24px;
@@ -566,60 +566,60 @@
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-.uikit h2 + table,
-.uikit h3 + table,
-.uikit h4 + table,
-.uikit h2 + .row {
+.wvus-uikit h2 + table,
+.wvus-uikit h3 + table,
+.wvus-uikit h4 + table,
+.wvus-uikit h2 + .row {
   margin-top: 5px;
 }
-.uikit .example-sites {
+.wvus-uikit .example-sites {
   xmargin-left: 20px;
 }
-.uikit .example-sites img {
+.wvus-uikit .example-sites img {
   max-width: 100%;
   margin: 0 auto;
 }
-.uikit .scrollspy-example {
+.wvus-uikit .scrollspy-example {
   height: 200px;
   overflow: auto;
   position: relative;
 }
-.uikit .focused {
+.wvus-uikit .focused {
   border-color: rgba(82, 168, 236, 0.8);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
   outline: 0;
 }
-.uikit .docs-input-sizes select,
-.uikit .docs-input-sizes input[type=text] {
+.wvus-uikit .docs-input-sizes select,
+.wvus-uikit .docs-input-sizes input[type=text] {
   display: block;
   margin-bottom: 9px;
 }
-.uikit .the-icons {
+.wvus-uikit .the-icons {
   margin-left: 0;
   list-style: none;
 }
-.uikit .the-icons li {
+.wvus-uikit .the-icons li {
   float: left;
   width: 25%;
   line-height: 25px;
 }
-.uikit .the-icons i:hover {
+.wvus-uikit .the-icons i:hover {
   background-color: rgba(255, 0, 0, 0.25);
 }
-.uikit .bootstrap-examples h4 {
+.wvus-uikit .bootstrap-examples h4 {
   margin: 10px 0 5px;
 }
-.uikit .bootstrap-examples p {
+.wvus-uikit .bootstrap-examples p {
   font-size: 13px;
   line-height: 18px;
 }
-.uikit .bootstrap-examples .thumbnail {
+.wvus-uikit .bootstrap-examples .thumbnail {
   margin-bottom: 9px;
   background-color: #fff;
 }
-.uikit .bs-docs-example {
+.wvus-uikit .bs-docs-example {
   position: relative;
   margin: 15px 0;
   padding: 39px 19px 14px;
@@ -630,7 +630,7 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.uikit .bs-docs-example:after {
+.wvus-uikit .bs-docs-example:after {
   content: "Example";
   position: absolute;
   top: -1px;
@@ -645,29 +645,29 @@
   -moz-border-radius: 4px 0 4px 0;
   border-radius: 4px 0 4px 0;
 }
-.uikit .bs-docs-example + .prettyprint {
+.wvus-uikit .bs-docs-example + .prettyprint {
   margin-top: -20px;
   padding-top: 15px;
 }
-.uikit .bs-docs-example > p:last-child {
+.wvus-uikit .bs-docs-example > p:last-child {
   margin-bottom: 0;
 }
-.uikit .bs-docs-example .table,
-.uikit .bs-docs-example .progress,
-.uikit .bs-docs-example .well,
-.uikit .bs-docs-example .alert,
-.uikit .bs-docs-example .hero-unit,
-.uikit .bs-docs-example .pagination,
-.uikit .bs-docs-example .navbar,
-.uikit .bs-docs-example > .nav,
-.uikit .bs-docs-example blockquote {
+.wvus-uikit .bs-docs-example .table,
+.wvus-uikit .bs-docs-example .progress,
+.wvus-uikit .bs-docs-example .well,
+.wvus-uikit .bs-docs-example .alert,
+.wvus-uikit .bs-docs-example .hero-unit,
+.wvus-uikit .bs-docs-example .pagination,
+.wvus-uikit .bs-docs-example .navbar,
+.wvus-uikit .bs-docs-example > .nav,
+.wvus-uikit .bs-docs-example blockquote {
   margin-bottom: 5px;
 }
-.uikit .bs-docs-example .pagination {
+.wvus-uikit .bs-docs-example .pagination {
   margin-top: 0;
 }
-.uikit .bs-navbar-top-example,
-.uikit .bs-navbar-bottom-example {
+.wvus-uikit .bs-navbar-top-example,
+.wvus-uikit .bs-navbar-bottom-example {
   z-index: 1;
   padding: 0;
   height: 90px;
@@ -675,91 +675,91 @@
   /* cut the drop shadows off */
 
 }
-.uikit .bs-navbar-top-example .navbar-fixed-top,
-.uikit .bs-navbar-bottom-example .navbar-fixed-bottom {
+.wvus-uikit .bs-navbar-top-example .navbar-fixed-top,
+.wvus-uikit .bs-navbar-bottom-example .navbar-fixed-bottom {
   margin-left: 0;
   margin-right: 0;
 }
-.uikit .bs-navbar-top-example {
+.wvus-uikit .bs-navbar-top-example {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-.uikit .bs-navbar-top-example:after {
+.wvus-uikit .bs-navbar-top-example:after {
   top: auto;
   bottom: -1px;
   -webkit-border-radius: 0 4px 0 4px;
   -moz-border-radius: 0 4px 0 4px;
   border-radius: 0 4px 0 4px;
 }
-.uikit .bs-navbar-bottom-example {
+.wvus-uikit .bs-navbar-bottom-example {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-.uikit .bs-navbar-bottom-example .navbar {
+.wvus-uikit .bs-navbar-bottom-example .navbar {
   margin-bottom: 0;
 }
-.uikit form.bs-docs-example {
+.wvus-uikit form.bs-docs-example {
   padding-bottom: 19px;
 }
-.uikit .bs-docs-example-images img {
+.wvus-uikit .bs-docs-example-images img {
   margin: 10px;
   display: inline-block;
 }
-.uikit .bs-docs-tooltip-examples {
+.wvus-uikit .bs-docs-tooltip-examples {
   text-align: center;
   margin: 0 0 10px;
   list-style: none;
 }
-.uikit .bs-docs-tooltip-examples li {
+.wvus-uikit .bs-docs-tooltip-examples li {
   display: inline;
   padding: 0 10px;
 }
-.uikit .bs-docs-example-popover {
+.wvus-uikit .bs-docs-example-popover {
   padding-bottom: 24px;
   background-color: #f9f9f9;
 }
-.uikit .bs-docs-example-popover .popover {
+.wvus-uikit .bs-docs-example-popover .popover {
   position: relative;
   display: block;
   float: left;
   width: 260px;
   margin: 20px;
 }
-.uikit .bs-docs-example-submenus {
+.wvus-uikit .bs-docs-example-submenus {
   min-height: 180px;
 }
-.uikit .bs-docs-example-submenus > .pull-left + .pull-left {
+.wvus-uikit .bs-docs-example-submenus > .pull-left + .pull-left {
   margin-left: 20px;
 }
-.uikit .bs-docs-example-submenus .dropup > .dropdown-menu,
-.uikit .bs-docs-example-submenus .dropdown > .dropdown-menu {
+.wvus-uikit .bs-docs-example-submenus .dropup > .dropdown-menu,
+.wvus-uikit .bs-docs-example-submenus .dropdown > .dropdown-menu {
   display: block;
   position: static;
   margin-bottom: 5px;
   *width: 180px;
 }
-.uikit .responsive-utilities th small {
+.wvus-uikit .responsive-utilities th small {
   display: block;
   font-weight: normal;
   color: #999;
 }
-.uikit .responsive-utilities tbody th {
+.wvus-uikit .responsive-utilities tbody th {
   font-weight: normal;
 }
-.uikit .responsive-utilities td {
+.wvus-uikit .responsive-utilities td {
   text-align: center;
 }
-.uikit .responsive-utilities td.is-visible {
+.wvus-uikit .responsive-utilities td.is-visible {
   color: #468847;
   background-color: #dff0d8 !important;
 }
-.uikit .responsive-utilities td.is-hidden {
+.wvus-uikit .responsive-utilities td.is-hidden {
   color: #ccc;
   background-color: #f9f9f9 !important;
 }
-.uikit .responsive-utilities-test {
+.wvus-uikit .responsive-utilities-test {
   margin-top: 5px;
   margin-left: 0;
   list-style: none;
@@ -767,7 +767,7 @@
   /* clear floats */
 
 }
-.uikit .responsive-utilities-test li {
+.wvus-uikit .responsive-utilities-test li {
   position: relative;
   float: left;
   width: 25%;
@@ -782,10 +782,10 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.uikit .responsive-utilities-test li + li {
+.wvus-uikit .responsive-utilities-test li + li {
   margin-left: 10px;
 }
-.uikit .responsive-utilities-test span {
+.wvus-uikit .responsive-utilities-test span {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -795,12 +795,12 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.uikit .responsive-utilities-test span {
+.wvus-uikit .responsive-utilities-test span {
   color: #468847;
   background-color: #dff0d8;
   border: 1px solid #d6e9c6;
 }
-.uikit .bs-docs-sidenav {
+.wvus-uikit .bs-docs-sidenav {
   width: 228px;
   margin: 30px 0 0;
   padding: 0;
@@ -812,7 +812,7 @@
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
-.uikit .bs-docs-sidenav > li > a {
+.wvus-uikit .bs-docs-sidenav > li > a {
   display: block;
   width: 190px \9;
   margin: 0 0 -1px;
@@ -820,17 +820,17 @@
   border: 1px solid #e5e5e5;
   font-weight: normal;
 }
-.uikit .bs-docs-sidenav > li:first-child > a {
+.wvus-uikit .bs-docs-sidenav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
   -moz-border-radius: 6px 6px 0 0;
   border-radius: 6px 6px 0 0;
 }
-.uikit .bs-docs-sidenav > li:last-child > a {
+.wvus-uikit .bs-docs-sidenav > li:last-child > a {
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
 }
-.uikit .bs-docs-sidenav > .active > a {
+.wvus-uikit .bs-docs-sidenav > .active > a {
   position: relative;
   z-index: 2;
   padding: 9px 15px;
@@ -840,59 +840,59 @@
   -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
-.uikit .bs-docs-sidenav > li > ul > li > a {
+.wvus-uikit .bs-docs-sidenav > li > ul > li > a {
   /*subnav on index*/
 
   padding: 8px 14px 8px 54px;
   border: 1px solid #e5e5e5;
   width: 190px \9;
 }
-.uikit .bs-docs-sidenav .icon-chevron-right {
+.wvus-uikit .bs-docs-sidenav .icon-chevron-right {
   float: right;
   margin-top: 2px;
   margin-right: -6px;
   opacity: .25;
 }
-.uikit .bs-docs-sidenav .active > ul .icon-chevron-right {
+.wvus-uikit .bs-docs-sidenav .active > ul .icon-chevron-right {
   opacity: .25;
 }
-.uikit .bs-docs-sidenav > li > a:hover {
+.wvus-uikit .bs-docs-sidenav > li > a:hover {
   background-color: #f5f5f5;
 }
-.uikit .bs-docs-sidenav a:hover .icon-chevron-right {
+.wvus-uikit .bs-docs-sidenav a:hover .icon-chevron-right {
   opacity: .5;
 }
-.uikit .bs-docs-sidenav .active .icon-chevron-right,
-.uikit .bs-docs-sidenav .active a:hover .icon-chevron-right {
+.wvus-uikit .bs-docs-sidenav .active .icon-chevron-right,
+.wvus-uikit .bs-docs-sidenav .active a:hover .icon-chevron-right {
   background-image: url(../img/glyphicons-halflings-white.png);
   opacity: 1;
 }
-.uikit .bs-docs-sidenav.affix {
+.wvus-uikit .bs-docs-sidenav.affix {
   top: 40px;
 }
-.uikit .bs-docs-sidenav.affix-bottom {
+.wvus-uikit .bs-docs-sidenav.affix-bottom {
   position: absolute;
   top: auto;
   bottom: 270px;
 }
 @media (min-width: 1200px) {
-  .uikit .bs-docs-container {
+  .wvus-uikit .bs-docs-container {
     max-width: 970px;
   }
-  .uikit .bs-docs-sidenav {
+  .wvus-uikit .bs-docs-sidenav {
     width: 258px;
   }
-  .uikit .bs-docs-sidenav > li > a {
+  .wvus-uikit .bs-docs-sidenav > li > a {
     width: 230px \9;
     /* Override the previous IE8-9 hack */
   
   }
-  .uikit .bs-docs-sidenav > li > ul > li > a {
+  .wvus-uikit .bs-docs-sidenav > li > ul > li > a {
     width: 190px \9;
   }
 }
 @media (max-width: 980px) {
-  .uikit {
+  .wvus-uikit {
     /* Unfloat brand */
   
     /* Inline-block quick links for more spacing */
@@ -900,17 +900,17 @@
     /* When affixed, space properly */
   
   }
-  .uikit body > .navbar-fixed-top .brand {
+  .wvus-uikit body > .navbar-fixed-top .brand {
     float: left;
     margin-left: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .uikit .quick-links li {
+  .wvus-uikit .quick-links li {
     display: inline-block;
     margin: 5px;
   }
-  .uikit .bs-docs-sidenav {
+  .wvus-uikit .bs-docs-sidenav {
     top: 0;
     width: 218px;
     margin-top: 30px;
@@ -918,7 +918,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  .uikit {
+  .wvus-uikit {
     /* Remove any padding from the body */
   
     /* Widen masthead and social buttons to fill body padding */
@@ -926,27 +926,27 @@
     /* Adjust sidenav width */
   
   }
-  .uikit body {
+  .wvus-uikit body {
     padding-top: 0;
   }
-  .uikit .jumbotron {
+  .wvus-uikit .jumbotron {
     margin-top: -20px;
     /* Offset bottom margin on .navbar */
   
   }
-  .uikit .bs-docs-sidenav {
+  .wvus-uikit .bs-docs-sidenav {
     width: 166px;
     margin-top: 20px;
   }
-  .uikit .bs-docs-sidenav > li > ul > li > a {
+  .wvus-uikit .bs-docs-sidenav > li > ul > li > a {
     width: 126px;
   }
-  .uikit .bs-docs-sidenav.affix {
+  .wvus-uikit .bs-docs-sidenav.affix {
     top: 0;
   }
 }
 @media (max-width: 767px) {
-  .uikit {
+  .wvus-uikit {
     /* Remove any padding from the body */
   
     /* Widen masthead and social buttons to fill body padding */
@@ -958,10 +958,10 @@
     /* Unfloat the back to top link in footer */
   
   }
-  .uikit body {
+  .wvus-uikit body {
     padding-top: 0;
   }
-  .uikit .jumbotron {
+  .wvus-uikit .jumbotron {
     padding: 40px 20px;
     margin-top: -20px;
     /* Offset bottom margin on .navbar */
@@ -969,43 +969,43 @@
     margin-right: -20px;
     margin-left: -20px;
   }
-  .uikit .masthead h1 {
+  .wvus-uikit .masthead h1 {
     font-size: 90px;
   }
-  .uikit .masthead p,
-  .uikit .masthead .btn {
+  .wvus-uikit .masthead p,
+  .wvus-uikit .masthead .btn {
     font-size: 24px;
   }
-  .uikit .marketing .span4 {
+  .wvus-uikit .marketing .span4 {
     margin-bottom: 40px;
   }
-  .uikit .bs-docs-social {
+  .wvus-uikit .bs-docs-social {
     margin: 0 -20px;
   }
-  .uikit .show-grid [class*="span"] {
+  .wvus-uikit .show-grid [class*="span"] {
     margin-bottom: 5px;
   }
-  .uikit .bs-docs-sidenav {
+  .wvus-uikit .bs-docs-sidenav {
     width: auto;
     margin-bottom: 20px;
   }
-  .uikit .bs-docs-sidenav.affix {
+  .wvus-uikit .bs-docs-sidenav.affix {
     position: static;
     width: auto;
     top: 0;
   }
-  .uikit .footer {
+  .wvus-uikit .footer {
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .uikit .footer p {
+  .wvus-uikit .footer p {
     margin-bottom: 9px;
   }
 }
 @media (max-width: 480px) {
-  .uikit {
+  .wvus-uikit {
     /* Remove padding above jumbotron */
   
     /* Change up some type stuff */
@@ -1027,76 +1027,76 @@
     /* Tighten up footer */
   
   }
-  .uikit body {
+  .wvus-uikit body {
     padding-top: 0;
   }
-  .uikit h2 small {
+  .wvus-uikit h2 small {
     display: block;
   }
-  .uikit .jumbotron h1 {
+  .wvus-uikit .jumbotron h1 {
     font-size: 45px;
   }
-  .uikit .jumbotron p,
-  .uikit .jumbotron .btn {
+  .wvus-uikit .jumbotron p,
+  .wvus-uikit .jumbotron .btn {
     font-size: 18px;
   }
-  .uikit .jumbotron .btn {
+  .wvus-uikit .jumbotron .btn {
     display: block;
     margin: 0 auto;
   }
-  .uikit .subhead h1,
-  .uikit .subhead p {
+  .wvus-uikit .subhead h1,
+  .wvus-uikit .subhead p {
     text-align: center;
   }
-  .uikit .marketing h1 {
+  .wvus-uikit .marketing h1 {
     font-size: 30px;
   }
-  .uikit .marketing-byline {
+  .wvus-uikit .marketing-byline {
     font-size: 18px;
   }
-  .uikit .example-sites {
+  .wvus-uikit .example-sites {
     margin-left: 0;
   }
-  .uikit .example-sites > li {
+  .wvus-uikit .example-sites > li {
     float: none;
     display: block;
     max-width: 280px;
     margin: 0 auto 18px;
     text-align: center;
   }
-  .uikit .example-sites .thumbnail > img {
+  .wvus-uikit .example-sites .thumbnail > img {
     max-width: 270px;
   }
-  .uikit table code {
+  .wvus-uikit table code {
     white-space: normal;
     word-wrap: break-word;
     word-break: break-all;
   }
-  .uikit .bs-docs-example-submenus > .pull-left {
+  .wvus-uikit .bs-docs-example-submenus > .pull-left {
     float: none;
     clear: both;
   }
-  .uikit .bs-docs-example-submenus > .pull-left,
-  .uikit .bs-docs-example-submenus > .pull-left + .pull-left {
+  .wvus-uikit .bs-docs-example-submenus > .pull-left,
+  .wvus-uikit .bs-docs-example-submenus > .pull-left + .pull-left {
     margin-left: 0;
   }
-  .uikit .bs-docs-example-submenus p {
+  .wvus-uikit .bs-docs-example-submenus p {
     margin-bottom: 0;
   }
-  .uikit .bs-docs-example-submenus .dropup > .dropdown-menu,
-  .uikit .bs-docs-example-submenus .dropdown > .dropdown-menu {
+  .wvus-uikit .bs-docs-example-submenus .dropup > .dropdown-menu,
+  .wvus-uikit .bs-docs-example-submenus .dropdown > .dropdown-menu {
     margin-bottom: 10px;
     float: none;
     max-width: 180px;
   }
-  .uikit .modal-example .modal {
+  .wvus-uikit .modal-example .modal {
     position: relative;
     top: auto;
     right: auto;
     bottom: auto;
     left: auto;
   }
-  .uikit .footer {
+  .wvus-uikit .footer {
     padding-top: 20px;
     padding-bottom: 20px;
   }
