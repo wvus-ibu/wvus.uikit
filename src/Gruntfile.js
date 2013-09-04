@@ -214,7 +214,7 @@ module.exports = function(grunt) {
       },
       zipsrc: {
         files: [
-          {expand:true, cwd:'../', src:['**/*', '!src/**'], dest:'../<%= pkg.name %>'}
+          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'docs/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
         ]
       },
       docs: {
@@ -229,16 +229,16 @@ module.exports = function(grunt) {
       zip: {
         options: {
           mode: 'zip',
-          archive: '../<%= pkg.name %>.zip'
+          archive: '../<%= pkg.name %>.v<%= pkg.version %>.zip'
         },
         files: [
-          {expand:true, cwd: '../', src: '<%= pkg.name %>/**', dest:'../'}
+          {expand:true, cwd: '../', src: '<%= pkg.name %>.v<%= pkg.version %>/**', dest:'../'}
         ]
       }
     },
     clean: {
       options: {force:true},
-      src:'../<%= pkg.name %>'
+      src:'../<%= pkg.name %>.v<%= pkg.version %>'
     },
     shell: {
       script: {
