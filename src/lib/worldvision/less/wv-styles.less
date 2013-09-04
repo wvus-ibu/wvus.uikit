@@ -66,6 +66,18 @@
     .box-shadow(none);
   }
 }
+.btn-warning{
+  .buttonBackground(@btnWarningBackgroundHighlight, @btnWarningBackground);
+}
+.btn-info{
+  .buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackground);
+}
+.btn-success{
+  .buttonBackground(@btnSuccessBackgroundHighlight, @btnSuccessBackground);
+}
+.btn-danger{
+  .buttonBackground(@btnDangerBackgroundHighlight, @btnDangerBackground);
+}
 
 
 // Nav 
@@ -357,12 +369,20 @@ pre {
 
 
 // Progress Bars
+// Default
+.progress .bar{
+  #gradient > .vertical(lighten(@progressDefault, 20%), @progressDefault);
+}
+.progress-striped .bar{
+  #gradient > .striped(@progressDefault);
+}
+
 // Danger (red)
 .progress-danger .bar, .progress .bar-danger {
-  #gradient > .vertical(lighten(@progressDanger, 30%), @progressDanger);
+  #gradient > .vertical(lighten(@progressDanger, 40%), @progressDanger);
 }
 .progress-danger.progress-striped .bar, .progress-striped .bar-danger {
-  #gradient > .striped(@progressDanger);
+  #gradient > .striped(lighten(@progressDanger, 15%));
 }
 
 // Success (green)
@@ -383,10 +403,10 @@ pre {
 
 // Warning (orange)
 .progress-warning .bar, .progress .bar-warning {
-  #gradient > .vertical(lighten(@progressWarning, 15%), @progressWarning);
+  #gradient > .vertical(lighten(@progressWarning, 20%), @progressWarning);
 }
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
-  #gradient > .striped(lighten(@progressWarning, 15%));
+  #gradient > .striped(@progressWarning);
 }
 
 

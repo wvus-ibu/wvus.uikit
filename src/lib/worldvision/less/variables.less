@@ -105,17 +105,17 @@
 @btnPrimaryBackgroundHighlight:     @wv-orange-highlight;
 
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 #99CCFF;
+@btnInfoBackgroundHighlight:        lighten(@btnInfoBackground, 10%);
 
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
+@btnSuccessBackground:              #999933;
+@btnSuccessBackgroundHighlight:     lighten(@btnSuccessBackground, 10%);
 
-@btnWarningBackground:              lighten(@orange, 15%);
-@btnWarningBackgroundHighlight:     @orange;
+@btnWarningBackground:              darken(#FFCC33, 10%);
+@btnWarningBackgroundHighlight:     lighten(@btnWarningBackground, 10%);
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackground:               #ff0000;
+@btnDangerBackgroundHighlight:      lighten(@btnDangerBackground, 10%);
 
 @btnInverseBackground:              #444;
 @btnInverseBackgroundHighlight:     @grayDarker;
@@ -253,28 +253,29 @@
 
 // Form states and alerts
 // -------------------------
-@warningText:             #FFCC33;
+@warningText:             darken(#FFCC33, 25%);
 @warningBackground:       lighten(#FFCC33, 20%);
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
 @errorText:               #ff0000;
-@errorBackground:         lighten(#ff0000, 20%);
+@errorBackground:         lighten(#ff0000, 35%);
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
 @successText:             #999933;
-@successBackground:       lighten(#999933, 20%);
+@successBackground:       lighten(#999933, 35%);
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                #99CCFF;
-@infoBackground:          lighten(#99CCFF, 20%);
+@infoText:                darken(#99CCFF, 20%);
+@infoBackground:          lighten(#99CCFF, 10%);
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
 // Progress Bars
 // ------------------
-@progressDanger:                  @errorText;
-@progressSuccess:                 @successText;
-@progressInfo:                    @infoText;
-@progressWarning:                 @warningText;
+@progressDefault:                 #2d78ab;
+@progressDanger:                  #ff0000;
+@progressSuccess:                 #999933;
+@progressInfo:                    #99CCFF;
+@progressWarning:                 #FFCC33;
 
 
 
