@@ -8830,6 +8830,15 @@
   background-color: #fb812f;
 }
 
+.wvus-uikit .tooltip.in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.wvus-uikit .popover-title {
+  font-weight: bold;
+}
+
 .wvus-uikit .pull-right {
   float: right;
 }
