@@ -1,4 +1,5 @@
-/*! wvus.uikit - v0.1.0 - 2013-07-16
+/*! wvus.uikit - v0.4.2 - 2013-09-09
+* http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 ; Licensed  */
 /* ===================================================
  * bootstrap-transition.js v2.3.2
@@ -59,7 +60,7 @@
 
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* ==========================================================
  * bootstrap-alert.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#alerts
@@ -158,7 +159,7 @@
 
   $(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* ============================================================
  * bootstrap-button.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#buttons
@@ -263,7 +264,7 @@
     $btn.button('toggle')
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* ==========================================================
  * bootstrap-carousel.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#carousel
@@ -470,7 +471,7 @@
     e.preventDefault()
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* =============================================================
  * bootstrap-collapse.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#collapse
@@ -637,7 +638,7 @@
     $(target).collapse(option)
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* ============================================================
  * bootstrap-dropdown.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
@@ -806,7 +807,7 @@
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
-}(window.jQuery);
+}(window.wvusUikit);
 
 /* =========================================================
  * bootstrap-modal.js v2.3.2
@@ -1054,7 +1055,7 @@
       })
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 
 /* ===========================================================
  * bootstrap-tooltip.js v2.3.2
@@ -1416,7 +1417,7 @@
     return this
   }
 
-}(window.jQuery);
+}(window.wvusUikit);
 
 /* ===========================================================
  * bootstrap-popover.js v2.3.2
@@ -1531,7 +1532,7 @@
     return this
   }
 
-}(window.jQuery);
+}(window.wvusUikit);
 
 /* =============================================================
  * bootstrap-scrollspy.js v2.3.2
@@ -1694,7 +1695,7 @@
     })
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* ========================================================
  * bootstrap-tab.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#tabs
@@ -1838,7 +1839,7 @@
     $(this).tab('show')
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 /* =============================================================
  * bootstrap-typeahead.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
@@ -2173,7 +2174,7 @@
     $this.typeahead($this.data())
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
 
 /* ==========================================================
  * bootstrap-affix.js v2.3.2
@@ -2291,4 +2292,4 @@
   })
 
 
-}(window.jQuery);
+}(window.wvusUikit);

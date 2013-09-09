@@ -19,33 +19,40 @@ module.exports = function(grunt) {
         banner: '<%= banner %>',
         stripBanners: false
       },
+      distJquery: {
+        src: [
+          'lib/jquery/jquery.js',
+          'lib/jquery/noconflict-jquery.js'
+        ],
+        dest: '../js/jquery.js'
+      },
       dist: { //core
-        src: [// Bootstrap
-        	  'lib/bootstrap/js/bootstrap-transition.js',
-        	  'lib/bootstrap/js/bootstrap-alert.js',
-        	  'lib/bootstrap/js/bootstrap-button.js',
-        	  'lib/bootstrap/js/bootstrap-carousel.js',
-        	  'lib/bootstrap/js/bootstrap-collapse.js',
-        	  'lib/bootstrap/js/bootstrap-dropdown.js',
-        	  'lib/bootstrap/js/bootstrap-modal.js',
-        	  'lib/bootstrap/js/bootstrap-tooltip.js',
-        	  'lib/bootstrap/js/bootstrap-popover.js',
-        	  'lib/bootstrap/js/bootstrap-scrollspy.js',
-        	  'lib/bootstrap/js/bootstrap-tab.js',
-        	  'lib/bootstrap/js/bootstrap-typeahead.js',
-        	  'lib/bootstrap/js/bootstrap-affix.js'],
+        src: [
+            'lib/bootstrap/js/bootstrap-transition.js',
+            'lib/bootstrap/js/bootstrap-alert.js',
+            'lib/bootstrap/js/bootstrap-button.js',
+            'lib/bootstrap/js/bootstrap-carousel.js',
+            'lib/bootstrap/js/bootstrap-collapse.js',
+            'lib/bootstrap/js/bootstrap-dropdown.js',
+            'lib/bootstrap/js/bootstrap-modal.js',
+            'lib/bootstrap/js/bootstrap-tooltip.js',
+            'lib/bootstrap/js/bootstrap-popover.js',
+            'lib/bootstrap/js/bootstrap-scrollspy.js',
+            'lib/bootstrap/js/bootstrap-tab.js',
+            'lib/bootstrap/js/bootstrap-typeahead.js',
+            'lib/bootstrap/js/bootstrap-affix.js'],
         dest: '../js/<%= pkg.name %>.core.js'
       },
       distAll: {
         src: // Core 
-        	  '<%= concat.dist.dest %>',
+            '<%= concat.dist.dest %>',
         dest: '../js/<%= pkg.name %>.all.js'
     }
   },
     /*
     Minify JS
      */
-    uglify: { 
+    uglify: {
       options: {
         banner: '<%= banner %>'
       },
@@ -58,9 +65,9 @@ module.exports = function(grunt) {
         dest: '../js/<%= pkg.name %>.all.min.js'
       },
       distJquery: {
-        src: 'lib/jquery/jquery.js',
+        src: '../js/jquery.js',
         dest: '../js/jquery.min.js'
-      }           
+      }
     },
 
     jshint: {
@@ -106,6 +113,37 @@ module.exports = function(grunt) {
     Compile and Minify less
      */
     recess: {
+            // Bare(Bootstrap without customizations)
+      distBare: {
+        options: {
+          compile: true
+        },
+        src: 'lib/worldvision/less/bare.less',
+        dest: '../css/<%= pkg.name %>.bare.css'
+      },
+      distBareResponsive: {
+        options:{
+          compile: true
+        },
+        src: 'lib/worldvision/less/bare.responsive.less',
+        dest: '../css/<%= pkg.name %>.bare.responsive.css'
+      },
+      //Bare Minified
+      distBareMin: {
+        options: {
+          compress: true
+        },
+        src: '<%= recess.dist.dest %>',
+        dest: '../css/<%= pkg.name %>.bare.min.css'
+      },
+      //Bare Responsive Minified
+      distBareResponsiveMin: {
+        options: {
+          compress: true
+        },
+        src: '<%= recess.distResponsive.dest %>',
+        dest: '../css/<%= pkg.name %>.bare.responsive.min.css'
+      },
       // Core(Bootstrap)
       dist: {
         options: {
@@ -165,7 +203,7 @@ module.exports = function(grunt) {
         },
         src: '<%= recess.distAllResponsive.dest %>',
         dest: '../css/<%= pkg.name %>.all.responsive.min.css'
-      },              
+      },
     },
     copy: {
       images: {
@@ -176,13 +214,13 @@ module.exports = function(grunt) {
       },
       zipsrc: {
         files: [
-          {expand:true, cwd:'../', src:['**/*', '!src/**'], dest:'../<%= pkg.name %>'}
+          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'docs/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
         ]
       },
       docs: {
         files: [
-          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'}
-           /*TODO: copy js to docs*/
+          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
+          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'}
         ]
       } 
 
@@ -191,16 +229,16 @@ module.exports = function(grunt) {
       zip: {
         options: {
           mode: 'zip',
-          archive: '../<%= pkg.name %>.zip'
+          archive: '../<%= pkg.name %>.v<%= pkg.version %>.zip'
         },
         files: [
-          {expand:true, cwd: '../', src: '<%= pkg.name %>/**', dest:'../'}
+          {expand:true, cwd: '../', src: '<%= pkg.name %>.v<%= pkg.version %>/**', dest:'../'}
         ]
       }
     },
     clean: {
       options: {force:true},
-      src:'../<%= pkg.name %>'
+      src:'../<%= pkg.name %>.v<%= pkg.version %>'
     },
     shell: {
       script: {

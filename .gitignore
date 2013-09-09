@@ -5,7 +5,7 @@ src/node_modules/
 .DS_Store
 
 #Jekyll 
-docs/_site
+_site
 
 #Editor specific
 *.sublime*

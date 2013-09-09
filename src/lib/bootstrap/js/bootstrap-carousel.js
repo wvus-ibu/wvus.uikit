@@ -204,4 +204,4 @@
     e.preventDefault()
   })
 
-}(window.jQuery);
+}(window.wvusUikit);
