@@ -1,7 +1,7 @@
-/*! wvus.uikit - v0.4.2-beta - 2013-09-04
+/*! wvus.uikit - v0.4.2 - 2013-09-09
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 ; Licensed  */
-/*! wvus.uikit - v0.4.2-beta - 2013-09-04
+/*! wvus.uikit - v0.4.2 - 2013-09-09
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 ; Licensed  */
 /* ===================================================
