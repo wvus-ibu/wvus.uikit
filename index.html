@@ -44,14 +44,15 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <p class="lead">Within the UiKit, you can easily find the files to link in your site</p>
     <p>Once downloaded, unzip the folder to see the structure of the kit. You will see this:</p>
     <pre class="prettyprints">
-      wvus.uikit/
+  wvus.uikit/
     ├── css/
     │   ├── wvus.uikit.all.css
     │   ├── wvus.uikit.all.min.css
     │   ├── wvus.uikit.core.css
     │   ├── wvus.uikit.core.min.css
     ├── js/
-    │   ├──jquery.min.js
+    │   ├── jquery.js
+    │   ├── jquery.min.js
     │   ├── wvus.uikit.all.js
     │   ├── wvus.uikit.all.min.js
     │   ├── wvus.uikit.core.js
@@ -115,7 +116,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
       &lt;html&gt;
         &lt;head&gt;
           &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
-          &lt;meta name="viewort" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
         &lt;/head&gt;
         &lt;body&gt;
           &lt;h1&gt;Hello World!&lt;/h1&gt;
@@ -126,10 +127,10 @@ lead: Overview of the project, its contents, and how to get started with a simpl
   <p>To make it UiKit compatible, just include the CSS and JS files:</p>
   <pre class="prettyprint linenums">
     &lt;!DOCTYPE html&gt;
-      &lt;html&gt;
+      &lt;html class="uikit"&gt;
         &lt;head&gt;
           &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
-          &lt;meta name="viewort" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
           &lt;!-- WVUS UiKit --&gt;
           &lt;link rel="stylesheet" type="text/css" href="css/wvus.uikit.all.min.css"&gt;
         &lt;/head&gt;
@@ -145,10 +146,22 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <i class="icon-info-sign"></i>
     The UiKit requires jQuery to be included before the <code>wvus.uikit.all.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
   </div>
+  <section id="namespace">
+    <h2>Namespace</h2>
+    <p class="lead">The UiKit namespaces the CSS and JavaScript to avoid any issues with other sites, JavaScript libraries and other versions of jQuery</p>
+    <h3>Less </h3>
+    <p><span class="label label-info">Watch Out!</span> The UiKit keeps it's CSS in a namespace of <code>wvus-uikit</code> so other CSS won't conflict with it. What this means is the class <code>wvus-uikit</code> needs to be added before calling the class of the component being used.</p>
+    <p><code class="prettyprint">
+      &lt;button class="wvus-uikit btn btn-primary"&gt;Sample Button&lt;/button&gt;
+    </code></p>
+    <p><strong>OR</strong></p>
+    <p>Add <code>class="wvus-uikit"</code> to the <code>&lt;html&gt;</code> element. These docs use this method.</p>
+    <h3>jQuery</h3>
+    <p><span class="label label-info">Heads Up!</span> The UiKit uses a custom form of jQuery. It <strong>does not</strong> use the <code>$</code> or <code>jQuery</code> object. Instead, the UiKit has an assigned variable of <code>wvusUikit</code> that it uses. This is to prevent JavaScript and other jQuery libraries from conflicting with the UiKit plugins.</p>
+  </section>
   </section><!-- end of HTML example -->
   <section id="contribute">
     <h1>Looking to Contribute</h1>
-    <p>If your a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="{{ site.repo }}">Github project</a> to checkout the source.</p>
-    
+    <p>If your a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="{{ site.repo }}">Github project</a> to checkout the source.</p>    
   </section>
 </section>
