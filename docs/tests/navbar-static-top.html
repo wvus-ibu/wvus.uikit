@@ -1,41 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link href="../assets/css/wvus.uikit.all.css" rel="stylesheet">
-    <style>
-      body {
-        padding-bottom: 30px;
-      }
-      .hero-unit {
-        margin-top: 20px;
-      }
-    </style>
-    <link href="../assets/css/wvus.uikit.all.responsive.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
-
-  <body>
+---
+layout: test
+name: navbar-static
+group: navbar
+---
 
     <!-- Static navbar -->
-    <div class="navbar navbar-static-top">
+    <div class="navbar wv-navbar navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -48,9 +18,10 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
+
               <li><a href="#contact">Contact</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -63,9 +34,9 @@
               </li>
             </ul>
           <ul class="nav pull-right">
-            <li><a href="./navbar.html">Default</a></li>
-            <li class="active"><a href="./navbar-static-top.html">Static top</a></li>
-            <li><a href="./navbar-fixed-top.html">Fixed top</a></li>
+            <li><a href="{{ site.baseurl }}/tests/navbar">Default</a></li>
+            <li class="active"><a href="{{ site.baseurl }}/tests/navbar-static-top">Static top</a></li>
+            <li><a href="{{ site.baseurl }}/tests/navbar-fixed-top">Fixed top</a></li>
           </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -80,18 +51,8 @@
         <h1>Navbar example</h1>
         <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>
-          <a class="btn btn-large btn-primary" href="../components.html#navbar">View navbar docs &raquo;</a>
+          <a class="btn btn-large btn-primary" href="{{ site.baseurl }}/ui-elements/#navbar">View navbar docs &raquo;</a>
         </p>
       </div>
 
     </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/wvus.uikit.all.js"></script>
-
-
-  </body>
-</html>
