@@ -20,21 +20,24 @@
 .buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 2px 1px rgba(0,0,0,.75)) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+  .reset-filter();
   background-position: 0 0;
 
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
     background-color: fade(@startColor, 80%);
-    *background-color: fade(@startColor, 80%);
+    *background-color: lighten(@startColor, 80%);
     .gradientBar(fade(@startColor, 40%), fade(@endColor, 40%), @textColor, @textShadow);
+    .reset-filter();
     background-position: 0 0;
   }
-  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  // IE 7 + 8 can't handle box-shadow to show active, we override base active and lighten rather then darken.
   &:active,
   &.active{
+    background-color: lighten(@endColor, 10%) e("\9");
     .gradientBar(fade(@endColor, 40%), fade(@startColor, 40%), @textColor, @textShadow);
+    .reset-filter();
     background-position: 0 0;
-
   }
 }
 
@@ -53,13 +56,27 @@
 
 .btn-primary {
   .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
+
   &.disabled,
   &[disabled] {
     cursor: default;
+    color: #fff;
     background-image: none;
     .opacity(65);
     .box-shadow(none);
   }
+}
+.btn-warning{
+  .buttonBackground(@btnWarningBackgroundHighlight, @btnWarningBackground);
+}
+.btn-info{
+  .buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackground);
+}
+.btn-success{
+  .buttonBackground(@btnSuccessBackgroundHighlight, @btnSuccessBackground);
+}
+.btn-danger{
+  .buttonBackground(@btnDangerBackgroundHighlight, @btnDangerBackground);
 }
 
 
@@ -199,7 +216,7 @@
   margin-right: 0;
   margin-bottom: 3px;
   color: @white;
-  background-color: fadeout(@nav-border-color, 50%);
+  background-color: @nav-background-inactive;
   padding-top: 19px;
   padding-bottom: 19px;
 }
@@ -216,22 +233,24 @@
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
 }
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus,
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: @nav-border-color;
+  background-color: @linkColor;
+}
 
 // Tabs on the left
 .tabs-left > .nav-tabs {
   float: left;
-  margin-right: 19px;
+  margin-right: 0;
   border-right: none;
 }
 .tabs-left > .nav-tabs > li > a {
   position: relative;
   margin-right: -1px;
   .border-radius(0);
-}
-
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: @nav-border-color;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
@@ -244,21 +263,22 @@
   left: 100%;
   border-left: 20px solid @nav-border-color;
 }
+.tabs-left > .tab-content{
+  padding: 20px 20px 20px 30px;
+  background-color: @tab-content-background;
+  .box-shadow(0 0 8px @tab-content-shadow);
+}
 
 // Tabs on the right
 .tabs-right > .nav-tabs {
   float: right;
-  margin-left: 19px;
+  margin-left: 0;
   border-left: none;
 }
 .tabs-right > .nav-tabs > li > a {
   position: relative;
   margin-left: -1px;
   .border-radius(0);
-}
-.tabs-right > .nav-tabs > li > a:hover,
-.tabs-right > .nav-tabs > li > a:focus {
-  border-color: @nav-border-color;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
@@ -270,6 +290,11 @@
 .tabs-right > .nav-tabs .active > a:after{
   right: 100%;
   border-right: 20px solid @nav-border-color;
+}
+.tabs-right > .tab-content{
+  padding: 20px 30px 20px 20px;
+  background-color: @tab-content-background;
+  .box-shadow(0 0 8px @tab-content-shadow);
 }
 
 // Breadcrumbs
@@ -326,6 +351,7 @@
 }
 
 
+
 // TABLES
 // ------
 
@@ -334,6 +360,60 @@
     background-color: @tableHeader; 
   }
 }
+
+// CODE
+// ----
+code,
+pre {
+  font-size: @baseFontSize - 4;
+}
+
+
+// Progress Bars
+// Default
+.progress .bar{
+  #gradient > .vertical(lighten(@progressDefault, 20%), @progressDefault);
+}
+.progress-striped .bar{
+  #gradient > .striped(@progressDefault);
+}
+
+// Danger (red)
+.progress-danger .bar, .progress .bar-danger {
+  #gradient > .vertical(lighten(@progressDanger, 40%), @progressDanger);
+}
+.progress-danger.progress-striped .bar, .progress-striped .bar-danger {
+  #gradient > .striped(lighten(@progressDanger, 15%));
+}
+
+// Success (green)
+.progress-success .bar, .progress .bar-success {
+  #gradient > .vertical(lighten(@progressSuccess, 30%), @progressSuccess);
+}
+.progress-success.progress-striped .bar, .progress-striped .bar-success {
+  #gradient > .striped(@progressSuccess);
+}
+
+// Info (teal)
+.progress-info .bar, .progress .bar-info {
+  #gradient > .vertical(lighten(@progressInfo, 10%), @progressInfo);
+}
+.progress-info.progress-striped .bar, .progress-striped .bar-info {
+  #gradient > .striped(@progressInfo);
+}
+
+// Warning (orange)
+.progress-warning .bar, .progress .bar-warning {
+  #gradient > .vertical(lighten(@progressWarning, 20%), @progressWarning);
+}
+.progress-warning.progress-striped .bar, .progress-striped .bar-warning {
+  #gradient > .striped(@progressWarning);
+}
+
+
+
+
+
 
 
 // CAROUSEL
@@ -348,7 +428,6 @@
 .carousel-control {
   position: absolute; 
   top: 40%;
-  left: -50px;
   width: 41px;
   height: 41px;
   margin-top: -20px;
@@ -369,7 +448,6 @@
     }
     &.right {
     left: auto;
-    right: -50px;
 
     > [class^="icon-"] {
       position: relative;
@@ -394,9 +472,9 @@
 
 // Carousel indicator pips
 // -----------------------------
-.carousel-indicators{
+.carousel-indicators{ 
   left: 50%;
-  bottom: -15px;
+  bottom: 10px;
   top: auto;
   right: auto;
 
@@ -415,6 +493,10 @@
        .active;
     }
   }
+}
+
+.carousel-caption {
+  padding: 15px 15px 30px 15px;
 }
 
 
@@ -462,4 +544,16 @@
       background-color: @wv-orange-hover;
     }
   }
+}
+
+// Tooltip
+// -------
+.tooltip{
+  &.in{ .opacity(100); }
+  
+}
+// Popover
+// -------
+.popover-title {
+  font-weight: bold;
 }

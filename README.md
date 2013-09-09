@@ -23,7 +23,7 @@ The World Vision UiKit is built on top of Twitter's [Bootstrap](http://twitter.g
 The source of these libraries can be found in the `src/lib` folder.  
 
 ### What's new in the next version?
-Checkout the [Release Notes](ReleaseNotes.md) for upcoming and previous changes.
+Checkout the [Release Notes](ReleaseNotes.md) or [Github Releases](https://github.com/wvus-ibu/wvus.uikit/releases) for upcoming and previous changes.
 
 ### Want to see how we built it
 Visit the [Contribute](Contribute.md) page to find out how to compile and extend the kit from source.

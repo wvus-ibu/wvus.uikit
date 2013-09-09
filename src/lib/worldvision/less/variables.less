@@ -105,17 +105,17 @@
 @btnPrimaryBackgroundHighlight:     @wv-orange-highlight;
 
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 #99CCFF;
+@btnInfoBackgroundHighlight:        lighten(@btnInfoBackground, 10%);
 
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
+@btnSuccessBackground:              #999933;
+@btnSuccessBackgroundHighlight:     lighten(@btnSuccessBackground, 10%);
 
-@btnWarningBackground:              lighten(@orange, 15%);
-@btnWarningBackgroundHighlight:     @orange;
+@btnWarningBackground:              darken(#FFCC33, 10%);
+@btnWarningBackgroundHighlight:     lighten(@btnWarningBackground, 10%);
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackground:               #ff0000;
+@btnDangerBackgroundHighlight:      lighten(@btnDangerBackground, 10%);
 
 @btnInverseBackground:              #444;
 @btnInverseBackgroundHighlight:     @grayDarker;
@@ -209,6 +209,22 @@
 
 @navbarBrandColor:                @navbarLinkColor;
 
+// wv-navbar
+@wvnavbarHeight:                           50px;
+
+@wvnavbarBackground:                      @wv-orange;
+@wvnavbarBackgroundHighlight:             @wv-orange-highlight;
+@wvnavbarText:                            #fff;
+@wvnavbarLink:                            #fff;
+@wvnavbarBrandColor:                      #fff;
+@wvnavbarLinkBorder:                      #fff;
+
+@wvnavbarLinkHover:                       @wv-orange;
+@wvnavbarLinkActive:                      @wv-orange;
+@wvnavbarLinkActiveHover:                 @wv-orange;
+@wvnavbarLinkBackgroundHover:             #fff;
+@wvnavbarLinkBackgroundActive:            #fff;
+
 // Inverted navbar
 @navbarInverseBackground:                #111111;
 @navbarInverseBackgroundHighlight:       #222222;
@@ -233,6 +249,9 @@
 // -------------------------
 @nav-background-active:                   #2d78ab;
 @nav-border-color:                        @nav-background-active;
+@nav-background-inactive:                 #96bbd5;
+@tab-content-background:                  @white;
+@tab-content-shadow:                      #b5b5b5;
 
 // Pagination
 // -------------------------
@@ -250,21 +269,34 @@
 
 // Form states and alerts
 // -------------------------
-@warningText:             #c09853;
-@warningBackground:       #fcf8e3;
+@warningText:             darken(#FFCC33, 25%);
+@warningBackground:       lighten(#FFCC33, 20%);
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
-@errorText:               #b94a48;
-@errorBackground:         #f2dede;
+@errorText:               #ff0000;
+@errorBackground:         lighten(#ff0000, 35%);
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
-@successText:             #468847;
-@successBackground:       #dff0d8;
+@successText:             #999933;
+@successBackground:       lighten(#999933, 35%);
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                #3a87ad;
-@infoBackground:          #d9edf7;
+@infoText:                darken(#99CCFF, 20%);
+@infoBackground:          lighten(#99CCFF, 10%);
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+// Progress Bars
+// ------------------
+@progressDefault:                 #2d78ab;
+@progressDanger:                  #ff0000;
+@progressSuccess:                 #999933;
+@progressInfo:                    #99CCFF;
+@progressWarning:                 #FFCC33;
+
+
+
+
+
 
 
 // Tooltips and popovers
@@ -290,8 +322,8 @@
 @control-hover:           @wv-orange-hover;
 @control-active:          #fba66c;
 @pips-inactive:           @wv-orange;
-@pips-active:             #fff;
-@pips-hover:              @wv-orange-hover;
+@pips-active:             #fdfafb;
+@pips-hover:              #fff1e7;
 
 // GRID
 //

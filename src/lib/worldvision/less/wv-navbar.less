@@ -1,0 +1,183 @@
+//
+// WV Global Navbar
+// ----------------
+
+// Navbar vertical align
+// -------------------------
+// Vertically center elements in the navbar.
+// Example: an element has a height of 30px, so write out `.navbarVerticalAlign(30px);` to calculate the appropriate top margin.
+.wvnavbarVerticalAlign(@elementHeight) {
+  margin-top: (@wvnavbarHeight - @elementHeight) / 2;
+}
+
+
+.wv-navbar.navbar .navbar-inner{
+  #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarBackground);
+}
+.wv-navbar {
+  .navbar-inner{
+    min-height: @wvnavbarHeight;
+  }
+  .navbar-text {
+    color: @wvnavbarText;
+    line-height: @wvnavbarHeight;
+  }
+  .navbar-link{
+    color: @wvnavbarText;
+  }
+
+// NAVIGATION
+// -----------
+  .nav > li > a{
+    color: @wvnavbarText;
+    #font > .text-shadow(2px 0 2px #F60);
+    padding: ((@wvnavbarHeight - @baseLineHeight) / 2) 15px ((@wvnavbarHeight - @baseLineHeight) / 2);
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .nav > li{
+    border-left: 1px solid @wvnavbarLinkBorder;
+  }
+  .nav > li:last-child > a{
+      border-right: 1px solid @wvnavbarLinkBorder;
+    }
+  //Hover/focus
+  .nav > li > a:hover,
+  .nav > li > a:focus{
+    color: @wvnavbarLinkHover;
+    #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarLinkBackgroundHover);
+    #font > .text-shadow();
+  }
+
+  //Active nav items
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus{
+    color: @wvnavbarLinkActive;
+    #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarLinkBackgroundHover);
+    #font > .text-shadow();
+  }
+
+  .brand{
+    color: @wvnavbarBrandColor;
+    #font > .text-shadow(0 1px 0 #000);
+    padding: ((@wvnavbarHeight - @baseLineHeight) / 2) 20px ((@wvnavbarHeight - @baseLineHeight) / 2);
+  }
+
+// Divider 
+// -------
+  .divider-vertical{
+    height: @wvnavbarHeight;
+    border-left: 1px solid @wvnavbarBackground;
+    border-right: 1px solid @wvnavbarBackgroundHighlight;
+    margin-left: 0px;
+  }
+
+// Navbar Forms
+// --------------
+.navbar-search{
+  .wvnavbarVerticalAlign(30px);
+}
+
+// Dropdowns
+// ---------
+// Menu position and menu carets
+ .nav > li > .dropdown-menu {
+  &:before {
+    content: normal;
+    display: inline;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-bottom-color: none;
+    position: static;
+    top: auto;
+    left: auto;
+  }
+  &:after {
+    content: normal;
+    display: inline;
+    border-left:  none;
+    border-right:  none;
+    border-bottom: none;
+    position: static;
+    top: auto;
+    left: auto;
+  }
+}
+// Menu position and menu caret support for dropups via extra dropup class
+.navbar-fixed-bottom .nav > li > .dropdown-menu {
+  &:before {
+    border-top: none;
+    border-top-color: transparent;
+    border-bottom: none;
+    bottom: auto;
+    top: auto;
+  }
+  &:after {
+    border-top: none;
+    border-bottom: none;
+    bottom: auto;
+    top: auto;
+  }
+}
+
+// Caret should match text color on hover/focus
+.navbar .nav li.dropdown > a:hover .caret,
+.navbar .nav li.dropdown > a:focus .caret {
+  border-top-color: @navbarLinkColorHover;
+  border-bottom-color: @navbarLinkColorHover;
+}
+
+// Remove background color from open dropdown
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: @navbarLinkBackgroundActive;
+  color: @navbarLinkColorActive;
+}
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: @navbarLinkColor;
+  border-bottom-color: @navbarLinkColor;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: @navbarLinkColorActive;
+  border-bottom-color: @navbarLinkColorActive;
+}
+
+// Right aligned menus need alt position
+.navbar .pull-right > li > .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right {
+  left: auto;
+  right: 0;
+  &:before {
+    left: auto;
+    right: 12px;
+  }
+  &:after {
+    left: auto;
+    right: 13px;
+  }
+  .dropdown-menu {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: -1px;
+    .border-radius(6px 0 6px 6px);
+  }
+}
+
+// Remove background color from open dropdown
+.nav li.dropdown.open > .dropdown-toggle,
+.nav li.dropdown.active > .dropdown-toggle,
+.nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: @wvnavbarLinkBackgroundActive;
+  color: @wvnavbarLinkActive;
+}
+
+
+} // ends wv-navbar namespace
+
+
