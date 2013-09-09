@@ -5,7 +5,6 @@ permalink: pretty
 baseurl: http://wvus-ibu.github.io/wvus.uikit
 
 
-exclude: ['tests']
 
 # vars
 repo: https://github.com/wvus-ibu/wvus.uikit
