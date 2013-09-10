@@ -222,8 +222,12 @@ module.exports = function(grunt) {
           {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
           {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'}
         ]
-      } 
-
+      },
+      tests: {
+        files: [
+          {expand:true, cwd: '../js', src: 'jquery.js', dest: 'lib/bootstrap/js/tests/vendor'}
+        ]
+      }
     },
     compress: {
       zip: {
