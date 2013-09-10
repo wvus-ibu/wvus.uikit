@@ -274,6 +274,6 @@ module.exports = function(grunt) {
   grunt.registerTask('update', ['shell']); 
 
   // Compiles and concatenates js and less
-  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs']); 
+  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']); 
 
 };

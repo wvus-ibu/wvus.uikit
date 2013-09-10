@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-scrollspy")
 
@@ -34,4 +34,4 @@ $(function () {
         ok($topbar.find('.active', true))
       })
 
-})
+})(wvusUikit)

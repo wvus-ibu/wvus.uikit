@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-buttons")
 
@@ -99,4 +99,4 @@ $(function () {
         ok(btn2.hasClass('active'), 'btn2 has active class')
       })
 
-})
+})(wvusUikit)

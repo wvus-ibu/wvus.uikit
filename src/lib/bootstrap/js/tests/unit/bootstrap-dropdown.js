@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-dropdowns")
 
@@ -148,4 +148,4 @@ $(function () {
         $("#qunit-fixture").html("")
       })
 
-})
+})(wvusUikit)

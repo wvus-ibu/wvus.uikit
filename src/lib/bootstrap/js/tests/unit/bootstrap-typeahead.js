@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-typeahead")
 
@@ -233,4 +233,4 @@ $(function () {
         $input.remove()
         typeahead.$menu.remove()
       })
-})
+})(wvusUikit)
