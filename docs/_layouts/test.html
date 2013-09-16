@@ -11,13 +11,13 @@
     <link href="{{ site.baseurl }}/assets/css/wvus.uikit.all.css" rel="stylesheet">
     {% case page.group %}
       {% when "navbar" %}
-        {% include test-navbar-style.html %}
+        {% include tests/test-navbar-style.html %}
       {% when "buttons" %}
-        {% include tests-buttons-style.html %}
+        {% include tests/test-buttons-style.html %}
       {% when "css-tests" %}
-        {% include test-css-test-style.html %}
+        {% include test/test-css-test-style.html %}
       {% when "forms" %}
-        {% include test-form-responsive.html %}
+        {% include tests/test-form-responsive.html %}
       {% endcase %}
 
     <link href="{{ site.baseurl }}/assets/css/wvus.uikit.all.responsive.css" rel="stylesheet">
@@ -42,11 +42,31 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/wvus.uikit.all.js"></script>
     {% case page.group %}
         {% when "css-tests" %}
           {% include test-css-test-js.html %}
     {% endcase %}
+        {% if page.group == "buttons" %}
+    <script type="text/javascript">
+      wvusUikit('#toggle-button').click(function(){
+        var btn = wvusUikit(this);
+        btn.button('loading');
+        setTimeout(function(){
+          btn.button('reset')
+        }, 1500);
+      });
+      wvusUikit('#jsToggle').click(function(){
+        var btnToggle = wvusUikit(this);
+        btnToggle.button('toggle');
+        setTimeout(function(){
+          btnToggle.button('custom');
+        }, 2000);
+      });
+
+    </script>
+    {% endif %}
   </body>
 </html>
