@@ -1,11 +1,10 @@
 ---
 layout: test
-name: navbar-static
+name: navbar-fixed
 group: navbar
 ---
-
-    <!-- Static navbar -->
-    <div class="navbar wv-navbar navbar-static-top">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -16,11 +15,12 @@ group: navbar
           <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li ><a href="#">Inactive</a></li>
               <li ><a href="{{ site.baseurl }}/tests/basic-navbar-static-top">Basic Navbar Static</a></li>
-              <li><a href="{{ site.baseurl }}/tests/basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
+              <li class="active"><a href="{{ site.baseurl }}/tests/basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-chevron-down"></i></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-chevron-down"></i>
+                </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -32,16 +32,15 @@ group: navbar
                 </ul>
               </li>
             </ul>
-          <ul class="nav pull-right">
-            <li><a href="{{ site.baseurl }}/tests/navbar">Default</a></li>
-            <li class="active"><a href="{{ site.baseurl }}/tests/navbar-static-top">Static top</a></li>
-            <li><a href="{{ site.baseurl }}/tests/navbar-fixed-top">Fixed top</a></li>
-          </ul>
+            <ul class="nav pull-right">
+              <li><a href="{{ site.baseurl }}/tests/navbar/">Default</a></li>
+              <li><a href="{{ site.baseurl }}/tests/navbar-static-top/">Static top</a></li>
+              <li class="active"><a href="{{ site.baseurl }}/tests/navbar-fixed-top/">Fixed top</a></li>
+            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
 
     <div class="container">
 
@@ -53,8 +52,7 @@ group: navbar
           <a class="btn btn-large btn-primary" href="{{ site.baseurl }}/ui-elements/#navbar">View navbar docs &raquo;</a>
         </p>
       </div>
-
-<p>
+        <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero fermentum lectus aliquam semper vel non orci. Vivamus leo risus, sagittis at ligula in, consequat tempus ligula. Mauris pulvinar mi vitae sodales lobortis. Praesent ultrices lorem felis, at volutpat enim dignissim et. Phasellus rutrum tellus nunc, nec tempor ligula varius et. Duis eu feugiat risus. Vivamus euismod auctor turpis, in porttitor nisl molestie ut. Phasellus sit amet fringilla elit, porta placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non blandit tortor. Morbi aliquam lorem quis neque vulputate luctus. Pellentesque nec metus ac augue mattis volutpat ut id quam. Integer venenatis, tellus at commodo congue, dolor nisi elementum diam, eu convallis arcu tortor nec est. Ut commodo purus ac venenatis malesuada. Donec eget hendrerit dui.
   </p>
   <p>
@@ -69,7 +67,7 @@ group: navbar
   <p>
   Vestibulum posuere eget velit et posuere. Vivamus viverra pulvinar dolor, nec viverra augue adipiscing cursus. Aliquam eget tortor pretium, eleifend lacus molestie, pulvinar massa. Maecenas accumsan ac augue sed vulputate. Donec sed tincidunt est, vel dapibus dui. Nullam id mi nibh. Mauris eget orci dapibus, rhoncus erat ut, elementum arcu. Nunc non venenatis velit. Sed nec ullamcorper tellus, vitae pharetra felis. Phasellus ut congue elit. Integer aliquam adipiscing augue ut pharetra. Proin eu condimentum eros, iaculis convallis sapien. Fusce ac dolor elit. Suspendisse a enim vitae enim volutpat varius a eleifend purus. Maecenas scelerisque aliquam ipsum et dapibus.
   </p>
-<p>
+  <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero fermentum lectus aliquam semper vel non orci. Vivamus leo risus, sagittis at ligula in, consequat tempus ligula. Mauris pulvinar mi vitae sodales lobortis. Praesent ultrices lorem felis, at volutpat enim dignissim et. Phasellus rutrum tellus nunc, nec tempor ligula varius et. Duis eu feugiat risus. Vivamus euismod auctor turpis, in porttitor nisl molestie ut. Phasellus sit amet fringilla elit, porta placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non blandit tortor. Morbi aliquam lorem quis neque vulputate luctus. Pellentesque nec metus ac augue mattis volutpat ut id quam. Integer venenatis, tellus at commodo congue, dolor nisi elementum diam, eu convallis arcu tortor nec est. Ut commodo purus ac venenatis malesuada. Donec eget hendrerit dui.
   </p>
   <p>
@@ -84,6 +82,5 @@ group: navbar
   <p>
   Vestibulum posuere eget velit et posuere. Vivamus viverra pulvinar dolor, nec viverra augue adipiscing cursus. Aliquam eget tortor pretium, eleifend lacus molestie, pulvinar massa. Maecenas accumsan ac augue sed vulputate. Donec sed tincidunt est, vel dapibus dui. Nullam id mi nibh. Mauris eget orci dapibus, rhoncus erat ut, elementum arcu. Nunc non venenatis velit. Sed nec ullamcorper tellus, vitae pharetra felis. Phasellus ut congue elit. Integer aliquam adipiscing augue ut pharetra. Proin eu condimentum eros, iaculis convallis sapien. Fusce ac dolor elit. Suspendisse a enim vitae enim volutpat varius a eleifend purus. Maecenas scelerisque aliquam ipsum et dapibus.
   </p>
-
-
     </div> <!-- /container -->
+
