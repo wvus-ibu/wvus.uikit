@@ -2,7 +2,7 @@
 <html lang="en" class="wvus-uikit">
   <head>
     <meta charset="utf-8">
-    <title>WV UiKit, CSS Tests</title>
+    <title>WV UiKit, {{ page.group }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -45,28 +45,106 @@
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/wvus.uikit.all.js"></script>
+
     {% case page.group %}
         {% when "css-tests" %}
-          {% include test-css-test-js.html %}
+          {% include tests/test-css-test-js.html %}
+        {% when "thumbnails" %}
+          {% include tests/test-css-test-js.html %}
+        {% when "media" %}
+          {% include tests/test-css-test-js.html %}
+        {% when "carousel" %}
+          {% include tests/test-css-test-js.html %}
     {% endcase %}
-        {% if page.group == "buttons" %}
-    <script type="text/javascript">
-      wvusUikit('#toggle-button').click(function(){
-        var btn = wvusUikit(this);
-        btn.button('loading');
-        setTimeout(function(){
-          btn.button('reset')
-        }, 1500);
-      });
-      wvusUikit('#jsToggle').click(function(){
-        var btnToggle = wvusUikit(this);
-        btnToggle.button('toggle');
-        setTimeout(function(){
-          btnToggle.button('custom');
-        }, 2000);
-      });
 
-    </script>
+  
+    {% if page.group == "buttons" %}
+      <!-- Button JS Test -->
+        <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          wvusUikit('#toggle-button').click(function(){
+            var btn = wvusUikit(this);
+            btn.button('loading');
+            setTimeout(function(){
+              btn.button('reset')
+            }, 1500);
+          });
+          wvusUikit('#jsToggle').click(function(){
+            var btnToggle = wvusUikit(this);
+            btnToggle.button('toggle');
+            setTimeout(function(){
+              btnToggle.button('custom');
+            }, 2000);
+          });
+        });
+        </script>
     {% endif %}
+
+    
+    {% if page.group == "accordion" %}
+    <!-- Accordion JS Test -->
+        <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+      
+          wvusUikit('.collapse').on('show', function(){
+            wvusUikit(this).prev().find('.accordion-toggle > i')
+            .removeClass('icon-plus').addClass('icon-minus');
+          });
+          wvusUikit('.collapse').on('hide', function(){
+            wvusUikit(this).prev().find('.accordion-toggle > i')
+            .removeClass('icon-minus').addClass('icon-plus');
+          });
+        });
+      </script>
+    {% endif %}
+
+    
+    {% if page.group == "tooltip" %}
+    <!-- Tooltip JS Test -->
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          //Tooltips
+          wvusUikit('.tooltip-test').tooltip();
+          wvusUikit('.tooltip-custom').tooltip({
+            placement: 'bottom',
+            title: 'This is set via JS',
+            delay: 1000
+          });
+          wvusUikit('#trigger').tooltip({
+            html: true,
+            container: 'body',
+            title: '<span class="label label-info">This is HTML</span>',
+            trigger: 'click'
+          });
+          //popovers
+          wvusUikit('#popover').popover({
+            placement: 'bottom',
+            title: 'This a popover',
+            content: 'a popover'
+          });
+          wvusUikit('#markupPopover').popover();
+        });
+      </script>
+    {% endif %}
+
+    
+    {% if page.group == "modal" %}
+    <!-- Modal JS Test -->
+      <script type="text/javascript">
+      wvusUikit(document).ready(function(){
+        wvusUikit('#jsModalButton').click(function (){
+          wvusUikit('#jsModal').modal('show');
+        });
+        wvusUikit('#jsModalClose').click(function () {
+          wvusUikit('#jsModal').modal('hide');
+        });
+        wvusUikit('#jsModalX').click(function () {
+          wvusUikit('#jsModal').modal('hide');
+        });
+      });
+      </script>
+    {% endif %}
+          
+
   </body>
 </html>
