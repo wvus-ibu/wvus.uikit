@@ -15,7 +15,7 @@
       {% when "buttons" %}
         {% include tests/test-buttons-style.html %}
       {% when "css-tests" %}
-        {% include test/test-css-test-style.html %}
+        {% include tests/test-css-test-style.html %}
       {% when "forms" %}
         {% include tests/test-form-responsive.html %}
       {% endcase %}
@@ -54,6 +54,8 @@
         {% when "media" %}
           {% include tests/test-css-test-js.html %}
         {% when "carousel" %}
+          {% include tests/test-css-test-js.html %}
+        {% when "nav" %}
           {% include tests/test-css-test-js.html %}
     {% endcase %}
 
@@ -144,7 +146,38 @@
       });
       </script>
     {% endif %}
-          
+    {% if page.group == "carousel" %}
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          var jsCarousel = wvusUikit('#jsCarousel');
+          jsCarousel.carousel({
+            interval: 2000,
+            pause: ""
+          });
+          wvusUikit('#jsLeft').click(function() {
+            jsCarousel.carousel('prev');
+          });
+          wvusUikit('#jsRight').click(function(){
+            jsCarousel.carousel('next');
+          });
+          wvusUikit('#jsPause').click(function() {
+            jsCarousel.carousel('pause');
+          });
+          wvusUikit('#jsResume').click(function () {
+            jsCarousel.carousel('cycle');
+          });
+          wvusUikit('#jsPip1').click(function() {
+            jsCarousel.carousel(0);
+          });
+          wvusUikit('#jsPip2').click(function() {
+            jsCarousel.carousel(1);
+          });
+          wvusUikit('#jsPip3').click(function() {
+            jsCarousel.carousel(2);
+          });
+        });
+      </script>
+    {% endif %}
 
   </body>
 </html>
