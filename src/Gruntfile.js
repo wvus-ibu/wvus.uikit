@@ -265,6 +265,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   //grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('browserstack-runner');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task. Compile, concatenate, min, and build zip
@@ -276,4 +277,6 @@ module.exports = function(grunt) {
   // Compiles and concatenates js and less
   grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']); 
 
+  //Runs Unit tests
+  grunt.registerTask('test', ['browserstack_runner']); //TODO: compile less, concat JS, min less, min JS, html-validate docs, jshint
 };

@@ -35,5 +35,6 @@
     "grunt-shell": "~0.3.0",
     "volo": "~0.3.0",
     "grunt-contrib-watch": "~0.5.1"
+    "browserstack-runner": "0.0.12",
   }
 }
