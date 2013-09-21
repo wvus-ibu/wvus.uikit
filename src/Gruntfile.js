@@ -108,6 +108,10 @@ module.exports = function(grunt) {
         files: ['lib/worldvision/less/*.less'],
         tasks: ['recess', 'copy:docs']
       },
+      docs: {
+        files: ['../docs/**.*'],
+        tasks: ['jekyll:build']
+      }
     },
     /*
     Compile and Minify less
@@ -251,6 +255,20 @@ module.exports = function(grunt) {
           stdout: true
         }
       }
+    },
+    jekyll: {
+      options:{
+          src: '../docs',
+          dest: '../docs/_site',
+          config: '../docs/_config.yml'
+      },
+      build: {},
+      serve:{
+        options: {
+          serve: true,
+          baseurl: ""
+        }
+      }
     }
   });
 
@@ -265,6 +283,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   //grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('browserstack-runner');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
 
