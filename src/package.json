@@ -21,7 +21,7 @@
   "author": {
     "name": "Web Development and Delivery, Internet Business Unit, World Vision United States",
     "url": "http://www.worldvision.org"
-    },
+  },
   "license": "BSD",
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -35,6 +35,7 @@
     "volo": "~0.3.0",
     "grunt-contrib-watch": "~0.5.1",
     "browserstack-runner": "0.0.12",
-    "grunt-contrib-qunit": "~0.2.2"
+    "grunt-contrib-qunit": "~0.2.2",
+    "grunt-html-validation": "~0.1.5"
   }
 }

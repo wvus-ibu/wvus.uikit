@@ -257,7 +257,7 @@ module.exports = function(grunt) {
       }
     },
     jekyll: {
-      options:{
+      options: {
           src: '../docs',
           dest: '../docs/_site',
           config: '../docs/_config.yml'
@@ -265,9 +265,18 @@ module.exports = function(grunt) {
       build: {},
       serve:{
         options: {
+          baseurl: 'http://localhost:4000',
           serve: true,
-          baseurl: ""
+          watch: true
         }
+      }
+    },
+    validation: {
+      options: {
+        reset: true
+      },
+      files: {
+        src: ['../docs/_site/**/*.html']
       }
     }
   });
@@ -281,10 +290,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  //grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('browserstack-runner');
+  grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+
   //grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task. Compile, concatenate, min, and build zip
@@ -297,5 +307,5 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']); 
 
   //Runs Unit tests
-  grunt.registerTask('test', ['browserstack_runner']); //TODO: compile less, concat JS, min less, min JS, html-validate docs, jshint
+  grunt.registerTask('test', ['jekyll:build', 'validation','browserstack_runner']); //TODO: compile less, concat JS, min less, min JS, jshint
 };
