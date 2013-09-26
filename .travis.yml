@@ -4,6 +4,7 @@ node_js:
 before_install:
 - cd src
 - npm install -g grunt-cli
+- gem install jekyll
 env:
   global:
   - secure: CVNBGlK55AfA2+s7Z99kaTdXKyf70/yIPZwaJ+ZAT0plOuIN7oJyRQGN7Wh4qI/lw77PSgNIOneqgvZTdcXRu0VB8AIFHvm2aSmg1U5FjQ7sfglMwgJ6PZBzuiuZbD/GH9dlVPNbCcZUNVv4XklEzto5lJPUtgXVY/AkXeQWTMI=
