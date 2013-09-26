@@ -310,5 +310,5 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']); 
 
   //Runs Unit tests
-  grunt.registerTask('test', ['jekyll:build', 'validation','browserstack_runner']); //TODO: compile less, concat JS, min less, min JS, jshint
+  grunt.registerTask('test', ['jekyll:build', 'validation']); //TODO: compile less, concat JS, min less, min JS, jshint
 };
