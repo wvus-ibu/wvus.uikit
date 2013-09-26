@@ -18,6 +18,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <a href="{{ site.download }}" class="btn btn-primary btn-large">
       Download
     </a>
+  </section><!-- /end getDownload -->
   <section id="contents">
     <h2>Contents</h2>
     <p>The UiKit contains HTML, CSS and JS to get you up running quickly with a WVUS Brand. The different elements have been categoried in groups that make sense. These are across the top, but for more detials: </p>
@@ -74,7 +75,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     </div>
   </section><!-- end of file structure -->
 
-</section>
+</section><!-- end of intro -->
 
 <!-- Designers ================================== -->
 <section id="designers">
@@ -87,17 +88,17 @@ lead: Overview of the project, its contents, and how to get started with a simpl
   <section id="button-elements">
     <h2>Buttons</h2>
     <p>All the buttons inside the World Vision brand.</p>
-    <img src="{{ site.baseurl }}/assets/img/wvus/wv-button.jpg" class="img-polaroid">
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-button.jpg" class="img-polaroid" alt="WV Buttons">
   </section>
   <section id="custom-elements">
     <h2>Custom Elements</h2>
     <p>Custom elelments used on different parts of the site.</p>
-    <img src="{{ site.baseurl }}/assets/img/wvus/wv-customelements.jpg" class="img-polaroid">
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-customelements.jpg" class="img-polaroid" alt="WV Custom Elements">
   </section>
   <section id="form-elements">
     <h2>Form elements</h2>
     <p>Standard form elements get a face lift.</p>
-    <img src="{{ site.baseurl }}/assets/img/wvus/wv-form.jpg" class="img-polaroid">
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-form.jpg" class="img-polaroid" alt="WV Forms">
   </section>
 </section>
 
@@ -141,11 +142,12 @@ lead: Overview of the project, its contents, and how to get started with a simpl
         &lt;/body&gt;
       &lt;/html&gt;
   </pre>
-  <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.all.min.css</code> and <code>wvus.uikit.all.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
-  <div class="alert alert-info">
-    <i class="icon-info-sign"></i>
-    The UiKit requires jQuery to be included before the <code>wvus.uikit.all.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
-  </div>
+    <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.all.min.css</code> and <code>wvus.uikit.all.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
+    <div class="alert alert-info">
+      <i class="icon-info-sign"></i>
+      The UiKit requires jQuery to be included before the <code>wvus.uikit.all.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
+    </div>
+  </section><!-- end of html example -->
   <section id="namespace">
     <h2>Namespace</h2>
     <p class="lead">The UiKit namespaces the CSS and JavaScript to avoid any issues with other sites, JavaScript libraries and other versions of jQuery</p>
@@ -159,9 +161,8 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <h3>jQuery</h3>
     <p><span class="label label-info">Heads Up!</span> The UiKit uses a custom form of jQuery. It <strong>does not</strong> use the <code>$</code> or <code>jQuery</code> object. Instead, the UiKit has an assigned variable of <code>wvusUikit</code> that it uses. This is to prevent JavaScript and other jQuery libraries from conflicting with the UiKit plugins.</p>
   </section>
-  </section><!-- end of HTML example -->
   <section id="contribute">
     <h1>Looking to Contribute</h1>
     <p>If your a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="{{ site.repo }}">Github project</a> to checkout the source.</p>    
-  </section>
-</section>
+  </section><!-- endo of contribute -->
+</section><!-- end of developer -->
