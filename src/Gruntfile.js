@@ -70,6 +70,7 @@ module.exports = function(grunt) {
       }
     },
 
+    //JS Linter
     jshint: {
       options: {
         curly: true,
@@ -95,10 +96,12 @@ module.exports = function(grunt) {
       }
     },
 
+    //qUnit Tests
     qunit: {
-      files: ['test/**/*.html']
+      files: ['lib/bootstrap/js/tests/*.html']
     },
 
+    //Auto loads/compiles less and 
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
