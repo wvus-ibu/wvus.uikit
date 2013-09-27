@@ -1,5 +1,7 @@
  /*global module:false*/
+ /* jshint node:true */
 module.exports = function(grunt) {
+  "use strict";
 
   // Project configuration.
   grunt.initConfig({
@@ -73,26 +75,13 @@ module.exports = function(grunt) {
     //JS Linter
     jshint: {
       options: {
-        curly: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: true,
-        boss: true,
-        eqnull: true,
-        browser: true,
-        globals: {
-          jQuery: true
-        }
+        jshintrc: 'lib/bootstrap/js/.jshintrc'
       },
       gruntfile: {
         src: 'Gruntfile.js'
       },
       dist: {
-        src: '<%= concat.dist.dest %>'
+        src: '<%= concat.dist.src %>'
       }
     },
 
@@ -297,18 +286,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('browserstack-runner');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-contrib-qunit');
-
-  //grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); 
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']);
 
   // Updates Bootstrap, jQuery, and Font Awesome via volo
-  grunt.registerTask('update', ['shell']); 
+  grunt.registerTask('update', ['shell']);
 
-  // Compiles and concatenates js and less
-  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']); 
+  // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
+  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']);
 
-  //Runs Unit tests
-  grunt.registerTask('test', ['jekyll:build', 'validation']); //TODO: compile less, concat JS, min less, min JS, jshint
+  //Lints each js plugin, builds/validates docs
+  grunt.registerTask('test', ['jshint', 'jekyll:build', 'validation']); //TODO: compile less, concat JS, min less, min JS
 };
