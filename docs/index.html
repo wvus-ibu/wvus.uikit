@@ -47,19 +47,15 @@ lead: Overview of the project, its contents, and how to get started with a simpl
     <pre class="prettyprints">
   wvus.uikit/
     ├── css/
-    │   ├── wvus.uikit.all.css
-    │   ├── wvus.uikit.all.min.css
-    │   ├── wvus.uikit.core.css
-    │   ├── wvus.uikit.core.min.css
+    │   ├── wvus.uikit.css
+    │   ├── wvus.uikit.min.css
     ├── js/
     │   ├── jquery.js
     │   ├── jquery.min.js
-    │   ├── wvus.uikit.all.js
-    │   ├── wvus.uikit.all.min.js
-    │   ├── wvus.uikit.core.js
-    │   ├── wvus.uikit.core.min.js
+    │   ├── wvus.uikit.js
+    │   ├── wvus.uikit.min.js
     ├── img/
-    │   ├── {World Vision Images}
+    │   ├── (World Vision Images)
     │   └── 
     └── font/
         ├── FontAwesome.otf
@@ -68,7 +64,7 @@ lead: Overview of the project, its contents, and how to get started with a simpl
         ├── fontawesome-webfont.ttf
         └── fontawesome-webfont.woff
     </pre>
-    <p>This is the basic, out of the box form of the WVUS UiKit. We provide the compiled CSS and JS from <a href="{{ site.bootstrap }}">Bootstrap</a> and <a href="{{ site.font-awesome }}">Font Awesome</a> <code>(core)</code>. Any other libraries that are included in the kit will be identified with <code>extra</code> in the file name. The <code>all</code> identifier includes <code>core</code> and <code>extra</code> in one CSS and JS file.</p>
+    <p>This is the basic, out of the box form of the WVUS UiKit. We provide the compiled CSS and JS from <a href="{{ site.bootstrap }}">Bootstrap</a> and <a href="{{ site.font-awesome }}">Font Awesome</a>. Any other libraries that are included in the kit will be identified in the file name.</p>
     <p>The <code>img</code> directory contains all images from Bootstrap, Font Awesome and World Vision. The <code>font</code> folder contains the default fonts included in Font Awesome</p> 
     <div class="alert alert-danger">
       <i class="icon-warning-sign"></i> DO NOT modify the font folder or its contents. Doing so can cause Font Awesome to not work.
@@ -128,24 +124,24 @@ lead: Overview of the project, its contents, and how to get started with a simpl
   <p>To make it UiKit compatible, just include the CSS and JS files:</p>
   <pre class="prettyprint linenums">
     &lt;!DOCTYPE html&gt;
-      &lt;html class="uikit"&gt;
+      &lt;html class="wvus-uikit"&gt;
         &lt;head&gt;
           &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
           &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
           &lt;!-- WVUS UiKit --&gt;
-          &lt;link rel="stylesheet" type="text/css" href="css/wvus.uikit.all.min.css"&gt;
+          &lt;link rel="stylesheet" type="text/css" href="css/wvus.uikit.min.css"&gt;
         &lt;/head&gt;
         &lt;body&gt;
           &lt;h1&gt;Hello World!&lt;/h1&gt;
           &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
-          &lt;script type="text/javascript" src="js/wvus.uikit.all.min.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="js/wvus.uikit.min.js"&gt;&lt;/script&gt;
         &lt;/body&gt;
       &lt;/html&gt;
   </pre>
-    <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.all.min.css</code> and <code>wvus.uikit.all.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
+    <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.min.css</code> and <code>wvus.uikit.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
     <div class="alert alert-info">
       <i class="icon-info-sign"></i>
-      The UiKit requires jQuery to be included before the <code>wvus.uikit.all.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
+      The UiKit requires jQuery to be included before the <code>wvus.uikit.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
     </div>
   </section><!-- end of html example -->
   <section id="namespace">
