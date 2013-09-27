@@ -43,13 +43,8 @@ module.exports = function(grunt) {
             'lib/bootstrap/js/bootstrap-tab.js',
             'lib/bootstrap/js/bootstrap-typeahead.js',
             'lib/bootstrap/js/bootstrap-affix.js'],
-        dest: '../js/<%= pkg.name %>.core.js'
-      },
-      distAll: {
-        src: // Core 
-            '<%= concat.dist.dest %>',
-        dest: '../js/<%= pkg.name %>.all.js'
-    }
+        dest: '../js/<%= pkg.name %>.js'
+      }
   },
     /*
     Minify JS
@@ -60,11 +55,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: '../js/<%= pkg.name %>.core.min.js'
-      },
-      distAll: {
-        src: '<%= concat.distAll.dest %>',
-        dest: '../js/<%= pkg.name %>.all.min.js'
+        dest: '../js/<%= pkg.name %>.min.js'
       },
       distJquery: {
         src: '../js/jquery.js',
@@ -109,96 +100,34 @@ module.exports = function(grunt) {
     Compile and Minify less
      */
     recess: {
-            // Bare(Bootstrap without customizations)
-      distBare: {
+      // All
+       dist: {
         options: {
           compile: true
         },
-        src: 'lib/worldvision/less/bare.less',
-        dest: '../css/<%= pkg.name %>.bare.css'
-      },
-      distBareResponsive: {
-        options:{
-          compile: true
-        },
-        src: 'lib/worldvision/less/bare.responsive.less',
-        dest: '../css/<%= pkg.name %>.bare.responsive.css'
-      },
-      //Bare Minified
-      distBareMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.dist.dest %>',
-        dest: '../css/<%= pkg.name %>.bare.min.css'
-      },
-      //Bare Responsive Minified
-      distBareResponsiveMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.bare.responsive.min.css'
-      },
-      // Core(Bootstrap)
-      dist: {
-        options: {
-          compile: true
-        },
-        src: 'lib/worldvision/less/core.less',
-        dest: '../css/<%= pkg.name %>.core.css'
+        src: 'lib/worldvision/less/wvus.uikit.less',
+        dest: '../css/<%= pkg.name %>.css'
       },
       distResponsive: {
         options:{
           compile: true
         },
-        src: 'lib/worldvision/less/core.responsive.less',
-        dest: '../css/<%= pkg.name %>.core.responsive.css'
+        src: 'lib/worldvision/less/wvus.uikit.responsive.less',
+        dest: '../css/<%= pkg.name %>.responsive.css'
       },
-      //Core Minified
       distMin: {
         options: {
           compress: true
         },
         src: '<%= recess.dist.dest %>',
-        dest: '../css/<%= pkg.name %>.core.min.css'
+        dest: '../css/<%= pkg.name %>.min.css'
       },
-      //Core Responsive Minified
       distResponsiveMin: {
         options: {
           compress: true
         },
         src: '<%= recess.distResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.core.responsive.min.css'
-      },
-      // All
-       distAll: {
-        options: {
-          compile: true
-        },
-        src: 'lib/worldvision/less/all.less',
-        dest: '../css/<%= pkg.name %>.all.css'
-      },
-      distAllResponsive: {
-        options:{
-          compile: true
-        },
-        src: 'lib/worldvision/less/all.responsive.less',
-        dest: '../css/<%= pkg.name %>.all.responsive.css'
-      },
-      distAllMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distAll.dest %>',
-        dest: '../css/<%= pkg.name %>.all.min.css'
-      },
-      distAllResponsiveMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distAllResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.all.responsive.min.css'
+        dest: '../css/<%= pkg.name %>.responsive.min.css'
       },
     },
     copy: {
