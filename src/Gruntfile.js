@@ -78,6 +78,9 @@ module.exports = function(grunt) {
 
     //qUnit Tests
     qunit: {
+      options: {
+        inject: 'lib/bootstrap/js/tests/phantomgrunt.js'
+      },
       files: ['lib/bootstrap/js/tests/*.html']
     },
 
@@ -218,14 +221,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']);
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'test', 'compress', 'clean']);
 
   // Updates Bootstrap, jQuery, and Font Awesome via volo
   grunt.registerTask('update', ['shell']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
-  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs', 'copy:tests']);
+  grunt.registerTask('compile', ['concat', 'recess', 'copy:docs', 'copy:tests']);
 
   //Lints each js plugin, builds/validates docs
-  grunt.registerTask('test', ['jshint', 'jekyll:build', 'validation']); //TODO: compile less, concat JS, min less, min JS
+  grunt.registerTask('test', ['recess', 'jshint', 'jekyll:build', 'validation']); //TODO: run qunit tests with grunt
 };
