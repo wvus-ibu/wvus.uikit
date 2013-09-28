@@ -142,7 +142,7 @@ module.exports = function(grunt) {
       },
       zipsrc: {
         files: [
-          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'docs/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
+          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
         ]
       },
       docs: {
