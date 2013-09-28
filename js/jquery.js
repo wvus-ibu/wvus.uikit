@@ -1,6 +1,6 @@
-/*! wvus.uikit - v0.4.2 - 2013-09-09
+/*! wvus.uikit - v1.0 - 2013-09-27
 * http://wvus-ibu.github.io/wvus.uikit/
-* Copyright (c) 2013 ; Licensed  */
+* Copyright (c) 2013 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 /*!
  * jQuery JavaScript Library v1.8.3
  * http://jquery.com/
@@ -9474,5 +9474,5 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 })( window );
 
-/* Establishes uikit as the object to use with UiKit JS plugins*/
+/* Establishes wvusUikit as the object to use with UiKit JS plugins*/
 var wvusUikit = jQuery.noConflict(true);
