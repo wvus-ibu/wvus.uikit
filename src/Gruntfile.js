@@ -230,5 +230,5 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['concat', 'recess', 'copy:docs', 'copy:tests']);
 
   //Lints each js plugin, builds/validates docs
-  grunt.registerTask('test', ['recess', 'jshint', 'jekyll:build', 'validation']); //TODO: run qunit tests with grunt
+  grunt.registerTask('test', ['recess', 'jshint', 'qunit', 'jekyll:build', 'validation']); //TODO: run qunit tests with grunt
 };
