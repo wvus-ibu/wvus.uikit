@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-carousel")
 
@@ -78,4 +78,4 @@ $(function () {
         ok($('#myCarousel').data('carousel').options.interval == 1814, "attributes should be read only on intitialization");
         $('#myCarousel').remove();
       })
-})
+})(wvusUikit)

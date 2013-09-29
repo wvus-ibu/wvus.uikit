@@ -3,6 +3,15 @@
 ## Work In Progress
 * Checkout the project issue tracker [wvus-ibu/wvus.uikit](https://github.com/wvus-ibu/wvus.uikit/issues?state=open) and current [pull requests](https://github.com/wvus-ibu/wvus.uikit/pull/7) 
 
+## 1.0
+* Consolidated each group of components into their own page
+* Added Unit tests from Bootstrap
+* Setup Travis CI to run tests when commits are made to the repo
+* Renamed the JS & CSS files to remove the all, extra and core identifiers
+* Changed the docs to reflect the new names
+* Added new tasks to Grunt to lint the js, run unit tests and validate the HTML in the docs
+
+
 ## 0.4.2
 * Added WV Styled navbar
 * Styled Tooltips and Popovers

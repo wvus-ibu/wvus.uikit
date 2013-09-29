@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-alerts")
 
@@ -59,4 +59,4 @@ $(function () {
           .alert('close')
       })
 
-})
+})(wvusUikit)

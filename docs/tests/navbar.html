@@ -18,10 +18,10 @@ group: navbar
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+             <li ><a href="{{ site.baseurl }}/tests/basic-navbar-static-top">Basic Navbar Static</a></li>
+              <li><a href="{{ site.baseurl }}/tests/basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-chevron-down"></i></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-caret-down"></i></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -50,6 +50,87 @@ group: navbar
         <p>
           <a class="btn btn-large btn-primary" href="{{ site.baseurl }}/ui-elements/#navbar">View navbar docs &raquo;</a>
         </p>
+      </div>
+
+
+      <!-- Static navbar -->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Project name</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+              <li><a href="{{ site.baseurl }}/tests/basic-navbar-static-top">Basic Navbar Static</a></li>
+              <li><a href="{{ site.baseurl }}/tests/basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav pull-right">
+                <li class="active"><a href="{{ site.baseurl }}/tests/navbar">Default</a></li>
+                <li><a href="{{ site.baseurl }}/tests/navbar-static-top">Static top</a></li>
+                <li><a href="{{ site.baseurl }}/tests/navbar-fixed-top">Fixed top</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+<div class="hero-unit">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, deserunt commodi est perferendis doloribus architecto officia dolorum nam tenetur vel iusto eius! Eos, vel velit aliquam odit quod aut harum!
+</div>
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Project name</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+             <li ><a href="{{ site.baseurl }}/tests/basic-navbar-static-top">Basic Navbar Static</a></li>
+              <li ><a href="{{ site.baseurl }}/tests/basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav pull-right">
+                <li class="active"><a href="{{ site.baseurl }}/tests/navbar">Default</a></li>
+                <li><a href="{{ site.baseurl }}/tests/navbar-static-top">Static top</a></li>
+                <li><a href="{{ site.baseurl }}/tests/navbar-fixed-top">Fixed top</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
       </div>
 
     </div> <!-- /container -->

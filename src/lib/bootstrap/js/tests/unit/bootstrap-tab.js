@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-tabs")
 
@@ -83,4 +83,4 @@ $(function () {
           }).tab('show')
       })
 
-})
+})(wvusUikit)
