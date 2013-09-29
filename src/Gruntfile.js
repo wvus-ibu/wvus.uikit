@@ -1,5 +1,7 @@
  /*global module:false*/
+ /* jshint node:true */
 module.exports = function(grunt) {
+  "use strict";
 
   // Project configuration.
   grunt.initConfig({
@@ -41,13 +43,8 @@ module.exports = function(grunt) {
             'lib/bootstrap/js/bootstrap-tab.js',
             'lib/bootstrap/js/bootstrap-typeahead.js',
             'lib/bootstrap/js/bootstrap-affix.js'],
-        dest: '../js/<%= pkg.name %>.core.js'
-      },
-      distAll: {
-        src: // Core 
-            '<%= concat.dist.dest %>',
-        dest: '../js/<%= pkg.name %>.all.js'
-    }
+        dest: '../js/<%= pkg.name %>.js'
+      }
   },
     /*
     Minify JS
@@ -58,11 +55,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: '../js/<%= pkg.name %>.core.min.js'
-      },
-      distAll: {
-        src: '<%= concat.distAll.dest %>',
-        dest: '../js/<%= pkg.name %>.all.min.js'
+        dest: '../js/<%= pkg.name %>.min.js'
       },
       distJquery: {
         src: '../js/jquery.js',
@@ -70,35 +63,28 @@ module.exports = function(grunt) {
       }
     },
 
+    //JS Linter
     jshint: {
       options: {
-        curly: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: true,
-        boss: true,
-        eqnull: true,
-        browser: true,
-        globals: {
-          jQuery: true
-        }
+        jshintrc: 'lib/bootstrap/js/.jshintrc'
       },
       gruntfile: {
         src: 'Gruntfile.js'
       },
       dist: {
-        src: '<%= concat.dist.dest %>'
+        src: '<%= concat.dist.src %>'
       }
     },
 
+    //qUnit Tests
     qunit: {
-      files: ['test/**/*.html']
+      options: {
+        inject: 'lib/bootstrap/js/tests/phantomgrunt.js'
+      },
+      files: ['lib/bootstrap/js/tests/*.html']
     },
 
+    //Auto loads/compiles less and 
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -108,101 +94,43 @@ module.exports = function(grunt) {
         files: ['lib/worldvision/less/*.less'],
         tasks: ['recess', 'copy:docs']
       },
+      docs: {
+        files: ['../docs/**.*'],
+        tasks: ['jekyll:build']
+      }
     },
     /*
     Compile and Minify less
      */
     recess: {
-            // Bare(Bootstrap without customizations)
-      distBare: {
+      // All
+       dist: {
         options: {
           compile: true
         },
-        src: 'lib/worldvision/less/bare.less',
-        dest: '../css/<%= pkg.name %>.bare.css'
-      },
-      distBareResponsive: {
-        options:{
-          compile: true
-        },
-        src: 'lib/worldvision/less/bare.responsive.less',
-        dest: '../css/<%= pkg.name %>.bare.responsive.css'
-      },
-      //Bare Minified
-      distBareMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.dist.dest %>',
-        dest: '../css/<%= pkg.name %>.bare.min.css'
-      },
-      //Bare Responsive Minified
-      distBareResponsiveMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.bare.responsive.min.css'
-      },
-      // Core(Bootstrap)
-      dist: {
-        options: {
-          compile: true
-        },
-        src: 'lib/worldvision/less/core.less',
-        dest: '../css/<%= pkg.name %>.core.css'
+        src: 'lib/worldvision/less/wvus.uikit.less',
+        dest: '../css/<%= pkg.name %>.css'
       },
       distResponsive: {
         options:{
           compile: true
         },
-        src: 'lib/worldvision/less/core.responsive.less',
-        dest: '../css/<%= pkg.name %>.core.responsive.css'
+        src: 'lib/worldvision/less/wvus.uikit.responsive.less',
+        dest: '../css/<%= pkg.name %>.responsive.css'
       },
-      //Core Minified
       distMin: {
         options: {
           compress: true
         },
         src: '<%= recess.dist.dest %>',
-        dest: '../css/<%= pkg.name %>.core.min.css'
+        dest: '../css/<%= pkg.name %>.min.css'
       },
-      //Core Responsive Minified
       distResponsiveMin: {
         options: {
           compress: true
         },
         src: '<%= recess.distResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.core.responsive.min.css'
-      },
-      // All
-       distAll: {
-        options: {
-          compile: true
-        },
-        src: 'lib/worldvision/less/all.less',
-        dest: '../css/<%= pkg.name %>.all.css'
-      },
-      distAllResponsive: {
-        options:{
-          compile: true
-        },
-        src: 'lib/worldvision/less/all.responsive.less',
-        dest: '../css/<%= pkg.name %>.all.responsive.css'
-      },
-      distAllMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distAll.dest %>',
-        dest: '../css/<%= pkg.name %>.all.min.css'
-      },
-      distAllResponsiveMin: {
-        options: {
-          compress: true
-        },
-        src: '<%= recess.distAllResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.all.responsive.min.css'
+        dest: '../css/<%= pkg.name %>.responsive.min.css'
       },
     },
     copy: {
@@ -214,7 +142,7 @@ module.exports = function(grunt) {
       },
       zipsrc: {
         files: [
-          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'docs/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
+          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
         ]
       },
       docs: {
@@ -222,8 +150,12 @@ module.exports = function(grunt) {
           {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
           {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'}
         ]
-      } 
-
+      },
+      tests: {
+        files: [
+          {expand:true, cwd: '../js', src: 'jquery.js', dest: 'lib/bootstrap/js/tests/vendor'}
+        ]
+      }
     },
     compress: {
       zip: {
@@ -247,6 +179,29 @@ module.exports = function(grunt) {
           stdout: true
         }
       }
+    },
+    jekyll: {
+      options: {
+          src: '../docs',
+          dest: '../docs/_site',
+          config: '../docs/_config.yml'
+      },
+      build: {},
+      serve:{
+        options: {
+          baseurl: 'http://localhost:4000',
+          serve: true,
+          watch: true
+        }
+      }
+    },
+    validation: {
+      options: {
+        reset: true
+      },
+      files: {
+        src: ['../docs/_site/**/*.html']
+      }
     }
   });
 
@@ -259,17 +214,21 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  //grunt.loadNpmTasks('grunt-contrib-qunit');
-  //grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('browserstack-runner');
+  grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'compress', 'clean']); 
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'test', 'compress', 'clean']);
 
   // Updates Bootstrap, jQuery, and Font Awesome via volo
-  grunt.registerTask('update', ['shell']); 
+  grunt.registerTask('update', ['shell']);
 
-  // Compiles and concatenates js and less
-  grunt.registerTask('compile', ['concat', 'recess:dist', 'recess:distAll', 'recess:distResponsive', 'recess:distAllResponsive', 'copy:docs']); 
+  // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
+  grunt.registerTask('compile', ['concat', 'recess', 'copy:docs', 'copy:tests']);
 
+  //Lints each js plugin, builds/validates docs
+  grunt.registerTask('test', ['recess', 'jshint', 'qunit', 'jekyll:build', 'validation']); //TODO: run qunit tests with grunt
 };

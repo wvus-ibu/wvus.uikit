@@ -1,15 +1,19 @@
+# Jekyll Configs
+layouts: ./_layouts
+exclude: [readme.md]
+host: localhost
+port: 4000
+
 pygments: true
 #Permalink
 permalink: pretty
 
 baseurl: http://wvus-ibu.github.io/wvus.uikit
 
-
-
 # vars
 repo: https://github.com/wvus-ibu/wvus.uikit
 issues: https://github.com/wvus-ibu/wvus.uikit/issues?state=open
 changelog: https://github.com/wvus-ibu/wvus.uikit/blob/master/ReleaseNotes.md
-download: https://github.com/wvus-ibu/wvus.uikit/archive/v0.4.2.zip
+download: https://github.com/wvus-ibu/wvus.uikit/archive/v1.0.0.zip
 bootstrap: http://getbootstrap.com/
 font-awesome: http://fontawesome.github.io/Font-Awesome/

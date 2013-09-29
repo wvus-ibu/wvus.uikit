@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-tooltip")
 
@@ -291,4 +291,4 @@ $(function () {
           container.remove()
         }, 100)
       })
-})
+})(wvusUikit)

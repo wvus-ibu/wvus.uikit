@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-collapse")
 
@@ -91,4 +91,4 @@ $(function () {
         target.click()
       })
 
-})
+})(wvusUikit)

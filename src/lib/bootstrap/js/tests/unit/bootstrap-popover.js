@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-popover")
 
@@ -110,4 +110,4 @@ $(function () {
         ok(!$._data(popover[0], 'events').mouseover && !$._data(popover[0], 'events').mouseout, 'popover does not have any events')
       })
 
-})
+})(wvusUikit)

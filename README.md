@@ -25,5 +25,5 @@ The source of these libraries can be found in the `src/lib` folder.
 ### What's new in the next version?
 Checkout the [Release Notes](ReleaseNotes.md) or [Github Releases](https://github.com/wvus-ibu/wvus.uikit/releases) for upcoming and previous changes.
 
-### Want to see how we built it
+### Want to see how we built it 
 Visit the [Contribute](Contribute.md) page to find out how to compile and extend the kit from source.

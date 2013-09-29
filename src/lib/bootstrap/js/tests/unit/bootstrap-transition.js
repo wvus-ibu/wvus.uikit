@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-transition")
 
@@ -10,4 +10,4 @@ $(function () {
         ok($.support.transition ? $.support.transition.end : true, 'end string is defined')
       })
 
-})
+})(wvusUikit)

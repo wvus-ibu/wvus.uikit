@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 
     module("bootstrap-affix")
 
@@ -22,4 +22,4 @@ $(function () {
         ok(!$affix.hasClass('affix'), 'affix class was not added')
       })
 
-})
+})(wvusUikit)
