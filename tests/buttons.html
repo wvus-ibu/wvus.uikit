@@ -2,89 +2,467 @@
 layout: test
 group: buttons
 ---
+<div class="container">
+  <div id="button">
+    <h1>Buttons</h1>
 
-    <div class="container">
+      <button class="btn">Button</button>
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-info">Button</button>
+      <button class="btn btn-success">Button</button>
+      <button class="btn btn-warning">Button</button>
+      <button class="btn btn-danger">Button</button>
+      <button class="btn btn-inverse">Button</button>
+      <button class="btn btn-link">Button</button>
 
-      <h2>Dropups</h2>
-      <div class="btn-toolbar">
-        <div class="btn-group dropup">
-          <button class="btn">Dropup</button>
-          <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-primary">Dropup</button>
-          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-danger">Dropup</button>
-          <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-warning">Dropup</button>
-          <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-success">Dropup</button>
-          <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-info">Dropup</button>
-          <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-inverse">Dropup</button>
-          <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div><!-- /btn-toolbar -->
+  </div>
+  <div id="size">
+    <h1>Buttons Sizes</h1>
+    <div>
+      <button class="btn btn-primary btn-large">Button Large</button>
+      <button class="btn btn-primary">Button Default</button>
+      <button class="btn btn-primary btn-small">Button Small</button>
+      <button class="btn btn-primary btn-mini">Button Mini</button>
+    </div>
+  </div>
+
+  <div id="block">
+    <h1>Block</h1>
+    <div>
+      <button class="btn btn-primary btn-block">Button Block</button>
+      <button class="btn btn-block">Button Block</button>
+    </div>
+  </div>
+
+  <div id="multiple">
+    <h1>Multiple tags, One Class</h1>
+    <div>
+      <a href="#" class="btn btn-primary">Link</a>
+      <button class="btn btn-primary">Button</button>
+      <input class="btn btn-primary" type="button" value="Input">
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+  </div>
+
+  <div id="disabled">
+    <h1>Disabled</h1>
+    <div>
+      <a href="#" class="btn btn-primary disabled">Link</a>
+      <button class="btn btn-primary" disabled="disabled">Button</button>
+      <input class="btn btn-primary" type="button" value="Input" disabled>
+      <input class="btn btn-primary disabled" type="submit" value="Submit">
+    </div>
+  </div>
+
+  <div id="group">
+    <h1>Group</h1>
+    <div class="btn-group" >
+      <button class="btn btn-primary">Button Group</button>
+      <button class="btn btn-primary">Button Group</button>
+      <button class="btn btn-primary">Button Group</button>
+      <button class="btn btn-primary">Button Group</button>
+    </div>
+  </div>
+
+<div id="toolbar">
+  <h1>Toolbar</h1>
+  <div class="btn-toolbar">
+    <div class="btn-group">
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-primary">Button</button>
+    </div>
+    <div class="btn-group">
+      <button class="btn ">Button</button>
+      <button class="btn ">Button</button>
+      <button class="btn ">Button</button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-info">Button</button>
+      <button class="btn btn-info">Button</button>
+    </div>
+  </div>
+</div>
+
+<div id="toolbar-vertical">
+  <h1>Vertical</h1>
+    <div class="btn-group btn-group-vertical">
+      <button class="btn">Button</button>
+      <button class="btn">Button</button>
+      <button class="btn">Button</button>
+      <button class="btn">Button</button>
+    </div>
+</div>
+
+<div id="dropdown">
+  <h1>Dropdowns</h1>
+  <div class="btn-group">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+</div>
 
 
-    </div> <!-- /container -->
+
+<div id="dropup">
+  <h1>Dropup</h1>
+  <div class="btn-group dropup">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group  dropup">
+    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group dropup">
+    <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group dropup">
+    <a class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group dropup">
+    <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group dropup">
+    <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group dropup">
+    <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-up"></i></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="dropdown-size">
+  <h1>Dropdown Button Size</h1>
+  <div class="btn-group">
+    <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large <i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Small <i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Mini <i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="split-dropdowns">
+  <h1>Split Dropdowns</h1>
+  <div class="btn-toolbar">
+    <div class="btn-group ">
+      <button class="btn">Dropdown</button>
+      <button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button class="btn btn-primary">Dropdown</button>
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button class="btn btn-danger">Dropdown</button>
+      <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button class="btn btn-warning">Dropdown</button>
+      <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button class="btn btn-success">Dropdown</button>
+      <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button class="btn btn-info">Dropdown</button>
+      <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button class="btn btn-inverse">Dropdown</button>
+      <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div><!-- /btn-toolbar -->
+</div>
+
+
+<div id="split-dropups">
+  <h1>Split Dropups</h1>
+  <div class="btn-toolbar">
+    <div class="btn-group dropup">
+      <button class="btn">Dropup</button>
+      <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+      <button class="btn btn-primary">Dropup</button>
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+      <button class="btn btn-danger">Dropup</button>
+      <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+      <button class="btn btn-warning">Dropup</button>
+      <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+      <button class="btn btn-success">Dropup</button>
+      <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+      <button class="btn btn-info">Dropup</button>
+      <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+      <button class="btn btn-inverse">Dropup</button>
+      <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div><!-- /btn-toolbar -->
+</div>
+
+<div id="split-dropdown-size">
+  <h1>Split Dropdown Button Size</h1>
+  <div class="btn-group">
+    <button class="btn btn-large">Large</button>
+    <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn ">Default</button>
+    <button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-small">Small</button>
+    <button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-mini">Mini</button>
+    <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="load-state">
+  <h1>Load</h1>
+  <button type="button" id="toggle-button" data-loading-text="loading..."  class="btn btn-primary">Loading state</button>
+</div>
+
+<div id="toggle">
+  <h1>Toggle</h1>
+  <button type="button" class="btn btn-primary" data-toggle="button" id="htmlToggle">HTML Toggle</button>
+  <button type="button" class="btn btn-info" id="jsToggle" data-custom-text="The custom works">JS Toggle</button>
+</div>
+
+<div id="checkbox">
+  <h1>Checkbox</h1>
+  <div class="btn-group" data-toggle="buttons-checkbox">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+</div>
+
+<div id="radio">
+  <h1>Radio</h1>
+  <div class="btn-group" data-toggle="buttons-radio">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+  </div>
+  
+</div><!-- /container -->
