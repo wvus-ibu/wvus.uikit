@@ -252,6 +252,12 @@
   margin-right: -1px;
   .border-radius(0);
 }
+.tabs-left > .nav-tabs > li:first-child > a {
+  .border-radius(8px 0 0 0);
+}
+.tabs-left > .nav-tabs > li:last-child > a {
+  .border-radius(0 0 0 8px);
+}
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus{
@@ -279,6 +285,12 @@
   position: relative;
   margin-left: -1px;
   .border-radius(0);
+}
+.tabs-right > .nav-tabs > li:first-child > a {
+  .border-radius(0 8px 0 0);
+}
+.tabs-right > .nav-tabs > li:last-child > a {
+  .border-radius(0 0 8px 0);
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
