@@ -142,13 +142,17 @@ module.exports = function(grunt) {
       },
       zipsrc: {
         files: [
-          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>.v<%= pkg.version %>'}
+          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>'}
         ]
       },
+      //copies js & css to docs
+      //TODO: add to docs images
       docs: {
         files: [
           {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
-          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'}
+          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'},
+          {expand:true, cwd: 'lib/font-awesome/font', src: '*', dest: '../docs/assets/font'},
+          {expand:true, cwd: 'lib/worldvision/img/ico', src: '*', dest: '../docs/assets/ico'}
         ]
       },
       tests: {
@@ -161,16 +165,16 @@ module.exports = function(grunt) {
       zip: {
         options: {
           mode: 'zip',
-          archive: '../<%= pkg.name %>.v<%= pkg.version %>.zip'
+          archive: '../<%= pkg.name %>-<%= pkg.version %>.zip'
         },
         files: [
-          {expand:true, cwd: '../', src: '<%= pkg.name %>.v<%= pkg.version %>/**', dest:'../'}
+          {expand:true, cwd: '../', src: '<%= pkg.name %>/**', dest:'../'}
         ]
       }
     },
     clean: {
       options: {force:true},
-      src:'../<%= pkg.name %>.v<%= pkg.version %>'
+      src:'../<%= pkg.name %>'
     },
     shell: {
       script: {
@@ -221,7 +225,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy', 'test', 'compress', 'clean']);
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'test','copy:zipsrc', 'compress', 'clean']);
 
   // Updates Bootstrap, jQuery, and Font Awesome via volo
   grunt.registerTask('update', ['shell']);
