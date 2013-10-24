@@ -487,8 +487,8 @@
 }
 
 .wvus-uikit .nav-tabs > li > a {
-  padding-top: 20px;
-  padding-bottom: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 20px;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;
@@ -602,8 +602,8 @@
 .wvus-uikit .tabs-left > .nav-tabs > li > a,
 .wvus-uikit .tabs-right > .nav-tabs > li > a {
   min-width: 185px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 0;
   margin-bottom: 3px;
   color: #ffffff;
@@ -621,8 +621,8 @@
   top: -1px;
   width: 0;
   height: 0;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
   content: "";
 }
 
@@ -646,6 +646,18 @@
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+}
+
+.wvus-uikit .tabs-left > .nav-tabs > li:first-child > a {
+  -webkit-border-radius: 8px 0 0 0;
+     -moz-border-radius: 8px 0 0 0;
+          border-radius: 8px 0 0 0;
+}
+
+.wvus-uikit .tabs-left > .nav-tabs > li:last-child > a {
+  -webkit-border-radius: 0 0 0 8px;
+     -moz-border-radius: 0 0 0 8px;
+          border-radius: 0 0 0 8px;
 }
 
 .wvus-uikit .tabs-left > .nav-tabs .active > a,
@@ -683,6 +695,18 @@
           border-radius: 0;
 }
 
+.wvus-uikit .tabs-right > .nav-tabs > li:first-child > a {
+  -webkit-border-radius: 0 8px 0 0;
+     -moz-border-radius: 0 8px 0 0;
+          border-radius: 0 8px 0 0;
+}
+
+.wvus-uikit .tabs-right > .nav-tabs > li:last-child > a {
+  -webkit-border-radius: 0 0 8px 0;
+     -moz-border-radius: 0 0 8px 0;
+          border-radius: 0 0 8px 0;
+}
+
 .wvus-uikit .tabs-right > .nav-tabs .active > a,
 .wvus-uikit .tabs-right > .nav-tabs .active > a:hover,
 .wvus-uikit .tabs-right > .nav-tabs .active > a:focus {
@@ -704,6 +728,10 @@
           box-shadow: 0 0 8px #b5b5b5;
 }
 
+.wvus-uikit .breadcrumb {
+  background-color: transparent;
+}
+
 .wvus-uikit .breadcrumb > li:first-child > a:hover {
   text-decoration: none;
   opacity: 0.5;
@@ -716,6 +744,10 @@
 
 .wvus-uikit .breadcrumb > .active {
   color: #9f9480;
+}
+
+.wvus-uikit .pager li:first-child {
+  margin: 0 14px 0 0;
 }
 
 .wvus-uikit .pagination ul {
@@ -1997,9 +2029,9 @@
   .wvus-uikit .nav-collapse .btn {
     padding: 4px 10px 4px;
     font-weight: normal;
-    -webkit-border-radius: 14px;
-       -moz-border-radius: 14px;
-            border-radius: 14px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
   }
   .wvus-uikit .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;

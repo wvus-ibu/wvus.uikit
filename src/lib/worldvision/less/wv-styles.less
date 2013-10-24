@@ -104,8 +104,8 @@
 }
 // Actual tabs (as links)
 .nav-tabs > li > a {
-  padding-top: 20px;
-  padding-bottom: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: @baseLineHeight;
   border: 1px solid transparent;
   .border-radius(4px 4px 0 0);
@@ -217,8 +217,8 @@
   margin-bottom: 3px;
   color: @white;
   background-color: @nav-background-inactive;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .tabs-left > .nav-tabs .active  > a,
 .tabs-right > .nav-tabs .active > a {
@@ -230,8 +230,8 @@
   position: absolute;
   .size(0, 0);
   top: -1px;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus,
@@ -251,6 +251,14 @@
   position: relative;
   margin-right: -1px;
   .border-radius(0);
+}
+.tabs-left > .nav-tabs > li{
+  &:first-child > a {
+  .border-radius(8px 0 0 0);
+}
+  &:last-child > a{
+    .border-radius(0 0 0 8px);
+  }
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
@@ -280,6 +288,14 @@
   margin-left: -1px;
   .border-radius(0);
 }
+.tabs-right > .nav-tabs > li{
+  &:first-child > a {
+  .border-radius(0 8px 0 0);
+}
+  &:last-child > a{
+    .border-radius(0 0 8px 0);
+  }
+}
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .nav-tabs .active > a:focus {
@@ -300,6 +316,7 @@
 // Breadcrumbs
 // -----------
 .breadcrumb {
+  background-color: transparent;
   > li:first-child > a:hover{
     text-decoration: none;
     .opacity(50);
@@ -310,6 +327,13 @@
   > .active{
     color: @breadcrumb-inactive;
   }
+}
+
+//
+// Pager pagination
+// --------------------------------------------------
+.pager li:first-child {
+  margin: 0 14px 0 0;
 }
 
 // Pagination

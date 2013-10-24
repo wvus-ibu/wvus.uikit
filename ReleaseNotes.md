@@ -3,6 +3,14 @@
 ## Work In Progress
 * Checkout the project issue tracker [wvus-ibu/wvus.uikit](https://github.com/wvus-ibu/wvus.uikit/issues?state=open) and current [pull requests](https://github.com/wvus-ibu/wvus.uikit/pull/7) 
 
+## 1.1.0
+* Update Buttons 
+* Update Tabs 
+* Remove Background of breadcrumbs
+* Update left/right tabs
+* Update Pager
+* Update Tables
+
 ## 1.0
 * Consolidated each group of components into their own page
 * Added Unit tests from Bootstrap
