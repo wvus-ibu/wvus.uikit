@@ -235,4 +235,7 @@ module.exports = function(grunt) {
 
   //Lints each js plugin, builds/validates docs
   grunt.registerTask('test', ['recess', 'jshint', 'qunit', 'jekyll:build', 'validation']); //TODO: run qunit tests with grunt
+
+  // Default task. Compile, concatenate, min, and build zip
+  grunt.registerTask('build', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'copy:zipsrc', 'compress', 'clean']);
 };
