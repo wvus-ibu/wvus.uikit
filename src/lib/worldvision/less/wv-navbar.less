@@ -45,7 +45,7 @@
   .nav > li > a:hover,
   .nav > li > a:focus{
     color: @wvnavbarLinkHover;
-    #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarLinkBackgroundHover);
+    #gradient > .vertical(lighten(@wvnavbarBackgroundHighlight, 30%), @wvnavbarLinkBackgroundHover);
     #font > .text-shadow();
   }
 
@@ -54,7 +54,7 @@
   .nav > .active > a:hover,
   .nav > .active > a:focus{
     color: @wvnavbarLinkActive;
-    #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarLinkBackgroundHover);
+    #gradient > .vertical(lighten(@wvnavbarBackgroundHighlight, 30%), @wvnavbarLinkBackgroundHover);
     #font > .text-shadow();
   }
 

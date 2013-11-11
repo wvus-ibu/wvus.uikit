@@ -8915,14 +8915,14 @@
 .wvus-uikit .wv-navbar .nav > li > a:focus {
   color: #ff6600;
   text-shadow: none;
-  background-color: #ffc47f;
-  background-image: -moz-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9d29), to(#ffffff));
-  background-image: -webkit-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -o-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: linear-gradient(to bottom, #ff9d29, #ffffff);
+  background-color: #ffeeda;
+  background-image: -moz-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe3c2), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -o-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: linear-gradient(to bottom, #ffe3c2, #ffffff);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9d29', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe3c2', endColorstr='#ffffffff', GradientType=0);
 }
 
 .wvus-uikit .wv-navbar .nav > .active > a,
@@ -8930,14 +8930,14 @@
 .wvus-uikit .wv-navbar .nav > .active > a:focus {
   color: #ff6600;
   text-shadow: none;
-  background-color: #ffc47f;
-  background-image: -moz-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9d29), to(#ffffff));
-  background-image: -webkit-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -o-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: linear-gradient(to bottom, #ff9d29, #ffffff);
+  background-color: #ffeeda;
+  background-image: -moz-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe3c2), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -o-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: linear-gradient(to bottom, #ffe3c2, #ffffff);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9d29', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe3c2', endColorstr='#ffffffff', GradientType=0);
 }
 
 .wvus-uikit .wv-navbar .brand {
