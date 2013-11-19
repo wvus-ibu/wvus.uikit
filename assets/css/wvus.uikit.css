@@ -14,7 +14,7 @@
   /* Allow for input prepend/append in search forms */
 
   /*!
- *  Font Awesome 3.2.0
+ *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
  *  ------------------------------------------------------------------------------
  *  The full suite of pictographic icons, examples, and documentation can be
@@ -35,7 +35,7 @@
  *  Author - Dave Gandy
  *  ------------------------------------------------------------------------------
  *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/byscuits
+ *  Twitter: http://twitter.com/davegandy
  *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
  */
 
@@ -60,12 +60,16 @@
 
   /* keeps Bootstrap styles with and without icons the same */
 
+  /* Fixes alignment in nav lists */
+
   /* EXTRAS
  * -------------------------- */
 
   /* Stacked and layered icon */
 
   /* Animated rotating icon */
+
+  /* Prevent stack and spinners from being taken inline when inside a link */
 
   /* Icon rotations and mirroring */
 
@@ -2353,8 +2357,8 @@
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../font/fontawesome-webfont.eot?v=3.2.0');
-  src: url('../font/fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=3.2.0') format('woff'), url('../font/fontawesome-webfont.ttf?v=3.2.0') format('truetype'), url('../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.0') format('svg');
+  src: url('../font/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
 }
 
 .wvus-uikit [class^="icon-"],
@@ -2371,7 +2375,6 @@
 .wvus-uikit [class*=" icon-"]:before {
   display: inline-block;
   text-decoration: inherit;
-  cursor: default;
   speak: none;
 }
 
@@ -2597,6 +2600,11 @@
   margin-left: .2em;
 }
 
+.wvus-uikit .nav-list [class^="icon-"],
+.wvus-uikit .nav-list [class*=" icon-"] {
+  line-height: inherit;
+}
+
 .wvus-uikit .icon-stack {
   position: relative;
   display: inline-block;
@@ -2631,6 +2639,7 @@
           animation: spin 2s infinite linear;
 }
 
+.wvus-uikit a .icon-stack,
 .wvus-uikit a .icon-spin {
   display: inline-block;
   text-decoration: none;
@@ -2805,6 +2814,7 @@
   content: "\f012";
 }
 
+.wvus-uikit .icon-gear:before,
 .wvus-uikit .icon-cog:before {
   content: "\f013";
 }
@@ -3235,6 +3245,7 @@
   content: "\f084";
 }
 
+.wvus-uikit .icon-gears:before,
 .wvus-uikit .icon-cogs:before {
   content: "\f085";
 }
@@ -4135,7 +4146,7 @@
   content: "\f17c";
 }
 
-.wvus-uikit .icon-dribble:before {
+.wvus-uikit .icon-dribbble:before {
   content: "\f17d";
 }
 
@@ -8915,14 +8926,14 @@
 .wvus-uikit .wv-navbar .nav > li > a:focus {
   color: #ff6600;
   text-shadow: none;
-  background-color: #ffc47f;
-  background-image: -moz-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9d29), to(#ffffff));
-  background-image: -webkit-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -o-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: linear-gradient(to bottom, #ff9d29, #ffffff);
+  background-color: #ffeeda;
+  background-image: -moz-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe3c2), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -o-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: linear-gradient(to bottom, #ffe3c2, #ffffff);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9d29', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe3c2', endColorstr='#ffffffff', GradientType=0);
 }
 
 .wvus-uikit .wv-navbar .nav > .active > a,
@@ -8930,14 +8941,14 @@
 .wvus-uikit .wv-navbar .nav > .active > a:focus {
   color: #ff6600;
   text-shadow: none;
-  background-color: #ffc47f;
-  background-image: -moz-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9d29), to(#ffffff));
-  background-image: -webkit-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: -o-linear-gradient(top, #ff9d29, #ffffff);
-  background-image: linear-gradient(to bottom, #ff9d29, #ffffff);
+  background-color: #ffeeda;
+  background-image: -moz-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe3c2), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: -o-linear-gradient(top, #ffe3c2, #ffffff);
+  background-image: linear-gradient(to bottom, #ffe3c2, #ffffff);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9d29', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe3c2', endColorstr='#ffffffff', GradientType=0);
 }
 
 .wvus-uikit .wv-navbar .brand {
