@@ -1,4 +1,4 @@
-/*! wvus.uikit - v1.1.2 - 2013-11-18
+/*! wvus.uikit - v1.1.2 - 2013-12-02
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2013 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 /*!

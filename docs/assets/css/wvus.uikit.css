@@ -9067,6 +9067,24 @@
   background-color: #ffffff;
 }
 
+.wvus-uikit .image {
+  position: relative;
+  display: table;
+  margin-bottom: 20px;
+}
+
+.wvus-uikit .image > .caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: table-caption;
+  padding: 15px 15px 5px 15px;
+  color: #fff;
+  background-color: rgba(0, 102, 153, 0.8);
+  caption-side: bottom;
+}
+
 .wvus-uikit .pull-right {
   float: right;
 }
