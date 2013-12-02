@@ -152,7 +152,8 @@ module.exports = function(grunt) {
           {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
           {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'},
           {expand:true, cwd: 'lib/font-awesome/font', src: '*', dest: '../docs/assets/font'},
-          {expand:true, cwd: 'lib/worldvision/img/ico', src: '*', dest: '../docs/assets/ico'}
+          {expand:true, cwd: 'lib/worldvision/img/ico', src: '*', dest: '../docs/assets/ico'},
+          {expand:true, cwd:'lib/worldvision/img', src: '*', dest: '../docs/assets/img'},
         ]
       },
       tests: {
