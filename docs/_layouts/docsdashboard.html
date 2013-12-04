@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="wvus-uikit">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}} | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include head.html %}
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    {% include top-nav.html %}
+    {% include  header.html%} 
+    <div class="container">
+        <!-- Left nav (Docs)
+        ================================================= -->
+        <div class="row">
+            <div class="span3">
+                <h1>Fuel UX Tree Widget will go here.</h1>
+                
+            </div>
+            <div class="span9">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a href="#">Preview</a>
+                  </li>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">JS</a></li>
+                </ul>
+
+                {{content}}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+
+{% include js-files.html %}
+
+    </body>
+</html>
