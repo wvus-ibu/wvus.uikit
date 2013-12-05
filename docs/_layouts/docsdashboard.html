@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{{page.title}} | WVUS.UiKit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include head.html %}
+    {% include developers/head.html %}
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
     {% include top-nav.html %}
     {% include  header.html%} 
@@ -27,15 +27,15 @@
                       <p>I'm in Section 1.</p>
                     </div>
                     <div class="tab-pane" id="tab2">
-                      <p>Howdy, I'm in Section 2.</p>
+                      {% highlight html linenos %}
+                      
+                      {% endhighlight %}
                     </div>
                     <div class="tab-pane" id="tab3">
                       <p>Howdy, I'm in Section 3.</p>
                     </div>
                   </div>
                 </div>
-
-                {{content}}
             </div>
         </div>
     </div>
