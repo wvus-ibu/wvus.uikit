@@ -20,7 +20,7 @@
                   <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab1" data-toggle="tab">Preview</a></li>
                     <li><a href="#tab2" data-toggle="tab">HTML</a></li>
-                    <li><a href="#tab3" data-toggle="tab">JS</a></li>
+                    {% if page.hasJs %} <li><a href="#tab3" data-toggle="tab">JS</a></li>{% endif %}
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane active" id="tab1">
@@ -31,7 +31,7 @@
                         {{content}}
                       {% endhighlight %}
                     </div>
-                    {% if page.hasJs == true %}
+                    {% if page.hasJs %}
                     <div class="tab-pane" id="tab3">
                       {% include developers/js-include.html %}
                     </div>
