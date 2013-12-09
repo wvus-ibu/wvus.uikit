@@ -24,30 +24,18 @@
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane active" id="tab1">
-                      {% case page.snippet %}
-                            {% when "modal" %}
-                                {{content}}
-                            {% when "accordion" %}
-                                {{content}}
-                            {% when "media" %}
-                                {{content}}
-                          {% endcase %}
+                      {{content}}
                     </div>
                     <div class="tab-pane" id="tab2">
                       {% highlight html linenos %}
-                          {% case page.snippet %}
-                            {% when "modal" %}
-                                {{content}}
-                            {% when "accordion" %}
-                                {{content}}
-                            {% when "media" %}
-                                {{content}}
-                          {% endcase %}
+                        {{content}}
                       {% endhighlight %}
                     </div>
+                    {% if page.hasJs == true %}
                     <div class="tab-pane" id="tab3">
-                      <p>Howdy, I'm in Section 3.</p>
+                      {% include developers/js/accordion-js.html %}
                     </div>
+                    {% endif %}
                   </div>
                 </div>
             </div>
