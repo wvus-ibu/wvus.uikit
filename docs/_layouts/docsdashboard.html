@@ -33,7 +33,7 @@
                     </div>
                     {% if page.hasJs == true %}
                     <div class="tab-pane" id="tab3">
-                      {% include developers/js/accordion-js.html %}
+                      {% include developers/js-include.html %}
                     </div>
                     {% endif %}
                   </div>
@@ -44,6 +44,7 @@
     {% include footer.html %}
 
 {% include js-files.html %}
+{% include developers/js-include.html %}
 
     </body>
 </html>
