@@ -95,7 +95,10 @@ module.exports = function(grunt) {
         tasks: ['recess', 'copy:docs']
       },
       docs: {
-        files: ['../docs/**.*'],
+        options: {
+          livereload: '<%= connect.jekyll.options.livereload %>',
+        },
+        files: ['../docs/**'],
         tasks: ['jekyll:build']
       }
     },
@@ -207,7 +210,18 @@ module.exports = function(grunt) {
       files: {
         src: ['../docs/_site/**/*.html']
       }
-    }
+    },
+    connect: {
+      jekyll: {
+        options: {
+          base: '<%= jekyll.options.dest %>',
+          hostname: 'localhost',
+          port: 4000,
+          open: true,
+          livereload: 35729,
+        }
+      }
+    },
   });
 
   // These plugins provide necessary tasks.
@@ -224,6 +238,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task. Compile, concatenate, min, and build zip
   grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'test','copy:zipsrc', 'compress', 'clean']);
@@ -239,4 +254,6 @@ module.exports = function(grunt) {
 
   // Default task. Compile, concatenate, min, and build zip
   grunt.registerTask('build', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'copy:zipsrc', 'compress', 'clean']);
+
+  grunt.registerTask('serve', ['jekyll:build', 'connect:jekyll', 'watch']);
 };
