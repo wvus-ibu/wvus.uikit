@@ -191,13 +191,15 @@ module.exports = function(grunt) {
     },
     jekyll: {
        options: {
-         src: '../docs',
+          src: '../docs',
           dest: '../docs/_site',
           config: '../docs/_config.yml',
         },
       build: {},
       serve: {
-        raw: 'baseurl: http://localhost:4000',
+        options:{
+          raw: 'baseurl: http://localhost:4000\n',
+        }
       }
     },
     validation: {
@@ -252,5 +254,5 @@ module.exports = function(grunt) {
   // Default task. Compile, concatenate, min, and build zip
   grunt.registerTask('build', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'copy:zipsrc', 'compress', 'clean']);
 
-  grunt.registerTask('serve', ['jekyll:build', 'connect:jekyll', 'watch']);
+  grunt.registerTask('serve', ['jekyll:serve', 'connect:jekyll', 'watch']);
 };
