@@ -97,9 +97,10 @@ module.exports = function(grunt) {
       docs: {
         options: {
           livereload: '<%= connect.jekyll.options.livereload %>',
+          interrupt: true,
         },
         files: ['../docs/**'],
-        tasks: ['jekyll:build']
+        tasks: ['jekyll:serve'],
       }
     },
     /*
@@ -189,18 +190,14 @@ module.exports = function(grunt) {
       }
     },
     jekyll: {
-      options: {
-          src: '../docs',
+       options: {
+         src: '../docs',
           dest: '../docs/_site',
-          config: '../docs/_config.yml'
-      },
+          config: '../docs/_config.yml',
+        },
       build: {},
-      serve:{
-        options: {
-          baseurl: 'http://localhost:4000',
-          serve: true,
-          watch: true
-        }
+      serve: {
+        raw: 'baseurl: http://localhost:4000',
       }
     },
     validation: {
@@ -217,7 +214,7 @@ module.exports = function(grunt) {
           base: '<%= jekyll.options.dest %>',
           hostname: 'localhost',
           port: 4000,
-          open: true,
+          open: 'http://localhost:4000/',
           livereload: 35729,
         }
       }
