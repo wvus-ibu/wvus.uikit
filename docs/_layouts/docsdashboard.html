@@ -16,27 +16,27 @@
               <div class="well">
                 {% include developers/navigation.html %}
               </div>
-            </div>
+            </div>  
             <div class="span9">
                 <div class="tabbable"> <!-- Only required for left/right tabs -->
                   <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab1" data-toggle="tab">Preview</a></li>
-                    <li><a href="#tab2" data-toggle="tab">HTML</a></li>
+                    <li class="active"><a href="#docsTab1" data-toggle="tab">Preview</a></li>
+                    <li><a href="#docsTab2" data-toggle="tab">HTML</a></li>
                     {% if page.hasJs %}
-                      <li><a href="#tab3" data-toggle="tab">JS</a></li>
+                      <li><a href="#docsTab3" data-toggle="tab">JS</a></li>
                     {% endif %}
                   </ul>
                   <div class="tab-content">
-                    <div class="tab-pane active" id="tab1">
+                    <div class="tab-pane active" id="docsTab1">
                       {{content}}
                     </div>
-                    <div class="tab-pane" id="tab2">
-                      {% highlight html linenos %}
+                    <div class="tab-pane" id="docsTab2">
+                      {% highlight html  %}
                         {{content}}
                       {% endhighlight %}
                     </div>
                     {% if page.hasJs %}
-                      <div class="tab-pane" id="tab3">
+                      <div class="tab-pane" id="docsTab3">
                         {% include developers/js-include.html %}
                       </div>
                     {% endif %}
