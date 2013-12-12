@@ -51,7 +51,12 @@
         items: 3,
       });
 
+    }); 
+    {% when "popover" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('#markupPopover').popover();
     });
     
 {% endcase %}
+
 </script>
