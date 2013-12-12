@@ -31,13 +31,15 @@
                       {{content}}
                     </div>
                     <div class="tab-pane" id="docsTab2">
-                      {% highlight html  %}
+                      {% highlight js  %}
                         {{content}}
                       {% endhighlight %}
                     </div>
                     {% if page.hasJs %}
                       <div class="tab-pane" id="docsTab3">
-                        {% include developers/js-include.html %}
+                        {% highlight html %}
+                          {% include developers/js-include.html %}
+                        {% endhighlight %}
                       </div>
                     {% endif %}
                   </div>
