@@ -1,9 +1,9 @@
+<script type="text/javascript">
 {% if page.snippet == "accordion" %}
   accordion js
 {% endif %}
 {% case page.snippet %}
   {% when "modal" %}
-      <script type="text/javascript">
       wvusUikit(document).ready(function(){
         wvusUikit('#jsModalButton').click(function (){
           wvusUikit('#jsModal').modal('show');
@@ -15,5 +15,34 @@
           wvusUikit('#jsModal').modal('hide');
         });
       });
-      </script>
+  {% when "carousel" %}
+    wvusUikit(document).ready(function(){
+      var jsCarousel = wvusUikit('#jsCarousel');
+      jsCarousel.carousel({
+        interval: 2000,
+        pause: ""
+      });
+      wvusUikit('#jsLeft').click(function() {
+        jsCarousel.carousel('prev');
+      });
+      wvusUikit('#jsRight').click(function(){
+        jsCarousel.carousel('next');
+      });
+      wvusUikit('#jsPause').click(function() {
+        jsCarousel.carousel('pause');
+      });
+      wvusUikit('#jsResume').click(function () {
+        jsCarousel.carousel('cycle');
+      });
+      wvusUikit('#jsPip1').click(function() {
+        jsCarousel.carousel(0);
+      });
+      wvusUikit('#jsPip2').click(function() {
+        jsCarousel.carousel(1);
+      });
+      wvusUikit('#jsPip3').click(function() {
+        jsCarousel.carousel(2);
+      });
+    });
 {% endcase %}
+</script>
