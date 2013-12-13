@@ -60,6 +60,11 @@
     wvusUikit(document).ready(function() {
       wvusUikit('#navbar').scrollspy();
     });
+    {% when "affix" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('#navbar').affix();
+    });
+
     
 {% endcase %}
 
