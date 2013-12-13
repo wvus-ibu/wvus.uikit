@@ -31,15 +31,15 @@
                       {{content}}
                     </div>
                     <div class="tab-pane" id="docsTab2">
-                      {% highlight html linenos %}
-                        {{content}}
-                      {% endhighlight %}
+{% highlight html linenos %}
+{{content}}
+{% endhighlight %}
                     </div>
                     {% if page.hasJs %}
                       <div class="tab-pane" id="docsTab3">
-                        {% highlight js linenos %}
-                          {% include developers/js-include.html %}
-                        {% endhighlight %}
+{% highlight js linenos %}
+{% include developers/js-include.html %}
+{% endhighlight %}
                       </div>
                     {% endif %}
                   </div>
