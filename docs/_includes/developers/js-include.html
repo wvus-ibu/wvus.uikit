@@ -56,6 +56,10 @@
     wvusUikit(document).ready(function() {
       wvusUikit('#markupPopover').popover();
     });
+    {% when "scrollspy" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('#navbar').scrollspy();
+    });
     
 {% endcase %}
 
