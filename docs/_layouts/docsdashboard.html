@@ -7,17 +7,20 @@
     {% include developers/head.html %}
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
     {% include top-nav.html %}
-    {% include  header.html%} 
+    
     <div class="container">
         <!-- Left nav (Docs)
         ================================================= -->
         <div class="row">
             <div class="span3">
               <div class="well">
+                <h4>UiKit Documentation</h4>
+                <hr>
                 {% include developers/navigation.html %}
               </div>
             </div>  
             <div class="span9">
+              {% include  developers/header.html%} 
                 <div class="tabbable"> <!-- Only required for left/right tabs -->
                   <ul class="nav nav-tabs">
                     <li class="active"><a href="#docsTab1" data-toggle="tab">Preview</a></li>
@@ -37,7 +40,7 @@
                     </div>
                     {% if page.hasJs %}
                       <div class="tab-pane" id="docsTab3">
-{% highlight js linenos %}
+{% highlight js hl_lines=4 %}
 {% include developers/js-include.html %}
 {% endhighlight %}
                       </div>
