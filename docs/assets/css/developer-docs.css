@@ -2,10 +2,7 @@
 *  This LESS is for the developer documentation.  
 *  None of this is need to make the UiKit work
 */
-.wvus-uikit{
-
-	.subheader{
-		margin: 20px 0 20px 0;
-		color: #6f6f6f;
-	}
+.wvus-uikit .subheader {
+  margin: 20px 0 20px 0;
+  color: #6f6f6f;
 }
