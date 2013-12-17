@@ -9,4 +9,5 @@
 .wvus-uikit #grid div[class*="span"] {
   text-align: center;
   background-color: #b8b8b8;
+  border: solid 1px #a8a8a8;
 }
