@@ -3,25 +3,25 @@
   <li><a href="/developers/snippets/grid/">Grid</a></li>
   <li><a href="#">Responsive</a></li>
   <li>
-    <a href="#">Typography</a>
-    <ul class="nav nav-list">
-      <li><a href="{{ site.baseurl }}/developers/snippets/headings">Headings</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/body">Body Text</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/emphasis">Emphasis</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/bold">Bold</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/italics">Italics</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/abbreviations">Abbreviations</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/address">Address</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/blockquotes">Blockquotes</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/lists">Lists</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/code">Code</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/hero-unit">Hero Unit</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/page-header">Page Header</a></li>
+    <a href="#" data-toggle="collapse" data-target="#typography">Typography</a>
+    <ul class="nav nav-list collapse {% if page.group == 'typography'%} in {% endif %}" id="typography">
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/headings">Headings</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/body">Body Text</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/emphasis">Emphasis</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/bold">Bold</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/italics">Italics</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/abbreviations">Abbreviations</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/address">Address</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/blockquotes">Blockquotes</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists">Lists</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/code">Code</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/hero-unit">Hero Unit</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/typography/page-header">Page Header</a></li>
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/tables">Tables</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/tables" data-target="#tables" data-toggle="collapse">Tables</a>
+    <ul class="nav nav-list {% if page.group == 'tables'%} in {% endif %}" id="tables">
       <li><a href="{{ site.baseurl }}/developers/snippets/tables/striped">Striped</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/tables/bordered">Bordered</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/tables/hover">Hover</a></li>
@@ -46,43 +46,43 @@
   <li class="divider"></li>
   <li class="nav-header">UI Elements</li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/dropdowns">Dropdowns</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/dropdowns" data-toggle="collapse" data-target="#dropdowns">Dropdowns</a>
+    <ul class="nav nav-list collapse {% if page.group == 'dropdowns'%} in {% endif %}" id="dropdowns">
       <li><a href="{{ site.baseurl }}/developers/snippets/dropdowns/examples">Examples</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}/developers/snippets/buttons">Buttons</a>
-    <ul class="nav nav-list">
+  <li><a href="{{ site.baseurl }}/developers/snippets/buttons" data-toggle="collapse" data-target="#buttons">Buttons</a>
+    <ul class="nav nav-list collapse {% if page.group == 'buttons'%} in {% endif %}" id="buttons">
       <li><a href="{{ site.baseurl }}/developers/snippets/buttons/groups">Groups</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/buttons/dropdowns">Dropdowns</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}/developers/snippets/tabs">Tabs</a>
-    <ul class="nav nav-list">
+  <li><a href="{{ site.baseurl }}/developers/snippets/tabs" data-toggle="collapse" data-target="#tabs">Tabs</a>
+    <ul class="nav nav-list collapse {% if page.group == 'tabs'%} in {% endif %}" id="tabs">
       <li><a href="{{ site.baseurl }}/developers/snippets/tabs/stacked">Stacked</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/tabs/dropdowns">Dropdowns</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/tabs/tabbable">Tabbable</a></li>
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/pills">Pills</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/pills" data-toggle="collapse" data-target="#pills">Pills</a>
+    <ul class="nav nav-list collapse {% if page.group == 'pills'%} in {% endif %}" id="pills">
       <li><a href="{{ site.baseurl }}/developers/snippets/pills/stacked">Stacked</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/pills/dropdowns">Dropdowns</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/pills/tabbable">Tabbable</a></li>
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/navbar">Navbar</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/navbar" data-toggle="collapse" data-target="#navbar">Navbar</a>
+    <ul class="nav nav-list collapse {% if page.group == 'navbar'%} in {% endif %}" id="navbar">
       <li><a href="{{ site.baseurl }}/developers/snippets/navbar/fixed">Fixed</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/navbar/static">Static</a></li>
     </ul>
   </li>
   <li><a href="{{ site.baseurl }}/developers/snippets/breadcrumbs">Breadcrumbs</a></li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/pagination">Pagination</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/pagination" data-toggle="collapse" data-target="#pagination">Pagination</a>
+    <ul class="nav nav-list collapse {% if page.group == 'pagination'%} in {% endif %}" id="pagination">
       <li><a href="{{ site.baseurl }}/developers/snippets/pagination/pager">Pager</a></li>
     </ul>
   </li>
@@ -92,8 +92,8 @@
   <li><a href="{{ site.baseurl }}/developers/snippets/progress">Progress Bars</a></li>
   <li><a href="{{ site.baseurl }}/developers/snippets/media/">Media Object</a></li>
   <li>
-    <a href="#">Miscellaneous</a>
-    <ul class="nav nav-list">
+    <a href="#" data-toggle="collapse" data-target="#misc">Miscellaneous</a>
+    <ul class="nav nav-list collapse {% if page.group == 'misc'%} in {% endif %}" id="misc">
       <li><a href="{{ site.baseurl }}/developers/snippets/wells">Wells</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/close-icon">Close icon</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/helper-classes">Helper classes</a></li>
@@ -103,8 +103,8 @@
   <li class="divider"></li>
   <li class="nav-header">Widgets</li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/modal/">Modal</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/modal/" data-toggle="collapse" data-target="#modal">Modal</a>
+    <ul class="nav nav-list collapse {% if page.group == 'modal'%} in {% endif %}" id="modal">
       <li><a href="#modals-examples">Data attributes</a></li>
       <li><a href="#modals-usage">JS</a></li>
     </ul>
@@ -112,8 +112,8 @@
   <li><a href="{{ site.baseurl }}/developers/snippets/carousel">Carousel</a></li>
   <li><a href="{{ site.baseurl }}/developers/snippets/typeahead">Typeahead</a></li>
   <li>
-    <a href="{{ site.baseurl }}/developers/snippets/collapse/">Collapse</a>
-    <ul class="nav nav-list">
+    <a href="{{ site.baseurl }}/developers/snippets/collapse/" data-toggle="collapse" data-target="#collapse">Collapse</a>
+    <ul class="nav nav-list collapse {% if page.group == 'collapse'%} in {% endif %}" id="collapse">
       <li><a href="{{ site.baseurl }}/developers/snippets/collapse/accordion">Accordion</a></li>
     </ul>
   </li>
