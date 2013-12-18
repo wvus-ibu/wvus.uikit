@@ -6,6 +6,9 @@
   margin: 20px 0 30px 0;
   color: #6f6f6f;
 }
+.wvus-uikit #docs-nav {
+  margin-top: 10px;
+}
 .wvus-uikit #grid div[class*="span"] {
   text-align: center;
   background-color: #d1d1d1;
