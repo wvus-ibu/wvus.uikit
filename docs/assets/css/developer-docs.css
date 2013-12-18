@@ -9,7 +9,11 @@
 .wvus-uikit #grid div[class*="span"] {
   text-align: center;
   background-color: #d1d1d1;
-  border: solid 1px #a8a8a8;
+  border: solid 1px #999999;
+  margin-bottom: 10px;
+}
+.wvus-uikit #grid div[class*="span"] div[class*="span"] {
+  background-color: #ababab;
 }
 .wvus-uikit body > .navbar .brand {
   float: left;
