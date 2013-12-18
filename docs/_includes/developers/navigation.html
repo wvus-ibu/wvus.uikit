@@ -29,17 +29,14 @@
       <li><a href="{{ site.baseurl }}/developers/snippets/tables/context">Contextual Styles</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}/developers/snippets/forms">Forms</a>
-    <ul>
-      <li><a href="{{ site.baseurl }}/developers/snippets/forms/layouts">Optional layouts</a>
-        <ul class="nav nav-list">
-          <li><a href="{{ site.baseurl }}/developers/snippets/forms/layouts/search-form">Search form</a></li>
-          <li><a href="{{ site.baseurl }}/developers/snippets/forms/layouts/inline-form">Inline form</a></li>
-          <li><a href="{{ site.baseurl }}/developers/snippets/forms/layouts/horizontal-form">Horizontal form</a></li>
-          <li><a href="{{ site.baseurl }}/developers/snippets/forms/layouts/contact-us">Contact Us form</a></li>
-          <li><a href="{{ site.baseurl }}/developers/snippets/forms/layouts/newsletter-signup-form">Newsletter Sign-up</a></li>
-        </ul>
-      </li>
+  <li><a href="#" data-target="#forms" data-toggle="collapse">Forms</a>
+    <ul class="nav nav-list collapse {% if page.group == 'forms'%} in {% endif %}" id="forms">
+        <li><a href="{{ site.baseurl }}/developers/snippets/forms/default">Default</a>
+        <li><a href="{{ site.baseurl }}/developers/snippets/forms/search-form">Search form</a></li>
+        <li><a href="{{ site.baseurl }}/developers/snippets/forms/inline-form">Inline form</a></li>
+        <li><a href="{{ site.baseurl }}/developers/snippets/forms/horizontal-form">Horizontal form</a></li>
+        <li><a href="{{ site.baseurl }}/developers/snippets/forms/contact-us">Contact Us form</a></li>
+        <li><a href="{{ site.baseurl }}/developers/snippets/forms/newsletter-signup-form">Newsletter Sign-up</a></li>
     </ul>
   </li>
   <li><a href="{{ site.baseurl }}/developers/snippets/images">Images</a></li>
