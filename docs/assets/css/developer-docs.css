@@ -11,10 +11,7 @@
   background-color: #d1d1d1;
   border: solid 1px #a8a8a8;
 }
-.wvus-uikit .docbrand {
+.wvus-uikit body > .navbar .brand {
   float: left;
   color: #ffffff;
-  margin-left: 10px;
-  padding: 10px 10px 10px;
-  font-size: 16px;
 }
