@@ -89,7 +89,16 @@
   </li>
   <li><a href="{{ site.baseurl }}/developers/snippets/labelsandbadges">Labels and Badges</a></li>
   <li><a href="{{ site.baseurl }}/developers/snippets/thumbnails">Thumbnails</a></li>
-  <li><a href="{{ site.baseurl }}/developers/snippets/alerts">Alerts</a></li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#alerts">Alerts</a>
+    <ul class="nav nav-list collapse {% if page.group == 'alerts'%} in {% endif %}" id="alerts">
+      <li><a href="{{ site.baseurl }}/developers/snippets/alerts/default">Default</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/alerts/success">Success</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/alerts/info">Info</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/alerts/warning">Warning</a></li>
+      <li><a href="{{ site.baseurl }}/developers/snippets/alerts/error">Error</a></li>
+    </ul>
+  </li>
   <li><a href="{{ site.baseurl }}/developers/snippets/progress">Progress Bars</a></li>
   <li><a href="{{ site.baseurl }}/developers/snippets/media/">Media Object</a></li>
   <li>
