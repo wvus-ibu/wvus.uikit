@@ -8,9 +8,7 @@
     margin: 20px 0 30px 0;
     color: #6f6f6f;
   }
-  #docs-nav{
-    margin-top: 10px;
-  }
+ 
 
   #grid div[class*="span"]{
     text-align: center;
@@ -21,12 +19,26 @@
       background-color: #ababab
     }
   }
-
-
   body > .navbar .brand {
 	  float: left;
   	   color: #ffffff;
   }
 
-  
+// Classes to get things to show correctly in the docs
+
+  .docs-tabs .tab-content{
+    overflow: visible;
+  }
+
+  #docs-nav{
+    margin-top: 10px;
+  }
+
+  .docs-dropdown{
+    display: block;
+    position: static;
+    margin-bottom: 5px;
+    *width: 180px;
+  }
+
 }
