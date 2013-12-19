@@ -10,10 +10,33 @@
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/emphasis">Emphasis</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/bold">Bold</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/italics">Italics</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/typography/abbreviations">Abbreviations</a></li>
+      <li>
+        <a href="{{ site.baseurl }}/developers/snippets/typography/abbreviations">Abbreviations</a>
+        <ul class="nav nav-list">
+          <li>
+              <a href="{{ site.baseurl }}/developers/snippets/typography/abbreviations/initialism">Initiallism</a>
+          </li>
+        </ul>
+      </li>
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/address">Address</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/typography/blockquotes">Blockquotes</a></li>
-      <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists">Lists</a></li>
+      <li>
+        <a href="{{ site.baseurl }}/developers/snippets/typography/blockquotes">Blockquotes</a>
+        <ul class="nav nav-list">
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/blockquotes/source">Cite Source</a></li>
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/blockquotes/alignment">Alignment</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#lists">Lists</a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'lists'%} in {% endif %}" id="lists">
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists/unordered">Unordered</a></li>
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists/ordered">Ordered</a></li>
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists/unstyled">Unstyled</a></li>
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists/inline">Inline</a></li>
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists/description">Description</a></li>
+          <li><a href="{{ site.baseurl }}/developers/snippets/typography/lists/horizontal">Horizontal Description</a></li>
+        </ul>
+      </li>
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/code">Code</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/hero-unit">Hero Unit</a></li>
       <li><a href="{{ site.baseurl }}/developers/snippets/typography/page-header">Page Header</a></li>
