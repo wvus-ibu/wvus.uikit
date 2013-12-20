@@ -43,7 +43,7 @@
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/tables" data-target="#tables" data-toggle="collapse">Tables</a>
+    <a href="{{ site.baseurl }}{{ site.developerdocs }}/tables" data-target="#tables" data-toggle="collapse">Tables <i class="icon-caret-{% if page.group == 'tables'%}up{% else %}down{% endif %}"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'tables'%} in {% endif %}" id="tables">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/striped">Striped</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/bordered">Bordered</a></li>
