@@ -20,8 +20,9 @@
       </li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/address">Address</a></li>
       <li>
-        <a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes">Blockquotes</a>
-        <ul class="nav nav-list">
+        <a href="#" data-toggle="collapse" data-target="#blockquotes">Blockquotes</a>
+        <ul class="nav nav-list" id="blockquotes">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/default">Default</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/source">Cite Source</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/alignment">Alignment</a></li>
         </ul>
@@ -136,7 +137,7 @@
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/pills" data-toggle="collapse" data-target="#pills">Pills</a>
+    <a href="#" data-toggle="collapse" data-target="#pills">Pills</a>
     <ul class="nav nav-list collapse {% if page.group == 'pills'%} in {% endif %}" id="pills">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/disabled">Disabled</a></li>
@@ -191,7 +192,8 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pager/alignment">Alignment</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/labelsandbadges">Labels and Badges</a></li>
+  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/labels">Labels</a></li>
+  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/badges">Badges</a></li>
   <li>
     <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails</a>
     <ul class="nav nav-list collapse {% if page.group == 'thumbnails'%} in {% endif %}" id="thumbnails">
@@ -231,9 +233,13 @@
   <li>
     <a href="#" data-toggle="collapse" data-target="#misc">Miscellaneous</a>
     <ul class="nav nav-list collapse {% if page.group == 'misc'%} in {% endif %}" id="misc">
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/wells">Wells</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/close-icon">Close icon</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/helper-classes">Helper classes</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/clearfix">Clearfix</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/muted">Muted</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/pull-left">Pull-Left</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/pull-right">Pull-Right</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/wells">Wells</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/close-icon">Close icon</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/helper-classes">Helper classes</a></li>
     </ul>
 
   </li>
