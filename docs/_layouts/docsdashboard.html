@@ -9,51 +9,47 @@
     {% include developers/top-nav.html %}
     
     <div class="container-fluid">
-        <!-- Left nav (Docs)
-        ================================================= -->
-        <div class="row-fluid">
-            <div class="span3" id="docs-nav">
-              <div class="well" >
-                <h4>UiKit Documentation</h4>
-                <hr>
-                {% include developers/navigation.html %}
-              </div>
+      <!-- Left nav (Docs)
+      ================================================= -->
+      <div class="row-fluid">
+        <div class="span3" id="docs-nav">
+          <div class="well" >
+            <h4>UiKit Documentation</h4>
+            <hr>
+            {% include developers/navigation.html %}
+          </div>
+        </div>
+        <div class="span9">
+          {% include  developers/header.html %}
+          <div class="row-fluid">
+            <div class="docs-example">
+              {{content}}
             </div>
-            <div class="span9">
-              {% include  developers/header.html%} 
-                <div class="tabbable docs-tabs"> <!-- Only required for left/right tabs -->
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a href="#docsTab1" data-toggle="tab">Preview</a></li>
-                    <li><a href="#docsTab2" data-toggle="tab">HTML</a></li>
-                    {% if page.hasJs %}
-                      <li><a href="#docsTab3" data-toggle="tab">JS</a></li>
-                    {% endif %}
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="docsTab1">
-                      {{content}}
-                    </div>
-                    <div class="tab-pane" id="docsTab2">
+          </div>
+          <div class="row-fluid">
+            <div class="docs-html">
 {% highlight html linenos %}
 {{content}}
 {% endhighlight %}
-                    </div>
-                    {% if page.hasJs %}
-                      <div class="tab-pane" id="docsTab3">
+            </div>
+          </div>
+{% if page.hasJs %}
+          <div class="row-fluid">
+            <div class="docs-js">
 {% highlight js hl_lines=4 %}
 {% include developers/js-include.html %}
 {% endhighlight %}
-                      </div>
-                    {% endif %}
-                  </div>
-                </div>
-            </div>
+          </div>
+{% endif %}
         </div>
+
+      </div>
     </div>
+
     {% include footer.html %}
 
-{% include js-files.html %}
-{% include developers/js-include.html %}
+    {% include js-files.html %}
+    {% include developers/js-include.html %}
 
-    </body>
+  </body>
 </html>
