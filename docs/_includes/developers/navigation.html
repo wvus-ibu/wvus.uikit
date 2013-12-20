@@ -43,8 +43,9 @@
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/tables" data-target="#tables" data-toggle="collapse">Tables <i class="icon-caret-{% if page.group == 'tables'%}up{% else %}down{% endif %}"></i></a>
+    <a href="#" data-target="#tables" data-toggle="collapse">Tables <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'tables'%} in {% endif %}" id="tables">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/striped">Striped</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/bordered">Bordered</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/hover">Hover</a></li>
@@ -59,16 +60,25 @@
       </li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/" data-target="#forms" data-toggle="collapse">Forms <i class="icon-caret-{% if page.group == 'forms'%}up{% else %}down{% endif %}"></i></a>
+  <li><a href="#" data-target="#forms" data-toggle="collapse">Forms <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'forms'%} in {% endif %}" id="forms">
-        <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/search-form">Search form</a></li>
-        <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/inline-form">Inline form</a></li>
-        <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/horizontal-form">Horizontal form</a></li>
-        <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/contact-us">Contact Us form</a></li>
-        <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/newsletter-signup-form">Newsletter Sign-up</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/default">Default Styles</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/search-form">Search form</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/inline-form">Inline form</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/horizontal-form">Horizontal form</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/contact-us">Contact Us form</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/newsletter-signup-form">Newsletter Sign-up</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images">Images</a></li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#images">Images</a>
+    <ul class="nav nav-list collapse {% if page.group == 'images'%} in {% endif %}" id="images">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/rounded">Rounded</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/circle">Circle</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/polariod">Polariod</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/caption">Caption</a></li>
+    </ul>
+  </li>
   <li class="divider"></li>
   <li class="nav-header">UI Elements</li>
   <li>
