@@ -182,7 +182,13 @@
     </ul>
   </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/labelsandbadges">Labels and Badges</a></li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails">Thumbnails</a></li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails</a>
+    <ul class="nav nav-list collapse {% if page.group == 'thumbnails'%} in {% endif %}" id="thumbnails">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails/grid">Grid Sizing</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails/no-grid">No Grid Sizing</a></li>
+    </ul>
+  </li>
   <li>
     <a href="#" data-toggle="collapse" data-target="#alerts">Alerts</a>
     <ul class="nav nav-list collapse {% if page.group == 'alerts'%} in {% endif %}" id="alerts">
@@ -241,12 +247,25 @@
   <li class="divider"></li>
   <li class="nav-header">Effects</li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips" data-toggle="collapse" data-target="#tooltips">Tooltips</a>
+    <a href="#" data-toggle="collapse" data-target="#tooltips">Tooltips</a>
     <ul class="nav nav-list collapse {% if page.group == 'tooltip'%} in {% endif %}" id="tooltips">
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/positions">Positions</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/default">Default</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/top">Top</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/right">Right</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/bottom">Bottom</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/left">Left</a></li>
     </uL>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers">Popovers</a></li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#popovers">Popovers</a>
+    <ul class="nav nav-list collapse {% if page.group == 'popover'%} in {% endif %}" id="popovers">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/default">Default</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/top">Top</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/right">Right</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/bottom">Bottom</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/left">Left</a></li>
+    </uL>
+  </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy">Scroll Spy</a></li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/affix">Affix</a></li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons">Icons</a></li>
