@@ -59,9 +59,8 @@
       </li>
     </ul>
   </li>
-  <li><a href="#" data-target="#forms" data-toggle="collapse">Forms</a>
+  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/" data-target="#forms" data-toggle="collapse">Forms <i class="icon-caret-{% if page.group == 'forms'%}up{% else %}down{% endif %}"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'forms'%} in {% endif %}" id="forms">
-        <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/default">Default</a>
         <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/search-form">Search form</a></li>
         <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/inline-form">Inline form</a></li>
         <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/horizontal-form">Horizontal form</a></li>
