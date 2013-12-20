@@ -93,7 +93,18 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/groups">Groups</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/Toolbar">Toolbar</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/vertical">Vertical Toolbar</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns">Dropdowns</a></li>
+      <li><a href="#">Dropdowns</a>
+        <ul class="nav nav-list collapse {% if page.group == 'buttons'%} in {% endif %}">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/basic">Basic</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropup">Dropup</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropdown-size">Dropdown Size</a></li>
+          
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropups">Split Dropups</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown-size">Split Dropdown Size</a></li>
+          
+        </ul>
+      </li>
     </ul>
   </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs" data-toggle="collapse" data-target="#tabs">Tabs</a>
