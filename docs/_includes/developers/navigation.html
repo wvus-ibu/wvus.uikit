@@ -106,7 +106,7 @@
       </li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs" data-toggle="collapse" data-target="#tabs">Tabs</a>
+  <li><a href="#" data-toggle="collapse" data-target="#tabs">Tabs</a>
     <ul class="nav nav-list collapse {% if page.group == 'tabs'%} in {% endif %}" id="tabs">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/direction">Direction</a></li>
@@ -133,18 +133,34 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/direction">Direction</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/stacked">Stacked</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/dropdowns">Dropdowns</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/tabbable">Tabbable</a>
-        <ul class="nav nav-list">
-
-        </ul>
-      </li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/tabbable">Tabbable</a></li>
     </ul>
   </li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar" data-toggle="collapse" data-target="#navbar">Navbar</a>
+    <a href="#" data-toggle="collapse" data-target="#navbar" {% if page.group == 'navbar'%} in {% endif %}>Navbar</a>
     <ul class="nav nav-list collapse {% if page.group == 'navbar'%} in {% endif %}" id="navbar">
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed">Fixed</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static">Static</a></li>
+      <li>
+        <a href="#">Basic</a>
+        <ul class="nav nav-list">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/default">Default</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/inverse">Inverse</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/wv-navbar">WV Style</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Fixed</a>
+        <ul class="nav nav-list">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/default">Default</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/wv-fixed">WV Style</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Static</a>
+        <ul class="nav nav-list">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static/default">Default</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static/wv-static">WV Style</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/breadcrumbs">Breadcrumbs</a></li>
