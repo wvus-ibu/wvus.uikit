@@ -5,6 +5,14 @@
     <title>{{page.title}} | WVUS.UiKit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include developers/head.html %}
+
+    <script type="text/javascript">
+      wvusUikit(document).ready(function(){
+        wvusUikit("a[data-toggle='collapse']").click(function(e){
+          e.preventDefault();
+        });
+      });
+    </script>
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
     {% include developers/top-nav.html %}
     
