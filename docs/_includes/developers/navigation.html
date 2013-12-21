@@ -11,24 +11,23 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/bold">Bold</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/italics">Italics</a></li>
       <li>
-        <a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/abbreviations">Abbreviations</a>
-        <ul class="nav nav-list">
-          <li>
-              <a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/abbreviations/initialism">Initiallism</a>
-          </li>
+        <a href="#" data-toggle="collapse" data-target="#abbreviations">Abbreviations <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'abbreviations'%} in {% endif %}" id="abbreviations">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/abbreviations">Default</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/abbreviations/initialism">Initialism</a></li>
         </ul>
       </li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/address">Address</a></li>
       <li>
-        <a href="#" data-toggle="collapse" data-target="#blockquotes">Blockquotes</a>
-        <ul class="nav nav-list" id="blockquotes">
+        <a href="#" data-toggle="collapse" data-target="#blockquotes">Blockquotes <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'abbreviations'%} in {% endif %}" id="blockquotes">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/default">Default</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/source">Cite Source</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/alignment">Alignment</a></li>
         </ul>
       </li>
       <li>
-        <a href="#" data-toggle="collapse" data-target="#lists">Lists</a>
+        <a href="#" data-toggle="collapse" data-target="#lists">Lists <i class="icon-caret-down"></i></a>
         <ul class="nav nav-list collapse {% if page.snippet == 'lists'%} in {% endif %}" id="lists">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/unordered">Unordered</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/ordered">Ordered</a></li>
@@ -53,8 +52,8 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/condensed">Condensed</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/context">Contextual Styles</a></li>
       <li>
-        <a href="#">Sizing</a>
-        <ul class="nav nav-list collapse {% if page.group == 'tables'%} in {% endif %}" id="tables">
+        <a href="#" data-target="#table-sizing" data-toggle="collapse">Sizing <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.group == 'tables'%} in {% endif %}" id="table-sizing">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/sizing/grid">Grid</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/sizing/non-grid">Non-grid</a></li>
         </uL>
@@ -72,7 +71,7 @@
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#images">Images</a>
+    <a href="#" data-toggle="collapse" data-target="#images">Images <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'images'%} in {% endif %}" id="images">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/rounded">Rounded</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/circle">Circle</a></li>
@@ -83,7 +82,7 @@
   <li class="divider"></li>
   <li class="nav-header">UI Elements</li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#dropdowns">Dropdowns</a>
+    <a href="#" data-toggle="collapse" data-target="#dropdowns">Dropdowns <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'dropdowns'%} in {% endif %}" id="dropdowns">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/disabled">Disabled</a></li>
@@ -93,7 +92,7 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/usage">Usage</a></li>
     </ul>
   </li>
-  <li><a href="#" data-toggle="collapse" data-target="#buttons">Buttons</a>
+  <li><a href="#" data-toggle="collapse" data-target="#buttons">Buttons <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'buttons'%} in {% endif %}" id="buttons">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/sizes">Sizes</a></li>
@@ -103,12 +102,12 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/groups">Groups</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/Toolbar">Toolbar</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/vertical">Vertical Toolbar</a></li>
-      <li><a href="#">Dropdowns</a>
-        <ul class="nav nav-list collapse {% if page.group == 'buttons'%} in {% endif %}">
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-dropdown">Dropdowns <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'dropdown'%} in {% endif %}" id="button-dropdown">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/basic">Basic</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropup">Dropup</a></li>
-          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropdown-size">Dropdown Size</a></li>
-          
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropdown-size">Sizing</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropups">Split Dropups</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown-size">Split Dropdown Size</a></li>
@@ -117,7 +116,8 @@
       </li>
     </ul>
   </li>
-  <li><a href="#" data-toggle="collapse" data-target="#tabs">Tabs</a>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#tabs">Tabs <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'tabs'%} in {% endif %}" id="tabs">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/direction">Direction</a></li>
@@ -125,8 +125,8 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/stacked">Stacked</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/dropdowns">Dropdowns</a></li>
       <li>
-        <a href="#">Tabbable</a>
-        <ul class="nav nav-list">
+        <a href="#" data-toggle="collapse" data-target="#tabs-tabbable">Tabbable <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'tababble'%} in {% endif %}" id="tabs-tabbable">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/basic">Basic</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/bottom">Bottom</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/left">Left</a></li>
@@ -137,7 +137,7 @@
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#pills">Pills</a>
+    <a href="#" data-toggle="collapse" data-target="#pills">Pills <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'pills'%} in {% endif %}" id="pills">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/disabled">Disabled</a></li>
@@ -148,26 +148,26 @@
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#navbar">Navbar</a>
+    <a href="#" data-toggle="collapse" data-target="#navbar">Navbar <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'navbar'%} in {% endif %}" id="navbar">
       <li>
-        <a href="#">Basic</a>
-        <ul class="nav nav-list">
+        <a href="#" data-toggle="collapse" data-target="#navbar-basic">Basic <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'basic' %} in {% endif %}" id="navbar-basic">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/default">Default</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/inverse">Inverse</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/wv-navbar">WV Style</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Fixed</a>
-        <ul class="nav nav-list">
+        <a href="#" data-toggle="collapse" data-target="#navbar-fixed">Fixed <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'fixed' %} in {% endif %}" id="navbar-fixed">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/default">Default</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/wv-fixed">WV Style</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Static</a>
-        <ul class="nav nav-list">
+        <a href="#" data-toggle="collapse" data-target="#navbar-static">Static <i class="icon-caret-down"></i></a>
+        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'static' %} in {% endif %}" id="navbar-static">
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static/default">Default</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static/wv-static">WV Style</a></li>
         </ul>
@@ -176,7 +176,7 @@
   </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/breadcrumbs">Breadcrumbs</a></li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#pagination">Pagination</a>
+    <a href="#" data-toggle="collapse" data-target="#pagination">Pagination <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'pagination'%} in {% endif %}" id="pagination">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pagination/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pagination/disabledandactive">Disabled and Active States</a></li>
@@ -185,7 +185,7 @@
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#pager">Pager</a>
+    <a href="#" data-toggle="collapse" data-target="#pager">Pager <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'pager'%} in {% endif %}" id="pager">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pager/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/pager/disabled">Disabled</a></li>
@@ -195,14 +195,14 @@
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/labels">Labels</a></li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/badges">Badges</a></li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails</a>
+    <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'thumbnails'%} in {% endif %}" id="thumbnails">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails/grid">Grid Sizing</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails/no-grid">No Grid Sizing</a></li>
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#alerts">Alerts</a>
+    <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'alerts'%} in {% endif %}" id="alerts">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/success">Success</a></li>
@@ -212,7 +212,7 @@
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#progressbars">Progress Bars</a>
+    <a href="#" data-toggle="collapse" data-target="#progressbars">Progress Bars <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'progressbars'%} in {% endif %}" id="progressbars">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/striped">Striped</a></li>
@@ -224,14 +224,14 @@
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#mediaobject">Media Object</a>
+    <a href="#" data-toggle="collapse" data-target="#mediaobject">Media Object <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'mediaobject'%} in {% endif %}" id="mediaobject">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/mediaobject/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/mediaobject/medialist">Media List</a></li>
     </ul>
   </li>
   <li>
-    <span data-toggle="collapse" data-target="#misc">Miscellaneous</span>
+    <a href="#" data-toggle="collapse" data-target="#misc">Miscellaneous <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'misc'%} in {% endif %}" id="misc">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/clearfix">Clearfix</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/muted">Muted</a></li>
@@ -239,47 +239,53 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/pull-right">Pull-Right</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/wells">Wells</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/close-icon">Close icon</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/helper-classes">Helper classes</a></li>
     </ul>
 
   </li>
   <li class="divider"></li>
   <li class="nav-header">Widgets</li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/modal/" data-toggle="collapse" data-target="#modal">Modal</a>
+    <a href="#" data-toggle="collapse" data-target="#modal">Modal <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'modal'%} in {% endif %}" id="modal">
-      <li><a href="#modals-examples">Data attributes</a></li>
-      <li><a href="#modals-usage">JS</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/modal/html">Data attributes</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/modal/js">JavaScript</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/carousel">Carousel</a></li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typeahead">Typeahead</a></li>
   <li>
-    <a href="{{ site.baseurl }}{{ site.developerdocs }}/collapse/" data-toggle="collapse" data-target="#collapse">Collapse</a>
+    <a href="#" data-toggle="collapse" data-target="#carousel">Carousel <i class="icon-caret-down"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == 'carousel'%} in {% endif %}" id="carousel">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/carousel/html">Data Attributes</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/carousel/js">JavaScript</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#typeahead">Typeahead <i class="icon-caret-down"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == 'typeahead'%} in {% endif %}" id="typeahead">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typeahead/html">Data Attributes</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/typeahead/js">JavaScript</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#collapse">Collapse <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'collapse'%} in {% endif %}" id="collapse">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/collapse/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/collapse/accordion">Accordion</a></li>
     </ul>
   </li>
   <li class="divider"></li>
   <li class="nav-header">Effects</li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#tooltips">Tooltips</a>
+    <a href="#" data-toggle="collapse" data-target="#tooltips">Tooltips <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'tooltip'%} in {% endif %}" id="tooltips">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/default">Default</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/top">Top</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/right">Right</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/bottom">Bottom</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/left">Left</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/positions">Positions</a></li>
     </uL>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#popovers">Popovers</a>
+    <a href="#" data-toggle="collapse" data-target="#popovers">Popovers <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'popover'%} in {% endif %}" id="popovers">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/default">Default</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/top">Top</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/right">Right</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/bottom">Bottom</a></li>
-      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/left">Left</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/positions">Positions</a></li>
     </uL>
   </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy">Scroll Spy</a></li>
