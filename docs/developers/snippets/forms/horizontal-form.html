@@ -8,12 +8,14 @@ hasJs: false
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
-      {% if page.description %}
-        {{ page.description }}
-      {% else %}
-      This is a placeholder for an awesome description.
-    {% endif %}
+      Right align labels and float them to the left to make them appear on the same line as controls. Requires the most markup changes from a default form:
     </p>
+    <ul>
+      <li>Add <code>.form-horizontal</code> to the form</li>
+      <li>Wrap labels and controls in <code>.control-group</code></li>
+      <li>Add <code>.control-label</code> to the label</li>
+      <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
+    </ul>
 </header>
           <!-- Preview -->
           <div class="row-fluid">
