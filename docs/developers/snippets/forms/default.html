@@ -5,6 +5,31 @@ snippet: forms
 group: forms
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <form>
+                <fieldset>
+                  <legend>Legend</legend>
+                  <label>Label name</label>
+                  <input type="text" placeholder="Type something…">
+                  <span class="help-block">Example block-level help text here.</span>
+                  <label class="checkbox">
+                    <input type="checkbox"> Check me out
+                  </label>
+                  <button type="submit" class="btn">Submit</button>
+                </fieldset>
+              </form>
+              <hr>
+              <h1>Available controls </h1>
+              <p>Please visit this <a href="{{ site.baseurl }}/tests/forms">page</a> to view all availables controls.</p>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <form>
   <fieldset>
     <legend>Legend</legend>
@@ -17,6 +42,19 @@ hasJs: false
     <button type="submit" class="btn">Submit</button>
   </fieldset>
 </form>
-<hr>
-<h1>Available controls </h1>
-<p>Please visit this <a href="{{ site.baseurl }}/tests/forms">page</a> to view all availables controls.</p>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

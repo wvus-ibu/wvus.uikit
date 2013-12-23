@@ -5,6 +5,86 @@ snippet: contact-us-form
 group: forms
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Full Name</label>
+                  <div class="controls">
+                    <input type="text" id="inputName">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputWVDonor">World Vision Donor</label>
+                  <div class="controls">
+                    <label class="radio inline" for="donor-yes">
+                      <input type="radio" name="inputWVDonor" id="donor-yes" value="Yes">
+                      Yes
+                    </label>
+                    <label class="radio inline" for="donor-no">
+                      <input type="radio" name="inputWVDonor" id="donor-no" value="No">
+                      No (or unsure)
+                    </label>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="donorAccountNumber">If yes, please include your Account Number:</label>
+                  <div class="controls">
+                    <input type="text" id="donorAccountNumber">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                    <input type="text" id="inputEmail">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputPhone">Phone:</label>
+                  <div class="controls">
+                    <input type="text" id="inputPhone">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="selectbasic">Help me with:</label>
+                  <div class="controls">
+                    <select id="selectbasic" name="selectbasic" class="input-large">
+                      <option>- Select -</option>
+                      <option>Gift Catalog</option>
+                      <option>Sponsoring a Child</option>
+                      <option>Making a Donation</option>
+                      <option>Signing In</option>
+                      <option>Changing My Password</option>
+                      <option>My Account</option>
+                      <option>My Sponsored Children</option>
+                      <option>Request for Additional Information</option>
+                      <option>Prayer Request</option>
+                      <option>Comments</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputComment">Comment:</label>
+                  <div class="controls">
+                    <textarea id="inputComment" name="textarea" /></textarea>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <button class="btn btn-primary" type="submit" class="btn">Submit</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <form class="form-horizontal">
   <div class="control-group">
     <label class="control-label" for="inputName">Full Name</label>
@@ -74,3 +154,19 @@ hasJs: false
     </div>
   </div>
 </form>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

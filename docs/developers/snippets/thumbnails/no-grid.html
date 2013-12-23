@@ -5,6 +5,30 @@ snippet: thumbnails
 group: thumbnails
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <ul class="thumbnails">
+                <li class="thumbnail">
+                  <img data-src="holder.js/260x180" src="data:image/png;base64," alt="thumbnails">
+                </li>
+                <li class="thumbnail">
+                  <img data-src="holder.js/260x180" src="data:image/png;base64," alt="thumbnails">
+                </li>
+                <li class="thumbnail">
+                  <img data-src="holder.js/260x180" src="data:image/png;base64," alt="thumbnails">
+                </li>
+                <li class="thumbnail">
+                  <img data-src="holder.js/260x180" src="data:image/png;base64," alt="thumbnails">
+                </li>
+              </ul><!-- /thumbnails -->
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <ul class="thumbnails">
   <li class="thumbnail">
     <img data-src="holder.js/260x180" src="data:image/png;base64," alt="thumbnails">
@@ -19,3 +43,19 @@ hasJs: false
     <img data-src="holder.js/260x180" src="data:image/png;base64," alt="thumbnails">
   </li>
 </ul><!-- /thumbnails -->
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

@@ -5,7 +5,53 @@ snippet: tables
 group: tables
 hasJs: false
 ---
-<h4>Context without thead</h4>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <h4>Context without thead</h4>
+              <table class="table table-condensed table-bordered">
+                <tbody>
+                  <thead>
+                    <tr>
+                      <th>Class</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                    </tr>
+                  </thead>
+                  <tr class="success">
+                    <td>success</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                   <tr class="error">
+                    <td>error</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                   <tr class="warning">
+                    <td>warning</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                   <tr class="info">
+                    <td>info</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <table class="table table-condensed table-bordered">
   <tbody>
     <thead>
@@ -42,4 +88,21 @@ hasJs: false
     </tr>
   </tbody>
 </table>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+
 

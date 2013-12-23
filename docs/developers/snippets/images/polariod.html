@@ -5,4 +5,31 @@ snippet: images
 group: images
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <img class="img-polaroid"  data-src="holder.js/280x280" src="data:image/png;base64," alt="media">
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <img class="img-polaroid"  data-src="holder.js/280x280" src="data:image/png;base64," alt="media">
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

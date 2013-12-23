@@ -5,9 +5,39 @@ snippet: buttons
 group: buttons
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="btn-group btn-group-vertical">
+                <button class="btn">Button</button>
+                <button class="btn">Button</button>
+                <button class="btn">Button</button>
+                <button class="btn">Button</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <div class="btn-group btn-group-vertical">
   <button class="btn">Button</button>
   <button class="btn">Button</button>
   <button class="btn">Button</button>
   <button class="btn">Button</button>
 </div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

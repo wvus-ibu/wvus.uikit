@@ -5,6 +5,9 @@ snippet: tables
 group: tables
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
 <h4>Grid Sizing (4 columns)</h4>
 <div class="row"> 
   <div class="span4">
@@ -36,3 +39,56 @@ hasJs: false
       </table>
   </div>
 </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="row"> 
+  <div class="span4">
+     <table class="table">
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+           <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+           <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

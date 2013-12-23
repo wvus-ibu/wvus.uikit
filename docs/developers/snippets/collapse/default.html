@@ -5,8 +5,26 @@ snippet: collapse
 group: collapse
 hasJs: true
 ---
-<h3>Collapse</h3>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Show list</button>
+              <div id="demo" class="collapse ">
+                <ul class="nav nav-list">
+                  <li class="nav-header">Sample Header</li>
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Show list</button>
 <div id="demo" class="collapse ">
   <ul class="nav nav-list">
@@ -17,3 +35,17 @@ hasJs: true
     <li class="divider"></li>
   </ul>
 </div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

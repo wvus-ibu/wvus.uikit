@@ -4,8 +4,40 @@ title: Breadcrumbs
 snippet: breadcrumbs
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <ul class="breadcrumb">
+                <li><a href="#"><i class="icon-home icon-large"></i></a> <span class="divider">&gt;</span></li>
+                <li><a href="#">Library</a> <span class="divider">&gt;</span></li>
+                <li class="active">Data</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <ul class="breadcrumb">
   <li><a href="#"><i class="icon-home icon-large"></i></a> <span class="divider">&gt;</span></li>
   <li><a href="#">Library</a> <span class="divider">&gt;</span></li>
   <li class="active">Data</li>
 </ul>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

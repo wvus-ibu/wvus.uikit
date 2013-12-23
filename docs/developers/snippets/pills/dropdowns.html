@@ -5,6 +5,34 @@ snippet: pills
 group: pills
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <ul class="nav nav-pills">
+                <li class="active">
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated Link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <ul class="nav nav-pills">
   <li class="active">
     <a href="#">Home</a>
@@ -23,3 +51,20 @@ hasJs: false
     </ul>
   </li>
 </ul>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

@@ -4,9 +4,41 @@ title: Badges
 snippet: labelsandbadges
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <span class="badge">1</span>
+              <span class="badge badge-success">2</span>
+              <span class="badge badge-warning">4</span>
+              <span class="badge badge-important">6</span>
+              <span class="badge badge-info">8</span>
+              <span class="badge badge-inverse">10</span>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <span class="badge">1</span>
 <span class="badge badge-success">2</span>
 <span class="badge badge-warning">4</span>
 <span class="badge badge-important">6</span>
 <span class="badge badge-info">8</span>
 <span class="badge badge-inverse">10</span>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

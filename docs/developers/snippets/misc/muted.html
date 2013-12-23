@@ -5,4 +5,32 @@ snippet: helperclasses
 group: misc
 hasJs: false
 ---
-  <h3 class="muted"> Muted - Change an element's color to #999</h3>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <h3 class="muted"> Muted - Change an element's color to #999</h3>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<h3 class="muted"> Muted - Change an element's color to #999</h3>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+  

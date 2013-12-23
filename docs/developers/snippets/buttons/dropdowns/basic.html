@@ -5,6 +5,23 @@ snippet: dropdown
 group: buttons
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" tabindex="-1">Action</a></li>
+                  <li><a href="#" tabindex="-1">Action Two</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <div class="btn-group">
   <button class="btn dropdown-toggle" data-toggle="dropdown" href="#">Action <i class="icon-caret-down"></i></button>
   <ul class="dropdown-menu" role="menu">
@@ -12,3 +29,20 @@ hasJs: false
     <li><a href="#" tabindex="-1">Action Two</a></li>
   </ul>
 </div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

@@ -5,7 +5,9 @@ snippet: code
 group: typography
 hasJs: false
 ---
-
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
 <p>Here is some code: </p>
 <code>
   var x = 5, y = 5;
@@ -13,3 +15,33 @@ hasJs: false
   z = x + y;
   console.log(z); // z equals 10
 </code>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<p>Here is some code: </p>
+<code>
+  var x = 5, y = 5;
+  var z;
+  z = x + y;
+  console.log(z); // z equals 10
+</code>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

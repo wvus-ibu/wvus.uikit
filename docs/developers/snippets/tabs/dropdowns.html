@@ -5,6 +5,32 @@ snippet: tabs
 group: tabs
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdowns <i class="icon-caret-down"></i></a>
+                  <ul class="dropdown-menu" >
+                    <li>
+                      <a href="#" tabindex="-1">Item</a>
+                    </li>
+                    <li>
+                     <a href="#" tabindex="-1">Item 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <ul class="nav nav-tabs">
   <li>
     <a href="#">Home</a>
@@ -21,3 +47,19 @@ hasJs: false
     </ul>
   </li>
 </ul>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

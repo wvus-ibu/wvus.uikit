@@ -5,6 +5,45 @@ snippet: tabs
 group: tabs
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div id="direction" class="clearfix">
+
+                <!-- Right Aligned -->
+                <div id="right">
+                  <ul class="nav nav-tabs pull-right">
+                    <li>
+                      <a href="">Right</a>
+                    </li>
+                    <li class="active">
+                      <a href="">Right tab</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /right-aligned -->
+
+                <!-- Left Aligned -->
+                <div id="left">
+                  <ul class="nav nav-tabs pull-left">
+                    <li class="active">
+                      <a href="">left</a>
+                    </li>
+                    <li>
+                      <a href="">left tab</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /left-aligned -->
+
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <div id="direction" class="clearfix">
 
   <!-- Right Aligned -->
@@ -34,3 +73,19 @@ hasJs: false
   <!-- /left-aligned -->
 
 </div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

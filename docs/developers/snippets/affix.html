@@ -4,6 +4,23 @@ title: Affix
 snippet: affix
 hasJs: true
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div id="navbar" class="navbar" data-spy="affix" data-offset-top="200">
+                <ul class="nav navbar-nav affix">
+                  <li class="active"><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <div id="navbar" class="navbar" data-spy="affix" data-offset-top="200">
   <ul class="nav navbar-nav affix">
     <li class="active"><a href="#">Link 1</a></li>
@@ -11,3 +28,20 @@ hasJs: true
     <li><a href="#">Link 3</a></li>
   </ul>
 </div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

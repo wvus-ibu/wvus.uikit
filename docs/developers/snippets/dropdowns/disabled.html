@@ -5,8 +5,37 @@ snippet: dropdowns
 group: dropdowns
 hasJs: false
 ---
-<!-- Disabled Item -->
-<ul class="dropdown-menu docs-dropdown" role="menu" aria-labelledby="drodownMenu">
-  <li><a tabindex="-1" href="#">Action</a></li>
-  <li class="disabled"><a tabindex="-1" href="#">Another action</a></li>
-</ul>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <!-- Disabled Item -->
+              <ul class="dropdown-menu docs-dropdown" role="menu" aria-labelledby="drodownMenu">
+                <li><a tabindex="-1" href="#">Action</a></li>
+                <li class="disabled"><a tabindex="-1" href="#">Another action</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+              <!-- Disabled Item -->
+              <ul class="dropdown-menu docs-dropdown" role="menu" aria-labelledby="drodownMenu">
+                <li><a tabindex="-1" href="#">Action</a></li>
+                <li class="disabled"><a tabindex="-1" href="#">Another action</a></li>
+              </ul>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

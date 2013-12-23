@@ -5,6 +5,25 @@ snippet: lists
 group: typography
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <dl>
+                <dt>Descripton Lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                <dt>Malesuada porta</dt>
+                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <dl>
   <dt>Descripton Lists</dt>
   <dd>A description list is perfect for defining terms.</dd>
@@ -14,3 +33,19 @@ hasJs: false
   <dt>Malesuada porta</dt>
   <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 </dl>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

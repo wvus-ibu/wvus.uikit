@@ -5,7 +5,33 @@ snippet: page-header
 group: typography
 hasJs: false
 ---
-
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
 <div class="page-header">
   <h1>Example page header <small>Subtext for header</small></h1>
 </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

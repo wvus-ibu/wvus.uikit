@@ -5,6 +5,27 @@ snippet: dropdown
 group: buttons
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="btn-group dropup">
+                <button class="btn btn-primary">Dropup</button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-up "></i></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <div class="btn-group dropup">
   <button class="btn btn-primary">Dropup</button>
   <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-up "></i></button>
@@ -16,3 +37,17 @@ hasJs: false
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

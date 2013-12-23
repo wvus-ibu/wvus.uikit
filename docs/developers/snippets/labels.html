@@ -4,9 +4,41 @@ title: Labels
 snippet: labelsandbadges
 hasJs: false
 ---
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <span class="label">Default</span>
+              <span class="label label-success">Success</span>
+              <span class="label label-warning">Warning</span>
+              <span class="label label-important">Important</span>
+              <span class="label label-info">Info</span>
+              <span class="label label-inverse">Inverse</span>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
 <span class="label">Default</span>
 <span class="label label-success">Success</span>
 <span class="label label-warning">Warning</span>
 <span class="label label-important">Important</span>
 <span class="label label-info">Info</span>
 <span class="label label-inverse">Inverse</span>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
