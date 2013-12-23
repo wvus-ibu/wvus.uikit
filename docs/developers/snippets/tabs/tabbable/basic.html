@@ -1,19 +1,16 @@
 ---
 layout: docsdashboard
 title: Tabs - Tabbable
-snippet: tabs
+snippet: tabbable
 group: tabs
 hasJs: true
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
-      {% if page.description %}
-        {{ page.description }}
-      {% else %}
-      This is a placeholder for an awesome description.
-    {% endif %}
+      Bring your tabs to life with a simple plugin to toggle between content via tabs.<br>
     </p>
+    <p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>. <br> To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>.</p>
 </header>
           <!-- Preview -->
           <div class="row-fluid">
@@ -80,7 +77,7 @@ hasJs: true
 {% if page.hasJs %}
           <!-- JS Code -->
           <div class="row-fluid">
-            <div class="docs-html">
+            <div class="docs-js">
 {% highlight js %}
 
 {% endhighlight %}
