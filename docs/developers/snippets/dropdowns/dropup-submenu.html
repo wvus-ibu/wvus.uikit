@@ -8,57 +8,59 @@ hasJs: false
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
-      {% if page.description %}
-        {{ page.description }}
-      {% else %}
-      This is a placeholder for an awesome description.
-    {% endif %}
+      Make a menu drop up, simply use <code>.dropup</code> on a parent element
     </p>
 </header>
           <!-- Preview -->
           <div class="row-fluid">
             <div class="docs-example">
-              <!-- Dropup Submenu -->
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drodownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
-                <li><a tabindex="-1" href="#">Action</a></li>
-                <li><a tabindex="-1" href="#">Another action</a></li>
-                <li><a tabindex="-1" href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <!-- # Start of submenu # -->
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">More</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Submenu Link</a></li>
-                    <li><a href="#">Submenu Link</a></li>
-                    <li><a href="#">Submenu Link</a></li>
-                  </ul>
-                </li>
-                <!-- End of submenu -->
-              </ul>
-            </div>
+              <!-- Add a dropup menu -->
+              <div class="dropup">
+                <!-- Dropup Submenu -->
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drodownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <!-- # Start of submenu # -->
+                  <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">More</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Submenu Link</a></li>
+                      <li><a href="#">Submenu Link</a></li>
+                      <li><a href="#">Submenu Link</a></li>
+                    </ul>
+                  </li>
+                  <!-- End of submenu -->
+                </ul>
+              </div>
+            </div><!-- /docs-example -->
           </div>
 
           <!-- HTML Code -->
           <div class="row-fluid">
             <div class="docs-html">
 {% highlight html  %}
-<!-- Dropup Submenu -->
-<ul class="dropdown-menu" role="menu" aria-labelledby="drodownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
-  <li><a tabindex="-1" href="#">Action</a></li>
-  <li><a tabindex="-1" href="#">Another action</a></li>
-  <li><a tabindex="-1" href="#">Something else here</a></li>
-  <li class="divider"></li>
-  <!-- # Start of submenu # -->
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="#">More</a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Submenu Link</a></li>
-      <li><a href="#">Submenu Link</a></li>
-      <li><a href="#">Submenu Link</a></li>
-    </ul>
-  </li>
-  <!-- End of submenu -->
-</ul>
+<!-- Add a dropup menu -->
+<div class="dropup">
+  <!-- Dropup Submenu -->
+  <ul class="dropdown-menu" role="menu" aria-labelledby="drodownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+    <li><a tabindex="-1" href="#">Action</a></li>
+    <li><a tabindex="-1" href="#">Another action</a></li>
+    <li><a tabindex="-1" href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <!-- # Start of submenu # -->
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#">More</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu Link</a></li>
+        <li><a href="#">Submenu Link</a></li>
+        <li><a href="#">Submenu Link</a></li>
+      </ul>
+    </li>
+    <!-- End of submenu -->
+  </ul>
+</div>
 {% endhighlight %}
             </div>
           </div>
