@@ -68,4 +68,21 @@
     
 {% endcase %}
 
+wvusUikit(document).ready(function(){
+    wvusUikit(".nav a[data-toggle='collapse']").click(function(e){
+            e.preventDefault();
+
+            var iElement = wvusUikit(this).children("i"); 
+            var ulElement = wvusUikit(this).next().hasClass("collapse");
+
+            iElement.toggleClass("icon-caret-up icon-caret-down"); 
+
+            wvusUikit(ulElement).on('hide', function () { 
+
+              iconElement.toggleClass("icon-caret-down");
+
+            });
+    });
+  });
+
 </script>
