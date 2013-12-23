@@ -69,20 +69,14 @@
 {% endcase %}
 
 wvusUikit(document).ready(function(){
-    wvusUikit(".nav a[data-toggle='collapse']").click(function(e){
-            e.preventDefault();
-
-            var iElement = wvusUikit(this).children("i"); 
-            var ulElement = wvusUikit(this).next().hasClass("collapse");
-
-            iElement.toggleClass("icon-caret-up icon-caret-down"); 
-
-            wvusUikit(ulElement).on('hide', function () { 
-
-              iconElement.toggleClass("icon-caret-down");
-
-            });
-    });
+  wvusUikit('.collapse').on('show', function(){
+   wvusUikit(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
   });
+   
+  wvusUikit('.collapse').on('hide', function(){
+   wvusUikit(this).prev().find("i").removeClass('icon-caret-up').addClass('icon-caret-down');
+  });
+
+});
 
 </script>
