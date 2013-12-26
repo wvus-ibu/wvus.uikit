@@ -3,16 +3,17 @@ layout: docsdashboard
 title: Typeahead
 snippet: typeahead
 hasJs: false
+group: typeahead
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
-      {% if page.description %}
-        {{ page.description }}
-      {% else %}
-      This is a placeholder for an awesome description.
-    {% endif %}
-    </p>
+A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.
+</p>
+<p>
+  <span class="label label-info">NOTE:</span> This plugin has been deprecated by Twitter Bootstrap in favor of <a href="https://github.com/twitter/typeahead.js">typeahead.js</a>, however, this is included in the Uikit
+</p>
+<p>You'll want to set <code>autocomplete="off"</code> to prevent default browser menus from appearing over the Bootstrap typeahead dropdown.</p>
 </header>
           <!-- Preview -->
           <div class="row-fluid">
@@ -33,7 +34,7 @@ hasJs: false
 {% if page.hasJs %}
           <!-- JS Code -->
           <div class="row-fluid">
-            <div class="docs-html">
+            <div class="docs-js">
 {% highlight js %}
 
 {% endhighlight %}
