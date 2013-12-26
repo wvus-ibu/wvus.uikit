@@ -19,6 +19,9 @@
 .wvus-uikit #grid div[class*="span"] div[class*="span"] {
   background-color: #ababab;
 }
+.wvus-uikit #grid .row {
+  margin-left: 0;
+}
 .wvus-uikit body > .navbar .brand {
   float: left;
   color: #ffffff;
@@ -38,8 +41,7 @@
 .wvus-uikit pre {
   border: none;
 }
-.wvus-uikit .docs-example,
-.wvus-uikit .docs-js {
+.wvus-uikit .docs-example {
   position: relative;
   margin: 15px 0;
   padding: 39px 19px 14px;
@@ -50,7 +52,8 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.wvus-uikit .docs-html {
+.wvus-uikit .docs-html,
+.wvus-uikit .docs-js {
   position: relative;
   margin: 15px 0;
   padding: 27px 0 0 0;

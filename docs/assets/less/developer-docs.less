@@ -9,14 +9,19 @@
     color: #6f6f6f;
   }
  
-
-  #grid div[class*="span"]{
-    text-align: center;
-    background-color: #d1d1d1;
-    border: solid 1px #999999;
-    margin-bottom: 10px;
+// Grid Example
+  #grid {
     div[class*="span"]{
-      background-color: #ababab
+      text-align: center;
+      background-color: #d1d1d1;
+      border: solid 1px #999999;
+      margin-bottom: 10px;
+      div[class*="span"]{
+        background-color: #ababab;
+      }
+    }
+    .row{
+      margin-left: 0;
     }
   }
   body > .navbar .brand {
@@ -48,7 +53,7 @@
 pre{
   border: none;
 }
-.docs-example,
+.docs-example{
 
   position: relative;
   margin: 15px 0;
