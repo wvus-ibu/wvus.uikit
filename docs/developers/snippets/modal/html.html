@@ -2,17 +2,15 @@
 layout: docsdashboard
 title: Modal
 snippet: modal
+group: modal
 hasJs: true
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
-      {% if page.description %}
-        {{ page.description }}
-      {% else %}
-      This is a placeholder for an awesome description.
-    {% endif %}
+      Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
     </p>
+    <p>The basic modal has a header, body and footer represented by <code>.modal-header</code>, <code>.modal-body</code>, and <code>modal-footer</code>.  These are optional classes for marking up the content in a modal.</p>
 </header>
           <!-- Preview -->
           <div class="row-fluid">
@@ -101,7 +99,7 @@ hasJs: true
 {% if page.hasJs %}
           <!-- JS Code -->
           <div class="row-fluid">
-            <div class="docs-html">
+            <div class="docs-js">
 {% highlight js %}
 
 {% endhighlight %}
