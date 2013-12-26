@@ -302,14 +302,19 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/usage">Usage</a></li>
     </uL>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy">Scroll Spy</a></li>
+  <li>
+  <a href="#" data-toggle="collapse" data-target="#scrollspy">ScrollSpy <i class="icon-caret-down"></i></a>
+  <ul class="nav nav-list collapse {% if page.group == 'scrollspy'%} in {% endif %}" id="scrollspy">
+    <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy/navbar">Example in navbar</a></li>
+    <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy/usage">Usage</a></li>
+  </ul>
+  </li>
   <li>
     <a href="#" data-toggle="collapse" data-target="#affix">Affix <i class="icon-caret-down"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'affix'%} in {% endif %}" id="affix">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/affix/default">Default</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/affix/usage">Usage</a></li>
     </ul>
-
   </li>
   <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons">Icons</a></li>
 </ul>
