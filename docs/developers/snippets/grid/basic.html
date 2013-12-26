@@ -1,0 +1,118 @@
+---
+layout: docsdashboard
+title: Grid - Basic
+snippet: grid
+group: grid
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p>
+    The default  grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without responsive features enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.
+    </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div id="grid">
+    <div class="container">
+      <div class="row">
+        <div class="span9">
+        .span9
+        </div>
+      </div>
+      <div class="row">
+        <div class="span8">
+          .span8
+        </div>
+        <div class="span1">
+          .span1
+        </div>
+      </div>
+      <div class="row">
+        <div class="span7">
+          .span7
+        </div>
+        <div class="span2">
+          .span2
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6">
+          .span6
+        </div>
+        <div class="span3">
+          .span3
+        </div>
+      </div>
+      <div class="row">
+        <div class="span5">
+          .span5
+        </div>
+        <div class="span4">
+          .span4
+        </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /#grid -->
+</div>
+
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="container">
+  <div class="row">
+    <div class="span9">
+    .span9
+    </div>
+  </div>
+  <div class="row">
+    <div class="span8">
+      .span8
+    </div>
+    <div class="span1">
+      .span1
+    </div>
+  </div>
+  <div class="row">
+    <div class="span7">
+      .span7
+    </div>
+    <div class="span2">
+      .span2
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6">
+      .span6
+    </div>
+    <div class="span3">
+      .span3
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      .span5
+    </div>
+    <div class="span4">
+      .span4
+    </div>
+  </div><!-- /row -->
+</div><!-- /container -->
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

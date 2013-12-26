@@ -1,0 +1,66 @@
+---
+layout: docsdashboard
+title: Grid - Offset
+snippet: grid
+group: grid
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+<p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div id="grid">
+                <div class="row-fluid">
+                  <div class="span4">
+                    4
+                  </div>
+                </div><!-- /row -->
+                <div class="row-fluid">
+                  <div class="span3 offset1">
+                    3 offset 1
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+
+<div class="row-fluid">
+  <div class="span4">
+    4
+  </div>
+</div><!-- /row -->
+<!-- 1. Create a new row -->
+<div class="row-fluid">
+  <!-- 
+    2. Set the width ex. span3 
+    3. Set the offset by column size ex. offset1 
+  -->
+  <div class="span3 offset1">
+    3 offset 1
+  </div>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

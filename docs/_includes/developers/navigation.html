@@ -1,6 +1,14 @@
 <ul class="nav nav-list">
   <li class="nav-header">Styles</li>
-  <li><a href="{{ site.developerdocs }}/grid/">Grid</a></li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#grid">Grid <i class="icon-caret-down"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == 'grid'%} in {% endif %}" id="grid">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/basic">Basic</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/nested">Nested</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/offset">Offset</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/fluid">Fluid</a></li>
+    </ul>
+  </li>
   <li><a href="{{ site.developerdocs }}/responsive/">Responsive</a></li>
   <li>
     <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="icon-caret-down"></i></a>
