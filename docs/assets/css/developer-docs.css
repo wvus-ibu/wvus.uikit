@@ -10,16 +10,16 @@
   margin: 20px 0 30px 0;
   color: #6f6f6f;
 }
-.wvus-uikit #grid div[class*="span"] {
+.wvus-uikit #gridExample div[class*="span"] {
   text-align: center;
   background-color: #d1d1d1;
   border: solid 1px #999999;
   margin-bottom: 10px;
 }
-.wvus-uikit #grid div[class*="span"] div[class*="span"] {
+.wvus-uikit #gridExample div[class*="span"] div[class*="span"] {
   background-color: #ababab;
 }
-.wvus-uikit #grid .row {
+.wvus-uikit #gridExample .row {
   margin-left: 0;
 }
 .wvus-uikit body > .navbar .brand {
