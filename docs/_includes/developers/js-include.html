@@ -69,13 +69,13 @@
 {% endcase %}
 
 wvusUikit(document).ready(function(){
-  wvusUikit('.collapse').on('show', function(){
+  wvusUikit('#docs-nav .collapse').on('show', function(){
    wvusUikit(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
   });
 
-  wvusUikit('.in').prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
+  wvusUikit('#docs-nav .in').prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
 
-  wvusUikit('.collapse').on('hide', function(){
+  wvusUikit('#docs-nav .collapse').on('hide', function(){
    wvusUikit(this).prev().find("i").removeClass('icon-caret-up').addClass('icon-caret-down');
   });
 
