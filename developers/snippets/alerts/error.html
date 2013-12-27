@@ -1,0 +1,62 @@
+---
+layout: docsdashboard
+title: Alerts - Error
+snippet: alerts
+group: alerts
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Wrap any text in <code>.alert-error</code> for an error alert message.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <!-- default -->
+<div class="alert alert-error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Error!</strong> Best check yourself, you're not looking too good.
+</div>
+
+<!-- block -->
+<div class="alert alert-block alert-error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p><strong>Error!</strong> Best check yourself, you're not looking too good.</p>
+</div>
+
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<!-- default -->
+<div class="alert alert-error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Error!</strong> Best check yourself, you're not looking too good.
+</div>
+
+<!-- block -->
+<div class="alert alert-block alert-error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p><strong>Error!</strong> Best check yourself, you're not looking too good.</p>
+</div>
+
+{% endhighlight %}
+            </div>
+          </div>
+          
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+

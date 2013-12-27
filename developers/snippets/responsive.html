@@ -1,0 +1,102 @@
+---
+layout: docsdashboard
+title: Responsive
+snippet: responsive
+hasJs: false
+---
+
+<h2>Supported devices</h2>
+
+<p>WVUS UiKit supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:</p>
+
+<table class="table table-bordered table-striped">
+	<thead>
+	  <tr>
+	    <th>Label</th>
+	    <th>Layout width</th>
+	    <th>Column width</th>
+	    <th>Gutter width</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>Large display</td>
+	    <td>1200px and up</td>
+	    <td>70px</td>
+	    <td>30px</td>
+	  </tr>
+	  <tr>
+	    <td>Default</td>
+	    <td>980px and up</td>
+	    <td>60px</td>
+	    <td>20px</td>
+	  </tr>
+	  <tr>
+	    <td>Portrait tablets</td>
+	    <td>768px and above</td>
+	    <td>42px</td>
+	    <td>20px</td>
+	  </tr>
+	  <tr>
+	    <td>Phones to tablets</td>
+	    <td>767px and below</td>
+	    <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+	  </tr>
+	  <tr>
+	    <td>Phones</td>
+	    <td>480px and below</td>
+	    <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+	  </tr>
+	</tbody>
+</table>
+<h2>Responsive utility classes</h2>
+<p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in responsive.less.</p>
+
+<table class="table table-bordered table-striped responsive-utilities">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Phones <small>767px and below</small></th>
+        <th>Tablets <small>979px to 768px</small></th>
+        <th>Desktops <small>Default</small></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><code>.visible-phone</code></th>
+        <td class="is-visible">Visible</td>
+        <td class="is-hidden">Hidden</td>
+        <td class="is-hidden">Hidden</td>
+      </tr>
+      <tr>
+        <th><code>.visible-tablet</code></th>
+        <td class="is-hidden">Hidden</td>
+        <td class="is-visible">Visible</td>
+        <td class="is-hidden">Hidden</td>
+      </tr>
+      <tr>
+        <th><code>.visible-desktop</code></th>
+        <td class="is-hidden">Hidden</td>
+        <td class="is-hidden">Hidden</td>
+        <td class="is-visible">Visible</td>
+      </tr>
+      <tr>
+        <th><code>.hidden-phone</code></th>
+        <td class="is-hidden">Hidden</td>
+        <td class="is-visible">Visible</td>
+        <td class="is-visible">Visible</td>
+      </tr>
+      <tr>
+        <th><code>.hidden-tablet</code></th>
+        <td class="is-visible">Visible</td>
+        <td class="is-hidden">Hidden</td>
+        <td class="is-visible">Visible</td>
+      </tr>
+      <tr>
+        <th><code>.hidden-desktop</code></th>
+        <td class="is-visible">Visible</td>
+        <td class="is-visible">Visible</td>
+        <td class="is-hidden">Hidden</td>
+      </tr>
+    </tbody>
+</table>

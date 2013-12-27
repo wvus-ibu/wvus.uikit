@@ -1,0 +1,49 @@
+---
+layout: docsdashboard
+title: Buttons - Group
+snippet: buttons
+group: buttons
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="btn-group">
+                <button class="btn">Button Group</button>
+                <button class="btn btn-primary">Button Group</button>
+                <button class="btn btn-info">Button Group</button>
+                <button class="btn btn-success">Button Group</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="btn-group">
+  <button class="btn">Button Group</button>
+  <button class="btn btn-primary">Button Group</button>
+  <button class="btn btn-info">Button Group</button>
+  <button class="btn btn-success">Button Group</button>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

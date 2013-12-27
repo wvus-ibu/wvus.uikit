@@ -71,12 +71,12 @@
     $('#myCarousel').carousel()
 
     //accordion demo
-  $('.collapse').on('show', function(){
+  $('#sample').on('show', function(){
     $(this).prev().find('.accordion-toggle > i')
     .removeClass('icon-plus').addClass('icon-minus');
   });
 
-  $('.collapse').on('hide', function(){
+  $('#sample').on('hide', function(){
     $(this).prev().find('.accordion-toggle > i')
     .removeClass('icon-minus').addClass('icon-plus');
   });

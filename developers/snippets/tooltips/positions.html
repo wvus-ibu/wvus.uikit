@@ -1,0 +1,69 @@
+---
+layout: docsdashboard
+title: Tooltip - Positions
+group: tooltip
+snippet: tooltip
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Four Positions
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <ul class="inline">
+
+                <!-- top -->
+                <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="top">Top</a></li>
+
+                <!-- right -->
+                <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="right">Right</a></li>
+
+                <!-- bottom -->
+                <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="bottom">Bottom</a></li>
+                
+                <!-- left -->
+                <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="left">Left</a></li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<ul class="inline">
+
+  <!-- top -->
+  <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="top">Top</a></li>
+
+  <!-- right -->
+  <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="right">Right</a></li>
+
+  <!-- bottom -->
+  <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="bottom">Bottom</a></li>
+  
+  <!-- left -->
+  <li><a href="#" class="tooltip-test" data-toggle="tooltip" title="Tooltip" data-placement="left">Left</a></li>
+  
+</ul>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

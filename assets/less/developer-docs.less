@@ -1,0 +1,128 @@
+/* 
+*  This LESS is for the developer documentation.  
+*  None of this is need to make the UiKit work
+*/
+.wvus-uikit {
+
+  .subheader{
+    margin: 20px 0 30px 0;
+    color: #6f6f6f;
+  }
+ 
+// Grid Example
+  #gridExample {
+    div[class*="span"]{
+      text-align: center;
+      background-color: #d1d1d1;
+      border: solid 1px #999999;
+      margin-bottom: 10px;
+      div[class*="span"]{
+        background-color: #ababab;
+      }
+    }
+    .row{
+      margin-left: 0;
+    }
+  }
+  body > .navbar .brand {
+	  float: left;
+  	   color: #ffffff;
+  }
+
+
+
+// Classes to get things to show correctly in the docs
+
+  .docs-tabs .tab-content{
+    overflow: visible;
+  }
+
+  #docs-nav{
+    margin-top: 10px;
+  }
+
+  .docs-dropdown{
+    display: block;
+    position: static;
+    margin-bottom: 5px;
+    *width: 180px;
+  }
+
+// Styles for the page
+
+pre{
+  border: none;
+}
+.docs-example{
+
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.docs-html,
+.docs-js {
+  position: relative;
+  margin: 15px 0;
+  padding: 27px 0 0 0;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Echo out a label for the example */
+.docs-example:after {
+  content: "Example";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+.docs-html:after {
+  content: "HTML";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+.docs-js:after {
+  content: "JS";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+
+}

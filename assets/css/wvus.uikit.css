@@ -8442,8 +8442,8 @@
   top: -1px;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
   content: "";
 }
 
@@ -9065,6 +9065,25 @@
 .wvus-uikit .wv-navbar .nav li.dropdown.open.active > .dropdown-toggle {
   color: #ff6600;
   background-color: #ffffff;
+}
+
+.wvus-uikit .image {
+  position: relative;
+  display: table;
+  margin-bottom: 20px;
+}
+
+.wvus-uikit .image > .caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: table-caption;
+  padding: 15px 15px 5px 15px;
+  margin: 0;
+  color: #fff;
+  background-color: rgba(0, 102, 153, 0.8);
+  caption-side: bottom;
 }
 
 .wvus-uikit .pull-right {
