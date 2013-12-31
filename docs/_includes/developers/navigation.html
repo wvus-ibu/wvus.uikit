@@ -98,9 +98,10 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/left-submenu">Left Submenu</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/dropup-submenu">Drop Up Submenu</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/usage">Usage</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/javascript">JavaScript</a></li>
     </ul>
   </li>
-  <li><a href="#" data-toggle="collapse" data-target="#buttons"<i class="icon-caret-right"></i> Buttons</a>
+  <li><a href="#" data-toggle="collapse" data-target="#buttons"><i class="icon-caret-right"></i> Buttons</a>
     <ul class="nav nav-list collapse {% if page.group == 'buttons'%} in {% endif %}" id="buttons">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/basic">Basic</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/sizes">Sizes</a></li>
@@ -119,7 +120,15 @@
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropups">Split Dropups</a></li>
           <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown-size">Split Dropdown Size</a></li>
-          
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-effects"><i class="icon-caret-right"></i> Effects</a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'effects' and page.group == 'buttons' %} in {% endif %}" id="button-effects">
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/stateful">Stateful</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/single-toggle">Single Toggle</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/checkbox">Checkbox</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/radio">Radio</a></li>
         </ul>
       </li>
     </ul>
@@ -217,6 +226,7 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/info">Info</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/warning">Warning</a></li>
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/error">Error</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/js">JavaScript</a></li>
     </ul>
   </li>
   <li>
