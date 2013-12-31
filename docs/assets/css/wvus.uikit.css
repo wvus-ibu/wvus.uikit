@@ -88,6 +88,14 @@
 
  */
 
+  /*!
+ * bootstrap-select v1.4.2
+ * http://silviomoreto.github.io/bootstrap-select/
+ *
+ * Copyright 2013 bootstrap-select
+ * Licensed under the MIT license
+ */
+
 }
 
 .wvus-uikit .clearfix {
@@ -8442,8 +8450,8 @@
   top: -1px;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
   content: "";
 }
 
@@ -8882,6 +8890,12 @@
   font-weight: bold;
 }
 
+.wvus-uikit .caret {
+  border-top: 7px solid #ff6600;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
 .wvus-uikit .wv-navbar.navbar .navbar-inner {
   background-color: #ff8719;
   background-image: -moz-linear-gradient(top, #ff9d29, #ff6600);
@@ -9080,9 +9094,285 @@
   left: 0;
   display: table-caption;
   padding: 15px 15px 5px 15px;
+  margin: 0;
   color: #fff;
   background-color: rgba(0, 102, 153, 0.8);
   caption-side: bottom;
+}
+
+.wvus-uikit .bootstrap-select.btn-group,
+.wvus-uikit .bootstrap-select.btn-group[class*="span"] {
+  display: inline-block;
+  float: none;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.wvus-uikit .form-search .bootstrap-select.btn-group,
+.wvus-uikit .form-inline .bootstrap-select.btn-group,
+.wvus-uikit .form-horizontal .bootstrap-select.btn-group {
+  margin-bottom: 0;
+}
+
+.wvus-uikit .bootstrap-select.form-control {
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.wvus-uikit .bootstrap-select.btn-group.pull-right,
+.wvus-uikit .bootstrap-select.btn-group[class*="span"].pull-right,
+.wvus-uikit .row-fluid .bootstrap-select.btn-group[class*="span"].pull-right {
+  float: right;
+}
+
+.wvus-uikit .input-append .bootstrap-select.btn-group {
+  margin-left: -1px;
+}
+
+.wvus-uikit .input-prepend .bootstrap-select.btn-group {
+  margin-right: -1px;
+}
+
+.wvus-uikit .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+  width: 220px;
+}
+
+.wvus-uikit .bootstrap-select {
+  /*width: 220px\9; IE8 and below*/
+
+  width: 220px\0;
+  /*IE9 and below*/
+
+}
+
+.wvus-uikit .bootstrap-select.form-control:not([class*="span"]) {
+  width: 100%;
+}
+
+.wvus-uikit .bootstrap-select > .btn {
+  width: 100%;
+}
+
+.wvus-uikit .error .bootstrap-select .btn {
+  border: 1px solid #b94a48;
+}
+
+.wvus-uikit .dropdown-menu {
+  z-index: 2000;
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow.open > .btn {
+  z-index: 2051;
+}
+
+.wvus-uikit .bootstrap-select .btn:focus {
+  outline: thin dotted #333333 !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .btn .filter-option {
+  position: absolute;
+  right: 25px;
+  left: 12px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .btn .caret {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+
+.wvus-uikit .bootstrap-select.btn-group > .disabled,
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li.disabled > a {
+  cursor: not-allowed;
+}
+
+.wvus-uikit .bootstrap-select.btn-group > .disabled:focus {
+  outline: none !important;
+}
+
+.wvus-uikit .bootstrap-select.btn-group[class*="span"] .btn {
+  width: 100%;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu {
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu.inner {
+  position: static;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu dt {
+  display: block;
+  padding: 3px 20px;
+  cursor: default;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .div-contain {
+  overflow: hidden;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li {
+  position: relative;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li > a.opt {
+  position: relative;
+  padding-left: 35px;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li > a {
+  cursor: pointer;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li > dt small {
+  font-weight: normal;
+}
+
+.wvus-uikit .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark {
+  position: absolute;
+  right: 15px;
+  display: inline-block;
+  margin-top: 2.5px;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li a i.check-mark {
+  display: none;
+}
+
+.wvus-uikit .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
+  margin-right: 34px;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li small {
+  padding-left: 0.5em;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:hover small,
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:focus small,
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) > a small {
+  color: #64b1d8;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.wvus-uikit .bootstrap-select.btn-group .dropdown-menu li > dt small {
+  font-weight: normal;
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow .dropdown-toggle:before {
+  position: absolute;
+  bottom: -4px;
+  left: 9px;
+  display: inline-block;
+  display: none;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #CCC;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow .dropdown-toggle:after {
+  position: absolute;
+  bottom: -4px;
+  left: 10px;
+  display: inline-block;
+  display: none;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  border-left: 6px solid transparent;
+  content: '';
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:before {
+  top: -3px;
+  bottom: auto;
+  border-top: 7px solid #ccc;
+  border-bottom: 0;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:after {
+  top: -3px;
+  bottom: auto;
+  border-top: 6px solid #ffffff;
+  border-bottom: 0;
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:before {
+  right: 12px;
+  left: auto;
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:after {
+  right: 13px;
+  left: auto;
+}
+
+.wvus-uikit .bootstrap-select.show-menu-arrow.open > .dropdown-toggle:before,
+.wvus-uikit .bootstrap-select.show-menu-arrow.open > .dropdown-toggle:after {
+  display: block;
+}
+
+.wvus-uikit .bootstrap-select.btn-group .no-results {
+  padding: 3px;
+  margin: 0 5px;
+  background: #f5f5f5;
+}
+
+.wvus-uikit .mobile-device {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block !important;
+  width: 100%;
+  height: 100% !important;
+  opacity: 0;
+}
+
+.wvus-uikit .bootstrap-select.fit-width {
+  width: auto !important;
+}
+
+.wvus-uikit .bootstrap-select.btn-group.fit-width .btn .filter-option {
+  position: static;
+}
+
+.wvus-uikit .bootstrap-select.btn-group.fit-width .btn .caret {
+  position: static;
+  top: auto;
+  margin-top: -1px;
+}
+
+.wvus-uikit .control-group.error .bootstrap-select .dropdown-toggle {
+  border-color: #b94a48;
+}
+
+.wvus-uikit .bootstrap-select-searchbox {
+  padding: 4px 8px;
+}
+
+.wvus-uikit .bootstrap-select-searchbox input {
+  margin-bottom: 0;
 }
 
 .wvus-uikit .pull-right {
