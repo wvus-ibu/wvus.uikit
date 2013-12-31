@@ -99,7 +99,17 @@ Modals are streamlined, but flexible, dialog prompts with the minimum required f
           <div class="row-fluid">
             <div class="docs-js">
 {% highlight js %}
-
+wvusUikit(document).ready(function(){
+  wvusUikit('#jsModalButton').click(function (){
+    wvusUikit('#jsModal').modal('show');
+  });
+  wvusUikit('#jsModalClose').click(function () {
+    wvusUikit('#jsModal').modal('hide');
+  });
+  wvusUikit('#jsModalX').click(function () {
+    wvusUikit('#jsModal').modal('hide');
+  });
+});
 {% endhighlight %}
             </div>
           </div>
