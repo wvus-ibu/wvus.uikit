@@ -82,54 +82,54 @@
     });
 
     // modal demo
-    wvusUikit('#jsModalButton').click(function (){
-      wvusUikit('#jsModal').modal('show');
+    $('#jsModalButton').click(function (){
+      $('#jsModal').modal('show');
     });
-    wvusUikit('#jsModalClose').click(function () {
-      wvusUikit('#jsModal').modal('hide');
+    $('#jsModalClose').click(function () {
+      $('#jsModal').modal('hide');
     });
-    wvusUikit('#jsModalX').click(function () {
-      wvusUikit('#jsModal').modal('hide');
+    $('#jsModalX').click(function () {
+      $('#jsModal').modal('hide');
     });
 
     // Carousel Demo
-    var jsCarousel = wvusUikit('#jsCarousel');
+    var jsCarousel = $('#jsCarousel');
 
     jsCarousel.carousel({
       interval: 2000,
       pause: ""
     });
-    wvusUikit('#jsLeft').click(function() {
+    $('#jsLeft').click(function() {
       jsCarousel.carousel('prev');
     });
-    wvusUikit('#jsRight').click(function(){
+    $('#jsRight').click(function(){
       jsCarousel.carousel('next');
     });
-    wvusUikit('#jsPause').click(function() {
+    $('#jsPause').click(function() {
       jsCarousel.carousel('pause');
     });
-    wvusUikit('#jsResume').click(function () {
+    $('#jsResume').click(function () {
       jsCarousel.carousel('cycle');
     });
-    wvusUikit('#jsPip1').click(function() {
+    $('#jsPip1').click(function() {
       jsCarousel.carousel(0);
     });
-    wvusUikit('#jsPip2').click(function() {
+    $('#jsPip2').click(function() {
       jsCarousel.carousel(1);
     });
-    wvusUikit('#jsPip3').click(function() {
+    $('#jsPip3').click(function() {
       jsCarousel.carousel(2);
     });
 
     // Typeahead demo
-    wvusUikit('.typeahead').typeahead({
+    $('.typeahead').typeahead({
       source: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
       items: 3,
     });
 
 
     // select init
-    wvusUikit(".selectpicker").selectpicker();
+    $(".selectpicker").selectpicker();
 
     // javascript build logic
     var inputsComponent = $("#components.download input")
@@ -216,16 +216,45 @@ $.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
 })
 
 
+// Selects example
+// ---------------
+
+// Refresh example 1
+$('.rm-mustard').click(function() {
+  $('.remove-example').find('[value=Mustard]').remove();
+  $('.remove-example').selectpicker('refresh');
+});
+$('.rm-ketchup').click(function() {
+  $('.remove-example').find('[value=Ketchup]').remove();
+  $('.remove-example').selectpicker('refresh');
+});
+$('.rm-relish').click(function() {
+  $('.remove-example').find('[value=Relish]').remove();
+  $('.remove-example').selectpicker('refresh');
+});
+
+// Refresh example 2
+$('.ex-disable').click(function() {
+  $('.disable-example').prop('disabled',true);
+  $('.disable-example').selectpicker('refresh');
+});
+$('.ex-enable').click(function() {
+  $('.disable-example').prop('disabled',false);
+  $('.disable-example').selectpicker('refresh');
+});
+
+
+
 
 // Docs Nav arrows
-  wvusUikit('#docs-nav .collapse').on('show', function(){
-   wvusUikit(this).prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
+  $('#docs-nav .collapse').on('show', function(){
+   $(this).prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
   });
 
-  //wvusUikit('#docs-nav .in').prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
+  //$('#docs-nav .in').prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
 
-  wvusUikit('#docs-nav .collapse').on('hide', function(){
-   wvusUikit(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-right');
+  $('#docs-nav .collapse').on('hide', function(){
+   $(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-right');
   });
 
 

@@ -79,6 +79,12 @@
     </ul>
   </li>
   <li>
+    <a href="#" data-toggle="collapse" data-target="#selects"><i class="icon-caret-right"></i> Select</a>
+    <ul class="nav nav-list collapse {% if page.group == 'select'%} in {% endif %}" id="selects">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/selects/default">Default</a></li>
+    </ul>
+  </li>
+  <li>
     <a href="#" data-toggle="collapse" data-target="#images"><i class="icon-caret-right"></i> Images</a>
     <ul class="nav nav-list collapse {% if page.group == 'images'%} in {% endif %}" id="images">
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/rounded">Rounded</a></li>
