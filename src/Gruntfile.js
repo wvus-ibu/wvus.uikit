@@ -42,7 +42,9 @@ module.exports = function(grunt) {
             'lib/bootstrap/js/bootstrap-scrollspy.js',
             'lib/bootstrap/js/bootstrap-tab.js',
             'lib/bootstrap/js/bootstrap-typeahead.js',
-            'lib/bootstrap/js/bootstrap-affix.js'],
+            'lib/bootstrap/js/bootstrap-affix.js',
+            'lib/bootstrap-select/bootstrap-select.js'],
+
         dest: '../js/<%= pkg.name %>.js'
       }
   },
@@ -144,13 +146,31 @@ module.exports = function(grunt) {
           {expand:true, cwd:'lib/worldvision/img', src: '**/*', dest: '../img'}
         ]
       },
+      variables: {
+        files: [
+          {expand:true, flatten: true, cwd: '../', src: ['src/lib/worldvision/less/variables.less', 'src/lib/worldvision/less/mixins.less'], dest: '../less'},
+        ]
+      },
       zipsrc: {
         files: [
-          {expand:true, cwd:'../', src:['Contribute.md','css/**', 'font/**', 'img/**', 'js/**', 'README.md', 'ReleaseNotes.md'], dest:'../<%= pkg.name %>'}
+          {
+            expand: true,
+            cwd: '../',
+            src: [
+                  'Contribute.md',
+                  'css/**',
+                  'less/**',
+                  'font/**',
+                  'img/**',
+                  'js/**',
+                  'README.md',
+                  'ReleaseNotes.md'
+            ],
+            dest: '../<%= pkg.name %>'
+          }
         ]
       },
       //copies js & css to docs
-      //TODO: add to docs images
       docs: {
         files: [
           {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
@@ -233,14 +253,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('browserstack-runner');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
-
-  // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'test','copy:zipsrc', 'compress', 'clean']);
 
   // Updates Bootstrap, jQuery, and Font Awesome via volo
   grunt.registerTask('update', ['shell']);
@@ -249,10 +265,10 @@ module.exports = function(grunt) {
   grunt.registerTask('compile', ['concat', 'recess', 'copy:docs', 'copy:tests']);
 
   //Lints each js plugin, builds/validates docs
-  grunt.registerTask('test', ['recess', 'jshint', 'qunit', 'jekyll:build', 'validation']); //TODO: run qunit tests with grunt
+  grunt.registerTask('test', ['recess', 'jshint', 'qunit', 'jekyll:build', 'validation']);
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('build', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests', 'copy:zipsrc', 'compress', 'clean']);
+  grunt.registerTask('build', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
 
   grunt.registerTask('serve', ['jekyll:serve', 'connect:jekyll', 'watch']);
 };
