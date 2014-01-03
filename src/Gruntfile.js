@@ -96,14 +96,6 @@ module.exports = function(grunt) {
         files: ['lib/worldvision/less/*.less'],
         tasks: ['recess', 'copy:docs']
       },
-      docs: {
-        options: {
-          livereload: '<%= connect.jekyll.options.livereload %>',
-          interrupt: true,
-        },
-        files: ['../docs/**'],
-        tasks: ['jekyll:serve'],
-      }
     },
     /*
     Compile and Minify less
@@ -173,11 +165,10 @@ module.exports = function(grunt) {
       //copies js & css to docs
       docs: {
         files: [
-          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/css'},
-          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/js'},
-          {expand:true, cwd: 'lib/font-awesome/font', src: '*', dest: '../docs/assets/font'},
-          {expand:true, cwd: 'lib/worldvision/img/ico', src: '*', dest: '../docs/assets/ico'},
-          {expand:true, cwd:'lib/worldvision/img', src: '*', dest: '../docs/assets/img'},
+          {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/wvus.uikit/css'},
+          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/wvus.uikit/js'},
+          {expand:true, cwd: '../font', src: '*', dest: '../docs/assets/wvus.uikit/font'},
+          {expand:true, cwd: '../img', src: '*/**', dest: '../docs/assets/wvus.uikit/img'},
         ]
       },
       tests: {
@@ -201,22 +192,13 @@ module.exports = function(grunt) {
       options: {force:true},
       src:'../<%= pkg.name %>'
     },
-    shell: {
-      script: {
-        command: 'sh update-libs.sh',
-        options: {
-          stdout: true
-        }
-      }
-    },
     jekyll: {
        options: {
           src: '../docs',
           dest: '../docs/_site',
           config: '../docs/_config.yml',
         },
-      build: {},
-      serve: {
+      build: {
         options:{
           raw: 'baseurl: http://localhost:4000\n',
         }
@@ -224,7 +206,10 @@ module.exports = function(grunt) {
     },
     validation: {
       options: {
-        reset: true
+        reset: true,
+        failHard: true,
+        doctype: 'HTML5',
+        relaxerror: ["\"[.*]+\"Please be sure to test, and consider using a polyfill."],
       },
       files: {
         src: ['../docs/_site/**/*.html']
@@ -237,7 +222,7 @@ module.exports = function(grunt) {
           hostname: 'localhost',
           port: 4000,
           open: 'http://localhost:4000/',
-          livereload: 35729,
+          keepalive: true,
         }
       }
     },
@@ -250,7 +235,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-recess');
-  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-html-validation');
@@ -258,17 +242,19 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  // Updates Bootstrap, jQuery, and Font Awesome via volo
-  grunt.registerTask('update', ['shell']);
+  // Default task. Compile, concatenate, min, and build zip
+  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+
+  //compiles less for errors, runs js thorugh 
+  grunt.registerTask('test', ['recess', 'jshint', 'qunit']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
   grunt.registerTask('compile', ['concat', 'recess', 'copy:docs', 'copy:tests']);
 
-  //Lints each js plugin, builds/validates docs
-  grunt.registerTask('test', ['recess', 'jshint', 'qunit', 'jekyll:build', 'validation']);
+  // Serves the docs locally
+  grunt.registerTask('docs', ['jekyll', 'connect:jekyll']);
 
-  // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('build', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+  // build the docs and validate the html
+  grunt.registerTask('validate', ['jekyll', 'validation']);
 
-  grunt.registerTask('serve', ['jekyll:serve', 'connect:jekyll', 'watch']);
 };
