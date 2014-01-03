@@ -1,6 +1,6 @@
-/*! wvus.uikit - v1.1.2 - 2013-12-31
+/*! wvus.uikit - v1.1.2 - 2014-01-03
 * http://wvus-ibu.github.io/wvus.uikit/
-* Copyright (c) 2013 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
+* Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 /* ===================================================
  * bootstrap-transition.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#transitions

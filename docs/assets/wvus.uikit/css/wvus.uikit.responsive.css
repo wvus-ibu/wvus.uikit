@@ -1067,6 +1067,11 @@
   border-left: 7px solid transparent;
 }
 
+.wvus-uikit .dropup .caret,
+.wvus-uikit .navbar-fixed-bottom .dropdown .caret {
+  border-bottom: 7px solid #ff6600;
+}
+
 @-ms-viewport {
   width: device-width;
 }

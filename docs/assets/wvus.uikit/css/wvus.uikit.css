@@ -8896,6 +8896,11 @@
   border-left: 7px solid transparent;
 }
 
+.wvus-uikit .dropup .caret,
+.wvus-uikit .navbar-fixed-bottom .dropdown .caret {
+  border-bottom: 7px solid #ff6600;
+}
+
 .wvus-uikit .wv-navbar.navbar .navbar-inner {
   background-color: #ff8719;
   background-image: -moz-linear-gradient(top, #ff9d29, #ff6600);
