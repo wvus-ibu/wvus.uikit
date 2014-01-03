@@ -64,21 +64,11 @@
     wvusUikit(document).ready(function() {
       wvusUikit('#navbar').affix();
     });
-
+    {% when "select" %}
+    wvusUikit(".selectpicker").selectpicker();
     
 {% endcase %}
 
-wvusUikit(document).ready(function(){
-  wvusUikit('#docs-nav .collapse').on('show', function(){
-   wvusUikit(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
-  });
 
-  wvusUikit('#docs-nav .in').prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
-
-  wvusUikit('#docs-nav .collapse').on('hide', function(){
-   wvusUikit(this).prev().find("i").removeClass('icon-caret-up').addClass('icon-caret-down');
-  });
-
-});
 
 </script>
