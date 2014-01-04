@@ -94,42 +94,47 @@ module.exports = function(grunt) {
       },
       wvless: {
         files: ['lib/worldvision/less/*.less'],
-        tasks: ['recess', 'copy:docs']
+        tasks: ['less', 'copy:docs']
       },
     },
     /*
-    Compile and Minify less
+    Compile, Minify less and generate source maps
      */
-    recess: {
-      // All
-       dist: {
+    less: {
+      dist:{
         options: {
-          compile: true
+          outputSourceFiles: true,
+          sourceMap: true,
+          sourceMapRootpath: 'src/',
+          sourceMapFilename: '../css/<%= pkg.name %>.css.map',
+          sourceMapURL: '<%= pkg.name %>.css.map'
         },
-        src: 'lib/worldvision/less/wvus.uikit.less',
-        dest: '../css/<%= pkg.name %>.css'
+        files: {
+          '../css/<%= pkg.name %>.css': 'lib/worldvision/less/wvus.uikit.less'
+        }
       },
       distResponsive: {
-        options:{
-          compile: true
-        },
-        src: 'lib/worldvision/less/wvus.uikit.responsive.less',
-        dest: '../css/<%= pkg.name %>.responsive.css'
-      },
-      distMin: {
         options: {
-          compress: true
+          outputSourceFiles: true,
+          sourceMap: true,
+          sourceMapRootpath: 'src/',
+          sourceMapFilename: '../css/<%= pkg.name %>.responsive.css.map',
+          sourceMapURL: '<%= pkg.name %>.responsive.css.map'
         },
-        src: '<%= recess.dist.dest %>',
-        dest: '../css/<%= pkg.name %>.min.css'
+        files: {
+          '../css/<%= pkg.name %>.responsive.css': 'lib/worldvision/less/wvus.uikit.responsive.less'
+        }
       },
-      distResponsiveMin: {
+      minify: {
         options: {
-          compress: true
+          cleancss: true,
+          report: 'min',
         },
-        src: '<%= recess.distResponsive.dest %>',
-        dest: '../css/<%= pkg.name %>.responsive.min.css'
-      },
+        files: {
+          '../css/<%= pkg.name %>.min.css': 'lib/worldvision/less/wvus.uikit.less',
+          '../css/<%= pkg.name %>.responsive.min.css': 'lib/worldvision/less/wvus.uikit.less'
+        }
+      }
     },
     copy: {
       images: {
@@ -156,7 +161,6 @@ module.exports = function(grunt) {
                   'img/**',
                   'js/**',
                   'README.md',
-                  'ReleaseNotes.md'
             ],
             dest: '../<%= pkg.name %>'
           }
@@ -171,6 +175,7 @@ module.exports = function(grunt) {
           {expand:true, cwd: '../img', src: '*/**', dest: '../docs/assets/wvus.uikit/img'},
         ]
       },
+      // copies the namespace jquery to the tests
       tests: {
         files: [
           {expand:true, cwd: '../js', src: 'jquery.js', dest: 'lib/bootstrap/js/tests/vendor'}
@@ -234,7 +239,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-html-validation');
@@ -243,13 +248,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'recess', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+  grunt.registerTask('default', ['concat', 'uglify', 'less', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
 
   //compiles less for errors, runs js thorugh 
-  grunt.registerTask('test', ['recess', 'jshint', 'qunit']);
+  grunt.registerTask('test', ['less', 'jshint', 'qunit']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
-  grunt.registerTask('compile', ['concat', 'recess', 'copy:docs', 'copy:tests']);
+  grunt.registerTask('compile', ['concat', 'less', 'copy:docs', 'copy:tests']);
 
   // Serves the docs locally
   grunt.registerTask('docs', ['jekyll', 'connect:jekyll']);
