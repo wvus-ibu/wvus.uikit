@@ -251,7 +251,7 @@ $('.ex-enable').click(function() {
    $(this).prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
   });
 
-  //$('#docs-nav .in').prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
+  $('#docs-nav .in').prev().find("i").removeClass('icon-caret-right').addClass('icon-caret-down');
 
   $('#docs-nav .collapse').on('hide', function(){
    $(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-right');
