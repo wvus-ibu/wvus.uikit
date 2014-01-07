@@ -12,14 +12,14 @@ module.exports = function(grunt) {
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-    
+
     /*
     Concat JS
      */
     concat: {
       options: {
         banner: '<%= banner %>',
-        stripBanners: false
+        stripBanners: true
       },
       distJquery: {
         src: [
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
       files: ['lib/bootstrap/js/tests/*.html']
     },
 
-    //Auto loads/compiles less and 
+    //Auto loads/compiles less and
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -107,7 +107,6 @@ module.exports = function(grunt) {
           sourceMap: true,
           sourceMapRootpath: 'src/',
           sourceMapFilename: '../css/<%= pkg.name %>.css.map',
-          sourceMapURL: '<%= pkg.name %>.css.map'
         },
         files: {
           '../css/<%= pkg.name %>.css': 'lib/worldvision/less/wvus.uikit.less'
@@ -134,6 +133,31 @@ module.exports = function(grunt) {
           '../css/<%= pkg.name %>.min.css': 'lib/worldvision/less/wvus.uikit.less',
           '../css/<%= pkg.name %>.responsive.min.css': 'lib/worldvision/less/wvus.uikit.less'
         }
+      }
+    },
+    csslint: {
+      lib: {
+        options: {
+          csslintrc: 'lib/worldvision/less/.csslintrc',
+          formatters: [
+            {id: 'text', dest: 'csslint-lib.txt'}
+          ],
+        },
+        src: [
+          '../css/wvus.uikit.css',
+          '../css/wvus.uikit.responsive.css',
+        ]
+      },
+      docs: {
+        options: {
+          csslintrc: '../docs/assets/css/.csslintrc',
+          formatters: [
+            {id: 'text', dest: 'csslint-docs.txt'}
+          ],
+        },
+        src: [
+          '../docs/assets/css/developer-docs.css'
+        ]
       }
     },
     copy: {
@@ -246,12 +270,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
 
   // Default task. Compile, concatenate, min, and build zip
   grunt.registerTask('default', ['concat', 'uglify', 'less', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
 
-  //compiles less for errors, runs js thorugh 
-  grunt.registerTask('test', ['less', 'jshint', 'qunit']);
+  //compiles less for errors, runs js thorugh
+  grunt.registerTask('test', ['less', 'csslint:lib' ,'jshint', 'qunit']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
   grunt.registerTask('compile', ['concat', 'less', 'copy:docs', 'copy:tests']);
@@ -260,6 +285,6 @@ module.exports = function(grunt) {
   grunt.registerTask('docs', ['jekyll', 'connect:jekyll']);
 
   // build the docs and validate the html
-  grunt.registerTask('validate', ['jekyll', 'validation']);
+  grunt.registerTask('validate', ['jekyll','csslint:docs', 'validation']);
 
 };
