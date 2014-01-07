@@ -1,14 +1,4 @@
-/*!
- * Bootstrap v2.3.2
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
 .wvus-uikit {
-  /*Variables*/
   /* Allow for input prepend/append in search forms */
   /*!
  *  Font Awesome 3.2.1
@@ -58,13 +48,6 @@
   /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
   /* move down carets for tabs */
-  /*
-  WVUS UiKit Overrides
-  -----------------
-  Custom styles for the WVUS Brand
-  lib/worldvision/less/wv-styles.less
-
- */
   /*!
  * bootstrap-select v1.4.2
  * http://silviomoreto.github.io/bootstrap-select/
@@ -2127,7 +2110,7 @@
   line-height: normal;
   vertical-align: baseline;
   background-image: none;
-  background-position: 0% 0%;
+  background-position: 0 0;
   background-repeat: repeat;
   margin-top: 0;
 }
@@ -6339,7 +6322,7 @@
   border-radius: 3px;
 }
 .wvus-uikit .progress .bar {
-  width: 0%;
+  width: 0;
   height: 100%;
   color: #ffffff;
   float: left;
@@ -7623,7 +7606,7 @@
   height: 50px;
   border-left: 1px solid #ff6600;
   border-right: 1px solid #ff9d29;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .wvus-uikit .wv-navbar .navbar-search {
   margin-top: 10px;
@@ -7974,4 +7957,4 @@
 .wvus-uikit .affix {
   position: fixed;
 }
-/*# sourceMappingURL=wvus.uikit.css.map */
+/*# sourceMappingURL=src/../css/wvus.uikit.css.map */
