@@ -62,6 +62,10 @@ module.exports = function(grunt) {
       distJquery: {
         src: '../js/jquery.js',
         dest: '../js/jquery.min.js'
+      },
+      modernizer: {
+        src: 'lib/modernizer/modernizer.js',
+        dest: '../js/modernizer.min.js'
       }
     },
 
@@ -194,7 +198,7 @@ module.exports = function(grunt) {
       docs: {
         files: [
           {expand:true, cwd: '../css', src: '*', dest: '../docs/assets/wvus.uikit/css'},
-          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*'], dest: '../docs/assets/wvus.uikit/js'},
+          {expand:true, cwd: '../js', src: ['jquery.min.js', 'wvus.uikit.*', 'modernizer.min.js'], dest: '../docs/assets/wvus.uikit/js'},
           {expand:true, cwd: '../font', src: '*', dest: '../docs/assets/wvus.uikit/font'},
           {expand:true, cwd: '../img', src: '*/**', dest: '../docs/assets/wvus.uikit/img'},
         ]
