@@ -3,7 +3,7 @@ layout: docsdashboard
 title: Collapse
 snippet: collapse
 group: collapse
-hasJs: false
+hasJs: true
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
@@ -14,12 +14,12 @@ hasJs: false
           <!-- Preview -->
           <div class="row-fluid">
             <div class="docs-example">
-              
+
               <div class="accordion" id="sample">
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a href="#sectionOne" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-minus"></i> Heading 1</a>
-                  </div> 
+                  </div>
                   <div id="sectionOne" class="accordion-body collapse in">
                     <div class="accordion-inner">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
@@ -55,20 +55,25 @@ hasJs: false
           <div class="row-fluid">
             <div class="docs-html">
 {% highlight html  %}
-<div class="accordion" id="accordion">
+<!-- Accordion -->
+<div class="accordion" id="sample">
+
+  <!-- Accordion Group 1 -->
   <div class="accordion-group">
     <div class="accordion-heading">
-      <a href="#sectionOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><i class="icon-minus"></i> Heading 1</a>
-    </div> 
+      <a href="#sectionOne" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-minus"></i> Heading 1</a>
+    </div>
     <div id="sectionOne" class="accordion-body collapse in">
       <div class="accordion-inner">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
       </div><!-- accordion-inner -->
     </div><!-- accordion-body -->
   </div><!-- accordion-group -->
+
+  <!-- Accordion Group 2 -->
   <div class="accordion-group">
     <div class="accordion-heading">
-      <a href="#sectionTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><i class="icon-plus"></i> Heading 2</a>
+      <a href="#sectionTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-plus"></i> Heading 2</a>
     </div>
     <div id="sectionTwo" class="accordion-body collapse">
       <div class="accordion-inner">
@@ -76,9 +81,11 @@ hasJs: false
       </div><!-- accordion-inner -->
     </div><!-- accordion-body -->
   </div><!-- accordion-group -->
+
+  <!-- Accordion Group 3 -->
   <div class="accordion-group">
     <div class="accordion-heading">
-      <a href="#sectionThree" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><i class="icon-plus"></i> Heading 3</a>
+      <a href="#sectionThree" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-plus"></i> Heading 3</a>
     </div>
     <div id="sectionThree" class="accordion-body collapse">
       <div class="accordion-inner">
@@ -86,6 +93,7 @@ hasJs: false
       </div><!-- accordion-inner -->
     </div><!-- accordion-body -->
   </div><!-- accordion-group -->
+
 </div><!-- /accordion -->
 {% endhighlight %}
             </div>
@@ -96,7 +104,16 @@ hasJs: false
           <div class="row-fluid">
             <div class="docs-js">
 {% highlight js %}
+//accordion demo
+$('#sample .collapse').on('show', function(){
+  $(this).prev().find('.accordion-toggle > i')
+  .removeClass('icon-plus').addClass('icon-minus');
+});
 
+$('#sample .collapse').on('hide', function(){
+  $(this).prev().find('.accordion-toggle > i')
+  .removeClass('icon-minus').addClass('icon-plus');
+});
 {% endhighlight %}
             </div>
           </div>

@@ -2,6 +2,9 @@
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
 */
+.wvus-uikit body {
+  padding-top: 50px;
+}
 .wvus-uikit .subheader {
   margin: 20px 0 30px 0;
   color: #6f6f6f;
@@ -21,6 +24,9 @@
 .wvus-uikit body > .navbar .brand {
   float: left;
   color: #ffffff;
+}
+.wvus-uikit #navbar-example {
+  z-index: 9999;
 }
 .wvus-uikit .docs-tabs .tab-content {
   overflow: visible;

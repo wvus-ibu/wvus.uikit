@@ -1,25 +1,24 @@
 ---
 layout: docsdashboard
-title: Buttons - Group
-snippet: buttons
-group: buttons
-hasJs: false
+title: Multi-Select
+snippet: select
+group: select
+hasJs: true
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
-      Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.
+      Multi-selects with <a href="http://silviomoreto.github.io/bootstrap-select/">Bootstrap Select</a>
     </p>
 </header>
           <!-- Preview -->
           <div class="row-fluid">
             <div class="docs-example">
-              <div class="btn-group">
-                <button class="btn">Button Group</button>
-                <button class="btn">Button Group</button>
-                <button class="btn">Button Group</button>
-                <button class="btn">Button Group</button>
-              </div>
+              <select class="selectpicker" multiple>
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
             </div>
           </div>
 
@@ -27,12 +26,11 @@ hasJs: false
           <div class="row-fluid">
             <div class="docs-html">
 {% highlight html  %}
-<div class="btn-group">
-  <button class="btn">Button Group</button>
-  <button class="btn">Button Group</button>
-  <button class="btn">Button Group</button>
-  <button class="btn">Button Group</button>
-</div>
+<select class="selectpicker" multiple>
+  <option>Mustard</option>
+  <option>Ketchup</option>
+  <option>Relish</option>
+</select>
 {% endhighlight %}
             </div>
           </div>
@@ -42,7 +40,7 @@ hasJs: false
           <div class="row-fluid">
             <div class="docs-js">
 {% highlight js %}
-
+wvusUikit(".selectpicker").selectpicker();
 {% endhighlight %}
             </div>
           </div>

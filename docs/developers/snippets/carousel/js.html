@@ -80,10 +80,12 @@ jsCarousel.carousel({
   interval: 2000,
   pause: ""
 });
-wvusUikit('#jsLeft').click(function() {
+wvusUikit('#jsLeft').click(function(e) {
+  e.preventDefault();
   jsCarousel.carousel('prev');
 });
-wvusUikit('#jsRight').click(function(){
+wvusUikit('#jsRight').click(function(e){
+  e.preventDefault();
   jsCarousel.carousel('next');
 });
 wvusUikit('#jsPause').click(function() {

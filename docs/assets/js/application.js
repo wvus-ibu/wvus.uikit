@@ -48,14 +48,9 @@
     })
 
     $('.tooltip-test').tooltip()
-    $('.popover-test').popover()
 
     // popover demo
-    $("a[data-toggle=popover]")
-      .popover()
-      .click(function(e) {
-        e.preventDefault()
-      })
+    $('.popover-test').popover();
 
     // button state demo
     $('#fat-btn')
@@ -71,12 +66,12 @@
     $('#myCarousel').carousel()
 
     //accordion demo
-    $('#sample').on('show', function(){
+    $('#sample .collapse').on('show', function(){
       $(this).prev().find('.accordion-toggle > i')
       .removeClass('icon-plus').addClass('icon-minus');
     });
 
-    $('#sample').on('hide', function(){
+    $('#sample .collapse').on('hide', function(){
       $(this).prev().find('.accordion-toggle > i')
       .removeClass('icon-minus').addClass('icon-plus');
     });
@@ -99,10 +94,12 @@
       interval: 2000,
       pause: ""
     });
-    $('#jsLeft').click(function() {
+    $('#jsLeft').click(function(e) {
+      e.preventDefault();
       jsCarousel.carousel('prev');
     });
-    $('#jsRight').click(function(){
+    $('#jsRight').click(function(e){
+      e.preventDefault();
       jsCarousel.carousel('next');
     });
     $('#jsPause').click(function() {
