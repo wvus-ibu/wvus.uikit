@@ -6799,10 +6799,6 @@
 .wvus-uikit .btn:hover,
 .wvus-uikit .btn:focus {
   background-position: 0 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline: invert none medium;
 }
 .wvus-uikit .btn-primary {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
