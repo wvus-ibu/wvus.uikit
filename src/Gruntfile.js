@@ -277,7 +277,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'less', 'copy:docs', 'copy:images', 'copy:tests','copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+  grunt.registerTask('default', ['concat', 'uglify', 'less', 'copy:images', 'copy:tests','copy:variables', 'copy:docs', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
 
   //compiles less for errors, runs js thorugh
   grunt.registerTask('test', ['less', 'csslint:lib' ,'jshint', 'qunit']);
