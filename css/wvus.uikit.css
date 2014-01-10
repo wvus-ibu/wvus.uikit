@@ -7877,39 +7877,39 @@
   caption-side: bottom;
   margin: 0;
 }
-.wvus-uikit .svg .sector {
+.wvus-uikit.svg .sector {
   display: inline-block;
   background-size: 100%;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   text-indent: -999em;
   direction: ltr;
 }
-.wvus-uikit .svg .sector.disaster {
+.wvus-uikit.svg .sector.disaster {
   background: url("../img/svg/disaster.svg");
 }
-.wvus-uikit .svg .sector.child {
+.wvus-uikit.svg .sector.child {
   background: url("../img/svg/child.svg");
 }
-.wvus-uikit .svg .sector.economic {
+.wvus-uikit.svg .sector.economic {
   background: url("../img/svg/economic.svg");
 }
-.wvus-uikit .svg .sector.education {
+.wvus-uikit.svg .sector.education {
   background: url("../img/svg/education.svg");
 }
-.wvus-uikit .svg .sector.faith {
+.wvus-uikit.svg .sector.faith {
   background: url("../img/svg/faith.svg");
 }
-.wvus-uikit .svg .sector.food {
+.wvus-uikit.svg .sector.food {
   background: url("../img/svg/food.svg");
 }
-.wvus-uikit .svg .sector.health {
+.wvus-uikit.svg .sector.health {
   background: url("../img/svg/health.svg");
 }
-.wvus-uikit .svg .sector.us {
+.wvus-uikit.svg .sector.us {
   background: url("../img/svg/us.svg");
 }
-.wvus-uikit .svg .sector.water {
+.wvus-uikit.svg .sector.water {
   background: url("../img/svg/water.svg");
 }
 .wvus-uikit .pull-right {
