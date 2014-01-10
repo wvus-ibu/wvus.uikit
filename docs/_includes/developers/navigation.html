@@ -336,5 +336,14 @@
       <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/affix/usage">Usage</a></li>
     </ul>
   </li>
-  <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons">Icons</a></li>
+  <li class="divider"></li>
+  <li class="nav-header">Glyphs</li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#icons">Icons <i class="icon-caret-right"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == "icons"%} in {% endif %}" id="icons">
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/fontawesome">Font Glyphs</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/listoficons">List of Icons</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/graphics">Graphics</a></li>
+    </ul>
+  </li>
 </ul>
