@@ -6795,17 +6795,87 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  color: #333333;
+  text-shadow: 0 1px 1px #b3b3b3;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-position: 0 0;
+}
+.wvus-uikit .btn:hover,
+.wvus-uikit .btn:focus,
+.wvus-uikit .btn:active,
+.wvus-uikit .btn.active,
+.wvus-uikit .btn.disabled,
+.wvus-uikit .btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.wvus-uikit .btn:active,
+.wvus-uikit .btn.active {
+  background-color: #cccccc \9;
+}
+.wvus-uikit .btn:hover,
+.wvus-uikit .btn:focus,
+.wvus-uikit .btn:active,
+.wvus-uikit .btn.active,
+.wvus-uikit .btn.disabled,
+.wvus-uikit .btn[disabled] {
+  background-color: rgba(255, 255, 255, 0.8);
+  *background-color: #ffffff;
+  color: #333333;
+  text-shadow: 0 1px 1px #b3b3b3;
+  background-color: rgba(245, 245, 245, 0.4);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.4)), to(rgba(230, 230, 230, 0.4)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ffffff', endColorstr='#66e6e6e6', GradientType=0);
+  border-color: rgba(230, 230, 230, 0.4) rgba(230, 230, 230, 0.4) rgba(191, 191, 191, 0.4);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-position: 0 0;
+}
+.wvus-uikit .btn:active,
+.wvus-uikit .btn.active {
+  background-color: #ffffff \9;
+  color: #333333;
+  text-shadow: 0 1px 1px #b3b3b3;
+  background-color: rgba(240, 240, 240, 0.4);
+  background-image: -moz-linear-gradient(top, rgba(230, 230, 230, 0.4), rgba(255, 255, 255, 0.4));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(230, 230, 230, 0.4)), to(rgba(255, 255, 255, 0.4)));
+  background-image: -webkit-linear-gradient(top, rgba(230, 230, 230, 0.4), rgba(255, 255, 255, 0.4));
+  background-image: -o-linear-gradient(top, rgba(230, 230, 230, 0.4), rgba(255, 255, 255, 0.4));
+  background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0.4), rgba(255, 255, 255, 0.4));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66e6e6e6', endColorstr='#66ffffff', GradientType=0);
+  border-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.4) rgba(217, 217, 217, 0.4);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-position: 0 0;
 }
 .wvus-uikit .btn:hover,
 .wvus-uikit .btn:focus {
   background-position: 0 0;
 }
 .wvus-uikit .btn-primary {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   *background-color: #ff6600;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #993d00;
   background-color: #ff8719;
   background-image: -moz-linear-gradient(top, #ff9d29, #ff6600);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9d29), to(#ff6600));
@@ -6842,7 +6912,7 @@
   background-color: rgba(255, 157, 41, 0.8);
   *background-color: #ffffff;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #993d00;
   background-color: rgba(255, 135, 25, 0.4);
   background-image: -moz-linear-gradient(top, rgba(255, 157, 41, 0.4), rgba(255, 102, 0, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 157, 41, 0.4)), to(rgba(255, 102, 0, 0.4)));
@@ -6860,7 +6930,7 @@
 .wvus-uikit .btn-primary.active {
   background-color: #ff8533 \9;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #993d00;
   background-color: rgba(255, 124, 16, 0.4);
   background-image: -moz-linear-gradient(top, rgba(255, 102, 0, 0.4), rgba(255, 157, 41, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 102, 0, 0.4)), to(rgba(255, 157, 41, 0.4)));
@@ -6886,11 +6956,10 @@
   box-shadow: none;
 }
 .wvus-uikit .btn-warning {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   *background-color: #ffbf00;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #997300;
   background-color: #ffc71f;
   background-image: -moz-linear-gradient(top, #ffcc33, #ffbf00);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffcc33), to(#ffbf00));
@@ -6927,7 +6996,7 @@
   background-color: rgba(255, 204, 51, 0.8);
   *background-color: #ffffff;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #997300;
   background-color: rgba(255, 199, 31, 0.4);
   background-image: -moz-linear-gradient(top, rgba(255, 204, 51, 0.4), rgba(255, 191, 0, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 204, 51, 0.4)), to(rgba(255, 191, 0, 0.4)));
@@ -6945,7 +7014,7 @@
 .wvus-uikit .btn-warning.active {
   background-color: #ffcc33 \9;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #997300;
   background-color: rgba(255, 196, 20, 0.4);
   background-image: -moz-linear-gradient(top, rgba(255, 191, 0, 0.4), rgba(255, 204, 51, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 191, 0, 0.4)), to(rgba(255, 204, 51, 0.4)));
@@ -6960,11 +7029,10 @@
   background-position: 0 0;
 }
 .wvus-uikit .btn-info {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   *background-color: #99ccff;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #3399ff;
   background-color: #b8dbff;
   background-image: -moz-linear-gradient(top, #cce5ff, #99ccff);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cce5ff), to(#99ccff));
@@ -7001,7 +7069,7 @@
   background-color: rgba(204, 229, 255, 0.8);
   *background-color: #ffffff;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #3399ff;
   background-color: rgba(184, 219, 255, 0.4);
   background-image: -moz-linear-gradient(top, rgba(204, 229, 255, 0.4), rgba(153, 204, 255, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(204, 229, 255, 0.4)), to(rgba(153, 204, 255, 0.4)));
@@ -7019,7 +7087,7 @@
 .wvus-uikit .btn-info.active {
   background-color: #cce5ff \9;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #3399ff;
   background-color: rgba(173, 214, 255, 0.4);
   background-image: -moz-linear-gradient(top, rgba(153, 204, 255, 0.4), rgba(204, 229, 255, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(153, 204, 255, 0.4)), to(rgba(204, 229, 255, 0.4)));
@@ -7034,11 +7102,10 @@
   background-position: 0 0;
 }
 .wvus-uikit .btn-success {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   *background-color: #999933;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #4d4d19;
   background-color: #b0b03b;
   background-image: -moz-linear-gradient(top, #bfbf40, #999933);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bfbf40), to(#999933));
@@ -7075,7 +7142,7 @@
   background-color: rgba(191, 191, 64, 0.8);
   *background-color: #ffffff;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #4d4d19;
   background-color: rgba(176, 176, 59, 0.4);
   background-image: -moz-linear-gradient(top, rgba(191, 191, 64, 0.4), rgba(153, 153, 51, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(191, 191, 64, 0.4)), to(rgba(153, 153, 51, 0.4)));
@@ -7093,7 +7160,7 @@
 .wvus-uikit .btn-success.active {
   background-color: #bfbf40 \9;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #4d4d19;
   background-color: rgba(168, 168, 56, 0.4);
   background-image: -moz-linear-gradient(top, rgba(153, 153, 51, 0.4), rgba(191, 191, 64, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(153, 153, 51, 0.4)), to(rgba(191, 191, 64, 0.4)));
@@ -7108,11 +7175,10 @@
   background-position: 0 0;
 }
 .wvus-uikit .btn-danger {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   *background-color: #ff0000;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #990000;
   background-color: #ff1f1f;
   background-image: -moz-linear-gradient(top, #ff3333, #ff0000);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff3333), to(#ff0000));
@@ -7149,7 +7215,7 @@
   background-color: rgba(255, 51, 51, 0.8);
   *background-color: #ffffff;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #990000;
   background-color: rgba(255, 31, 31, 0.4);
   background-image: -moz-linear-gradient(top, rgba(255, 51, 51, 0.4), rgba(255, 0, 0, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 51, 51, 0.4)), to(rgba(255, 0, 0, 0.4)));
@@ -7167,7 +7233,7 @@
 .wvus-uikit .btn-danger.active {
   background-color: #ff3333 \9;
   color: #ffffff;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 1px #990000;
   background-color: rgba(255, 20, 20, 0.4);
   background-image: -moz-linear-gradient(top, rgba(255, 0, 0, 0.4), rgba(255, 51, 51, 0.4));
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 0, 0, 0.4)), to(rgba(255, 51, 51, 0.4)));
@@ -7177,6 +7243,79 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ff0000', endColorstr='#66ff3333', GradientType=0);
   border-color: rgba(255, 51, 51, 0.4) rgba(255, 51, 51, 0.4) rgba(229, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-position: 0 0;
+}
+.wvus-uikit .btn-inverse {
+  *background-color: #222222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  color: #ffffff;
+  text-shadow: 0 2px 1px #000000;
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-position: 0 0;
+}
+.wvus-uikit .btn-inverse:hover,
+.wvus-uikit .btn-inverse:focus,
+.wvus-uikit .btn-inverse:active,
+.wvus-uikit .btn-inverse.active,
+.wvus-uikit .btn-inverse.disabled,
+.wvus-uikit .btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+}
+.wvus-uikit .btn-inverse:active,
+.wvus-uikit .btn-inverse.active {
+  background-color: #080808 \9;
+}
+.wvus-uikit .btn-inverse:hover,
+.wvus-uikit .btn-inverse:focus,
+.wvus-uikit .btn-inverse:active,
+.wvus-uikit .btn-inverse.active,
+.wvus-uikit .btn-inverse.disabled,
+.wvus-uikit .btn-inverse[disabled] {
+  background-color: rgba(68, 68, 68, 0.8);
+  *background-color: #ffffff;
+  color: #ffffff;
+  text-shadow: 0 2px 1px #000000;
+  background-color: rgba(54, 54, 54, 0.4);
+  background-image: -moz-linear-gradient(top, rgba(68, 68, 68, 0.4), rgba(34, 34, 34, 0.4));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(68, 68, 68, 0.4)), to(rgba(34, 34, 34, 0.4)));
+  background-image: -webkit-linear-gradient(top, rgba(68, 68, 68, 0.4), rgba(34, 34, 34, 0.4));
+  background-image: -o-linear-gradient(top, rgba(68, 68, 68, 0.4), rgba(34, 34, 34, 0.4));
+  background-image: linear-gradient(to bottom, rgba(68, 68, 68, 0.4), rgba(34, 34, 34, 0.4));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66444444', endColorstr='#66222222', GradientType=0);
+  border-color: rgba(34, 34, 34, 0.4) rgba(34, 34, 34, 0.4) rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-position: 0 0;
+}
+.wvus-uikit .btn-inverse:active,
+.wvus-uikit .btn-inverse.active {
+  background-color: #3c3c3c \9;
+  color: #ffffff;
+  text-shadow: 0 2px 1px #000000;
+  background-color: rgba(48, 48, 48, 0.4);
+  background-image: -moz-linear-gradient(top, rgba(34, 34, 34, 0.4), rgba(68, 68, 68, 0.4));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(34, 34, 34, 0.4)), to(rgba(68, 68, 68, 0.4)));
+  background-image: -webkit-linear-gradient(top, rgba(34, 34, 34, 0.4), rgba(68, 68, 68, 0.4));
+  background-image: -o-linear-gradient(top, rgba(34, 34, 34, 0.4), rgba(68, 68, 68, 0.4));
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.4), rgba(68, 68, 68, 0.4));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66222222', endColorstr='#66444444', GradientType=0);
+  border-color: rgba(68, 68, 68, 0.4) rgba(68, 68, 68, 0.4) rgba(30, 30, 30, 0.4);
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-position: 0 0;
