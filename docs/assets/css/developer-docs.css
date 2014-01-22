@@ -2,8 +2,45 @@
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
 */
-.wvus-uikit body {
-  padding-top: 50px;
+.wvus-uikit header {
+  margin-top: 15px;
+}
+.wvus-uikit header .logo:hover {
+  opacity: .6;
+}
+.wvus-uikit header .form-search input {
+  width: 267px;
+}
+.wvus-uikit header .form-search button {
+  background: none;
+  border: none;
+}
+.wvus-uikit header .form-search .icon-search {
+  color: #ff6600;
+}
+.wvus-uikit header .social a:hover {
+  text-decoration: none;
+}
+.wvus-uikit header .social i[class^="icon-facebook"] {
+  color: #2D78AB;
+}
+.wvus-uikit header .social i[class^="icon-facebook"]:hover,
+.wvus-uikit header .social i[class^="icon-facebook"]:focus {
+  opacity: .8;
+}
+.wvus-uikit header .social i[class^="icon-twitter"] {
+  color: #00ACED;
+}
+.wvus-uikit header .social i[class^="icon-twitter"]:hover,
+.wvus-uikit header .social i[class^="icon-twitter"]:focus {
+  opacity: .8;
+}
+.wvus-uikit header .social i[class^="icon-youtube"] {
+  color: #B00;
+}
+.wvus-uikit header .social i[class^="icon-youtube"]:hover,
+.wvus-uikit header .social i[class^="icon-youtube"]:focus {
+  opacity: .8;
 }
 .wvus-uikit .subheader {
   margin: 20px 0 30px 0;
