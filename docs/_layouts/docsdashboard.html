@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="wvus-uikit">
-  <head>
-    <meta charset="utf-8">
-    <title>{{page.title}} | WVUS.UiKit</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include head.html %}
-
+  {% include head.html %}
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
     <script type="text/javascript">
       wvusUikit(document).ready(function(){
         wvusUikit("a[data-toggle='collapse']").click(function(e){
@@ -13,8 +9,6 @@
         });
       });
     </script>
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
     {% include header.html %}
 
     <div class="container-fluid">
