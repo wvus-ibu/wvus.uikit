@@ -1,9 +1,53 @@
-<!-- Subhead
-================================================== -->
-<header class="jumbotron subhead" id="headerTitle">
-  <div class="container">
-    <h1>{{page.title}}</h1>
-    <p class="lead">{{page.lead}}</p>
-    <a href="https://github.com/wvus-ibu/wvus.uikit" target="_blank">Github Project</a> 
-  </div>
-</header>
+    <header class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <a href="#" class="logo"><img src="{{ site.baseurl }}/assets/img/wvus/logo.png"></a>
+        </div>
+        <div class="span9">
+          <div class="row-fluid">
+            <div class="span4 pull-right">
+              <form class="form-search" action="#">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="icon-search icon-2x"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4 pull-right social">
+              <ul class="inline">
+                <li><a href=""><i class="icon-facebook-sign icon-2x"></i></a></li>
+                <li><a href=""><i class="icon-twitter-sign icon-2x"></i></a></li>
+                <li><a href=""><i class="icon-youtube-sign icon-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar wv-navbar navbar-static-top">
+      <div class="navbar-inner">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <div class="container">
+              <ul class="nav">
+                <li>
+                  <a href="#">Learn</a>
+                </li>
+                <li>
+                  <a href="#">Develop</a>
+                </li>
+                <li>
+                 <a href="{{ site.baseurl }}/developers">Toolbox</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
