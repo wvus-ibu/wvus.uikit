@@ -3,24 +3,19 @@
 // ----------------
 
 // Navbar vertical align
-// -------------------------
-// Vertically center elements in the navbar.
-// Example: an element has a height of 30px, so write out `.navbarVerticalAlign(30px);` to calculate the appropriate top margin.
-.wvnavbarVerticalAlign(@elementHeight) {
-  margin-top: (@wvnavbarHeight - @elementHeight) / 2;
-}
-
+// @see bootstrap/less/navbar.less
+// inherited from navbar
 
 .wv-navbar.navbar .navbar-inner{
   #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarBackground);
 }
 .wv-navbar {
   .navbar-inner{
-    min-height: @wvnavbarHeight;
+    min-height: @navbarHeight;
   }
   .navbar-text {
     color: @wvnavbarText;
-    line-height: @wvnavbarHeight;
+    line-height: @navbarHeight;
   }
   .navbar-link{
     color: @wvnavbarText;
@@ -31,7 +26,7 @@
   .nav > li > a{
     color: @wvnavbarText;
     #font > .text-shadow(2px 0 2px #F60);
-    padding: ((@wvnavbarHeight - @baseLineHeight) / 2) 15px ((@wvnavbarHeight - @baseLineHeight) / 2);
+    padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -61,13 +56,13 @@
   .brand{
     color: @wvnavbarBrandColor;
     #font > .text-shadow(0 1px 0 #000);
-    padding: ((@wvnavbarHeight - @baseLineHeight) / 2) 20px ((@wvnavbarHeight - @baseLineHeight) / 2);
+    padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
   }
 
 // Divider
 // -------
   .divider-vertical{
-    height: @wvnavbarHeight;
+    height: @navbarHeight;
     border-left: 1px solid @wvnavbarBackground;
     border-right: 1px solid @wvnavbarBackgroundHighlight;
     margin-left: 0;
@@ -76,7 +71,7 @@
 // Navbar Forms
 // --------------
 .navbar-search{
-  .wvnavbarVerticalAlign(30px);
+  .navbarVerticalAlign(30px);
 }
 
 // Dropdowns
