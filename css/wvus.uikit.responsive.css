@@ -2125,4 +2125,45 @@
     overflow: visible !important;
   }
 }
+@media (max-width: 979px) {
+  .wvus-uikit .wv-navbar .nav-collapse .nav .nav-header {
+    color: #ffffff;
+  }
+  .wvus-uikit .wv-navbar .nav-collapse .nav > li > a,
+  .wvus-uikit .wv-navbar .nav-collapse .dropdown-menu a {
+    color: #ffffff;
+  }
+  .wvus-uikit .wv-navbar .nav-collapse .nav > .active > a,
+  .wvus-uikit .wv-navbar .nav-collapse .dropdown-menu > .active > a {
+    color: #ff6600;
+    background-color: #ffeeda;
+    background-image: -moz-linear-gradient(top, #ffe3c2, #ffffff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe3c2), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #ffe3c2, #ffffff);
+    background-image: -o-linear-gradient(top, #ffe3c2, #ffffff);
+    background-image: linear-gradient(to bottom, #ffe3c2, #ffffff);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe3c2', endColorstr='#ffffffff', GradientType=0);
+    text-shadow: none;
+  }
+  .wvus-uikit .wv-navbar .nav-collapse .nav > li > a:hover,
+  .wvus-uikit .wv-navbar .nav-collapse .nav > li > a:focus,
+  .wvus-uikit .wv-navbar .nav-collapse .dropdown-menu a:hover,
+  .wvus-uikit .wv-navbar .nav-collapse .dropdown-menu a:focus {
+    color: #ff6600;
+    background-color: #ffeeda;
+    background-image: -moz-linear-gradient(top, #ffe3c2, #ffffff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe3c2), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #ffe3c2, #ffffff);
+    background-image: -o-linear-gradient(top, #ffe3c2, #ffffff);
+    background-image: linear-gradient(to bottom, #ffe3c2, #ffffff);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe3c2', endColorstr='#ffffffff', GradientType=0);
+    text-shadow: none;
+  }
+  .wvus-uikit .wv-navbar .nav-collapse .nav > li,
+  .wvus-uikit .wv-navbar .nav-collapse .nav > li:last-child > a {
+    border: none;
+  }
+}
 /*# sourceMappingURL=wvus.uikit.responsive.css.map */
