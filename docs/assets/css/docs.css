@@ -1,59 +1,69 @@
-.colors {
-  color: #fff;
-  width: 100%;
-  margin: 10px 0;
-}
-.colors .row-fluid > div {
-  padding: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.orange {
-  background-color: #ff6600;
-}
-.blue {
-  background-color: #006699;
-}
-.white {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid black;
-}
-.dark-gray {
-  background-color: #666;
-}
-.black {
-  background-color: #000;
-}
-.gold {
-  background-color: #fc3;
-}
-.green {
-  background-color: #999;
-}
-.light-blue {
-  background-color: #9cf;
-}
-.dark-blue {
-  background-color: #0c4972;
-}
-.terra-cotta {
-  background-color: #630;
-}
-.warm-gray {
-  background-color: #999;
-}
-/*
+.wvus-uikit {
+  /*
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
 */
-.wvus-uikit {
+
   /* Responsive tests
 ------------------------- */
 
   /* Footer
 -------------------------------------------------- */
 
+}
+.wvus-uikit .colors {
+  color: #fff;
+  width: 100%;
+  margin: 10px 0;
+}
+.wvus-uikit .colors .row-fluid > div {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.wvus-uikit .orange {
+  background-color: #ff6600;
+}
+.wvus-uikit .blue {
+  background-color: #006699;
+}
+.wvus-uikit .white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+.wvus-uikit .dark-gray {
+  background-color: #666;
+}
+.wvus-uikit .black {
+  background-color: #000;
+}
+.wvus-uikit .gold {
+  background-color: #fc3;
+}
+.wvus-uikit .green {
+  background-color: #999;
+}
+.wvus-uikit .light-blue {
+  background-color: #9cf;
+}
+.wvus-uikit .dark-blue {
+  background-color: #0c4972;
+}
+.wvus-uikit .terra-cotta {
+  background-color: #630;
+}
+.wvus-uikit .warm-gray {
+  background-color: #999;
+}
+.wvus-uikit .no-margin {
+  margin-left: 0 !important;
+}
+.wvus-uikit p > img {
+  padding: 10px;
+}
+.wvus-uikit .indent {
+  padding-left: 40px;
 }
 .wvus-uikit header {
   margin: 15px 0;

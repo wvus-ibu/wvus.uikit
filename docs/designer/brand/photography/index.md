@@ -25,7 +25,7 @@ World Vision imagery is key to communicating the needs and hopes of the children
     <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/photography-natural.png" alt="Natural Light">
     </li>
-    <li class="span3">
+    <li class="span3 no-margin">
       <img src="{{ site.baseurl }}/assets/img/wvus/photography-hopeful2.png" alt="Hopeful">
     </li>
   </ul>

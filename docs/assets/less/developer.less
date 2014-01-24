@@ -2,51 +2,50 @@
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
 */
-.wvus-uikit {
-  header{
-    margin: 15px 0;
-    .logo:hover{
-      opacity: .6;
+header{
+  margin: 15px 0;
+  .logo:hover{
+    opacity: .6;
+  }
+  .form-search{
+    input{
+      width: 70%;
     }
-    .form-search{
-      input{
-        width: 70%;
-      }
-      button{
-        background: none;
-        border: none;
-      }
-      .icon-search{
-        color: #ff6600;
+    button{
+      background: none;
+      border: none;
+    }
+    .icon-search{
+      color: #ff6600;
+    }
+  }
+  .social{
+    a:hover{
+      text-decoration: none;
+    }
+    i[class^="icon-facebook"]{
+      color: #2D78AB;
+      &:hover,
+      &:focus{
+        opacity: .8;
       }
     }
-    .social{
-      a:hover{
-        text-decoration: none;
+    i[class^="icon-twitter"]{
+      color: #00ACED;
+      &:hover,
+      &:focus{
+        opacity: .8;
       }
-      i[class^="icon-facebook"]{
-        color: #2D78AB;
-        &:hover,
-        &:focus{
-          opacity: .8;
-        }
-      }
-      i[class^="icon-twitter"]{
-        color: #00ACED;
-        &:hover,
-        &:focus{
-          opacity: .8;
-        }
-      }
-      i[class^="icon-youtube"]{
-        color: #B00;
-        &:hover,
-        &:focus{
-          opacity: .8;
-        }
+    }
+    i[class^="icon-youtube"]{
+      color: #B00;
+      &:hover,
+      &:focus{
+        opacity: .8;
       }
     }
   }
+}
 
 
 
@@ -230,25 +229,24 @@ pre{
 /* Footer
 -------------------------------------------------- */
 
-  .footer {
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 70px;
-    border-top: 1px solid #e5e5e5;
-    background-color: #f5f5f5;
-  }
-  .footer p {
-    margin-bottom: 0;
-    color: #777;
-  }
-  .footer-links {
-    margin: 10px 0;
-  }
-  .footer-links li {
-    display: inline;
-    padding: 0 2px;
-  }
-  .footer-links li:first-child {
-    padding-left: 0;
-  }
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #777;
+}
+.footer-links {
+  margin: 10px 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
 }
