@@ -1,3 +1,48 @@
+.colors {
+  color: #fff;
+  width: 100%;
+  margin: 10px 0;
+}
+.colors .row-fluid > div {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.orange {
+  background-color: #ff6600;
+}
+.blue {
+  background-color: #006699;
+}
+.white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+.dark-gray {
+  background-color: #666;
+}
+.black {
+  background-color: #000;
+}
+.gold {
+  background-color: #fc3;
+}
+.green {
+  background-color: #999;
+}
+.light-blue {
+  background-color: #9cf;
+}
+.dark-blue {
+  background-color: #0c4972;
+}
+.terra-cotta {
+  background-color: #630;
+}
+.warm-gray {
+  background-color: #999;
+}
 /*
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
@@ -5,6 +50,9 @@
 .wvus-uikit {
   /* Responsive tests
 ------------------------- */
+
+  /* Footer
+-------------------------------------------------- */
 
 }
 .wvus-uikit header {
@@ -199,26 +247,24 @@
   -moz-border-radius: 4px 0 4px 0;
   border-radius: 4px 0 4px 0;
 }
-/* Footer
--------------------------------------------------- */
-.footer {
+.wvus-uikit .footer {
   text-align: center;
   padding: 30px 0;
   margin-top: 70px;
   border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
 }
-.footer p {
+.wvus-uikit .footer p {
   margin-bottom: 0;
   color: #777;
 }
-.footer-links {
+.wvus-uikit .footer-links {
   margin: 10px 0;
 }
-.footer-links li {
+.wvus-uikit .footer-links li {
   display: inline;
   padding: 0 2px;
 }
-.footer-links li:first-child {
+.wvus-uikit .footer-links li:first-child {
   padding-left: 0;
 }
