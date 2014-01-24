@@ -23,7 +23,7 @@ Use these measurements to ensure adequate protected space between the logo and a
 
 The world vision logo must always appear on a white background of the minimum dimensions shown.
 
-1w = Width of one “W” from the World Vision logotype
+1w = Width of one “W” from the World Vision logotype    
 1ht = Height of one “W” from the World Vision logotype
 
 
