@@ -135,7 +135,7 @@ module.exports = function(grunt) {
         },
         files: {
           '../css/<%= pkg.name %>.min.css': 'lib/worldvision/less/wvus.uikit.less',
-          '../css/<%= pkg.name %>.responsive.min.css': 'lib/worldvision/less/wvus.uikit.less'
+          '../css/<%= pkg.name %>.responsive.min.css': 'lib/worldvision/less/wvus.uikit.responsive.less'
         }
       }
     },
