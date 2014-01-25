@@ -6,19 +6,25 @@
 
   $(function(){
 
-    var $window = $(window)
+    var $window = $(window);
+
+      $(document).ready(function(){
+        $("a[data-toggle='collapse']").click(function(e){
+          e.preventDefault();
+        });
+      });
 
     // Disable certain links in docs
     $('section [href^=#]').click(function (e) {
-      e.preventDefault()
-    })
+      e.preventDefault();
+    });
 
     // side bar
     setTimeout(function () {
       $('.bs-docs-sidenav').affix({
         offset: {
           top: function () { return $window.width() <= 980 ? 290 : 210 }
-        , bottom: 270
+          , bottom: 270
         }
       })
     }, 100)
