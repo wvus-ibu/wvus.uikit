@@ -10,11 +10,14 @@
       ================================================= -->
       <div class="row-fluid">
         <div class="span3" id="docs-nav">
-
           <div class="well" >
+            {% if page.url contains site.developerdocs %}
               <h4>UiKit Elements</h4>
             <hr>
-            {% include navigation.html %}
+              {% include elements-nav.html %}
+            {% elsif page.url contains site.designerdocs %}
+              {% include designer-nav.html %}
+            {% endif %}
           </div>
         </div>
         <div class="span9">

@@ -9,7 +9,7 @@ pygments: true
 permalink: pretty
 
 baseurl: http://wvus-ibu.github.io/wvus.uikit
-developerdocs: /snippets
+developerdocs: /elements
 designerdocs: /designer
 
 # vars

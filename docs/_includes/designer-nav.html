@@ -1,0 +1,49 @@
+<ul class="nav nav-list">
+  <li class="nav-header">Brand</li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#logo">Logo <i class="icon-caret-right"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == 'logo' %} in {% endif %}" id="logo">
+      <li {% if page.name == 'logo' %} class="active" {% endif %}>
+        <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/logo/">Overview</a>
+      </li>
+      <li {% if page.name == 'program-names' %} class="active" {% endif %}>
+        <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/logo/program-names">Program Names</a>
+      </li>
+    </ul>
+  </li>
+  <li {% if page.name == 'color' %} class="active" {% endif %}>
+    <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/color/" >Color</a>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#photography">Photography <i class="icon-caret-right"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == 'photography' %} in {% endif %}" id="photography">
+      <li {% if page.name == 'photography' %} class="active" {% endif %}>
+        <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/photography/">Overview</a>
+      </li>
+      <li {% if page.name == 'dosdonts' %} class="active" {% endif %}>
+        <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/photography/dosdonts">Do's and Dont's</a>
+      </li>
+    </ul>
+  </li>
+    <li>
+    <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="icon-caret-right"></i></a>
+    <ul class="nav nav-list collapse {% if page.group == 'typography' %} in {% endif %}" id="typography">
+      <li {% if page.name == 'typography' %} class="active" {% endif %}>
+        <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/typography/">Overview</a>
+      </li>
+      <li {% if page.name == 'typography-examples' %} class="active" {% endif %}>
+        <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/typography/example">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-header">Web Tools</li>
+  <li {% if page.name == 'templates' %} class="active" {% endif %}>
+    <a href="{{ site.baseurl }}{{ site.designerdocs }}/templates">Templates</a>
+  </li>
+  <li {% if page.name == 'error-messages' %} class="active" {% endif %}>
+    <a href="{{ site.baseurl }}{{ site.designerdocs }}/error-messages">Error Messages</a>
+  </li>
+  <li {% if page.name == 'accessibility' %} class="active" {% endif %}>
+    <a href="{{ site.baseurl }}{{ site.designerdocs }}/accessibility">Accessibility</a>
+  </li>
+</ul>
