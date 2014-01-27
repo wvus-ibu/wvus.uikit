@@ -1,6 +1,7 @@
 ---
 layout: content
 title: Color
+name: color
 ---
 The primary rule for the website is to ensure that the World Vision orange is the dominant color used throughout. All other secondary colors are to be used in compliance with the corporate identity standards, as outlined at [World Vision Brand Colors](http://worldvisionbrand.org/visuals/color/).
 

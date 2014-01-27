@@ -1,6 +1,8 @@
 ---
 layout: content
 title: Photography
+group: photography
+name: photography
 ---
 <img src="{{ site.baseurl }}/assets/img/wvus/photography.png" alt="Photography" class="pull-right">
 
@@ -10,8 +12,9 @@ World Vision imagery is key to communicating the needs and hopes of the children
 
 
 
-#### Examples
-<div class="row-fluid clearfix">
+
+<div class="row-fluid clearfix" id="photo-examples">
+ <h4>Examples</h4>
   <ul class="thumbnails">
     <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/photography-reallife.png" alt="Real Life">
@@ -58,7 +61,8 @@ Stock images should be credited in accordance with the specifications of the sit
 ### Purchasing stock photos
 The Internet Business Unit has a pre-paid stock imagery subscription through ThinkStock.com. To download stock photos, please contact the IBU Creative Department at [IBU-Creative@worldvision.org.](mailto:ibu-creative@worldvision.org).
 
-### Photo Policy
+<h3 style="clear: both;">Photo Policy</h3>
+
 We are advocates for the people we photograph and whose images we use. They trust us to depict them truthfully and with respect. We are bound by these protocols not only for legal and ethical reasons, but also because we are Christians representing World Vision. How we create and use photographs and video must reflect World Vision’s values, principles, and mission statement, as well as support our call to advocacy on behalf of the marginalized. Ultimately, our work must reflect our love and respect for those we serve.
 
 

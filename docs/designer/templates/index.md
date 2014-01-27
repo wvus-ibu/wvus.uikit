@@ -1,6 +1,7 @@
 ---
 layout: content
 title: Templates
+name: templates
 ---
 ### 12-column grid
 

@@ -65,6 +65,9 @@
 .wvus-uikit .indent {
   padding-left: 40px;
 }
+.wvus-uikit #photo-examples {
+  margin-top: 100px;
+}
 .wvus-uikit header {
   margin: 15px 0;
 }

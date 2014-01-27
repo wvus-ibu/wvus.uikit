@@ -1,6 +1,8 @@
 ---
 layout: content
 title: Typography
+group: typography
+name: typography
 ---
 Although the World Vision corporate identity calls for Gill Sans as the corporate typeface, rendering the font as html text may not always be possible. In these cases, Arial has been selected as the substitute font for Web page content. In situations where text can be applied over a graphic or background, corporate identity standards apply. Gill Sans should be used in these instances.
 

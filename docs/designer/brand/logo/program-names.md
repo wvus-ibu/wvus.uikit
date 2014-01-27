@@ -1,6 +1,8 @@
 ---
 layout: content
 title: Program Names
+group: logo
+name: program-names
 ---
 **World Vision has one logo. Any program name with a specific graphic treatment or icon is secondary to the World Vision logo.**
 

@@ -1,6 +1,8 @@
 ---
 layout: content
 title: Do's and Don'ts
+group: photography
+name: dosdonts
 ---
 * DO use the photos in the [World Vision Digital Media Centre](http://dmc.merlinone.net/), except those embargoed as indicated by notes in the metadata section
 

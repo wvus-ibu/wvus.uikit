@@ -1,6 +1,8 @@
 ---
 layout: content
 title: World Vision Logo
+group: logo
+name: logo
 ---
 World Vision has only one logo. No other logo or graphic mark may be used to advertise, market, or communicate a World Vision product or project.
 
@@ -23,7 +25,7 @@ Use these measurements to ensure adequate protected space between the logo and a
 
 The world vision logo must always appear on a white background of the minimum dimensions shown.
 
-1w = Width of one “W” from the World Vision logotype    
+1w = Width of one “W” from the World Vision logotype
 1ht = Height of one “W” from the World Vision logotype
 
 
