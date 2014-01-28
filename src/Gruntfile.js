@@ -164,6 +164,17 @@ module.exports = function(grunt) {
         ]
       }
     },
+    csscomb: {
+      options: {
+        config: 'lib/worldvision/less/.csscomb.json'
+      },
+      dist: {
+        files: {
+          '../css/<%= pkg.name %>.css': '../css/<%= pkg.name %>.css',
+          '../css/<%= pkg.name %>.responsive.css': '../css/<%= pkg.name %>.responsive.css'
+        }
+      }
+    },
     copy: {
       images: {
         files: [
@@ -275,15 +286,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-csscomb');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['concat', 'uglify', 'less', 'copy:images', 'copy:tests','copy:variables', 'copy:docs', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+  grunt.registerTask('default', ['compile', 'uglify', 'copy:images', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
 
   //compiles less for errors, runs js thorugh
   grunt.registerTask('test', ['less', 'csslint:lib' ,'jshint', 'qunit']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
-  grunt.registerTask('compile', ['concat', 'less', 'copy:docs', 'copy:tests']);
+  grunt.registerTask('compile', ['concat', 'less', 'csscomb', 'copy:docs', 'copy:tests']);
 
   // Serves the docs locally
   grunt.registerTask('docs', ['jekyll', 'connect:jekyll']);
