@@ -13,19 +13,19 @@ The primary rule for the website is to ensure that the World Vision orange is th
     </div>
   </div>
   <div class="row-fluid">
-    <div class="span6 blue">
+    <div class="span9 blue">
       World Vision Blue<br>
       #006699
     </div>
-    <div class="span2 white">
+    <div class="span1 white">
       White<br>
       #FFFFFF
     </div>
-    <div class="span2 dark-gray">
-      Dark Gray<br>
+    <div class="span1 dark-gray">
+      Dk Gray<br>
       #666666
     </div>
-    <div class="span2 black">
+    <div class="span1 black">
       Black<br>
       #000000
     </div>

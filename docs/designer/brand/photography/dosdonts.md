@@ -37,9 +37,11 @@ name: dosdonts
 
 * DO practice sensitivity and compassion when selecting imagery surrounding difficult situations such as famine, HIV, etc.
 
-![Flip]({{ site.baseurl }}/assets/img/wvus/photography-flip.png)
+![Disaster]({{ site.baseurl }}/assets/img/wvus/photography-disaster.png)
 
 * DON’T “flip” photos or reverse the orientation of an image
+
+![Flip]({{ site.baseurl }}/assets/img/wvus/photography-flip.png)
 
 * DON’T alter a photo so that the meaning or context of the image is changed.
 
