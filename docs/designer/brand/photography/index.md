@@ -28,8 +28,21 @@ World Vision imagery is key to communicating the needs and hopes of the children
     <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/photography-natural.png" alt="Natural Light">
     </li>
-    <li class="span3 no-margin">
+  </ul>
+</div>
+<div class="row-fluid">
+  <ul class="thumbnails">
+    <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/photography-hopeful2.png" alt="Hopeful">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/photography-joyful2.png" alt="Joyful">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/photography-eyecontact.png" alt="Eye Contact">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/photography-sensitivity.png" alt="Sensitivity">
     </li>
   </ul>
 </div>
