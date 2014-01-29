@@ -57,6 +57,37 @@ As a general rule, stock photography should never feature people. One occasional
 
 All stock photography should share the same general look, feel, and style of official World Vision photography.
 
+<div class="row-fluid" id="stock-photos">
+  <ul class="thumbnails">
+    <li class="span4">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/donors.png" alt="Donors">
+    </li>
+    <li class="span4">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/generic.png" alt="Generic">
+    </li>
+    <li class="span4">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/holiday-imagery.png" alt="Holiday">
+    </li>
+
+  </ul>
+</div>
+<div class="row-fluid">
+  <ul class="thumbnails">
+      <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/maps.png" alt="Maps">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/textures-backgrounds.png" alt="Texture">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/us-children.png" alt="Children">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/vector-illustrations.png" alt="Illustrations">
+    </li>
+  </ul>
+</div>
+
 
 <img src="{{ site.baseurl }}/assets/img/wvus/photography-HEA.png" alt="HEA" class="pull-right">
 
