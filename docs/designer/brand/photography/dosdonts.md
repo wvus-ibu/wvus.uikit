@@ -10,11 +10,11 @@ name: dosdonts
 
 * DO follow any special instructions noted about use or attribution of the image, such as those requiring special sensitivity due to context or subject matter
 
-* DO always include a photo credit, whether the image is owned by World Vision or not.
+* DO always include a photo credit on Reuters images, or World Vision images that will be hosted on a non-World Vision (third party) site.
 
 ![Photo Credit]({{ site.baseurl }}/assets/img/wvus/photography-credit.png)
 
-* DO credit World Vision photos as such: (&copy;2014 Photographer Name/World Vision)
+* DO credit World Vision photos used on a non-World Vision (third party) site as such (&copy;2014 Photographer Name/World Vision)
 
 * DO use minor digital enhancements as long as they do not change the original meaning or context of the photograph. (ie, color corrections, adjusting contrasts, minor cropping, etc.)
 
