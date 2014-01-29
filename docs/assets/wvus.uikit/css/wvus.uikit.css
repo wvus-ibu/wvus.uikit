@@ -1902,8 +1902,8 @@
 .wvus-uikit .input-append .active,
 .wvus-uikit .input-prepend .active
 {
-    border-color: #46a546;
-    background-color: #a9dba9;
+    border-color: #993;
+    background-color: #d9d98c;
 }
 .wvus-uikit .input-prepend .add-on,
 .wvus-uikit .input-prepend .btn
@@ -7885,12 +7885,12 @@
 .wvus-uikit .label-warning,
 .wvus-uikit .badge-warning
 {
-    background-color: #f89406;
+    background-color: #f60;
 }
 .wvus-uikit .label-warning[href],
 .wvus-uikit .badge-warning[href]
 {
-    background-color: #c67605;
+    background-color: #cc5200;
 }
 .wvus-uikit .label-success,
 .wvus-uikit .badge-success
@@ -8143,20 +8143,20 @@
 .wvus-uikit .progress-warning .bar,
 .wvus-uikit .progress .bar-warning
 {
-    background-color: #faa732;
-    background-image:    -moz-linear-gradient(top, #fbb450, #f89406);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-    background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-    background-image:      -o-linear-gradient(top, #fbb450, #f89406);
-    background-image:         linear-gradient(to bottom, #fbb450, #f89406);
+    background-color: #ff822e;
+    background-image:    -moz-linear-gradient(top, #ff944d, #f60);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff944d), to(#f60));
+    background-image: -webkit-linear-gradient(top, #ff944d, #f60);
+    background-image:      -o-linear-gradient(top, #ff944d, #f60);
+    background-image:         linear-gradient(to bottom, #ff944d, #f60);
     background-repeat: repeat-x;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff944d', endColorstr='#ffff6600', GradientType=0);
 }
 .wvus-uikit .progress-warning.progress-striped .bar,
 .wvus-uikit .progress-striped .bar-warning
 {
-    background-color: #fbb450;
+    background-color: #ff944d;
     background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)), color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent), to(transparent));
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:    -moz-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
