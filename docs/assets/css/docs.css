@@ -72,6 +72,9 @@
 .wvus-uikit #photo-examples {
   margin-top: 100px;
 }
+.wvus-uikit #stock-photos .thumbnails {
+  text-align: center;
+}
 .wvus-uikit header {
   margin: 15px 0;
 }
