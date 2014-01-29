@@ -1,762 +1,139 @@
-/* Add additional stylesheets below
--------------------------------------------------- */
-/*
-  Bootstrap's documentation styles
-  Special styles for presenting Bootstrap's documentation and examples
-*/
 .wvus-uikit {
-  /* Body and structure
--------------------------------------------------- */
-
-  /* Code in headings */
-
-  /* Tweak navbar brand link to be super sleek
--------------------------------------------------- */
-
-  /* Change the docs' brand */
-
-  /* Sections
--------------------------------------------------- */
-
-  /* padding for in-page bookmarks and fixed navbar */
-
-  /* Separators (hr) */
-
-  /* Faded out hr */
-
-  /* Jumbotrons
--------------------------------------------------- */
-
-  /* Base class
-------------------------- */
-
-  /* Link styles (used on .masthead-links as well) */
-
-  /* Download button */
-
-  /* Pattern overlay
-------------------------- */
-
-  /* Masthead (docs home)
-------------------------- */
-
-  /* Textual links in masthead */
-
-  /* Social proof buttons from GitHub & Twitter */
-
-  /* Quick links on Home */
-
-  /* Subhead (other pages)
-------------------------- */
-
-  /* Marketing section of Overview
--------------------------------------------------- */
-
-  /* Footer
--------------------------------------------------- */
-
-  /* Special grid styles
--------------------------------------------------- */
-
-  /* Mini layout previews
--------------------------------------------------- */
-
-  /* Download page
--------------------------------------------------- */
-
-  /* Space out h3s when following a section */
-
-  /* Fields for variables */
-
-  /* Custom, larger checkbox labels */
-
-  /* Variables section */
-
-  /* Giant download button */
-
-  /* Misc
--------------------------------------------------- */
-
-  /* Make tables spaced out a bit more */
-
-  /* Example sites showcase */
-
-  /* Fake the :focus state to demo it */
-
-  /* For input sizes, make them display block */
-
-  /* Icons
-------------------------- */
-
-  /* Example page
-------------------------- */
-
-  /* Bootstrap code examples
--------------------------------------------------- */
-
-  /* Base class */
-
-  /* Echo out a label for the example */
-
-  /* Remove spacing between an example and it's code */
-
-  /* Tweak examples
-------------------------- */
-
-  /* Images */
-
-  /* Tooltips */
-
-  /* Popovers */
-
-  /* Dropdowns */
-
-  /* Responsive docs
--------------------------------------------------- */
-
-  /* Utility classes table
-------------------------- */
+  /*
+*  This LESS is for the developer documentation.
+*  None of this is need to make the UiKit work
+*/
 
   /* Responsive tests
 ------------------------- */
 
-  /* Sidenav for Docs
+  /* Footer
 -------------------------------------------------- */
 
-  /* Sub Nav */
-
-  /* Attempt to create collapsing nav
-.bs-docs-sidenav > li > ul li{
-  display: none;
 }
-.bs-docs-sidenav > .active > ul li{
-  display: block;
-}
-.bs-docs-sidenav .active{
-  display: block;
-}
-.bs-docs-sidenav .active ~ * {
-  display: block;
-}
-*/
-
-  /* Chevrons */
-
-  /* Responsive
--------------------------------------------------- */
-
-  /* Desktop large
-------------------------- */
-
-  /* Desktop
-------------------------- */
-
-  /* Tablet to desktop
-------------------------- */
-
-  /* Tablet
-------------------------- */
-
-  /* Landscape phones
-------------------------- */
-
-}
-.wvus-uikit body {
-  position: relative;
-  padding-top: 40px;
-}
-.wvus-uikit h3 code {
-  font-size: 14px;
-  font-weight: normal;
-}
-.wvus-uikit body > .navbar {
-  font-size: 13px;
-}
-.wvus-uikit body > .navbar .brand {
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 20px;
-  font-weight: bold;
-  color: #000;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  transition: all .2s linear;
-}
-.wvus-uikit body > .navbar .brand:hover {
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.4);
-}
-.wvus-uikit section {
-  padding-top: 30px;
-}
-.wvus-uikit section > .page-header,
-.wvus-uikit section > .lead {
-  color: #5a5a5a;
-}
-.wvus-uikit section > ul li {
-  margin-bottom: 5px;
-}
-.wvus-uikit .bs-docs-separator {
-  margin: 40px 0 39px;
-}
-.wvus-uikit hr.soften {
-  height: 1px;
-  margin: 70px 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  border: 0;
-}
-.wvus-uikit .jumbotron {
-  position: relative;
-  padding: 40px 0;
+.wvus-uikit .colors {
   color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
-  background: #ff6600;
-  /* Old browsers */
-
-  background: -moz-linear-gradient(45deg, #ff6600 30%, #efefef 90%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #ff6600), color-stop(90%, #2d78ab));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(45deg, #ff6600 30%, #efefef 90%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(45deg, #ff6600 30%, #efefef 90%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(45deg, #ff6600 30%, #efefef 90%);
-  /* IE10+ */
-
-  background: linear-gradient(45deg, #ff6600 30%, #efefef 90%);
-  /* W3C */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6600', endColorstr='#efefef', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-
-  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
-}
-.wvus-uikit .jumbotron h1 {
-  font-size: 80px;
-  font-weight: normal;
-  letter-spacing: -1px;
-  line-height: 1;
-}
-.wvus-uikit .jumbotron p {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.25;
-  margin-bottom: 30px;
-}
-.wvus-uikit .jumbotron a {
-  color: #fff;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.wvus-uikit .jumbotron a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
-}
-.wvus-uikit .masthead .btn {
-  padding: 19px 24px;
-  font-size: 24px;
-  font-weight: 200;
-  color: #fff;
-  /* redeclare to override the `.jumbotron a` */
-
-  border: 0;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-}
-.wvus-uikit .masthead .btn:hover {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-}
-.wvus-uikit .masthead .btn:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-.wvus-uikit .jumbotron .container {
-  position: relative;
-  z-index: 2;
-}
-.wvus-uikit .jumbotron:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
-  opacity: .4;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1) {
-  .wvus-uikit .jumbotron:after {
-    background-size: 150px 150px;
-  }
-}
-.wvus-uikit .masthead {
-  padding: 70px 0 80px;
-  margin-bottom: 0;
-  color: #fff;
-}
-.wvus-uikit .masthead h1 {
-  font-size: 120px;
-  line-height: 1;
-  letter-spacing: -2px;
-}
-.wvus-uikit .masthead p {
-  font-size: 40px;
-  font-weight: 200;
-  line-height: 1.25;
-}
-.wvus-uikit .masthead-links {
-  margin: 0;
-  list-style: none;
-}
-.wvus-uikit .masthead-links li {
-  display: inline;
-  padding: 0 10px;
-  color: rgba(255, 255, 255, 0.25);
-}
-.wvus-uikit .bs-docs-social {
-  padding: 15px 0;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ddd;
-}
-.wvus-uikit .bs-docs-social-buttons {
-  margin-left: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-.wvus-uikit .bs-docs-social-buttons li {
-  display: inline-block;
-  padding: 5px 8px;
-  line-height: 1;
-  *display: inline;
-  *zoom: 1;
-}
-.wvus-uikit .subhead {
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-.wvus-uikit .subhead h1 {
-  font-size: 60px;
-}
-.wvus-uikit .subhead p {
-  margin-bottom: 20px;
-}
-.wvus-uikit .subhead .navbar {
-  display: none;
-}
-.wvus-uikit .marketing {
-  text-align: center;
-  color: #5a5a5a;
-}
-.wvus-uikit .marketing h1 {
-  margin: 60px 0 10px;
-  font-size: 60px;
-  font-weight: 200;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-.wvus-uikit .marketing h2 {
-  font-weight: 200;
-  margin-bottom: 5px;
-}
-.wvus-uikit .marketing p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-.wvus-uikit .marketing .marketing-byline {
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.25;
-  color: #999;
-}
-.wvus-uikit .marketing-img {
-  display: block;
-  margin: 0 auto 30px;
-  max-height: 145px;
-}
-.wvus-uikit .footer {
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 70px;
-  border-top: 1px solid #e5e5e5;
-  background-color: #f5f5f5;
-}
-.wvus-uikit .footer p {
-  margin-bottom: 0;
-  color: #777;
-}
-.wvus-uikit .footer-links {
+  width: 100%;
   margin: 10px 0;
 }
-.wvus-uikit .footer-links li {
-  display: inline;
-  padding: 0 2px;
-}
-.wvus-uikit .footer-links li:first-child {
-  padding-left: 0;
-}
-.wvus-uikit .show-grid {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.wvus-uikit .show-grid [class*="span"] {
-  background-color: #eee;
+.wvus-uikit .colors .row-fluid div {
+  padding: 20px;
+  margin-bottom: 10px;
   text-align: center;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  min-height: 40px;
-  line-height: 40px;
+  min-height: 100px;
 }
-.wvus-uikit .show-grid [class*="span"]:hover {
-  background-color: #ddd;
+.wvus-uikit .orange {
+  background-color: #ff6600;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  height: 120px;
 }
-.wvus-uikit .show-grid .show-grid {
-  margin-top: 0;
-  margin-bottom: 0;
+.wvus-uikit .blue {
+  background-color: #006699;
 }
-.wvus-uikit .show-grid .show-grid [class*="span"] {
-  margin-top: 5px;
+.wvus-uikit .white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
 }
-.wvus-uikit .show-grid [class*="span"] [class*="span"] {
-  background-color: #ccc;
+.wvus-uikit .dark-gray {
+  background-color: #666;
 }
-.wvus-uikit .show-grid [class*="span"] [class*="span"] [class*="span"] {
+.wvus-uikit .black {
+  background-color: #000;
+}
+.wvus-uikit .gold {
+  background-color: #fc3;
+}
+.wvus-uikit .green {
+  background-color: #999933;
+}
+.wvus-uikit .light-blue {
+  background-color: #9cf;
+}
+.wvus-uikit .dark-blue {
+  background-color: #0c4972;
+}
+.wvus-uikit .terra-cotta {
+  background-color: #630;
+}
+.wvus-uikit .warm-gray {
   background-color: #999;
 }
-.wvus-uikit .mini-layout {
-  border: 1px solid #ddd;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+.wvus-uikit .no-margin {
+  margin-left: 0 !important;
 }
-.wvus-uikit .mini-layout,
-.wvus-uikit .mini-layout .mini-layout-body,
-.wvus-uikit .mini-layout.fluid .mini-layout-sidebar {
-  height: 300px;
+.wvus-uikit p > img {
+  padding: 10px;
 }
-.wvus-uikit .mini-layout {
-  margin-bottom: 20px;
-  padding: 9px;
+.wvus-uikit .indent {
+  padding-left: 40px;
 }
-.wvus-uikit .mini-layout div {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+.wvus-uikit #photo-examples {
+  margin-top: 100px;
 }
-.wvus-uikit .mini-layout .mini-layout-body {
-  background-color: #dceaf4;
-  margin: 0 auto;
+.wvus-uikit header {
+  margin: 15px 0;
+}
+.wvus-uikit header .logo:hover {
+  opacity: .6;
+}
+.wvus-uikit header .form-search input {
   width: 70%;
 }
-.wvus-uikit .mini-layout.fluid .mini-layout-sidebar,
-.wvus-uikit .mini-layout.fluid .mini-layout-header,
-.wvus-uikit .mini-layout.fluid .mini-layout-body {
-  float: left;
+.wvus-uikit header .form-search button {
+  background: none;
+  border: none;
 }
-.wvus-uikit .mini-layout.fluid .mini-layout-sidebar {
-  background-color: #bbd8e9;
-  width: 20%;
+.wvus-uikit header .form-search .icon-search {
+  color: #ff6600;
 }
-.wvus-uikit .mini-layout.fluid .mini-layout-body {
-  width: 77.5%;
-  margin-left: 2.5%;
+.wvus-uikit header .social a:hover {
+  text-decoration: none;
 }
-.wvus-uikit .download .page-header {
-  margin-top: 36px;
+.wvus-uikit header .social i[class^="icon-facebook"] {
+  color: #2D78AB;
 }
-.wvus-uikit .page-header .toggle-all {
-  margin-top: 5px;
+.wvus-uikit header .social i[class^="icon-facebook"]:hover,
+.wvus-uikit header .social i[class^="icon-facebook"]:focus {
+  opacity: .8;
 }
-.wvus-uikit .download h3 {
-  margin-bottom: 5px;
+.wvus-uikit header .social i[class^="icon-twitter"] {
+  color: #00ACED;
 }
-.wvus-uikit .download-builder input + h3,
-.wvus-uikit .download-builder .checkbox + h3 {
-  margin-top: 9px;
+.wvus-uikit header .social i[class^="icon-twitter"]:hover,
+.wvus-uikit header .social i[class^="icon-twitter"]:focus {
+  opacity: .8;
 }
-.wvus-uikit .download-builder input[type=text] {
-  margin-bottom: 9px;
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 12px;
-  color: #d14;
+.wvus-uikit header .social i[class^="icon-youtube"] {
+  color: #B00;
 }
-.wvus-uikit .download-builder input[type=text]:focus {
-  background-color: #fff;
+.wvus-uikit header .social i[class^="icon-youtube"]:hover,
+.wvus-uikit header .social i[class^="icon-youtube"]:focus {
+  opacity: .8;
 }
-.wvus-uikit .download .checkbox {
-  padding: 6px 10px 6px 25px;
-  font-size: 13px;
-  line-height: 18px;
-  color: #555;
-  background-color: #f9f9f9;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  cursor: pointer;
+.wvus-uikit .subheader {
+  margin: 20px 0 30px 0;
+  color: #6f6f6f;
 }
-.wvus-uikit .download .checkbox:hover {
-  color: #333;
-  background-color: #f5f5f5;
-}
-.wvus-uikit .download .checkbox small {
-  font-size: 12px;
-  color: #777;
-}
-.wvus-uikit #variables label {
-  margin-bottom: 0;
-}
-.wvus-uikit .download-btn {
-  margin: 36px 0 108px;
-}
-.wvus-uikit #download p,
-.wvus-uikit #download h4 {
-  max-width: 50%;
-  margin: 0 auto;
-  color: #999;
+.wvus-uikit #gridExample div[class*="span"] {
   text-align: center;
+  background-color: #d1d1d1;
+  border: solid 1px #999999;
+  margin-bottom: 10px;
 }
-.wvus-uikit #download h4 {
-  margin-bottom: 0;
+.wvus-uikit #gridExample div[class*="span"] div[class*="span"] {
+  background-color: #ababab;
 }
-.wvus-uikit #download p {
-  margin-bottom: 18px;
-}
-.wvus-uikit .download-btn .btn {
-  display: block;
-  width: auto;
-  padding: 19px 24px;
-  margin-bottom: 27px;
-  font-size: 30px;
-  line-height: 1;
-  text-align: center;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.wvus-uikit h2 + table,
-.wvus-uikit h3 + table,
-.wvus-uikit h4 + table,
-.wvus-uikit h2 + .row {
-  margin-top: 5px;
-}
-.wvus-uikit .example-sites {
-  xmargin-left: 20px;
-}
-.wvus-uikit .example-sites img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.wvus-uikit .scrollspy-example {
-  height: 200px;
-  overflow: auto;
-  position: relative;
-}
-.wvus-uikit .focused {
-  border-color: rgba(82, 168, 236, 0.8);
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-  outline: 0;
-}
-.wvus-uikit .docs-input-sizes select,
-.wvus-uikit .docs-input-sizes input[type=text] {
-  display: block;
-  margin-bottom: 9px;
-}
-.wvus-uikit .the-icons {
+.wvus-uikit #gridExample .row {
   margin-left: 0;
-  list-style: none;
 }
-.wvus-uikit .the-icons li {
+.wvus-uikit body > .navbar .brand {
   float: left;
-  width: 25%;
-  line-height: 25px;
+  color: #ffffff;
 }
-.wvus-uikit .the-icons i:hover {
-  background-color: rgba(255, 0, 0, 0.25);
-}
-.wvus-uikit .bootstrap-examples h4 {
-  margin: 10px 0 5px;
-}
-.wvus-uikit .bootstrap-examples p {
-  font-size: 13px;
-  line-height: 18px;
-}
-.wvus-uikit .bootstrap-examples .thumbnail {
-  margin-bottom: 9px;
-  background-color: #fff;
-}
-.wvus-uikit .bs-docs-example {
-  position: relative;
-  margin: 15px 0;
-  padding: 39px 19px 14px;
-  *padding-top: 19px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-.wvus-uikit .bs-docs-example:after {
-  content: "Example";
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  color: #9da0a4;
-  -webkit-border-radius: 4px 0 4px 0;
-  -moz-border-radius: 4px 0 4px 0;
-  border-radius: 4px 0 4px 0;
-}
-.wvus-uikit .bs-docs-example + .prettyprint {
-  margin-top: -20px;
-  padding-top: 15px;
-}
-.wvus-uikit .bs-docs-example > p:last-child {
-  margin-bottom: 0;
-}
-.wvus-uikit .bs-docs-example .table,
-.wvus-uikit .bs-docs-example .progress,
-.wvus-uikit .bs-docs-example .well,
-.wvus-uikit .bs-docs-example .alert,
-.wvus-uikit .bs-docs-example .hero-unit,
-.wvus-uikit .bs-docs-example .pagination,
-.wvus-uikit .bs-docs-example .navbar,
-.wvus-uikit .bs-docs-example > .nav,
-.wvus-uikit .bs-docs-example blockquote {
-  margin-bottom: 5px;
-}
-.wvus-uikit .bs-docs-example .pagination {
-  margin-top: 0;
-}
-.wvus-uikit .bs-navbar-top-example,
-.wvus-uikit .bs-navbar-bottom-example {
-  z-index: 1;
-  padding: 0;
-  height: 90px;
-  overflow: hidden;
-  /* cut the drop shadows off */
-
-}
-.wvus-uikit .bs-navbar-top-example .navbar-fixed-top,
-.wvus-uikit .bs-navbar-bottom-example .navbar-fixed-bottom {
-  margin-left: 0;
-  margin-right: 0;
-}
-.wvus-uikit .bs-navbar-top-example {
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
-}
-.wvus-uikit .bs-navbar-top-example:after {
-  top: auto;
-  bottom: -1px;
-  -webkit-border-radius: 0 4px 0 4px;
-  -moz-border-radius: 0 4px 0 4px;
-  border-radius: 0 4px 0 4px;
-}
-.wvus-uikit .bs-navbar-bottom-example {
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-}
-.wvus-uikit .bs-navbar-bottom-example .navbar {
-  margin-bottom: 0;
-}
-.wvus-uikit form.bs-docs-example {
-  padding-bottom: 19px;
-}
-.wvus-uikit .bs-docs-example-images img {
-  margin: 10px;
-  display: inline-block;
-}
-.wvus-uikit .bs-docs-tooltip-examples {
-  text-align: center;
-  margin: 0 0 10px;
-  list-style: none;
-}
-.wvus-uikit .bs-docs-tooltip-examples li {
-  display: inline;
-  padding: 0 10px;
-}
-.wvus-uikit .bs-docs-example-popover {
-  padding-bottom: 24px;
-  background-color: #f9f9f9;
-}
-.wvus-uikit .bs-docs-example-popover .popover {
-  position: relative;
-  display: block;
-  float: left;
-  width: 260px;
-  margin: 20px;
-}
-.wvus-uikit .bs-docs-example-submenus {
-  min-height: 180px;
-}
-.wvus-uikit .bs-docs-example-submenus > .pull-left + .pull-left {
-  margin-left: 20px;
-}
-.wvus-uikit .bs-docs-example-submenus .dropup > .dropdown-menu,
-.wvus-uikit .bs-docs-example-submenus .dropdown > .dropdown-menu {
-  display: block;
-  position: static;
-  margin-bottom: 5px;
-  *width: 180px;
-}
-.wvus-uikit .responsive-utilities th small {
-  display: block;
-  font-weight: normal;
-  color: #999;
-}
-.wvus-uikit .responsive-utilities tbody th {
-  font-weight: normal;
-}
-.wvus-uikit .responsive-utilities td {
-  text-align: center;
-}
-.wvus-uikit .responsive-utilities td.is-visible {
-  color: #468847;
-  background-color: #dff0d8 !important;
-}
-.wvus-uikit .responsive-utilities td.is-hidden {
-  color: #ccc;
-  background-color: #f9f9f9 !important;
+.wvus-uikit #navbar-example {
+  z-index: 9999;
 }
 .wvus-uikit .responsive-utilities-test {
   margin-top: 5px;
@@ -799,304 +176,112 @@
   background-color: #dff0d8;
   border: 1px solid #d6e9c6;
 }
-.wvus-uikit .bs-docs-sidenav {
-  width: 228px;
-  margin: 30px 0 0;
-  padding: 0;
-  background-color: #fff;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-}
-.wvus-uikit .bs-docs-sidenav > li > a {
-  display: block;
-  width: 190px \9;
-  margin: 0 0 -1px;
-  padding: 8px 14px;
-  border: 1px solid #e5e5e5;
-  font-weight: normal;
-}
-.wvus-uikit .bs-docs-sidenav > li:first-child > a {
-  -webkit-border-radius: 6px 6px 0 0;
-  -moz-border-radius: 6px 6px 0 0;
-  border-radius: 6px 6px 0 0;
-}
-.wvus-uikit .bs-docs-sidenav > li:last-child > a {
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-}
-.wvus-uikit .bs-docs-sidenav > .active > a {
+.wvus-uikit .scrollspy-example {
+  height: 200px;
+  overflow: auto;
   position: relative;
-  z-index: 2;
-  padding: 9px 15px;
-  border: 0;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
-.wvus-uikit .bs-docs-sidenav > li > ul > li > a {
-  /*subnav on index*/
-
-  padding: 8px 14px 8px 54px;
-  border: 1px solid #e5e5e5;
-  width: 190px \9;
+.wvus-uikit .docs-tabs .tab-content {
+  overflow: visible;
 }
-.wvus-uikit .bs-docs-sidenav .icon-chevron-right {
-  float: right;
-  margin-top: 2px;
-  margin-right: -6px;
-  opacity: .25;
+.wvus-uikit #docs-nav {
+  margin-top: 10px;
 }
-.wvus-uikit .bs-docs-sidenav .active > ul .icon-chevron-right {
-  opacity: .25;
+.wvus-uikit .docs-dropdown {
+  display: block;
+  position: static;
+  margin-bottom: 5px;
+  *width: 180px;
 }
-.wvus-uikit .bs-docs-sidenav > li > a:hover {
+.wvus-uikit pre {
+  border: none;
+}
+.wvus-uikit .docs-example {
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.wvus-uikit .docs-html,
+.wvus-uikit .docs-js {
+  position: relative;
+  margin: 15px 0;
+  padding: 27px 0 0 0;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.wvus-uikit .docs-example:after {
+  content: "Example";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+}
+.wvus-uikit .docs-html:after {
+  content: "HTML";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+}
+.wvus-uikit .docs-js:after {
+  content: "JS";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+}
+.wvus-uikit .footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
 }
-.wvus-uikit .bs-docs-sidenav a:hover .icon-chevron-right {
-  opacity: .5;
+.wvus-uikit .footer p {
+  margin-bottom: 0;
+  color: #777;
 }
-.wvus-uikit .bs-docs-sidenav .active .icon-chevron-right,
-.wvus-uikit .bs-docs-sidenav .active a:hover .icon-chevron-right {
-  background-image: url(../img/glyphicons-halflings-white.png);
-  opacity: 1;
+.wvus-uikit .footer-links {
+  margin: 10px 0;
 }
-.wvus-uikit .bs-docs-sidenav.affix {
-  top: 40px;
+.wvus-uikit .footer-links li {
+  display: inline;
+  padding: 0 2px;
 }
-.wvus-uikit .bs-docs-sidenav.affix-bottom {
-  position: absolute;
-  top: auto;
-  bottom: 270px;
-}
-@media (min-width: 1200px) {
-  .wvus-uikit .bs-docs-container {
-    max-width: 970px;
-  }
-  .wvus-uikit .bs-docs-sidenav {
-    width: 258px;
-  }
-  .wvus-uikit .bs-docs-sidenav > li > a {
-    width: 230px \9;
-    /* Override the previous IE8-9 hack */
-  
-  }
-  .wvus-uikit .bs-docs-sidenav > li > ul > li > a {
-    width: 190px \9;
-  }
-}
-@media (max-width: 980px) {
-  .wvus-uikit {
-    /* Unfloat brand */
-  
-    /* Inline-block quick links for more spacing */
-  
-    /* When affixed, space properly */
-  
-  }
-  .wvus-uikit body > .navbar-fixed-top .brand {
-    float: left;
-    margin-left: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .wvus-uikit .quick-links li {
-    display: inline-block;
-    margin: 5px;
-  }
-  .wvus-uikit .bs-docs-sidenav {
-    top: 0;
-    width: 218px;
-    margin-top: 30px;
-    margin-right: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .wvus-uikit {
-    /* Remove any padding from the body */
-  
-    /* Widen masthead and social buttons to fill body padding */
-  
-    /* Adjust sidenav width */
-  
-  }
-  .wvus-uikit body {
-    padding-top: 0;
-  }
-  .wvus-uikit .jumbotron {
-    margin-top: -20px;
-    /* Offset bottom margin on .navbar */
-  
-  }
-  .wvus-uikit .bs-docs-sidenav {
-    width: 166px;
-    margin-top: 20px;
-  }
-  .wvus-uikit .bs-docs-sidenav > li > ul > li > a {
-    width: 126px;
-  }
-  .wvus-uikit .bs-docs-sidenav.affix {
-    top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .wvus-uikit {
-    /* Remove any padding from the body */
-  
-    /* Widen masthead and social buttons to fill body padding */
-  
-    /* Space out the show-grid examples */
-  
-    /* Sidenav */
-  
-    /* Unfloat the back to top link in footer */
-  
-  }
-  .wvus-uikit body {
-    padding-top: 0;
-  }
-  .wvus-uikit .jumbotron {
-    padding: 40px 20px;
-    margin-top: -20px;
-    /* Offset bottom margin on .navbar */
-  
-    margin-right: -20px;
-    margin-left: -20px;
-  }
-  .wvus-uikit .masthead h1 {
-    font-size: 90px;
-  }
-  .wvus-uikit .masthead p,
-  .wvus-uikit .masthead .btn {
-    font-size: 24px;
-  }
-  .wvus-uikit .marketing .span4 {
-    margin-bottom: 40px;
-  }
-  .wvus-uikit .bs-docs-social {
-    margin: 0 -20px;
-  }
-  .wvus-uikit .show-grid [class*="span"] {
-    margin-bottom: 5px;
-  }
-  .wvus-uikit .bs-docs-sidenav {
-    width: auto;
-    margin-bottom: 20px;
-  }
-  .wvus-uikit .bs-docs-sidenav.affix {
-    position: static;
-    width: auto;
-    top: 0;
-  }
-  .wvus-uikit .footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .wvus-uikit .footer p {
-    margin-bottom: 9px;
-  }
-}
-@media (max-width: 480px) {
-  .wvus-uikit {
-    /* Remove padding above jumbotron */
-  
-    /* Change up some type stuff */
-  
-    /* Downsize the jumbotrons */
-  
-    /* center align subhead text like the masthead */
-  
-    /* Marketing on home */
-  
-    /* center example sites */
-  
-    /* Do our best to make tables work in narrow viewports */
-  
-    /* Examples: dropdowns */
-  
-    /* Examples: modal */
-  
-    /* Tighten up footer */
-  
-  }
-  .wvus-uikit body {
-    padding-top: 0;
-  }
-  .wvus-uikit h2 small {
-    display: block;
-  }
-  .wvus-uikit .jumbotron h1 {
-    font-size: 45px;
-  }
-  .wvus-uikit .jumbotron p,
-  .wvus-uikit .jumbotron .btn {
-    font-size: 18px;
-  }
-  .wvus-uikit .jumbotron .btn {
-    display: block;
-    margin: 0 auto;
-  }
-  .wvus-uikit .subhead h1,
-  .wvus-uikit .subhead p {
-    text-align: center;
-  }
-  .wvus-uikit .marketing h1 {
-    font-size: 30px;
-  }
-  .wvus-uikit .marketing-byline {
-    font-size: 18px;
-  }
-  .wvus-uikit .example-sites {
-    margin-left: 0;
-  }
-  .wvus-uikit .example-sites > li {
-    float: none;
-    display: block;
-    max-width: 280px;
-    margin: 0 auto 18px;
-    text-align: center;
-  }
-  .wvus-uikit .example-sites .thumbnail > img {
-    max-width: 270px;
-  }
-  .wvus-uikit table code {
-    white-space: normal;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-  .wvus-uikit .bs-docs-example-submenus > .pull-left {
-    float: none;
-    clear: both;
-  }
-  .wvus-uikit .bs-docs-example-submenus > .pull-left,
-  .wvus-uikit .bs-docs-example-submenus > .pull-left + .pull-left {
-    margin-left: 0;
-  }
-  .wvus-uikit .bs-docs-example-submenus p {
-    margin-bottom: 0;
-  }
-  .wvus-uikit .bs-docs-example-submenus .dropup > .dropdown-menu,
-  .wvus-uikit .bs-docs-example-submenus .dropdown > .dropdown-menu {
-    margin-bottom: 10px;
-    float: none;
-    max-width: 180px;
-  }
-  .wvus-uikit .modal-example .modal {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-  }
-  .wvus-uikit .footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+.wvus-uikit .footer-links li:first-child {
+  padding-left: 0;
 }

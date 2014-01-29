@@ -1,0 +1,109 @@
+---
+layout: default
+title: Carousel
+snippet: carousel
+group: carousel
+hasJs: true
+name: carousel-js
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      The slideshow below shows a generic plugin and component for cycling through elements like a carousel.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div id="jsCarousel" class="carousel slide" style="width:500px" >
+                <ol class="carousel-indicators">
+                  <li data-target="#jsCarousel" id="jsPip1" class="active"></li>
+                  <li data-target="#jsCarousel" id="jsPip2"></li>
+                  <li data-target="#jsCarousel" id="jsPip3"></li>
+                </ol>
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                  <div class="active item">
+                    <img data-src="holder.js/500x300/gray" src="data:image/png;base64," alt="Carousel 1">
+                  </div>
+                  <div class="item">
+                    <img data-src="holder.js/500x300/industrial" src="data:image/png;base64," alt="Carousel 2">
+                  </div>
+                  <div class="item">
+                    <img data-src="holder.js/500x300/social" src="data:image/png;base64," alt="Carousel 3">
+                  </div>
+                </div>
+                <a href="#jsCarousel" class="carousel-control left" id="jsLeft"><i class="icon-chevron-left"></i></a>
+                <a href="#jsCarousel" class="carousel-control right" id="jsRight"><i class="icon-chevron-right"></i></a>
+              </div><!-- /carousel -->
+              <button type="button" class="btn btn-primary" id="jsPause">Pause</button>
+              <button type="button" class="btn btn-primary" id="jsResume">Resume</button>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div id="jsCarousel" class="carousel slide" style="width:500px" >
+  <ol class="carousel-indicators">
+    <li data-target="#jsCarousel" id="jsPip1" class="active"></li>
+    <li data-target="#jsCarousel" id="jsPip2"></li>
+    <li data-target="#jsCarousel" id="jsPip3"></li>
+  </ol>
+  <!-- Carousel Items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <img data-src="holder.js/500x300/gray" src="data:image/png;base64," alt="Carousel 1">
+    </div>
+    <div class="item">
+      <img data-src="holder.js/500x300/industrial" src="data:image/png;base64," alt="Carousel 2">
+    </div>
+    <div class="item">
+      <img data-src="holder.js/500x300/social" src="data:image/png;base64," alt="Carousel 3">
+    </div>
+  </div>
+  <a href="#jsCarousel" class="carousel-control left" id="jsLeft"><i class="icon-chevron-left"></i></a>
+  <a href="#jsCarousel" class="carousel-control right" id="jsRight"><i class="icon-chevron-right"></i></a>
+</div><!-- /carousel -->
+<button type="button" class="btn btn-primary" id="jsPause">Pause</button>
+<button type="button" class="btn btn-primary" id="jsResume">Resume</button>
+{% endhighlight %}
+            </div>
+          </div>
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+var jsCarousel = wvusUikit('#jsCarousel');
+
+jsCarousel.carousel({
+  interval: 2000,
+  pause: ""
+});
+wvusUikit('#jsLeft').click(function(e) {
+  e.preventDefault();
+  jsCarousel.carousel('prev');
+});
+wvusUikit('#jsRight').click(function(e){
+  e.preventDefault();
+  jsCarousel.carousel('next');
+});
+wvusUikit('#jsPause').click(function() {
+  jsCarousel.carousel('pause');
+});
+wvusUikit('#jsResume').click(function () {
+  jsCarousel.carousel('cycle');
+});
+wvusUikit('#jsPip1').click(function() {
+  jsCarousel.carousel(0);
+});
+wvusUikit('#jsPip2').click(function() {
+  jsCarousel.carousel(1);
+});
+wvusUikit('#jsPip3').click(function() {
+  jsCarousel.carousel(2);
+});
+{% endhighlight %}
+            </div>
+          </div>

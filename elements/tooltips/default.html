@@ -1,0 +1,45 @@
+---
+layout: default
+title: Tooltip - Default
+group: tooltip
+snippet: tooltip
+hasJs: false
+name: tooltips-default
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.
+    </p>
+    <p>For performance reasons, the tooltip and popover data-apis are opt in, meaning <strong>you must initialize them yourself</strong>.</p>
+    <p>Hover over the link below to see tooltips:</p>
+
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <a href="" class="tooltip-test" data-toggle="tooltip" title="This is a tooltip">Hover Over Me</a>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<a href="" class="tooltip-test" data-toggle="tooltip" title="This is a tooltip">Hover Over Me</a>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

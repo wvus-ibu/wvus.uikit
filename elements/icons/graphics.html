@@ -1,0 +1,59 @@
+---
+layout: default
+title: World Vision Graphics
+snippet: fonts
+group: icons
+hasJs: false
+name: icons-graphics
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      <abbr title="Scalable Vector Graphic">SVG</abbr> of sector icons. Easily sized and browser compatible. Icons are set to the background, so they will work with any element
+    </p>
+    <p>The SVGs can be scaled to any size. Set the <code>width</code> and <code>height</code> in CSS to make the icons be as large or small as desired. There are also convenience sizes available.</p>
+    <p><span class="label label-info">Browser Compatibility:</span> Modernizer.js, provided, will set a <code>svg</code> class on the <code>html</code> element when the broswer supports rendering of SVGs. It will set a <code>nosvg</code> class if the browser doesn't support rendering of SVGs. In that case, PNGs have been provided as fallbacks for the convenience sizes</p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <a href="#" class="sector disaster">Disaster</a>
+              <a href="#" class="sector child">Child</a>
+              <a href="#" class="sector economic">Economic</a>
+              <a href="#" class="sector education">Education</a>
+              <a href="#" class="sector faith">Faith</a>
+              <a href="#" class="sector food">Food</a>
+              <a href="#" class="sector health">Health</a>
+              <a href="#" class="sector us">us</a>
+              <a href="#" class="sector water">Water</a>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<a href="#" class="sector disaster">Disaster</a>
+<a href="#" class="sector child">Child</a>
+<a href="#" class="sector economic">Economic</a>
+<a href="#" class="sector education">Education</a>
+<a href="#" class="sector faith">Faith</a>
+<a href="#" class="sector food">Food</a>
+<a href="#" class="sector health">Health</a>
+<a href="#" class="sector us">us</a>
+<a href="#" class="sector water">Water</a>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+

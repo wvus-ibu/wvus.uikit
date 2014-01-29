@@ -1,0 +1,54 @@
+---
+layout: default
+title: Badges
+snippet: labelsandbadges
+hasJs: false
+name: badges
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      CSS to add to <code>span</code> tags.
+    </p>
+    <p>
+      For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <span class="badge">1</span>
+              <span class="badge badge-success">2</span>
+              <span class="badge badge-warning">4</span>
+              <span class="badge badge-important">6</span>
+              <span class="badge badge-info">8</span>
+              <span class="badge badge-inverse">10</span>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<span class="badge">1</span>
+<span class="badge badge-success">2</span>
+<span class="badge badge-warning">4</span>
+<span class="badge badge-important">6</span>
+<span class="badge badge-info">8</span>
+<span class="badge badge-inverse">10</span>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

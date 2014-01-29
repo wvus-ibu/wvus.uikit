@@ -1,0 +1,55 @@
+---
+layout: default
+title: Buttons - Dropdown Basic
+snippet: dropdown
+group: buttons
+hasJs: false
+name: buttons-dropdowns-basic
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="icon-caret-down"></i></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" tabindex="-1">Action</a></li>
+                  <li><a href="#" tabindex="-1">Action Two</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="btn-group">
+  <button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="icon-caret-down"></i></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#" tabindex="-1">Action</a></li>
+    <li><a href="#" tabindex="-1">Action Two</a></li>
+  </ul>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

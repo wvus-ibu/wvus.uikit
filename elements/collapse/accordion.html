@@ -1,0 +1,121 @@
+---
+layout: default
+title: Collapse
+snippet: collapse
+group: collapse
+hasJs: true
+name: collapse-accordion
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Using the collapse plugin, we built a simple accordion style widget.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+
+              <div class="accordion" id="sample">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a href="#sectionOne" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-minus"></i> Heading 1</a>
+                  </div>
+                  <div id="sectionOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+                    </div><!-- accordion-inner -->
+                  </div><!-- accordion-body -->
+                </div><!-- accordion-group -->
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a href="#sectionTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-plus"></i> Heading 2</a>
+                  </div>
+                  <div id="sectionTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+                    </div><!-- accordion-inner -->
+                  </div><!-- accordion-body -->
+                </div><!-- accordion-group -->
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a href="#sectionThree" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-plus"></i> Heading 3</a>
+                  </div>
+                  <div id="sectionThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+                    </div><!-- accordion-inner -->
+                  </div><!-- accordion-body -->
+                </div><!-- accordion-group -->
+              </div><!-- /accordion -->
+
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<!-- Accordion -->
+<div class="accordion" id="sample">
+
+  <!-- Accordion Group 1 -->
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#sectionOne" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-minus"></i> Heading 1</a>
+    </div>
+    <div id="sectionOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+      </div><!-- accordion-inner -->
+    </div><!-- accordion-body -->
+  </div><!-- accordion-group -->
+
+  <!-- Accordion Group 2 -->
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#sectionTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-plus"></i> Heading 2</a>
+    </div>
+    <div id="sectionTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+      </div><!-- accordion-inner -->
+    </div><!-- accordion-body -->
+  </div><!-- accordion-group -->
+
+  <!-- Accordion Group 3 -->
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#sectionThree" class="accordion-toggle" data-toggle="collapse" data-parent="#sample"><i class="icon-plus"></i> Heading 3</a>
+    </div>
+    <div id="sectionThree" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+      </div><!-- accordion-inner -->
+    </div><!-- accordion-body -->
+  </div><!-- accordion-group -->
+
+</div><!-- /accordion -->
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+//accordion demo
+$('#sample .collapse').on('show', function(){
+  $(this).prev().find('.accordion-toggle > i')
+  .removeClass('icon-plus').addClass('icon-minus');
+});
+
+$('#sample .collapse').on('hide', function(){
+  $(this).prev().find('.accordion-toggle > i')
+  .removeClass('icon-minus').addClass('icon-plus');
+});
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

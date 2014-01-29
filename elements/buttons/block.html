@@ -1,0 +1,44 @@
+---
+layout: default
+title: Buttons - Block
+snippet: buttons
+group: buttons
+hasJs: false
+name: buttons-block
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <!-- Block Buttons -->
+              <button class="btn btn-primary btn-block">Button Block</button>
+              <button class="btn btn-block">Button Block</button>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<!-- Block Buttons -->
+<button class="btn btn-primary btn-block">Button Block</button>
+<button class="btn btn-block">Button Block</button>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

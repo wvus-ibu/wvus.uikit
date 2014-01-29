@@ -1,0 +1,59 @@
+---
+layout: default
+title: Hero unit
+snippet: hero-unit
+group: typography
+hasJs: false
+name: typography-hero-unit
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      A lightweight, flexible component to showcase key content on your site. It works well on marketing and content-heavy sites.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="hero-unit">
+                <h1>Heading</h1>
+                <p>Tagline</p>
+                <p>
+                  <a class="btn btn-primary btn-large">
+                    Learn more
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="hero-unit">
+  <h1>Heading</h1>
+  <p>Tagline</p>
+  <p>
+    <a class="btn btn-primary btn-large">
+      Learn more
+    </a>
+  </p>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

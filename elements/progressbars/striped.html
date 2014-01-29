@@ -1,0 +1,47 @@
+---
+layout: default
+title: Progress Bars - Striped
+group: progressbars
+snippet: progress
+hasJs: false
+name: progressbars-striped
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Uses a gradient to create a striped effect. Not available in IE7-8.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+<div class="progress progress-striped">
+  <div class="bar" style="width: 25%"></div>
+</div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="progress progress-striped">
+  <div class="bar" style="width: 25%"></div>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
+

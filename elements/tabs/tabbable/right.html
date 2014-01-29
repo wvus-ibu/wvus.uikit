@@ -1,0 +1,88 @@
+---
+layout: default
+title: Tabs - Tabbable
+snippet: tabbable
+group: tabs
+hasJs: true
+name: tabs-tabbable-right
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Align tabs to the right with <code>.tabs-right</code>
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="tabbable tabs-right">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a href="#tab-right1" data-toggle="tab">Section 1</a>
+                  </li>
+                  <li>
+                    <a href="#tab-right2" data-toggle="tab">Section 2</a>
+                  </li>
+                  <li>
+                    <a href="#tab-right3" data-toggle="tab">Section 3</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab-right1">
+                    <p>I'm Section 1</p>
+                  </div>
+                  <div class="tab-pane" id="tab-right2">
+                    <p>Howdy, I'm Section 2.</p>
+                  </div>
+                  <div class="tab-pane" id="tab-right3">
+                    <p>Section 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="tabbable tabs-right">
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#tab-right1" data-toggle="tab">Section 1</a>
+    </li>
+    <li>
+      <a href="#tab-right2" data-toggle="tab">Section 2</a>
+    </li>
+    <li>
+      <a href="#tab-right3" data-toggle="tab">Section 3</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab-right1">
+      <p>I'm Section 1</p>
+    </div>
+    <div class="tab-pane" id="tab-right2">
+      <p>Howdy, I'm Section 2.</p>
+    </div>
+    <div class="tab-pane" id="tab-right3">
+      <p>Section 3</p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

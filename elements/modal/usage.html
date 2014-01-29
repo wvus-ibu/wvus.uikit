@@ -1,0 +1,114 @@
+---
+layout: default
+title: Modal - Usage
+snippet: modal
+group: modal
+hasJs: true
+name: modal-usage
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+</header>
+
+<h3>Via data attributes</h3>
+<p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
+{% highlight html %}
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+{% endhighlight %}
+
+<h3>Via JavaScript</h3>
+<p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+{% highlight js %}
+wvusUikit('#myModal').modal(options);
+{% endhighlight %}
+
+<h3>Options</h3>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
+<table class="table table-bordered table-striped">
+  <thead>
+   <tr>
+     <th style="width: 100px;">Name</th>
+     <th style="width: 50px;">type</th>
+     <th style="width: 50px;">default</th>
+     <th>description</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+     <td>backdrop</td>
+     <td>boolean</td>
+     <td>true</td>
+     <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+   </tr>
+   <tr>
+     <td>keyboard</td>
+     <td>boolean</td>
+     <td>true</td>
+     <td>Closes the modal when escape key is pressed</td>
+   </tr>
+   <tr>
+     <td>show</td>
+     <td>boolean</td>
+     <td>true</td>
+     <td>Shows the modal when initialized.</td>
+   </tr>
+   <tr>
+     <td>remote</td>
+     <td>path</td>
+     <td>false</td>
+     <td><p>If a remote url is provided, content will be loaded via jQuery's <code>load</code> method and injected into the <code>.modal-body</code>. If you're using the data api, you may alternatively use the <code>href</code> tag to specify the remote source. An example of this is shown below:</p>
+    {% highlight html %}<a data-toggle="modal" href="remote.html" data-target="#modal">click me</a>{% endhighlight %}</td>
+   </tr>
+  </tbody>
+</table>
+
+<h3>Methods</h3>
+<h4>.modal(options)</h4>
+<p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
+{% highlight js %}
+wvusUikit('#myModal').modal({
+  keyboard: false
+});
+{% endhighlight %}
+<h4>.modal('toggle')</h4>
+<p>Manually toggles a modal.</p>
+{% highlight js %}wvusUikit('#myModal').modal('toggle');{% endhighlight %}
+<h4>.modal('show')</h4>
+<p>Manually opens a modal.</p>
+{% highlight js %}wvusUikit('#myModal').modal('show');{% endhighlight %}
+<h4>.modal('hide')</h4>
+<p>Manually hides a modal.</p>
+{% highlight js %}wvusUikit('#myModal').modal('hide');{% endhighlight %}
+<h3>Events</h3>
+<p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
+<table class="table table-bordered table-striped">
+  <thead>
+   <tr>
+     <th style="width: 150px;">Event</th>
+     <th>Description</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+     <td>show</td>
+     <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+   </tr>
+   <tr>
+     <td>shown</td>
+     <td>This event is fired when the modal has been made visible to the user (will wait for css transitions to complete).</td>
+   </tr>
+   <tr>
+     <td>hide</td>
+     <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+   </tr>
+   <tr>
+     <td>hidden</td>
+     <td>This event is fired when the modal has finished being hidden from the user (will wait for css transitions to complete).</td>
+   </tr>
+  </tbody>
+</table>
+{% highlight js %}
+wvusUikit('#myModal').on('hidden', function () {
+  // do something…
+});
+{% endhighlight %}
