@@ -59,14 +59,17 @@ All stock photography should share the same general look, feel, and style of off
 
 <div class="row-fluid" id="stock-photos">
   <ul class="thumbnails">
-    <li class="span4">
+    <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/donors.png" alt="Donors">
     </li>
-    <li class="span4">
+    <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/generic.png" alt="Generic">
     </li>
-    <li class="span4">
+    <li class="span3">
       <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/holiday-imagery.png" alt="Holiday">
+    </li>
+    <li class="span3">
+      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/sector-imagery.png" alt="Sector">
     </li>
 
   </ul>

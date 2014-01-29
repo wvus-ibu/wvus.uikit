@@ -8,9 +8,9 @@ pygments: true
 #Permalink
 permalink: pretty
 
-baseurl: http://docs.worldvision.org
+baseurl: http://wvus-ibu.github.io/wvus.uikit
 developerdocs: /elements
-designerdocs: /designer
+designerdocs: /design
 develop: /develop
 
 # vars
