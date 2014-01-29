@@ -1,37 +1,9 @@
-    <header class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <a href="#" class="logo"><img src="{{ site.baseurl }}/assets/img/wvus/logo.png" alt="World Vision UiKit"></a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar wv-navbar navbar-static-top">
-      <div class="navbar-inner">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse">
-            <div class="container-fluid">
-              <ul class="nav">
-                <li>
-                  <a href="{{ site.baseurl }}">Home</a>
-                </li>
-                <li {% if page.url contains site.designerdocs %}class="active"{% endif %}>
-                  <a href="{{ site.baseurl }}{{ site.designerdocs }}">Design</a>
-                </li>
-                <li {% if page.url contains site.develop %}class="active"{% endif %}>
-                  <a href="{{ site.baseurl }}{{site.develop}}">Develop</a>
-                </li>
-                <li {% if page.url contains site.developerdocs %}class="active"{% endif %}>
-                 <a href="{{ site.baseurl }}{{ site.developerdocs }}">Elements</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </div>
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="headerTitle">
+  <div class="container">
+    <h1>{{page.title}}</h1>
+    <p class="lead">{{page.lead}}</p>
+    <a href="https://github.com/wvus-ibu/wvus.uikit" target="_blank">Github Project</a> 
+  </div>
+</header>

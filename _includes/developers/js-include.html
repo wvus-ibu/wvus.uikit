@@ -1,0 +1,84 @@
+<script type="text/javascript">
+{% if page.snippet == "accordion" %}
+  accordion js
+{% endif %}
+{% case page.snippet %}
+  {% when "modal" %}
+      wvusUikit(document).ready(function(){
+        wvusUikit('#jsModalButton').click(function (){
+          wvusUikit('#jsModal').modal('show');
+        });
+        wvusUikit('#jsModalClose').click(function () {
+          wvusUikit('#jsModal').modal('hide');
+        });
+        wvusUikit('#jsModalX').click(function () {
+          wvusUikit('#jsModal').modal('hide');
+        });
+      });
+  {% when "carousel" %}
+    wvusUikit(document).ready(function(){
+      var jsCarousel = wvusUikit('#jsCarousel');
+      jsCarousel.carousel({
+        interval: 2000,
+        pause: ""
+      });
+      wvusUikit('#jsLeft').click(function() {
+        jsCarousel.carousel('prev');
+      });
+      wvusUikit('#jsRight').click(function(){
+        jsCarousel.carousel('next');
+      });
+      wvusUikit('#jsPause').click(function() {
+        jsCarousel.carousel('pause');
+      });
+      wvusUikit('#jsResume').click(function () {
+        jsCarousel.carousel('cycle');
+      });
+      wvusUikit('#jsPip1').click(function() {
+        jsCarousel.carousel(0);
+      });
+      wvusUikit('#jsPip2').click(function() {
+        jsCarousel.carousel(1);
+      });
+      wvusUikit('#jsPip3').click(function() {
+        jsCarousel.carousel(2);
+      });
+    });
+  {% when "typeahead" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('.typeahead').typeahead({
+        source: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+        items: 3,
+      });
+
+    }); 
+    {% when "popover" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('#markupPopover').popover();
+    });
+    {% when "scrollspy" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('#navbar').scrollspy();
+    });
+    {% when "affix" %}
+    wvusUikit(document).ready(function() {
+      wvusUikit('#navbar').affix();
+    });
+
+    
+{% endcase %}
+
+wvusUikit(document).ready(function(){
+  wvusUikit('#docs-nav .collapse').on('show', function(){
+   wvusUikit(this).prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
+  });
+
+  wvusUikit('#docs-nav .in').prev().find("i").removeClass('icon-caret-down').addClass('icon-caret-up');
+
+  wvusUikit('#docs-nav .collapse').on('hide', function(){
+   wvusUikit(this).prev().find("i").removeClass('icon-caret-up').addClass('icon-caret-down');
+  });
+
+});
+
+</script>

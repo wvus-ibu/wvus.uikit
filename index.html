@@ -1,0 +1,164 @@
+---
+layout: default
+title: World Vision UiKit
+name: index
+lead: Overview of the project, its contents, and how to get started with a simple template.
+---
+<section id="introduction">
+  <div class="page-header">
+    <h1>Introduction</h1>
+  </div>
+  <p class="lead">
+    The World Vision UiKit is used for styling of elements and JavaScript widgets used across the World Vision sites.
+  </p>
+  
+  <section id="getDownload">
+    <h2>Download</h2>
+    <p>Download the latest release of the UiKit.</p>
+    <a href="{{ site.download }}" class="btn btn-primary btn-large">
+      Download
+    </a>
+  </section><!-- /end getDownload -->
+  <section id="contents">
+    <h2>Contents</h2>
+    <p>The UiKit contains HTML, CSS and JS to get you up running quickly with a WVUS Brand. The different elements have been categoried in groups that make sense. These are across the top, but for more detials: </p>
+    
+    
+    <h4><a href="{{ site.baseurl }}/styles">Styles</a></h4>
+    <p>Basic and Fluid grid systems with examples show the how easy it is to layout your site along with styling typography and more.</p>
+    
+    <h4><a href="{{ site.baseurl }}/effects">Effects</a></h4>
+    <p>Added different effects like tooltips, popovers and transitions.</p>
+    
+    <h4><a href="{{ site.baseurl }}/ui-elements">UI Elements</a></h4>
+    <p>The elements every site wants. Buttons, Navs, breadcrumbs, alerts, progress bars and more can all be found here</p>
+    
+    <h4><a href="{{ site.baseurl }}/widgets">Widgets</a></h4>
+    <p>Bring our elements to life. Widgets are the JavaScript components that take your site into the modern era.</p>
+
+      <h4><a href="{{ site.baseurl }}/icons">Icons</a></h4>
+      <p>300+ icons from Font Awesome displayed in a list so you see every possible one. (We also provided a PDF cheatsheet for another view)</p>
+  </section>
+  <!-- File Structure ============================================= -->
+  <section id="file-structure">
+    <h2>File Structure</h2>
+    <p class="lead">Within the UiKit, you can easily find the files to link in your site</p>
+    <p>Once downloaded, unzip the folder to see the structure of the kit. You will see this:</p>
+    <pre class="prettyprints">
+  wvus.uikit/
+    ├── css/
+    │   ├── wvus.uikit.css
+    │   ├── wvus.uikit.min.css
+    ├── js/
+    │   ├── jquery.js
+    │   ├── jquery.min.js
+    │   ├── wvus.uikit.js
+    │   ├── wvus.uikit.min.js
+    ├── img/
+    │   ├── (World Vision Images)
+    │   └── 
+    └── font/
+        ├── FontAwesome.otf
+        ├── fontawesome-webfont.eot
+        ├── fontawesome-webfont.svg
+        ├── fontawesome-webfont.ttf
+        └── fontawesome-webfont.woff
+    </pre>
+    <p>This is the basic, out of the box form of the WVUS UiKit. We provide the compiled CSS and JS from <a href="{{ site.bootstrap }}">Bootstrap</a> and <a href="{{ site.font-awesome }}">Font Awesome</a>. Any other libraries that are included in the kit will be identified in the file name.</p>
+    <p>The <code>img</code> directory contains all images from Bootstrap, Font Awesome and World Vision. The <code>font</code> folder contains the default fonts included in Font Awesome</p> 
+    <div class="alert alert-danger">
+      <i class="icon-warning-sign"></i> DO NOT modify the font folder or its contents. Doing so can cause Font Awesome to not work.
+    </div>
+  </section><!-- end of file structure -->
+
+</section><!-- end of intro -->
+
+<!-- Designers ================================== -->
+<section id="designers">
+  <div class="page-header">
+    <h1>Designers</h1>
+  </div>
+    <p class="lead">Designers, we've built the UiKit with you in mind. </p>
+    <p>Included in the UiKit are many elements styled to the World Vision brand. Below is a preview of them. You can find all of these and more through out this documentation. Take a look around to see how the <a href="{{ site.baseurl}}/widgets-basic/#navs"></a>navigation works, look at the <a href="{{ site.baseurl }}icons/">300+ icons</a> to use at your discretion or check out the fancy <a href="{{ site.baseurl }}widgets-basic/#carousel">carousel</a> to display images.
+    <p>Also, the PSDs that give you a "kitchen sink" look at what elements you have to create your design around are shown below. They can also be downloaded here: <a href="{{ site.baseurl }}/assets/img/wvus/psd/wv-psd.zip">Download the Photoshop files</a></p>
+  <section id="button-elements">
+    <h2>Buttons</h2>
+    <p>All the buttons inside the World Vision brand.</p>
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-button.jpg" class="img-polaroid" alt="WV Buttons">
+  </section>
+  <section id="custom-elements">
+    <h2>Custom Elements</h2>
+    <p>Custom elelments used on different parts of the site.</p>
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-customelements.jpg" class="img-polaroid" alt="WV Custom Elements">
+  </section>
+  <section id="form-elements">
+    <h2>Form elements</h2>
+    <p>Standard form elements get a face lift.</p>
+    <img src="{{ site.baseurl }}/assets/img/wvus/wv-form.jpg" class="img-polaroid" alt="WV Forms">
+  </section>
+</section>
+
+<!-- Developers ========================== -->
+<section id="developers">
+  <div class="page-header">
+    <h1>Developers</h1>
+  </div>
+  <p class="lead">{Lead in to devs section}</p>
+  <section id="html-example">
+    <h2>HTML Example</h2>
+    <p class="lead">Including the World Vision UiKit is easy. Here's an example to prove it.</p>
+    <p>Here's a typical <strong>HTML File:</strong></p>
+    <pre class="prettyprint linenums">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+          &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+  <p>To make it UiKit compatible, just include the CSS and JS files:</p>
+  <pre class="prettyprint linenums">
+    &lt;!DOCTYPE html&gt;
+      &lt;html class="wvus-uikit"&gt;
+        &lt;head&gt;
+          &lt;title&gt;WVUS UiKit Example&lt;/title&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;!-- WVUS UiKit --&gt;
+          &lt;link rel="stylesheet" type="text/css" href="css/wvus.uikit.min.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+          &lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="js/wvus.uikit.min.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+  </pre>
+    <p><strong>And it's that easy!</strong> Just include the <code>wvus.uikit.min.css</code> and <code>wvus.uikit.min.js</code> in your HTML, and your on the way to developing a site with the World Vision brand.</p>
+    <div class="alert alert-info">
+      <i class="icon-info-sign"></i>
+      The UiKit requires jQuery to be included before the <code>wvus.uikit.min.js</code>. We have included a version to use, <code>js/jquery.min.js</code>.
+    </div>
+  </section><!-- end of html example -->
+  <section id="namespace">
+    <h2>Namespace</h2>
+    <p class="lead">The UiKit namespaces the CSS and JavaScript to avoid any issues with other sites, JavaScript libraries and other versions of jQuery</p>
+    <h3>Less </h3>
+    <p><span class="label label-info">Watch Out!</span> The UiKit keeps it's CSS in a namespace of <code>wvus-uikit</code> so other CSS won't conflict with it. What this means is the class <code>wvus-uikit</code> needs to be added before calling the class of the component being used.</p>
+    <p><code class="prettyprint">
+      &lt;button class="wvus-uikit btn btn-primary"&gt;Sample Button&lt;/button&gt;
+    </code></p>
+    <p><strong>OR</strong></p>
+    <p>Add <code>class="wvus-uikit"</code> to the <code>&lt;html&gt;</code> element. These docs use this method.</p>
+    <h3>jQuery</h3>
+    <p><span class="label label-info">Heads Up!</span> The UiKit uses a custom form of jQuery. It <strong>does not</strong> use the <code>$</code> or <code>jQuery</code> object. Instead, the UiKit has an assigned variable of <code>wvusUikit</code> that it uses. This is to prevent JavaScript and other jQuery libraries from conflicting with the UiKit plugins.</p>
+  </section>
+  <section id="contribute">
+    <h1>Looking to Contribute</h1>
+    <p>If you're a WVUS developer or a vendor and want to contribute to the UiKit, visit our <a href="{{ site.repo }}">Github project</a> to checkout the source.</p>    
+  </section><!-- endo of contribute -->
+</section><!-- end of developer -->

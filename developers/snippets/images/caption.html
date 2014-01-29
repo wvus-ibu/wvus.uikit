@@ -1,0 +1,46 @@
+---
+layout: docsdashboard
+title: Images
+snippet: images
+group: images
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Add the <code>.image</code> class to a surrounding <code>&lt;div&gt;</code> for a <code>.caption</code>
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="image">
+                <img data-src="holder.js/360x280" src="data:image/png;base64," alt="media">
+                <p class="caption">This is the images caption</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="image">
+  <img data-src="holder.js/360x280" src="data:image/png;base64," alt="media">
+  <p class="caption">This is the images caption</p>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+

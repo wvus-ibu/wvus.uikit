@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>WV UiKit, {{ page.group }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="{{ site.baseurl }}/assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/wvus.uikit.css" rel="stylesheet">
     {% case page.group %}
       {% when "navbar" %}
         {% include tests/test-navbar-style.html %}
@@ -19,7 +20,7 @@
         {% include tests/test-form-responsive.html %}
       {% endcase %}
 
-    <link href="{{ site.baseurl }}/assets/wvus.uikit/css/wvus.uikit.responsive.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/wvus.uikit.responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -27,11 +28,11 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/ico/favicon.png">
   </head>
 
   <body>
@@ -42,8 +43,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="{{ site.baseurl }}/assets/wvus.uikit/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/wvus.uikit.js"></script>
 
     {% case page.group %}
         {% when "css-tests" %}

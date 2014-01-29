@@ -1,0 +1,59 @@
+---
+layout: docsdashboard
+title: Pagination - Disabled and Active States
+snippet: pagination
+group: pagination
+hasJs: false
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <div class="pagination">
+                <ul>
+                  <li class="disabled"><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<div class="pagination">
+  <ul>
+    <li class="disabled"><a href="#"><i class="icon-chevron-sign-left icon-large"></i></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li class="active"><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><i class="icon-chevron-sign-right icon-large"></i></a></li>
+  </ul>
+</div>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
