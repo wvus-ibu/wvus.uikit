@@ -21,13 +21,13 @@
                 <li>
                   <a href="{{ site.baseurl }}">Home</a>
                 </li>
-                <li>
+                <li {% if page.url contains site.designerdocs %}class="active"{% endif %}>
                   <a href="{{ site.baseurl }}{{ site.designerdocs }}">Design</a>
                 </li>
-                <li>
+                <li {% if page.url contains site.develop %}class="active"{% endif %}>
                   <a href="{{ site.baseurl }}{{site.develop}}">Develop</a>
                 </li>
-                <li>
+                <li {% if page.url contains site.developerdocs %}class="active"{% endif %}>
                  <a href="{{ site.baseurl }}{{ site.developerdocs }}">Elements</a>
                 </li>
               </ul>
