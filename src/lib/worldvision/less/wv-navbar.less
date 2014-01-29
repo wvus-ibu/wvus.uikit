@@ -45,12 +45,14 @@
   }
 
   //Active nav items
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus{
+  .nav > .active > a{
     color: @wvnavbarLinkActive;
-    #gradient > .vertical(lighten(@wvnavbarBackgroundHighlight, 30%), @wvnavbarLinkBackgroundHover);
+    background-color: darken(@wv-orange, 2%);
     #font > .text-shadow();
+    &:hover,
+    &:focus{
+      color: @wvnavbarLinkActiveHover;
+    }
   }
 
   .brand{
@@ -169,7 +171,7 @@
 .nav li.dropdown.active > .dropdown-toggle,
 .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: @wvnavbarLinkBackgroundActive;
-  color: @wvnavbarLinkActive;
+  color: @wvnavbarLinkActiveHover;
 }
 
 
