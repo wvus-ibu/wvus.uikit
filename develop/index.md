@@ -1,6 +1,6 @@
 ---
 layout: content
-title: Develop
+title: Develop with the World Vision UiKit
 name: dev-home
 ---
 The UiKit is only one part of the World Vision Web Style Guide. The UiKit is a collection of web components and widgets designed to easily provide the styles needed to create a World Vision branded web site.

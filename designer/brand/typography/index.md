@@ -22,3 +22,7 @@ For consistency, each instance of HTML text on the homepage have an assigned siz
 **Font Awesome Icons**
 
 [The following icons]({{ site.baseurl }}{{ site.developerdocs }}/icons/favoriteicons) have been selected from the [Font Awesome 3.2.1 Icon library]({{ site.font-awesome }}/3.2.1). Only the selected icons will be available via the World Vision UI Kit. Additional icons, or an updated 4.0 version, are available [here]({{ site.font-awesome }}).
+
+**Examples**
+
+For examples, visit the [typography elements section]({{ site.baseurl }}{{ site.developerdocs }}/typography/headings)
