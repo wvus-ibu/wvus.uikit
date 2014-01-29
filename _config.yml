@@ -9,12 +9,16 @@ pygments: true
 permalink: pretty
 
 baseurl: http://wvus-ibu.github.io/wvus.uikit
-developerdocs: /developers/snippets
+developerdocs: /elements
+designerdocs: /designer
+develop: /develop
 
 # vars
 repo: https://github.com/wvus-ibu/wvus.uikit
 issues: https://github.com/wvus-ibu/wvus.uikit/issues?state=open
-changelog: https://github.com/wvus-ibu/wvus.uikit/blob/master/ReleaseNotes.md
+changelog: https://github.com/wvus-ibu/wvus.uikit/releases
 download: https://github.com/wvus-ibu/wvus.uikit/releases/download/v1.1.2/wvus.uikit-1.1.2.zip
+src-download: https://github.com/wvus-ibu/wvus.uikit/archive/v1.1.2.zip
 bootstrap: http://getbootstrap.com/
 font-awesome: http://fontawesome.io/
+jquery: http://jquery.com/

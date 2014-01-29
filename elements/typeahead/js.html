@@ -1,0 +1,49 @@
+---
+layout: default
+title: Typeahead
+snippet: typeahead
+hasJs: true
+group: typeahead
+name: typeahead-js
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.
+</p>
+<p>
+  <span class="label label-info">NOTE:</span> This plugin has been deprecated by Twitter Bootstrap in favor of <a href="https://github.com/twitter/typeahead.js">typeahead.js</a>, however, this is included in the Uikit
+</p>
+<p>You'll want to set <code>autocomplete="off"</code> to prevent default browser menus from appearing over the Bootstrap typeahead dropdown.</p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <input class="typeahead" type="text" id="jsTypeahead">
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<input class="typeahead" type="text" id="jsTypeahead">
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+wvusUikit('.typeahead').typeahead({
+  source: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+  items: 3,
+});
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+
