@@ -89,23 +89,23 @@ All stock photography should share the same general look, feel, and style of off
 </div>
 
 
-<img src="{{ site.baseurl }}/assets/img/wvus/photography-HEA.png" alt="HEA" class="pull-right">
-
 ### HEA Scenarios
 
 In cases of sudden-onset HEAs that require immediate coverage on World Vision's website, photos should first be taken from the World Vision Digital Media Center. If no pertinent images are yet available through World Vision resources, news agencies that offer photography for purchase, like Reuters, should be consulted as an alternative. Only as a last resort should stock photography be used in cases of HEA; and again, such images should never profile specific people or places that could be misinterpreted as reflective of the HEA in question. In any of these cases, photos acquired from any external source should be replaced by World Vision images as soon as possible.
 
 
 
+
+
+<img src="{{ site.baseurl }}/assets/img/wvus/photography-credit-reuters.png" alt="Credit Reuters" class="pull-right">
 ### Photo Credits
 
-<img src="{{ site.baseurl }}/assets/img/wvus/photography-credit-reuters.png" alt="Credit Reuters" class="pull-left">
 Stock images should be credited in accordance with the specifications of the site from which they were purchased. Images purchased from news services like Reuters must be credited exactly as specified by the owner of the work, and the credit must be clearly visible anywhere that the image is used on World Vision's website, even if it's used in multiple locations. Failure to do so could jeopardize World Vision's rights to purchase and use photography from external sources in the future. Images purchased from ThinkStock.com do not require a photo credit.
 
-### Purchasing stock photos
-The Internet Business Unit has a pre-paid stock imagery subscription through ThinkStock.com. To download stock photos, please contact the IBU Creative Department at [IBU-Creative@worldvision.org.](mailto:ibu-creative@worldvision.org).
+<h3 style="clear: both;">Purchasing stock photos</h3>
+The Internet Business Unit has a pre-paid stock imagery subscription through [ThinkStock.com](ThinkStock.com). To download stock photos, please contact the IBU Creative Department at [IBU-Creative@worldvision.org.](mailto:ibu-creative@worldvision.org).
 
-<h3 style="clear: both;">Photo Policy</h3>
+### Photo Policy
 
 We are advocates for the people we photograph and whose images we use. They trust us to depict them truthfully and with respect. We are bound by these protocols not only for legal and ethical reasons, but also because we are Christians representing World Vision. How we create and use photographs and video must reflect World Vision’s values, principles, and mission statement, as well as support our call to advocacy on behalf of the marginalized. Ultimately, our work must reflect our love and respect for those we serve.
 
