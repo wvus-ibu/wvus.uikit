@@ -60,9 +60,6 @@
 .wvus-uikit .warm-gray {
   background-color: #999;
 }
-.wvus-uikit .no-margin {
-  margin-left: 0 !important;
-}
 .wvus-uikit p > img {
   padding: 10px;
 }
@@ -71,9 +68,6 @@
 }
 .wvus-uikit #photo-examples {
   margin-top: 100px;
-}
-.wvus-uikit #stock-photos .thumbnails {
-  text-align: center;
 }
 .wvus-uikit header {
   margin: 15px 0;
