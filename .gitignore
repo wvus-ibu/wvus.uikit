@@ -1,0 +1,11 @@
+# Ignore Node Packages (get via 'npm install')
+src/node_modules/
+
+#OS specific files
+.DS_Store
+
+#Jekyll 
+_site
+
+#Editor specific
+*.sublime*
