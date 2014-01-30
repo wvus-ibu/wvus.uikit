@@ -12,6 +12,7 @@ baseurl: http://wvus-ibu.github.io/wvus.uikit
 developerdocs: /elements
 designerdocs: /design
 develop: /develop
+files: /assets/files
 
 # vars
 repo: https://github.com/wvus-ibu/wvus.uikit
