@@ -270,6 +270,16 @@ module.exports = function(grunt) {
         }
       }
     },
+    replace: {
+      version: {
+        src: ['../js/jquery.js'],
+        overwrite: true,
+        replacements: [{
+          from: '@VERSION',
+          to: '<%= pkg.version %>'
+        }]
+      }
+    }
   });
 
   // These plugins provide necessary tasks.
@@ -287,15 +297,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-csscomb');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['compile', 'uglify', 'copy:images', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+  grunt.registerTask('default', ['compile', 'copy:images', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
 
   //compiles less for errors, runs js thorugh
   grunt.registerTask('test', ['less', 'csslint:lib' ,'jshint', 'qunit']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
-  grunt.registerTask('compile', ['concat', 'less', 'csscomb', 'copy:docs', 'copy:tests']);
+  grunt.registerTask('compile', ['concat', 'replace', 'less:dist', 'less:distResponsive', 'csscomb', 'less:minify', 'uglify','copy:docs', 'copy:tests']);
 
   // Serves the docs locally
   grunt.registerTask('docs', ['jekyll', 'connect:jekyll']);
