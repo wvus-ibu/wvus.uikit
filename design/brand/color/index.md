@@ -75,3 +75,4 @@ The primary rule for the website is to ensure that the World Vision orange is th
 * Blue (#006699) must be reserved for text links
 * Orange is World Vision’s primary corporate color, and should be reserved for CTA buttons and navigation
 
+[Download]({{ site.baseurl }}{{site.files}}/wv-colors.aco) the colors in a Adobe Color Swatch to use with Photoshop.
