@@ -132,6 +132,9 @@
 .wvus-uikit #navbar-example {
   z-index: 9999;
 }
+.wvus-uikit #inputIcon {
+  width: 200px;
+}
 .wvus-uikit .responsive-utilities-test {
   margin-top: 5px;
   margin-left: 0;

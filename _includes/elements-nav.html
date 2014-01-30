@@ -15,9 +15,9 @@
     <ul class="nav nav-list collapse {% if page.group == 'typography'%} in {% endif %}" id="typography">
       <li{% if page.name == "typography-headings" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/headings">Headings</a></li>
       <li{% if page.name == "typography-body" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/body">Body Text</a></li>
-      <li{% if page.name == "typography-emphasis" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/emphasis">Emphasis</a></li>
       <li{% if page.name == "typography-bold" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/bold">Bold</a></li>
       <li{% if page.name == "typography-italics" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/italics">Italics</a></li>
+      <li{% if page.name == "typography-de-emphasize" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/de-emphasize">De-Emphasize</a></li>
       <li>
         <a href="#" data-toggle="collapse" data-target="#abbreviations">Abbreviations <i class="icon-caret-right"></i></a>
         <ul class="nav nav-list collapse {% if page.snippet == 'abbreviations'%} in {% endif %}" id="abbreviations">
@@ -189,7 +189,7 @@
         <a href="#" data-toggle="collapse" data-target="#navbar-fixed">Fixed <i class="icon-caret-right"></i></a>
         <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'fixed' %} in {% endif %}" id="navbar-fixed">
           <li{% if page.name == "navbar-fixed-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/default">Default</a></li>
-          <li{% if page.name == "navbar-fixed-wv-fixed"" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/wv-fixed">WV Style</a></li>
+          <li{% if page.name == "navbar-fixed-wv-fixed" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/wv-fixed">WV Style</a></li>
         </ul>
       </li>
       <li>
@@ -343,7 +343,7 @@
     <ul class="nav nav-list collapse {% if page.group == "icons"%} in {% endif %}" id="icons">
       <li{% if page.name == "icons-fontawesome" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/fontawesome">Font Glyphs</a></li>
       <li{% if page.name == "icons-favoriteicons" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/favoriteicons">Most Used Icons</a></li>
-      <li{% if page.name == "icons-allicons" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/allicons">List of Icons</a></li>
+      <li{% if page.name == "icons-othericons" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/othericons">Other Icons</a></li>
       <li{% if page.name == "icons-graphics" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/graphics">Graphics</a></li>
     </ul>
   </li>
