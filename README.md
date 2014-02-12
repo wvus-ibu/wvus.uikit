@@ -1,6 +1,5 @@
 World Vision UiKit [![Build Status](https://travis-ci.org/wvus-ibu/wvus.uikit.png?branch=master)](https://travis-ci.org/wvus-ibu/wvus.uikit)
 ===================
-test change
 
 This self-containing kit is the basis of World Vision US website styling.
 
