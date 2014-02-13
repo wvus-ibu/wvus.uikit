@@ -288,3 +288,7 @@
 .wvus-uikit .hero-unit.home {
   text-align: center;
 }
+.wvus-uikit .carousel {
+  margin-right: auto;
+  margin-left: auto;
+}
