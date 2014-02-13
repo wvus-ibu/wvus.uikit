@@ -1,0 +1,36 @@
+//
+// Responsive: WV-Navbar
+// Overrides sytles for the WV Navbar - mostly colors
+// --------------------------------------------------
+
+
+// TABLETS AND BELOW
+// -----------------
+@media (max-width: @navbarCollapseWidth) {
+    .wv-navbar .nav-collapse .nav .nav-header {
+      color: @wvnavbarText;
+    }
+  // Nav and dropdown links in navbar
+  .wv-navbar .nav-collapse .nav > li > a,
+  .wv-navbar .nav-collapse .dropdown-menu a {
+    color: @wvnavbarLinkColor;
+  }
+  .wv-navbar .nav-collapse .nav > .active > a,
+  .wv-navbar .nav-collapse .dropdown-menu > .active > a {
+    color: @wvnavbarLinkActive;
+    background-color: darken(@wv-orange, 2%);
+    #font > .text-shadow();
+  }
+  .wv-navbar .nav-collapse .nav > li > a:hover,
+  .wv-navbar .nav-collapse .nav > li > a:focus,
+  .wv-navbar .nav-collapse .dropdown-menu a:hover,
+  .wv-navbar .nav-collapse .dropdown-menu a:focus {
+    color: @wvnavbarLinkHover;
+    #gradient > .vertical(lighten(@wvnavbarBackgroundHighlight, 30%), @wvnavbarLinkBackgroundHover);
+    #font > .text-shadow();
+  }
+  .wv-navbar .nav-collapse .nav > li,
+  .wv-navbar .nav-collapse .nav > li:last-child > a{
+    border: none;
+  }
+}

@@ -1,10 +1,8 @@
-/*
-  WVUS UiKit Overrides
-  -----------------
-  Custom styles for the WVUS Brand
-  lib/worldvision/less/wv-styles.less
+// WVUS UiKit Overrides
+// -----------------
+// Custom styles for the WVUS Brand
+// lib/worldvision/less/wv-styles.less
 
- */
 
 // Font Text shaddow mixin
 // ------------------------------
@@ -46,16 +44,16 @@
 //
 .btn {
   .box-shadow(none);
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 2px 2px darken(@btnBackgroundHighlight, 15%));
   &:hover,
   &:focus{
     background-position: 0 0;
-    .box-shadow(none);
-    outline: invert none medium;
+
   }
 }
 
 .btn-primary {
-  .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
+  .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackground,#fff , 0 2px 2px darken(@btnPrimaryBackground, 15%));
 
   &.disabled,
   &[disabled] {
@@ -67,22 +65,25 @@
   }
 }
 .btn-warning{
-  .buttonBackground(@btnWarningBackgroundHighlight, @btnWarningBackground);
+  .buttonBackground(@btnWarningBackgroundHighlight, @btnWarningBackground, #fff, 0 2px 2px darken(@btnWarningBackground, 15%));
 }
 .btn-info{
-  .buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackground);
+  .buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackground, #fff, 0 2px 2px darken(@btnInfoBackground, 15%));
 }
 .btn-success{
-  .buttonBackground(@btnSuccessBackgroundHighlight, @btnSuccessBackground);
+  .buttonBackground(@btnSuccessBackgroundHighlight, @btnSuccessBackground, #fff , 0 2px 2px darken(@btnSuccessBackground, 15%));
 }
 .btn-danger{
-  .buttonBackground(@btnDangerBackgroundHighlight, @btnDangerBackground);
+  .buttonBackground(@btnDangerBackgroundHighlight, @btnDangerBackground, #fff, 0 2px 2px darken(@btnDangerBackground, 15%));
+}
+.btn-inverse{
+  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight, #fff, 0 2px 2px darken(@btnInverseBackgroundHighlight, 15%));
 }
 
 
-// Nav 
+// Nav
 // ---
-// 
+//
 // TABS AND PILLS
 // --------------
 .nav-tabs > li > a,
@@ -230,8 +231,8 @@
   position: absolute;
   .size(0, 0);
   top: -1px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus,
@@ -381,7 +382,7 @@
 
 .table-striped {
   thead {
-    background-color: @tableHeader; 
+    background-color: @tableHeader;
   }
 }
 
@@ -443,14 +444,14 @@ pre {
 // CAROUSEL
 // --------------
 
-// // Left/right controls for nav
+// Left/right controls for nav
 // ---------------------------
 .carousel{
   margin-left: 50px;
   margin-right: 50px;
 }
 .carousel-control {
-  position: absolute; 
+  position: absolute;
   top: 40%;
   width: 41px;
   height: 41px;
@@ -461,7 +462,7 @@ pre {
   color: @white;
   text-align: center;
   background: @wv-orange;
-  border: none; 
+  border: none;
   .border-radius(30px);
   .opacity(100);
 
@@ -496,7 +497,7 @@ pre {
 
 // Carousel indicator pips
 // -----------------------------
-.carousel-indicators{ 
+.carousel-indicators{
   left: 50%;
   bottom: 10px;
   top: auto;
@@ -504,7 +505,7 @@ pre {
 
   .active {
     background-color: @pips-active;
-    .box-shadow(0 1px 0 1px fadeout(#000, 75%)); 
+    .box-shadow(0 1px 0 1px fadeout(#000, 75%));
   }
 
   li{
@@ -574,10 +575,23 @@ pre {
 // -------
 .tooltip{
   &.in{ .opacity(100); }
-  
+
 }
 // Popover
 // -------
 .popover-title {
   font-weight: bold;
+}
+
+// Dropdowns
+// ---------
+.caret{
+  border-top:   7px solid @wv-orange;
+  border-right: 7px solid transparent;
+  border-left:  7px solid transparent;
+}
+// dropup caret
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-bottom: 7px solid @wv-orange;
 }

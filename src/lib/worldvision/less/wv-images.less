@@ -1,0 +1,17 @@
+.image{
+  position: relative;
+  margin-bottom: 20px;
+  display: table;
+  > .caption{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px 15px 5px 15px;
+    #translucent.background(@caption-background-color, .8);
+    color: #fff;
+    display: table-caption;
+    caption-side: bottom;
+    margin: 0;
+  }
+}

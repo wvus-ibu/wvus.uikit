@@ -3,24 +3,19 @@
 // ----------------
 
 // Navbar vertical align
-// -------------------------
-// Vertically center elements in the navbar.
-// Example: an element has a height of 30px, so write out `.navbarVerticalAlign(30px);` to calculate the appropriate top margin.
-.wvnavbarVerticalAlign(@elementHeight) {
-  margin-top: (@wvnavbarHeight - @elementHeight) / 2;
-}
-
+// @see bootstrap/less/navbar.less
+// inherited from navbar
 
 .wv-navbar.navbar .navbar-inner{
   #gradient > .vertical(@wvnavbarBackgroundHighlight, @wvnavbarBackground);
 }
 .wv-navbar {
   .navbar-inner{
-    min-height: @wvnavbarHeight;
+    min-height: @navbarHeight;
   }
   .navbar-text {
     color: @wvnavbarText;
-    line-height: @wvnavbarHeight;
+    line-height: @navbarHeight;
   }
   .navbar-link{
     color: @wvnavbarText;
@@ -31,7 +26,7 @@
   .nav > li > a{
     color: @wvnavbarText;
     #font > .text-shadow(2px 0 2px #F60);
-    padding: ((@wvnavbarHeight - @baseLineHeight) / 2) 15px ((@wvnavbarHeight - @baseLineHeight) / 2);
+    padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -50,33 +45,35 @@
   }
 
   //Active nav items
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus{
+  .nav > .active > a{
     color: @wvnavbarLinkActive;
-    #gradient > .vertical(lighten(@wvnavbarBackgroundHighlight, 30%), @wvnavbarLinkBackgroundHover);
+    background-color: darken(@wv-orange, 2%);
     #font > .text-shadow();
+    &:hover,
+    &:focus{
+      color: @wvnavbarLinkActiveHover;
+    }
   }
 
   .brand{
     color: @wvnavbarBrandColor;
     #font > .text-shadow(0 1px 0 #000);
-    padding: ((@wvnavbarHeight - @baseLineHeight) / 2) 20px ((@wvnavbarHeight - @baseLineHeight) / 2);
+    padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
   }
 
-// Divider 
+// Divider
 // -------
   .divider-vertical{
-    height: @wvnavbarHeight;
+    height: @navbarHeight;
     border-left: 1px solid @wvnavbarBackground;
     border-right: 1px solid @wvnavbarBackgroundHighlight;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
 // Navbar Forms
 // --------------
 .navbar-search{
-  .wvnavbarVerticalAlign(30px);
+  .navbarVerticalAlign(30px);
 }
 
 // Dropdowns
@@ -174,7 +171,7 @@
 .nav li.dropdown.active > .dropdown-toggle,
 .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: @wvnavbarLinkBackgroundActive;
-  color: @wvnavbarLinkActive;
+  color: @wvnavbarLinkActiveHover;
 }
 
 

@@ -1,0 +1,66 @@
+---
+layout: default
+title: Pills - Stacked
+snippet: pills
+group: pills
+hasJs: false
+name: pills-stacked
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+      This is a placeholder for an awesome description.
+    {% endif %}
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+                <li>
+                  <a href="#">Message</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<ul class="nav nav-pills nav-stacked">
+  <li class="active">
+    <a href="#">Home</a>
+  </li>
+  <li>
+    <a href="#">Profile</a>
+  </li>
+  <li>
+    <a href="#">Message</a>
+  </li>
+</ul>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight js %}
+
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}
+
+

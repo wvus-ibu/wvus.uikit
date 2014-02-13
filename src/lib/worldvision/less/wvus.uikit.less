@@ -1,17 +1,8 @@
-/*!
- * Bootstrap v2.3.2
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
 .wvus-uikit{
 
   // Core variables and mixins
   @import "variables.less"; // Modify this for custom colors, font-sizes, etc
-  @import "../../bootstrap/less/mixins.less";
+  @import "mixins.less";
 
   // CSS Reset
   @import "../../bootstrap/less/reset.less";
@@ -60,10 +51,17 @@
   @import "../../bootstrap/less/carousel.less";
   @import "../../bootstrap/less/hero-unit.less";
 
-// World Vision Customizations
-  @import "wv-styles.less"; // WVUS Branding Overrides
-//World Vision Navbar
+  // Bootstrap-select
+  @import "../../bootstrap-select/bootstrap-select.less";
+
+  // World Vision Customizations
+  @import "wv-styles.less";
+  // World Vision Navbar
   @import "wv-navbar.less";
+  @import "wv-images.less";
+
+  // Sector Icons
+  @import "sector-svg.less";
 
   // Utility classes
   @import "../../bootstrap/less/utilities.less"; // Has to be last to override when necessary
