@@ -1,0 +1,37 @@
+{
+  "name": "wvus.uikit",
+  "version": "2.0.0",
+  "homepage": "http://docs.worldvision.org",
+  "authors": [
+    "Web Development and Delivery, Internet Business Unit, World Vision United States"
+  ],
+  "description": "Base UI styles and controls for worldvision.org",
+  "main": [
+    "./dist/css/wvus.uikit.css",
+    "./dist/js/wvus.uikit.js"
+  ],
+  "keywords": [
+    "wvus",
+    "uikit",
+    "World",
+    "Vision",
+    "UI",
+    "kit",
+    "Bootstrap"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-select": "~1.4.2",
+    "bootstrap": "~3.1.1",
+    "jquery": "1.9.1"
+  }
+}
