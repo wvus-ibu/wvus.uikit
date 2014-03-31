@@ -195,6 +195,11 @@ module.exports = function(grunt) {
           {expand:true, flatten: true, cwd: '../', src: ['src/lib/worldvision/less/variables.less', 'src/lib/worldvision/less/mixins.less'], dest: '../dist/less'},
         ]
       },
+      fontawesome: {
+        files: [
+          {expand: true, cwd: 'lib/font-awesome/fonts', src: '**', dest: '../dist/fonts'}
+        ]
+      },
       zipsrc: {
         files: [
           {
