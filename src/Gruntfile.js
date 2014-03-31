@@ -233,8 +233,19 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      options: {force:true},
-      src:'../<%= pkg.name %>'
+      dist: {
+        options: {force:true},
+        src:'../<%= pkg.name %>'
+      },
+      jquery: {
+        files: [
+          {
+            src: ['lib/jquery/**/*', '!lib/jquery/dist/*'],
+            filter: 'isFile'
+          },
+          {src: ['lib/jquery/src']}
+        ]
+      }
     },
 
     replace: {
@@ -255,7 +266,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist-css', ['less', 'autoprefixer', 'csscomb', 'csslint', 'usebanner']);
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['compile', 'copy:images', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean']);
+  grunt.registerTask('default', ['compile', 'copy:images', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
 
   //compiles less for errors, runs js thorugh
   grunt.registerTask('test', ['compile', 'csslint:lib' ,'jshint', 'qunit']);
