@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Metadata.
-    pkg: grunt.file.readJSON('../package.json'),
+    pkg: grunt.file.readJSON('package.json'),
     banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           jqueryPath + 'jquery.js',
           libPath + 'worldvision/namespace.js'
         ],
-        dest: '../dist/js/jquery-custom.js'
+        dest: distPath + 'js/jquery-custom.js'
       },
       uikit: {
         src: [
@@ -62,11 +62,11 @@ module.exports = function(grunt) {
       },
       uikit: {
         src: '<%= concat.uikit.dest %>',
-        dest: '../dist/js/<%= pkg.name %>.min.js'
+        dest: distPath + 'js/<%= pkg.name %>.min.js'
       },
       jquery: {
         src: '<%= concat.jquery.dest %>',
-        dest: '../dist/js/jquery-custom.min.js'
+        dest: distPath + 'js/jquery-custom.min.js'
       },
     },
 
@@ -112,7 +112,6 @@ module.exports = function(grunt) {
           sourceMapRootpath: 'src/',
           sourceMapFilename: '../dist/css/<%= pkg.name %>.css.map',
           cleancss: true,
-          keepSpecialComments: 0
         },
         files: {
           '../dist/css/<%= pkg.name %>.css': 'lib/worldvision/less/wvus.uikit.less'
@@ -127,6 +126,15 @@ module.exports = function(grunt) {
         files: {
           '../dist/css/<%= pkg.name %>.min.css': 'lib/worldvision/less/wvus.uikit.less',
         }
+      }
+    },
+
+    cssmin: {
+      dist: {
+        options: {
+          keepSpecialComments: 0
+        },
+        src: ['../dist/css/wvus.uikit.css']
       }
     },
 
