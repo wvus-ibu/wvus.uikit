@@ -111,7 +111,6 @@ module.exports = function(grunt) {
           sourceMap: true,
           sourceMapRootpath: 'src/',
           sourceMapFilename: '../dist/css/<%= pkg.name %>.css.map',
-          cleancss: true,
         },
         files: {
           '../dist/css/<%= pkg.name %>.css': 'lib/worldvision/less/wvus.uikit.less'
@@ -126,15 +125,6 @@ module.exports = function(grunt) {
         files: {
           '../dist/css/<%= pkg.name %>.min.css': 'lib/worldvision/less/wvus.uikit.less',
         }
-      }
-    },
-
-    cssmin: {
-      dist: {
-        options: {
-          keepSpecialComments: 0
-        },
-        src: ['../dist/css/wvus.uikit.css']
       }
     },
 
@@ -268,13 +258,13 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  grunt.registerTask('dist-css', ['less', 'autoprefixer', 'csscomb', 'csslint', 'usebanner']);
+  grunt.registerTask('dist-css', ['less', 'autoprefixer', 'csscomb', 'usebanner']);
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['compile', 'copy:images', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
+  grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
 
   //compiles less for errors, runs js thorugh
-  grunt.registerTask('test', ['compile', 'csslint:lib' ,'jshint', 'qunit']);
+  //grunt.registerTask('test', ['compile', 'csslint' ,'jshint', 'qunit']);
 
   // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
   grunt.registerTask('compile', ['concat', 'replace', 'less:dist', 'less:distResponsive', 'csscomb', 'less:minify', 'uglify','copy:docs', 'copy:tests']);
