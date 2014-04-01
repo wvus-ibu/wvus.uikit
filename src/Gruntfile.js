@@ -135,7 +135,7 @@ module.exports = function(grunt) {
     },
 
     less: {
-      dist:{
+      dist: {
         options: {
           outputSourceFiles: true,
           sourceMap: true,
@@ -146,13 +146,26 @@ module.exports = function(grunt) {
         src: worldVisionPath + 'less/wvus.uikit.less',
         dest: distPath + 'css/<%= pkg.name %>.css'
       },
+      theme: {
+        options: {
+          outputSourceFiles: true,
+          sourceMap: true,
+          sourceMapFilename: '../dist/css/<%= pkg.name %>-theme.css.map',
+          sourceMapRootpath: 'src',
+          sourceMapURL: '<%= pkg.name %>-theme.css.map'
+        },
+        src: worldVisionPath + 'less/theme.less',
+        dest: distPath + 'css/<%= pkg.name %>-theme.css'
+      },
       minify: {
         options: {
           cleancss: true,
           report: 'min',
         },
-        src: '<%= less.dist.dest %>',
-        dest: distPath + 'css/<%= pkg.name %>.min.css'
+        files: [
+          {src: ['<%= less.dist.dest %>'], dest: distPath + 'css/<%= pkg.name %>.min.css'},
+          {src: ['<%= less.theme.dest %>'], dest: distPath + 'css/<%= pkg.name %>-theme.min.css'}
+        ]
       }
     },
 
@@ -164,7 +177,7 @@ module.exports = function(grunt) {
             {id: 'text', dest: 'csslint-lib.txt'}
           ],
         },
-        src: ['<%= less.dist.dest %>']
+        src: ['<%= less.dist.dest %>', '<%= less.theme.dest %>']
       },
     },
 
@@ -173,10 +186,12 @@ module.exports = function(grunt) {
         map: true,
         browsers: ['last 2 versions', 'ie 9', 'android 4.2' ]
       },
-      uikit: {
+      dist: {
         src: '<%= less.dist.dest =>'
+      },
+      theme: {
+        src: '<%= less.theme.dest %>'
       }
-
     },
 
     csscomb: {
@@ -186,6 +201,10 @@ module.exports = function(grunt) {
       dist: {
         src: '<%= less.dist.dest %>',
         dest: '<%= less.dist.dest %>'
+      },
+      theme: {
+        src: '<%= less.theme.dest %>',
+        dest: '<%= less.theme.dest %>'
       }
     },
 
@@ -198,10 +217,10 @@ module.exports = function(grunt) {
         },
         files: {
           src: [
-            distPath + 'css/wvus.uikit.css',
-            distPath + 'css/wvus.uikit.min.css',
-            distPath + 'css/wvus.uikit.theme.css',
-            distPath + 'css/wvus.uikit.theme.min.css'
+            '<%= less.dist.dest %>',
+            '<%= less.minify.dist.dest %>',
+            '<%= less.theme.dest %>',
+            '<%= less.minify.theme.dest %>'
           ]
         }
       }
