@@ -180,6 +180,11 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      images: {
+        files: [
+          {expand: true, cwd: 'lib/worldvision/img', src: '**/*', dest: '../dist/img'}
+        ]
+      },
       variables: {
         files: [
           {expand:true, flatten: true, cwd: '../', src: ['src/lib/worldvision/less/variables.less', 'src/lib/worldvision/less/mixins.less'], dest: '../dist/less'},
