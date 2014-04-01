@@ -32,6 +32,7 @@
   "devDependencies": {
     "bootstrap-select": "~1.4.2",
     "bootstrap": "~3.1.1",
-    "jquery": "1.9.1"
+    "jquery": "1.9.1",
+    "font-awesome": "~4.0.3"
   }
 }
