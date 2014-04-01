@@ -3,12 +3,14 @@
 module.exports = function(grunt) {
   "use strict";
   // Path variables
-  var srcPath = '../';
-  var libPath = 'lib/';
-  var distPath = '../dist/';
-  var bootstrapLessPath = libPath + 'bootstrap/less/';
-  var bootstrapJsPath = libPath + 'bootstrap/js/';
-  var jqueryPath = libPath + 'jquery/';
+  var srcPath = '../',
+      libPath = 'lib/',
+      distPath = '../dist/',
+      bootstrapLessPath = libPath + 'bootstrap/less/',
+      bootstrapJsPath = libPath + 'bootstrap/js/',
+      fontAwesomePath = libPath + 'font-awesome/less',
+      jqueryPath = libPath + 'jquery/',
+      worldVisionPath = libPath + 'worldvision/';
 
   // Project configuration.
   grunt.initConfig({
@@ -104,39 +106,54 @@ module.exports = function(grunt) {
       }
     },
 
+    comments: {
+      bootstrap: {
+        options: {
+          singleline: false,
+          multiline: true
+        },
+        src: [bootstrapLessPath + '*.less']
+      },
+      fontAwesome: {
+        options: {
+          singleline: false,
+          multiline: true
+        },
+        src: ['lib/font-awesome/less/*.less']
+      }
+    },
+
     less: {
       dist:{
         options: {
           outputSourceFiles: true,
           sourceMap: true,
-          sourceMapRootpath: 'src/',
           sourceMapFilename: '../dist/css/<%= pkg.name %>.css.map',
+          sourceMapRootpath: 'src',
+          sourceMapURL: '<%= pkg.name %>.css.map'
         },
-        files: {
-          '../dist/css/<%= pkg.name %>.css': 'lib/worldvision/less/wvus.uikit.less'
-        }
+        src: worldVisionPath + 'less/wvus.uikit.less',
+        dest: distPath + 'css/<%= pkg.name %>.css'
       },
       minify: {
         options: {
           cleancss: true,
-          keepSpecialComments: 0,
           report: 'min',
         },
-        files: {
-          '../dist/css/<%= pkg.name %>.min.css': 'lib/worldvision/less/wvus.uikit.less',
-        }
+        src: '<%= less.dist.dest %>',
+        dest: distPath + 'css/<%= pkg.name %>.min.css'
       }
     },
 
     csslint: {
       lib: {
         options: {
-          csslintrc: 'lib/worldvision/less/.csslintrc',
+          csslintrc: worldVisionPath + 'less/.csslintrc',
           formatters: [
             {id: 'text', dest: 'csslint-lib.txt'}
           ],
         },
-        src: [distPath + 'css/wvus.uikit.css']
+        src: ['<%= less.dist.dest %>']
       },
     },
 
@@ -146,19 +163,18 @@ module.exports = function(grunt) {
         browsers: ['last 2 versions', 'ie 9', 'android 4.2' ]
       },
       uikit: {
-        src: '<%= csslint.lib.src =>'
+        src: '<%= less.dist.dest =>'
       }
 
     },
 
     csscomb: {
       options: {
-        config: 'lib/worldvision/less/.csscomb.json'
+        config: worldVisionPath + 'less/.csscomb.json'
       },
       dist: {
-        files: {
-          '../dist/css/<%= pkg.name %>.css': '../dist/css/<%= pkg.name %>.css',
-        }
+        src: '<%= less.dist.dest %>',
+        dest: '<%= less.dist.dest %>'
       }
     },
 
@@ -259,7 +275,7 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  grunt.registerTask('dist-css', ['less', 'autoprefixer', 'csscomb', 'usebanner']);
+  grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner']);
 
   // Default task. Compile, concatenate, min, and build zip
   grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
