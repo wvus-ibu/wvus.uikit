@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       bootstrapLessPath = libPath + 'bootstrap/less/',
       bootstrapJsPath = libPath + 'bootstrap/js/',
       fontAwesomePath = libPath + 'font-awesome/less',
-      jqueryPath = libPath + 'jquery/',
+      jqueryPath = libPath + 'jquery/dist/',
       worldVisionPath = libPath + 'worldvision/';
 
   // Project configuration.
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
 
     /*
     Concat JS
@@ -62,21 +62,32 @@ module.exports = function(grunt) {
       options: {
         banner: '<%= banner %>'
       },
-      uikit: {
-        src: '<%= concat.uikit.dest %>',
-        dest: distPath + 'js/<%= pkg.name %>.min.js'
-      },
       jquery: {
         src: '<%= concat.jquery.dest %>',
         dest: distPath + 'js/jquery-custom.min.js'
       },
+      uikit: {
+        src: '<%= concat.uikit.dest %>',
+        dest: distPath + 'js/<%= pkg.name %>.min.js'
+      },
+
     },
 
     jshint: {
       options: {
-        jshintrc: 'lib/bootstrap/js/.jshintrc'
+        jshintrc: worldVisionPath + 'js/.jshintrc'
       },
       gruntfile: {
+        options: {
+            curly : true,
+            eqeeq: true,
+            newcap: true,
+            noarg : true,
+            node  : true,
+            nonbsp: true,
+            strict: true,
+            undef : true
+        },
         src: 'Gruntfile.js'
       },
       dist: {
@@ -183,7 +194,7 @@ module.exports = function(grunt) {
         options: {
           position: 'top',
           banner: '<%= banner %>',
-          linebreak: true,
+          linebreak: false,
         },
         files: {
           src: [
@@ -276,9 +287,12 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner']);
+  grunt.registerTask('dist-js', ['concat', 'uglify']);
+
+  grunt.registerTask('build', ['dist-css', 'dist-js']);
 
   // Default task. Compile, concatenate, min, and build zip
-  grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
+  //grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
 
   //compiles less for errors, runs js thorugh
   //grunt.registerTask('test', ['compile', 'csslint' ,'jshint', 'qunit']);
