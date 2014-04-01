@@ -166,14 +166,15 @@ module.exports = function(grunt) {
       css: {
         options: {
           position: 'top',
-          banner: '<%=banner=>',
+          banner: '<%= banner %>',
+          linebreak: true,
         },
         files: {
           src: [
-          distPath + 'css/wvus.uikit.css',
-          distPath + '../dist/css/wvus.uikit.min.css',
-          distPath + '../dist/css/wvus.uikit.theme.css',
-          distPath + '../dist/css/wvus.uikit.theme.min.css'
+            distPath + 'css/wvus.uikit.css',
+            distPath + 'css/wvus.uikit.min.css',
+            distPath + 'css/wvus.uikit.theme.css',
+            distPath + 'css/wvus.uikit.theme.min.css'
           ]
         }
       }
@@ -213,11 +214,6 @@ module.exports = function(grunt) {
           }
         ]
       },
-      tests: {
-        files: [
-          {expand:true, cwd: '../js', src: 'jquery.js', dest: 'lib/bootstrap/js/tests/vendor'}
-        ]
-      }
     },
 
     compress: {
