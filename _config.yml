@@ -1,14 +1,11 @@
 # Jekyll Configs
-layouts: ./_layouts
-exclude: [readme.md]
-host: localhost
-port: 4000
+exclude: [readme.md, node_modules, package.json]
+
 
 pygments: true
 #Permalink
 permalink: pretty
 
-baseurl: http://wvus-ibu.github.io/wvus.uikit
 developerdocs: /elements
 designerdocs: /design
 develop: /develop
