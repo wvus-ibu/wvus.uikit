@@ -48,15 +48,9 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  var testTasks = [],
-  testBranches = ['docs-2.0', 'gh-pages', 'pages'];
-
-  if(!process.env.TRAVIS_BRANCH || testBranches.indexOf(process.env.TRAVIS_BRANCH) !== -1){
-    testTasks = testTasks.concat(['jekyll', 'validation']);
-  }
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
   grunt.registerTask('docs', ['watch', 'connect']);
-  grunt.registerTask('test', testTasks);
+  grunt.registerTask('test', ['jekyll', 'validation']);
 };
