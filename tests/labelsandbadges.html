@@ -6,21 +6,15 @@ group: labels
 <div class="container">
   <div class="row">
     <h1>Labels</h1>
-    <span class="label">Default</span>
+    <span class="label label-default">Default</span>
     <span class="label label-success">Success</span>
     <span class="label label-warning">Warning</span>
-    <span class="label label-important">Important</span>
+    <span class="label label-danger">Important</span>
     <span class="label label-info">Info</span>
-    <span class="label label-inverse">Inverse</span>
   </div>
   <div class="row">
     <h1>Badges</h1>
     <span class="badge">1</span>
-    <span class="badge badge-success">2</span>
-    <span class="badge badge-warning">4</span>
-    <span class="badge badge-important">6</span>
-    <span class="badge badge-info">8</span>
-    <span class="badge badge-inverse">10</span>
   </div>
 
 
@@ -32,19 +26,29 @@ group: labels
   </div>
 
   <div class="row">
-    <div class="span4">
-      <h4>Inline label</h4>
+    <div class="col-md-4">
+      <h4>Inline label <span class="label label-info">New</span></h4>
       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam <span class="label label-warning">Label name</span> eget risus varius blandit sit amet non magna. Fusce <code>.class-name</code> dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
     </div><!--/span-->
-    <div class="span4">
-      <form class="form-horizontal">
-        <label>Example label</label>
-        <input type="text" placeholder="Input"> <span class="help-inline"><span class="label">Hey!</span> Read this.</span>
-      </form>
+    <div class="col-md-4">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active">
+          <a href="#">
+            <span class="badge pull-right">42</span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="badge pull-right">42</span>
+            About
+          </a>
+        </li>
+      </ul>
     </div><!--/span-->
-    <div class="span4">
-      <button class="btn">Action <span class="badge">2</span></button>
-      <button class="btn">Action <span class="label">2</span></button>
+    <div class="col-md-4">
+      <button class="btn btn-default">Action <span class="badge">2</span></button>
+      <button class="btn btn-default">Action <span class="label label-danger">2</span></button>
     </div><!--/span-->
   </div><!--/row-->
 </div><!-- /container -->
