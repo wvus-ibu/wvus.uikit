@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0 - 2014-04-02
+/*! wvus.uikit - v2.0.0 - 2014-04-03
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -185,12 +185,12 @@
 .wvus-uikit .dropdown-menu > .active > a:hover,
 .wvus-uikit .dropdown-menu > .active > a:focus
 {
-    background-color: #e65c00;
-    background-image: -webkit-linear-gradient(top, #f60 0%, #e65c00 100%);
-    background-image:         linear-gradient(to bottom, #f60 0%, #e65c00 100%);
+    background-color: #005580;
+    background-image: -webkit-linear-gradient(top, #069 0%, #005580 100%);
+    background-image:         linear-gradient(to bottom, #069 0%, #005580 100%);
     background-repeat: repeat-x;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff6600', endColorstr='#ffe65c00', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006699', endColorstr='#ff005580', GradientType=0);
 }
 .wvus-uikit .navbar-default
 {
@@ -344,13 +344,13 @@
 .wvus-uikit .list-group-item.active:hover,
 .wvus-uikit .list-group-item.active:focus
 {
-    border-color: #d95700;
-    background-image: -webkit-linear-gradient(top, #f60 0%, #d95700 100%);
-    background-image:         linear-gradient(to bottom, #f60 0%, #d95700 100%);
+    border-color: #004d73;
+    background-image: -webkit-linear-gradient(top, #069 0%, #004d73 100%);
+    background-image:         linear-gradient(to bottom, #069 0%, #004d73 100%);
     background-repeat: repeat-x;
-    text-shadow: 0 -1px 0 #cc5200;
+    text-shadow: 0 -1px 0 #046;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff6600', endColorstr='#ffd95700', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006699', endColorstr='#ff004d73', GradientType=0);
 }
 .wvus-uikit .panel
 {

@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0 - 2014-04-02
+/*! wvus.uikit - v2.0.0 - 2014-04-03
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -4868,7 +4868,7 @@ fieldset[disabled] .wvus-uikit .btn-link:focus
 
     color: #fff;
     outline: 0;
-    background-color: #f60;
+    background-color: #069;
 }
 .wvus-uikit .dropdown-menu > .disabled > a,
 .wvus-uikit .dropdown-menu > .disabled > a:hover,
@@ -5541,7 +5541,7 @@ select[multiple].wvus-uikit .input-group-sm > .input-group-btn > .btn
 .wvus-uikit .nav-pills > li.active > a:focus
 {
     color: #fff;
-    background-color: #f60;
+    background-color: #069;
 }
 .wvus-uikit .nav-stacked > li
 {
@@ -6957,8 +6957,8 @@ a.wvus-uikit .thumbnail.active
     z-index: 2;
 
     color: #fff;
-    border-color: #f60;
-    background-color: #f60;
+    border-color: #069;
+    background-color: #069;
 }
 .wvus-uikit a.list-group-item.active .list-group-item-heading,
 .wvus-uikit a.list-group-item.active:hover .list-group-item-heading,
@@ -6970,7 +6970,7 @@ a.wvus-uikit .thumbnail.active
 .wvus-uikit a.list-group-item.active:hover .list-group-item-text,
 .wvus-uikit a.list-group-item.active:focus .list-group-item-text
 {
-    color: #ffe0cc;
+    color: #6cf;
 }
 .wvus-uikit .list-group-item-success
 {
