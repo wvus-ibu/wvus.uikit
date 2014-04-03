@@ -29,11 +29,15 @@ module.exports = function(grunt) {
       }
     },
     validation: {
-      options: {
-        doctype: "HTML5",
-        charset: "utf-8",
+     options: {
+        charset: 'utf-8',
+        doctype: 'HTML5',
         failHard: true,
-        reset: true
+        reset: true,
+        relaxerror: [
+          'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
+          'Element img is missing required attribute src.'
+        ]
       },
       files: {
         src: '_site/**/*.html'
