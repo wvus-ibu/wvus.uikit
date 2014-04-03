@@ -2,12 +2,8 @@
   "name": "uikit-docs",
   "version": "2.0.0",
   "description": "Documention of the UI Kit",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -19,9 +15,6 @@
     "url": "https://github.com/wvus-ibu/wvus.uikit/issues"
   },
   "homepage": "https://github.com/wvus-ibu/wvus.uikit",
-  "dependencies": {
-    "grunt": "^0.4.4"
-  },
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-jekyll": "^0.4.1",
