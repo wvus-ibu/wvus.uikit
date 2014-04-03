@@ -19,7 +19,7 @@
 .btn-info,
 .btn-warning,
 .btn-danger {
-  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+
   @shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
   .box-shadow(@shadow);
 
@@ -32,21 +32,22 @@
 
 // Mixin for generating new styles
 .btn-styles(@btn-color: #555) {
-  #gradient > .vertical(@start-color: @btn-color; @end-color: darken(@btn-color, 12%));
+  text-shadow: -1px 1px 0 fade(@btn-color, 50%);
+  #gradient > .vertical(@start-color: lighten(@btn-color, 12%); @end-color: @btn-color);
   .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
   background-repeat: repeat-x;
-  border-color: darken(@btn-color, 14%);
+  border-color: darken(@btn-color, 4%);
 
   &:hover,
   &:focus  {
-    background-color: darken(@btn-color, 12%);
+    background-color: @btn-color;
     background-position: 0 -15px;
   }
 
   &:active,
   &.active {
-    background-color: darken(@btn-color, 12%);
-    border-color: darken(@btn-color, 14%);
+    background-color: @btn-color;
+    border-color: darken(@btn-color, 2%);
   }
 }
 
@@ -142,7 +143,6 @@
 .navbar-fixed-bottom {
   border-radius: 0;
 }
-
 
 
 //
