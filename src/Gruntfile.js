@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       jquery: {
         src: [
           jqueryPath + 'jquery.js',
-          libPath + 'worldvision/namespace.js'
+          worldVisionPath + 'js/namespace.js'
         ],
         dest: distPath + 'js/jquery-custom.js'
       },
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
       },
       less: {
         files: ['lib/worldvision/less/*.less'],
-        tasks: ['less', 'csslint']
+        tasks: ['dist-css', 'copy:docs']
       },
       js: {
         files: ['lib/worldvision/js/*.js'],
@@ -218,9 +218,9 @@ module.exports = function(grunt) {
         files: {
           src: [
             '<%= less.dist.dest %>',
-            '<%= less.minify.dist.dest %>',
+            distPath + 'css/<%= pkg.name %>.min.css',
             '<%= less.theme.dest %>',
-            '<%= less.minify.theme.dest %>'
+            distPath + 'css/<%= pkg.name %>-theme.min.css'
           ]
         }
       }
@@ -260,6 +260,19 @@ module.exports = function(grunt) {
           }
         ]
       },
+      docs: {
+        files: [
+          {
+            expand: true,
+            cwd: '../dist/',
+            src: [
+                '**/*'
+            ],
+            dest: '../../uikit-docs/assets/<%= pkg.name %>'
+          }
+        ]
+
+      }
     },
 
     compress: {
