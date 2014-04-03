@@ -31,23 +31,24 @@ module.exports = function(grunt) {
     validation: {
       options: {
         doctype: "HTML5",
-        failHard: true
+        charset: "utf-8",
+        failHard: true,
+        reset: true
       },
-      src: ['_site/**/*.html']
+      files: {
+        src: '_site/**/*.html'
+      }
     }
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-html-validation');
+  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   var testTasks = [],
   testBranches = ['docs-2.0', 'gh-pages', 'pages'];
 
-  if(testBranches.indexOf(process.env.TRAVIS_BRANCH) !== -1){
-    testTasks = testTasks.concat(['jekyll', 'validate-html']);
+  if(!process.env.TRAVIS_BRANCH || testBranches.indexOf(process.env.TRAVIS_BRANCH) !== -1){
+    testTasks = testTasks.concat(['jekyll', 'validation']);
   }
 
   // Default task.
