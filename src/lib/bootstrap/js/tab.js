@@ -122,4 +122,4 @@
     $(this).tab('show')
   })
 
-}(jQuery);
+}(wvusUikit);

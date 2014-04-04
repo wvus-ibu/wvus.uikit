@@ -150,4 +150,4 @@
     })
   })
 
-}(jQuery);
+}(wvusUikit);

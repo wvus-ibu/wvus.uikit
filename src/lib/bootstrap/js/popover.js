@@ -107,4 +107,4 @@
     return this
   }
 
-}(jQuery);
+}(wvusUikit);

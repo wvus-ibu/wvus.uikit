@@ -104,4 +104,4 @@
     e.preventDefault()
   })
 
-}(jQuery);
+}(wvusUikit);

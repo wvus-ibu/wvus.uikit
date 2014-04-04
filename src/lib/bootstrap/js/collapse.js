@@ -167,4 +167,4 @@
     $target.collapse(option)
   })
 
-}(jQuery);
+}(wvusUikit);

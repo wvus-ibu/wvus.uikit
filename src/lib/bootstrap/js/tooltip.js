@@ -396,4 +396,4 @@
     return this
   }
 
-}(jQuery);
+}(wvusUikit);

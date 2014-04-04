@@ -45,4 +45,4 @@
     $.support.transition = transitionEnd()
   })
 
-}(jQuery);
+}(wvusUikit);
