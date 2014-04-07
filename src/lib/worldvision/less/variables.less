@@ -124,9 +124,9 @@
 //** Default background color used for all tables.
 @table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-@table-bg-accent:               #f9f9f9;
+@table-bg-accent:               @gray-lighter;
 //** Background color used for `.table-hover`.
-@table-bg-hover:                #f5f5f5;
+@table-bg-hover:                @gray-lighter;
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
@@ -383,6 +383,33 @@
 @navbar-inverse-toggle-hover-bg:            #333;
 @navbar-inverse-toggle-icon-bar-bg:         #fff;
 @navbar-inverse-toggle-border-color:        #333;
+
+
+// World Vision Navbar
+// ------------------------
+@navbar-wv-color:                           #fff;
+@navbar-wv-bg:                              @brand-primary;
+
+
+// World Vision navbar links
+@navbar-wv-link-color:                      #fff;
+@navbar-wv-link-hover-color:                @brand-primary;
+@navbar-wv-link-hover-bg:                   @navbar-wv-link-color;
+@navbar-wv-link-active-color:               @navbar-wv-link-color;
+@navbar-wv-link-active-bg:                  darken(@navbar-wv-bg, 10%);
+@navbar-wv-link-disabled-color:             #444;
+@navbar-wv-link-disabled-bg:                transparent;
+
+// Navbar brand label
+@navbar-wv-brand-color:                     @navbar-wv-link-color;
+@navbar-wv-brand-hover-color:               darken(@navbar-wv-brand-color, 10%);
+@navbar-wv-brand-hover-bg:                  transparent;
+
+// Navbar toggle
+@navbar-wv-toggle-bg:                 #fff;
+@navbar-wv-toggle-hover-bg:           @gray-lighter;
+@navbar-wv-toggle-icon-bar-bg:        @gray-light;
+@navbar-wv-toggle-border-color:       #ddd;
 
 
 //== Navs
