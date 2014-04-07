@@ -251,13 +251,37 @@
 // --------------------------------------------------
 
 .carousel-control {
+  background-color: @carousel-control-bg;
+  width: @carousel-control-width;
+  height: @carousel-control-height;
+  border-radius: @carousel-control-radius;
+  top: 50%;
+
+  &.right {
+    #gradient > .remove();
+    margin-top: -20px;
+    margin-right: 20px;
+    & i[class*="fa"]{
+      right: 13px;
+    }
+  }
+
+  &.left {
+    #gradient > .remove();
+    margin-top: -20px;
+    margin-left: 20px;
+    & i[class*="fa"]{
+      right: 15px;
+    }
+  }
+
   i[class*="fa"]{
     position: absolute;
     top: 50%;
     z-index: 5;
     display: inline-block;
-    margin-top: -10px;
-    margin-left: -10px;
+    margin-top: -14px;
+    margin-left: -8px;
     font-size: 1.33333333333em; // Font-Awesome fa-lg
   }
 }
@@ -270,4 +294,13 @@
   margin-left: -15px;
   font-size: 30px;
 }
+
+// Carousel Indicator pips
+//
+.carousel-indicators{
+  li {
+    background-color: #fff;
+  }
+}
+
 }
