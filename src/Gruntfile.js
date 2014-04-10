@@ -246,9 +246,8 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: '../',
+            cwd: '../dist/',
             src: [
-                  'Contribute.md',
                   'css/**',
                   'less/**',
                   'font/**',
@@ -321,7 +320,9 @@ module.exports = function(grunt) {
   grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner']);
   grunt.registerTask('dist-js', ['concat', 'uglify']);
 
-  grunt.registerTask('build', ['dist-css', 'dist-js']);
+
+  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'replace', 'compress', 'clean:dist']);
+
 
   // Default task. Compile, concatenate, min, and build zip
   //grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
