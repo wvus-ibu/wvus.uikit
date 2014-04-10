@@ -3,12 +3,12 @@
 module.exports = function(grunt) {
   "use strict";
   // Path variables
-  var srcPath = '../',
-      libPath = 'lib/',
-      distPath = '../dist/',
+  var srcPath = './',
+      libPath = srcPath + 'lib/',
+      distPath = srcPath + 'dist/',
       bootstrapLessPath = libPath + 'bootstrap/less/',
       bootstrapJsPath = libPath + 'bootstrap/js/',
-      fontAwesomePath = libPath + 'font-awesome/less',
+      fontAwesomePath = libPath + 'font-awesome/',
       jqueryPath = libPath + 'jquery/dist/',
       worldVisionPath = libPath + 'worldvision/';
 
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
             libPath + 'bootstrap-select/bootstrap-select.js'
             ],
 
-        dest: '../dist/js/<%= pkg.name %>.js'
+        dest: distPath + 'js/<%= pkg.name %>.js'
       }
   },
 
@@ -139,8 +139,8 @@ module.exports = function(grunt) {
         options: {
           outputSourceFiles: true,
           sourceMap: true,
-          sourceMapFilename: '../dist/css/<%= pkg.name %>.css.map',
-          sourceMapRootpath: 'src',
+          sourceMapFilename: distPath + 'css/<%= pkg.name %>.css.map',
+          sourceMapRootpath: srcPath,
           sourceMapURL: '<%= pkg.name %>.css.map'
         },
         src: worldVisionPath + 'less/wvus.uikit.less',
@@ -150,8 +150,8 @@ module.exports = function(grunt) {
         options: {
           outputSourceFiles: true,
           sourceMap: true,
-          sourceMapFilename: '../dist/css/<%= pkg.name %>-theme.css.map',
-          sourceMapRootpath: 'src',
+          sourceMapFilename: distPath + 'css/<%= pkg.name %>-theme.css.map',
+          sourceMapRootpath: srcPath,
           sourceMapURL: '<%= pkg.name %>-theme.css.map'
         },
         src: worldVisionPath + 'less/theme.less',
@@ -229,24 +229,24 @@ module.exports = function(grunt) {
     copy: {
       images: {
         files: [
-          {expand: true, cwd: 'lib/worldvision/img', src: '**/*', dest: '../dist/img'}
+          {expand: true, cwd: worldVisionPath + 'img', src: '**/*', dest: distPath + 'img'}
         ]
       },
       variables: {
         files: [
-          {expand:true, flatten: true, cwd: '../', src: ['src/lib/worldvision/less/variables.less', 'src/lib/worldvision/less/mixins.less'], dest: '../dist/less'},
+          {expand:true, flatten: true, cwd: './', src: [worldVisionPath + 'less/variables.less', worldVisionPath + 'less/mixins.less'], dest: distPath + 'less'},
         ]
       },
       fontawesome: {
         files: [
-          {expand: true, cwd: 'lib/font-awesome/fonts', src: '**', dest: '../dist/fonts'}
+          {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'}
         ]
       },
       zipsrc: {
         files: [
           {
             expand: true,
-            cwd: '../dist/',
+            cwd: distPath,
             src: [
                   'css/**',
                   'less/**',
@@ -255,7 +255,7 @@ module.exports = function(grunt) {
                   'js/**',
                   'README.md',
             ],
-            dest: '../<%= pkg.name %>'
+            dest: '<%= pkg.name %>'
           }
         ]
       },
@@ -263,11 +263,11 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: '../dist/',
+            cwd: distPath,
             src: [
                 '**/*'
             ],
-            dest: '../../uikit-docs/assets/<%= pkg.name %>'
+            dest: '../uikit-docs/assets/<%= pkg.name %>'
           }
         ]
 
@@ -278,10 +278,10 @@ module.exports = function(grunt) {
       zip: {
         options: {
           mode: 'zip',
-          archive: '../<%= pkg.name %>-<%= pkg.version %>.zip'
+          archive: srcPath + '<%= pkg.name %>-<%= pkg.version %>.zip'
         },
         files: [
-          {expand:true, cwd: '../', src: '<%= pkg.name %>/**', dest:'../'}
+          {expand:true, cwd: srcPath, src: '<%= pkg.name %>/**', dest: distPath}
         ]
       }
     },
@@ -289,7 +289,7 @@ module.exports = function(grunt) {
     clean: {
       dist: {
         options: {force:true},
-        src:'../<%= pkg.name %>'
+        src: srcPath + '<%= pkg.name %>'
       },
       jquery: {
         files: [
@@ -304,7 +304,7 @@ module.exports = function(grunt) {
 
     replace: {
       version: {
-        src: ['../js/jquery.js'],
+        src: [ distPath + 'js/jquery-custom.js'],
         overwrite: true,
         replacements: [{
           from: '@VERSION',
@@ -318,10 +318,10 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner']);
-  grunt.registerTask('dist-js', ['concat', 'uglify']);
+  grunt.registerTask('dist-js', [ 'concat', 'replace', 'uglify']);
 
-
-  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'replace', 'compress', 'clean:dist']);
+  // TODO: add tests to this task when implemented
+  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'clean:dist']);
 
 
   // Default task. Compile, concatenate, min, and build zip
