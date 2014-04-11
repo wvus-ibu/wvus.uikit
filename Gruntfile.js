@@ -261,7 +261,8 @@ module.exports = function(grunt) {
       zip: {
         options: {
           mode: 'zip',
-          archive: '<%= pkg.name %>-<%= pkg.version %>.zip'
+          archive: '<%= pkg.name %>-<%= pkg.version %>.zip',
+          pretty: true
         },
         files: [
           {expand:true, cwd: distPath, src: '**/*', dest: 'wvus.uikit/'}
@@ -272,7 +273,7 @@ module.exports = function(grunt) {
     clean: {
       dist: {
         options: {force:true},
-        src: srcPath + '<%= pkg.name %>'
+        src: '<%= pkg.name %>'
       },
       jquery: {
         files: [
@@ -304,7 +305,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist-js', [ 'concat', 'replace', 'uglify']);
 
   // TODO: add tests to this task when implemented
-  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'clean:dist']);
+  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress']);
 
 
   // Default task. Compile, concatenate, min, and build zip
