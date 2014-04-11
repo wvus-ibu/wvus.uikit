@@ -237,9 +237,10 @@ module.exports = function(grunt) {
           {expand:true, flatten: true, cwd: './', src: [worldVisionPath + 'less/variables.less', worldVisionPath + 'less/mixins.less'], dest: distPath + 'less'},
         ]
       },
-      fontawesome: {
+      lib: {
         files: [
-          {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'}
+          {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'},
+          {expand: true, cwd: libPath + 'modernizer', src: '**', dest: distPath + 'js/'}
         ]
       },
       docs: {
