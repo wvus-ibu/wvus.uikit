@@ -271,10 +271,6 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      dist: {
-        options: {force:true},
-        src: '<%= pkg.name %>'
-      },
       jquery: {
         files: [
           {
