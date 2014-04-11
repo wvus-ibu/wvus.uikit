@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0 - 2014-04-03
+/*! wvus.uikit - v2.0.0-beta - 2014-04-10
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -40,7 +40,7 @@
     $.support.transition = transitionEnd()
   })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -120,7 +120,7 @@
 
   $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -219,7 +219,7 @@
     e.preventDefault()
   })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -416,7 +416,7 @@
     })
   })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -578,7 +578,7 @@
     $target.collapse(option)
   })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -717,7 +717,7 @@
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle + ', [role=menu], [role=listbox]', Dropdown.prototype.keydown)
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -952,7 +952,7 @@
     .on('show.bs.modal', '.modal', function () { $(document.body).addClass('modal-open') })
     .on('hidden.bs.modal', '.modal', function () { $(document.body).removeClass('modal-open') })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -1342,7 +1342,7 @@
     return this
   }
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -1444,7 +1444,7 @@
     return this
   }
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -1589,7 +1589,7 @@
     })
   })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -1706,7 +1706,7 @@
     $(this).tab('show')
   })
 
-}(jQuery);
+}(wvusUikit);
 
 +function ($) {
   'use strict';
@@ -1835,7 +1835,7 @@
     })
   })
 
-}(jQuery);
+}(wvusUikit);
 
 /*!
  * bootstrap-select v1.4.2

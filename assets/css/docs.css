@@ -3,13 +3,10 @@
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
 */
-
   /* Responsive tests
 ------------------------- */
-
   /* Footer
 -------------------------------------------------- */
-
 }
 .wvus-uikit .colors {
   color: #fff;
@@ -141,7 +138,6 @@
   list-style: none;
   overflow: hidden;
   /* clear floats */
-
 }
 .wvus-uikit .responsive-utilities-test li {
   position: relative;
@@ -287,4 +283,7 @@
 }
 .wvus-uikit .hero-unit.home {
   text-align: center;
+}
+.wvus-uikit #sector .row {
+  margin-bottom: 20px;
 }
