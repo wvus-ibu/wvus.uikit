@@ -242,23 +242,6 @@ module.exports = function(grunt) {
           {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'}
         ]
       },
-      zipsrc: {
-        files: [
-          {
-            expand: true,
-            cwd: distPath,
-            src: [
-                  'css/**',
-                  'less/**',
-                  'font/**',
-                  'img/**',
-                  'js/**',
-                  'README.md',
-            ],
-            dest: '<%= pkg.name %>'
-          }
-        ]
-      },
       docs: {
         files: [
           {
@@ -278,10 +261,10 @@ module.exports = function(grunt) {
       zip: {
         options: {
           mode: 'zip',
-          archive: srcPath + '<%= pkg.name %>-<%= pkg.version %>.zip'
+          archive: '<%= pkg.name %>-<%= pkg.version %>.zip'
         },
         files: [
-          {expand:true, cwd: srcPath, src: '<%= pkg.name %>/**', dest: distPath}
+          {expand:true, cwd: distPath, src: '**/*', dest: 'wvus.uikit/'}
         ]
       }
     },
