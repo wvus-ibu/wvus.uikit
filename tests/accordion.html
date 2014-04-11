@@ -3,58 +3,73 @@ layout: test
 group: accordion
 ---
 <div class="container">
-  <div class="page-header">
-    <h1>Accordion</h1>
-  </div>
   <div class="row">
-    <div class="accordion" id="accordion">
-      <div class="accordion-group">
-        <div class="accordion-heading">
-          <a href="#sectionOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><i class="icon-minus"></i> Heading 1</a>
-        </div> 
-        <div id="sectionOne" class="accordion-body collapse in">
-          <div class="accordion-inner">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
-          </div><!-- accordion-inner -->
-        </div><!-- accordion-body -->
-      </div><!-- accordion-group -->
-      <div class="accordion-group">
-        <div class="accordion-heading">
-          <a href="#sectionTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><i class="icon-plus"></i> Heading 2</a>
-        </div>
-        <div id="sectionTwo" class="accordion-body collapse">
-          <div class="accordion-inner">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
-          </div><!-- accordion-inner -->
-        </div><!-- accordion-body -->
-      </div><!-- accordion-group -->
-      <div class="accordion-group">
-        <div class="accordion-heading">
-          <a href="#sectionThree" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><i class="icon-plus"></i> Heading 3</a>
-        </div>
-        <div id="sectionThree" class="accordion-body collapse">
-          <div class="accordion-inner">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
-          </div><!-- accordion-inner -->
-        </div><!-- accordion-body -->
-      </div><!-- accordion-group -->
+    <div class="col-md-10 col-md-offset-2">
+      <div class="page-header">
+        <h1>Accordion</h1>
+      </div>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#sectionOne" data-toggle="collapse" data-parent="#accordion">
+                <i class="fa fa-minus-circle"></i> Heading 1
+              </a>
+            </h4>
+          </div>
+          <div id="sectionOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+            </div>
+          </div><!-- /.panel-collapse -->
+        </div><!-- /.panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#sectionTwo" data-toggle="collapse" data-parent="#accordion">
+                <i class="fa fa-plus-circle"></i> Heading 2
+              </a>
+            </h4>
+          </div>
+          <div id="sectionTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+            </div><!-- accordion-inner -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-group -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#sectionThree" data-toggle="collapse" data-parent="#accordion">
+                <i class="fa fa-plus-circle"></i> Heading 3
+              </a>
+            </h4>
+          </div>
+          <div id="sectionThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse, saepe, sunt veniam obcaecati quis autem fugiat laborum repudiandae beatae quia doloribus atque perspiciatis omnis velit eveniet tempora maiores voluptatum.
+            </div><!-- accordion-inner -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-group -->
+      </div>
     </div>
   </div><!-- /row -->
 
 
   <div class="row">
-    <h1>Button Collapse</h1>
-    <div class="span1">
-      <button class="btn btn-danger" data-toggle="collapse" data-target="#menu">Collapse</button>
+    <div class="col-md-10 col-md-offset-2">
+      <h1>Button Collapse</h1>
+      <div class="span1">
+        <button class="btn btn-danger" data-toggle="collapse" data-target="#menu">Collapse</button>
+      </div>
+      <div class="span4 collapse " id="menu">
+        <a href="#">A link</a> |
+        <a href="#">A link</a> |
+        <a href="#">A link</a> |
+        <a href="#">A link</a> |
+        <a href="#">A link</a>
+      </div>
     </div>
-    <div class="span4 collapse " id="menu">
-      <a href="#">A link</a> |
-      <a href="#">A link</a> |
-      <a href="#">A link</a> |
-      <a href="#">A link</a> |
-      <a href="#">A link</a>
-    </div>
-
   </div>
 </div>
 
