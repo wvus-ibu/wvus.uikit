@@ -9,7 +9,8 @@ module.exports = function(grunt) {
       bootstrapLessPath = libPath + 'bootstrap/less/',
       bootstrapJsPath = libPath + 'bootstrap/js/',
       fontAwesomePath = libPath + 'font-awesome/',
-      jqueryPath = libPath + 'jquery/dist/',
+      jqueryPath = libPath + 'jquery/',
+      datepickerPath = libPath + 'bootstrap-datepicker/',
       worldVisionPath = libPath + 'worldvision/';
 
   // Project configuration.
@@ -32,7 +33,7 @@ module.exports = function(grunt) {
       },
       jquery: {
         src: [
-          jqueryPath + 'jquery.js',
+          jqueryPath + 'dist/jquery.js',
           worldVisionPath + 'js/namespace.js'
         ],
         dest: distPath + 'js/jquery-custom.js'
@@ -275,10 +276,13 @@ module.exports = function(grunt) {
       jquery: {
         files: [
           {
-            src: ['lib/jquery/**/*', '!lib/jquery/dist/*'],
-            filter: 'isFile'
+            src: [jqueryPath + 'src/**'],
           },
-          {src: ['lib/jquery/src']}
+        ]
+      },
+      datepicker: {
+        files: [
+          {src: [datepickerPath + 'docs', datepickerPath + 'tests']}
         ]
       }
     },
@@ -299,7 +303,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner']);
-  grunt.registerTask('dist-js', [ 'concat', 'replace', 'uglify']);
+  grunt.registerTask('dist-js', ['concat', 'replace', 'uglify']);
 
   // TODO: add tests to this task when implemented
   grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress']);
