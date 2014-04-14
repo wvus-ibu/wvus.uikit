@@ -119,19 +119,12 @@ module.exports = function(grunt) {
     },
 
     comments: {
-      bootstrap: {
+      lib: {
         options: {
           singleline: false,
           multiline: true
         },
-        src: [bootstrapLessPath + '*.less']
-      },
-      fontAwesome: {
-        options: {
-          singleline: false,
-          multiline: true
-        },
-        src: ['lib/font-awesome/less/*.less']
+        src: [bootstrapLessPath + '*.less', 'lib/font-awesome/less/*.less', 'lib/bootstrap-datepicker/less/datepicker3.less']
       }
     },
 
