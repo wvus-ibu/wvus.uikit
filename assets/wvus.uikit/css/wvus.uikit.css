@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0-beta - 2014-04-11
+/*! wvus.uikit - v2.0.0-beta - 2014-04-14
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -7492,7 +7492,7 @@ a.wvus-uikit .list-group-item-danger.active:focus
 
     filter: alpha(opacity=50);
 }
-button.wvus-uikit .close
+.wvus-uikit button.close
 {
     padding: 0;
 
@@ -8433,6 +8433,884 @@ button.wvus-uikit .close
     {
         display: none !important;
     }
+}
+.wvus-uikit .datepicker
+{
+    padding: 4px;
+
+    border-radius: 4px;
+
+    direction: ltr;
+}
+.wvus-uikit .datepicker-inline
+{
+    width: 220px;
+}
+.wvus-uikit .datepicker.wvus-uikit .datepicker-rtl
+{
+    direction: rtl;
+}
+.wvus-uikit .datepicker.wvus-uikit .datepicker-rtl table tr td span
+{
+    float: right;
+}
+.wvus-uikit .datepicker-dropdown
+{
+    top: 0;
+    left: 0;
+}
+.wvus-uikit .datepicker-dropdown:before
+{
+    position: absolute;
+
+    display: inline-block;
+
+    content: '';
+
+    border-top: 0;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-bottom-color: rgba(0, 0, 0, .2);
+    border-left: 7px solid transparent;
+}
+.wvus-uikit .datepicker-dropdown:after
+{
+    position: absolute;
+
+    display: inline-block;
+
+    content: '';
+
+    border-top: 0;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-left:before
+{
+    left: 6px;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-left:after
+{
+    left: 7px;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-right:before
+{
+    right: 6px;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-right:after
+{
+    right: 7px;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-top:before
+{
+    top: -7px;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-top:after
+{
+    top: -6px;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-bottom:before
+{
+    bottom: -7px;
+
+    border-top: 7px solid #999;
+    border-bottom: 0;
+}
+.wvus-uikit .datepicker-dropdown.datepicker-orient-bottom:after
+{
+    bottom: -6px;
+
+    border-top: 6px solid #fff;
+    border-bottom: 0;
+}
+.wvus-uikit .datepicker > div
+{
+    display: none;
+}
+.wvus-uikit .datepicker.days div.datepicker-days
+{
+    display: block;
+}
+.wvus-uikit .datepicker.months div.datepicker-months
+{
+    display: block;
+}
+.wvus-uikit .datepicker.years div.datepicker-years
+{
+    display: block;
+}
+.wvus-uikit .datepicker table
+{
+    margin: 0;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+.wvus-uikit .datepicker table tr td,
+.wvus-uikit .datepicker table tr th
+{
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+
+    border: none;
+    border-radius: 4px;
+}
+.table-striped .wvus-uikit .datepicker table tr td,
+.table-striped .wvus-uikit .datepicker table tr th
+{
+    background-color: transparent;
+}
+.wvus-uikit .datepicker table tr td.day:hover,
+.wvus-uikit .datepicker table tr td.day.focused
+{
+    cursor: pointer;
+
+    background: #eee;
+}
+.wvus-uikit .datepicker table tr td.old,
+.wvus-uikit .datepicker table tr td.new
+{
+    color: #999;
+}
+.wvus-uikit .datepicker table tr td.disabled,
+.wvus-uikit .datepicker table tr td.disabled:hover
+{
+    cursor: default;
+
+    color: #999;
+    background: none;
+}
+.wvus-uikit .datepicker table tr td.today,
+.wvus-uikit .datepicker table tr td.today:hover,
+.wvus-uikit .datepicker table tr td.today.disabled,
+.wvus-uikit .datepicker table tr td.today.disabled:hover
+{
+    color: #000;
+    border-color: #ffb733;
+    background-color: #ffdb99;
+}
+.wvus-uikit .datepicker table tr td.today:hover,
+.wvus-uikit .datepicker table tr td.today:hover:hover,
+.wvus-uikit .datepicker table tr td.today.disabled:hover,
+.wvus-uikit .datepicker table tr td.today.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.today:focus,
+.wvus-uikit .datepicker table tr td.today:hover:focus,
+.wvus-uikit .datepicker table tr td.today.disabled:focus,
+.wvus-uikit .datepicker table tr td.today.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.today:active,
+.wvus-uikit .datepicker table tr td.today:hover:active,
+.wvus-uikit .datepicker table tr td.today.disabled:active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.today.active,
+.wvus-uikit .datepicker table tr td.today:hover.active,
+.wvus-uikit .datepicker table tr td.today.disabled.active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today.disabled:hover
+{
+    color: #000;
+    border-color: #f59e00;
+    background-color: #ffcd70;
+}
+.wvus-uikit .datepicker table tr td.today:active,
+.wvus-uikit .datepicker table tr td.today:hover:active,
+.wvus-uikit .datepicker table tr td.today.disabled:active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.today.active,
+.wvus-uikit .datepicker table tr td.today:hover.active,
+.wvus-uikit .datepicker table tr td.today.disabled.active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.today.disabled:hover
+{
+    background-image: none;
+}
+.wvus-uikit .datepicker table tr td.today.disabled,
+.wvus-uikit .datepicker table tr td.today:hover.disabled,
+.wvus-uikit .datepicker table tr td.today.disabled.disabled,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.disabled,
+.wvus-uikit .datepicker table tr td.today[disabled],
+.wvus-uikit .datepicker table tr td.today:hover[disabled],
+.wvus-uikit .datepicker table tr td.today.disabled[disabled],
+.wvus-uikit .datepicker table tr td.today.disabled:hover[disabled],
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:hover,
+.wvus-uikit .datepicker table tr td.today.disabled:hover,
+.wvus-uikit .datepicker table tr td.today:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.today.disabled.disabled:hover,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.today[disabled]:hover,
+.wvus-uikit .datepicker table tr td.today:hover[disabled]:hover,
+.wvus-uikit .datepicker table tr td.today.disabled[disabled]:hover,
+.wvus-uikit .datepicker table tr td.today.disabled:hover[disabled]:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:hover:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.today.disabled:focus,
+.wvus-uikit .datepicker table tr td.today:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.today.disabled.disabled:focus,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.today[disabled]:focus,
+.wvus-uikit .datepicker table tr td.today:hover[disabled]:focus,
+.wvus-uikit .datepicker table tr td.today.disabled[disabled]:focus,
+.wvus-uikit .datepicker table tr td.today.disabled:hover[disabled]:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:hover:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.today.disabled:active,
+.wvus-uikit .datepicker table tr td.today:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.today.disabled.disabled:active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.today[disabled]:active,
+.wvus-uikit .datepicker table tr td.today:hover[disabled]:active,
+.wvus-uikit .datepicker table tr td.today.disabled[disabled]:active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover[disabled]:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:hover:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.today.disabled.active,
+.wvus-uikit .datepicker table tr td.today:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.today.disabled.disabled.active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.today[disabled].active,
+.wvus-uikit .datepicker table tr td.today:hover[disabled].active,
+.wvus-uikit .datepicker table tr td.today.disabled[disabled].active,
+.wvus-uikit .datepicker table tr td.today.disabled:hover[disabled].active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today:hover.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.today.disabled:hover.active
+{
+    border-color: #ffb733;
+    background-color: #ffdb99;
+}
+.wvus-uikit .datepicker table tr td.today .badge,
+.wvus-uikit .datepicker table tr td.today:hover .badge,
+.wvus-uikit .datepicker table tr td.today.disabled .badge,
+.wvus-uikit .datepicker table tr td.today.disabled:hover .badge
+{
+    color: #ffdb99;
+    background-color: #000;
+}
+.wvus-uikit .datepicker table tr td.today:hover:hover
+{
+    color: #000;
+}
+.wvus-uikit .datepicker table tr td.today.active:hover
+{
+    color: #fff;
+}
+.wvus-uikit .datepicker table tr td.range,
+.wvus-uikit .datepicker table tr td.range:hover,
+.wvus-uikit .datepicker table tr td.range.disabled,
+.wvus-uikit .datepicker table tr td.range.disabled:hover
+{
+    border-radius: 0;
+    background: #eee;
+}
+.wvus-uikit .datepicker table tr td.range.today,
+.wvus-uikit .datepicker table tr td.range.today:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover
+{
+    color: #000;
+    border-color: #f1a417;
+    border-radius: 0;
+    background-color: #f7ca77;
+}
+.wvus-uikit .datepicker table tr td.range.today:hover,
+.wvus-uikit .datepicker table tr td.range.today:hover:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.range.today:focus,
+.wvus-uikit .datepicker table tr td.range.today:hover:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.range.today:active,
+.wvus-uikit .datepicker table tr td.range.today:hover:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.range.today.active,
+.wvus-uikit .datepicker table tr td.range.today:hover.active,
+.wvus-uikit .datepicker table tr td.range.today.disabled.active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today.disabled:hover
+{
+    color: #000;
+    border-color: #bf800c;
+    background-color: #f4bb51;
+}
+.wvus-uikit .datepicker table tr td.range.today:active,
+.wvus-uikit .datepicker table tr td.range.today:hover:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.range.today.active,
+.wvus-uikit .datepicker table tr td.range.today:hover.active,
+.wvus-uikit .datepicker table tr td.range.today.disabled.active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.range.today.disabled:hover
+{
+    background-image: none;
+}
+.wvus-uikit .datepicker table tr td.range.today.disabled,
+.wvus-uikit .datepicker table tr td.range.today:hover.disabled,
+.wvus-uikit .datepicker table tr td.range.today.disabled.disabled,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.disabled,
+.wvus-uikit .datepicker table tr td.range.today[disabled],
+.wvus-uikit .datepicker table tr td.range.today:hover[disabled],
+.wvus-uikit .datepicker table tr td.range.today.disabled[disabled],
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover[disabled],
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover,
+.wvus-uikit .datepicker table tr td.range.today:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled.disabled:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.range.today[disabled]:hover,
+.wvus-uikit .datepicker table tr td.range.today:hover[disabled]:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled[disabled]:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover[disabled]:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:hover:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.range.today.disabled:focus,
+.wvus-uikit .datepicker table tr td.range.today:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled.disabled:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.range.today[disabled]:focus,
+.wvus-uikit .datepicker table tr td.range.today:hover[disabled]:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled[disabled]:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover[disabled]:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:hover:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.range.today.disabled:active,
+.wvus-uikit .datepicker table tr td.range.today:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled.disabled:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.range.today[disabled]:active,
+.wvus-uikit .datepicker table tr td.range.today:hover[disabled]:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled[disabled]:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover[disabled]:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:hover:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.range.today.disabled.active,
+.wvus-uikit .datepicker table tr td.range.today:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.range.today.disabled.disabled.active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.range.today[disabled].active,
+.wvus-uikit .datepicker table tr td.range.today:hover[disabled].active,
+.wvus-uikit .datepicker table tr td.range.today.disabled[disabled].active,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover[disabled].active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today:hover.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.range.today.disabled:hover.active
+{
+    border-color: #f1a417;
+    background-color: #f7ca77;
+}
+.wvus-uikit .datepicker table tr td.range.today .badge,
+.wvus-uikit .datepicker table tr td.range.today:hover .badge,
+.wvus-uikit .datepicker table tr td.range.today.disabled .badge,
+.wvus-uikit .datepicker table tr td.range.today.disabled:hover .badge
+{
+    color: #f7ca77;
+    background-color: #000;
+}
+.wvus-uikit .datepicker table tr td.selected,
+.wvus-uikit .datepicker table tr td.selected:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover
+{
+    color: #fff;
+    border-color: #666;
+    background-color: #999;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+.wvus-uikit .datepicker table tr td.selected:hover,
+.wvus-uikit .datepicker table tr td.selected:hover:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.selected:focus,
+.wvus-uikit .datepicker table tr td.selected:hover:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.selected:active,
+.wvus-uikit .datepicker table tr td.selected:hover:active,
+.wvus-uikit .datepicker table tr td.selected.disabled:active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.selected.active,
+.wvus-uikit .datepicker table tr td.selected:hover.active,
+.wvus-uikit .datepicker table tr td.selected.disabled.active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected.disabled:hover
+{
+    color: #fff;
+    border-color: #474747;
+    background-color: #858585;
+}
+.wvus-uikit .datepicker table tr td.selected:active,
+.wvus-uikit .datepicker table tr td.selected:hover:active,
+.wvus-uikit .datepicker table tr td.selected.disabled:active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.selected.active,
+.wvus-uikit .datepicker table tr td.selected:hover.active,
+.wvus-uikit .datepicker table tr td.selected.disabled.active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.selected.disabled:hover
+{
+    background-image: none;
+}
+.wvus-uikit .datepicker table tr td.selected.disabled,
+.wvus-uikit .datepicker table tr td.selected:hover.disabled,
+.wvus-uikit .datepicker table tr td.selected.disabled.disabled,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.disabled,
+.wvus-uikit .datepicker table tr td.selected[disabled],
+.wvus-uikit .datepicker table tr td.selected:hover[disabled],
+.wvus-uikit .datepicker table tr td.selected.disabled[disabled],
+.wvus-uikit .datepicker table tr td.selected.disabled:hover[disabled],
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover,
+.wvus-uikit .datepicker table tr td.selected:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled.disabled:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.selected[disabled]:hover,
+.wvus-uikit .datepicker table tr td.selected:hover[disabled]:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled[disabled]:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover[disabled]:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:hover:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.selected.disabled:focus,
+.wvus-uikit .datepicker table tr td.selected:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled.disabled:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.selected[disabled]:focus,
+.wvus-uikit .datepicker table tr td.selected:hover[disabled]:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled[disabled]:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover[disabled]:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:hover:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.selected.disabled:active,
+.wvus-uikit .datepicker table tr td.selected:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.selected.disabled.disabled:active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.selected[disabled]:active,
+.wvus-uikit .datepicker table tr td.selected:hover[disabled]:active,
+.wvus-uikit .datepicker table tr td.selected.disabled[disabled]:active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover[disabled]:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:hover:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.selected.disabled.active,
+.wvus-uikit .datepicker table tr td.selected:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.selected.disabled.disabled.active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.selected[disabled].active,
+.wvus-uikit .datepicker table tr td.selected:hover[disabled].active,
+.wvus-uikit .datepicker table tr td.selected.disabled[disabled].active,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover[disabled].active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected:hover.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.selected.disabled:hover.active
+{
+    border-color: #666;
+    background-color: #999;
+}
+.wvus-uikit .datepicker table tr td.selected .badge,
+.wvus-uikit .datepicker table tr td.selected:hover .badge,
+.wvus-uikit .datepicker table tr td.selected.disabled .badge,
+.wvus-uikit .datepicker table tr td.selected.disabled:hover .badge
+{
+    color: #999;
+    background-color: #fff;
+}
+.wvus-uikit .datepicker table tr td.active,
+.wvus-uikit .datepicker table tr td.active:hover,
+.wvus-uikit .datepicker table tr td.active.disabled,
+.wvus-uikit .datepicker table tr td.active.disabled:hover
+{
+    color: #fff;
+    border-color: #e65c00;
+    background-color: #f60;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+.wvus-uikit .datepicker table tr td.active:hover,
+.wvus-uikit .datepicker table tr td.active:hover:hover,
+.wvus-uikit .datepicker table tr td.active.disabled:hover,
+.wvus-uikit .datepicker table tr td.active.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.active:focus,
+.wvus-uikit .datepicker table tr td.active:hover:focus,
+.wvus-uikit .datepicker table tr td.active.disabled:focus,
+.wvus-uikit .datepicker table tr td.active.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.active:active,
+.wvus-uikit .datepicker table tr td.active:hover:active,
+.wvus-uikit .datepicker table tr td.active.disabled:active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.active.active,
+.wvus-uikit .datepicker table tr td.active:hover.active,
+.wvus-uikit .datepicker table tr td.active.disabled.active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active.disabled:hover
+{
+    color: #fff;
+    border-color: #a84300;
+    background-color: #d65600;
+}
+.wvus-uikit .datepicker table tr td.active:active,
+.wvus-uikit .datepicker table tr td.active:hover:active,
+.wvus-uikit .datepicker table tr td.active.disabled:active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.active.active,
+.wvus-uikit .datepicker table tr td.active:hover.active,
+.wvus-uikit .datepicker table tr td.active.disabled.active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td.active.disabled:hover
+{
+    background-image: none;
+}
+.wvus-uikit .datepicker table tr td.active.disabled,
+.wvus-uikit .datepicker table tr td.active:hover.disabled,
+.wvus-uikit .datepicker table tr td.active.disabled.disabled,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.disabled,
+.wvus-uikit .datepicker table tr td.active[disabled],
+.wvus-uikit .datepicker table tr td.active:hover[disabled],
+.wvus-uikit .datepicker table tr td.active.disabled[disabled],
+.wvus-uikit .datepicker table tr td.active.disabled:hover[disabled],
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:hover,
+.wvus-uikit .datepicker table tr td.active.disabled:hover,
+.wvus-uikit .datepicker table tr td.active:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.active.disabled.disabled:hover,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td.active[disabled]:hover,
+.wvus-uikit .datepicker table tr td.active:hover[disabled]:hover,
+.wvus-uikit .datepicker table tr td.active.disabled[disabled]:hover,
+.wvus-uikit .datepicker table tr td.active.disabled:hover[disabled]:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:hover:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td.active.disabled:focus,
+.wvus-uikit .datepicker table tr td.active:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.active.disabled.disabled:focus,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td.active[disabled]:focus,
+.wvus-uikit .datepicker table tr td.active:hover[disabled]:focus,
+.wvus-uikit .datepicker table tr td.active.disabled[disabled]:focus,
+.wvus-uikit .datepicker table tr td.active.disabled:hover[disabled]:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:hover:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td.active.disabled:active,
+.wvus-uikit .datepicker table tr td.active:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.active.disabled.disabled:active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.disabled:active,
+.wvus-uikit .datepicker table tr td.active[disabled]:active,
+.wvus-uikit .datepicker table tr td.active:hover[disabled]:active,
+.wvus-uikit .datepicker table tr td.active.disabled[disabled]:active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover[disabled]:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:hover:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:hover:active,
+.wvus-uikit .datepicker table tr td.active.disabled.active,
+.wvus-uikit .datepicker table tr td.active:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.active.disabled.disabled.active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover.disabled.active,
+.wvus-uikit .datepicker table tr td.active[disabled].active,
+.wvus-uikit .datepicker table tr td.active:hover[disabled].active,
+.wvus-uikit .datepicker table tr td.active.disabled[disabled].active,
+.wvus-uikit .datepicker table tr td.active.disabled:hover[disabled].active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active:hover.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td.active.disabled:hover.active
+{
+    border-color: #e65c00;
+    background-color: #f60;
+}
+.wvus-uikit .datepicker table tr td.active .badge,
+.wvus-uikit .datepicker table tr td.active:hover .badge,
+.wvus-uikit .datepicker table tr td.active.disabled .badge,
+.wvus-uikit .datepicker table tr td.active.disabled:hover .badge
+{
+    color: #f60;
+    background-color: #fff;
+}
+.wvus-uikit .datepicker table tr td span
+{
+    line-height: 54px;
+
+    display: block;
+    float: left;
+
+    width: 23%;
+    height: 54px;
+    margin: 1%;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+}
+.wvus-uikit .datepicker table tr td span:hover
+{
+    background: #eee;
+}
+.wvus-uikit .datepicker table tr td span.disabled,
+.wvus-uikit .datepicker table tr td span.disabled:hover
+{
+    cursor: default;
+
+    color: #999;
+    background: none;
+}
+.wvus-uikit .datepicker table tr td span.active,
+.wvus-uikit .datepicker table tr td span.active:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover
+{
+    color: #fff;
+    border-color: #e65c00;
+    background-color: #f60;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+.wvus-uikit .datepicker table tr td span.active:hover,
+.wvus-uikit .datepicker table tr td span.active:hover:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td span.active:focus,
+.wvus-uikit .datepicker table tr td span.active:hover:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td span.active:active,
+.wvus-uikit .datepicker table tr td span.active:hover:active,
+.wvus-uikit .datepicker table tr td span.active.disabled:active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover:active,
+.wvus-uikit .datepicker table tr td span.active.active,
+.wvus-uikit .datepicker table tr td span.active:hover.active,
+.wvus-uikit .datepicker table tr td span.active.disabled.active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active.disabled:hover
+{
+    color: #fff;
+    border-color: #a84300;
+    background-color: #d65600;
+}
+.wvus-uikit .datepicker table tr td span.active:active,
+.wvus-uikit .datepicker table tr td span.active:hover:active,
+.wvus-uikit .datepicker table tr td span.active.disabled:active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover:active,
+.wvus-uikit .datepicker table tr td span.active.active,
+.wvus-uikit .datepicker table tr td span.active:hover.active,
+.wvus-uikit .datepicker table tr td span.active.disabled.active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active:hover,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.wvus-uikit .datepicker table tr td span.active.disabled:hover
+{
+    background-image: none;
+}
+.wvus-uikit .datepicker table tr td span.active.disabled,
+.wvus-uikit .datepicker table tr td span.active:hover.disabled,
+.wvus-uikit .datepicker table tr td span.active.disabled.disabled,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.disabled,
+.wvus-uikit .datepicker table tr td span.active[disabled],
+.wvus-uikit .datepicker table tr td span.active:hover[disabled],
+.wvus-uikit .datepicker table tr td span.active.disabled[disabled],
+.wvus-uikit .datepicker table tr td span.active.disabled:hover[disabled],
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover,
+.wvus-uikit .datepicker table tr td span.active:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled.disabled:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.disabled:hover,
+.wvus-uikit .datepicker table tr td span.active[disabled]:hover,
+.wvus-uikit .datepicker table tr td span.active:hover[disabled]:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled[disabled]:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover[disabled]:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:hover:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:hover,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:hover:hover,
+.wvus-uikit .datepicker table tr td span.active.disabled:focus,
+.wvus-uikit .datepicker table tr td span.active:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled.disabled:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.disabled:focus,
+.wvus-uikit .datepicker table tr td span.active[disabled]:focus,
+.wvus-uikit .datepicker table tr td span.active:hover[disabled]:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled[disabled]:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover[disabled]:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:hover:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:focus,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:hover:focus,
+.wvus-uikit .datepicker table tr td span.active.disabled:active,
+.wvus-uikit .datepicker table tr td span.active:hover.disabled:active,
+.wvus-uikit .datepicker table tr td span.active.disabled.disabled:active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.disabled:active,
+.wvus-uikit .datepicker table tr td span.active[disabled]:active,
+.wvus-uikit .datepicker table tr td span.active:hover[disabled]:active,
+.wvus-uikit .datepicker table tr td span.active.disabled[disabled]:active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover[disabled]:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:hover:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:hover:active,
+.wvus-uikit .datepicker table tr td span.active.disabled.active,
+.wvus-uikit .datepicker table tr td span.active:hover.disabled.active,
+.wvus-uikit .datepicker table tr td span.active.disabled.disabled.active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover.disabled.active,
+.wvus-uikit .datepicker table tr td span.active[disabled].active,
+.wvus-uikit .datepicker table tr td span.active:hover[disabled].active,
+.wvus-uikit .datepicker table tr td span.active.disabled[disabled].active,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover[disabled].active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active:hover.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled.active,
+fieldset[disabled] .wvus-uikit .datepicker table tr td span.active.disabled:hover.active
+{
+    border-color: #e65c00;
+    background-color: #f60;
+}
+.wvus-uikit .datepicker table tr td span.active .badge,
+.wvus-uikit .datepicker table tr td span.active:hover .badge,
+.wvus-uikit .datepicker table tr td span.active.disabled .badge,
+.wvus-uikit .datepicker table tr td span.active.disabled:hover .badge
+{
+    color: #f60;
+    background-color: #fff;
+}
+.wvus-uikit .datepicker table tr td span.old,
+.wvus-uikit .datepicker table tr td span.new
+{
+    color: #999;
+}
+.wvus-uikit .datepicker th.datepicker-switch
+{
+    width: 145px;
+}
+.wvus-uikit .datepicker thead tr:first-child th,
+.wvus-uikit .datepicker tfoot tr th
+{
+    cursor: pointer;
+}
+.wvus-uikit .datepicker thead tr:first-child th:hover,
+.wvus-uikit .datepicker tfoot tr th:hover
+{
+    background: #eee;
+}
+.wvus-uikit .datepicker .cw
+{
+    font-size: 10px;
+
+    width: 12px;
+    padding: 0 2px 0 5px;
+
+    vertical-align: middle;
+}
+.wvus-uikit .datepicker thead tr:first-child th.cw
+{
+    cursor: default;
+
+    background-color: transparent;
+}
+.wvus-uikit .input-group.date .input-group-addon i
+{
+    width: 16px;
+    height: 16px;
+
+    cursor: pointer;
+}
+.wvus-uikit .input-daterange input
+{
+    text-align: center;
+}
+.wvus-uikit .input-daterange input:first-child
+{
+    border-radius: 3px 0 0 3px;
+}
+.wvus-uikit .input-daterange input:last-child
+{
+    border-radius: 0 3px 3px 0;
+}
+.wvus-uikit .input-daterange .input-group-addon
+{
+    font-weight: normal;
+    line-height: 1.42857143;
+
+    width: auto;
+    min-width: 16px;
+    margin-right: -5px;
+    margin-left: -5px;
+    padding: 4px 5px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border: solid #ccc;
+    border-width: 1px 0;
+    background-color: #eee;
+    text-shadow: 0 1px 0 #fff;
 }
 .wvus-uikit .sector
 {
