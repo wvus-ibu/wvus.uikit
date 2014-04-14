@@ -1,5 +1,6 @@
 @bootstrapPath: "../../bootstrap/less/";
-@fontawesomePath: "../../font-awesome/less";
+@fontawesomePath: "../../font-awesome/less/";
+@datepickerPath: "../../bootstrap-datepicker/less/";
 .wvus-uikit{
 
   // Core variables and mixins
@@ -22,7 +23,7 @@
   // Components
   @import "@{bootstrapPath}component-animations.less";
   //@import "@{bootstrapPath}glyphicons.less";
-  @import "@{fontawesomePath}/font-awesome.less";
+  @import "@{fontawesomePath}font-awesome.less";
   @import "@{bootstrapPath}dropdowns.less";
   @import "@{bootstrapPath}button-groups.less";
   @import "@{bootstrapPath}input-groups.less";
@@ -62,6 +63,9 @@
   // // World Vision Navbar
   // @import "wv-navbar.less";
   // @import "wv-images.less";
+
+  // Bootstrap-datepicker
+  @import "@{datepickerPath}datepicker3.less";
 
   // Sector Icons
   @import "sector-svg.less";
