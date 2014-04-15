@@ -141,17 +141,6 @@ module.exports = function(grunt) {
         src: worldVisionPath + 'less/wvus.uikit.less',
         dest: distPath + 'css/<%= pkg.name %>.css'
       },
-      theme: {
-        options: {
-          outputSourceFiles: true,
-          sourceMap: true,
-          sourceMapFilename: distPath + 'css/<%= pkg.name %>-theme.css.map',
-          sourceMapRootpath: srcPath,
-          sourceMapURL: '<%= pkg.name %>-theme.css.map'
-        },
-        src: worldVisionPath + 'less/theme.less',
-        dest: distPath + 'css/<%= pkg.name %>-theme.css'
-      },
       minify: {
         options: {
           cleancss: true,
@@ -159,7 +148,6 @@ module.exports = function(grunt) {
         },
         files: [
           {src: ['<%= less.dist.dest %>'], dest: distPath + 'css/<%= pkg.name %>.min.css'},
-          {src: ['<%= less.theme.dest %>'], dest: distPath + 'css/<%= pkg.name %>-theme.min.css'}
         ]
       }
     },
@@ -172,7 +160,7 @@ module.exports = function(grunt) {
             {id: 'text', dest: 'csslint-lib.txt'}
           ],
         },
-        src: ['<%= less.dist.dest %>', '<%= less.theme.dest %>']
+        src: ['<%= less.dist.dest %>']
       },
     },
 
@@ -184,9 +172,6 @@ module.exports = function(grunt) {
       dist: {
         src: '<%= less.dist.dest =>'
       },
-      theme: {
-        src: '<%= less.theme.dest %>'
-      }
     },
 
     csscomb: {
@@ -197,10 +182,6 @@ module.exports = function(grunt) {
         src: '<%= less.dist.dest %>',
         dest: '<%= less.dist.dest %>'
       },
-      theme: {
-        src: '<%= less.theme.dest %>',
-        dest: '<%= less.theme.dest %>'
-      }
     },
 
     usebanner:{
@@ -213,9 +194,7 @@ module.exports = function(grunt) {
         files: {
           src: [
             '<%= less.dist.dest %>',
-            distPath + 'css/<%= pkg.name %>.min.css',
-            '<%= less.theme.dest %>',
-            distPath + 'css/<%= pkg.name %>-theme.min.css'
+            distPath + 'css/<%= pkg.name %>.min.css'
           ]
         }
       }
