@@ -52,8 +52,8 @@ module.exports = function(grunt) {
             bootstrapJsPath + 'scrollspy.js',
             bootstrapJsPath + 'tab.js',
             bootstrapJsPath + 'affix.js',
-            datepickerPath + 'js/bootstrap-datepicker.js'
-            //libPath + 'bootstrap-select/bootstrap-select.js'
+            datepickerPath + 'js/bootstrap-datepicker.js',
+            libPath + 'bootstrap-select/bootstrap-select.js'
             ],
 
         dest: distPath + 'js/<%= pkg.name %>.js'

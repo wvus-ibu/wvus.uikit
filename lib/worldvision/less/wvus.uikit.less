@@ -1,6 +1,8 @@
 @bootstrapPath: "../../bootstrap/less/";
 @fontawesomePath: "../../font-awesome/less/";
 @datepickerPath: "../../bootstrap-datepicker/less/";
+@bootstrapSelectPath: "../../bootstrap-select/";
+
 .wvusUikit{
 
   // Core variables and mixins
@@ -57,13 +59,11 @@
     // World Vision Theme
   @import "theme.less";
 
-  // // Bootstrap-select
-  // @import "../../bootstrap-select/bootstrap-select.less";
 
-  // // World Vision Customizations
-  // @import "wv-styles.less";
-  // // World Vision Navbar
-  // @import "wv-navbar.less";
+  // Bootstrap-select
+  @import "@{bootstrapSelectPath}bootstrap-select.less";
+
+
   // @import "wv-images.less";
 
   // Bootstrap-datepicker
@@ -71,5 +71,7 @@
 
   // Sector Icons
   @import "sector-svg.less";
+
+
 
 }
