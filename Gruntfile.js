@@ -11,6 +11,7 @@ module.exports = function(grunt) {
       fontAwesomePath = libPath + 'font-awesome/',
       jqueryPath = libPath + 'jquery/',
       datepickerPath = libPath + 'bootstrap-datepicker/',
+      videojsPath = libPath + 'videojs/dist/video-js/',
       worldVisionPath = libPath + 'worldvision/';
 
   // Project configuration.
@@ -54,6 +55,7 @@ module.exports = function(grunt) {
             bootstrapJsPath + 'affix.js',
             datepickerPath + 'js/bootstrap-datepicker.js',
             libPath + 'bootstrap-select/bootstrap-select.js'
+            videojsPath + 'video.dev.js'
             ],
 
         dest: distPath + 'js/<%= pkg.name %>.js'
@@ -215,6 +217,8 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'},
           {expand: true, cwd: libPath + 'modernizer', src: '**', dest: distPath + 'js/'}
+          {expand: true, cwd: videojsPath, src: "video.js", dest: distPath + 'js/'},
+          {expand: true, cwd: videojsPath + "font", src: '**', dest: distPath + 'fonts'}
         ]
       },
       docs: {
