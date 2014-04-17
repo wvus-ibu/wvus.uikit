@@ -6,8 +6,10 @@ module.exports = function(grunt) {
   var srcPath = './',
       libPath = srcPath + 'lib/',
       distPath = srcPath + 'dist/',
-      bootstrapLessPath = libPath + 'bootstrap/less/',
-      bootstrapJsPath = libPath + 'bootstrap/js/',
+      bootstrapPath = libPath + 'bootstrap/',
+      bootstrapLessPath = bootstrapPath + 'less/',
+      bootstrapJsPath = bootstrapPath + 'js/',
+      bootstrapSelectPath = libPath + 'bootstrap-select/',
       fontAwesomePath = libPath + 'font-awesome/',
       jqueryPath = libPath + 'jquery/',
       datepickerPath = libPath + 'bootstrap-datepicker/',
@@ -54,7 +56,7 @@ module.exports = function(grunt) {
             bootstrapJsPath + 'tab.js',
             bootstrapJsPath + 'affix.js',
             datepickerPath + 'js/bootstrap-datepicker.js',
-            libPath + 'bootstrap-select/bootstrap-select.js'
+            bootstrapSelectPath + 'bootstrap-select.js',
             videojsPath + 'video.dev.js'
             ],
 
@@ -127,7 +129,11 @@ module.exports = function(grunt) {
           singleline: false,
           multiline: true
         },
-        src: [bootstrapLessPath + '*.less', 'lib/font-awesome/less/*.less', 'lib/bootstrap-datepicker/less/datepicker3.less']
+        src: [bootstrapLessPath + '*.less',
+        fontAwesomePath + 'less/*.less',
+        datepickerPath + 'less/datepicker3.less',
+        bootstrapSelectPath + 'bootstrap-select.less',
+        worldVisionPath + 'less/video-js-skin.less']
       }
     },
 
@@ -218,7 +224,8 @@ module.exports = function(grunt) {
           {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'},
           {expand: true, cwd: libPath + 'modernizer', src: '**', dest: distPath + 'js/'},
           {expand: true, cwd: videojsPath, src: "video.js", dest: distPath + 'js/'},
-          {expand: true, cwd: videojsPath + "font", src: '**', dest: distPath + 'fonts'}
+          {expand: true, cwd: videojsPath + "font", src: '**', dest: distPath + 'fonts'},
+          {expand: true, cwd: bootstrapPath + 'fonts', src: '**', dest: distPath + 'fonts'},
         ]
       },
       docs: {
