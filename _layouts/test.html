@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="wvus-uikit">
+<html lang="en" class="wvusUikit">
   <head>
     <meta charset="utf-8">
     <title>WV UiKit, {{ page.group }}</title>
@@ -9,7 +9,8 @@
     <!-- Le styles -->
 
     <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
-   <link href="../../assets/wvus.uikit/css/wvus.uikit-theme.css" rel="stylesheet">
+
+
 
 
     {% case page.group %}
@@ -28,7 +29,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="../../assets/wvus.uikit/js/modernizer.min.js"></script>
+    <script src="../../assets/wvus.uikit/js/modernizer.js"></script>
 
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
@@ -48,6 +49,7 @@
 
     <script src="../../assets/wvus.uikit/js/jquery-custom.min.js"></script>
     <script src="../../assets/wvus.uikit/js/wvus.uikit.js"></script>
+
 
     {% case page.group %}
         {% when "css-tests" %}
@@ -188,9 +190,36 @@
       <script type="text/javascript">
           wvusUikit(document).ready(function() {
             wvusUikit('.input-group.date').datepicker({});
-            wvusUikit('.input-group.input-daterange').datepicker({ todayBtn: "linked", todayHighlight: true});
+            wvusUikit('.input-group.input-daterange').datepicker({ todayBtn: "linked", todayHighlight: true, format: "mm/yyyy", startView: 2, minViewMode: 1 });
             wvusUikit('#datepicker').datepicker({ startView: 1, todayBtn: true, multidate: true, todayHighlight: true});
           });
+      </script>
+    {% endif %}
+
+    {% if page.group == "select" %}
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          (function($){
+            $('.selectpicker').selectpicker();
+          })(wvusUikit);
+        });
+      </script>
+    {% endif %}
+
+    {% if page.group == "spin" %}
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          var button = wvusUikit('.btn.btn-danger');
+          button.click(function(){
+            button.button('loading');
+            wvusUikit('.spinner').spin({right: 0, color: "#f60"});
+              setTimeout(function(){
+                button.button('complete');
+                wvusUikit('.spinner').spin(false);
+              }, 3000)
+          });
+
+        });
       </script>
     {% endif %}
 
