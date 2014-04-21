@@ -67,11 +67,11 @@
 // new font size. If @big-play-font-size is 3em (30px), then setting the any of
 // the following values to 2em would equal 60px. 2 * font-size
 @big-play-margin: 0.5em;
-@big-play-width: 4em;
-@big-play-height: 2.6em;
-@big-play-border-radius: 0.8em;
+@big-play-width: 3em;
+@big-play-height: 3em;
+@big-play-border-radius: 100%;
 @big-play-border-width: 0.1em;
-@big-play-border-color: #3b4249;
+@big-play-border-color: darken(@btn-primary-bg, 5%);
 
 
 .vjs-default-skin {
@@ -408,7 +408,7 @@
   font-weight: @btn-font-weight;
   text-align: center;
   vertical-align: middle;
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @big-play-border-radius);
   position: absolute;
   width: @big-play-width;
   height: @big-play-height;
@@ -480,6 +480,7 @@
   border-color: darken(@btn-primary-bg, 12%);
   box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
   .tab-focus();
+  border-radius: @big-play-border-radius
 }
 
 .vjs-default-skin .vjs-big-play-button:before {
