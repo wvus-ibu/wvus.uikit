@@ -224,8 +224,9 @@ module.exports = function(grunt) {
           {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'},
           {expand: true, cwd: libPath + 'modernizer', src: '**', dest: distPath + 'js/'},
           {expand: true, cwd: videojsPath, src: "video.js", dest: distPath + 'js/'},
+          {expand: true, cwd: videojsPath, src: "video-js.swf", dest: distPath + 'js/'},
           {expand: true, cwd: videojsPath + "font", src: '**', dest: distPath + 'fonts'},
-          {expand: true, cwd: bootstrapPath + 'fonts', src: '**', dest: distPath + 'fonts'},
+          {expand: true, cwd: bootstrapPath + 'fonts', src: '**', dest: distPath + 'fonts'}
         ]
       },
       docs: {
