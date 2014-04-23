@@ -1,8 +1,8 @@
-<ul class="nav nav-list">
-  <li class="nav-header">Brand</li>
+<ul class="nav">
+  <li>Brand</li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#logo">Logo <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'logo' %} in {% endif %}" id="logo">
+    <a href="#" data-toggle="collapse" data-target="#logo"><i class="fa fa-caret-right"></i> Logo</a>
+    <ul class="nav collapse {% if page.group == 'logo' %} in {% endif %}" id="logo">
       <li {% if page.name == 'logo' %} class="active" {% endif %}>
         <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/logo/">Overview</a>
       </li>
@@ -15,8 +15,8 @@
     <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/color/" >Color</a>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#photography">Photography <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'photography' %} in {% endif %}" id="photography">
+    <a href="#" data-toggle="collapse" data-target="#photography"><i class="fa fa-caret-right"></i> Photography</a>
+    <ul class="nav collapse {% if page.group == 'photography' %} in {% endif %}" id="photography">
       <li {% if page.name == 'photography' %} class="active" {% endif %}>
         <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/photography/">Overview</a>
       </li>
@@ -28,7 +28,7 @@
   <li>
     <a href="{{ site.baseurl }}{{ site.designerdocs }}/brand/typography/">Typography</a>
   </li>
-  <li class="nav-header">Web Tools</li>
+  <li>Web Tools</li>
   <li {% if page.name == 'templates' %} class="active" {% endif %}>
     <a href="{{ site.baseurl }}{{ site.designerdocs }}/templates">Templates</a>
   </li>
@@ -38,8 +38,8 @@
   <li {% if page.name == 'accessibility' %} class="active" {% endif %}>
     <a href="{{ site.baseurl }}{{ site.designerdocs }}/accessibility">Accessibility</a>
   </li>
-  <li class="nav-header">Files</li>
+  <li>Files</li>
   <li>
-    <a href="{{site.baseurl}}/assets/files/StarterKit.zip">Starter Kit (PSD, Styles, Colors) <i class="icon-download-alt icon-dark"></i></a>
+    <a href="{{site.baseurl}}/assets/files/StarterKit.zip">Starter Kit (PSD, Styles, Colors) <i class="fa fa-download-alt fa-dark"></i></a>
   </li>
 </ul>
