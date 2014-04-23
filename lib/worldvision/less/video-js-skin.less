@@ -19,6 +19,8 @@
 @subtitles-icon: "\e00c";
 @captions-icon: "\e008";
 @share-icon: "\e00e";
+@volume-slider-icon: "\f068";
+@seek-handle-icon: "\f111";
 
 // To customize the player skin, change the values of the variables or edit the
 // CSS below.
@@ -31,7 +33,10 @@
 @touch-device-font-size: @font-size-base;
 
 // The main font color controls the color of the text and the icons (font icons)
-@main-font-color: #fff; // e.g. rgb(255, 255, 255) or #ffffff
+@main-font-color: @gray-light; // e.g. rgb(255, 255, 255) or #ffffff
+
+@control-hover-color: @gray-lighter;
+@current-time-color: @gray-lighter;
 
 // The default color of control backgrounds is mostly black but with a little
 // bit of blue so it can still be seen on all black video frames, which are
@@ -39,6 +44,8 @@
 @control-bg-color: @gray-darker; // e.g. rgb(255, 255, 255) or #ffffff
 @control-bg-alpha: 0.7; // 1.0 = 100% opacity, 0.0 = 0% opacity
 
+
+@slider-handle-color: #fff;
 // The slider bar color is used for the progress bar and the volume bar
 @slider-bar-color: @brand-primary; // e.g. rgb(255, 255, 255) or #ffffff
 // The background of the progress bar and volume bar have a lined pattern that
@@ -46,8 +53,11 @@
 // http://www.patternify.com/ then replace the value in the quotes with your own
 @slider-bar-pattern: ~'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC';
 // The color of the slider background
-@slider-background-color: @gray-dark;
+@slider-background-color: @gray;
 @slider-background-alpha: 0.9; // 1.0 = 100% opacity, 0.0 = 0% opacity
+
+
+@spinner-color: @main-font-color;
 
 // The "Big Play Button" is the play button that shows before the video plays.
 // To center it set the align values to center and middle. The typical location
@@ -57,12 +67,13 @@
 @big-play-vertical-align: middle; // top, middle, or bottom
 // The button colors match the control colors by default but you can customize
 // them by replace the variables (@control-bg-color) with your own color values.
+@big-play-color: #fff;
 @big-play-bg-color: @brand-primary;
 @big-play-bg-alpha: @control-bg-alpha;
 // The font size is what makes the big play button, big. All width/height values
 // use ems, which are a multiple of the font size.
 // If the @base-font-size is 10px, then 3em equals 30px.
-@big-play-font-size: 3em;
+@big-play-font-size: 4em;
 // Now that font size is set, the following em values will be a multiple of the
 // new font size. If @big-play-font-size is 3em (30px), then setting the any of
 // the following values to 2em would equal 60px. 2 * font-size
@@ -72,6 +83,7 @@
 @big-play-border-radius: 100%;
 @big-play-border-width: 0.1em;
 @big-play-border-color: darken(@btn-primary-bg, 5%);
+
 
 
 .vjs-default-skin {
@@ -117,19 +129,19 @@
 }
 
 .vjs-default-skin .vjs-slider-handle:before {
-  content: @square-icon;
-  font-family: VideoJS;
+  //content: @square-icon;
+  font-family: FontAwesome;
   font-size: 1em;
   line-height: 1;
   text-align: center;
-  text-shadow: 0em 0em 1em #fff;
-
+  //text-shadow: 0em 0em 1em #fff;
+  color: @slider-handle-color;
   position: absolute;
   top: 0;
   left: 0;
 
   //
-  .transform(rotate(-45deg));
+  //.transform(rotate(-45deg));
 }
 
 
@@ -186,6 +198,10 @@
   // }
 
 
+// Controls
+// -----------------------------
+
+// Control class
   .vjs-default-skin .vjs-control {
     outline: none;
     position: relative;
@@ -208,13 +224,13 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    //text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
 
 
   .vjs-default-skin .vjs-control:focus:before,
   .vjs-default-skin .vjs-control:hover:before {
-    text-shadow: 0em 0em 1em rgba(255, 255, 255, 1);
+    color: @control-hover-color;
   }
 
   .vjs-default-skin .vjs-control:focus {
@@ -292,10 +308,11 @@
 }
 
 .vjs-default-skin .vjs-volume-handle:before {
+  content: @volume-slider-icon;
   font-size: 0.9em;
   top: -0.2em;
   left: -0.2em;
-
+  .transform(rotate(90deg));
   width: 1em;
   height: 1em;
 }
@@ -371,6 +388,7 @@
 
 .vjs-default-skin .vjs-seek-handle:before {
   padding-top: 0.1em ;
+  content: @seek-handle-icon;
 }
 
 
@@ -379,7 +397,10 @@
   //
   line-height: 3em;
 }
-.vjs-default-skin .vjs-current-time { float: left; }
+.vjs-default-skin .vjs-current-time {
+  float: left;
+  color: @current-time-color;
+}
 .vjs-default-skin .vjs-duration { float: left; }
 
 .vjs-default-skin .vjs-remaining-time { display: none; float: left; }
@@ -417,6 +438,8 @@
   border: 1px solid darken(@btn-primary-bg, 4%);
   white-space: nowrap;
   .user-select(none);
+  z-index: 2;
+  color: @big-play-color;
 
   // Calculate total width/height so we're able to center the button
   @total-width: @big-play-width + (@big-play-border-width * 2);
@@ -427,7 +450,7 @@
 
   // font-size: @big-play-font-size;
   // display: block;
-  // z-index: 2;
+  //
   // position: absolute;
   // width: @big-play-width;
   // height: @big-play-height;
@@ -521,7 +544,7 @@
 .vjs-default-skin .vjs-loading-spinner:before {
   content: @spinner3-icon;
   font-family: VideoJS;
-
+  color: @spinner-color;
   position: absolute;
   top: 0;
   left: 0;
