@@ -60,6 +60,7 @@ module.exports = function(grunt) {
             datepickerPath + 'js/bootstrap-datepicker.js',
             bootstrapSelectPath + 'bootstrap-select.js',
             videojsPath + 'video.dev.js',
+            videojsYoutubePath + 'src/media.youtube.js',
             spinjsPath + 'spin.js',
             spinjsPath + 'jquery.spin.js'
             ],
