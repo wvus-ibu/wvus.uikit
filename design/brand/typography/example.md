@@ -3,6 +3,7 @@ layout: content
 title: Typography Examples
 group: typography
 name: typography-examples
+path: ../../../../
 ---
 <table class="table table-striped table-hover table-bordered">
   <thead>

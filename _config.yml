@@ -6,9 +6,9 @@ pygments: true
 #Permalink
 permalink: pretty
 
-developerdocs: /elements
-designerdocs: /design
-develop: /develop
+developerdocs: elements/
+designerdocs: design/
+develop: develop/
 files: /assets/files
 
 # vars
@@ -20,3 +20,4 @@ src-download: https://github.com/wvus-ibu/wvus.uikit/archive/v1.2.0.zip
 bootstrap: http://getbootstrap.com/
 font-awesome: http://fontawesome.io/
 jquery: http://jquery.com/
+uikit-version: "2.0.0"

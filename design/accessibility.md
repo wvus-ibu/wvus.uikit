@@ -2,6 +2,7 @@
 layout: content
 title: Accessibility
 name: accessibility
+path: ../../
 ---
 World Vision believes that our digital offerings should be accessible to all users, including people with disabilities.  We strive for a high level of compliance (level A) with the WCAG 2.0 guidelines where possible.
 

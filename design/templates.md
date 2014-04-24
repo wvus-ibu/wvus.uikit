@@ -2,6 +2,7 @@
 layout: content
 title: Templates
 name: templates
+path: ../../
 ---
 ### 12-column grid
 

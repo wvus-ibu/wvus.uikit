@@ -2,14 +2,15 @@
 layout: content
 title: Namespace
 name: namespace
+path: ../../
 ---
 The UiKit uses a namespace to stop CSS and JavaScript collisions.
 
 ### Less
-The namespace used for the less is `wvus-uikit`.  Apply this class to the `<html>` element in your site.
+The namespace used for the less is `wvusUikit`.  Apply this class to the `<html>` element in your site.
 {% highlight html hl_lines=2 %}
 <!DOCTYPE html>
-<html class="wvus-uikit">
+<html class="wvusUikit">
 ...
 {% endhighlight %}
 

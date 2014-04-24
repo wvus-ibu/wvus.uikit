@@ -2,6 +2,7 @@
 layout: content
 title: Including the files
 name: include
+path: ../../
 ---
 ### File Structure
 The compiled library contains the necessary files to get up and running:
@@ -10,28 +11,24 @@ The compiled library contains the necessary files to get up and running:
 wvus.uikit/
     ├── css/
     │   ├── wvus.uikit.css
-    │   ├── wvus.uikit.min.css
-    │   ├── wvus.uikit.responsive.css
-    │   ├── wvus.uikit.responsive.min.css
+    │   ├── wvus.uikit.css.map
+    │   └── wvus.uikit.min.css
     ├── js/
-    │   ├── jquery.js
-    │   ├── jquery.min.js
+    │   ├── jquery-custom.js
+    │   ├── jquery-custom.min.js
+    │   ├── modernizer.js
     │   ├── wvus.uikit.js
-    │   ├── wvus.uikit.min.js
+    │   └── wvus.uikit.min.js
     ├── img/
-    │   ├── ico/
-    │   │   ├── (favicons)
-    │   └── caption-background.png
+    │   └── ico/
+    │       └── (favicons)
     ├── less/
     │   ├── variables.less
-    │   ├── mixins.less
-    │   ├── starter.less
-    └── font/
-        ├── FontAwesome.otf
-        ├── fontawesome-webfont.eot
-        ├── fontawesome-webfont.svg
-        ├── fontawesome-webfont.ttf
-        └── fontawesome-webfont.woff
+    │   └── mixins.less
+    └── fonts/
+        ├── (VideoJS)
+        ├── (Bootstrap Glyphicon)
+        └── (Font Awesome)
 {% endhighlight %}
 
 ### Include
@@ -45,8 +42,6 @@ Add the CSS files:
   <head>
     <!-- CSS (use minified versions on production sites) -->
     <link rel="stylesheet" type="text/css" href="/path/to/uikit/css/wvus.uikit.min.css">
-    <!-- Optional responsive styles for mobile -->
-    <link rel="stylesheet" type="text/css" href="/path/to/uikit/css/wvus.uikit.responsive.min.css">
   </head>
   <body>
 ...
@@ -57,7 +52,7 @@ Add the JavaScript files:
 {% highlight html %}
 ...
     <!-- Namespaced jQuery -->
-    <script src="/path/to/uikit/js/jquery.min.js"></script>
+    <script src="/path/to/uikit/js/jquery-custom.min.js"></script>
     <script src="/path/to/uikit/js/wvus.uikit.min.js"></script>
   </body>
 </html>
@@ -65,7 +60,7 @@ Add the JavaScript files:
 Add the CSS namespace:
 {% highlight html hl_lines=2%}
 <!DOCTYPE html>
-<html class="wvus-uikit">
+<html class="wvusUikit">
   <head>
 ...
 {% endhighlight %}
