@@ -1,27 +1,27 @@
 ---
 layout: default
-title: Images - Circle
+title: Images - Responsive
 snippet: images
 group: images
 hasJs: false
-name: images-circle
+name: images-responsive
 path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
   <h1>{{page.title}}</h1>
   <p class="subheader lead">
-    Easily create a rounded image with <code>.img-circle</code>
+    Make images responsive friendly by adding <code>.img-responsive</code>. This will set a <code>width: 100%</code> and <code>height: auto</code> so the image height will scale with the width.
   </p>
 </header>
 <!-- Preview -->
 <div class="docs-example">
-  <img class="img-circle"  data-src="holder.js/280x280" src="data:image/png;base64," alt="media">
+  <img class="img-responsive"  data-src="holder.js/280x280" src="data:image/png;base64," alt="responsive">
 </div>
 
 <!-- HTML Code -->
 <div class="docs-html">
   {% highlight html  %}
-  <img class="img-circle"  data-src="holder.js/280x280" src="data:image/png;base64," alt="media">
+  <img class="img-responsive"  data-src="holder.js/280x280" src="data:image/png;base64," alt="responsive">
   {% endhighlight %}
 </div>
 
@@ -33,4 +33,5 @@ path: ../../../../
   {% endhighlight %}
 </div>
 {% endif %}
+
 
