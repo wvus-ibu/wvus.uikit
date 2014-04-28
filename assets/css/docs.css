@@ -233,11 +233,10 @@
 .wvusUikit #docs-nav {
   margin-top: 10px;
 }
-.wvusUikit .docs-dropdown {
+.wvusUikit .docs-example > .dropdown > .dropdown-menu {
   display: block;
   position: static;
   margin-bottom: 5px;
-  *width: 180px;
 }
 .wvusUikit .docs-example {
   margin-bottom: 20px;
