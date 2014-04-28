@@ -12,6 +12,7 @@ module.exports = function(grunt) {
       bootstrapSelectPath = libPath + 'bootstrap-select/',
       fontAwesomePath = libPath + 'font-awesome/',
       jqueryPath = libPath + 'jquery/',
+      jqueryMobilePath = libPath + 'jquery-mobile/',
       datepickerPath = libPath + 'bootstrap-datepicker/',
       videojsPath = libPath + 'videojs/dist/video-js/',
       videojsYoutubePath = libPath + 'videojs-youtube/',
@@ -39,6 +40,7 @@ module.exports = function(grunt) {
       jquery: {
         src: [
           jqueryPath + 'dist/jquery.js',
+          jqueryMobilePath + 'jquery.mobile.custom.js',
           worldVisionPath + 'js/namespace.js'
         ],
         dest: distPath + 'js/jquery-custom.js'
@@ -62,7 +64,7 @@ module.exports = function(grunt) {
             videojsPath + 'video.dev.js',
             videojsYoutubePath + 'src/media.youtube.js',
             spinjsPath + 'spin.js',
-            spinjsPath + 'jquery.spin.js'
+            spinjsPath + 'jquery.spin.js',
             ],
 
         dest: distPath + 'js/<%= pkg.name %>.js'
