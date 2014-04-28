@@ -51,24 +51,34 @@ header{
 
   .subheader{
     margin: 20px 0 30px 0;
-    color: #6f6f6f;
   }
 
 // Grid Example
-  #gridExample {
-    div[class*="span"]{
+.grid-example{
+  margin-bottom: 20px;
+  [class*="col-"]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: @gray-light;
+    border: 1px solid @gray;
+  }
+}
+/*  #grid-example {
+    div[class*="col-"]{
       text-align: center;
-      background-color: #d1d1d1;
-      border: solid 1px #999999;
+      background-color: @gray-light;
+      border: solid 1px @gray;
       margin-bottom: 10px;
-      div[class*="span"]{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      div[class*="col-"]{
         background-color: #ababab;
       }
     }
     .row{
-      margin-left: 0;
+      margin-bottom: 10px;
     }
-  }
+  }*/
   body > .navbar .brand {
 	  float: left;
   	   color: #ffffff;
@@ -83,50 +93,7 @@ header{
   width: 200px;
 }
 
-// Classes to get things to show correctly in the docs
-//
 
-/* Responsive tests
-------------------------- */
-.responsive-utilities-test {
-  margin-top: 5px;
-  margin-left: 0;
-  list-style: none;
-  overflow: hidden; /* clear floats */
-}
-.responsive-utilities-test li {
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 43px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 43px;
-  color: #999;
-  text-align: center;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-.responsive-utilities-test li + li {
-  margin-left: 10px;
-}
-.responsive-utilities-test span {
-  position: absolute;
-  top:    -1px;
-  left:   -1px;
-  right:  -1px;
-  bottom: -1px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-.responsive-utilities-test span {
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-}
 
 // scrollspy
  .scrollspy-example {
@@ -152,9 +119,8 @@ header{
 
 // Styles for the page
 
-pre{
-  border: none;
-}
+
+/*
 .docs-example{
 
   position: relative;
@@ -167,6 +133,9 @@ pre{
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
+*/
+
+/*
 .docs-html,
 .docs-js {
   position: relative;
@@ -179,8 +148,9 @@ pre{
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
+*/
 
-// Echo out a label for the example
+/* // Echo out a label for the example
 .docs-example:after {
   content: "Example";
   position: absolute;
@@ -195,8 +165,9 @@ pre{
   -webkit-border-radius: 4px 0 4px 0;
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
-}
-.docs-html:after {
+}*/
+
+/*.docs-html:after {
   content: "HTML";
   position: absolute;
   top: -1px;
@@ -225,8 +196,7 @@ pre{
   -webkit-border-radius: 4px 0 4px 0;
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
-}
-
+}*/
 
 
 /* Footer

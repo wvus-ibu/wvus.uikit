@@ -4,11 +4,12 @@
   color: #fff;
   width: 100%;
   margin: 10px 0;
+  .clearfix();
   .row div{
     padding: 20px;
     margin-bottom: 10px;
     text-align: center;
-    min-height: 100px;
+    min-height: 106px;
   }
 }
 
@@ -66,4 +67,14 @@ img {
 
 #photo-examples{
   margin-top: 100px;
+}
+
+// Don't show border and shadow on small devices
+// The border has too much padding on these screen sizes
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+  .thumbnail{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
 }
