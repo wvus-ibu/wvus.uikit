@@ -8,30 +8,33 @@ name: "grid-basic"
 path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
     The default  grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without responsive features enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.
-    </p>
+  </p>
 </header>
+
 <!-- Preview -->
-<div class="docs-example">
-  <div class="row">
+<div class="docs-example" >
+  <div class="row grid-example">
     {% for i in (1..12)  %}
-    <div class="col-md-1">
-      .col-md-1
-    </div>
+    <div class="col-md-1">.col-md-1</div>
     {% endfor %}
+  </div>
+  <div class="row grid-example">
     {% for i in (1..4)  %}
-    <div class="col-md-3">
-      .col-md-3
-    </div>
+    <div class="col-md-3">.col-md-3</div>
     {% endfor %}
+  </div>
+  <div class="row grid-example">
     <div class="col-md-8">
       .col-md-8
     </div>
     <div class="col-md-4">
       .col-md-4
     </div>
+  </div>
+  <div class="row grid-example">
     <div class="col-md-6">
       .col-md-6
     </div>
@@ -42,115 +45,43 @@ path: ../../../../
 </div>
 
 
-          <!-- HTML Code -->
-          <div class="row">
-            <div class="docs-html">
-{% highlight html  %}
-  <div class="row">
-    <div class="col-xs-12">
-      .col-xs-12
-    </div>
+<!-- HTML Code -->
+  {% highlight html  %}
+<div class="row">
+{% for i in (1..12)  %}
+  <div class="col-md-1">
+    .col-md-1
   </div>
-  <div class="row">
-    <div class="col-xs-11">
-      .col-xs-11
-    </div>
-    <div class="col-xs-1">
-      .col-xs-1
-    </div>
+{% endfor %}
+{% for i in (1..4)  %}
+  <div class="col-md-3">
+    .col-md-3
   </div>
-  <div clas="row">
-    <div class="col-xs-10">
-    .col-xs-10
-    </div>
-    <div class="col-xs-2">
-      .col-xs-2
-    </div>
+{% endfor %}
+  <div class="col-md-8">
+    .col-md-8
   </div>
-  <div class="row">
-    <div class="col-xs-9">
-    .col-xs-9
-    </div>
-    <div class="col-xs-3">
-      .col-xs-3
-    </div>
+  <div class="col-md-4">
+    .col-md-4
   </div>
-  <div class="row">
-    <div class="col-xs-8">
-      .col-xs-8
-    </div>
-    <div class="col-xs-4">
-      .col-xs-4
-    </div>
+  <div class="col-md-6">
+    .col-md-6
   </div>
-  <div class="row">
-    <div class="col-xs-7">
-      .col-xs-7
-    </div>
-    <div class="col-xs-5">
-      .col-xs-5
-    </div>
+  <div class="col-md-6">
+    .col-md-6
   </div>
-  <div class="row">
-    <div class="col-xs-6">
-      .col-xs-6
-    </div>
-    <div class="col-xs-6">
-      .col-xs-6
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-5">
-      .col-xs-5
-    </div>
-    <div class="col-xs-4">
-      .col-xs-4
-    </div>
-    <div class="col-xs-2">
-      .col-xs-2
-    </div>
-    <div class="col-xs-1">
-      .col-xs-1
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-3">
-    .col-xs-3
-    </div>
-    <div class="col-xs-6">
-      .col-xs-6
-    </div>
-    <div class="col-xs-3">
-      .col-xs-3
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-2">
-      .col-xs-2
-    </div>
-    <div class="col-xs-4">
-      .col-xs-4
-    </div>
-    <div class="col-xs-4">
-      .col-xs-4
-    </div>
-    <div class="col-xs-2">
-      .col-xs-2
-    </div>
-  </div>
-{% endhighlight %}
-            </div>
-          </div>
+</div>
+  {% endhighlight %}
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row">
-            <div class="docs-js">
-{% highlight js %}
+<!-- JS Code -->
 
-{% endhighlight %}
-            </div>
-          </div>
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+
 {% endif %}
 
 

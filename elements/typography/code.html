@@ -8,48 +8,43 @@ name: typography-code
 path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Wrap inline snippets of code with <code>&lt;code&gt;</code>.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Wrap inline snippets of code with <code>&lt;code&gt;</code>.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-<p>Here is some code: </p>
-<code>
-  var x = 5, y = 5;
-  var z;
-  z = x + y;
-  console.log(z); // z equals 10
-</code>
-            </div>
-          </div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<p>Here is some code: </p>
-<code>
-  var x = 5, y = 5;
-  var z;
-  z = x + y;
-  console.log(z); // z equals 10
-</code>
-{% endhighlight %}
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <p>Here is some code: </p>
+  <code>
+    var x = 5, y = 5;
+    var z;
+    z = x + y;
+    console.log(z); // z equals 10
+  </code>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p>Here is some code: </p>
+  <code>
+    var x = 5, y = 5;
+    var z;
+    z = x + y;
+    console.log(z); // z equals 10
+  </code>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 
