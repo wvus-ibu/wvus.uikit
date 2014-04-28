@@ -20,20 +20,6 @@
     }
   }*/
   /*
-.docs-example{
-
-  position: relative;
-  margin: 15px 0;
-  padding: 39px 19px 14px;
-  *padding-top: 19px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-*/
-  /*
 .docs-html,
 .docs-js {
   position: relative;
@@ -216,7 +202,6 @@
 }
 .wvusUikit .subheader {
   margin: 20px 0 30px 0;
-  color: #6f6f6f;
 }
 .wvusUikit .grid-example {
   margin-bottom: 20px;
@@ -253,6 +238,10 @@
   position: static;
   margin-bottom: 5px;
   *width: 180px;
+}
+.wvusUikit .docs-example {
+  margin-bottom: 20px;
+  background-color: #fff;
 }
 .wvusUikit .footer {
   text-align: center;
