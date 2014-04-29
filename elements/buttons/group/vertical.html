@@ -1,0 +1,61 @@
+---
+layout: default
+title: Buttons - Vertical
+snippet: group
+group: buttons
+hasJs: false
+name: buttons-vertical
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Make a set of buttons appear vertically stacked rather than horizontally.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="btn-group-vertical">
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-default">Button</button>
+    <div class="btn-group">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="verticalButtonDropdown">Dropdown <i class="fa fa-caret-down"></i></button>
+      <ul class="dropdown-menu " role="menu" aria-labelledby="verticalButtonDropdown">
+        <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Dropdown Link</a></li>
+        <li role="presentation"><a href="#"  role="menuitem" tabindex="-1">Dropdown Link</a></li>
+      </ul>
+    </div>
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-default">Button</button>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="btn-group-vertical">
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-default">Button</button>
+    <div class="btn-group">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="verticalButtonDropdown">Dropdown <i class="fa fa-caret-down"></i></button>
+      <ul class="dropdown-menu " role="menu" aria-labelledby="verticalButtonDropdown">
+        <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Dropdown Link</a></li>
+        <li role="presentation"><a href="#"  role="menuitem" tabindex="-1">Dropdown Link</a></li>
+      </ul>
+    </div>
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-default">Button</button>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="row-fluid">
+  <div class="docs-js">
+    {% highlight js %}
+
+    {% endhighlight %}
+  </div>
+</div>
+{% endif %}

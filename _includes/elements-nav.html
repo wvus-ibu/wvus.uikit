@@ -115,18 +115,27 @@
       <li{% if page.name == "buttons-block" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/block">Block</a></li>
       <li{% if page.name == "buttons-multiple-tags" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/multiple-tags">Multiple Tags</a></li>
       <li{% if page.name == "buttons-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/disabled">Disabled</a></li>
-      <li{% if page.name == "buttons-groups" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/groups">Groups</a></li>
-      <li{% if page.name == "buttons-toolbar" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/toolbar">Toolbar</a></li>
-      <li{% if page.name == "buttons-vertical" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/vertical">Vertical Toolbar</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-group">Groups <i class="fa fa-caret-right"></i></a>
+        <ul class="nav nav-list collapse {% if page.snippet == 'group'%} in {% endif %}" id="button-group">
+          <li{% if page.name == "buttons-groups" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/">Groups</a></li>
+          <li{% if page.name == "buttons-toolbar" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/toolbar">Toolbar</a></li>
+          <li{% if page.name == "buttons-vertical" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/vertical">Vertical</a></li>
+          <li{% if page.name == "buttons-group-sizing" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/sizing">Sizing</a></li>
+          <li{% if page.name == "buttons-group-nesting" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/nesting">Nesting</a></li>
+          <li{% if page.name == "buttons-group-justified" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/justified">Justified</a></li>
+
+        </ul>
+      </li>
+
       <li>
         <a href="#" data-toggle="collapse" data-target="#button-dropdown">Dropdowns <i class="fa fa-caret-right"></i></a>
         <ul class="nav nav-list collapse {% if page.snippet == 'dropdown'%} in {% endif %}" id="button-dropdown">
           <li{% if page.name == "buttons-dropdowns-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/basic">Basic</a></li>
           <li{% if page.name == "buttons-dropdowns-dropup" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/dropup">Dropup</a></li>
-          <li{% if page.name == "buttons-dropdown-size" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/dropdown-size">Sizing</a></li>
+          <li{% if page.name == "buttons-dropdown-size" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/size">Sizing</a></li>
           <li{% if page.name == "buttons-dropdowns-split-dropdown" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
           <li{% if page.name == "buttons-dropdowns-split-dropups" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/split-dropups">Split Dropups</a></li>
-          <li{% if page.name == "buttons-dropdowns-split-dropdown-size" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/split-dropdown-size">Split Dropdown Size</a></li>
         </ul>
       </li>
       <li>
