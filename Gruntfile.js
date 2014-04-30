@@ -1,4 +1,5 @@
 /*global module:false*/
+'use strict';
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -8,12 +9,31 @@ module.exports = function(grunt) {
     watch: {
       docs: {
         options: {
+          spawn: false,
           livereload: '<%= connect.docs.options.livereload %>'
         },
-        files: ['tests/*'],
+        files: ['assets/**/*', 'elements/**/*', 'develop/**/*', 'design/**/*', '_includes/**/*', '_layouts/**/8'],
         tasks: ['jekyll']
+      },
+      assets: {
+        files: ['assets/less/*'],
+        tasks: ['less']
+      },
+
+    },
+
+    less: {
+      docs: {
+        options: {
+          outputSourceFile: true,
+          sourceMap: true,
+          sourceMapFilename: 'docs.map.css',
+        },
+        src: ['assets/less/docs.less'],
+        dest: 'assets/css/docs.css'
       }
     },
+
     jekyll: {
       docs: {}
     },
@@ -21,29 +41,32 @@ module.exports = function(grunt) {
       docs: {
         options: {
           hostname: 'localhost',
-          port: '4000',
+          port: 4000,
           base: '_site',
-          keepalive: true,
-          livereload: 35729
+          livereload: 35729,
+          open: 'http://localhost:4000/'
         }
       }
     },
+    clean: {
+      files: ['_site']
+    },
     validation: {
      options: {
-        charset: 'utf-8',
-        doctype: 'HTML5',
-        failHard: true,
-        reset: true,
-        relaxerror: [
-          'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
-          'Element img is missing required attribute src.'
-        ]
-      },
-      files: {
-        src: '_site/**/*.html'
-      }
+      charset: 'utf-8',
+      doctype: 'HTML5',
+      failHard: true,
+      reset: true,
+      relaxerror: [
+      'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
+      'Element img is missing required attribute src.'
+      ]
+    },
+    files: {
+      src: '_site/**/*.html'
     }
-  });
+  }
+});
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
@@ -51,6 +74,6 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
-  grunt.registerTask('docs', ['watch', 'connect']);
+  grunt.registerTask('serve', ['clean','less', 'jekyll', 'connect', 'watch']);
   grunt.registerTask('test', ['jekyll', 'validation']);
 };
