@@ -27,7 +27,9 @@ module.exports = function(grunt) {
         options: {
           outputSourceFile: true,
           sourceMap: true,
-          sourceMapFilename: 'assets/css/docs.map.css',
+          sourceMapFilename: 'docs.map.css',
+          sourceMapRootpath: 'assets/css',
+          sourceMapURL: 'docs.map.css'
         },
         src: ['assets/less/docs.less'],
         dest: 'assets/css/docs.css'
