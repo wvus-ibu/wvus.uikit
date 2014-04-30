@@ -6,94 +6,89 @@ group: tabs
 hasJs: false
 name: tabs-direction
 path: ../../../../
+bootstrap: /css/#helper-classes-floats
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      To align links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    To align links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <div id="direction" class="clearfix">
+<!-- Preview -->
+<div class="docs-example">
+  <div id="direction" class="clearfix">
 
-                <!-- Right Aligned -->
-                <div id="right">
-                  <ul class="nav nav-tabs pull-right">
-                    <li>
-                      <a href="">Right</a>
-                    </li>
-                    <li class="active">
-                      <a href="">Right tab</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- /right-aligned -->
+    <!-- Right Aligned -->
+    <div id="right">
+      <ul class="nav nav-tabs pull-right">
+        <li>
+          <a href="">Right</a>
+        </li>
+        <li class="active">
+          <a href="">Right tab</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /right-aligned -->
 
-                <!-- Left Aligned -->
-                <div id="left">
-                  <ul class="nav nav-tabs pull-left">
-                    <li class="active">
-                      <a href="">left</a>
-                    </li>
-                    <li>
-                      <a href="">left tab</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- /left-aligned -->
+    <!-- Left Aligned -->
+    <div id="left">
+      <ul class="nav nav-tabs pull-left">
+        <li class="active">
+          <a href="">left</a>
+        </li>
+        <li>
+          <a href="">left tab</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /left-aligned -->
 
-              </div>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<div id="direction" class="clearfix">
-
-  <!-- Right Aligned -->
-  <div id="right">
-    <ul class="nav nav-tabs pull-right">
-      <li>
-        <a href="">Right</a>
-      </li>
-      <li class="active">
-        <a href="">Right tab</a>
-      </li>
-    </ul>
   </div>
-  <!-- /right-aligned -->
-
-  <!-- Left Aligned -->
-  <div id="left">
-    <ul class="nav nav-tabs pull-left">
-      <li class="active">
-        <a href="">left</a>
-      </li>
-      <li>
-        <a href="">left tab</a>
-      </li>
-    </ul>
-  </div>
-  <!-- /left-aligned -->
-
 </div>
-{% endhighlight %}
-            </div>
-          </div>
+
+<!-- HTML Code -->
+  <div class="docs-html">
+    {% highlight html  %}
+  <div id="direction" class="clearfix">
+
+    <!-- Right Aligned -->
+    <div id="right">
+      <ul class="nav nav-tabs pull-right">
+        <li>
+          <a href="">Right</a>
+        </li>
+        <li class="active">
+          <a href="">Right tab</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /right-aligned -->
+
+    <!-- Left Aligned -->
+    <div id="left">
+      <ul class="nav nav-tabs pull-left">
+        <li class="active">
+          <a href="">left</a>
+        </li>
+        <li>
+          <a href="">left tab</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /left-aligned -->
+
+  </div>
+    {% endhighlight %}
+  </div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+  <div class="docs-html">
+    {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+    {% endhighlight %}
+  </div>
 {% endif %}
 
 
