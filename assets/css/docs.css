@@ -242,6 +242,14 @@
   margin-bottom: 20px;
   background-color: #fff;
 }
+.wvusUikit .docs-example:before,
+.wvusUikit .docs-example:after {
+  content: " ";
+  display: table;
+}
+.wvusUikit .docs-example:after {
+  clear: both;
+}
 .wvusUikit .footer {
   text-align: center;
   padding: 30px 0;
@@ -272,3 +280,4 @@
 .wvusUikit .nav-list .nav-list {
   padding-left: 20px;
 }
+/*# sourceMappingURL=docs.map.css */
