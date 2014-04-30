@@ -154,16 +154,14 @@
     <ul class="nav nav-list collapse {% if page.group == 'tabs'%} in {% endif %}" id="tabs">
       <li{% if page.name == "tabs-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/basic">Basic</a></li>
       <li{% if page.name == "tabs-direction" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/direction">Direction</a></li>
+      <li{% if page.name == "tabs-justified" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/justified">Justified</a></li>
       <li{% if page.name == "tabs-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/disabled">Disabled</a></li>
-      <li{% if page.name == "tabs-stacked" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/stacked">Stacked</a></li>
       <li{% if page.name == "tabs-dropdowns" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/dropdowns">Dropdowns</a></li>
       <li>
         <a href="#" data-toggle="collapse" data-target="#tabs-tabbable">Tabbable <i class="fa fa-caret-right"></i></a>
         <ul class="nav nav-list collapse {% if page.snippet == 'tabbable'%} in {% endif %}" id="tabs-tabbable">
           <li{% if page.name == "tabs-tabbable-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/basic">Basic</a></li>
-          <li{% if page.name == "tabs-tabbable-bottom" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/bottom">Bottom</a></li>
-          <li{% if page.name == "tabs-tabbable-left" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/left">Left</a></li>
-          <li{% if page.name == "tabs-tabbable-right" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/right">Right</a></li>
+
           <li{% if page.name == "tabs-tabbable-nested" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/nested">Nested</a></li>
         </ul>
       </li>
@@ -177,7 +175,6 @@
       <li{% if page.name == "pills-direction" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/direction">Direction</a></li>
       <li{% if page.name == "pills-stacked" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/stacked">Stacked</a></li>
       <li{% if page.name == "pills-dropdowns" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/dropdowns">Dropdowns</a></li>
-      <li{% if page.name == "pills-tabbable" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/tabbable">Tabbable</a></li>
     </ul>
   </li>
   <li>
