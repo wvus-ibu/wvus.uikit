@@ -7,49 +7,43 @@ name: labels
 path: ../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      CSS classes to add to <code>span</code> tags
-    </p>
-    <p>
-      For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    CSS classes to add to <code>span</code> tags
+  </p>
+  <p>
+    For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <span class="label">Default</span>
-              <span class="label label-success">Success</span>
-              <span class="label label-warning">Warning</span>
-              <span class="label label-important">Important</span>
-              <span class="label label-info">Info</span>
-              <span class="label label-inverse">Inverse</span>
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Important</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-danger">Danger</span>
+</div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<span class="label">Default</span>
-<span class="label label-success">Success</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-important">Important</span>
-<span class="label label-info">Info</span>
-<span class="label label-inverse">Inverse</span>
-{% endhighlight %}
-            </div>
-          </div>
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Important</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-danger">Danger</span>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-js">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 
