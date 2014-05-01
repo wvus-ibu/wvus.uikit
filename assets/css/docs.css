@@ -250,6 +250,15 @@
 .wvusUikit .docs-example:after {
   clear: both;
 }
+.wvusUikit .fixed-example {
+  position: relative;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.wvusUikit .fixed-example .navbar {
+  position: absolute;
+}
 .wvusUikit .footer {
   text-align: center;
   padding: 30px 0;
