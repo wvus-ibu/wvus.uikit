@@ -6,44 +6,39 @@ group: pager
 hasJs: false
 name: pager-disabled
 path: ../../../../
+bootstrap: /components/#pagination-pager
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
       Pager links also use the general <code>.disabled</code> utility class from the pagination.
-    </p>
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <ul class="pager">
-                <li class="previous disabled"><a href="#"><i class="icon-long-arrow-left"></i> Previous</a></li>
-                <li class="next"><a href="#">Next <i class="icon-long-arrow-right"></i></a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<ul class="pager">
-  <li class="previous disabled"><a href="#"><i class="icon-long-arrow-left"></i> Previous</a></li>
-  <li class="next"><a href="#">Next <i class="icon-long-arrow-right"></i></a></li>
+<!-- Preview -->
+<div class="docs-example">
+  <ul class="pager">
+    <li class="disabled"><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
 </ul>
-{% endhighlight %}
-            </div>
-          </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+    {% highlight html  %}
+    <ul class="pager">
+        <li class="disabled"><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+    </ul>
+    {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+    {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+    {% endhighlight %}
+</div>
 {% endif %}
 
 
