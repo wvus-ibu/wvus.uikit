@@ -191,16 +191,12 @@
       <li>
         <a href="#" data-toggle="collapse" data-target="#navbar-fixed">Fixed <i class="fa fa-caret-right"></i></a>
         <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'fixed' %} in {% endif %}" id="navbar-fixed">
-          <li{% if page.name == "navbar-fixed-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/fixed/default">Default</a></li>
-          <li{% if page.name == "navbar-fixed-wv-fixed" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/fixed/wv-fixed">WV Style</a></li>
+          <li{% if page.name == "navbar-fixed-bottom" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/fixed/fixed-to-bottom">Bottom</a></li>
+          <li{% if page.name == "navbar-fixed-top" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/fixed/fixed-to-top">Top</a></li>
         </ul>
       </li>
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#navbar-static">Static <i class="fa fa-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'static' %} in {% endif %}" id="navbar-static">
-          <li{% if page.name == "navbar-static-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/static/default">Default</a></li>
-          <li{% if page.name == "navbar-static-wv-static" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/static/wv-static">WV Style</a></li>
-        </ul>
+      <li{% if page.name == "navbar-static-top" %} class="active"{% endif %}>
+        <a href="{{ page.path }}{{ site.developerdocs }}navbar/static">Static Top</a>
       </li>
     </ul>
   </li>
