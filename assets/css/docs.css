@@ -250,6 +250,9 @@
 .wvusUikit .docs-example:after {
   clear: both;
 }
+.wvusUikit .docs-example .close {
+  float: none;
+}
 .wvusUikit .fixed-example {
   position: relative;
   height: 100px;
@@ -258,6 +261,9 @@
 }
 .wvusUikit .fixed-example .navbar {
   position: absolute;
+}
+.wvusUikit .context-bg-example p {
+  padding: 20px;
 }
 .wvusUikit .footer {
   text-align: center;
