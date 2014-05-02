@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Alerts - JavaScript
+title: Alerts - Javascript
 snippet: alerts
 group: alerts
 hasJs: false
 name: alerts-js
 path: ../../../../
+bootstrap: /javascript/#alerts
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
@@ -37,17 +38,17 @@ path: ../../../../
   </thead>
   <tbody>
    <tr>
-     <td>close</td>
+     <td>close.bs.alert</td>
      <td>This event fires immediately when the <code>close</code> instance method is called.</td>
    </tr>
    <tr>
-     <td>closed</td>
+     <td>closed.bs.alert</td>
      <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
    </tr>
   </tbody>
 </table>
 {% highlight js %}
-wvusUikit('#my-alert').bind('closed', function () {
+wvusUikit('#my-alert').bind('closed.bs.alert', function () {
   // do something…
 })
 {% endhighlight %}
