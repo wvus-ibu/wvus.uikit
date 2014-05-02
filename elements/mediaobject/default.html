@@ -6,100 +6,71 @@ snippet: media
 hasJs: false
 name: mediaobject-default
 path: ../../../../
+bootstrap: /components/#media
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      The default media allow to float a media object (images, video, audio) to the left or right of a content block.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    The default media allow to float a media object (images, video, audio) to the left or right of a content block.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <div class="media">
-                <a href="#" class="pull-left">
-                  <img class="media-object" data-src="holder.js/64x64" src="data:image/png;base64," alt="media">
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Media Heading</h4>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!
-                </div>
-              </div>
-              <div class="media">
-                <a href="#" class="pull-left">
-                  <img class="media-object"  data-src="holder.js/64x64" src="data:image/png;base64," alt="media" >
-                </a>
-                <div class="media-body">
-                  <h4 class="media-heading">Media Heading</h4>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!
-                    <div class="media">
-                      <a href="#" class="pull-left">
-                        <img class="media-object"  data-src="holder.js/64x64" src="data:image/png;base64," alt="media" >
-                      </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">Media Heading</h4>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<!-- Media Object -->
-<div class="media">
-  <a href="#" class="pull-left">
-    <img class="media-object" data-src="holder.js/64x64" src="data:image/png;base64," alt="media">
-  </a>
-
-  <!-- Media Object Body -->
-  <div class="media-body">
-    <h4 class="media-heading">Media Heading</h4>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!
+<!-- Preview -->
+<div class="docs-example">
+  <div class="media">
+    <a href="#" class="pull-left">
+      <img class="media-object" data-src="holder.js/64x64" src="data:image/png;base64," alt="media">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">Media Heading</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!</p>
+    </div>
   </div>
-</div>
-
-<!-- Media Object -->
-<div class="media">
-  <a href="#" class="pull-left">
-    <img class="media-object"  data-src="holder.js/64x64" src="data:image/png;base64," alt="media" >
-  </a>
-  <!-- Media Object Body -->
-  <div class="media-body">
-    <h4 class="media-heading">Media Heading</h4>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!
-
-    <!-- Media Object -->
+  <div class="media">
+    <a href="#" class="pull-left">
+      <img class="media-object"  data-src="holder.js/64x64" src="data:image/png;base64," alt="media" >
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">Media Heading</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!</p>
       <div class="media">
         <a href="#" class="pull-left">
           <img class="media-object"  data-src="holder.js/64x64" src="data:image/png;base64," alt="media" >
         </a>
-
-        <!-- Media Body -->
-      <div class="media-body">
-        <h4 class="media-heading">Media Heading</h4>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!
+        <div class="media-body">
+          <h4 class="media-heading">Nested Media Heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, expedita, explicabo, quasi, possimus iure voluptates sequi adipisci accusantium molestiae quidem odit doloribus quaerat aperiam quis quas amet officia aliquam nesciunt!</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-{% endhighlight %}
-            </div>
-          </div>
+
+<!-- HTML Code -->
+<div class="row-fluid">
+  <div class="docs-html">
+    {% highlight html  %}
+    <div class="media">
+      <a href="#" class="pull-left">
+        <img class="media-object" src="..." alt="...">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Media Heading</h4>
+        ...
+      </div>
+    </div>
+    {% endhighlight %}
+  </div>
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="row-fluid">
+  <div class="docs-html">
+    {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+    {% endhighlight %}
+  </div>
+</div>
 {% endif %}
 
 
