@@ -50,7 +50,7 @@
     $('[data-toggle="tooltip"]').tooltip();
 
     // popover demo
-    $('.popover-test').popover();
+    $('[data-toggle="popover"]').popover();
 
     // button state demo
     $('#fat-btn').click(function () {

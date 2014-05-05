@@ -6,40 +6,41 @@ group: popover
 hasJs: true
 name: popovers-default
 path: ../../../../
+bootstrap: /javascript/#tooltips-examples
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Add small overlays of content, like those on the iPad, to any element for housing secondary information. Hover over the button to trigger the popover. <strong>Requires Tooltips to be included.</strong>
-    </p>
-    <p><span class="label label-info">FYI</span> Popovers are generated from JavaScript and content within a data attribute.</p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Add small overlays of content, like those on the iPad, to any element for housing secondary information. Hover over the button to trigger the popover. <strong>Requires Tooltips to be included.</strong>
+  </p>
+  <p><span class="label label-info">FYI</span> Popovers are generated from JavaScript and content within a data attribute.</p>
 
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <button class="btn btn-primary popover-test" id="markupPopover" data-placement="top" data-delay=2000 data-title="Markup Popover" data-content="My content is in markup">Basic Popover</button>
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <button class="btn btn-primary" id="markupPopover" data-placement="top" data-title="Markup Popover" data-content="My content is in markup" data-toggle="popover">Basic Popover</button>
+</div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<button class="btn btn-primary popover-test" id="markupPopover" data-placement="top" data-delay=2000 data-title="Markup Popover" data-content="My content is in markup">Basic Popover</button>
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <button class="btn btn-primary" id="markupPopover" data-placement="top" data-title="Markup Popover" data-content="My content is in markup" data-toggle="popover">Basic Popover</button>
+  {% endhighlight %}
+</div>
+
+<div class="docs-example popover-example">
+  <button class="btn btn-danger" id="markupPopover" data-placement="left"  data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on Left</button>
+  <button class="btn btn-danger" id="markupPopover" data-placement="top" data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on top</button>
+  <button class="btn btn-danger" id="markupPopover" data-placement="bottom"  data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on bottom</button>
+  <button class="btn btn-danger" id="markupPopover" data-placement="right" data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on right</button>
+</div>
+
+{% highlight html %}
+  <button class="btn btn-danger" id="markupPopover" data-placement="left"  data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on Left</button>
+
+  <button class="btn btn-danger" id="markupPopover" data-placement="top" data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on top</button>
+
+  <button class="btn btn-danger" id="markupPopover" data-placement="bottom"  data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on bottom</button>
+
+  <button class="btn btn-danger" id="markupPopover" data-placement="right" data-content="delectus excepturi sapiente distinctio voluptas quaerat nisi sit sunt nesciunt." data-toggle="popover">Popover on right</button>
 {% endhighlight %}
-            </div>
-          </div>
-
-{% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-js">
-{% highlight js %}
-wvusUikit('.popover-test').popover();
-{% endhighlight %}
-            </div>
-          </div>
-{% endif %}
-
-
