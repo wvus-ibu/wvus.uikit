@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Carousel
+title: Carousel - Captions
 snippet: carousel
 group: carousel
-hasJs: false
-name: carousel-basic
+hasJs: true
+name: carousel-caption
 path: ../../../../
+bootstrap: /javascript/#carousel-examples
 ---
 <header class="page-header" id="headerTitle">
   <h1>{{page.title}}</h1>
@@ -25,12 +26,30 @@ path: ../../../../
     <div class="carousel-inner">
       <div class="active item">
         <img data-src="holder.js/900x500/auto/gray/text:First Slide" alt="Carousel 1">
+        <div class="carousel-caption">
+          <h3>First slide caption</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
       </div>
       <div class="item">
         <img data-src="holder.js/900x500/auto/industrial/text:Second Slide" alt="Carousel 2">
+        <div class="carousel-caption">
+          <h3>Second slide caption</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
       </div>
       <div class="item">
         <img data-src="holder.js/900x500/auto/social/text:ThirdSlide" alt="Carousel 3">
+        <div class="carousel-caption">
+          <h3>Third slide caption</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -40,8 +59,8 @@ path: ../../../../
 </div>
 
 <!-- HTML Code -->
-  <div class="docs-html">
-    {% highlight html  %}
+<div class="docs-html">
+  {% highlight html  %}
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -56,7 +75,6 @@ path: ../../../../
           ...
         </div>
       </div>
-      ...
     </div>
 
     <a href="#myCarousel" class="carousel-control left" data-slide="prev">
@@ -66,5 +84,5 @@ path: ../../../../
       <i class="fa fa-chevron-right"></i>
     </a>
   </div><!-- /carousel -->
-    {% endhighlight %}
-  </div>
+  {% endhighlight %}
+</div>
