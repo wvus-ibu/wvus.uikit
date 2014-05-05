@@ -18,7 +18,7 @@
     .row{
       margin-bottom: 10px;
     }
-  }*/
+    }*/
   /*
 .docs-html,
 .docs-js {
@@ -48,7 +48,7 @@
   -webkit-border-radius: 4px 0 4px 0;
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
-}*/
+          }*/
   /*.docs-html:after {
   content: "HTML";
   position: absolute;
@@ -78,7 +78,7 @@
   -webkit-border-radius: 4px 0 4px 0;
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
-}*/
+          }*/
   /* Footer
 -------------------------------------------------- */
 }
@@ -284,6 +284,22 @@
 }
 .wvusUikit .popover-example .btn {
   margin-right: 10px;
+}
+.wvusUikit #favorite-icons [class*="col-"] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+}
+.wvusUikit #favorite-icons [class*="col-"]:hover {
+  background-color: #006699;
+  color: #fff;
+}
+.wvusUikit #favorite-icons [class*="col-"] .fa {
+  line-height: 32px;
+}
+.wvusUikit #favorite-icons [class*="col-"]:hover i,
+.wvusUikit #favorite-icons [class*="col-"]:focus i {
+  font-size: 30px;
 }
 .wvusUikit .footer {
   text-align: center;

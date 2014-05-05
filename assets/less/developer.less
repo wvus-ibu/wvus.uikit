@@ -49,9 +49,9 @@ header{
 
 
 
-  .subheader{
-    margin: 20px 0 30px 0;
-  }
+.subheader{
+  margin: 20px 0 30px 0;
+}
 
 // Grid Example
 .grid-example{
@@ -78,13 +78,13 @@ header{
     .row{
       margin-bottom: 10px;
     }
-  }*/
-  body > .navbar .brand {
-	  float: left;
-  	   color: #ffffff;
-  }
+    }*/
+    body > .navbar .brand {
+     float: left;
+     color: #ffffff;
+   }
 
-  #navbar-example{
+   #navbar-example{
     z-index: 9999;
   }
 
@@ -96,25 +96,25 @@ header{
 
 
 // scrollspy
- .scrollspy-example {
+.scrollspy-example {
   height: 200px;
   overflow: auto;
   position: relative;
 }
 
-  .docs-tabs .tab-content{
-    overflow: visible;
-  }
+.docs-tabs .tab-content{
+  overflow: visible;
+}
 
-  #docs-nav{
-    margin-top: 10px;
-  }
+#docs-nav{
+  margin-top: 10px;
+}
 
-  .docs-example > .dropdown > .dropdown-menu{
-    display: block;
-    position: static;
-    margin-bottom: 5px;
-  }
+.docs-example > .dropdown > .dropdown-menu{
+  display: block;
+  position: static;
+  margin-bottom: 5px;
+}
 
 // Styles for examples
 // ------------------------------
@@ -160,7 +160,7 @@ header{
 }
 
 #demo-collapse {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .tooltip-example .btn {
@@ -170,6 +170,27 @@ margin-top: 20px;
 .popover-example .btn {
   margin-right: 10px;
 }
+
+#favorite-icons {
+  [class*="col-"]{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: @border-radius-base;
+    &:hover{
+      background-color: @brand-secondary;
+      color: #fff;
+    }
+    .fa {
+      line-height: 32px;
+    }
+    &:hover i,
+    &:focus i {
+      font-size: 30px;
+    }
+  }
+}
+
+
 
 /*
 .docs-html,
@@ -201,7 +222,7 @@ margin-top: 20px;
   -webkit-border-radius: 4px 0 4px 0;
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
-}*/
+          }*/
 
 /*.docs-html:after {
   content: "HTML";
@@ -232,7 +253,7 @@ margin-top: 20px;
   -webkit-border-radius: 4px 0 4px 0;
      -moz-border-radius: 4px 0 4px 0;
           border-radius: 4px 0 4px 0;
-}*/
+          }*/
 
 
 /* Footer

@@ -6,252 +6,341 @@ group: icons
 hasJs: false
 name: icons-fontawesome
 path: ../../../../
----
 
+---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-    	300+ icons from Font Awesome
-    </p>
+  <h1>{{page.title}}</h1>
 </header>
 
-<p>All icons require an <code>&lt;i&gt;</code> tag with a unique class, prefixed with <code>icon-</code>. To use, place the following code just about anywhere:</p>
-<div class="docs-html">
+<section id="inline">
+  <h2 class="page-header">Inline Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <p>
+        <i class="fa fa-camera-retro"></i> fa-camera-retro
+      </p>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>Place Font Awesome icons just about anywhere with the <code>&lt;i&gt;</code> tag.</p>
 {% highlight html %}
-<i class="icon-search"></i>
+<i class="fa fa-camera-retro"></i> fa-camera-retro
 {% endhighlight %}
-</div>
-
-<p>
-  <span class="label label-info">Heads up!</span>
-  When using beside strings of text, as in buttons or nav links, be sure to leave a space after the <code>&lt;i&gt;</code> tag for proper spacing.
-</p>
-
-
-<hr class="bs-docs-separator">
-
-<div id="icon-sizing">
-  <h3>Larger Icons</h3>
-  <p>To increase the size of icons relative to its container, use <code>icon-large</code> (33% incease), <code>icon-2x</code>, <code>icon-3x</code>, <code>icon-4x</code> classes.</p>
-  <div class="bs-docs-example">
-    <ul class="unstyled">
-      <li><i class="icon-envelope"></i> icon-envelope</li>
-      <li><i class="icon-envelope icon-large"></i> icon-large</li>
-      <li><i class="icon-envelope icon-2x"></i> icon-2x</li>
-      <li><i class="icon-envelope icon-3x"></i> icon-3x</li>
-      <li><i class="icon-envelope icon-4x"></i> icon-4x</li>
-    </ul>
-  </div>
-  <div class="docs-html">
-{% highlight html %}
-<i class="icon-envelope"></i> default size
-<i class="icon-envelope icon-large"></i> icon-large
-<i class="icon-envelope icon-2x"></i> icon-2x
-<i class="icon-envelope icon-3x"></i> icon-3x
-<i class="icon-envelope icon-4x"></i> icon-4x
-{% endhighlight %}
-  </div>
-</div>
-<h2>Icon examples</h2>
-<p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
-
-<h3>Buttons</h3>
-
-<h4>Button group in a button toolbar</h4>
-<div class="bs-docs-example">
-  <div class="btn-toolbar">
-    <div class="btn-group">
-      <a class="btn" href="#"><i class="icon-align-left"></i></a>
-      <a class="btn" href="#"><i class="icon-align-center"></i></a>
-      <a class="btn" href="#"><i class="icon-align-right"></i></a>
-      <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+      <div class="alert alert-success"><i class="fa fa-info-circle"></i> Icon classes are echoed via CSS :before.</div>
     </div>
   </div>
-</div>
-<div class="docs-html">
-{% highlight html %}
-<div class="btn-toolbar">
-	<div class="btn-group">
-		<a class="btn" href="#"><i class="icon-align-left"></i></a>
-		<a class="btn" href="#"><i class="icon-align-center"></i></a>
-		<a class="btn" href="#"><i class="icon-align-right"></i></a>
-		<a class="btn" href="#"><i class="icon-align-justify"></i></a>
-	</div>
-</div>
-{% endhighlight %}
-</div>
+</section>
 
-<h4>Dropdown in a button group</h4>
-<div class="bs-docs-example">
-  <div class="btn-group">
-    <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
-    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-    <ul class="dropdown-menu">
-      <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-      <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-      <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
-      <li class="divider"></li>
-      <li><a href="#"><i class="i"></i> Make admin</a></li>
-    </ul>
-  </div>
-</div>
-<div class="docs-html">
+<section id="larger">
+  <h2 class="page-header">Larger Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <p><i class="fa fa-camera-retro fa-lg"></i> fa-camera-retro</p>
+      <p><i class="fa fa-camera-retro fa-2x"></i> fa-camera-retro</p>
+      <p><i class="fa fa-camera-retro fa-3x"></i> fa-camera-retro</p>
+      <p><i class="fa fa-camera-retro fa-4x"></i> fa-camera-retro</p>
+      <p><i class="fa fa-camera-retro fa-5x"></i> fa-camera-retro</p>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        To increase icon sizes relative to their container, use the <code>fa-lg</code> (33% increase), <code>fa-2x</code>,
+        <code>fa-3x</code>, <code>fa-4x</code>, or <code>fa-5x</code> classes.
+      </p>
 {% highlight html %}
-<div class="btn-group">
-	<a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
-	<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-	<ul class="dropdown-menu">
-		<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-		<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-		<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
-		<li class="divider"></li>
-		<li><a href="#"><i class="i"></i> Make admin</a></li>
-	</ul>
-</div>
+<p><i class="fa fa-camera-retro fa-lg"></i> fa-camera-retro</p>
+<p><i class="fa fa-camera-retro fa-2x"></i> fa-camera-retro</p>
+<p><i class="fa fa-camera-retro fa-3x"></i> fa-camera-retro</p>
+<p><i class="fa fa-camera-retro fa-4x"></i> fa-camera-retro</p>
+<p><i class="fa fa-camera-retro fa-5x"></i> fa-camera-retro</p>
 {% endhighlight %}
-</div>
-
-<h3>Button sizes</h3>
-<div class="bs-docs-example">
-  <a class="btn btn-large" href="#"><i class="icon-star"></i> Star</a>
-  <a class="btn btn-small" href="#"><i class="icon-star"></i> Star</a>
-  <a class="btn btn-mini" href="#"><i class="icon-star"></i> Star</a>
-</div>
-<div class="docs-html">
-{% highlight html %}
-<a class="btn btn-large" href="#"><i class="icon-star"></i> Star</a>
-<a class="btn btn-small" href="#"><i class="icon-star"></i> Star</a>
-<a class="btn btn-mini" href="#"><i class="icon-star"></i> Star</a>
-{% endhighlight %}
-</div>
-
-<h3>Navigation</h3>
-<div class="bs-docs-example">
-  <div class="well" style="padding: 8px 0; margin-bottom: 0;">
-    <ul class="nav nav-list">
-      <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
-      <li><a href="#"><i class="icon-book"></i> Library</a></li>
-      <li><a href="#"><i class="icon-pencil"></i> Applications</a></li>
-      <li><a href="#"><i class="i"></i> Misc</a></li>
-    </ul>
-  </div>
-</div>
-<div class="docs-html">
-{% highlight html %}
-<ul class="nav nav-list">
-	<li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
-	<li><a href="#"><i class="icon-book"></i> Library</a></li>
-	<li><a href="#"><i class="icon-pencil"></i> Applications</a></li>
-	<li><a href="#"><i class="i"></i> Misc</a></li>
-</ul>
-{% endhighlight %}
-</div>
-
-<h3>Form fields</h3>
-<form class="bs-docs-example form-horizontal">
-  <div class="control-group">
-    <label class="control-label" for="inputIcon">Email address</label>
-    <div class="controls">
-      <div class="input-prepend">
-        <span class="add-on"><i class="icon-envelope"></i></span><input class="span2" id="inputIcon" type="text">
+      <div class="alert alert-success">
+        <i class="fa fa-info-circle"></i> If your icons are getting chopped off on top and bottom, make sure you have
+        sufficient line-height.
       </div>
     </div>
   </div>
-</form>
-<div class="docs-html">
-{% highlight html %}
-<div class="control-group">
-	<label class="control-label" for="inputIcon">Email address</label>
-	<div class="controls">
-		<div class="input-prepend">
-			<span class="add-on"><i class="icon-envelope"></i></span>
-			<input class="span2" id="inputIcon" type="text">
-		</div>
-	</div>
-</div>
-{% endhighlight %}
-</div>
+</section>
 
-<h3>Bulleted Lists</h3>
-<div class="bs-docs-example">
-  <ul class="icons-ul">
-    <li><i class="icon-li icon-chevron-right"></i> Bulleted Lists</li>
-    <li><i class="icon-li icon-chevron-right"></i> Buttons</li>
-    <li><i class="icon-li icon-chevron-right"></i> Dropdown button</li>
-    <li><i class="icon-li icon-chevron-right"></i> Buttons Sizes</li>
-    <li><i class="icon-li icon-chevron-right"></i> Navigation</li>
-  </ul>
-</div>
-<div class="docs-html">
+<section id="fixed-width">
+  <h2 class="page-header">Fixed Width Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="nav nav-pills nav-stacked margin-bottom">
+        <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
+        <li><a href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a></li>
+        <li><a href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a></li>
+        <li><a href="#"><i class="fa fa-cogs fa-fw"></i>&nbsp; Settings</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>fa-fw</code> to set icons at a fixed width. Great to use when variable icon widths throw off alignment.
+        Especially useful in things like nav lists.
+      </p>
 {% highlight html %}
-<ul class="icons-ul">
-    <li><i class="icon-li icon-chevron-right"></i> Bulleted Lists</li>
-    <li><i class="icon-li icon-chevron-right"></i> Buttons</li>
-    <li><i class="icon-li icon-chevron-right"></i> Dropdown button</li>
-    <li><i class="icon-li icon-chevron-right"></i> Buttons Sizes</li>
-    <li><i class="icon-li icon-chevron-right"></i> Navigation</li>
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i> Home</a></li>
+  <li><a href="#"><i class="fa fa-book fa-fw"></i> Library</a></li>
+  <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Applications</a></li>
+  <li><a href="#"><i class="fa fa-cogs fa-fw"></i> Settings</a></li>
 </ul>
 {% endhighlight %}
-</div>
+    </div>
+  </div>
+</section>
 
-<h3>Animated Spinner</h3>
-<div class="bs-docs-example">
-  <i class="icon-cog icon-spin icon-2x"></i> Loading...
-</div>
-<div class="docs-html">
+<section id="list">
+  <h2 class="page-header">List Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>List icons (like these)</li>
+        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>to easily replace</li>
+        <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>Use <code>fa-ul</code> and <code>fa-li</code> to easily replace default bullets in unordered lists.</p>
 {% highlight html %}
-<i class="icon-cog icon-spin icon-2x"></i> Loading...
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-check-square"></i>List icons (like these)</li>
+  <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+  <li><i class="fa-li fa fa-spinner fa-spin"></i>to replace</li>
+  <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+</ul>
 {% endhighlight %}
-</div>
-<p class="alert alert-info"><i class="icon-info-sign"></i> CSS3 animations aren't supported in IE7 - IE9.:</p>
+    </div>
+  </div>
+</section>
 
-<h3>Rotated & Flipped</h3>
-<div class="bs-docs-example">
-  <i class="icon-shield"></i> normal<br>
-  <i class="icon-shield icon-rotate-90"></i> icon-rotate-90<br>
-  <i class="icon-shield icon-rotate-180"></i> icon-rotate-180<br>
-  <i class="icon-shield icon-rotate-270"></i> icon-rotate-270<br>
-  <i class="icon-shield icon-flip-horizontal"></i> icon-flip-horizontal<br>
-  <i class="icon-shield icon-flip-vertical"></i> icon-flip-vertical
-</div>
-<div class="docs-html">
+<section id="bordered-pulled">
+  <h2 class="page-header">Bordered & Pulled Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <p>
+        <i class="fa fa-quote-left fa-2x pull-left fa-border"></i>
+        Use a few styles together and you'll have easy pull quotes or a great introductory article icon.
+      </p>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>fa-border</code> and <code>pull-right</code> or <code>pull-left</code> for easy pull quotes or
+        article graphics.
+      </p>
 {% highlight html %}
-<i class="icon-shield"></i> normal<br>
-<i class="icon-shield icon-rotate-90"></i> icon-rotate-90<br>
-<i class="icon-shield icon-rotate-180"></i> icon-rotate-180<br>
-<i class="icon-shield icon-rotate-270"></i> icon-rotate-270<br>
-<i class="icon-shield icon-flip-horizontal"></i> icon-flip-horizontal<br>
-<i class="icon-shield icon-flip-vertical"></i> icon-flip-vertical
+<i class="fa fa-quote-left fa-2x pull-left fa-border"></i>
+Use a few styles together and you'll have easy pull quotes or a great introductory article icon.
 {% endhighlight %}
-</div>
+    </div>
+  </div>
+</section>
 
-<h3>Stacked Icons</h3>
-<p>Easily stack multiple icons on top of each other to create a singe custom icon. Use <code>icon-stack</code> class on the parent element and <code>icon-stack-base</code> for the bottom icon.</p>
-
-<div class="alert alert-info">
-  <i class="icon-info-sign"></i> Note: The bottom icon must be the first icon in the HTML with the <code>icon-stack-base</code> class.
-</div>
-<div class="bs-docs-example">
-  <span class="icon-stack icon-2x">
-    <i class="icon-sign-blank icon-stack-base"></i>
-    <i class="icon-signal icon-light"></i>
-  </span>
-</div>
-<div class="docs-html">
+<section id="spinning">
+  <h2 class="page-header">Spinning Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <p>
+        <button class="btn btn-default btn-lg"><i class="fa fa-spinner fa-spin"></i></button>
+        <button class="btn btn-default btn-lg"><i class="fa fa-refresh fa-spin"></i></button>
+        <button class="btn btn-default btn-lg"><i class="fa fa-cog fa-spin"></i></button>
+      </p>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use the <code>fa-spin</code> class to get any icon to rotate. Works well with <code>fa-spinner</code>,
+        <code>fa-refresh</code>, and <code>fa-cog</code>.
+      </p>
 {% highlight html %}
-<span class="icon-stack icon-2x">
-	<i class="icon-sign-blank icon-stack-base"></i>
-	<i class="icon-signal icon-light"></i>
+<i class="fa fa-spinner fa-spin"></i>
+<i class="fa fa-refresh fa-spin"></i>
+<i class="fa fa-cog fa-spin"></i>
+{% endhighlight %}
+      <p class="alert alert-success">
+        <i class="fa fa-info-circle"></i> CSS3 animations aren't supported in IE8 - IE9.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="rotated-flipped">
+  <h2 class="page-header">Rotated &amp; Flipped</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <p style="font-size: 18px;">
+        <i class="fa fa-shield"></i>&nbsp; normal<br>
+        <i class="fa fa-shield fa-rotate-90"></i>&nbsp; fa-rotate-90<br>
+        <i class="fa fa-shield fa-rotate-180"></i>&nbsp; fa-rotate-180<br>
+        <i class="fa fa-shield fa-rotate-270"></i>&nbsp; fa-rotate-270<br>
+        <i class="fa fa-shield fa-flip-horizontal"></i>&nbsp; fa-flip-horizontal<br>
+        <i class="fa fa-shield fa-flip-vertical"></i>&nbsp; fa-flip-vertical
+      </p>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        To arbitrarily rotate and flip icons, use the <code>fa-rotate-*</code> and <code>fa-flip-*</code> classes.
+      </p>
+{% highlight html %}
+<i class="fa fa-shield"></i>&nbsp; normal<br>
+<i class="fa fa-shield fa-rotate-90"></i>&nbsp; fa-rotate-90<br>
+<i class="fa fa-shield fa-rotate-180"></i>&nbsp; fa-rotate-180<br>
+<i class="fa fa-shield fa-rotate-270"></i>&nbsp; fa-rotate-270<br>
+<i class="fa fa-shield fa-flip-horizontal"></i>&nbsp; fa-flip-horizontal<br>
+<i class="fa fa-shield fa-flip-vertical"></i>&nbsp; icon-flip-vertical
+{% endhighlight %}
+    </div>
+  </div>
+</section>
+
+<section id="stacked">
+  <h2 class="page-header">Stacked Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <div class="margin-bottom">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+        fa-twitter on fa-square-o<br>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+        fa-flag on fa-circle<br>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+        </span>
+        fa-terminal on fa-square<br>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-camera fa-stack-1x"></i>
+          <i class="fa fa-ban fa-stack-2x text-danger"></i>
+        </span>
+        fa-ban on fa-camera
+      </div>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        To stack multiple icons, use the <code>fa-stack</code> class on the parent, the <code>fa-stack-1x</code>
+        for the regularly sized icon, and <code>fa-stack-2x</code> for the larger icon. <code>fa-inverse</code>
+        can be used as an alternative icon color. You can even throw <a href="#larger">larger icon</a> classes on the parent
+        to get further control of sizing.
+      </p>
+{% highlight html %}
+<span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
 </span>
+fa-twitter on fa-square-o<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+</span>
+fa-flag on fa-circle<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+fa-terminal on fa-square<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-camera fa-stack-1x"></i>
+  <i class="fa fa-ban fa-stack-2x text-danger"></i>
+</span>
+fa-ban on fa-camera
 {% endhighlight %}
-</div>
-<h3>Custom CSS</h3>
-<p>Font Awesome renders all icons as a font; therefore, any font styling can be applied to the icon.</p>
-<div class="bs-docs-example">
-  <i class="icon-bug icon-4x" style="color: green;"></i>
-</div>
-<div class="docs-html">
+    </div>
+  </div>
+</section>
+
+<section id="bootstrap">
+  <h2 class="page-header">Bootstrap 3 Examples</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <p>
+        <a class="btn btn-danger" href="#">
+          <i class="fa fa-trash-o fa-lg"></i> Delete</a>
+        <a class="btn btn-default btn-sm" href="#">
+          <i class="fa fa-cog"></i> Settings</a>
+      </p>
+      <p>
+        <a class="btn btn-lg btn-success" href="#">
+          <i class="fa fa-flag fa-2x pull-left"></i> Font Awesome<br>Version {{ site.fontawesome.version }}</a>
+      </p>
+      <div class="margin-bottom">
+        <div class="btn-group">
+          <a class="btn btn-default" href="#"><i class="fa fa-align-left"></i></a>
+          <a class="btn btn-default" href="#"><i class="fa fa-align-center"></i></a>
+          <a class="btn btn-default" href="#"><i class="fa fa-align-right"></i></a>
+          <a class="btn btn-default" href="#"><i class="fa fa-align-justify"></i></a>
+        </div>
+      </div>
+      <div class="margin-bottom">
+        <div class="input-group margin-bottom-sm">
+          <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+          <input class="form-control" type="text" placeholder="Email address">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+          <input class="form-control" type="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="margin-bottom">
+        <div class="btn-group open">
+          <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="fa fa-caret-down"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+            <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+            <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="i"></i> Make admin</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Font Awesome works great with the full range of Bootstrap components.
+      </p>
 {% highlight html %}
-<i class="icon-bug icon-4x" style="color: green;"></i>
-{% endhighlight %}
+<a class="btn btn-danger" href="#">
+  <i class="fa fa-trash-o fa-lg"></i> Delete</a>
+<a class="btn btn-default btn-sm" href="#">
+  <i class="fa fa-cog"></i> Settings</a>
+
+<a class="btn btn-lg btn-success" href="#">
+  <i class="fa fa-flag fa-2x pull-left"></i> Font Awesome<br>Version {{ site.fontawesome.version }}</a>
+
+<div class="btn-group">
+  <a class="btn btn-default" href="#"><i class="fa fa-align-left"></i></a>
+  <a class="btn btn-default" href="#"><i class="fa fa-align-center"></i></a>
+  <a class="btn btn-default" href="#"><i class="fa fa-align-right"></i></a>
+  <a class="btn btn-default" href="#"><i class="fa fa-align-justify"></i></a>
 </div>
+
+<div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <input class="form-control" type="text" placeholder="Email address">
+</div>
+<div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+  <input class="form-control" type="password" placeholder="Password">
+</div>
+
+<div class="btn-group open">
+  <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="i"></i> Make admin</a></li>
+  </ul>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+</section>
