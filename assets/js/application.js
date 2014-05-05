@@ -47,7 +47,7 @@
       selector: "a[data-toggle=tooltip]"
     });
 
-    $('.tooltip-test').tooltip();
+    $('[data-toggle="tooltip"]').tooltip();
 
     // popover demo
     $('.popover-test').popover();
