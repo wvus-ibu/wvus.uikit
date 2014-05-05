@@ -253,6 +253,12 @@
 .wvusUikit .docs-example .close {
   float: none;
 }
+.wvusUikit .callout {
+  border: 1px solid #333333;
+  padding: 4px 12px;
+  margin: 10px auto;
+  border-radius: 4px;
+}
 .wvusUikit .fixed-example {
   position: relative;
   height: 100px;
@@ -272,6 +278,9 @@
 }
 .wvusUikit #demo-collapse {
   margin-top: 20px;
+}
+.wvusUikit .tooltip-example .btn {
+  margin-right: 10px;
 }
 .wvusUikit .footer {
   text-align: center;
