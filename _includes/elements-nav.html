@@ -6,10 +6,9 @@
       <li{% if page.name == "grid-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/basic">Basic</a></li>
       <li{% if page.name == "grid-nested" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/nested">Nested</a></li>
       <li{% if page.name == "grid-offset" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/offset">Offset</a></li>
-      <li {% if page.name == "responsive" %}class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/responsive/">Responsive</a></li>
     </ul>
   </li>
-
+<li {% if page.name == "responsive" %}class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/responsive/">Responsive</a></li>
   <li>
     <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="fa fa-caret-right"></i></a>
     <ul class="nav nav-list collapse {% if page.group == 'typography'%} in {% endif %}" id="typography">
