@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           spawn: false,
           livereload: '<%= connect.docs.options.livereload %>'
         },
-        files: ['assets/**/*', 'elements/**/*', 'develop/**/*', 'design/**/*', '_includes/**/*', '_layouts/**/8'],
+        files: ['assets/**/*', 'elements/**/*', 'develop/**/*', 'design/**/*', '_includes/**/*', '_layouts/**/*', 'tests/**/*'],
         tasks: ['jekyll']
       },
       assets: {
