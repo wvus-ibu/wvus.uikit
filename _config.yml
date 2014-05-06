@@ -19,5 +19,6 @@ download: https://github.com/wvus-ibu/wvus.uikit/releases/download/v1.2.0/wvus.u
 src-download: https://github.com/wvus-ibu/wvus.uikit/archive/v1.2.0.zip
 bootstrap: http://getbootstrap.com/
 font-awesome: http://fontawesome.io/
+font-awesome-verison: 4.0.3
 jquery: http://jquery.com/
 uikit-version: "2.0.0"
