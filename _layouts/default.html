@@ -8,8 +8,8 @@
     <div class="container-fluid">
       <!-- Left nav (Docs)
       ================================================= -->
-      <div class="row">
-        <div class="col-md-3" id="docs-nav">
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
           <div class="well">
             {% if page.url contains site.developerdocs %}
               {% include elements-nav.html %}
@@ -20,7 +20,8 @@
             {% endif %}
           </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 ">
+            <button type="button" class="btn btn-default btn-xs visible-xs visible-sm" data-toggle="offcanvas">Toggle Nav</button>
           {{content}}
         </div>
       </div>

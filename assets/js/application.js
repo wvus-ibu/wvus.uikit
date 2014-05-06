@@ -5,6 +5,10 @@
 (function($){
 
   var $window = $(window);
+  // Offcanvas Sidenav
+    $('[data-toggle=offcanvas]').click(function(){
+      $('.row-offcanvas').toggleClass('active');
+    });
 
     // Disable certain links in docs
     $('section [href^=#]').click(function (e) {
