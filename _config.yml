@@ -20,5 +20,8 @@ src-download: https://github.com/wvus-ibu/wvus.uikit/archive/v1.2.0.zip
 bootstrap: http://getbootstrap.com/
 font-awesome: http://fontawesome.io/
 font-awesome-verison: 4.0.3
+spinjs: http://fgnass.github.io/spin.js/
+videojs: http://www.videojs.com/
+videojs-docs: https://github.com/videojs/video.js/blob/stable/docs/index.md
 jquery: http://jquery.com/
 uikit-version: "2.0.0"
