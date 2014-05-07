@@ -12,10 +12,11 @@
    bootstrapJsPath:  '<%= uikit.bootstrapPath %>js/',
    bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/',
    fontAwesomePath:  '<%= uikit.libPath %>font-awesome/',
-   jqueryPath:  '<%= uikit.libPath %>jquery/',
+   jqueryPath:  '<%= uikit.libPath %>jquery/dist/',
    jqueryMobilePath:  '<%= uikit.libPath %>jquery-mobile/',
    datepickerPath:  '<%= uikit.libPath %>bootstrap-datepicker/',
-   videojsPath:  '<%= uikit.libPath %>videojs/dist/video-js/',
+   modernizrPath: '<%= uikit.libPath %>modernizr/',
+   videojsPath:  '<%= uikit.libPath %>video-js/',
    videojsYoutubePath:  '<%= uikit.libPath %>videojs-youtube/',
    spinjsPath:  '<%= uikit.libPath %>spin.js/',
    worldVisionPath: '<%= uikit.libPath %>worldvision/'
@@ -72,6 +73,14 @@
       jquery: {
         src: '<%= uikit.jqueryPath %>jquery.js',
         dest: '<%= uikit.distPath %>js/jquery-custom.min.js'
+      },
+      jqueryMobile: {
+        src: '<%= uikit.jqueryMobilePath %>jquery.mobile.custom.js',
+        dest: '<%= uikit.distPath %>js/jquery.mobile.custom.min.js'
+      },
+      modernizr: {
+        src: '<%= uikit.modernizrPath %>modernizr.js',
+        dest: '<%= uikit.distPath %>js/modernizr.min.js'
       },
       uikit: {
         src: '<%= concat.uikit.dest %>',
@@ -179,7 +188,7 @@
         browsers: ['last 2 versions', 'ie 9', 'android 4.2' ]
       },
       dist: {
-        src: '<%= less.dist.dest =>'
+        src: '<%= less.dist.dest %>'
       },
     },
 
@@ -217,13 +226,15 @@
       },
       variables: {
         files: [
-        {expand:true, flatten: true, cwd: './', src: ['<%= uikit.worldVisionPath %>less/variables.less', '<%= uikit.worldVisionPath %>less/mixins.less'], dest: '<%= uikit.distPath %>less'},
+        {expand:true, flatten: true, cwd: '<%= uikit.srcPath %>', src: ['<%= uikit.worldVisionPath %>less/variables.less', '<%= uikit.worldVisionPath %>less/mixins.less'], dest: '<%= uikit.distPath %>less'},
         ]
       },
       lib: {
         files: [
         {expand: true, cwd: '<%= uikit.fontAwesomePath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'},
-        {expand: true, cwd: '<%= uikit.libPath %>modernizer', src: '**', dest: '<%= uikit.distPath %>js/'},
+        {expand: true, cwd: '<%= uikit.jqueryPath %>', src: 'jquery.js', dest: '<%= uikit.distPath %>js/'},
+        {expand: true, cwd: '<%= uikit.jqueryMobilePath %>', src: '**', dest: '<%= uikit.distPath %>js/'},
+        {expand: true, cwd: '<%= uikit.modernizrPath %>', src: '**', dest: '<%= uikit.distPath %>js/'},
         {expand: true, cwd: '<%= uikit.videojsPath %>', src: "video-js.swf", dest: '<%= uikit.distPath %>js/'},
         {expand: true, cwd: '<%= uikit.videojsPath %>font', src: '**', dest: '<%= uikit.distPath %>fonts'},
         {expand: true, cwd: '<%= uikit.bootstrapPath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'}
@@ -233,7 +244,7 @@
         files: [
         {
           expand: true,
-          cwd: distPath,
+          cwd: '<%= uikit.distPath %>',
           src: [
           '**/*'
           ],
