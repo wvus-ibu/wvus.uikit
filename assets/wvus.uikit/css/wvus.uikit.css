@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0-beta - 2014-04-25
+/*! wvus.uikit - v2.0.0-beta - 2014-05-07
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -182,7 +182,8 @@
 .wvusUikit input[type='checkbox'],
 .wvusUikit input[type='radio']
 {
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     padding: 0;
 }
 .wvusUikit input[type='number']::-webkit-inner-spin-button,
@@ -192,9 +193,8 @@
 }
 .wvusUikit input[type='search']
 {
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -moz-box-sizing: content-box;
+         box-sizing: content-box;
 
     -webkit-appearance: textfield;
 }
@@ -327,16 +327,14 @@
 }
 .wvusUikit *
 {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 .wvusUikit *:before,
 .wvusUikit *:after
 {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 .wvusUikit html
 {
@@ -411,8 +409,6 @@
     padding: 4px;
 
     -webkit-transition: all .2s ease-in-out;
-       -moz-transition: all .2s ease-in-out;
-         -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
 
     border: 1px solid #ddd;
@@ -2127,9 +2123,8 @@ a.wvusUikit .bg-danger:hover
 }
 .wvusUikit input[type='search']
 {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 .wvusUikit input[type='radio'],
 .wvusUikit input[type='checkbox']
@@ -2185,8 +2180,6 @@ a.wvusUikit .bg-danger:hover
     padding: 4px 12px;
 
     -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-       -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-         -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
     color: #666;
@@ -2194,17 +2187,13 @@ a.wvusUikit .bg-danger:hover
     border-radius: 4px;
     background-color: #fff;
     background-image: none;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 .wvusUikit .form-control:focus
 {
     border-color: #66afe9;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-       -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .wvusUikit .form-control::-moz-placeholder
 {
@@ -2388,16 +2377,12 @@ select[multiple].wvusUikit .input-lg
 .wvusUikit .has-success .form-control
 {
     border-color: #3c763d;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 .wvusUikit .has-success .form-control:focus
 {
     border-color: #2b542c;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
 }
 .wvusUikit .has-success .input-group-addon
 {
@@ -2421,16 +2406,12 @@ select[multiple].wvusUikit .input-lg
 .wvusUikit .has-warning .form-control
 {
     border-color: #8a6d3b;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 .wvusUikit .has-warning .form-control:focus
 {
     border-color: #66512c;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
 }
 .wvusUikit .has-warning .input-group-addon
 {
@@ -2454,16 +2435,12 @@ select[multiple].wvusUikit .input-lg
 .wvusUikit .has-error .form-control
 {
     border-color: #a94442;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 .wvusUikit .has-error .form-control:focus
 {
     border-color: #843534;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
 }
 .wvusUikit .has-error .input-group-addon
 {
@@ -2619,9 +2596,7 @@ select[multiple].wvusUikit .input-lg
 {
     outline: 0;
     background-image: none;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-       -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 .wvusUikit .btn.disabled,
 .wvusUikit .btn[disabled],
@@ -2631,9 +2606,7 @@ fieldset[disabled] .wvusUikit .btn
     pointer-events: none;
 
     opacity: .65;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 
     filter: alpha(opacity=65);
 }
@@ -2928,9 +2901,7 @@ fieldset[disabled] .wvusUikit .btn-danger.active
 fieldset[disabled] .wvusUikit .btn-link
 {
     background-color: transparent;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 .wvusUikit .btn-link,
 .wvusUikit .btn-link:hover,
@@ -3004,8 +2975,6 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 .wvusUikit .fade
 {
     -webkit-transition: opacity .15s linear;
-       -moz-transition: opacity .15s linear;
-         -o-transition: opacity .15s linear;
             transition: opacity .15s linear;
 
     opacity: 0;
@@ -3031,8 +3000,6 @@ fieldset[disabled] .wvusUikit .btn-link:focus
     height: 0;
 
     -webkit-transition: height .35s ease;
-       -moz-transition: height .35s ease;
-         -o-transition: height .35s ease;
             transition: height .35s ease;
 }
 @font-face {
@@ -3956,20 +3923,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 .wvusUikit .fa-spin
 {
     -webkit-animation: spin 2s infinite linear;
-       -moz-animation: spin 2s infinite linear;
-         -o-animation: spin 2s infinite linear;
             animation: spin 2s infinite linear;
-}
-@-moz-keyframes spin
-{
-    0%
-    {
-        -moz-transform: rotate(0deg);
-    }
-    100%
-    {
-        -moz-transform: rotate(359deg);
-    }
 }
 @-webkit-keyframes spin
 {
@@ -3980,17 +3934,6 @@ fieldset[disabled] .wvusUikit .btn-link:focus
     100%
     {
         -webkit-transform: rotate(359deg);
-    }
-}
-@-o-keyframes spin
-{
-    0%
-    {
-        -o-transform: rotate(0deg);
-    }
-    100%
-    {
-        -o-transform: rotate(359deg);
     }
 }
 @-ms-keyframes spin
@@ -4008,19 +3951,19 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 {
     0%
     {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     100%
     {
-        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
 .wvusUikit .fa-rotate-90
 {
     -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
             transform: rotate(90deg);
 
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
@@ -4028,9 +3971,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 .wvusUikit .fa-rotate-180
 {
     -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-         -o-transform: rotate(180deg);
             transform: rotate(180deg);
 
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
@@ -4038,9 +3979,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 .wvusUikit .fa-rotate-270
 {
     -webkit-transform: rotate(270deg);
-       -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
-         -o-transform: rotate(270deg);
             transform: rotate(270deg);
 
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
@@ -4048,9 +3987,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 .wvusUikit .fa-flip-horizontal
 {
     -webkit-transform: scale(-1, 1);
-       -moz-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
-         -o-transform: scale(-1, 1);
             transform: scale(-1, 1);
 
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
@@ -4058,9 +3995,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 .wvusUikit .fa-flip-vertical
 {
     -webkit-transform: scale(1, -1);
-       -moz-transform: scale(1, -1);
         -ms-transform: scale(1, -1);
-         -o-transform: scale(1, -1);
             transform: scale(1, -1);
 
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
@@ -5661,9 +5596,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
     border-radius: 4px;
     background-color: #fff;
     background-clip: padding-box;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-       -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 .wvusUikit .dropdown-menu.pull-right
 {
@@ -5909,15 +5842,11 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 }
 .wvusUikit .btn-group.open .dropdown-toggle
 {
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-       -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 .wvusUikit .btn-group.open .dropdown-toggle.btn-link
 {
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 .wvusUikit .btn .caret
 {
@@ -6752,9 +6681,7 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
 
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
-       -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
 }
 @media (min-width: 768px)
 {
@@ -6825,9 +6752,7 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
         padding-bottom: 0;
 
         border: 0;
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
     }
     .wvusUikit .navbar-form.navbar-right:last-child
     {
@@ -7487,8 +7412,6 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
     padding: 4px;
 
     -webkit-transition: all .2s ease-in-out;
-       -moz-transition: all .2s ease-in-out;
-         -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
 
     border: 1px solid #ddd;
@@ -7639,9 +7562,7 @@ a.wvusUikit .thumbnail.active
 
     border-radius: 4px;
     background-color: #f5f5f5;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-       -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 }
 .wvusUikit .progress-bar
 {
@@ -7654,16 +7575,12 @@ a.wvusUikit .thumbnail.active
     height: 100%;
 
     -webkit-transition: width .6s ease;
-       -moz-transition: width .6s ease;
-         -o-transition: width .6s ease;
             transition: width .6s ease;
     text-align: center;
 
     color: #fff;
     background-color: #f60;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-       -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
 }
 .wvusUikit .progress-striped .progress-bar
 {
@@ -7674,8 +7591,6 @@ a.wvusUikit .thumbnail.active
 .wvusUikit .progress.active .progress-bar
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-       -moz-animation: progress-bar-stripes 2s linear infinite;
-         -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .wvusUikit .progress-bar-success
@@ -7951,9 +7866,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-       -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .wvusUikit .panel-body
 {
@@ -8301,9 +8214,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     border: 1px solid #e3e3e3;
     border-radius: 4px;
     background-color: #f5f5f5;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 .wvusUikit .well blockquote
 {
@@ -8382,8 +8293,6 @@ a.wvusUikit .list-group-item-danger.active:focus
 .wvusUikit .modal.fade .modal-dialog
 {
     -webkit-transition: -webkit-transform .3s ease-out;
-       -moz-transition:    -moz-transform .3s ease-out;
-         -o-transition:      -o-transform .3s ease-out;
             transition:         transform .3s ease-out;
     -webkit-transform: translate(0, -25%);
         -ms-transform: translate(0, -25%);
@@ -8412,9 +8321,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     outline: none;
     background-color: #fff;
     background-clip: padding-box;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-       -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-            box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 .wvusUikit .modal-backdrop
 {
@@ -8493,9 +8400,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     }
     .wvusUikit .modal-content
     {
-        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-           -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     }
     .wvusUikit .modal-sm
     {
@@ -8664,9 +8569,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     border-radius: 6px;
     background-color: #fff;
     background-clip: padding-box;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-       -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 .wvusUikit .popover.top
 {
@@ -8829,8 +8732,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     display: none;
 
     -webkit-transition: .6s ease-in-out left;
-       -moz-transition: .6s ease-in-out left;
-         -o-transition: .6s ease-in-out left;
             transition: .6s ease-in-out left;
 }
 .wvusUikit .carousel-inner > .item > img,
@@ -8899,6 +8800,7 @@ a.wvusUikit .list-group-item-danger.active:focus
 .wvusUikit .carousel-control.left
 {
     background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .5) 0%), color-stop(rgba(0, 0, 0, .0001) 100%));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
     background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
     background-repeat: repeat-x;
 
@@ -8910,6 +8812,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     left: auto;
 
     background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0001) 0%), color-stop(rgba(0, 0, 0, .5) 100%));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
     background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
     background-repeat: repeat-x;
 
@@ -9932,9 +9835,8 @@ a.wvusUikit .list-group-item-danger.active:focus
 {
     z-index: 2000;
 
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     min-width: 100%;
 }
 .wvusUikit .bootstrap-select.btn-group .dropdown-menu.inner
@@ -9945,12 +9847,8 @@ a.wvusUikit .list-group-item-danger.active:focus
     padding: 0;
 
     border: 0;
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 .wvusUikit .bootstrap-select.btn-group .dropdown-menu dt
 {
@@ -10089,9 +9987,8 @@ a.wvusUikit .list-group-item-danger.active:focus
     position: absolute;
     bottom: 5px;
 
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     width: 96%;
     min-height: 26px;
     margin: 0 2%;
@@ -10145,9 +10042,8 @@ a.wvusUikit .list-group-item-danger.active:focus
 {
     float: left;
 
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     width: 100%;
 }
 .wvusUikit .bootstrap-select-searchbox + .bs-actionsbox
@@ -10188,9 +10084,7 @@ a.wvusUikit .list-group-item-danger.active:focus
 }
 .wvusUikit .vjs-default-skin .vjs-slider:focus
 {
-    -webkit-box-shadow: 0 0 2em #fff;
-       -moz-box-shadow: 0 0 2em #fff;
-            box-shadow: 0 0 2em #fff;
+    box-shadow: 0 0 2em #fff;
 }
 .wvusUikit .vjs-default-skin .vjs-slider-handle
 {
@@ -10232,8 +10126,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     visibility: visible;
 
     -webkit-transition: visibility .1s, opacity .1s;
-       -moz-transition: visibility .1s, opacity .1s;
-         -o-transition: visibility .1s, opacity .1s;
             transition: visibility .1s, opacity .1s;
 
     opacity: 1;
@@ -10244,8 +10136,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     visibility: hidden;
 
     -webkit-transition: visibility 1s, opacity 1s;
-       -moz-transition: visibility 1s, opacity 1s;
-         -o-transition: visibility 1s, opacity 1s;
             transition: visibility 1s, opacity 1s;
 
     opacity: 0;
@@ -10396,9 +10286,7 @@ a.wvusUikit .list-group-item-danger.active:focus
 
     content: '\f068';
     -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
             transform: rotate(90deg);
 }
 .wvusUikit .vjs-default-skin .vjs-volume-menu-button .vjs-menu .vjs-menu-content
@@ -10420,8 +10308,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     height: 1em;
 
     -webkit-transition: all .4s;
-       -moz-transition: all .4s;
-         -o-transition: all .4s;
             transition: all .4s;
 }
 .wvusUikit .vjs-default-skin:hover .vjs-progress-control
@@ -10429,8 +10315,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     font-size: .9em;
 
     -webkit-transition: all .2s;
-       -moz-transition: all .2s;
-         -o-transition: all .2s;
             transition: all .2s;
 }
 .wvusUikit .vjs-default-skin .vjs-progress-holder
@@ -10627,8 +10511,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     margin-left: -.5em;
 
     -webkit-animation: spin 1.5s infinite linear;
-       -moz-animation: spin 1.5s infinite linear;
-         -o-animation: spin 1.5s infinite linear;
             animation: spin 1.5s infinite linear;
 
     opacity: .75;
@@ -10650,17 +10532,6 @@ a.wvusUikit .list-group-item-danger.active:focus
     color: #fff;
     text-shadow: 0 0 .1em #000;
 }
-@-moz-keyframes spin
-{
-    0%
-    {
-        -moz-transform: rotate(0deg);
-    }
-    100%
-    {
-        -moz-transform: rotate(359deg);
-    }
-}
 @-webkit-keyframes spin
 {
     0%
@@ -10672,26 +10543,17 @@ a.wvusUikit .list-group-item-danger.active:focus
         -webkit-transform: rotate(359deg);
     }
 }
-@-o-keyframes spin
-{
-    0%
-    {
-        -o-transform: rotate(0deg);
-    }
-    100%
-    {
-        -o-transform: rotate(359deg);
-    }
-}
 @keyframes spin
 {
     0%
     {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     100%
     {
-        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
 .wvusUikit .vjs-default-skin .vjs-menu-button
@@ -10733,9 +10595,7 @@ a.wvusUikit .list-group-item-danger.active:focus
 
     background-color: #222;
     background-color: rgba(34, 34, 34, .7);
-    -webkit-box-shadow: -.2em -.2em .3em rgba(255, 255, 255, .2);
-       -moz-box-shadow: -.2em -.2em .3em rgba(255, 255, 255, .2);
-            box-shadow: -.2em -.2em .3em rgba(255, 255, 255, .2);
+    box-shadow: -.2em -.2em .3em rgba(255, 255, 255, .2);
 }
 .wvusUikit .vjs-default-skin .vjs-menu-button:hover .vjs-menu
 {
@@ -10767,9 +10627,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     outline: 0;
     background-color: #fff;
     background-color: rgba(255, 255, 255, .75);
-    -webkit-box-shadow: 0 0 1em #fff;
-       -moz-box-shadow: 0 0 1em #fff;
-            box-shadow: 0 0 1em #fff;
+    box-shadow: 0 0 1em #fff;
 }
 .wvusUikit .vjs-default-skin .vjs-menu-button ul li.vjs-menu-title
 {
@@ -10795,9 +10653,7 @@ a.wvusUikit .list-group-item-danger.active:focus
 .wvusUikit .vjs-default-skin .vjs-captions-button:focus .vjs-control-content:before,
 .wvusUikit .vjs-default-skin .vjs-captions-button:hover .vjs-control-content:before
 {
-    -webkit-box-shadow: 0 0 1em #fff;
-       -moz-box-shadow: 0 0 1em #fff;
-            box-shadow: 0 0 1em #fff;
+    box-shadow: 0 0 1em #fff;
 }
 .wvusUikit .video-js
 {
