@@ -1,105 +1,99 @@
  /*global module:false*/
  /* jshint node:true */
-module.exports = function(grunt) {
+ module.exports = function(grunt) {
   "use strict";
   // Path variables
-  var srcPath = './',
-      libPath = srcPath + 'lib/',
-      distPath = srcPath + 'dist/',
-      bootstrapPath = libPath + 'bootstrap/',
-      bootstrapLessPath = bootstrapPath + 'less/',
-      bootstrapJsPath = bootstrapPath + 'js/',
-      bootstrapSelectPath = libPath + 'bootstrap-select/',
-      fontAwesomePath = libPath + 'font-awesome/',
-      jqueryPath = libPath + 'jquery/',
-      jqueryMobilePath = libPath + 'jquery-mobile/',
-      datepickerPath = libPath + 'bootstrap-datepicker/',
-      videojsPath = libPath + 'videojs/dist/video-js/',
-      videojsYoutubePath = libPath + 'videojs-youtube/',
-      spinjsPath = libPath + 'spin.js/',
-      worldVisionPath = libPath + 'worldvision/';
+  var uikitConfig = {
+   srcPath: './',
+   libPath: '<%= uikit.srcPath %>lib/',
+   distPath: '<%= uikit.srcPath %>dist/',
+   bootstrapPath: '<%= uikit.libPath %>bootstrap/',
+   bootstrapLessPath:  '<%= uikit.bootstrapPath %>less/',
+   bootstrapJsPath:  '<%= uikit.bootstrapPath %>js/',
+   bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/',
+   fontAwesomePath:  '<%= uikit.libPath %>font-awesome/',
+   jqueryPath:  '<%= uikit.libPath %>jquery/',
+   jqueryMobilePath:  '<%= uikit.libPath %>jquery-mobile/',
+   datepickerPath:  '<%= uikit.libPath %>bootstrap-datepicker/',
+   videojsPath:  '<%= uikit.libPath %>videojs/dist/video-js/',
+   videojsYoutubePath:  '<%= uikit.libPath %>videojs-youtube/',
+   spinjsPath:  '<%= uikit.libPath %>spin.js/',
+   worldVisionPath: '<%= uikit.libPath %>worldvision/'
+ };
 
   // Project configuration.
   grunt.initConfig({
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
-
+    '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+    '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+    '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+    ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
+    uikit: uikitConfig,
     /*
     Concat JS
-     */
+    */
     concat: {
       options: {
         banner: '<%= banner %>',
         stripBanners: true
       },
-      jquery: {
-        src: [
-          jqueryPath + 'dist/jquery.js',
-          jqueryMobilePath + 'jquery.mobile.custom.js',
-          worldVisionPath + 'js/namespace.js'
-        ],
-        dest: distPath + 'js/jquery-custom.js'
-      },
       uikit: {
         src: [
-            bootstrapJsPath + 'transition.js',
-            bootstrapJsPath + 'alert.js',
-            bootstrapJsPath + 'button.js',
-            bootstrapJsPath + 'carousel.js',
-            bootstrapJsPath + 'collapse.js',
-            bootstrapJsPath + 'dropdown.js',
-            bootstrapJsPath + 'modal.js',
-            bootstrapJsPath + 'tooltip.js',
-            bootstrapJsPath + 'popover.js',
-            bootstrapJsPath + 'scrollspy.js',
-            bootstrapJsPath + 'tab.js',
-            bootstrapJsPath + 'affix.js',
-            datepickerPath + 'js/bootstrap-datepicker.js',
-            bootstrapSelectPath + 'bootstrap-select.js',
-            videojsPath + 'video.dev.js',
-            videojsYoutubePath + 'src/media.youtube.js',
-            spinjsPath + 'spin.js',
-            spinjsPath + 'jquery.spin.js',
-            ],
+        '<%= uikit.bootstrapJsPath %>transition.js',
+        '<%= uikit.bootstrapJsPath %>alert.js',
+        '<%= uikit.bootstrapJsPath %>button.js',
+        '<%= uikit.bootstrapJsPath %>carousel.js',
+        '<%= uikit.bootstrapJsPath %>collapse.js',
+        '<%= uikit.bootstrapJsPath %>dropdown.js',
+        '<%= uikit.bootstrapJsPath %>modal.js',
+        '<%= uikit.bootstrapJsPath %>tooltip.js',
+        '<%= uikit.bootstrapJsPath %>popover.js',
+        '<%= uikit.bootstrapJsPath %>scrollspy.js',
+        '<%= uikit.bootstrapJsPath %>tab.js',
+        '<%= uikit.bootstrapJsPath %>affix.js',
+        '<%= uikit.datepickerPath %>js/bootstrap-datepicker.js',
+        '<%= uikit.bootstrapSelectPath %>bootstrap-select.js',
+        '<%= uikit.videojsPath %>video.dev.js',
+        '<%= uikit.videojsYoutubePath %>src/media.youtube.js',
+        '<%= uikit.spinjsPath %>spin.js',
+        '<%= uikit.spinjsPath %>jquery.spin.js',
+        ],
 
-        dest: distPath + 'js/<%= pkg.name %>.js'
+        dest: '<%= uikit.distPath %>js/<%= pkg.name %>.js'
       }
-  },
+    },
 
     uglify: {
       options: {
         banner: '<%= banner %>'
       },
       jquery: {
-        src: '<%= concat.jquery.dest %>',
-        dest: distPath + 'js/jquery-custom.min.js'
+        src: '<%= uikit.jqueryPath %>jquery.js',
+        dest: '<%= uikit.distPath %>js/jquery-custom.min.js'
       },
       uikit: {
         src: '<%= concat.uikit.dest %>',
-        dest: distPath + 'js/<%= pkg.name %>.min.js'
+        dest: '<%= uikit.distPath %>js/<%= pkg.name %>.min.js'
       },
 
     },
 
     jshint: {
       options: {
-        jshintrc: worldVisionPath + 'js/.jshintrc'
+        jshintrc: '<%= uikit.worldVisionPath %>js/.jshintrc'
       },
       gruntfile: {
         options: {
-            curly : true,
-            eqeeq: true,
-            newcap: true,
-            noarg : true,
-            node  : true,
-            nonbsp: true,
-            strict: true,
-            undef : true
+          curly : true,
+          eqeeq: true,
+          newcap: true,
+          noarg : true,
+          node  : true,
+          nonbsp: true,
+          strict: true,
+          undef : true
         },
         src: 'Gruntfile.js'
       },
@@ -136,11 +130,11 @@ module.exports = function(grunt) {
           singleline: false,
           multiline: true
         },
-        src: [bootstrapLessPath + '*.less',
-        fontAwesomePath + 'less/*.less',
-        datepickerPath + 'less/datepicker3.less',
-        bootstrapSelectPath + 'bootstrap-select.less',
-        worldVisionPath + 'less/video-js-skin.less']
+        src: ['<%= uikit.bootstrapLessPath %>*.less',
+        '<%= uikit.fontAwesomePath %>less/*.less',
+        '<%= uikit.datepickerPath %>less/datepicker3.less',
+        '<%= uikit.bootstrapSelectPath %>bootstrap-select.less',
+        '<%= uikit.worldVisionPath %>less/video-js-skin.less']
       }
     },
 
@@ -149,12 +143,12 @@ module.exports = function(grunt) {
         options: {
           outputSourceFiles: true,
           sourceMap: true,
-          sourceMapFilename: distPath + 'css/<%= pkg.name %>.css.map',
-          sourceMapRootpath: srcPath,
+          sourceMapFilename: '<%= uikit.distPath %>css/<%= pkg.name %>.css.map',
+          sourceMapRootpath: '<%= uikit.srcPath %>',
           sourceMapURL: '<%= pkg.name %>.css.map'
         },
-        src: worldVisionPath + 'less/wvus.uikit.less',
-        dest: distPath + 'css/<%= pkg.name %>.css'
+        src: '<%= uikit.worldVisionPath %>less/wvus.uikit.less',
+        dest: '<%= uikit.distPath %>css/<%= pkg.name %>.css'
       },
       minify: {
         options: {
@@ -162,7 +156,7 @@ module.exports = function(grunt) {
           report: 'min',
         },
         files: [
-          {src: ['<%= less.dist.dest %>'], dest: distPath + 'css/<%= pkg.name %>.min.css'},
+        {src: ['<%= less.dist.dest %>'], dest: '<%= uikit.distPath %>css/<%= pkg.name %>.min.css'},
         ]
       }
     },
@@ -170,9 +164,9 @@ module.exports = function(grunt) {
     csslint: {
       lib: {
         options: {
-          csslintrc: worldVisionPath + 'less/.csslintrc',
+          csslintrc: '<%= uikit.worldVisionPath %>less/.csslintrc',
           formatters: [
-            {id: 'text', dest: 'csslint-lib.txt'}
+          {id: 'text', dest: 'csslint-lib.txt'}
           ],
         },
         src: ['<%= less.dist.dest %>']
@@ -191,7 +185,7 @@ module.exports = function(grunt) {
 
     csscomb: {
       options: {
-        config: worldVisionPath + 'less/.csscomb.json'
+        config: '<%= uikit.worldVisionPath %>less/.csscomb.json'
       },
       dist: {
         src: '<%= less.dist.dest %>',
@@ -208,8 +202,8 @@ module.exports = function(grunt) {
         },
         files: {
           src: [
-            '<%= less.dist.dest %>',
-            distPath + 'css/<%= pkg.name %>.min.css'
+          '<%= less.dist.dest %>',
+          '<%= uikit.distPath %>css/<%= pkg.name %>.min.css'
           ]
         }
       }
@@ -218,33 +212,33 @@ module.exports = function(grunt) {
     copy: {
       images: {
         files: [
-          {expand: true, cwd: worldVisionPath + 'img', src: '**/*', dest: distPath + 'img'}
+        {expand: true, cwd: '<%= uikit.worldVisionPath %>img', src: '**/*', dest: '<%= uikit.distPath %>img'}
         ]
       },
       variables: {
         files: [
-          {expand:true, flatten: true, cwd: './', src: [worldVisionPath + 'less/variables.less', worldVisionPath + 'less/mixins.less'], dest: distPath + 'less'},
+        {expand:true, flatten: true, cwd: './', src: ['<%= uikit.worldVisionPath %>less/variables.less', '<%= uikit.worldVisionPath %>less/mixins.less'], dest: '<%= uikit.distPath %>less'},
         ]
       },
       lib: {
         files: [
-          {expand: true, cwd: fontAwesomePath + 'fonts', src: '**', dest: distPath + 'fonts'},
-          {expand: true, cwd: libPath + 'modernizer', src: '**', dest: distPath + 'js/'},
-          {expand: true, cwd: videojsPath, src: "video-js.swf", dest: distPath + 'js/'},
-          {expand: true, cwd: videojsPath + "font", src: '**', dest: distPath + 'fonts'},
-          {expand: true, cwd: bootstrapPath + 'fonts', src: '**', dest: distPath + 'fonts'}
+        {expand: true, cwd: '<%= uikit.fontAwesomePath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'},
+        {expand: true, cwd: '<%= uikit.libPath %>modernizer', src: '**', dest: '<%= uikit.distPath %>js/'},
+        {expand: true, cwd: '<%= uikit.videojsPath %>', src: "video-js.swf", dest: '<%= uikit.distPath %>js/'},
+        {expand: true, cwd: '<%= uikit.videojsPath %>font', src: '**', dest: '<%= uikit.distPath %>fonts'},
+        {expand: true, cwd: '<%= uikit.bootstrapPath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'}
         ]
       },
       docs: {
         files: [
-          {
-            expand: true,
-            cwd: distPath,
-            src: [
-                '**/*'
-            ],
-            dest: '../uikit-docs/assets/<%= pkg.name %>'
-          }
+        {
+          expand: true,
+          cwd: distPath,
+          src: [
+          '**/*'
+          ],
+          dest: '../uikit-docs/assets/<%= pkg.name %>'
+        }
         ]
 
       }
@@ -258,7 +252,7 @@ module.exports = function(grunt) {
           pretty: true
         },
         files: [
-          {expand:true, cwd: distPath, src: '**/*', dest: 'wvus.uikit/'}
+        {expand:true, cwd: '<%= uikit.distPath %>', src: '**/*', dest: '<%= uikit.srcPath %>'}
         ]
       }
     },
@@ -266,21 +260,21 @@ module.exports = function(grunt) {
     clean: {
       jquery: {
         files: [
-          {
-            src: [jqueryPath + 'src/**'],
-          },
+        {
+          src: ['<%= uikit.jqueryPath %>src/**'],
+        },
         ]
       },
       datepicker: {
         files: [
-          {src: [datepickerPath + 'docs', datepickerPath + 'tests']}
+        {src: ['<%= uikit.datepickerPath %>docs', '<%= uikit.datepickerPath %>tests']}
         ]
       }
     },
 
     replace: {
       version: {
-        src: [ distPath + 'js/jquery-custom.js'],
+        src: ['<%= uikit.distPath %>js/jquery-custom.js'],
         overwrite: true,
         replacements: [{
           from: '@VERSION',
