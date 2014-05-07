@@ -3,12 +3,13 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 (function($){
+  $(document).ready(function(){
 
-  var $window = $(window);
+    var $window = $(window);
   // Offcanvas Sidenav
-    $('[data-toggle=offcanvas]').click(function(){
-      $('.row-offcanvas').toggleClass('active');
-    });
+  $('[data-toggle=offcanvas]').click(function(){
+    $('.row-offcanvas').toggleClass('active');
+  });
 
     // Disable certain links in docs
     $('section [href^=#]').click(function (e) {
@@ -46,24 +47,20 @@
       });
     }
 
-    // tooltip demo
-    $('.tooltip-demo').tooltip({
-      selector: "a[data-toggle=tooltip]"
-    });
-
+    // Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
     // popover demo
     $('[data-toggle="popover"]').popover();
 
     // button state demo
-    $('#fat-btn').click(function () {
+/*    $('#fat-btn').click(function () {
       var btn = $(this);
       btn.button('loading');
       setTimeout(function () {
         btn.button('reset');
       }, 3000);
-    });
+    });*/
 
     // carousel demo
     $('#myCarousel').carousel();
@@ -71,12 +68,12 @@
     //accordion demo
     $('#sample .collapse').on('show', function(){
       $(this).prev().find('.accordion-toggle > i')
-      .removeClass('icon-plus').addClass('icon-minus');
+      .removeClass('fa-plus').addClass('fa-minus');
     });
 
     $('#sample .collapse').on('hide', function(){
       $(this).prev().find('.accordion-toggle > i')
-      .removeClass('icon-minus').addClass('icon-plus');
+      .removeClass('fa-minus').addClass('fa-plus');
     });
 
     // modal demo
@@ -91,6 +88,14 @@
     });
 
     // Carousel Demo
+    // Touch swipe -- Requires modernizr touch events test and jQuery mobile
+    $('.carousel').on('swipeleft', function(event) {
+      $(this).carousel('next');
+    });
+    $('.carousel').on('swiperight', function(event) {
+      $(this).carousel('prev');
+    });
+
     var jsCarousel = $('#jsCarousel');
 
     jsCarousel.carousel({
@@ -126,7 +131,9 @@
     $(".selectpicker").selectpicker();
 
 
-
+    // Spin.js Example
+    // ---------------
+    $('#spin').spin();
 
 // Selects example
 // ---------------
@@ -169,5 +176,6 @@ $('#docs-nav .collapse').on('hide.bs.collapse', function(){
  $(this).prev().find("i").removeClass('fa-caret-down').addClass('fa-caret-right');
 });
 
+});
 
 }(window.wvusUikit));
