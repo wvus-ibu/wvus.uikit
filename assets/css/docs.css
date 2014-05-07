@@ -233,6 +233,12 @@
 .wvusUikit .subheader {
   margin: 20px 0 30px 0;
 }
+.wvusUikit .spin-example {
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
 .wvusUikit .grid-example {
   margin-bottom: 20px;
 }
