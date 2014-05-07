@@ -23,21 +23,21 @@ header{
     a:hover{
       text-decoration: none;
     }
-    i[class^="icon-facebook"]{
+    i[class^="fa-facebook"]{
       color: #2D78AB;
       &:hover,
       &:focus{
         opacity: .8;
       }
     }
-    i[class^="icon-twitter"]{
+    i[class^="fa-twitter"]{
       color: #00ACED;
       &:hover,
       &:focus{
         opacity: .8;
       }
     }
-    i[class^="icon-youtube"]{
+    i[class^="fa-youtube"]{
       color: #B00;
       &:hover,
       &:focus{
@@ -47,7 +47,7 @@ header{
   }
 }
 
-// Offcanvas
+// Offcanvas - side nav
 //
 
 @media screen and (max-width: @screen-sm-max){
@@ -161,9 +161,13 @@ header{
   background-color: #fff;
   .clearfix();
 
+  [class^=col-] {
+    margin-bottom: 10px;
+  }
   .close{
     float: none;
   }
+
 }
 .callout {
   border: 1px solid @gray-dark;

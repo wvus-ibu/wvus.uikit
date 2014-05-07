@@ -179,25 +179,25 @@
 .wvusUikit header .social a:hover {
   text-decoration: none;
 }
-.wvusUikit header .social i[class^="icon-facebook"] {
+.wvusUikit header .social i[class^="fa-facebook"] {
   color: #2D78AB;
 }
-.wvusUikit header .social i[class^="icon-facebook"]:hover,
-.wvusUikit header .social i[class^="icon-facebook"]:focus {
+.wvusUikit header .social i[class^="fa-facebook"]:hover,
+.wvusUikit header .social i[class^="fa-facebook"]:focus {
   opacity: .8;
 }
-.wvusUikit header .social i[class^="icon-twitter"] {
+.wvusUikit header .social i[class^="fa-twitter"] {
   color: #00ACED;
 }
-.wvusUikit header .social i[class^="icon-twitter"]:hover,
-.wvusUikit header .social i[class^="icon-twitter"]:focus {
+.wvusUikit header .social i[class^="fa-twitter"]:hover,
+.wvusUikit header .social i[class^="fa-twitter"]:focus {
   opacity: .8;
 }
-.wvusUikit header .social i[class^="icon-youtube"] {
+.wvusUikit header .social i[class^="fa-youtube"] {
   color: #B00;
 }
-.wvusUikit header .social i[class^="icon-youtube"]:hover,
-.wvusUikit header .social i[class^="icon-youtube"]:focus {
+.wvusUikit header .social i[class^="fa-youtube"]:hover,
+.wvusUikit header .social i[class^="fa-youtube"]:focus {
   opacity: .8;
 }
 @media screen and (max-width: 991px) {
@@ -279,6 +279,9 @@
 }
 .wvusUikit .docs-example:after {
   clear: both;
+}
+.wvusUikit .docs-example [class^=col-] {
+  margin-bottom: 10px;
 }
 .wvusUikit .docs-example .close {
   float: none;
