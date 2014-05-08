@@ -42,6 +42,7 @@
       },
       uikit: {
         src: [
+        '<%= uikit.worldVisionPath %>js/namespace.js',
         '<%= uikit.bootstrapJsPath %>transition.js',
         '<%= uikit.bootstrapJsPath %>alert.js',
         '<%= uikit.bootstrapJsPath %>button.js',
@@ -72,7 +73,7 @@
       },
       jquery: {
         src: '<%= uikit.jqueryPath %>jquery.js',
-        dest: '<%= uikit.distPath %>js/jquery-custom.min.js'
+        dest: '<%= uikit.distPath %>js/jquery.min.js'
       },
       jqueryMobile: {
         src: '<%= uikit.jqueryMobilePath %>jquery.mobile.custom.js',
@@ -285,7 +286,7 @@
 
     replace: {
       version: {
-        src: ['<%= uikit.distPath %>js/jquery-custom.js'],
+        src: ['<%= uikit.distPath %>js/jquery.js'],
         overwrite: true,
         replacements: [{
           from: '@VERSION',
