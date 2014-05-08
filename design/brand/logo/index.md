@@ -17,4 +17,4 @@ All of the graphic elements (horizon, logotype, cross/star, white background, an
 * The World Vision logo must always appear on a solid white background.
 * The World Vision logo must always have adequate "padding" around the edges. Use the measurements below to ensure adequate protected space between the logo and any surrounding text or images.
 
-![Logo spacing]({{ site.baseurl }}/assets/img/wvus/wvlogo-spacing.png)
+![Logo spacing]({{ page.path }}assets/img/wvus/wvlogo-spacing.png)

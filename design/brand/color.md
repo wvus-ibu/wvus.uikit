@@ -86,7 +86,7 @@ The primary rule for the website is to ensure that the World Vision orange is th
       </li>
     </ul>
 
-    <a href="{{ site.baseurl }}{{site.files}}/wv-colors.aco">Download</a> the colors in a Adobe Color Swatch to use with Photoshop.
+    <a href="{{ page.path }}{{site.files}}/wv-colors.aco">Download</a> the colors in a Adobe Color Swatch to use with Photoshop.
 
   </div>
 </div>

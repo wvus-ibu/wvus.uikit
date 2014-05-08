@@ -12,6 +12,6 @@ Under the WVI Logo Development Policy, there is no allowance for the development
 Products and programs should be communicated in text, using the corporate font Gill Sans. Program names must include “World Vision” as part of the text, and may only use colors found in the World Vision color palette.
 
 
-![Program Name Example]({{ site.baseurl }}/assets/img/wvus/wvlogo-partners.png)
+![Program Name Example]({{ page.path }}assets/img/wvus/wvlogo-partners.png)
 
 Microsites or websites featuring graphic text treatments of program names must include the official World Vision logo, which should be at least half the size of the program name. The World Vision logo must be linked to [www.worldvision.org](www.WorldVision.org).
