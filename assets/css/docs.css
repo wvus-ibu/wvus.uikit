@@ -361,13 +361,75 @@
 .wvusUikit .footer-links li:first-child {
   padding-left: 0;
 }
+.wvusUikit html {
+  position: relative;
+  min-height: 100%;
+}
+.wvusUikit body {
+  margin-bottom: 100px;
+}
+.wvusUikit header {
+  margin: 15px 0;
+  height: 60px;
+}
+.wvusUikit header .logo:hover img {
+  opacity: .6;
+}
+@media screen and (max-width: 991px) {
+  .wvusUikit .row-offcanvas {
+    position: relative;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+  }
+  .wvusUikit .row-offcanvas-right {
+    right: 0;
+  }
+  .wvusUikit .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%;
+  }
+  .wvusUikit .row-offcanvas-right.active {
+    right: 50%;
+  }
+  .wvusUikit .row-offcanvas-left {
+    left: 0;
+  }
+  .wvusUikit .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%;
+  }
+  .wvusUikit .row-offcanvas-left.active {
+    left: 50%;
+  }
+  .wvusUikit .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+  }
+}
+.wvusUikit .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
 .wvusUikit .home {
   text-align: center;
 }
 .wvusUikit #sector .row {
   margin-bottom: 20px;
 }
-.wvusUikit .nav-list .nav-list {
+.wvusUikit #docs-nav .nav .nav {
   padding-left: 20px;
+}
+.wvusUikit #docs-nav .nav {
+  padding-left: 5px;
+}
+.wvusUikit #docs-nav .nav li.active a {
+  background-color: #006699;
+  color: #ffffff;
+}
+.wvusUikit #docs-nav .nav li a,
+.wvusUikit #docs-nav .nav li a:hover,
+.wvusUikit #docs-nav .nav li a:focus {
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=docs.map.css */
