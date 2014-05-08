@@ -51,8 +51,7 @@ Add the CSS files:
 Add the JavaScript files:
 {% highlight html %}
 ...
-    <!-- Namespaced jQuery -->
-    <script src="/path/to/uikit/js/jquery-custom.min.js"></script>
+    <script src="/path/to/uikit/js/jquery.min.js"></script>
     <script src="/path/to/uikit/js/wvus.uikit.min.js"></script>
   </body>
 </html>
@@ -65,7 +64,7 @@ Add the CSS namespace:
 ...
 {% endhighlight %}
 
-<span class="label label-info">Note:</span> the UiKit uses a CSS and JavaScript namespace. See [namespace]({{ site.baseurl }}{{ site.develop }}/namespace) section.
+<span class="label label-info">Note:</span> the UiKit uses a CSS and JavaScript namespace. See [namespace]({{ page.path }}{{ site.develop }}/namespace) section.
 
 
 ### Project Use
