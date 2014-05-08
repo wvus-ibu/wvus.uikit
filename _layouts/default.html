@@ -1,27 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" class="wvusUikit">
-  {% include head.html %}
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+{% include head.html %}
+<body data-spy="scroll" data-target="#docs-nav">
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="container-fluid">
+  <div class="container-fluid">
       <!-- Left nav (Docs)
       ================================================= -->
       <div class="row row-offcanvas row-offcanvas-left">
         <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
-          <div class="well">
+          <div class="panel panel-default">
             {% if page.url contains site.developerdocs %}
-              {% include elements-nav.html %}
+            {% include elements-nav.html %}
             {% elsif page.url contains site.designerdocs %}
-              {% include designer-nav.html %}
+            {% include designer-nav.html %}
             {% elsif page.url contains site.develop %}
-              {% include develop-nav.html %}
+            {% include develop-nav.html %}
             {% endif %}
           </div>
         </div>
         <div class="col-md-9 ">
-            <button type="button" class="btn btn-default btn-xs visible-xs visible-sm" data-toggle="offcanvas">Toggle Nav</button>
+          <button type="button" class="btn btn-default btn-xs visible-xs visible-sm" data-toggle="offcanvas">Toggle Nav</button>
           {{content}}
         </div>
       </div>
@@ -31,4 +29,4 @@
 
     {% include js-files.html %}
   </body>
-</html>
+  </html>
