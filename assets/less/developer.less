@@ -2,85 +2,7 @@
 *  This LESS is for the developer documentation.
 *  None of this is need to make the UiKit work
 */
-header{
-  margin: 15px 0;
-  .logo:hover{
-    opacity: .6;
-  }
-  .form-search{
-    input{
-      width: 70%;
-    }
-    button{
-      background: none;
-      border: none;
-    }
-    .icon-search{
-      color: #ff6600;
-    }
-  }
-  .social{
-    a:hover{
-      text-decoration: none;
-    }
-    i[class^="fa-facebook"]{
-      color: #2D78AB;
-      &:hover,
-      &:focus{
-        opacity: .8;
-      }
-    }
-    i[class^="fa-twitter"]{
-      color: #00ACED;
-      &:hover,
-      &:focus{
-        opacity: .8;
-      }
-    }
-    i[class^="fa-youtube"]{
-      color: #B00;
-      &:hover,
-      &:focus{
-        opacity: .8;
-      }
-    }
-  }
-}
 
-// Offcanvas - side nav
-//
-
-@media screen and (max-width: @screen-sm-max){
-  .row-offcanvas {
-    position: relative;
-    transition: all .25s ease-out;
-    -webkit-transition: all .25s ease-out;
-    -moz-transition: all .25s ease-out;
-  }
-
-  .row-offcanvas-right {
-    right: 0;
-    .sidebar-offcanvas {
-      right: -50%;
-    }
-    &.active {
-      right: 50%;
-    }
-  }
-  .row-offcanvas-left {
-    left: 0;
-    .sidebar-offcanvas {
-      left: -50%;
-    }
-    &.active {
-      left: 50%;
-    }
-  }
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-  }
-}
 
 .subheader{
   margin: 20px 0 30px 0;
@@ -187,15 +109,6 @@ header{
   border-radius: @border-radius-base;
 }
 
-.fixed-example {
-  position: relative;
-  height: 100px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  .navbar {
-    position: absolute;
-  }
-}
 
 .context-bg-example{
   p{
