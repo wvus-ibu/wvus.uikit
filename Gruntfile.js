@@ -143,23 +143,21 @@
         src: ['<%= uikit.bootstrapLessPath %>*.less',
         '<%= uikit.fontAwesomePath %>less/*.less',
         '<%= uikit.datepickerPath %>less/datepicker3.less',
-        '<%= uikit.bootstrapSelectPath %>bootstrap-select.less',
+        '<%= uikit.bootstrapSelectPath %>bootstrap-select.css',
         '<%= uikit.worldVisionPath %>less/video-js-skin.less']
       }
     },
 
     less: {
+      precompile: {
+        src: '<%= uikit.worldVisionPath %>less/precompile.less',
+        dest: '<%= uikit.worldVisionPath %>css/precompile.css'
+      },
       dist: {
-        options: {
-          outputSourceFiles: true,
-          sourceMap: true,
-          sourceMapFilename: '<%= uikit.distPath %>css/<%= pkg.name %>.css.map',
-          sourceMapRootpath: '<%= uikit.srcPath %>',
-          sourceMapURL: '<%= pkg.name %>.css.map'
-        },
-        src: '<%= uikit.worldVisionPath %>less/wvus.uikit.less',
+        src: '<%= uikit.worldVisionPath %>less/namespace.less',
         dest: '<%= uikit.distPath %>css/<%= pkg.name %>.css'
       },
+
       minify: {
         options: {
           cleancss: true,
@@ -185,7 +183,6 @@
 
     autoprefixer: {
       options: {
-        map: true,
         browsers: ['last 2 versions', 'ie 9', 'android 4.2' ]
       },
       dist: {
