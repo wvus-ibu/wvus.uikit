@@ -300,7 +300,7 @@
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner']);
+  grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner', 'clean:precompile']);
   grunt.registerTask('dist-js', ['concat', 'replace', 'uglify']);
 
   // TODO: add tests to this task when implemented
