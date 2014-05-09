@@ -20,7 +20,6 @@
    videojsYoutubePath:  '<%= uikit.libPath %>videojs-youtube/',
    spinjsPath:  '<%= uikit.libPath %>spin.js/',
    worldVisionPath: '<%= uikit.libPath %>worldvision/',
-   precomile: '<%= uikit.worldVisionPath %>precompile/'
  };
 
   // Project configuration.
@@ -269,7 +268,7 @@
 
     clean: {
       precompile: {
-        files: [{src: ['<%= uikit.precompile %>**']}]
+        files: [{src: ['<%= uikit.worldVisionPath %>precompile/**']}]
       },
       jquery: {
         files: [
