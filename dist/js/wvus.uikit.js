@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0-beta - 2014-05-07
+/*! wvus.uikit - v2.0.0-beta - 2014-05-08
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -3748,7 +3748,7 @@ wvusUikit.fn.extend({
                     title = this.options.countSelectedText.replace('{0}', selectedItems.length).replace('{1}', this.$element.find('option:not([data-divider="true"]):not([data-hidden="true"])'+notDisabled).length);
                 }
              }
-
+            
             this.options.title = this.$element.attr('title');
 
             //If we dont have a title, then use the default, or if nothing is set at all, use the not selected text
@@ -3779,16 +3779,16 @@ wvusUikit.fn.extend({
 
         liHeight: function() {
             if (this.options.size === false) return;
-
+            
             var $selectClone = this.$menu.parent().clone().find('> .dropdown-toggle').prop('autofocus', false).end().appendTo('body'),
                 $menuClone = $selectClone.addClass('open').find('> .dropdown-menu'),
                 liHeight = $menuClone.find('li > a').outerHeight(),
                 headerHeight = this.options.header ? $menuClone.find('.popover-title').outerHeight() : 0,
                 searchHeight = this.options.liveSearch ? $menuClone.find('.bootstrap-select-searchbox').outerHeight() : 0,
                 actionsHeight = this.options.actionsBox ? $menuClone.find('.bs-actionsbox').outerHeight() : 0;
-
+            
             $selectClone.remove();
-
+            
             this.$newElement
                 .data('liHeight', liHeight)
                 .data('headerHeight', headerHeight)
@@ -3827,7 +3827,7 @@ wvusUikit.fn.extend({
                 var getSize = function() {
                     var minHeight,
                         lisVis = that.$lis.not('.hide');
-
+                    
                     posVert();
                     menuHeight = selectOffsetBot - menuExtras;
 
@@ -3837,13 +3837,13 @@ wvusUikit.fn.extend({
                     if (that.$newElement.hasClass('dropup')) {
                         menuHeight = selectOffsetTop - menuExtras;
                     }
-
+                    
                     if ((lisVis.length + lisVis.find('dt').length) > 3) {
                         minHeight = liHeight*3 + menuExtras - 2;
                     } else {
                         minHeight = 0;
                     }
-
+                    
                     menu.css({'max-height' : menuHeight + 'px', 'overflow' : 'hidden', 'min-height' : minHeight + headerHeight + searchHeight + actionsHeight + 'px'});
                     menuInner.css({'max-height' : menuHeight - headerHeight - searchHeight - actionsHeight - menuPadding + 'px', 'overflow-y' : 'auto', 'min-height' : Math.max(minHeight - menuPadding, 0) + 'px'});
                 };
@@ -3872,7 +3872,7 @@ wvusUikit.fn.extend({
                 var ulWidth = selectClone.find('> .dropdown-menu').css('width');
                 var btnWidth = selectClone.css('width', 'auto').find('> button').css('width');
                 selectClone.remove();
-
+                
                 // Set width to whatever's larger, button title or longest option
                 this.$newElement.css('width', Math.max(parseInt(ulWidth), parseInt(btnWidth)) + 'px');
             } else if (this.options.width == 'fit') {
@@ -3942,7 +3942,7 @@ wvusUikit.fn.extend({
             this.checkDisabled();
             this.liHeight();
         },
-
+        
         update: function() {
             this.reloadLi();
             this.setWidth();
@@ -4041,10 +4041,10 @@ wvusUikit.fn.extend({
                         that.setSelected(clickedIndex, true);
                     }
                     //Else toggle the one we have chosen if we are multi select.
-                    else {
+                    else {                        
                         $option.prop('selected', !state);
                         that.setSelected(clickedIndex, !state);
-
+                        
                         if ((maxOptions !== false) || (maxOptionsGrp !== false)) {
                             var maxReached = maxOptions < $options.filter(':selected').length,
                                 maxReachedGrp = maxOptionsGrp < $optgroup.find('option:selected').length,
@@ -4052,32 +4052,32 @@ wvusUikit.fn.extend({
                                 maxTxt = maxOptionsArr[0].replace('{n}', maxOptions),
                                 maxTxtGrp = maxOptionsArr[1].replace('{n}', maxOptionsGrp),
                                 $notify = $('<div class="notify"></div>');
-
-                            if ((maxOptions && maxReached) || (maxOptionsGrp && maxReachedGrp)) {
+                            
+                            if ((maxOptions && maxReached) || (maxOptionsGrp && maxReachedGrp)) {                                
                                 // If {var} is set in array, replace it
                                 if (maxOptionsArr[2]) {
                                     maxTxt = maxTxt.replace('{var}', maxOptionsArr[2][maxOptions > 1 ? 0 : 1]);
                                     maxTxtGrp = maxTxtGrp.replace('{var}', maxOptionsArr[2][maxOptionsGrp > 1 ? 0 : 1]);
                                 }
-
+    
                                 $option.prop('selected', false);
-
+                                
                                 that.$menu.append($notify);
-
+                                
                                 if (maxOptions && maxReached) {
                                     $notify.append($('<div>' + maxTxt + '</div>'));
                                     that.$element.trigger('maxReached.bs.select');
                                 }
-
+                                
                                 if (maxOptionsGrp && maxReachedGrp) {
                                     $notify.append($('<div>' + maxTxtGrp + '</div>'));
                                     that.$element.trigger('maxReachedGrp.bs.select');
                                 }
-
+                                
                                 setTimeout(function() {
                                     that.setSelected(clickedIndex, false);
                                 }, 10);
-
+                                
                                 $notify.delay(750).fadeOut(300, function() { $(this).remove(); });
                             }
                         }
@@ -4107,7 +4107,7 @@ wvusUikit.fn.extend({
                     }
                 }
             });
-
+            
             this.$menu.on('click', '.popover-title .close', function() {
                 that.$button.focus();
             });
@@ -4115,7 +4115,7 @@ wvusUikit.fn.extend({
             this.$searchbox.on('click', function(e) {
                 e.stopPropagation();
             });
-
+            
 
             this.$menu.on('click', '.actions-btn', function(e) {
                 if (that.options.liveSearch) {
@@ -4123,10 +4123,10 @@ wvusUikit.fn.extend({
                 } else {
                     that.$button.focus();
                 }
-
+                
                 e.preventDefault();
                 e.stopPropagation();
-
+                
                 if ($(this).is('.bs-select-all')) {
                     that.selectAll();
                 } else {
@@ -4160,7 +4160,7 @@ wvusUikit.fn.extend({
             this.$searchbox.on('input propertychange', function() {
                 if (that.$searchbox.val()) {
                     that.$lis.removeClass('hide').find('a').not(':icontains(' + that.$searchbox.val() + ')').parent().addClass('hide');
-
+                    
                     if (!that.$menu.find('li').filter(':visible:not(.no-results)').length) {
                         if (!!no_results.parent().length) no_results.remove();
                         no_results.html(that.options.noneResultsText + ' "'+ that.$searchbox.val() + '"').show();
@@ -4168,7 +4168,7 @@ wvusUikit.fn.extend({
                     } else if (!!no_results.parent().length) {
                         no_results.remove();
                     }
-
+                    
                 } else {
                     that.$menu.find('li').removeClass('hide');
                     if (!!no_results.parent().length) no_results.remove();
@@ -4178,12 +4178,12 @@ wvusUikit.fn.extend({
                 that.$menu.find('li').filter(':visible:not(.divider)').eq(0).addClass('active').find('a').focus();
                 $(this).focus();
             });
-
+            
             this.$menu.on('mouseenter', 'a', function(e) {
               that.$menu.find('.active').removeClass('active');
               $(e.currentTarget).parent().not('.disabled').addClass('active');
             });
-
+            
             this.$menu.on('mouseleave', 'a', function() {
               that.$menu.find('.active').removeClass('active');
             });
@@ -4238,24 +4238,24 @@ wvusUikit.fn.extend({
             $this = $(this);
 
             $parent = $this.parent();
-
+            
             if ($this.is('input')) $parent = $this.parent().parent();
 
             that = $parent.data('this');
-
+            
             if (that.options.liveSearch) $parent = $this.parent().parent();
 
             if (that.options.container) $parent = that.$menu;
 
             $items = $('[role=menu] li:not(.divider) a', $parent);
-
+            
             isActive = that.$menu.parent().hasClass('open');
 
             if (!isActive && /([0-9]|[A-z])/.test(String.fromCharCode(e.keyCode))) {
                 that.$newElement.trigger('click');
                 that.$searchbox.focus();
             }
-
+            
             if (that.options.liveSearch) {
                 if (/(^9$|27)/.test(e.keyCode) && isActive && that.$menu.find('.active').length === 0) {
                     e.preventDefault();
@@ -4273,14 +4273,14 @@ wvusUikit.fn.extend({
             if (!$items.length) return;
 
             if (/(38|40)/.test(e.keyCode)) {
-
+                
                 index = $items.index($items.filter(':focus'));
                 first = $items.parent(':not(.disabled):visible').first().index();
                 last = $items.parent(':not(.disabled):visible').last().index();
                 next = $items.eq(index).parent().nextAll(':not(.disabled):visible').eq(0).index();
                 prev = $items.eq(index).parent().prevAll(':not(.disabled):visible').eq(0).index();
                 nextPrev = $items.eq(next).parent().prevAll(':not(.disabled):visible').eq(0).index();
-
+                
                 if (that.options.liveSearch) {
                     $items.each(function(i) {
                         if ($(this).is(':not(.disabled)')) {
@@ -4294,9 +4294,9 @@ wvusUikit.fn.extend({
                     prev = $items.eq(index).prevAll(':not(.disabled):visible').eq(0).data('index');
                     nextPrev = $items.eq(next).prevAll(':not(.disabled):visible').eq(0).data('index');
                 }
-
+                
                 prevIndex = $this.data('prevIndex');
-
+                
                 if (e.keyCode == 38) {
                     if (that.options.liveSearch) index -= 1;
                     if (index != nextPrev && index > prev) index = prev;
@@ -4313,7 +4313,7 @@ wvusUikit.fn.extend({
                 }
 
                 $this.data('prevIndex', index);
-
+                
                 if (!that.options.liveSearch) {
                     $items.eq(index).focus();
                 } else {
@@ -4324,7 +4324,7 @@ wvusUikit.fn.extend({
                         $this.focus();
                     }
                 }
-
+                
             } else if (!$this.is('input')) {
 
                 var keyIndex = [],
@@ -4367,7 +4367,7 @@ wvusUikit.fn.extend({
                 }
                 $(document).data('keycount',0);
             }
-
+            
             if ((/(^9$|27)/.test(e.keyCode) && isActive && (that.multiple || that.options.liveSearch)) || (/(27)/.test(e.keyCode) && !isActive)) {
                 that.$menu.parent().removeClass('open');
                 that.$button.focus();
@@ -4458,8 +4458,7 @@ wvusUikit.fn.extend({
         .on('keydown', '.bootstrap-select [data-toggle=dropdown], .bootstrap-select [role=menu], .bootstrap-select-searchbox input', Selectpicker.prototype.keydown)
         .on('focusin.modal', '.bootstrap-select [data-toggle=dropdown], .bootstrap-select [role=menu], .bootstrap-select-searchbox input', function (e) { e.stopPropagation(); });
 
-}(window.wvusUikit);
-
+}(window.jQuery);
 // HTML5 Shiv. Must be in <head> to support older browsers.
 document.createElement('video');
 document.createElement('audio');

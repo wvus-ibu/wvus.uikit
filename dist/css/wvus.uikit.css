@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0-beta - 2014-05-07
+/*! wvus.uikit - v2.0.0-beta - 2014-05-08
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -387,7 +387,11 @@
 {
     vertical-align: middle;
 }
-.wvusUikit .img-responsive
+.wvusUikit .img-responsive,
+.wvusUikit .thumbnail > img,
+.wvusUikit .thumbnail a > img,
+.wvusUikit .carousel-inner > .item > img,
+.wvusUikit .carousel-inner > .item > a > img
 {
     display: block;
 
@@ -622,7 +626,7 @@
 {
     color: #f60;
 }
-a.wvusUikit .text-primary:hover
+.wvusUikit a.text-primary:hover
 {
     color: #cc5200;
 }
@@ -630,7 +634,7 @@ a.wvusUikit .text-primary:hover
 {
     color: #3c763d;
 }
-a.wvusUikit .text-success:hover
+.wvusUikit a.text-success:hover
 {
     color: #2b542c;
 }
@@ -638,7 +642,7 @@ a.wvusUikit .text-success:hover
 {
     color: #31708f;
 }
-a.wvusUikit .text-info:hover
+.wvusUikit a.text-info:hover
 {
     color: #245269;
 }
@@ -646,7 +650,7 @@ a.wvusUikit .text-info:hover
 {
     color: #8a6d3b;
 }
-a.wvusUikit .text-warning:hover
+.wvusUikit a.text-warning:hover
 {
     color: #66512c;
 }
@@ -654,7 +658,7 @@ a.wvusUikit .text-warning:hover
 {
     color: #a94442;
 }
-a.wvusUikit .text-danger:hover
+.wvusUikit a.text-danger:hover
 {
     color: #843534;
 }
@@ -663,7 +667,7 @@ a.wvusUikit .text-danger:hover
     color: #fff;
     background-color: #f60;
 }
-a.wvusUikit .bg-primary:hover
+.wvusUikit a.bg-primary:hover
 {
     background-color: #cc5200;
 }
@@ -671,7 +675,7 @@ a.wvusUikit .bg-primary:hover
 {
     background-color: #dff0d8;
 }
-a.wvusUikit .bg-success:hover
+.wvusUikit a.bg-success:hover
 {
     background-color: #c1e2b3;
 }
@@ -679,7 +683,7 @@ a.wvusUikit .bg-success:hover
 {
     background-color: #d9edf7;
 }
-a.wvusUikit .bg-info:hover
+.wvusUikit a.bg-info:hover
 {
     background-color: #afd9ee;
 }
@@ -687,7 +691,7 @@ a.wvusUikit .bg-info:hover
 {
     background-color: #fcf8e3;
 }
-a.wvusUikit .bg-warning:hover
+.wvusUikit a.bg-warning:hover
 {
     background-color: #f7ecb5;
 }
@@ -695,7 +699,7 @@ a.wvusUikit .bg-warning:hover
 {
     background-color: #f2dede;
 }
-a.wvusUikit .bg-danger:hover
+.wvusUikit a.bg-danger:hover
 {
     background-color: #e4b9b9;
 }
@@ -968,7 +972,54 @@ a.wvusUikit .bg-danger:hover
     margin-right: -15px;
     margin-left: -15px;
 }
-.wvusUikit .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+.wvusUikit .col-xs-1,
+.wvusUikit .col-sm-1,
+.wvusUikit .col-md-1,
+.wvusUikit .col-lg-1,
+.wvusUikit .col-xs-2,
+.wvusUikit .col-sm-2,
+.wvusUikit .col-md-2,
+.wvusUikit .col-lg-2,
+.wvusUikit .col-xs-3,
+.wvusUikit .col-sm-3,
+.wvusUikit .col-md-3,
+.wvusUikit .col-lg-3,
+.wvusUikit .col-xs-4,
+.wvusUikit .col-sm-4,
+.wvusUikit .col-md-4,
+.wvusUikit .col-lg-4,
+.wvusUikit .col-xs-5,
+.wvusUikit .col-sm-5,
+.wvusUikit .col-md-5,
+.wvusUikit .col-lg-5,
+.wvusUikit .col-xs-6,
+.wvusUikit .col-sm-6,
+.wvusUikit .col-md-6,
+.wvusUikit .col-lg-6,
+.wvusUikit .col-xs-7,
+.wvusUikit .col-sm-7,
+.wvusUikit .col-md-7,
+.wvusUikit .col-lg-7,
+.wvusUikit .col-xs-8,
+.wvusUikit .col-sm-8,
+.wvusUikit .col-md-8,
+.wvusUikit .col-lg-8,
+.wvusUikit .col-xs-9,
+.wvusUikit .col-sm-9,
+.wvusUikit .col-md-9,
+.wvusUikit .col-lg-9,
+.wvusUikit .col-xs-10,
+.wvusUikit .col-sm-10,
+.wvusUikit .col-md-10,
+.wvusUikit .col-lg-10,
+.wvusUikit .col-xs-11,
+.wvusUikit .col-sm-11,
+.wvusUikit .col-md-11,
+.wvusUikit .col-lg-11,
+.wvusUikit .col-xs-12,
+.wvusUikit .col-sm-12,
+.wvusUikit .col-md-12,
+.wvusUikit .col-lg-12
 {
     position: relative;
 
@@ -976,7 +1027,18 @@ a.wvusUikit .bg-danger:hover
     padding-right: 15px;
     padding-left: 15px;
 }
-.wvusUikit .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12
+.wvusUikit .col-xs-1,
+.wvusUikit .col-xs-2,
+.wvusUikit .col-xs-3,
+.wvusUikit .col-xs-4,
+.wvusUikit .col-xs-5,
+.wvusUikit .col-xs-6,
+.wvusUikit .col-xs-7,
+.wvusUikit .col-xs-8,
+.wvusUikit .col-xs-9,
+.wvusUikit .col-xs-10,
+.wvusUikit .col-xs-11,
+.wvusUikit .col-xs-12
 {
     float: left;
 }
@@ -1186,7 +1248,18 @@ a.wvusUikit .bg-danger:hover
 }
 @media (min-width: 768px)
 {
-    .wvusUikit .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12
+    .wvusUikit .col-sm-1,
+  .wvusUikit .col-sm-2,
+  .wvusUikit .col-sm-3,
+  .wvusUikit .col-sm-4,
+  .wvusUikit .col-sm-5,
+  .wvusUikit .col-sm-6,
+  .wvusUikit .col-sm-7,
+  .wvusUikit .col-sm-8,
+  .wvusUikit .col-sm-9,
+  .wvusUikit .col-sm-10,
+  .wvusUikit .col-sm-11,
+  .wvusUikit .col-sm-12
     {
         float: left;
     }
@@ -1397,7 +1470,18 @@ a.wvusUikit .bg-danger:hover
 }
 @media (min-width: 992px)
 {
-    .wvusUikit .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12
+    .wvusUikit .col-md-1,
+  .wvusUikit .col-md-2,
+  .wvusUikit .col-md-3,
+  .wvusUikit .col-md-4,
+  .wvusUikit .col-md-5,
+  .wvusUikit .col-md-6,
+  .wvusUikit .col-md-7,
+  .wvusUikit .col-md-8,
+  .wvusUikit .col-md-9,
+  .wvusUikit .col-md-10,
+  .wvusUikit .col-md-11,
+  .wvusUikit .col-md-12
     {
         float: left;
     }
@@ -1608,7 +1692,18 @@ a.wvusUikit .bg-danger:hover
 }
 @media (min-width: 1200px)
 {
-    .wvusUikit .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
+    .wvusUikit .col-lg-1,
+  .wvusUikit .col-lg-2,
+  .wvusUikit .col-lg-3,
+  .wvusUikit .col-lg-4,
+  .wvusUikit .col-lg-5,
+  .wvusUikit .col-lg-6,
+  .wvusUikit .col-lg-7,
+  .wvusUikit .col-lg-8,
+  .wvusUikit .col-lg-9,
+  .wvusUikit .col-lg-10,
+  .wvusUikit .col-lg-11,
+  .wvusUikit .col-lg-12
     {
         float: left;
     }
@@ -2193,7 +2288,7 @@ a.wvusUikit .bg-danger:hover
 {
     border-color: #66afe9;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .wvusUikit .form-control::-moz-placeholder
 {
@@ -2210,14 +2305,14 @@ a.wvusUikit .bg-danger:hover
 }
 .wvusUikit .form-control[disabled],
 .wvusUikit .form-control[readonly],
-fieldset[disabled] .wvusUikit .form-control
+.wvusUikit fieldset[disabled] .form-control
 {
     cursor: not-allowed;
 
     opacity: 1;
     background-color: #eee;
 }
-textarea.wvusUikit .form-control
+.wvusUikit textarea.form-control
 {
     height: auto;
 }
@@ -2291,12 +2386,12 @@ textarea.wvusUikit .form-control
 .wvusUikit .radio-inline[disabled],
 .wvusUikit .checkbox[disabled],
 .wvusUikit .checkbox-inline[disabled],
-fieldset[disabled] .wvusUikit input[type='radio'],
-fieldset[disabled] .wvusUikit input[type='checkbox'],
-fieldset[disabled] .wvusUikit .radio,
-fieldset[disabled] .wvusUikit .radio-inline,
-fieldset[disabled] .wvusUikit .checkbox,
-fieldset[disabled] .wvusUikit .checkbox-inline
+.wvusUikit fieldset[disabled] input[type='radio'],
+.wvusUikit fieldset[disabled] input[type='checkbox'],
+.wvusUikit fieldset[disabled] .radio,
+.wvusUikit fieldset[disabled] .radio-inline,
+.wvusUikit fieldset[disabled] .checkbox,
+.wvusUikit fieldset[disabled] .checkbox-inline
 {
     cursor: not-allowed;
 }
@@ -2310,14 +2405,14 @@ fieldset[disabled] .wvusUikit .checkbox-inline
 
     border-radius: 3px;
 }
-select.wvusUikit .input-sm
+.wvusUikit select.input-sm
 {
     line-height: 27px;
 
     height: 27px;
 }
-textarea.wvusUikit .input-sm,
-select[multiple].wvusUikit .input-sm
+.wvusUikit textarea.input-sm,
+.wvusUikit select[multiple].input-sm
 {
     height: auto;
 }
@@ -2331,14 +2426,14 @@ select[multiple].wvusUikit .input-sm
 
     border-radius: 6px;
 }
-select.wvusUikit .input-lg
+.wvusUikit select.input-lg
 {
     line-height: 51px;
 
     height: 51px;
 }
-textarea.wvusUikit .input-lg,
-select[multiple].wvusUikit .input-lg
+.wvusUikit textarea.input-lg,
+.wvusUikit select[multiple].input-lg
 {
     height: auto;
 }
@@ -2600,7 +2695,7 @@ select[multiple].wvusUikit .input-lg
 }
 .wvusUikit .btn.disabled,
 .wvusUikit .btn[disabled],
-fieldset[disabled] .wvusUikit .btn
+.wvusUikit fieldset[disabled] .btn
 {
     cursor: not-allowed;
     pointer-events: none;
@@ -2620,7 +2715,7 @@ fieldset[disabled] .wvusUikit .btn
 .wvusUikit .btn-default:focus,
 .wvusUikit .btn-default:active,
 .wvusUikit .btn-default.active,
-.open .dropdown-toggle.wvusUikit .btn-default
+.wvusUikit .open .dropdown-toggle.btn-default
 {
     color: #333;
     border-color: #adadad;
@@ -2628,25 +2723,25 @@ fieldset[disabled] .wvusUikit .btn
 }
 .wvusUikit .btn-default:active,
 .wvusUikit .btn-default.active,
-.open .dropdown-toggle.wvusUikit .btn-default
+.wvusUikit .open .dropdown-toggle.btn-default
 {
     background-image: none;
 }
 .wvusUikit .btn-default.disabled,
 .wvusUikit .btn-default[disabled],
-fieldset[disabled] .wvusUikit .btn-default,
+.wvusUikit fieldset[disabled] .btn-default,
 .wvusUikit .btn-default.disabled:hover,
 .wvusUikit .btn-default[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-default:hover,
+.wvusUikit fieldset[disabled] .btn-default:hover,
 .wvusUikit .btn-default.disabled:focus,
 .wvusUikit .btn-default[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-default:focus,
+.wvusUikit fieldset[disabled] .btn-default:focus,
 .wvusUikit .btn-default.disabled:active,
 .wvusUikit .btn-default[disabled]:active,
-fieldset[disabled] .wvusUikit .btn-default:active,
+.wvusUikit fieldset[disabled] .btn-default:active,
 .wvusUikit .btn-default.disabled.active,
 .wvusUikit .btn-default[disabled].active,
-fieldset[disabled] .wvusUikit .btn-default.active
+.wvusUikit fieldset[disabled] .btn-default.active
 {
     border-color: #ccc;
     background-color: #eee;
@@ -2666,7 +2761,7 @@ fieldset[disabled] .wvusUikit .btn-default.active
 .wvusUikit .btn-primary:focus,
 .wvusUikit .btn-primary:active,
 .wvusUikit .btn-primary.active,
-.open .dropdown-toggle.wvusUikit .btn-primary
+.wvusUikit .open .dropdown-toggle.btn-primary
 {
     color: #fff;
     border-color: #a84300;
@@ -2674,25 +2769,25 @@ fieldset[disabled] .wvusUikit .btn-default.active
 }
 .wvusUikit .btn-primary:active,
 .wvusUikit .btn-primary.active,
-.open .dropdown-toggle.wvusUikit .btn-primary
+.wvusUikit .open .dropdown-toggle.btn-primary
 {
     background-image: none;
 }
 .wvusUikit .btn-primary.disabled,
 .wvusUikit .btn-primary[disabled],
-fieldset[disabled] .wvusUikit .btn-primary,
+.wvusUikit fieldset[disabled] .btn-primary,
 .wvusUikit .btn-primary.disabled:hover,
 .wvusUikit .btn-primary[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-primary:hover,
+.wvusUikit fieldset[disabled] .btn-primary:hover,
 .wvusUikit .btn-primary.disabled:focus,
 .wvusUikit .btn-primary[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-primary:focus,
+.wvusUikit fieldset[disabled] .btn-primary:focus,
 .wvusUikit .btn-primary.disabled:active,
 .wvusUikit .btn-primary[disabled]:active,
-fieldset[disabled] .wvusUikit .btn-primary:active,
+.wvusUikit fieldset[disabled] .btn-primary:active,
 .wvusUikit .btn-primary.disabled.active,
 .wvusUikit .btn-primary[disabled].active,
-fieldset[disabled] .wvusUikit .btn-primary.active
+.wvusUikit fieldset[disabled] .btn-primary.active
 {
     border-color: #e65c00;
     background-color: #f60;
@@ -2712,7 +2807,7 @@ fieldset[disabled] .wvusUikit .btn-primary.active
 .wvusUikit .btn-success:focus,
 .wvusUikit .btn-success:active,
 .wvusUikit .btn-success.active,
-.open .dropdown-toggle.wvusUikit .btn-success
+.wvusUikit .open .dropdown-toggle.btn-success
 {
     color: #fff;
     border-color: #58581d;
@@ -2720,25 +2815,25 @@ fieldset[disabled] .wvusUikit .btn-primary.active
 }
 .wvusUikit .btn-success:active,
 .wvusUikit .btn-success.active,
-.open .dropdown-toggle.wvusUikit .btn-success
+.wvusUikit .open .dropdown-toggle.btn-success
 {
     background-image: none;
 }
 .wvusUikit .btn-success.disabled,
 .wvusUikit .btn-success[disabled],
-fieldset[disabled] .wvusUikit .btn-success,
+.wvusUikit fieldset[disabled] .btn-success,
 .wvusUikit .btn-success.disabled:hover,
 .wvusUikit .btn-success[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-success:hover,
+.wvusUikit fieldset[disabled] .btn-success:hover,
 .wvusUikit .btn-success.disabled:focus,
 .wvusUikit .btn-success[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-success:focus,
+.wvusUikit fieldset[disabled] .btn-success:focus,
 .wvusUikit .btn-success.disabled:active,
 .wvusUikit .btn-success[disabled]:active,
-fieldset[disabled] .wvusUikit .btn-success:active,
+.wvusUikit fieldset[disabled] .btn-success:active,
 .wvusUikit .btn-success.disabled.active,
 .wvusUikit .btn-success[disabled].active,
-fieldset[disabled] .wvusUikit .btn-success.active
+.wvusUikit fieldset[disabled] .btn-success.active
 {
     border-color: #86862d;
     background-color: #993;
@@ -2758,7 +2853,7 @@ fieldset[disabled] .wvusUikit .btn-success.active
 .wvusUikit .btn-info:focus,
 .wvusUikit .btn-info:active,
 .wvusUikit .btn-info.active,
-.open .dropdown-toggle.wvusUikit .btn-info
+.wvusUikit .open .dropdown-toggle.btn-info
 {
     color: #fff;
     border-color: #041724;
@@ -2766,25 +2861,25 @@ fieldset[disabled] .wvusUikit .btn-success.active
 }
 .wvusUikit .btn-info:active,
 .wvusUikit .btn-info.active,
-.open .dropdown-toggle.wvusUikit .btn-info
+.wvusUikit .open .dropdown-toggle.btn-info
 {
     background-image: none;
 }
 .wvusUikit .btn-info.disabled,
 .wvusUikit .btn-info[disabled],
-fieldset[disabled] .wvusUikit .btn-info,
+.wvusUikit fieldset[disabled] .btn-info,
 .wvusUikit .btn-info.disabled:hover,
 .wvusUikit .btn-info[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-info:hover,
+.wvusUikit fieldset[disabled] .btn-info:hover,
 .wvusUikit .btn-info.disabled:focus,
 .wvusUikit .btn-info[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-info:focus,
+.wvusUikit fieldset[disabled] .btn-info:focus,
 .wvusUikit .btn-info.disabled:active,
 .wvusUikit .btn-info[disabled]:active,
-fieldset[disabled] .wvusUikit .btn-info:active,
+.wvusUikit fieldset[disabled] .btn-info:active,
 .wvusUikit .btn-info.disabled.active,
 .wvusUikit .btn-info[disabled].active,
-fieldset[disabled] .wvusUikit .btn-info.active
+.wvusUikit fieldset[disabled] .btn-info.active
 {
     border-color: #0a3a5b;
     background-color: #0c4972;
@@ -2804,7 +2899,7 @@ fieldset[disabled] .wvusUikit .btn-info.active
 .wvusUikit .btn-warning:focus,
 .wvusUikit .btn-warning:active,
 .wvusUikit .btn-warning.active,
-.open .dropdown-toggle.wvusUikit .btn-warning
+.wvusUikit .open .dropdown-toggle.btn-warning
 {
     color: #333;
     border-color: #a87e00;
@@ -2812,25 +2907,25 @@ fieldset[disabled] .wvusUikit .btn-info.active
 }
 .wvusUikit .btn-warning:active,
 .wvusUikit .btn-warning.active,
-.open .dropdown-toggle.wvusUikit .btn-warning
+.wvusUikit .open .dropdown-toggle.btn-warning
 {
     background-image: none;
 }
 .wvusUikit .btn-warning.disabled,
 .wvusUikit .btn-warning[disabled],
-fieldset[disabled] .wvusUikit .btn-warning,
+.wvusUikit fieldset[disabled] .btn-warning,
 .wvusUikit .btn-warning.disabled:hover,
 .wvusUikit .btn-warning[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-warning:hover,
+.wvusUikit fieldset[disabled] .btn-warning:hover,
 .wvusUikit .btn-warning.disabled:focus,
 .wvusUikit .btn-warning[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-warning:focus,
+.wvusUikit fieldset[disabled] .btn-warning:focus,
 .wvusUikit .btn-warning.disabled:active,
 .wvusUikit .btn-warning[disabled]:active,
-fieldset[disabled] .wvusUikit .btn-warning:active,
+.wvusUikit fieldset[disabled] .btn-warning:active,
 .wvusUikit .btn-warning.disabled.active,
 .wvusUikit .btn-warning[disabled].active,
-fieldset[disabled] .wvusUikit .btn-warning.active
+.wvusUikit fieldset[disabled] .btn-warning.active
 {
     border-color: #e6ac00;
     background-color: #ffbf00;
@@ -2850,7 +2945,7 @@ fieldset[disabled] .wvusUikit .btn-warning.active
 .wvusUikit .btn-danger:focus,
 .wvusUikit .btn-danger:active,
 .wvusUikit .btn-danger.active,
-.open .dropdown-toggle.wvusUikit .btn-danger
+.wvusUikit .open .dropdown-toggle.btn-danger
 {
     color: #fff;
     border-color: #ac2925;
@@ -2858,25 +2953,25 @@ fieldset[disabled] .wvusUikit .btn-warning.active
 }
 .wvusUikit .btn-danger:active,
 .wvusUikit .btn-danger.active,
-.open .dropdown-toggle.wvusUikit .btn-danger
+.wvusUikit .open .dropdown-toggle.btn-danger
 {
     background-image: none;
 }
 .wvusUikit .btn-danger.disabled,
 .wvusUikit .btn-danger[disabled],
-fieldset[disabled] .wvusUikit .btn-danger,
+.wvusUikit fieldset[disabled] .btn-danger,
 .wvusUikit .btn-danger.disabled:hover,
 .wvusUikit .btn-danger[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-danger:hover,
+.wvusUikit fieldset[disabled] .btn-danger:hover,
 .wvusUikit .btn-danger.disabled:focus,
 .wvusUikit .btn-danger[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-danger:focus,
+.wvusUikit fieldset[disabled] .btn-danger:focus,
 .wvusUikit .btn-danger.disabled:active,
 .wvusUikit .btn-danger[disabled]:active,
-fieldset[disabled] .wvusUikit .btn-danger:active,
+.wvusUikit fieldset[disabled] .btn-danger:active,
 .wvusUikit .btn-danger.disabled.active,
 .wvusUikit .btn-danger[disabled].active,
-fieldset[disabled] .wvusUikit .btn-danger.active
+.wvusUikit fieldset[disabled] .btn-danger.active
 {
     border-color: #d43f3a;
     background-color: #d9534f;
@@ -2898,7 +2993,7 @@ fieldset[disabled] .wvusUikit .btn-danger.active
 .wvusUikit .btn-link,
 .wvusUikit .btn-link:active,
 .wvusUikit .btn-link[disabled],
-fieldset[disabled] .wvusUikit .btn-link
+.wvusUikit fieldset[disabled] .btn-link
 {
     background-color: transparent;
     box-shadow: none;
@@ -2919,15 +3014,16 @@ fieldset[disabled] .wvusUikit .btn-link
     background-color: transparent;
 }
 .wvusUikit .btn-link[disabled]:hover,
-fieldset[disabled] .wvusUikit .btn-link:hover,
+.wvusUikit fieldset[disabled] .btn-link:hover,
 .wvusUikit .btn-link[disabled]:focus,
-fieldset[disabled] .wvusUikit .btn-link:focus
+.wvusUikit fieldset[disabled] .btn-link:focus
 {
     text-decoration: none;
 
     color: #999;
 }
-.wvusUikit .btn-lg
+.wvusUikit .btn-lg,
+.wvusUikit .btn-group-lg > .btn
 {
     font-size: 20px;
     line-height: 1.33;
@@ -2936,7 +3032,8 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 
     border-radius: 6px;
 }
-.wvusUikit .btn-sm
+.wvusUikit .btn-sm,
+.wvusUikit .btn-group-sm > .btn
 {
     font-size: 14px;
     line-height: 1.5;
@@ -2945,7 +3042,8 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 
     border-radius: 3px;
 }
-.wvusUikit .btn-xs
+.wvusUikit .btn-xs,
+.wvusUikit .btn-group-xs > .btn
 {
     font-size: 14px;
     line-height: 1.5;
@@ -5659,7 +5757,7 @@ fieldset[disabled] .wvusUikit .btn-link:focus
     background-color: transparent;
     background-image: none;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .open > .dropdown-menu
 {
@@ -5977,20 +6075,20 @@ fieldset[disabled] .wvusUikit .btn-link:focus
 
     border-radius: 6px;
 }
-select.wvusUikit .input-group-lg > .form-control,
-select.wvusUikit .input-group-lg > .input-group-addon,
-select.wvusUikit .input-group-lg > .input-group-btn > .btn
+.wvusUikit select.input-group-lg > .form-control,
+.wvusUikit select.input-group-lg > .input-group-addon,
+.wvusUikit select.input-group-lg > .input-group-btn > .btn
 {
     line-height: 51px;
 
     height: 51px;
 }
-textarea.wvusUikit .input-group-lg > .form-control,
-textarea.wvusUikit .input-group-lg > .input-group-addon,
-textarea.wvusUikit .input-group-lg > .input-group-btn > .btn,
-select[multiple].wvusUikit .input-group-lg > .form-control,
-select[multiple].wvusUikit .input-group-lg > .input-group-addon,
-select[multiple].wvusUikit .input-group-lg > .input-group-btn > .btn
+.wvusUikit textarea.input-group-lg > .form-control,
+.wvusUikit textarea.input-group-lg > .input-group-addon,
+.wvusUikit textarea.input-group-lg > .input-group-btn > .btn,
+.wvusUikit select[multiple].input-group-lg > .form-control,
+.wvusUikit select[multiple].input-group-lg > .input-group-addon,
+.wvusUikit select[multiple].input-group-lg > .input-group-btn > .btn
 {
     height: auto;
 }
@@ -6006,20 +6104,20 @@ select[multiple].wvusUikit .input-group-lg > .input-group-btn > .btn
 
     border-radius: 3px;
 }
-select.wvusUikit .input-group-sm > .form-control,
-select.wvusUikit .input-group-sm > .input-group-addon,
-select.wvusUikit .input-group-sm > .input-group-btn > .btn
+.wvusUikit select.input-group-sm > .form-control,
+.wvusUikit select.input-group-sm > .input-group-addon,
+.wvusUikit select.input-group-sm > .input-group-btn > .btn
 {
     line-height: 27px;
 
     height: 27px;
 }
-textarea.wvusUikit .input-group-sm > .form-control,
-textarea.wvusUikit .input-group-sm > .input-group-addon,
-textarea.wvusUikit .input-group-sm > .input-group-btn > .btn,
-select[multiple].wvusUikit .input-group-sm > .form-control,
-select[multiple].wvusUikit .input-group-sm > .input-group-addon,
-select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
+.wvusUikit textarea.input-group-sm > .form-control,
+.wvusUikit textarea.input-group-sm > .input-group-addon,
+.wvusUikit textarea.input-group-sm > .input-group-btn > .btn,
+.wvusUikit select[multiple].input-group-sm > .form-control,
+.wvusUikit select[multiple].input-group-sm > .input-group-addon,
+.wvusUikit select[multiple].input-group-sm > .input-group-btn > .btn
 {
     height: auto;
 }
@@ -6462,9 +6560,9 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
     {
         overflow-y: visible;
     }
-    .navbar-fixed-top .wvusUikit .navbar-collapse,
-  .navbar-static-top .wvusUikit .navbar-collapse,
-  .navbar-fixed-bottom .wvusUikit .navbar-collapse
+    .wvusUikit .navbar-fixed-top .navbar-collapse,
+  .wvusUikit .navbar-static-top .navbar-collapse,
+  .wvusUikit .navbar-fixed-bottom .navbar-collapse
     {
         padding-right: 0;
         padding-left: 0;
@@ -6549,8 +6647,8 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
 }
 @media (min-width: 768px)
 {
-    .navbar > .container .wvusUikit .navbar-brand,
-  .navbar > .container-fluid .wvusUikit .navbar-brand
+    .wvusUikit .navbar > .container .navbar-brand,
+  .wvusUikit .navbar > .container-fluid .navbar-brand
     {
         margin-left: -15px;
     }
@@ -7245,7 +7343,7 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
 {
     display: none;
 }
-.btn .wvusUikit .label
+.wvusUikit .btn .label
 {
     position: relative;
     top: -1px;
@@ -7327,12 +7425,12 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
 {
     display: none;
 }
-.btn .wvusUikit .badge
+.wvusUikit .btn .badge
 {
     position: relative;
     top: -1px;
 }
-.btn-xs .wvusUikit .badge
+.wvusUikit .btn-xs .badge
 {
     top: 0;
 
@@ -7376,7 +7474,7 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
 
     margin-bottom: 15px;
 }
-.container .wvusUikit .jumbotron
+.wvusUikit .container .jumbotron
 {
     border-radius: 6px;
 }
@@ -7391,7 +7489,7 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
         padding-top: 48px;
         padding-bottom: 48px;
     }
-    .container .wvusUikit .jumbotron
+    .wvusUikit .container .jumbotron
     {
         padding-right: 60px;
         padding-left: 60px;
@@ -7424,9 +7522,9 @@ select[multiple].wvusUikit .input-group-sm > .input-group-btn > .btn
     margin-right: auto;
     margin-left: auto;
 }
-a.wvusUikit .thumbnail:hover,
-a.wvusUikit .thumbnail:focus,
-a.wvusUikit .thumbnail.active
+.wvusUikit a.thumbnail:hover,
+.wvusUikit a.thumbnail:focus,
+.wvusUikit a.thumbnail.active
 {
     border-color: #069;
 }
@@ -7597,7 +7695,7 @@ a.wvusUikit .thumbnail.active
 {
     background-color: #993;
 }
-.progress-striped .wvusUikit .progress-bar-success
+.wvusUikit .progress-striped .progress-bar-success
 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -7606,7 +7704,7 @@ a.wvusUikit .thumbnail.active
 {
     background-color: #9cf;
 }
-.progress-striped .wvusUikit .progress-bar-info
+.wvusUikit .progress-striped .progress-bar-info
 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -7615,7 +7713,7 @@ a.wvusUikit .thumbnail.active
 {
     background-color: #ffbf00;
 }
-.progress-striped .wvusUikit .progress-bar-warning
+.wvusUikit .progress-striped .progress-bar-warning
 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -7624,7 +7722,7 @@ a.wvusUikit .thumbnail.active
 {
     background-color: #d9534f;
 }
-.progress-striped .wvusUikit .progress-bar-danger
+.wvusUikit .progress-striped .progress-bar-danger
 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -7745,23 +7843,23 @@ a.wvusUikit .thumbnail.active
     color: #3c763d;
     background-color: #dff0d8;
 }
-a.wvusUikit .list-group-item-success
+.wvusUikit a.list-group-item-success
 {
     color: #3c763d;
 }
-a.wvusUikit .list-group-item-success .list-group-item-heading
+.wvusUikit a.list-group-item-success .list-group-item-heading
 {
     color: inherit;
 }
-a.wvusUikit .list-group-item-success:hover,
-a.wvusUikit .list-group-item-success:focus
+.wvusUikit a.list-group-item-success:hover,
+.wvusUikit a.list-group-item-success:focus
 {
     color: #3c763d;
     background-color: #d0e9c6;
 }
-a.wvusUikit .list-group-item-success.active,
-a.wvusUikit .list-group-item-success.active:hover,
-a.wvusUikit .list-group-item-success.active:focus
+.wvusUikit a.list-group-item-success.active,
+.wvusUikit a.list-group-item-success.active:hover,
+.wvusUikit a.list-group-item-success.active:focus
 {
     color: #fff;
     border-color: #3c763d;
@@ -7772,23 +7870,23 @@ a.wvusUikit .list-group-item-success.active:focus
     color: #31708f;
     background-color: #d9edf7;
 }
-a.wvusUikit .list-group-item-info
+.wvusUikit a.list-group-item-info
 {
     color: #31708f;
 }
-a.wvusUikit .list-group-item-info .list-group-item-heading
+.wvusUikit a.list-group-item-info .list-group-item-heading
 {
     color: inherit;
 }
-a.wvusUikit .list-group-item-info:hover,
-a.wvusUikit .list-group-item-info:focus
+.wvusUikit a.list-group-item-info:hover,
+.wvusUikit a.list-group-item-info:focus
 {
     color: #31708f;
     background-color: #c4e3f3;
 }
-a.wvusUikit .list-group-item-info.active,
-a.wvusUikit .list-group-item-info.active:hover,
-a.wvusUikit .list-group-item-info.active:focus
+.wvusUikit a.list-group-item-info.active,
+.wvusUikit a.list-group-item-info.active:hover,
+.wvusUikit a.list-group-item-info.active:focus
 {
     color: #fff;
     border-color: #31708f;
@@ -7799,23 +7897,23 @@ a.wvusUikit .list-group-item-info.active:focus
     color: #8a6d3b;
     background-color: #fcf8e3;
 }
-a.wvusUikit .list-group-item-warning
+.wvusUikit a.list-group-item-warning
 {
     color: #8a6d3b;
 }
-a.wvusUikit .list-group-item-warning .list-group-item-heading
+.wvusUikit a.list-group-item-warning .list-group-item-heading
 {
     color: inherit;
 }
-a.wvusUikit .list-group-item-warning:hover,
-a.wvusUikit .list-group-item-warning:focus
+.wvusUikit a.list-group-item-warning:hover,
+.wvusUikit a.list-group-item-warning:focus
 {
     color: #8a6d3b;
     background-color: #faf2cc;
 }
-a.wvusUikit .list-group-item-warning.active,
-a.wvusUikit .list-group-item-warning.active:hover,
-a.wvusUikit .list-group-item-warning.active:focus
+.wvusUikit a.list-group-item-warning.active,
+.wvusUikit a.list-group-item-warning.active:hover,
+.wvusUikit a.list-group-item-warning.active:focus
 {
     color: #fff;
     border-color: #8a6d3b;
@@ -7826,23 +7924,23 @@ a.wvusUikit .list-group-item-warning.active:focus
     color: #a94442;
     background-color: #f2dede;
 }
-a.wvusUikit .list-group-item-danger
+.wvusUikit a.list-group-item-danger
 {
     color: #a94442;
 }
-a.wvusUikit .list-group-item-danger .list-group-item-heading
+.wvusUikit a.list-group-item-danger .list-group-item-heading
 {
     color: inherit;
 }
-a.wvusUikit .list-group-item-danger:hover,
-a.wvusUikit .list-group-item-danger:focus
+.wvusUikit a.list-group-item-danger:hover,
+.wvusUikit a.list-group-item-danger:focus
 {
     color: #a94442;
     background-color: #ebcccc;
 }
-a.wvusUikit .list-group-item-danger.active,
-a.wvusUikit .list-group-item-danger.active:hover,
-a.wvusUikit .list-group-item-danger.active:focus
+.wvusUikit a.list-group-item-danger.active,
+.wvusUikit a.list-group-item-danger.active:hover,
+.wvusUikit a.list-group-item-danger.active:focus
 {
     color: #fff;
     border-color: #a94442;
@@ -8955,51 +9053,51 @@ a.wvusUikit .list-group-item-danger.active:focus
 }
 .wvusUikit .clearfix:before,
 .wvusUikit .clearfix:after,
-.wvusUikit .wvusUikit .container:before,
-.wvusUikit .wvusUikit .container:after,
-.wvusUikit .wvusUikit .container-fluid:before,
-.wvusUikit .wvusUikit .container-fluid:after,
-.wvusUikit .wvusUikit .row:before,
-.wvusUikit .wvusUikit .row:after,
-.wvusUikit .wvusUikit .form-horizontal .form-group:before,
-.wvusUikit .wvusUikit .form-horizontal .form-group:after,
-.wvusUikit .wvusUikit .btn-toolbar:before,
-.wvusUikit .wvusUikit .btn-toolbar:after,
-.wvusUikit .wvusUikit .btn-group-vertical > .btn-group:before,
-.wvusUikit .wvusUikit .btn-group-vertical > .btn-group:after,
-.wvusUikit .wvusUikit .nav:before,
-.wvusUikit .wvusUikit .nav:after,
-.wvusUikit .wvusUikit .navbar:before,
-.wvusUikit .wvusUikit .navbar:after,
-.wvusUikit .wvusUikit .navbar-header:before,
-.wvusUikit .wvusUikit .navbar-header:after,
-.wvusUikit .wvusUikit .navbar-collapse:before,
-.wvusUikit .wvusUikit .navbar-collapse:after,
-.wvusUikit .wvusUikit .pager:before,
-.wvusUikit .wvusUikit .pager:after,
-.wvusUikit .wvusUikit .panel-body:before,
-.wvusUikit .wvusUikit .panel-body:after,
-.wvusUikit .wvusUikit .modal-footer:before,
-.wvusUikit .wvusUikit .modal-footer:after
+.wvusUikit .container:before,
+.wvusUikit .container:after,
+.wvusUikit .container-fluid:before,
+.wvusUikit .container-fluid:after,
+.wvusUikit .row:before,
+.wvusUikit .row:after,
+.wvusUikit .form-horizontal .form-group:before,
+.wvusUikit .form-horizontal .form-group:after,
+.wvusUikit .btn-toolbar:before,
+.wvusUikit .btn-toolbar:after,
+.wvusUikit .btn-group-vertical > .btn-group:before,
+.wvusUikit .btn-group-vertical > .btn-group:after,
+.wvusUikit .nav:before,
+.wvusUikit .nav:after,
+.wvusUikit .navbar:before,
+.wvusUikit .navbar:after,
+.wvusUikit .navbar-header:before,
+.wvusUikit .navbar-header:after,
+.wvusUikit .navbar-collapse:before,
+.wvusUikit .navbar-collapse:after,
+.wvusUikit .pager:before,
+.wvusUikit .pager:after,
+.wvusUikit .panel-body:before,
+.wvusUikit .panel-body:after,
+.wvusUikit .modal-footer:before,
+.wvusUikit .modal-footer:after
 {
     display: table;
 
     content: ' ';
 }
 .wvusUikit .clearfix:after,
-.wvusUikit .wvusUikit .container:after,
-.wvusUikit .wvusUikit .container-fluid:after,
-.wvusUikit .wvusUikit .row:after,
-.wvusUikit .wvusUikit .form-horizontal .form-group:after,
-.wvusUikit .wvusUikit .btn-toolbar:after,
-.wvusUikit .wvusUikit .btn-group-vertical > .btn-group:after,
-.wvusUikit .wvusUikit .nav:after,
-.wvusUikit .wvusUikit .navbar:after,
-.wvusUikit .wvusUikit .navbar-header:after,
-.wvusUikit .wvusUikit .navbar-collapse:after,
-.wvusUikit .wvusUikit .pager:after,
-.wvusUikit .wvusUikit .panel-body:after,
-.wvusUikit .wvusUikit .modal-footer:after
+.wvusUikit .container:after,
+.wvusUikit .container-fluid:after,
+.wvusUikit .row:after,
+.wvusUikit .form-horizontal .form-group:after,
+.wvusUikit .btn-toolbar:after,
+.wvusUikit .btn-group-vertical > .btn-group:after,
+.wvusUikit .nav:after,
+.wvusUikit .navbar:after,
+.wvusUikit .navbar-header:after,
+.wvusUikit .navbar-collapse:after,
+.wvusUikit .pager:after,
+.wvusUikit .panel-body:after,
+.wvusUikit .modal-footer:after
 {
     clear: both;
 }
@@ -9064,16 +9162,16 @@ a.wvusUikit .list-group-item-danger.active:focus
     {
         display: block !important;
     }
-    table.wvusUikit .visible-xs
+    .wvusUikit table.visible-xs
     {
         display: table;
     }
-    tr.wvusUikit .visible-xs
+    .wvusUikit tr.visible-xs
     {
         display: table-row !important;
     }
-    th.wvusUikit .visible-xs,
-  td.wvusUikit .visible-xs
+    .wvusUikit th.visible-xs,
+  .wvusUikit td.visible-xs
     {
         display: table-cell !important;
     }
@@ -9084,16 +9182,16 @@ a.wvusUikit .list-group-item-danger.active:focus
     {
         display: block !important;
     }
-    table.wvusUikit .visible-sm
+    .wvusUikit table.visible-sm
     {
         display: table;
     }
-    tr.wvusUikit .visible-sm
+    .wvusUikit tr.visible-sm
     {
         display: table-row !important;
     }
-    th.wvusUikit .visible-sm,
-  td.wvusUikit .visible-sm
+    .wvusUikit th.visible-sm,
+  .wvusUikit td.visible-sm
     {
         display: table-cell !important;
     }
@@ -9104,16 +9202,16 @@ a.wvusUikit .list-group-item-danger.active:focus
     {
         display: block !important;
     }
-    table.wvusUikit .visible-md
+    .wvusUikit table.visible-md
     {
         display: table;
     }
-    tr.wvusUikit .visible-md
+    .wvusUikit tr.visible-md
     {
         display: table-row !important;
     }
-    th.wvusUikit .visible-md,
-  td.wvusUikit .visible-md
+    .wvusUikit th.visible-md,
+  .wvusUikit td.visible-md
     {
         display: table-cell !important;
     }
@@ -9124,16 +9222,16 @@ a.wvusUikit .list-group-item-danger.active:focus
     {
         display: block !important;
     }
-    table.wvusUikit .visible-lg
+    .wvusUikit table.visible-lg
     {
         display: table;
     }
-    tr.wvusUikit .visible-lg
+    .wvusUikit tr.visible-lg
     {
         display: table-row !important;
     }
-    th.wvusUikit .visible-lg,
-  td.wvusUikit .visible-lg
+    .wvusUikit th.visible-lg,
+  .wvusUikit td.visible-lg
     {
         display: table-cell !important;
     }
@@ -9176,16 +9274,16 @@ a.wvusUikit .list-group-item-danger.active:focus
     {
         display: block !important;
     }
-    table.wvusUikit .visible-print
+    .wvusUikit table.visible-print
     {
         display: table;
     }
-    tr.wvusUikit .visible-print
+    .wvusUikit tr.visible-print
     {
         display: table-row !important;
     }
-    th.wvusUikit .visible-print,
-  td.wvusUikit .visible-print
+    .wvusUikit th.visible-print,
+  .wvusUikit td.visible-print
     {
         display: table-cell !important;
     }
@@ -9237,7 +9335,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     text-shadow: 0 1px 0 #fff;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .btn-default:hover,
 .wvusUikit .btn-default:focus
@@ -9259,7 +9357,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8b3d', endColorstr='#ffff6600', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .btn-primary:hover,
 .wvusUikit .btn-primary:focus
@@ -9281,7 +9379,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc2c247', endColorstr='#ff999933', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .btn-success:hover,
 .wvusUikit .btn-success:focus
@@ -9303,7 +9401,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff126ca9', endColorstr='#ff0c4972', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .btn-info:hover,
 .wvusUikit .btn-info:focus
@@ -9325,7 +9423,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffcf3d', endColorstr='#ffffbf00', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .btn-warning:hover,
 .wvusUikit .btn-warning:focus
@@ -9347,7 +9445,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe48481', endColorstr='#ffd9534f', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .btn-danger:hover,
 .wvusUikit .btn-danger:focus
@@ -9396,7 +9494,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .navbar-default .navbar-nav > .active > a
 {
@@ -9419,7 +9517,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .navbar-inverse .navbar-nav > .active > a
 {
@@ -9445,7 +9543,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8533', endColorstr='#ffff6600', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .navbar-worldvision .navbar-brand
 {
@@ -10264,7 +10362,7 @@ a.wvusUikit .list-group-item-danger.active:focus
 
     background-color: #f60;
 }
-.progress-striped .wvusUikit .vjs-default-skin .vjs-volume-level
+.wvusUikit .progress-striped .vjs-default-skin .vjs-volume-level
 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -10433,7 +10531,7 @@ a.wvusUikit .list-group-item-danger.active:focus
     background-repeat: repeat-x;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8b3d', endColorstr='#ffff6600', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .wvusUikit .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button
 {
@@ -10809,11 +10907,11 @@ a.wvusUikit .list-group-item-danger.active:focus
 {
     width: 220px;
 }
-.wvusUikit .datepicker.wvusUikit .datepicker-rtl
+.wvusUikit .datepicker.datepicker-rtl
 {
     direction: rtl;
 }
-.wvusUikit .datepicker.wvusUikit .datepicker-rtl table tr td span
+.wvusUikit .datepicker.datepicker-rtl table tr td span
 {
     float: right;
 }
@@ -10926,8 +11024,8 @@ a.wvusUikit .list-group-item-danger.active:focus
     border: none;
     border-radius: 4px;
 }
-.table-striped .wvusUikit .datepicker table tr td,
-.table-striped .wvusUikit .datepicker table tr th
+.wvusUikit .table-striped .datepicker table tr td,
+.wvusUikit .table-striped .datepicker table tr th
 {
     background-color: transparent;
 }
@@ -10976,10 +11074,10 @@ a.wvusUikit .list-group-item-danger.active:focus
 .wvusUikit .datepicker table tr td.today:hover.active,
 .wvusUikit .datepicker table tr td.today.disabled.active,
 .wvusUikit .datepicker table tr td.today.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today.disabled:hover
 {
     color: #000;
     border-color: #f59e00;
@@ -10993,10 +11091,10 @@ a.wvusUikit .list-group-item-danger.active:focus
 .wvusUikit .datepicker table tr td.today:hover.active,
 .wvusUikit .datepicker table tr td.today.disabled.active,
 .wvusUikit .datepicker table tr td.today.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.today.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.today.disabled:hover
 {
     background-image: none;
 }
@@ -11008,10 +11106,10 @@ a.wvusUikit .list-group-item-danger.active:focus
 .wvusUikit .datepicker table tr td.today:hover[disabled],
 .wvusUikit .datepicker table tr td.today.disabled[disabled],
 .wvusUikit .datepicker table tr td.today.disabled:hover[disabled],
-fieldset[disabled] .wvusUikit .datepicker table tr td.today,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover,
 .wvusUikit .datepicker table tr td.today.disabled:hover,
 .wvusUikit .datepicker table tr td.today:hover.disabled:hover,
 .wvusUikit .datepicker table tr td.today.disabled.disabled:hover,
@@ -11020,10 +11118,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover,
 .wvusUikit .datepicker table tr td.today:hover[disabled]:hover,
 .wvusUikit .datepicker table tr td.today.disabled[disabled]:hover,
 .wvusUikit .datepicker table tr td.today.disabled:hover[disabled]:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:hover:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover:hover,
 .wvusUikit .datepicker table tr td.today.disabled:focus,
 .wvusUikit .datepicker table tr td.today:hover.disabled:focus,
 .wvusUikit .datepicker table tr td.today.disabled.disabled:focus,
@@ -11032,10 +11130,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover:hover
 .wvusUikit .datepicker table tr td.today:hover[disabled]:focus,
 .wvusUikit .datepicker table tr td.today.disabled[disabled]:focus,
 .wvusUikit .datepicker table tr td.today.disabled:hover[disabled]:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:hover:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover:focus,
 .wvusUikit .datepicker table tr td.today.disabled:active,
 .wvusUikit .datepicker table tr td.today:hover.disabled:active,
 .wvusUikit .datepicker table tr td.today.disabled.disabled:active,
@@ -11044,10 +11142,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover:focus
 .wvusUikit .datepicker table tr td.today:hover[disabled]:active,
 .wvusUikit .datepicker table tr td.today.disabled[disabled]:active,
 .wvusUikit .datepicker table tr td.today.disabled:hover[disabled]:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:hover:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover:active,
 .wvusUikit .datepicker table tr td.today.disabled.active,
 .wvusUikit .datepicker table tr td.today:hover.disabled.active,
 .wvusUikit .datepicker table tr td.today.disabled.disabled.active,
@@ -11056,10 +11154,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover:activ
 .wvusUikit .datepicker table tr td.today:hover[disabled].active,
 .wvusUikit .datepicker table tr td.today.disabled[disabled].active,
 .wvusUikit .datepicker table tr td.today.disabled:hover[disabled].active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today:hover.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover.active
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today:hover.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover.active
 {
     border-color: #ffb733;
     background-color: #ffdb99;
@@ -11114,10 +11212,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover.activ
 .wvusUikit .datepicker table tr td.range.today:hover.active,
 .wvusUikit .datepicker table tr td.range.today.disabled.active,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover
 {
     color: #000;
     border-color: #bf800c;
@@ -11131,10 +11229,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover.activ
 .wvusUikit .datepicker table tr td.range.today:hover.active,
 .wvusUikit .datepicker table tr td.range.today.disabled.active,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.range.today.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover
 {
     background-image: none;
 }
@@ -11146,10 +11244,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.today.disabled:hover.activ
 .wvusUikit .datepicker table tr td.range.today:hover[disabled],
 .wvusUikit .datepicker table tr td.range.today.disabled[disabled],
 .wvusUikit .datepicker table tr td.range.today.disabled:hover[disabled],
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover,
 .wvusUikit .datepicker table tr td.range.today:hover.disabled:hover,
 .wvusUikit .datepicker table tr td.range.today.disabled.disabled:hover,
@@ -11158,10 +11256,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.range.today:hover[disabled]:hover,
 .wvusUikit .datepicker table tr td.range.today.disabled[disabled]:hover,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover[disabled]:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:hover:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:hover,
 .wvusUikit .datepicker table tr td.range.today.disabled:focus,
 .wvusUikit .datepicker table tr td.range.today:hover.disabled:focus,
 .wvusUikit .datepicker table tr td.range.today.disabled.disabled:focus,
@@ -11170,10 +11268,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.range.today:hover[disabled]:focus,
 .wvusUikit .datepicker table tr td.range.today.disabled[disabled]:focus,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover[disabled]:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:hover:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:focus,
 .wvusUikit .datepicker table tr td.range.today.disabled:active,
 .wvusUikit .datepicker table tr td.range.today:hover.disabled:active,
 .wvusUikit .datepicker table tr td.range.today.disabled.disabled:active,
@@ -11182,10 +11280,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.range.today:hover[disabled]:active,
 .wvusUikit .datepicker table tr td.range.today.disabled[disabled]:active,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover[disabled]:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:hover:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:active,
 .wvusUikit .datepicker table tr td.range.today.disabled.active,
 .wvusUikit .datepicker table tr td.range.today:hover.disabled.active,
 .wvusUikit .datepicker table tr td.range.today.disabled.disabled.active,
@@ -11194,10 +11292,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.range.today:hover[disabled].active,
 .wvusUikit .datepicker table tr td.range.today.disabled[disabled].active,
 .wvusUikit .datepicker table tr td.range.today.disabled:hover[disabled].active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today:hover.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover.active
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today:hover.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.range.today.disabled:hover.active
 {
     border-color: #f1a417;
     background-color: #f7ca77;
@@ -11236,10 +11334,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.selected:hover.active,
 .wvusUikit .datepicker table tr td.selected.disabled.active,
 .wvusUikit .datepicker table tr td.selected.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected.disabled:hover
 {
     color: #fff;
     border-color: #474747;
@@ -11253,10 +11351,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.selected:hover.active,
 .wvusUikit .datepicker table tr td.selected.disabled.active,
 .wvusUikit .datepicker table tr td.selected.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.selected.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.selected.disabled:hover
 {
     background-image: none;
 }
@@ -11268,10 +11366,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.range.today.disabled:hover
 .wvusUikit .datepicker table tr td.selected:hover[disabled],
 .wvusUikit .datepicker table tr td.selected.disabled[disabled],
 .wvusUikit .datepicker table tr td.selected.disabled:hover[disabled],
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
 .wvusUikit .datepicker table tr td.selected.disabled:hover,
 .wvusUikit .datepicker table tr td.selected:hover.disabled:hover,
 .wvusUikit .datepicker table tr td.selected.disabled.disabled:hover,
@@ -11280,10 +11378,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover,
 .wvusUikit .datepicker table tr td.selected:hover[disabled]:hover,
 .wvusUikit .datepicker table tr td.selected.disabled[disabled]:hover,
 .wvusUikit .datepicker table tr td.selected.disabled:hover[disabled]:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:hover:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:hover:hover,
 .wvusUikit .datepicker table tr td.selected.disabled:focus,
 .wvusUikit .datepicker table tr td.selected:hover.disabled:focus,
 .wvusUikit .datepicker table tr td.selected.disabled.disabled:focus,
@@ -11292,10 +11390,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover:ho
 .wvusUikit .datepicker table tr td.selected:hover[disabled]:focus,
 .wvusUikit .datepicker table tr td.selected.disabled[disabled]:focus,
 .wvusUikit .datepicker table tr td.selected.disabled:hover[disabled]:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:hover:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:hover:focus,
 .wvusUikit .datepicker table tr td.selected.disabled:active,
 .wvusUikit .datepicker table tr td.selected:hover.disabled:active,
 .wvusUikit .datepicker table tr td.selected.disabled.disabled:active,
@@ -11304,10 +11402,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover:fo
 .wvusUikit .datepicker table tr td.selected:hover[disabled]:active,
 .wvusUikit .datepicker table tr td.selected.disabled[disabled]:active,
 .wvusUikit .datepicker table tr td.selected.disabled:hover[disabled]:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:hover:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:hover:active,
 .wvusUikit .datepicker table tr td.selected.disabled.active,
 .wvusUikit .datepicker table tr td.selected:hover.disabled.active,
 .wvusUikit .datepicker table tr td.selected.disabled.disabled.active,
@@ -11316,10 +11414,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover:ac
 .wvusUikit .datepicker table tr td.selected:hover[disabled].active,
 .wvusUikit .datepicker table tr td.selected.disabled[disabled].active,
 .wvusUikit .datepicker table tr td.selected.disabled:hover[disabled].active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected:hover.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover.active
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected:hover.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active
 {
     border-color: #666;
     background-color: #999;
@@ -11358,10 +11456,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover.ac
 .wvusUikit .datepicker table tr td.active:hover.active,
 .wvusUikit .datepicker table tr td.active.disabled.active,
 .wvusUikit .datepicker table tr td.active.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active.disabled:hover
 {
     color: #fff;
     border-color: #a84300;
@@ -11375,10 +11473,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover.ac
 .wvusUikit .datepicker table tr td.active:hover.active,
 .wvusUikit .datepicker table tr td.active.disabled.active,
 .wvusUikit .datepicker table tr td.active.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td.active.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td.active.disabled:hover
 {
     background-image: none;
 }
@@ -11390,10 +11488,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.selected.disabled:hover.ac
 .wvusUikit .datepicker table tr td.active:hover[disabled],
 .wvusUikit .datepicker table tr td.active.disabled[disabled],
 .wvusUikit .datepicker table tr td.active.disabled:hover[disabled],
-fieldset[disabled] .wvusUikit .datepicker table tr td.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:hover,
 .wvusUikit .datepicker table tr td.active.disabled:hover,
 .wvusUikit .datepicker table tr td.active:hover.disabled:hover,
 .wvusUikit .datepicker table tr td.active.disabled.disabled:hover,
@@ -11402,10 +11500,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover,
 .wvusUikit .datepicker table tr td.active:hover[disabled]:hover,
 .wvusUikit .datepicker table tr td.active.disabled[disabled]:hover,
 .wvusUikit .datepicker table tr td.active.disabled:hover[disabled]:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:hover:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:hover:hover,
 .wvusUikit .datepicker table tr td.active.disabled:focus,
 .wvusUikit .datepicker table tr td.active:hover.disabled:focus,
 .wvusUikit .datepicker table tr td.active.disabled.disabled:focus,
@@ -11414,10 +11512,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover:hove
 .wvusUikit .datepicker table tr td.active:hover[disabled]:focus,
 .wvusUikit .datepicker table tr td.active.disabled[disabled]:focus,
 .wvusUikit .datepicker table tr td.active.disabled:hover[disabled]:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:hover:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:hover:focus,
 .wvusUikit .datepicker table tr td.active.disabled:active,
 .wvusUikit .datepicker table tr td.active:hover.disabled:active,
 .wvusUikit .datepicker table tr td.active.disabled.disabled:active,
@@ -11426,10 +11524,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover:focu
 .wvusUikit .datepicker table tr td.active:hover[disabled]:active,
 .wvusUikit .datepicker table tr td.active.disabled[disabled]:active,
 .wvusUikit .datepicker table tr td.active.disabled:hover[disabled]:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:hover:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:hover:active,
 .wvusUikit .datepicker table tr td.active.disabled.active,
 .wvusUikit .datepicker table tr td.active:hover.disabled.active,
 .wvusUikit .datepicker table tr td.active.disabled.disabled.active,
@@ -11438,10 +11536,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover:acti
 .wvusUikit .datepicker table tr td.active:hover[disabled].active,
 .wvusUikit .datepicker table tr td.active.disabled[disabled].active,
 .wvusUikit .datepicker table tr td.active.disabled:hover[disabled].active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active:hover.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover.active
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active:hover.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td.active.disabled:hover.active
 {
     border-color: #e65c00;
     background-color: #f60;
@@ -11507,10 +11605,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover.acti
 .wvusUikit .datepicker table tr td span.active:hover.active,
 .wvusUikit .datepicker table tr td span.active.disabled.active,
 .wvusUikit .datepicker table tr td span.active.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover
 {
     color: #fff;
     border-color: #a84300;
@@ -11524,10 +11622,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover.acti
 .wvusUikit .datepicker table tr td span.active:hover.active,
 .wvusUikit .datepicker table tr td span.active.disabled.active,
 .wvusUikit .datepicker table tr td span.active.disabled:hover.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active:hover,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active.disabled,
-.open .dropdown-toggle.wvusUikit .datepicker table tr td span.active.disabled:hover
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active:hover,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.wvusUikit .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover
 {
     background-image: none;
 }
@@ -11539,10 +11637,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td.active.disabled:hover.acti
 .wvusUikit .datepicker table tr td span.active:hover[disabled],
 .wvusUikit .datepicker table tr td span.active.disabled[disabled],
 .wvusUikit .datepicker table tr td span.active.disabled:hover[disabled],
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
 .wvusUikit .datepicker table tr td span.active.disabled:hover,
 .wvusUikit .datepicker table tr td span.active:hover.disabled:hover,
 .wvusUikit .datepicker table tr td span.active.disabled.disabled:hover,
@@ -11551,10 +11649,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover
 .wvusUikit .datepicker table tr td span.active:hover[disabled]:hover,
 .wvusUikit .datepicker table tr td span.active.disabled[disabled]:hover,
 .wvusUikit .datepicker table tr td span.active.disabled:hover[disabled]:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:hover:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:hover:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,
 .wvusUikit .datepicker table tr td span.active.disabled:focus,
 .wvusUikit .datepicker table tr td span.active:hover.disabled:focus,
 .wvusUikit .datepicker table tr td span.active.disabled.disabled:focus,
@@ -11563,10 +11661,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover
 .wvusUikit .datepicker table tr td span.active:hover[disabled]:focus,
 .wvusUikit .datepicker table tr td span.active.disabled[disabled]:focus,
 .wvusUikit .datepicker table tr td span.active.disabled:hover[disabled]:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:hover:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:focus,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:hover:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:focus,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,
 .wvusUikit .datepicker table tr td span.active.disabled:active,
 .wvusUikit .datepicker table tr td span.active:hover.disabled:active,
 .wvusUikit .datepicker table tr td span.active.disabled.disabled:active,
@@ -11575,10 +11673,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover
 .wvusUikit .datepicker table tr td span.active:hover[disabled]:active,
 .wvusUikit .datepicker table tr td span.active.disabled[disabled]:active,
 .wvusUikit .datepicker table tr td span.active.disabled:hover[disabled]:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:hover:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:hover:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:hover:active,
 .wvusUikit .datepicker table tr td span.active.disabled.active,
 .wvusUikit .datepicker table tr td span.active:hover.disabled.active,
 .wvusUikit .datepicker table tr td span.active.disabled.disabled.active,
@@ -11587,10 +11685,10 @@ fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover
 .wvusUikit .datepicker table tr td span.active:hover[disabled].active,
 .wvusUikit .datepicker table tr td span.active.disabled[disabled].active,
 .wvusUikit .datepicker table tr td span.active.disabled:hover[disabled].active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active:hover.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled.active,
-fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover.active
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active:hover.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled.active,
+.wvusUikit fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active
 {
     border-color: #e65c00;
     background-color: #f60;
@@ -11686,7 +11784,7 @@ fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover
 
     direction: ltr;
 }
-.wvusUikit.no-svg .sector
+.wvusUikit .no-svg .sector
 {
     background-image: url('../img/sector/sectors.png');
     background-repeat: no-repeat;
@@ -11701,148 +11799,147 @@ fieldset[disabled] .wvusUikit .datepicker table tr td span.active.disabled:hover
     width: 120px;
     height: 120px;
 }
-.wvusUikit.svg .sector.disaster
+.wvusUikit .svg .sector.disaster
 {
     background-image: url('../img/sector/svg/disaster.svg');
 }
-.wvusUikit.svg .sector.child
+.wvusUikit .svg .sector.child
 {
     background: url('../img/sector/svg/child.svg');
 }
-.wvusUikit.svg .sector.economic
+.wvusUikit .svg .sector.economic
 {
     background: url('../img/sector/svg/economic.svg');
 }
-.wvusUikit.svg .sector.education
+.wvusUikit .svg .sector.education
 {
     background: url('../img/sector/svg/education.svg');
 }
-.wvusUikit.svg .sector.faith
+.wvusUikit .svg .sector.faith
 {
     background: url('../img/sector/svg/faith.svg');
 }
-.wvusUikit.svg .sector.food
+.wvusUikit .svg .sector.food
 {
     background: url('../img/sector/svg/food.svg');
 }
-.wvusUikit.svg .sector.health
+.wvusUikit .svg .sector.health
 {
     background: url('../img/sector/svg/health.svg');
 }
-.wvusUikit.svg .sector.us
+.wvusUikit .svg .sector.us
 {
     background: url('../img/sector/svg/us.svg');
 }
-.wvusUikit.svg .sector.water
+.wvusUikit .svg .sector.water
 {
     background: url('../img/sector/svg/water.svg');
 }
-.wvusUikit.no-svg .sector.disaster
+.wvusUikit .no-svg .sector.disaster
 {
     background-position: -60px -120px;
 }
-.wvusUikit.no-svg .sector.child
+.wvusUikit .no-svg .sector.child
 {
     background-position: 0 -120px;
 }
-.wvusUikit.no-svg .sector.economic
+.wvusUikit .no-svg .sector.economic
 {
     background-position: 0 -240px;
 }
-.wvusUikit.no-svg .sector.education
+.wvusUikit .no-svg .sector.education
 {
     background-position: -180px -240px;
 }
-.wvusUikit.no-svg .sector.faith
+.wvusUikit .no-svg .sector.faith
 {
     background-position: -240px -240px;
 }
-.wvusUikit.no-svg .sector.food
+.wvusUikit .no-svg .sector.food
 {
     background-position: -330px -240px;
 }
-.wvusUikit.no-svg .sector.health
+.wvusUikit .no-svg .sector.health
 {
     background-position: -390px -240px;
 }
-.wvusUikit.no-svg .sector.us
+.wvusUikit .no-svg .sector.us
 {
     background-position: -150px 0;
 }
-.wvusUikit.no-svg .sector.water
+.wvusUikit .no-svg .sector.water
 {
     background-position: -450px -270px;
 }
-.wvusUikit.no-svg .sector-sm.disaster
+.wvusUikit .no-svg .sector-sm.disaster
 {
     background-position: -360px 0;
 }
-.wvusUikit.no-svg .sector-sm.child
+.wvusUikit .no-svg .sector-sm.child
 {
     background-position: -210px 0;
 }
-.wvusUikit.no-svg .sector-sm.economic
+.wvusUikit .no-svg .sector-sm.economic
 {
     background-position: 0 -30px;
 }
-.wvusUikit.no-svg .sector-sm.education
+.wvusUikit .no-svg .sector-sm.education
 {
     background-position: -210px -30px;
 }
-.wvusUikit.no-svg .sector-sm.faith
+.wvusUikit .no-svg .sector-sm.faith
 {
     background-position: -360px -120px;
 }
-.wvusUikit.no-svg .sector-sm.food
+.wvusUikit .no-svg .sector-sm.food
 {
     background-position: -300px -240px;
 }
-.wvusUikit.no-svg .sector-sm.health
+.wvusUikit .no-svg .sector-sm.health
 {
     background-position: -450px -240px;
 }
-.wvusUikit.no-svg .sector-sm.us
+.wvusUikit .no-svg .sector-sm.us
 {
     background-position: 0 0;
 }
-.wvusUikit.no-svg .sector-sm.water
+.wvusUikit .no-svg .sector-sm.water
 {
     background-position: -480px -240px;
 }
-.wvusUikit.no-svg .sector-lg.disaster
+.wvusUikit .no-svg .sector-lg.disaster
 {
     background-position: -120px -120px;
 }
-.wvusUikit.no-svg .sector-lg.child
+.wvusUikit .no-svg .sector-lg.child
 {
     background-position: -240px 0;
 }
-.wvusUikit.no-svg .sector-lg.economic
+.wvusUikit .no-svg .sector-lg.economic
 {
     background-position: -240px -120px;
 }
-.wvusUikit.no-svg .sector-lg.education
+.wvusUikit .no-svg .sector-lg.education
 {
     background-position: -60px -240px;
 }
-.wvusUikit.no-svg .sector-lg.faith
+.wvusUikit .no-svg .sector-lg.faith
 {
     background-position: -390px 0;
 }
-.wvusUikit.no-svg .sector-lg.food
+.wvusUikit .no-svg .sector-lg.food
 {
     background-position: -390px -120px;
 }
-.wvusUikit.no-svg .sector-lg.health
+.wvusUikit .no-svg .sector-lg.health
 {
     background-position: -180px -300px;
 }
-.wvusUikit.no-svg .sector-lg.us
+.wvusUikit .no-svg .sector-lg.us
 {
     background-position: -30px 0;
 }
-.wvusUikit.no-svg .sector-lg.water
+.wvusUikit .no-svg .sector-lg.water
 {
     background-position: -300px -300px;
 }
-/*# sourceMappingURL=wvus.uikit.css.map */
