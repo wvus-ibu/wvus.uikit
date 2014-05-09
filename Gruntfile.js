@@ -268,7 +268,7 @@
 
     clean: {
       precompile: {
-        files: [{src: ['<%= uikit.worldVisionPath %>precompile/**']}]
+        files: [{src: ['<%= uikit.worldVisionPath %>css/**']}]
       },
       jquery: {
         files: [
