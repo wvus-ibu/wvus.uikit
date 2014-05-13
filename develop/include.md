@@ -4,7 +4,7 @@ title: Including the files
 name: include
 path: ../../
 ---
-### File Structure
+## File Structure
 The compiled library contains the necessary files to get up and running:
 
 {% highlight html %}
@@ -31,7 +31,7 @@ wvus.uikit/
         └── (Font Awesome)
 {% endhighlight %}
 
-### Include
+## Include
 Including the UiKit is simple:
 
 Add the CSS files:
@@ -66,8 +66,16 @@ Add the CSS namespace:
 
 <span class="label label-info">Note:</span> the UiKit uses a CSS and JavaScript namespace. See [namespace]({{ page.path }}{{ site.develop }}/namespace) section.
 
+## Responsive
+Tell browsers how they should scale to your site by including a <code>&lt;meta name="viewport"&gt;</code> 
 
-### Project Use
+{% highlight html %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+{% endhighlight %}
+
+## Project Use
 
 If the compiled CSS doesn’t provide enough flexibility for your project, we have that covered. The variables.less and mixins.less have been extracted to be included in a projects stylesheet.
 
