@@ -273,7 +273,7 @@
 
     replace: {
       version: {
-        src: ['<%= uikit.distPath %>js/jquery.js'],
+        src: ['<%= uikit.distPath %>js/<%= pkg.name %>.js'],
         overwrite: true,
         replacements: [{
           from: '@VERSION',
@@ -290,7 +290,7 @@
   grunt.registerTask('dist-js', ['concat', 'replace', 'uglify']);
 
   // TODO: add tests to this task when implemented
-  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress']);
+  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'replace']);
 
 
   // Default task. Compile, concatenate, min, and build zip

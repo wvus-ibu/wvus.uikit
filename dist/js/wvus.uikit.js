@@ -5,7 +5,7 @@
 var wvusUikit = jQuery.noConflict(true);
 
 wvusUikit.fn.extend({
-  version: "@VERSION",
+  version: "2.0.0",
 });
 
 +function ($) {
