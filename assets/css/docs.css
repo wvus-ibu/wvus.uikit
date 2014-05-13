@@ -179,7 +179,7 @@ html {
 }
 .wvusUikit #site-header {
   margin: 15px 0;
-  height: 60px;
+  height: 70px;
 }
 .wvusUikit #site-header .logo:hover img {
   opacity: .6;
@@ -240,6 +240,18 @@ html {
 }
 .wvusUikit .home {
   text-align: center;
+}
+.wvusUikit .logo {
+  float: left;
+  margin-right: 20px;
+}
+.wvusUikit .logo img {
+  max-width: none;
+  height: auto;
+}
+.wvusUikit .site-title {
+  margin-top: 0;
+  vertical-align: top;
 }
 .wvusUikit #sector .row {
   margin-bottom: 20px;
