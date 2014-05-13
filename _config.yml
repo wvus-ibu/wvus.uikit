@@ -25,3 +25,5 @@ videojs: http://www.videojs.com/
 videojs-docs: https://github.com/videojs/video.js/blob/stable/docs/index.md
 jquery: http://jquery.com/
 uikit-version: "2.0.0"
+docs-version: 2.0.0
+release-date: 05-2014

@@ -2,9 +2,12 @@
       <div class="row">
 
         <div class="col-xs-12">
-          <a href="http://www.worldvision.org" class="logo"><img src="{{ page.path }}assets/img/wvus/logo.png" alt="World Vision"></a>
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="{{ page.path }}assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
           <h1 class="site-title">Digital Style Guide</h1>
-          <a href="{{ site.changelog }}" title="Releases" class="label label-default">v2.0.0 (05-2014)</a>
+          <a href="{{ site.changelog }}" title="Releases" class="label label-default">v{{ site.docs-version }} {{ site.release-date }}</a>
+
         </div>
       </div>
     </header>
