@@ -238,19 +238,6 @@
         {expand: true, cwd: '<%= uikit.bootstrapPath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'}
         ]
       },
-      docs: {
-        files: [
-        {
-          expand: true,
-          cwd: '<%= uikit.distPath %>',
-          src: [
-          '**/*'
-          ],
-          dest: '../uikit-docs/assets/<%= pkg.name %>'
-        }
-        ]
-
-      }
     },
 
     compress: {
