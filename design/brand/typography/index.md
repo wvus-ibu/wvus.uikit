@@ -22,8 +22,8 @@ For consistency, each instance of HTML text on the homepage have an assigned siz
 
 **Font Awesome Icons**
 
-[The following icons]({{ page.path }}{{ site.developerdocs }}/icons/favoriteicons) have been selected from the [Font Awesome 3.2.1 Icon library]({{ site.font-awesome }}/3.2.1). Only the selected icons will be available via the World Vision UI Kit. Additional icons, or an updated 4.0 version, are available [here]({{ site.font-awesome }}).
+[Font Awesome]({{ site.font-awesome }}) provides over 400+ icons as font glyphs. These icons are provided as a font and can be used on any element. World Vision has created a [list of mostly used icons]({{ page.path }}{{ site.developerdocs }}icons/favoriteicons/), as well as a [list of all the icons]({{ page.path }}{{ site.developerdocs }}icons/othericons/) provided by [Font Awesome]({{ site.font-awesome }}).
 
 **Examples**
 
-For examples, visit the [typography elements section]({{ page.path }}{{ site.developerdocs }}/typography/headings)
+For examples, visit the [typography elements section]({{ page.path }}{{ site.developerdocs }}typography/headings)

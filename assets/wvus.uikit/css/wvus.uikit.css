@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0-beta - 2014-05-08
+/*! wvus.uikit - v2.0.0-beta - 2014-05-12
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -9294,6 +9294,203 @@
     {
         display: none !important;
     }
+}
+.wvusUikit .checkbox-styled,
+.wvusUikit .radio-styled
+{
+    position: relative;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'],
+.wvusUikit .radio-styled input[type='checkbox'],
+.wvusUikit .checkbox-styled input[type='radio'],
+.wvusUikit .radio-styled input[type='radio']
+{
+    visibility: hidden;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'] + label,
+.wvusUikit .radio-styled input[type='checkbox'] + label,
+.wvusUikit .checkbox-styled input[type='radio'] + label,
+.wvusUikit .radio-styled input[type='radio'] + label
+{
+    margin-left: 20px;
+}
+.wvusUikit .checkbox-styled input[type='checkbox']:checked + label,
+.wvusUikit .radio-styled input[type='checkbox']:checked + label,
+.wvusUikit .checkbox-styled input[type='radio']:checked + label,
+.wvusUikit .radio-styled input[type='radio']:checked + label
+{
+    cursor: pointer;
+}
+.wvusUikit .checkbox-styled input[type='checkbox']:checked + label:before,
+.wvusUikit .radio-styled input[type='checkbox']:checked + label:before,
+.wvusUikit .checkbox-styled input[type='radio']:checked + label:before,
+.wvusUikit .radio-styled input[type='radio']:checked + label:before
+{
+    border: none;
+}
+.wvusUikit .checkbox-styled input[type='checkbox']:hover + label:before,
+.wvusUikit .radio-styled input[type='checkbox']:hover + label:before,
+.wvusUikit .checkbox-styled input[type='radio']:hover + label:before,
+.wvusUikit .radio-styled input[type='radio']:hover + label:before
+{
+    border-color: #f60;
+}
+.wvusUikit .checkbox-styled input[type='checkbox']:focus + label:before,
+.wvusUikit .radio-styled input[type='checkbox']:focus + label:before,
+.wvusUikit .checkbox-styled input[type='radio']:focus + label:before,
+.wvusUikit .radio-styled input[type='radio']:focus + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox']:active + label:before,
+.wvusUikit .radio-styled input[type='checkbox']:active + label:before,
+.wvusUikit .checkbox-styled input[type='radio']:active + label:before,
+.wvusUikit .radio-styled input[type='radio']:active + label:before
+{
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled] + label,
+.wvusUikit .radio-styled input[type='checkbox'][disabled] + label,
+.wvusUikit .checkbox-styled input[type='radio'][disabled] + label,
+.wvusUikit .radio-styled input[type='radio'][disabled] + label,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled + label,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled + label,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled + label,
+.wvusUikit .radio-styled input[type='radio'] .disabled + label
+{
+    cursor: not-allowed;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled] + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled] + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled] + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled] + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled + label:before
+{
+    background-color: #eee;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:checked:focus + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:checked:focus + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:checked:focus + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled]:checked:focus + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:checked:focus + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:checked:focus + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:checked:focus + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled:checked:focus + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:checked:hover + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:checked:hover + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:checked:hover + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled]:checked:hover + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:checked:hover + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:checked:hover + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:checked:hover + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled:checked:hover + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:checked:active + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:checked:active + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:checked:active + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled]:checked:active + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:checked:active + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:checked:active + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:checked:active + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled:checked:active + label:before
+{
+    border: none;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:focus + label,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:focus + label,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:focus + label,
+.wvusUikit .radio-styled input[type='radio'][disabled]:focus + label,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:focus + label,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:focus + label,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:focus + label,
+.wvusUikit .radio-styled input[type='radio'] .disabled:focus + label,
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:active + label,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:active + label,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:active + label,
+.wvusUikit .radio-styled input[type='radio'][disabled]:active + label,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:active + label,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:active + label,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:active + label,
+.wvusUikit .radio-styled input[type='radio'] .disabled:active + label,
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:hover + label,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:hover + label,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:hover + label,
+.wvusUikit .radio-styled input[type='radio'][disabled]:hover + label,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:hover + label,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:hover + label,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:hover + label,
+.wvusUikit .radio-styled input[type='radio'] .disabled:hover + label
+{
+    outline: none;
+}
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:focus + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:focus + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:focus + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled]:focus + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:focus + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:focus + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:focus + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled:focus + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:active + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:active + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:active + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled]:active + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:active + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:active + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:active + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled:active + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'][disabled]:hover + label:before,
+.wvusUikit .radio-styled input[type='checkbox'][disabled]:hover + label:before,
+.wvusUikit .checkbox-styled input[type='radio'][disabled]:hover + label:before,
+.wvusUikit .radio-styled input[type='radio'][disabled]:hover + label:before,
+.wvusUikit .checkbox-styled input[type='checkbox'] .disabled:hover + label:before,
+.wvusUikit .radio-styled input[type='checkbox'] .disabled:hover + label:before,
+.wvusUikit .checkbox-styled input[type='radio'] .disabled:hover + label:before,
+.wvusUikit .radio-styled input[type='radio'] .disabled:hover + label:before
+{
+    border: 1px solid #ccc;
+    outline: none;
+}
+.wvusUikit .checkbox-styled label:before,
+.wvusUikit .radio-styled label:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '';
+
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .075);
+}
+.wvusUikit .checkbox-styled label:before
+{
+    border-radius: 4px;
+}
+.wvusUikit .checkbox-styled input[type='checkbox']:checked + label:before
+{
+    background: url('../img/checkbox-radio/checkbox-radio.png') -22px top no-repeat;
+}
+.wvusUikit .checkbox-styled input[type='checkbox']:checked[disabled] + label:before
+{
+    background-position: -44px top;
+}
+.wvusUikit .radio-styled label:before
+{
+    border-radius: 50%;
+}
+.wvusUikit .radio-styled input[type='radio']:checked + label:before
+{
+    background: url('../img/checkbox-radio/checkbox-radio.png') left top no-repeat;
+}
+.wvusUikit .radio-styled input[type='radio']:checked[disabled] + label:before
+{
+    background-color: #666;
+    background-image: none;
 }
 .wvusUikit .btn-default,
 .wvusUikit .btn-primary,
