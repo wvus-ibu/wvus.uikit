@@ -1,0 +1,140 @@
+
+@import "../wvus.uikit/less/variables.less";
+@import "../wvus.uikit/less/mixins.less";
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.wvusUikit{
+  @import "designer.less";
+  @import "developer.less";
+
+// Base Setup for Sticky footer
+// ----------------------------
+body {
+  margin-bottom: 100px;
+}
+
+// Header Styles
+// ------------------------
+#site-header {
+  margin: 15px 0;
+  height: 70px;
+  .logo:hover img{
+    opacity: .6;
+  }
+
+}
+
+// Offcanvas Side Nav
+// -----------------------
+@media screen and (max-width: @screen-sm-max){
+  .row-offcanvas {
+    position: relative;
+    transition: all .25s ease-out;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+    .sidebar-offcanvas {
+      right: -50%;
+    }
+    &.active {
+      right: 50%;
+    }
+  }
+  .row-offcanvas-left {
+    left: 0;
+    .sidebar-offcanvas {
+      left: -50%;
+    }
+    &.active {
+      left: 50%;
+    }
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+  }
+}
+
+// Sticky footer
+// ---------------
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+  p {
+    margin-bottom: 0;
+    color: #777;
+  }
+  .footer-links {
+    margin: 10px 0;
+    li {
+      display: inline;
+      padding: 0 2px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+
+// Home page
+  .home{
+    text-align: center;
+  }
+
+  .logo {
+    float: left;
+    margin-right: 20px;
+  img {
+    max-width: none;
+    height: auto;
+  }
+}
+
+.site-title {
+  margin-top: 0;
+  vertical-align: top;
+}
+
+  #sector .row{
+    margin-bottom: 20px;
+  }
+
+  // Side navigation
+  #docs-nav .nav .nav{
+    padding-left: 20px;
+  }
+
+  #docs-nav .nav{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    li{
+      &.active a{
+        background-color: @component-active-bg;
+        color: @component-active-color;
+      }
+      a,
+      a:hover,
+      a:focus {
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
