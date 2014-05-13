@@ -3,8 +3,6 @@ exclude: [readme.md, node_modules, package.json]
 
 source: docs
 destination: _site
-port: 4000
-host: 0.0.0.0
 
 pygments: true
 #Permalink
