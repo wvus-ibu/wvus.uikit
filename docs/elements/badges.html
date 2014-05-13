@@ -1,0 +1,54 @@
+---
+layout: default
+title: Badges
+snippet: labelsandbadges
+hasJs: false
+name: badges
+path: ../../../
+bootstrap: /components/#badges
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Highlight new or unread items with <code>&lt;span class="badge"&gt;</code>
+  </p>
+  <p>
+    For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <span class="badge">1</span>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <span class="badge">1</span>
+  {% endhighlight %}
+</div>
+
+<div class="docs-example">
+  <a href="#">Inbox <span class="badge">31</span></a>
+</div>
+<div class="docs-html">
+  {% highlight html %}
+  <a href="#">Inbox <span class="badge">31</span></a>
+  {% endhighlight %}
+</div>
+
+<div class="docs-example">
+  <ul class="nav nav-pills nav-stacked" style="max-width: 400px;">
+    <li class="active"><a href="#">Messages <span class="badge pull-right">13</span></a></li>
+    <li><a href="#">News <span class="badge pull-right">2</span></a></li>
+  </ul>
+</div>
+<div class="docs-html">
+  {% highlight html %}
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Messages <span class="badge pull-right">13</span></a></li>
+    <li><a href="#">News <span class="badge pull-right">2</span></a></li>
+  </ul>
+  {% endhighlight %}
+</div>
+

@@ -1,0 +1,58 @@
+---
+layout: default
+title: Tabs - Basic
+snippet: tabs
+group: tabs
+hasJs: false
+name: tabs-basic
+path: ../../../../
+bootstrap: /components/#nav-tabs
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Take a regular <code> &lt;ul&gt;</code> of links and add <code>.nav-tabs</code> for basic tabs
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Profile</a>
+    </li>
+    <li>
+      <a href="#">Message</a>
+    </li>
+  </ul>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Profile</a>
+    </li>
+    <li>
+      <a href="#">Message</a>
+    </li>
+  </ul>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

@@ -1,0 +1,82 @@
+---
+layout: default
+title: Thumbnails - Grid Sizing
+snippet: thumbnails
+group: thumbnails
+hasJs: false
+name: thumbnails-grid
+path: ../../../../
+bootstrap: /components/#thumbnails
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+   By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup. Explore all your options with the various grid classes available to you. You can also mix and match different sizes.
+ </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+      </a>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="row-fluid">
+  <div class="docs-html">
+    {% highlight js %}
+
+    {% endhighlight %}
+  </div>
+</div>
+{% endif %}
+
+

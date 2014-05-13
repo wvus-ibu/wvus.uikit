@@ -1,0 +1,40 @@
+---
+layout: default
+title: UiKit Elements
+name: default
+hasJs: true
+path: ../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">This area contains a collection of all the elements in the UiKit. Each link on the left describes the element, provides an example and code to create the element.</p>
+</header>
+
+
+
+<!-- Preview -->
+<div class="docs-example" style="overflow: hidden;">
+  <p class="muted">Element example will show here</p>
+  <h4>Here's the layout</h4>
+
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <!-- HTML markup for the element will show here -->
+  <h4>Here's the layout</h4>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+  /*
+  If any JavaScript is used on the element, it will show up here
+  */
+  {% endhighlight %}
+</div>
+{% endif %}
+

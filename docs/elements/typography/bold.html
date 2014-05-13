@@ -1,0 +1,37 @@
+---
+layout: default
+title: Typography - Bold
+snippet: bold
+group: typography
+hasJs: false
+name: typography-bold
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    For emphasizing the importance of a string of text.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

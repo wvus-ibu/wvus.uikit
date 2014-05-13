@@ -1,0 +1,33 @@
+# Jekyll Configs
+exclude: [readme.md, node_modules, package.json]
+
+source: docs
+destination: _site
+port: 4000
+host: 0.0.0.0
+
+pygments: true
+#Permalink
+permalink: pretty
+
+developerdocs: elements/
+designerdocs: design/
+develop: develop/
+files: /assets/files
+
+# vars
+repo: https://github.com/wvus-ibu/wvus.uikit
+issues: https://github.com/wvus-ibu/wvus.uikit/issues?state=open
+changelog: https://github.com/wvus-ibu/wvus.uikit/releases
+download: https://github.com/wvus-ibu/wvus.uikit/releases/download/v2.0.0/wvus.uikit-2.0.0.zip
+src-download: https://github.com/wvus-ibu/wvus.uikit/archive/v2.0.0.zip
+bootstrap: http://getbootstrap.com/
+font-awesome: http://fontawesome.io/
+font-awesome-verison: 4.0.3
+spinjs: http://fgnass.github.io/spin.js/
+videojs: http://www.videojs.com/
+videojs-docs: https://github.com/videojs/video.js/blob/stable/docs/index.md
+jquery: http://jquery.com/
+uikit-version: "2.0.0"
+docs-version: 2.0.0
+release-date: 05-2014

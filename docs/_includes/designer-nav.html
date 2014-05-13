@@ -1,0 +1,45 @@
+<ul class="nav">
+  <li>Brand</li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#logo"><i class="fa fa-caret-right"></i> Logo</a>
+    <ul class="nav collapse {% if page.group == 'logo' %} in {% endif %}" id="logo">
+      <li {% if page.name == 'logo' %} class="active" {% endif %}>
+        <a href="{{ page.path }}{{ site.designerdocs }}brand/logo/">Overview</a>
+      </li>
+      <li {% if page.name == 'program-names' %} class="active" {% endif %}>
+        <a href="{{ page.path }}{{ site.designerdocs }}brand/logo/program-names">Program Names</a>
+      </li>
+    </ul>
+  </li>
+  <li {% if page.name == 'color' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.designerdocs }}brand/color/" >Color</a>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#photography"><i class="fa fa-caret-right"></i> Photography</a>
+    <ul class="nav collapse {% if page.group == 'photography' %} in {% endif %}" id="photography">
+      <li {% if page.name == 'photography' %} class="active" {% endif %}>
+        <a href="{{ page.path }}{{ site.designerdocs }}brand/photography/">Overview</a>
+      </li>
+      <li {% if page.name == 'dosdonts' %} class="active" {% endif %}>
+        <a href="{{ page.path }}{{ site.designerdocs }}brand/photography/dosdonts">Do's and Dont's</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="{{ page.path }}{{ site.designerdocs }}brand/typography/">Typography</a>
+  </li>
+  <li>Web Tools</li>
+  <li {% if page.name == 'templates' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.designerdocs }}templates">Templates</a>
+  </li>
+  <li {% if page.name == 'error-messages' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.designerdocs }}error-messages">Error Messages</a>
+  </li>
+  <li {% if page.name == 'accessibility' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.designerdocs }}accessibility">Accessibility</a>
+  </li>
+  <li>Files</li>
+  <li>
+    <a href="{{ page.path }}assets/files/StarterKit.zip">Starter Kit (PSD, Styles, Colors) <i class="fa fa-download-alt fa-dark"></i></a>
+  </li>
+</ul>

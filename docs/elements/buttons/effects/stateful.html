@@ -1,0 +1,39 @@
+---
+layout: default
+title: Buttons - Stateful
+snippet: effects
+group: buttons
+hasJs: false
+name: buttons-effects-stateful
+path: ../../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <button type="button" id="fat-btn" data-loading-text="loading..." class="btn btn-primary">
+    Loading state
+  </button>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <button type="button" id="fat-btn" data-loading-text="loading..." class="btn btn-primary">
+    Loading state
+  </button>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}

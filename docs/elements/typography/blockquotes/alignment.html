@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blockquotes - Alignment
+snippet: blockquotes
+group: typography
+hasJs: false
+name: typography-blockquotes-alignment
+path: ../../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Use <code>.pull-right</code> for a floated, right-aligned blockquote.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example" style="overflow: hidden;">
+  <blockquote class="blockquote-reverse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+  </blockquote>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+ <blockquote class="blockquote-reverse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+  </blockquote>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

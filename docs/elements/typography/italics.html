@@ -1,0 +1,38 @@
+---
+layout: default
+title: Typography - Italics
+snippet: italics
+group: typography
+hasJs: false
+name: typography-italics
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    For adding stress to a string of text with italics.
+  </p>
+</header>
+
+<!-- Preview -->
+<div class="docs-example">
+  <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

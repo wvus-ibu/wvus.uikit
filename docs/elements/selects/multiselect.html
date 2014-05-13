@@ -1,0 +1,49 @@
+---
+layout: default
+title: Multi-Select
+snippet: select
+group: select
+hasJs: true
+name: selects-multiselect
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Multi-selects with <a href="http://silviomoreto.github.io/bootstrap-select/">Bootstrap Select</a>
+    </p>
+</header>
+          <!-- Preview -->
+          <div class="row-fluid">
+            <div class="docs-example">
+              <select class="selectpicker" multiple>
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- HTML Code -->
+          <div class="row-fluid">
+            <div class="docs-html">
+{% highlight html  %}
+<select class="selectpicker" multiple>
+  <option>Mustard</option>
+  <option>Ketchup</option>
+  <option>Relish</option>
+</select>
+{% endhighlight %}
+            </div>
+          </div>
+
+{% if page.hasJs %}
+          <!-- JS Code -->
+          <div class="row-fluid">
+            <div class="docs-js">
+{% highlight js %}
+wvusUikit(".selectpicker").selectpicker();
+{% endhighlight %}
+            </div>
+          </div>
+{% endif %}

@@ -1,0 +1,56 @@
+---
+layout: default
+title: Lists - horizontal description
+snippet: lists
+group: typography
+hasJs: false
+name: typography-lists-horizontal
+path: ../../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.
+  </p>
+</header>
+
+<!-- Preview -->
+<div class="docs-example">
+  <dl class="dl-horizontal">
+    <dt>Descripton Lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+    <dt>Euismod</dt>
+    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+    <dt>Malesuada porta</dt>
+    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+  </dl>
+</div>
+
+<!-- HTML Code -->
+
+<div class="docs-html">
+  {% highlight html  %}
+  <dl class="dl-horizontal">
+    <dt>Descripton Lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+    <dt>Euismod</dt>
+    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+    <dt>Malesuada porta</dt>
+    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+  </dl>
+  {% endhighlight %}
+</div>
+
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

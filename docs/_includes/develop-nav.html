@@ -1,0 +1,20 @@
+<ul class="nav ">
+  <li {% if page.name == 'dev-home' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.develop }}">Develop Info</a>
+  </li>
+  <li {% if page.name == 'include' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.develop }}include">Include the UiKit</a>
+  </li>
+  <li {% if page.name == 'namespace' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.develop }}namespace">Namespace</a>
+  </li>
+    <li {% if page.name == 'version' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.develop }}version">Version</a>
+  </li>
+  <li {% if page.name == 'contribute' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.develop }}contribute">Contribute</a>
+  </li>
+    <li {% if page.name == 'external-libraries' %} class="active" {% endif %}>
+    <a href="{{ page.path }}{{ site.develop }}external-libraries">External Libraries</a>
+  </li>
+</ul>

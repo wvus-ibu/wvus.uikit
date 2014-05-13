@@ -1,0 +1,38 @@
+---
+layout: default
+title: Abbreviations - Default
+snippet: abbreviations
+group: typography
+hasJs: false
+name: typography-abbreviations-default
+path: ../../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.
+  </p>
+  <p>
+    For expanded text on long hover of an abbreviation, include the <code>title</code> attribute.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}

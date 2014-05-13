@@ -1,0 +1,56 @@
+---
+layout: default
+title: Buttons - Split Dropups
+snippet: dropdown
+group: buttons
+hasJs: false
+name: buttons-dropdowns-split-dropups
+path: ../../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Dropdown menus can also be toggled from the bottom up by adding a single class to the immediate parent of <code>.dropdown-menu</code>. It will flip the direction of the <code>.caret</code> and reposition the menu itself to move from the bottom up instead of top down.
+  </p>
+</header>
+
+<!-- Preview -->
+<div class="docs-example">
+  <div class="btn-group dropup">
+    <button class="btn btn-primary">Dropup</button>
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-up "></i></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="btn-group dropup">
+    <button class="btn btn-primary">Dropup</button>
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-up "></i></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}

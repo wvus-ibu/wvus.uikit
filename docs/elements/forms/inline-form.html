@@ -1,0 +1,67 @@
+---
+layout: default
+title: Inline Form
+snippet: inline-form
+group: forms
+hasJs: false
+name: forms-inline-form
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Add <code>.form-inline</code> for left-aligned labels and inline-block controls for a compact layout.
+    This only applies to forms within viewports that are at least 768px wide.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="exampleEmail" class="sr-only">Email</label>
+      <input type="text" class="form-control" placeholder="Email" id="exampleEmail">
+    </div>
+    <div class="form-group">
+      <label for="examplePassword" class="sr-only">Password</label>
+      <input type="password" class="form-control" placeholder="Password" id="examplePassword">
+    </div>
+    <div class="checkbox">
+      <label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+  </form>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="exampleEmail" class="sr-only">Email</label>
+      <input type="text" class="form-control" placeholder="Email" id="exampleEmail">
+    </div>
+    <div class="form-group">
+      <label for="examplePassword" class="sr-only">Password</label>
+      <input type="password" class="form-control" placeholder="Password" id="examplePassword">
+    </div>
+    <div class="checkbox">
+      <label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+  </form>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+

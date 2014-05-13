@@ -7,6 +7,7 @@
    srcPath: './',
    libPath: '<%= uikit.srcPath %>lib/',
    distPath: '<%= uikit.srcPath %>dist/',
+   docsPath: '<%= uikit.srcPath %>docs/',
    bootstrapPath: '<%= uikit.libPath %>bootstrap/',
    bootstrapLessPath:  '<%= uikit.bootstrapPath %>less/',
    bootstrapJsPath:  '<%= uikit.bootstrapPath %>js/',
@@ -131,6 +132,30 @@
       js: {
         files: ['lib/worldvision/js/*.js'],
         tasks: ['qunit', 'jshint']
+      },
+      docs: {
+        options: {
+          spawn: false,
+          livereload: '<%= connect.docs.options.livereload %>'
+        },
+        files: ['<%= uikit.docsPath %>assets/**/*', '<%= uikit.docsPath %>elements/**/*', '<%= uikit.docsPath %>develop/**/*', '<%= uikit.docsPath %>design/**/*', '<%= uikit.docsPath %>_includes/**/*', '<%= uikit.docsPath %>_layouts/**/*', '<%= uikit.docsPath %>tests/**/*'],
+        tasks: ['less:docs', 'jekyll']
+      }
+    },
+
+    jekyll : {
+      docs: {}
+    },
+
+    connect: {
+      docs: {
+        options: {
+          hostname: 'localhost',
+          port: 4000,
+          base: '_site',
+          livereload: 35729,
+          open: 'http://localhost:4000/'
+        }
       }
     },
 
@@ -157,7 +182,10 @@
         src: '<%= uikit.worldVisionPath %>less/namespace.less',
         dest: '<%= uikit.distPath %>css/<%= pkg.name %>.css'
       },
-
+      docs: {
+        src: ['<%= uikit.docsPath %>assets/less/docs.less'],
+        dest: '<%= uikit.docsPath %>assets/css/docs.css'
+      },
       minify: {
         options: {
           cleancss: true,
@@ -238,6 +266,11 @@
         {expand: true, cwd: '<%= uikit.bootstrapPath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'}
         ]
       },
+      docs: {
+        files: [
+        {expand: true, cwd: '<%= uikit.distPath %>', src: '**/*', dest: '<%= uikit.docsPath %>/assets/wvus.uikit'}
+        ]
+      }
     },
 
     compress: {
@@ -268,6 +301,27 @@
         files: [
         {src: ['<%= uikit.datepickerPath %>docs', '<%= uikit.datepickerPath %>tests']}
         ]
+      },
+      docs: {
+        files: [
+        {src: ['_site']}
+        ]
+      }
+    },
+
+    validation: {
+      options: {
+        charset: 'utf-8',
+        doctype: 'HTML5',
+        failHard: true,
+        reset: true,
+        relaxerror: [
+        'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
+        'Element img is missing required attribute src.'
+        ]
+      },
+      files: {
+        src: '<%= docsPath %>_site/**/*.html'
       }
     },
 
@@ -285,6 +339,7 @@
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  require('time-grunt')(grunt);
 
   grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner', 'clean:precompile']);
   grunt.registerTask('dist-js', ['concat', 'replace', 'uglify']);
@@ -292,6 +347,7 @@
   // TODO: add tests to this task when implemented
   grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'replace']);
 
+  grunt.registerTask('serve',['clean:docs', 'copy:docs', 'less:docs', 'jekyll', 'connect', 'watch'] );
 
   // Default task. Compile, concatenate, min, and build zip
   //grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
