@@ -1,0 +1,125 @@
+//
+// Styled Checkboxes & Radio Buttons
+// --------------------------------------------------
+
+.checkbox-styled,
+.radio-styled {
+  position: relative;
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    visibility: hidden;
+
+    + label {
+      margin-left: 20px;
+    }
+
+    &:checked {
+      + label {
+        cursor: pointer;
+        &:before {
+          border: none;
+        }
+      }
+    }
+
+    &:hover {
+      + label:before {
+        border-color: @input-checkbox-border-color-hover;
+      }
+    }
+
+    &:focus,
+    &:active {
+      + label {
+        &:before{
+          .tab-focus();
+        }
+      }
+    }
+
+    &[disabled],
+    .disabled {
+      + label {
+        cursor: not-allowed;
+        &:before {
+          background-color: @input-bg-disabled;
+        }
+      }
+
+      &:checked {
+        &:focus,
+        &:hover,
+        &:active {
+          + label:before {
+            border: none;
+          }
+        }
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        + label {
+          outline: none;
+          &:before {
+            border: 1px solid @input-border;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.075);
+    border: 1px solid @input-border;
+  }
+}
+
+
+//
+// Styled Checkboxes
+//-----------------------
+.checkbox-styled {
+  label:before {
+    border-radius: @input-border-radius;
+  }
+  input[type="checkbox"] {
+    &:checked {
+      + label:before {
+        background: url("../img/checkbox-radio/checkbox-radio.png") -22px top no-repeat;
+      }
+      &[disabled] + label:before {
+          background-position: -44px top;
+      }
+    }
+  }
+}
+
+//
+// Styled Radio Button
+// ----------------------------------
+
+.radio-styled {
+  label:before {
+    border-radius: 50%
+  }
+  input[type="radio"] {
+    &:checked {
+      + label:before {
+        background: url("../img/checkbox-radio/checkbox-radio.png") left top no-repeat;
+      }
+      &[disabled] + label:before {
+        background-image: none;
+        background-color: @input-radio-checked-disabled;
+      }
+    }
+  }
+}
