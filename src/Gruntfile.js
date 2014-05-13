@@ -13,24 +13,12 @@ module.exports = function(grunt) {
           livereload: '<%= connect.docs.options.livereload %>'
         },
         files: ['assets/**/*', 'elements/**/*', 'develop/**/*', 'design/**/*', '_includes/**/*', '_layouts/**/*', 'tests/**/*'],
-        tasks: ['jekyll']
+        tasks: ['less', 'jekyll']
       },
-      assets: {
-        files: ['assets/less/*'],
-        tasks: ['less']
-      },
-
     },
 
     less: {
       docs: {
-        options: {
-          outputSourceFile: true,
-          sourceMap: true,
-          sourceMapFilename: 'docs.map.css',
-          sourceMapRootpath: 'assets/css',
-          sourceMapURL: 'docs.map.css'
-        },
         src: ['assets/less/docs.less'],
         dest: 'assets/css/docs.css'
       }
