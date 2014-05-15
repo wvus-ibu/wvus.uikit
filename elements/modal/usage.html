@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>Modal - Usage | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Vision UiKit Documentation">
+    <meta name="author" content="World Vision US, Internet Business Unit">
+
+    <!-- Le styles -->
+    <!-- Main css -->
+    <link href="../../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+    <!-- CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/docs.css">
+
+    <!-- Modernizr with Shiv -->
+    <script type="text/javascript" src="../../../../assets/wvus.uikit/js/modernizr.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="../../../../assets/wvus.uikit/img/ico/favicon.ico">
+  </head>
+
+<body>
+
+      <header class="container-fluid" id="site-header">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="../../../../assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
+          <h1 class="site-title">Digital Style Guide</h1>
+          <a href="" title="Releases" class="label label-default">v </a>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar
+    ================================================== -->
+    <nav class="navbar navbar-worldvision navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../">Home</a>
+            </li>
+            <li >
+              <a href="../../../../">Design</a>
+            </li>
+            <li >
+              <a href="../../../../">Develop</a>
+            </li>
+            <li >
+             <a href="../../../../">Elements</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+    </nav>
+
+
+  <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
+        <div class="panel panel-default">
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+        <header class="page-header" id="headerTitle">
+  <h1>Modal - Usage</h1>
+</header>
+
+<p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open</code> to the <code>&lt;body&gt;</code> to override default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+
+<h3>Via data attributes</h3>
+<p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#myModal&quot;</span><span class="nt">&gt;</span>Launch modal<span class="nt">&lt;/button&gt;</span>
+</code></pre></div>
+
+<h3>Via JavaScript</h3>
+<p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
+</code></pre></div>
+
+<h3>Options</h3>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 50px;">type</th>
+       <th style="width: 50px;">default</th>
+       <th>description</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>backdrop</td>
+       <td>boolean or the string <code>'static'</code></td>
+       <td>true</td>
+       <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+     </tr>
+     <tr>
+       <td>keyboard</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Closes the modal when escape key is pressed</td>
+     </tr>
+     <tr>
+       <td>show</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Shows the modal when initialized.</td>
+     </tr>
+     <tr>
+       <td>remote</td>
+       <td>path</td>
+       <td>false</td>
+       <td><p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
+        <div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">href=</span><span class="s">&quot;remote.html&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#modal&quot;</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span>
+        
+</code></pre></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div><!-- /.table-responsive -->
+
+<h3>Methods</h3>
+
+<h4>.modal(options)</h4>
+<p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
+<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span>
+<span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span>
+<span class="p">})</span>
+</code></pre></div>
+
+<h4>.modal('toggle')</h4>
+<p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
+<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>.modal('show')</h4>
+<p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
+<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4>.modal('hide')</h4>
+<p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
+<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3>Events</h3>
+<p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>show.bs.modal</td>
+       <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+     </tr>
+     <tr>
+       <td>shown.bs.modal</td>
+       <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+     </tr>
+     <tr>
+       <td>hide.bs.modal</td>
+       <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+     </tr>
+     <tr>
+       <td>hidden.bs.modal</td>
+       <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+     </tr>
+     <tr>
+       <td>loaded.bs.modal</td>
+       <td>This event is fired when the modal has loaded content using the remote option.</td>
+     </tr>
+   </tbody>
+ </table>
+</div><!-- /.table-responsive -->
+<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// do something...</span>
+<span class="p">})</span>
+</code></pre></div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Built on <a href="">Twitter Bootstrap</a> and <a href="">Font Awesome</a></p>
+            <ul class="footer-links">
+              <li><a href="">Issues</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="">Changelog</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="../../../../">Version 1.2.0</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="../../../../assets/wvus.uikit/js/jquery.min.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.touch,
+        yep: '../../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        load: [
+        '../../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../../assets/js/application.js'
+        ]
+    });
+</script>
+
+<!-- external Libraries -->
+<script src="../../../../assets/js/holder/holder.js"></script>
+
+</body>
+</html>

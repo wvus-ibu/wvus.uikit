@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>WV UiKit, nav</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Le styles -->
+
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+
+
+
+
+    
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+                    <link rel="apple-touch-icon" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+                                   <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Basic tabs</h1>
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <a href="#">Message</a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /row -->
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Basic Pills</h1>
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <a href="#">Messages</a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /row -->
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Disabled</h1>
+      <h2>Tabs</h2>
+      <ul class="nav nav-tabs">
+        <li>
+          <a href="#">Clickable</a>
+        </li>
+        <li class="disabled">
+          <a href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Pills</h2>
+      <ul class="nav nav-pills">
+        <li>
+          <a href="#">Clickable</a>
+        </li>
+        <li class="disabled">
+          <a href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /row -->
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Direction</h1>
+      <div id="right">
+        <ul class="nav nav-tabs pull-right">
+          <li>
+            <a href="">Right</a>
+          </li>
+          <li>
+            <a href="">Right tab</a>
+          </li>
+        </ul>
+      </div>
+      <div id="left">
+        <ul class="nav nav-tabs pull-left">
+          <li>
+            <a href="">left</a>
+          </li>
+          <li>
+            <a href="">left tab</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /row -->
+
+  <div id="stacked">
+    <div class="row">
+      <div class="row">
+        <h1>Stacked Pills</h1>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+          <li>
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+      </div><!-- /row -->
+    </div>
+  </div>
+
+  <div id="dropdowns">
+    <div class="row">
+      <div class="col-md-12">
+      <h1>Dropdowns</h1>
+      <h2>Tabs</h2>
+      <ul class="nav nav-tabs">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdowns <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#" tabindex="-1">Item</a>
+            </li>
+            <li>
+             <a href="#" tabindex="-1">Item 2</a>
+           </li>
+         </ul>
+       </li>
+     </ul>
+   </div>
+   </div>
+   <div class="row">
+    <h2>Pills</h2>
+    <div class="col-md-12">
+    <ul class="nav nav-pills">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdowns <i class="icon-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item 2</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  </div><!-- /row -->
+</div>
+
+
+<div class="row">
+  <div id="tabbable">
+    <h1>Tabbable (Dynamic Loading of tab content)</h1>
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#tab1" data-toggle="tab">Section 1</a>
+        </li>
+        <li>
+          <a href="#tab2" data-toggle="tab">Section 2</a>
+        </li>
+        <li>
+          <a href="#tab3" data-toggle="tab">Section 3</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <p>I'm Section 1</p>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <p>Howdy, I'm Section 2.</p>
+        </div>
+        <div class="tab-pane" id="tab3">
+          <p>Section 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /row -->
+
+<div class="row">
+  <div id="tabbable-bottom">
+    <h1>Tabbable Bottom</h1>
+    <div class="tabbable tabs-below">
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab-below1">
+          <p>I'm Section 1</p>
+        </div>
+        <div class="tab-pane" id="tab-below2">
+          <p>Howdy, I'm Section 2.</p>
+        </div>
+        <div class="tab-pane" id="tab-below3">
+          <p>Section 3</p>
+        </div>
+      </div>
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#tab-below1" data-toggle="tab">Section 1</a>
+        </li>
+        <li>
+          <a href="#tab-below2" data-toggle="tab">Section 2</a>
+        </li>
+        <li>
+          <a href="#tab-below3" data-toggle="tab">Section 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div><!-- /row -->
+
+<div class="row">
+  <div id="tabbable-left">
+    <h1>Tabbable Left</h1>
+    <div class="tabbable tabs-left">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#tab-left1" data-toggle="tab">Section 1</a>
+        </li>
+        <li>
+          <a href="#tab-left2" data-toggle="tab">Section 2</a>
+        </li>
+        <li>
+          <a href="#tab-left3" data-toggle="tab">Section 3</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab-left1">
+          <p>I'm Section 1</p>
+        </div>
+        <div class="tab-pane" id="tab-left2">
+          <p>Howdy, I'm Section 2.</p>
+        </div>
+        <div class="tab-pane" id="tab-left3">
+          <p>SECTION 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /row -->
+
+<div class="row">
+  <div id="tabbable-right">
+    <h1>Tabbable Right</h1>
+    <div class="tabbable tabs-right">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#tab-right1" data-toggle="tab">Section 1</a>
+        </li>
+        <li>
+          <a href="#tab-right2" data-toggle="tab">Section 2</a>
+        </li>
+        <li>
+          <a href="#tab-right3" data-toggle="tab">Section 3</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab-right1">
+          <p>I'm Section 1</p>
+        </div>
+        <div class="tab-pane" id="tab-right2">
+          <p>Howdy, I'm Section 2.</p>
+        </div>
+        <div class="tab-pane" id="tab-right3">
+          <p>Section 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /row -->
+
+<div class="row">
+  <h1>Nested Tabs</h1>
+
+  <div class="tabbable tabs-left" style="margin-bottom: 18px;">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#nested-tab1" data-toggle="tab">Section 1</a></li>
+      <li><a href="#nested-tab2" data-toggle="tab">Section 2</a></li>
+      <li><a href="#nested-tab3" data-toggle="tab">Section 3</a></li>
+    </ul>
+    <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+      <div class="tab-pane active" id="nested-tab1">
+        <p>I'm in Section 1.</p>
+
+        <div class="tabbable" style="background: #f5f5f5; padding: 20px;">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#nested-tab1-1" data-toggle="tab">1.1</a></li>
+            <li><a href="#nested-tab1-2" data-toggle="tab">1.2</a></li>
+            <li><a href="#nested-tab1-3" data-toggle="tab">1.3</a></li>
+          </ul>
+          <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+            <div class="tab-pane active" id="nested-tab1-1">
+              <p>I'm in Section 1.1.</p>
+            </div>
+            <div class="tab-pane" id="nested-tab1-2">
+              <p>I'm in Section 1.2.</p>
+            </div>
+            <div class="tab-pane" id="nested-tab1-3">
+              <p>I'm in Section 1.3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="nested-tab2">
+        <p>Howdy, I'm in Section 2.</p>
+      </div>
+      <div class="tab-pane" id="nested-tab3">
+        <p>What up girl, this is Section 3.</p>
+      </div>
+    </div>
+  </div> <!-- /tabbable -->
+</div><!-- /row -->
+
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../assets/wvus.uikit/js/jquery-custom.min.js"></script>
+    <script src="../../assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="../../assets/wvus.uikit/js/modernizer.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/holder/holder.js"></script>
+
+
+    
+              <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../../assets/google-code-prettify/prettify.js"></script>
+    <script src="../../assets/js/application.js"></script>
+    <script src="../../assets/js/holder/holder.js" type="text/javascript"></script>
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+</html>

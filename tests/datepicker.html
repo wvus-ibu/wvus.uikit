@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>WV UiKit, datepicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Le styles -->
+
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+
+
+
+
+    
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+                    <link rel="apple-touch-icon" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+                                   <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <label for="basicDate">Basic Datepicker</label>
+      <input class="form-control" data-provide="datepicker" data-date-today-highlight="true">
+    </div>
+    <div class="col-sm-3">
+      <label for="componentDate">Input Group</label>
+      <div class="input-group date">
+        <input id="componentDate" class="form-control" value="04/14/2014">
+        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label for="daterange">Date Range</label>
+      <div class="input-daterange input-group" id="daterange">
+        <input class="form-control">
+        <span class="input-group-addon">to</span>
+        <input class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label>Inline</label>
+      <div id="datepicker"></div>
+    </div>
+  </div>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../assets/wvus.uikit/js/jquery-custom.min.js"></script>
+    <script src="../../assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="../../assets/wvus.uikit/js/modernizer.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/holder/holder.js"></script>
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+      <script type="text/javascript">
+          wvusUikit(document).ready(function() {
+            wvusUikit('.input-group.date').datepicker({});
+            wvusUikit('.input-group.input-daterange').datepicker({ todayBtn: "linked", todayHighlight: true, format: "mm/yyyy", startView: 2, minViewMode: 1 });
+            wvusUikit('#datepicker').datepicker({ startView: 1, todayBtn: true, multidate: true, todayHighlight: true});
+          });
+      </script>
+    
+
+    
+
+    
+
+  </body>
+</html>

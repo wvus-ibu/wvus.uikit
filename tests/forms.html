@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>WV UiKit, forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Le styles -->
+
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+
+
+
+
+    
+            <style>
+      body {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    </style>
+      
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+                    <link rel="apple-touch-icon" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+                                   <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <form class="container">
+  <fieldset>
+    <legend>Form controls</legend>
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Select</label>
+          <select class="form-control">
+            <option>Select</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>multiselect</label>
+          <select multiple="multiple" class="form-contol">
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>textarea</label>
+          <textarea class="form-control">Textarea</textarea>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>text</label>
+          <input type="text" value="Text input" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>password</label>
+          <input type="password" value="Password input" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>checkbox</label>
+          <input type="checkbox" value="">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>radio</label>
+          <input type="radio" value="" name="radioExample">
+          <input type="radio" value="" name="radioExample">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>button</label>
+          <input type="button" value="Button">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>submit</label>
+          <input type="submit" value="Submit">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>reset</label>
+          <input type="reset" value="Reset">
+        </div>
+      </div><!-- /span4 -->
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>file</label>
+          <input type="file" >
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>hidden</label>
+          <input type="hidden" value="hidden">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>image</label>
+          <input type="image" alt="Image Input">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>datetime</label>
+          <input type="datetime" value="" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>datetime-local</label>
+          <input type="datetime-local" value="" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>date</label>
+          <input type="date" value="" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group"
+        <label>month</label>
+        <input type="month" value="" class="form-control">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>time</label>
+        <input type="time" value="" class="form-control">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>week</label>
+        <input type="week" value="" class="form-control">
+      </div>
+    </div><!-- /span4 -->
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>number</label>
+        <input type="number" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>range</label>
+        <input type="range" >
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>email</label>
+        <input type="email" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>url</label>
+        <input type="url" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>search</label>
+        <input type="search" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>tel</label>
+        <input type="tel" value="">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>color</label>
+        <input type="color" value="">
+      </div>
+    </div><!-- /span4 -->
+  </div><!-- /row -->
+
+</fieldset>
+
+</form> <!-- /container -->
+
+<div class="container">
+  <h1>Prepend/Append</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+        <input class="form-control" type="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group ">
+        <input class="form-control" type="text" placeholder="Amount">
+        <span class="input-group-addon">.00</span>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-money"></i></span>
+        <input type="text" class="col-md-2 form-control">
+        <span class="input-group-addon"><i class="fa fa-bitcoin"></i></span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Buttons</h3>
+      <div class="input-group">
+        <input type="text" class="col-md-2 form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">Go!</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Prepend and append on inputs</h4>
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-addon">@</span>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control">
+          <span class="input-group-addon">.00</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Prepend and append with uneditable</h4>
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control" value="Some value here" disabled>
+        </div>
+        <div class="input-group">
+          <input type="form-group" class="form-control" value="Some value here" disabled>
+          <span class="input-group-addon">.00</span>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control" value="Some value here" disabled>
+          <span class="input-group-addon">.00</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Prepend with type="submit"</h4>
+      <form class="form-inline">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <input type="submit" value="Search" class="btn btn-primary">
+          </div>
+          <input type="text" class="form-control" placeholder="Search" name="q">
+        </div>
+
+        <div class="input-group">
+          <input type="text" class="form-control" value="" name="">
+          <div class="input-group-btn">
+            <input type="reset" value="Button" class="btn btn-info">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="appendedInputButtons" class="form-control">
+          <div class="input-group-btn">
+            <input type="submit" value="Search" class="btn btn-primary">
+            <button type="button" class="btn btn-default">Options</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><!--/row-->
+</div><!-- /container -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form class="form-inline">
+        <fieldset>
+          <legend>Inline Form</legend>
+          <div class="form-group">
+            <label class="sr-only" for="emailInput">Email Address</label>
+            <input type="email" class="form-control" placeholder="Email" id="emailInput">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="passwordInput">Password</label>
+            <input type="password" class="form-control" placeholder="Password" id="passwordInput">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember Me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Sign In</button>
+        </fieldset>
+      </form>
+    </div>
+  </div><!-- /row -->
+
+
+  <div class="col-md-12">
+    <form class="form-horizontal" role="form">
+      <fieldset>
+        <legend>Horizontal Form</legend>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="inputEmail">Email</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="inputPassword">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember Me
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Sign In</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../assets/wvus.uikit/js/jquery-custom.min.js"></script>
+    <script src="../../assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="../../assets/wvus.uikit/js/modernizer.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/holder/holder.js"></script>
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+</html>
