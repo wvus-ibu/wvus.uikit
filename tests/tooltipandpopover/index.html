@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>WV UiKit, tooltip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Le styles -->
+
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+
+
+
+
+    
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+                    <link rel="apple-touch-icon" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+                                   <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+  <div class="row">
+    <h1>Tooltip</h1>
+    <a href="" class="tooltip-test" data-toggle="tooltip" title="This is a tooltip">Hover Over Me</a>
+  </div><!-- /row -->
+  <div class="row" id="tooltip-container" >
+    <h1>Custom tooltip via JS</h1>
+    <a href="" class="tooltip-custom" >Hover 2 seconds Tooltip</a>
+  </div><!-- /row -->
+  <div class="row">
+    <button class="btn btn-default" id="trigger">Triggers Tooltip</button>
+  </div>
+  <div class="row">
+    <div class="page-header">
+      <h3>Popover</h3>
+    </div>
+    <button class="btn btn-default" id="popover">Popover</button>
+    <button class="btn btn-primary" id="markupPopover" data-placement="top" data-delay=2000 data-title="Markup Popover" data-content="My content is in markup">Custom Popover</button>
+  </div><!-- /row -->
+
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../../assets/wvus.uikit/js/jquery-custom.min.js"></script>
+    <script src="../../assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="../../assets/wvus.uikit/js/modernizer.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/holder/holder.js"></script>
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+    <!-- Tooltip JS Test -->
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          //Tooltips
+          wvusUikit('.tooltip-test').tooltip();
+          wvusUikit('.tooltip-custom').tooltip({
+            placement: 'bottom',
+            title: 'This is set via JS',
+            delay: 1000
+          });
+          wvusUikit('#trigger').tooltip({
+            html: true,
+            container: 'body',
+            title: '<span class="label label-info">This is HTML</span>',
+            trigger: 'click'
+          });
+          //popovers
+          wvusUikit('#popover').popover({
+            placement: 'bottom',
+            title: 'This a popover',
+            content: 'a popover'
+          });
+          wvusUikit('#markupPopover').popover();
+        });
+      </script>
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+</html>
