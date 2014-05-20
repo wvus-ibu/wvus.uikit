@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.0 - 2014-05-13
+/*! wvus.uikit - v2.0.0 - 2014-05-19
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -936,41 +936,41 @@
 {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 @media (min-width: 768px)
 {
     .wvusUikit .container
     {
-        width: 750px;
+        width: 740px;
     }
 }
 @media (min-width: 992px)
 {
     .wvusUikit .container
     {
-        width: 970px;
+        width: 960px;
     }
 }
 @media (min-width: 1200px)
 {
     .wvusUikit .container
     {
-        width: 1170px;
+        width: 1160px;
     }
 }
 .wvusUikit .container-fluid
 {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .wvusUikit .row
 {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 .wvusUikit .col-xs-1,
 .wvusUikit .col-sm-1,
@@ -1024,8 +1024,8 @@
     position: relative;
 
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .wvusUikit .col-xs-1,
 .wvusUikit .col-xs-2,
@@ -2628,8 +2628,8 @@
 }
 .wvusUikit .form-horizontal .form-group
 {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 .wvusUikit .form-horizontal .form-control-static
 {
@@ -2645,7 +2645,7 @@
 .wvusUikit .form-horizontal .has-feedback .form-control-feedback
 {
     top: 0;
-    right: 15px;
+    right: 10px;
 }
 .wvusUikit .btn
 {
@@ -6527,8 +6527,8 @@
     overflow-x: visible;
 
     max-height: 340px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
@@ -6573,8 +6573,8 @@
 .wvusUikit .container > .navbar-collapse,
 .wvusUikit .container-fluid > .navbar-collapse
 {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 @media (min-width: 768px)
 {
@@ -6638,7 +6638,7 @@
     float: left;
 
     height: 50px;
-    padding: 14px 15px;
+    padding: 14px 10px;
 }
 .wvusUikit .navbar-brand:hover,
 .wvusUikit .navbar-brand:focus
@@ -6650,7 +6650,7 @@
     .wvusUikit .navbar > .container .navbar-brand,
   .wvusUikit .navbar > .container-fluid .navbar-brand
     {
-        margin-left: -15px;
+        margin-left: -10px;
     }
 }
 .wvusUikit .navbar-toggle
@@ -6660,7 +6660,7 @@
     float: right;
 
     margin-top: 8px;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 8px;
     padding: 9px 10px;
 
@@ -6695,7 +6695,7 @@
 }
 .wvusUikit .navbar-nav
 {
-    margin: 7px -15px;
+    margin: 7px -10px;
 }
 .wvusUikit .navbar-nav > li > a
 {
@@ -6753,7 +6753,7 @@
     }
     .wvusUikit .navbar-nav.navbar-right:last-child
     {
-        margin-right: -15px;
+        margin-right: -10px;
     }
 }
 @media (min-width: 768px)
@@ -6772,10 +6772,10 @@
 .wvusUikit .navbar-form
 {
     margin-top: 9px;
-    margin-right: -15px;
+    margin-right: -10px;
     margin-bottom: 9px;
-    margin-left: -15px;
-    padding: 10px 15px;
+    margin-left: -10px;
+    padding: 10px 10px;
 
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
@@ -6854,7 +6854,7 @@
     }
     .wvusUikit .navbar-form.navbar-right:last-child
     {
-        margin-right: -15px;
+        margin-right: -10px;
     }
 }
 .wvusUikit .navbar-nav > li > .dropdown-menu
@@ -6895,8 +6895,8 @@
     {
         float: left;
 
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .wvusUikit .navbar-text.navbar-right:last-child
     {
