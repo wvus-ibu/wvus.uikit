@@ -1,11 +1,11 @@
-/*! wvus.uikit - v2.0.0 - 2014-05-22
+/*! wvus.uikit - v2.0.1 - 2014-09-08
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
 var wvusUikit = jQuery.noConflict(true);
 
 wvusUikit.fn.extend({
-  version: "2.0.0",
+  version: "2.0.1",
 });
 
 +function ($) {
