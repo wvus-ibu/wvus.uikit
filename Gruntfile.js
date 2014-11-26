@@ -11,7 +11,7 @@
    bootstrapPath: '<%= uikit.libPath %>bootstrap/',
    bootstrapLessPath:  '<%= uikit.bootstrapPath %>less/',
    bootstrapJsPath:  '<%= uikit.bootstrapPath %>js/',
-   bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/',
+   bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/js/',
    fontAwesomePath:  '<%= uikit.libPath %>font-awesome/',
    jqueryPath:  '<%= uikit.libPath %>jquery/dist/',
    jqueryMobilePath:  '<%= uikit.libPath %>jquery-mobile/',
