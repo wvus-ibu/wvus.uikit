@@ -346,6 +346,7 @@
 
   // TODO: add tests to this task when implemented
   grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'replace']);
+  grunt.registerTask('default', ['dist']);
 
   grunt.registerTask('serve',['clean:docs', 'copy:docs', 'less:docs', 'jekyll', 'connect', 'watch'] );
 
