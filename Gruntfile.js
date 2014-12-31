@@ -253,6 +253,7 @@
       variables: {
         files: [
         {expand:true, flatten: true, cwd: '<%= uikit.srcPath %>', src: ['<%= uikit.worldVisionPath %>less/variables.less', '<%= uikit.worldVisionPath %>less/mixins.less'], dest: '<%= uikit.distPath %>less'},
+        {expand: true, cwd: '<%= uikit.worldVisionPath %>less/mixins', src: '**', dest: '<%= uikit.distPath %>less/mixins/'}
         ]
       },
       lib: {
@@ -268,7 +269,7 @@
       },
       docs: {
         files: [
-        {expand: true, cwd: '<%= uikit.distPath %>', src: '**/*', dest: '<%= uikit.docsPath %>/assets/wvus.uikit'}
+        {expand: true, cwd: '<%= uikit.distPath %>', src: '**/*', dest: '<%= uikit.docsPath %>/assets/wvus.uikit'},
         ]
       }
     },
@@ -341,16 +342,16 @@
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
   require('time-grunt')(grunt);
 
-  grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner', 'clean:precompile']);
+  grunt.registerTask('dist-css', ['comments', 'less:precompile', 'less:dist', 'less:minify', 'autoprefixer', 'csscomb', 'usebanner', 'clean:precompile']);
   grunt.registerTask('dist-js', ['concat', 'replace', 'uglify']);
 
   // TODO: add tests to this task when implemented
-  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'replace']);
+  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress']);
   grunt.registerTask('default', ['dist']);
 
-  grunt.registerTask('serve',['clean:docs', 'copy:docs', 'less:docs', 'jekyll', 'connect', 'watch'] );
-
-  grunt.registerTask('docs-build', ['clean:docs', 'copy:docs', 'less:docs', 'jekyll']);
+  // Docs
+  grunt.registerTask('docs-build', ['dist', 'clean:docs', 'less:docs', 'jekyll']);
+  grunt.registerTask('serve', ['docs-build', 'connect', 'watch'] );
 
   // Default task. Compile, concatenate, min, and build zip
   //grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
