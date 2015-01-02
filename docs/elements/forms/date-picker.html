@@ -17,26 +17,32 @@ path: ../../../
 </header>
 
 <!-- Preview -->
-<div class="docs-example">
-  <label>JavaScript
-    <input type="text" value="01-01-2015" class="datepicker">
-  </label>
-  <br>
-  <label> Data Attributes
-    <input type="text" data-provide="datepicker" data-date-format="mm/dd/yyyy" data-date-today-highlight="true">
-  </label>
+<div class="docs-example" >
+  <form>
+    <div class="form-group">
+      <label for="example1" class="sr-only">JavaScript</label>
+      <input type="text" value="01-01-2015" class="datepicker form-control">
+    </div>
+    <div class="form-group">
+      <label for="example2" class="sr-only">Data Attributes</label>
+      <input type="text" id="example2" placeholder="Date" data-provide="datepicker" data-date-format="mm/dd/yyyy" data-date-today-highlight="true" class="form-control">
+    </div>
+  </form>
 </div>
 
 <!-- HTML Code -->
 <div class="docs-html">
   {% highlight html  %}
-<label> JavaScript
-  <input type="text" value="01-01-2015" class="datepicker">
-</label>
-<br>
-<label> Data Attributes
-  <input type="text" data-provide="datepicker" data-date-format="mm/dd/yyyy" data-date-today-highlight="true">
-</label>
+<form>
+  <div class="form-group">
+    <label for="example1" class="sr-only">JavaScript</label>
+    <input type="text" value="01-01-2015" class="datepicker form-control">
+  </div>
+  <div class="form-group">
+    <label for="example2" class="sr-only">Data Attributes</label>
+    <input type="text" id="example2" placeholder="Date" data-provide="datepicker" data-date-format="mm/dd/yyyy" data-date-today-highlight="true" class="form-control">
+  </div>
+</form>
   {% endhighlight %}
 </div>
 
