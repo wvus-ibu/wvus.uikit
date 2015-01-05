@@ -1,34 +1,35 @@
 {
   "name": "videojs-youtube",
-  "version": "1.0.0",
-  "homepage": "https://github.com/eXon/videojs-youtube",
-  "authors": [
-    "Benoit Tremblay <trembl.ben@gmail.com>"
+  "description": "YouTube playback technology for Video.js",
+  "version": "1.2.8",
+  "main": [
+    "dist/vjs.youtube.js"
   ],
-  "description": "Support YouTube source for Video.js",
-  "main": "vjs.youtube.js",
-  "keywords": [
-    "video.js",
-    "vjs",
-    "youtube"
-  ],
-  "license": "MIT",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "app/bower_components",
+    "examples",
+    "sandbox",
     "test",
-    "tests"
+    ".editorconfig",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
   ],
-  "_release": "1.0.0",
+  "dependencies": {
+    "video.js": "~4.11"
+  },
+  "homepage": "https://github.com/eXon/videojs-youtube",
+  "_release": "1.2.8",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.0",
-    "commit": "673e6fd53b10de5eb0382d3a993bd879e71a4c52"
+    "tag": "v1.2.8",
+    "commit": "bf4a332d03e160e0fdefd14944923566fdfe4bf5"
   },
   "_source": "git://github.com/eXon/videojs-youtube.git",
-  "_target": "~1.0.0",
+  "_target": "~1.2.8",
   "_originalSource": "videojs-youtube",
   "_direct": true
 }
