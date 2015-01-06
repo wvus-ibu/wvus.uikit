@@ -4,7 +4,7 @@ title: External Libraries
 name: external-libraries
 path: ../../
 ---
-Aside from the UiKit being built completely built on [Bootstrap]({{ site.bootstrap }}) and [Font Awesome]({{ site.font-awesome }}), other libraries have been included for convenience.
+Aside from the UiKit being built completely built on [Bootstrap]({{ site.bootstrap }}) and [Font Awesome]({{ site.font-awesome }}), it can work with other libraries. Below are known libraries that work with UiKit
 
 ### Spin.js
 [Spin.js]({{ site.spinjs }}) dynamically creates spinning activity indicators that can be used as resolution-independent replacement for AJAX loading GIFs.
@@ -25,7 +25,7 @@ The easiest way to use Spin.js is with jQuery. Spin.js is not dependent on jQuer
 wvusUikit('#spin-example').spin();
 {% endhighlight %}
 
-#### Turning off 
+#### Turning off
 Turning off Spin.js after the activity has finished is just as easy as starting it. Just call `wvusUikit('#spin').spin(false);`
 
 #### Presets
@@ -54,6 +54,8 @@ $('#el').spin('flower', 'red');
 
 [Video.js]({{ site.videojs }}) is a JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player. Video.js provides a common controls skin built in HTML/CSS, fixes cross-browser inconsistencies, adds additional features like fullscreen and subtitles, manages the fallback to Flash or other playback technologies when HTML5 video isn't supported, and also provides a consistent JavaScript API for interacting with the video.
 
-Video.js has a lot to offer and really, too much to write about in our documentation. The UiKit has not changed anything with Video.js except for the skin. This means that any video used with Video.js and the UiKit will receive World Vision styled controls.
+The UiKit has a custom skin built for VideoJS 4.3.0. This means that any video used with Video.js and the UiKit will receive World Vision styled controls.
+
+This is not included by default. If you wish to use the World Vision VideoJS skin, uncomment the `video-js-skin.js` in the `precompile.less` file. Then run `grunt` being sure you have `npm` and `grunt-cli` along with the dependencies installed.
 
 Documentation for Video.js can be found [here]({{ site.videojs-docs }})
