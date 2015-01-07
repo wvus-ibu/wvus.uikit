@@ -11,10 +11,10 @@ Some 3rd party libraries are being removed to reduce the size and avoid conficts
 
 The following list of libraries are deprecated and will be removed in version 3:
 
-* modernizr: This will be removed to reduce size but is still suggested. Mondernizr would be very useful for getting some of the graphics to work with legacy browsers
-* Spin.js: Removed to reduce size and easily maintain dependency management. It will work with UiKit, however, because of its rare use it is being removed.
-* Video JS: Removed to reduce size and conflicts. VideoJS will only be used for custom created media. If a video is already hosted on YouTube, the native YouTube player should be used.
-* VideoJS Youtube plugin: Removed to reduce size and conflicts. The plugin will be removed since the native YouTube player will be used.
+* [modernizr](http://modernizr.com/): This will be removed to reduce size but is still suggested. Mondernizr would be very useful for getting some of the graphics to work with legacy browsers
+* [Spin.js]({{ site.spinjs}}): Removed to reduce size and easily maintain dependency management. It will work with UiKit, however, because of its rare use it is being removed.
+* [Video JS]({{ site.videojs }}): Removed to reduce size and conflicts. VideoJS will only be used for custom created media. If a video is already hosted on YouTube, the native YouTube player should be used.
+* [VideoJS Youtube plugin](https://github.com/eXon/videojs-youtube): Removed to reduce size and conflicts. The plugin will be removed since the native YouTube player will be used.
 
 
 *Speical Note*: The jQuery namespace and library will be removed. The namespace is being removed to stop the alteration of core libraries. These include Bootstrap jQuery plugins and 3rd party Bootstrap plugins. This will make updating these libraries simple.
