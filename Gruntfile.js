@@ -17,7 +17,7 @@
    jqueryMobilePath:  '<%= uikit.libPath %>jquery-mobile/',
    datepickerPath:  '<%= uikit.libPath %>bootstrap-datepicker/',
    modernizrPath: '<%= uikit.libPath %>modernizr/',
-   videojsPath:  '<%= uikit.libPath %>video-js/',
+   videojsPath:  '<%= uikit.libPath %>video.js/',
    videojsYoutubePath:  '<%= uikit.libPath %>videojs-youtube/',
    spinjsPath:  '<%= uikit.libPath %>spin.js/',
    worldVisionPath: '<%= uikit.libPath %>worldvision/',
