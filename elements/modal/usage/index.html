@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/79b1b52d-508f-497e-a691-0affcc2c34e8.css"/>
     <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
@@ -36,7 +37,7 @@
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
           <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.1.0 05-2014</a>
 
         </div>
       </div>
@@ -158,6 +159,7 @@
       <li><a href="../../../elements/forms/radio-styled">Styled Radio Buttons</a></li>
       <li><a href="../../../elements/forms/inline-form">Inline form</a></li>
       <li><a href="../../../elements/forms/horizontal-form">Horizontal form</a></li>
+      <li><a href="../../../elements/forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
@@ -377,7 +379,7 @@
   <ul class="nav collapse  in " id="modal">
     <li><a href="../../../elements/modal/basic">Basic</a></li>
     <li><a href="../../../elements/modal/sizes">Sizes</a></li>
-    <li class="active"><a href="../../../elements/modal/usage">Usage</a></li>
+    <li><a href="../../../elements/modal/usage">Usage</a></li>
   </ul>
 </li>
 <li>
@@ -441,6 +443,11 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
         <header class="page-header" id="headerTitle">
   <h1>Modal - Usage</h1>
 </header>
@@ -449,13 +456,11 @@
 
 <h3>Via data attributes</h3>
 <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#myModal&quot;</span><span class="nt">&gt;</span>Launch modal<span class="nt">&lt;/button&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#myModal&quot;</span><span class="nt">&gt;</span>Launch modal<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 <h3>Via JavaScript</h3>
 <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span></code></pre></div>
 
 <h3>Options</h3>
 <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
@@ -493,9 +498,7 @@
        <td>path</td>
        <td>false</td>
        <td><p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
-        <div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">href=</span><span class="s">&quot;remote.html&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#modal&quot;</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span>
-        
-</code></pre></div>
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">&quot;modal&quot;</span> <span class="na">href=</span><span class="s">&quot;remote.html&quot;</span> <span class="na">data-target=</span><span class="s">&quot;#modal&quot;</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span></code></pre></div>
       </td>
     </tr>
   </tbody>
@@ -506,25 +509,21 @@
 
 <h4>.modal(options)</h4>
 <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span>
 <span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span>
-<span class="p">})</span>
-</code></pre></div>
+<span class="p">})</span></code></pre></div>
 
 <h4>.modal('toggle')</h4>
 <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;toggle&#39;</span><span class="p">)</span></code></pre></div>
 
 <h4>.modal('show')</h4>
 <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span></code></pre></div>
 
 <h4>.modal('hide')</h4>
 <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">)</span></code></pre></div>
 
 <h3>Events</h3>
 <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
@@ -560,10 +559,9 @@
    </tbody>
  </table>
 </div><!-- /.table-responsive -->
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
 <span class="c1">// do something...</span>
-<span class="p">})</span>
-</code></pre></div>
+<span class="p">})</span></code></pre></div>
 
       </div>
     </div>

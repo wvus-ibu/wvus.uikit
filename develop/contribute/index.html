@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/79b1b52d-508f-497e-a691-0affcc2c34e8.css"/>
     <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../assets/css/pygments.css">
@@ -36,7 +37,7 @@
             <a href="http://www.worldvision.org"><img src="../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
           <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.1.0 05-2014</a>
 
         </div>
       </div>
@@ -93,7 +94,7 @@
     <li >
     <a href="../../develop/version">Version</a>
   </li>
-  <li  class="active" >
+  <li >
     <a href="../../develop/contribute">Contribute</a>
   </li>
     <li >
@@ -105,37 +106,39 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
           <header class="page-header">
     <h1>Contribute</h1>
   </header>
   <div id="main">
     <p>Whether you’re a WVUS developer or a vendor, we can always make improvements. The UiKit was created to be platform independent and easily extended.</p>
 
-<h4 id="before_you_start">Before you start</h4>
+<h4 id="before-you-start">Before you start…</h4>
 
 <p>In order to build the World Vision UiKit, there are a couple of prerequisites that need to be installed:</p>
 
 <ol>
-<li>Install the <a href="http://nodejs.org/">Node.js Package Manager (npm)</a></li>
-
-<li>Install <a href="http://gruntjs.com/">Grunt</a> using <code>npm install -g grunt-cli</code></li>
-
-<li>Run <code>npm install</code> in <code>/path/to/wvus.uikit</code> to install all development dependencies</li>
+  <li>Install the <a href="http://nodejs.org/">Node.js Package Manager (npm)</a></li>
+  <li>Install <a href="http://gruntjs.com/">Grunt</a> using <code>npm install -g grunt-cli</code></li>
+  <li>Run <code>npm install</code> in <code>/path/to/wvus.uikit</code> to install all development dependencies</li>
 </ol>
 
 <p>You’re ready to start building out the uikit!</p>
 
-<h3 id="code_standards">Code Standards</h3>
+<h3 id="code-standards">Code Standards</h3>
 
 <p>The UiKit has adopted the standards of <a href="https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#code-guidelines">Twitter Bootstrap</a>. The major exception is to use semicolons in JavaScript.</p>
 
 <p>There is also a <code>.editorconfig</code> file (adopted from Bootstrap) to set the guidelines in popular text editors.</p>
 
-<h3 id="compiling_css_and_javascript">Compiling CSS and JavaScript</h3>
+<h3 id="compiling-css-and-javascript">Compiling CSS and JavaScript</h3>
+<p>The UiKit uses <a href="http://gruntjs.com/">Grunt</a> to build out and quickly run tasks to compile code.  If you haven’t used Grunt before, <a href="http://gruntjs.com/getting-started">start here</a> to get an overview or jump right in with running some of the tasks listed below.</p>
 
-<p>The UiKit uses <a href="http://gruntjs.com/">Grunt</a> to build out and quickly run tasks to compile code. If you haven’t used Grunt before, <a href="http://gruntjs.com/getting-started">start here</a> to get an overview or jump right in with running some of the tasks listed below.</p>
-
-<h3 id="available_grunt_commands">Available Grunt Commands</h3>
+<h3 id="available-grunt-commands">Available Grunt Commands</h3>
 
 <p><code>grunt dist-css</code>: Compiles LESS into CSS. This includes minified and source maps</p>
 
@@ -144,8 +147,8 @@
 <p><code>grunt dist</code>: Combines <code>dist-css</code> and <code>dist-js</code>. Creates a zip for distribution.</p>
 
 <h3 id="dependencies">Dependencies</h3>
+<p>The UiKit depends on several libraries which provide the base functionality.  Thanks go out to the developers behind <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://fontawesome.io/">Font Awesome</a> and <a href="http://jquery.com/">jQuery</a>. Some ideas were also inspired by <a href="http://foundation.zurb.com/">Zurb Foundation</a>.</p>
 
-<p>The UiKit depends on several libraries which provide the base functionality. Thanks go out to the developers behind <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://fontawesome.io/">Font Awesome</a> and <a href="http://jquery.com/">jQuery</a>. Some ideas were also inspired by <a href="http://foundation.zurb.com/">Zurb Foundation</a>.</p>
   </div>
 
       </div>

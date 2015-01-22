@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/79b1b52d-508f-497e-a691-0affcc2c34e8.css"/>
     <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../assets/css/pygments.css">
@@ -36,7 +37,7 @@
             <a href="http://www.worldvision.org"><img src="../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
           <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.1.0 05-2014</a>
 
         </div>
       </div>
@@ -96,7 +97,7 @@
   <li >
     <a href="../../develop/contribute">Contribute</a>
   </li>
-    <li  class="active" >
+    <li >
     <a href="../../develop/external-libraries">External Libraries</a>
   </li>
 </ul>
@@ -105,54 +106,64 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
           <header class="page-header">
     <h1>External Libraries</h1>
   </header>
   <div id="main">
-    <p>Aside from the UiKit being built completely built on <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a>, other libraries have been included for convenience.</p>
+    <p>Aside from the UiKit being built completely built on <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a>, it can work with other libraries. Below are known libraries that work with UiKit</p>
 
 <h3 id="spinjs">Spin.js</h3>
-
 <p><a href="http://fgnass.github.io/spin.js/">Spin.js</a> dynamically creates spinning activity indicators that can be used as resolution-independent replacement for AJAX loading GIFs.</p>
-<div class='spin-example'>
-  <span id='spin' />
-</div>
-<p>The easiest way to use Spin.js is with jQuery. Spin.js is not dependent on jQuery, however, jQuery is required for the UiKit so let’s use the Spin.js jQuery plugin (included in the UiKit).</p>
-<div class='highlight'><pre><code class='html'><span class='nt'>&lt;div</span> <span class='na'>id=</span><span class='s'>&quot;spin-example&quot;</span><span class='nt'>&gt;&lt;/div&gt;</span>
-</code></pre></div><div class='highlight'><pre><code class='js'><span class='nx'>wvusUikit</span><span class='p'>(</span><span class='s1'>&#39;#spin-example&#39;</span><span class='p'>).</span><span class='nx'>spin</span><span class='p'>();</span>
-</code></pre></div>
-<h4 id="turning_off">Turning off</h4>
 
-<p>Turning off Spin.js after the activity has finished is just as easy as starting it. Just call <code>wvusUikit(&#39;#spin&#39;).spin(false);</code></p>
+<div class="spin-example">
+  <span id="spin"></span>
+</div>
+
+<p>The easiest way to use Spin.js is with jQuery. Spin.js is not dependent on jQuery, however, jQuery is required for the UiKit so let’s use the Spin.js jQuery plugin (included in the UiKit).</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;spin-example&quot;</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#spin-example&#39;</span><span class="p">).</span><span class="nx">spin</span><span class="p">();</span></code></pre></div>
+
+<h4 id="turning-off">Turning off</h4>
+<p>Turning off Spin.js after the activity has finished is just as easy as starting it. Just call <code>wvusUikit('#spin').spin(false);</code></p>
 
 <h4 id="presets">Presets</h4>
-
 <p>Spin.js has several prebuilt presets that can be used like small and large. The UiKit has opted to use the default for simplicity but feel free to create your own presets. Below is an example of a preset definition. Documentation on preset values can be found <a href="http://fgnass.github.io/spin.js/}#usage">here</a></p>
-<div class='highlight'><pre><code class='js'><span class='c1'>// Using Presets:</span>
-<span class='c1'>// ==============</span>
 
-<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#el&#39;</span><span class='p'>).</span><span class='nx'>spin</span><span class='p'>(</span><span class='s1'>&#39;small&#39;</span><span class='p'>);</span> <span class='c1'>// Creates a &#39;small&#39; Spinner using the text color of #el.</span>
-<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#el&#39;</span><span class='p'>).</span><span class='nx'>spin</span><span class='p'>(</span><span class='s1'>&#39;large&#39;</span><span class='p'>,</span> <span class='s1'>&#39;#fff&#39;</span><span class='p'>);</span> <span class='c1'>// Creates a &#39;large&#39; white Spinner.</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Using Presets:</span>
+<span class="c1">// ==============</span>
 
-<span class='c1'>// Adding a custom preset:</span>
-<span class='c1'>// =======================</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#el&#39;</span><span class="p">).</span><span class="nx">spin</span><span class="p">(</span><span class="s1">&#39;small&#39;</span><span class="p">);</span> <span class="c1">// Creates a &#39;small&#39; Spinner using the text color of #el.</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#el&#39;</span><span class="p">).</span><span class="nx">spin</span><span class="p">(</span><span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="s1">&#39;#fff&#39;</span><span class="p">);</span> <span class="c1">// Creates a &#39;large&#39; white Spinner.</span>
 
-<span class='nx'>$</span><span class='p'>.</span><span class='nx'>fn</span><span class='p'>.</span><span class='nx'>spin</span><span class='p'>.</span><span class='nx'>presets</span><span class='p'>.</span><span class='nx'>flower</span> <span class='o'>=</span> <span class='p'>{</span>
-  <span class='nx'>lines</span><span class='o'>:</span> <span class='mi'>9</span>
-  <span class='nx'>length</span><span class='o'>:</span> <span class='mi'>10</span>
-  <span class='nx'>width</span><span class='o'>:</span> <span class='mi'>20</span>
-  <span class='nx'>radius</span><span class='o'>:</span> <span class='mi'>0</span>
-<span class='p'>}</span>
+<span class="c1">// Adding a custom preset:</span>
+<span class="c1">// =======================</span>
 
-<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#el&#39;</span><span class='p'>).</span><span class='nx'>spin</span><span class='p'>(</span><span class='s1'>&#39;flower&#39;</span><span class='p'>,</span> <span class='s1'>&#39;red&#39;</span><span class='p'>);</span>
-</code></pre></div>
+<span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">spin</span><span class="p">.</span><span class="nx">presets</span><span class="p">.</span><span class="nx">flower</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">lines</span><span class="o">:</span> <span class="mi">9</span>
+  <span class="nx">length</span><span class="o">:</span> <span class="mi">10</span>
+  <span class="nx">width</span><span class="o">:</span> <span class="mi">20</span>
+  <span class="nx">radius</span><span class="o">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#el&#39;</span><span class="p">).</span><span class="nx">spin</span><span class="p">(</span><span class="s1">&#39;flower&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">);</span></code></pre></div>
+
 <h3 id="videojs">Video.js</h3>
 
 <p><a href="http://www.videojs.com/">Video.js</a> is a JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player. Video.js provides a common controls skin built in HTML/CSS, fixes cross-browser inconsistencies, adds additional features like fullscreen and subtitles, manages the fallback to Flash or other playback technologies when HTML5 video isn’t supported, and also provides a consistent JavaScript API for interacting with the video.</p>
 
-<p>Video.js has a lot to offer and really, too much to write about in our documentation. The UiKit has not changed anything with Video.js except for the skin. This means that any video used with Video.js and the UiKit will receive World Vision styled controls.</p>
+<p>The UiKit has a custom skin built for VideoJS 4.3.0. This means that any video used with Video.js and the UiKit will receive World Vision styled controls.</p>
+
+<p>This is not included by default. If you wish to use the World Vision VideoJS skin, uncomment the <code>video-js-skin.js</code> in the <code>precompile.less</code> file. Then run <code>grunt</code> being sure you have <code>npm</code> and <code>grunt-cli</code> along with the dependencies installed.</p>
 
 <p>Documentation for Video.js can be found <a href="https://github.com/videojs/video.js/blob/stable/docs/index.md">here</a></p>
+
   </div>
 
       </div>

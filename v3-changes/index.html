@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>Changes in version 3 | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Vision UiKit Documentation">
+    <meta name="author" content="World Vision US, Internet Business Unit">
+
+    <!-- Le styles -->
+    <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/79b1b52d-508f-497e-a691-0affcc2c34e8.css"/>
+    <link href="../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+    <!-- CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/docs.css">
+
+    <!-- Modernizr with Shiv -->
+    <script type="text/javascript" src="../assets/wvus.uikit/js/modernizr.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="../assets/wvus.uikit/img/ico/favicon.ico">
+  </head>
+
+<body>
+
+      <header class="container-fluid" id="site-header">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="../assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
+          <h1 class="site-title">Digital Style Guide</h1>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.1.0 05-2014</a>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar
+    ================================================== -->
+    <nav class="navbar navbar-worldvision navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../">Home</a>
+            </li>
+            <li >
+              <a href="../design/">Design</a>
+            </li>
+            <li >
+              <a href="../develop/">Develop</a>
+            </li>
+            <li >
+             <a href="../elements/">Elements</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+    </nav>
+
+
+  <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
+        <div class="panel panel-default">
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+        
+          <header class="page-header">
+    <h1>Changes in version 3</h1>
+  </header>
+  <div id="main">
+    <h4 id="removal-of-3rd-party-libraries">Removal of 3rd party libraries</h4>
+
+<p>Some 3rd party libraries are being removed to reduce the size and avoid conficts with other libraries. These libraries already work as stand alone libraries and are suggested when using UiKit. However, they will not be supported or included in v3.</p>
+
+<p>The following list of libraries are deprecated and will be removed in version 3:</p>
+
+<ul>
+  <li><a href="http://modernizr.com/">modernizr</a>: This will be removed to reduce size but is still suggested. Mondernizr would be very useful for getting some of the graphics to work with legacy browsers</li>
+  <li><a href="http://fgnass.github.io/spin.js/">Spin.js</a>: Removed to reduce size and easily maintain dependency management. It will work with UiKit, however, because of its rare use it is being removed.</li>
+  <li><a href="http://www.videojs.com/">Video JS</a>: Removed to reduce size and conflicts. VideoJS will only be used for custom created media. If a video is already hosted on YouTube, the native YouTube player should be used.</li>
+  <li><a href="https://github.com/eXon/videojs-youtube">VideoJS Youtube plugin</a>: Removed to reduce size and conflicts. The plugin will be removed since the native YouTube player will be used.</li>
+</ul>
+
+<p><em>Speical Note</em>: The jQuery namespace and library will be removed. The namespace is being removed to stop the alteration of core libraries. These include Bootstrap jQuery plugins and 3rd party Bootstrap plugins. This will make updating these libraries simple.
+jQuery will be removed from the UiKit, but will still be a dependency. The recommended version will be available through <a href="http://bower.io/">Bower</a> and when installing UiKit with Bower, will download the supported version.</p>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
+            <ul class="footer-links">
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="../1.2.0/">Version 1.2.0</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="../assets/wvus.uikit/js/jquery.min.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.touch,
+        yep: '../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        load: [
+        '../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../assets/js/application.js'
+        ]
+    });
+</script>
+
+<!-- external Libraries -->
+<script src="../assets/js/holder/holder.js"></script>
+
+</body>
+</html>

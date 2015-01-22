@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/79b1b52d-508f-497e-a691-0affcc2c34e8.css"/>
     <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
@@ -36,7 +37,7 @@
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
           <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.1.0 05-2014</a>
 
         </div>
       </div>
@@ -158,6 +159,7 @@
       <li><a href="../../../elements/forms/radio-styled">Styled Radio Buttons</a></li>
       <li><a href="../../../elements/forms/inline-form">Inline form</a></li>
       <li><a href="../../../elements/forms/horizontal-form">Horizontal form</a></li>
+      <li><a href="../../../elements/forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
@@ -422,7 +424,7 @@
   <a href="#" data-toggle="collapse" data-target="#affix">Affix <i class="fa fa-caret-right"></i></a>
   <ul class="nav collapse  in " id="affix">
     <li><a href="../../../elements/affix/default">Default</a></li>
-    <li class="active"><a href="../../../elements/affix/usage">Usage</a></li>
+    <li><a href="../../../elements/affix/usage">Usage</a></li>
   </ul>
 </li>
 <li>Glyphs</li>
@@ -441,6 +443,11 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
         <header class="page-header" id="headerTitle">
   <h1>Affix - Usage</h1>
 </header>
@@ -461,22 +468,20 @@
 <h3>Via data attributes</h3>
 <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.</p>
 
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">data-spy=</span><span class="s">&quot;affix&quot;</span> <span class="na">data-offset-top=</span><span class="s">&quot;60&quot;</span> <span class="na">data-offset-bottom=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">data-spy=</span><span class="s">&quot;affix&quot;</span> <span class="na">data-offset-top=</span><span class="s">&quot;60&quot;</span> <span class="na">data-offset-bottom=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h3>Via JavaScript</h3>
 <p>Call the affix plugin via JavaScript:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#my-affix&#39;</span><span class="p">).</span><span class="nx">affix</span><span class="p">({</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#my-affix&#39;</span><span class="p">).</span><span class="nx">affix</span><span class="p">({</span>
   <span class="nx">offset</span><span class="o">:</span> <span class="p">{</span>
   <span class="nx">top</span><span class="o">:</span> <span class="mi">100</span>
   <span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">bottom</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.footer&#39;</span><span class="p">).</span><span class="nx">outerHeight</span><span class="p">(</span><span class="kc">true</span><span class="p">))</span>
     <span class="p">}</span>
   <span class="p">}</span>
-<span class="p">})</span>
-</code></pre></div>
+<span class="p">})</span></code></pre></div>
 
 
 <h3>Options</h3>

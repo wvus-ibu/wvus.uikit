@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/79b1b52d-508f-497e-a691-0affcc2c34e8.css"/>
     <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
@@ -36,7 +37,7 @@
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
           <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.1.0 05-2014</a>
 
         </div>
       </div>
@@ -158,6 +159,7 @@
       <li><a href="../../../elements/forms/radio-styled">Styled Radio Buttons</a></li>
       <li><a href="../../../elements/forms/inline-form">Inline form</a></li>
       <li><a href="../../../elements/forms/horizontal-form">Horizontal form</a></li>
+      <li><a href="../../../elements/forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
@@ -286,7 +288,7 @@
 <li>
   <a href="#" data-toggle="collapse" data-target="#pagination">Pagination <i class="fa fa-caret-right"></i></a>
   <ul class="nav collapse  in " id="pagination">
-    <li class="active"><a href="../../../elements/pagination/default">Default</a></li>
+    <li><a href="../../../elements/pagination/default">Default</a></li>
     <li><a href="../../../elements/pagination/disabledandactive">Disabled and Active States</a></li>
     <li><a href="../../../elements/pagination/sizes">Sizes</a></li>
   </ul>
@@ -441,6 +443,11 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
         <header class="page-header" id="headerTitle">
   <h1>Pagination</h1>
   <p class="subheader lead">
@@ -462,7 +469,7 @@
 
 <!-- HTML Code -->
 <div class="docs-html">
-  <div class="highlight"><pre><code class="html">  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;pagination&quot;</span><span class="nt">&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;pagination&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-chevron-left&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -470,9 +477,7 @@
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-chevron-right&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
-  
-</code></pre></div>
+  <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 </div>
 
 
