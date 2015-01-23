@@ -358,8 +358,4 @@
 
   //compiles less for errors, runs js thorugh
   //grunt.registerTask('test', ['compile', 'csslint' ,'jshint', 'qunit']);
-
-  // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
-  grunt.registerTask('compile', ['concat', 'replace', 'less:dist', 'less:distResponsive', 'csscomb', 'less:minify', 'uglify','copy:docs', 'copy:tests']);
-
 };
