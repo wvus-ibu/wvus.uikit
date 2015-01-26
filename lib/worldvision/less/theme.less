@@ -329,7 +329,7 @@
     margin-top: -20px;
     margin-right: 20px;
     & i[class*="fa"]{
-      right: 13px;
+      right: 11px;
     }
   }
 
@@ -338,7 +338,20 @@
     margin-top: -20px;
     margin-left: 20px;
     & i[class*="fa"]{
-      right: 15px;
+      left: 18px;
+    }
+  }
+
+  &.right,
+  &.left {
+    border-style: solid;
+    border-width: 1px;
+    border-color: @carousel-control-border;
+    &:active,
+    .active {
+      background-color: darken(@carousel-control-bg, 10%);
+      border-color: darken(@carousel-control-border, 12%);
+
     }
   }
 
