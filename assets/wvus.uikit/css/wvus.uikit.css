@@ -1,4 +1,4 @@
-/*! wvus.uikit - v2.0.1 - 2015-01-15
+/*! wvus.uikit - v3.0.0 - 2015-01-26
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2015 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -344,7 +344,7 @@
 {
     font-family: 'Gill Sans W01 Book', Helvetica, Arial, sans-serif;
     font-size: 18px;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     color: #333;
     background-color: #fff;
@@ -402,7 +402,7 @@
 }
 .wvusUikit .img-thumbnail
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: inline-block;
 
@@ -423,8 +423,8 @@
 }
 .wvusUikit hr
 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 26px;
+    margin-bottom: 26px;
 
     border: 0;
     border-top: 1px solid #eee;
@@ -511,8 +511,8 @@
 .wvusUikit h3,
 .wvusUikit .h3
 {
-    margin-top: 25px;
-    margin-bottom: 12.5px;
+    margin-top: 26px;
+    margin-bottom: 13px;
 }
 .wvusUikit h1 small,
 .wvusUikit .h1 small,
@@ -536,8 +536,8 @@
 .wvusUikit h6,
 .wvusUikit .h6
 {
-    margin-top: 12.5px;
-    margin-bottom: 12.5px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 .wvusUikit h4 small,
 .wvusUikit .h4 small,
@@ -586,7 +586,7 @@
 }
 .wvusUikit p
 {
-    margin: 0 0 12.5px;
+    margin: 0 0 13px;
 }
 .wvusUikit .lead
 {
@@ -594,7 +594,7 @@
     font-weight: 300;
     line-height: 1.4;
 
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 @media (min-width: 768px)
 {
@@ -734,8 +734,8 @@
 }
 .wvusUikit .page-header
 {
-    margin: 50px 0 25px;
-    padding-bottom: 11.5px;
+    margin: 52px 0 26px;
+    padding-bottom: 12px;
 
     border-bottom: 1px solid #eee;
 }
@@ -743,7 +743,7 @@
 .wvusUikit ol
 {
     margin-top: 0;
-    margin-bottom: 12.5px;
+    margin-bottom: 13px;
 }
 .wvusUikit ul ul,
 .wvusUikit ol ul,
@@ -775,12 +775,12 @@
 .wvusUikit dl
 {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .wvusUikit dt,
 .wvusUikit dd
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 }
 .wvusUikit dt
 {
@@ -826,8 +826,8 @@
 {
     font-size: 22.5px;
 
-    margin: 0 0 25px;
-    padding: 12.5px 25px;
+    margin: 0 0 26px;
+    padding: 13px 26px;
 
     border-left: 5px solid #eee;
 }
@@ -842,7 +842,7 @@
 .wvusUikit blockquote .small
 {
     font-size: 80%;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
 
@@ -886,9 +886,9 @@
 .wvusUikit address
 {
     font-style: normal;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .wvusUikit code,
 .wvusUikit kbd,
@@ -930,12 +930,12 @@
 .wvusUikit pre
 {
     font-size: 17px;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
 
-    margin: 0 0 12.5px;
-    padding: 12px;
+    margin: 0 0 13px;
+    padding: 12.5px;
 
     word-wrap: break-word;
     word-break: break-all;
@@ -1964,7 +1964,7 @@
 {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .wvusUikit .table > thead > tr > th,
 .wvusUikit .table > tbody > tr > th,
@@ -1973,7 +1973,7 @@
 .wvusUikit .table > tbody > tr > td,
 .wvusUikit .table > tfoot > tr > td
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     padding: 8px;
 
@@ -2182,7 +2182,7 @@
         overflow-y: hidden;
 
         width: 100%;
-        margin-bottom: 18.75px;
+        margin-bottom: 19.5px;
 
         border: 1px solid #ddd;
 
@@ -2247,7 +2247,7 @@
     display: block;
 
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding: 0;
 
     color: #333;
@@ -2301,24 +2301,24 @@
 .wvusUikit output
 {
     font-size: 18px;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
 
-    padding-top: 5px;
+    padding-top: 7px;
 
     color: #666;
 }
 .wvusUikit .form-control
 {
     font-size: 18px;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
 
     width: 100%;
-    height: 35px;
-    padding: 4px 12px;
+    height: 40px;
+    padding: 6px 16px;
 
     -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -2373,21 +2373,21 @@
   .wvusUikit input[type='datetime-local'],
   .wvusUikit input[type='month']
     {
-        line-height: 35px;
+        line-height: 40px;
     }
     .wvusUikit input[type='date'].input-sm,
   .wvusUikit input[type='time'].input-sm,
   .wvusUikit input[type='datetime-local'].input-sm,
   .wvusUikit input[type='month'].input-sm
     {
-        line-height: 30px;
+        line-height: 34px;
     }
     .wvusUikit input[type='date'].input-lg,
   .wvusUikit input[type='time'].input-lg,
   .wvusUikit input[type='datetime-local'].input-lg,
   .wvusUikit input[type='month'].input-lg
     {
-        line-height: 55px;
+        line-height: 58px;
     }
 }
 .wvusUikit .form-group
@@ -2409,7 +2409,7 @@
 {
     font-weight: normal;
 
-    min-height: 25px;
+    min-height: 26px;
     margin-bottom: 0;
     padding-left: 20px;
 
@@ -2475,8 +2475,8 @@
 .wvusUikit .form-control-static
 {
     margin-bottom: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .wvusUikit .form-control-static.input-lg,
 .wvusUikit .form-control-static.input-sm
@@ -2490,17 +2490,17 @@
     font-size: 16px;
     line-height: 1.5;
 
-    height: 30px;
-    padding: 2px 10px;
+    height: 34px;
+    padding: 4px 12px;
 
     border-radius: 3px;
 }
 .wvusUikit select.input-sm,
 .wvusUikit select.form-group-sm .form-control
 {
-    line-height: 30px;
+    line-height: 34px;
 
-    height: 30px;
+    height: 34px;
 }
 .wvusUikit textarea.input-sm,
 .wvusUikit textarea.form-group-sm .form-control,
@@ -2513,19 +2513,19 @@
 .wvusUikit .form-group-lg .form-control
 {
     font-size: 23px;
-    line-height: 1.33;
+    line-height: 1.11;
 
-    height: 55px;
-    padding: 11px 19px;
+    height: 58px;
+    padding: 15px 24px;
 
     border-radius: 6px;
 }
 .wvusUikit select.input-lg,
 .wvusUikit select.form-group-lg .form-control
 {
-    line-height: 55px;
+    line-height: 58px;
 
-    height: 55px;
+    height: 58px;
 }
 .wvusUikit textarea.input-lg,
 .wvusUikit textarea.form-group-lg .form-control,
@@ -2540,11 +2540,11 @@
 }
 .wvusUikit .has-feedback .form-control
 {
-    padding-right: 43.75px;
+    padding-right: 50px;
 }
 .wvusUikit .form-control-feedback
 {
-    line-height: 35px;
+    line-height: 40px;
 
     position: absolute;
     z-index: 2;
@@ -2553,25 +2553,25 @@
 
     display: block;
 
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 
     text-align: center;
     pointer-events: none;
 }
 .wvusUikit .input-lg + .form-control-feedback
 {
-    line-height: 55px;
+    line-height: 58px;
 
-    width: 55px;
-    height: 55px;
+    width: 58px;
+    height: 58px;
 }
 .wvusUikit .input-sm + .form-control-feedback
 {
-    line-height: 30px;
+    line-height: 34px;
 
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
 }
 .wvusUikit .has-success .help-block,
 .wvusUikit .has-success .control-label,
@@ -2674,7 +2674,7 @@
 }
 .wvusUikit .has-feedback label ~ .form-control-feedback
 {
-    top: 30px;
+    top: 31px;
 }
 .wvusUikit .has-feedback label.sr-only ~ .form-control-feedback
 {
@@ -2767,12 +2767,12 @@
 {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 .wvusUikit .form-horizontal .radio,
 .wvusUikit .form-horizontal .checkbox
 {
-    min-height: 30px;
+    min-height: 33px;
 }
 .wvusUikit .form-horizontal .form-group
 {
@@ -2784,7 +2784,7 @@
     .wvusUikit .form-horizontal .control-label
     {
         margin-bottom: 0;
-        padding-top: 5px;
+        padding-top: 7px;
 
         text-align: right;
     }
@@ -2797,26 +2797,26 @@
 {
     .wvusUikit .form-horizontal .form-group-lg .control-label
     {
-        padding-top: 15.63px;
+        padding-top: 17.65px;
     }
 }
 @media (min-width: 768px)
 {
     .wvusUikit .form-horizontal .form-group-sm .control-label
     {
-        padding-top: 3px;
+        padding-top: 5px;
     }
 }
 .wvusUikit .btn
 {
     font-size: 18px;
     font-weight: normal;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: inline-block;
 
     margin-bottom: 0;
-    padding: 4px 12px;
+    padding: 6px 16px;
 
     cursor: pointer;
     -webkit-user-select: none;
@@ -3216,9 +3216,9 @@
 .wvusUikit .btn-group-lg > .btn
 {
     font-size: 23px;
-    line-height: 1.33;
+    line-height: 1.11;
 
-    padding: 11px 19px;
+    padding: 15px 24px;
 
     border-radius: 6px;
 }
@@ -3228,7 +3228,7 @@
     font-size: 16px;
     line-height: 1.5;
 
-    padding: 2px 10px;
+    padding: 4px 12px;
 
     border-radius: 3px;
 }
@@ -6380,14 +6380,14 @@
     overflow: hidden;
 
     height: 1px;
-    margin: 11.5px 0;
+    margin: 12px 0;
 
     background-color: #e5e5e5;
 }
 .wvusUikit .dropdown-menu > li > a
 {
     font-weight: normal;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
     clear: both;
@@ -6454,7 +6454,7 @@
 .wvusUikit .dropdown-header
 {
     font-size: 16px;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
 
@@ -6749,10 +6749,10 @@
 .wvusUikit .input-group-lg > .input-group-btn > .btn
 {
     font-size: 23px;
-    line-height: 1.33;
+    line-height: 1.11;
 
-    height: 55px;
-    padding: 11px 19px;
+    height: 58px;
+    padding: 15px 24px;
 
     border-radius: 6px;
 }
@@ -6760,9 +6760,9 @@
 .wvusUikit select.input-group-lg > .input-group-addon,
 .wvusUikit select.input-group-lg > .input-group-btn > .btn
 {
-    line-height: 55px;
+    line-height: 58px;
 
-    height: 55px;
+    height: 58px;
 }
 .wvusUikit textarea.input-group-lg > .form-control,
 .wvusUikit textarea.input-group-lg > .input-group-addon,
@@ -6780,8 +6780,8 @@
     font-size: 16px;
     line-height: 1.5;
 
-    height: 30px;
-    padding: 2px 10px;
+    height: 34px;
+    padding: 4px 12px;
 
     border-radius: 3px;
 }
@@ -6789,9 +6789,9 @@
 .wvusUikit select.input-group-sm > .input-group-addon,
 .wvusUikit select.input-group-sm > .input-group-btn > .btn
 {
-    line-height: 30px;
+    line-height: 34px;
 
-    height: 30px;
+    height: 34px;
 }
 .wvusUikit textarea.input-group-sm > .form-control,
 .wvusUikit textarea.input-group-sm > .input-group-addon,
@@ -6828,7 +6828,7 @@
     font-weight: normal;
     line-height: 1;
 
-    padding: 4px 12px;
+    padding: 6px 16px;
 
     text-align: center;
 
@@ -6841,7 +6841,7 @@
 {
     font-size: 16px;
 
-    padding: 2px 10px;
+    padding: 4px 12px;
 
     border-radius: 3px;
 }
@@ -6849,7 +6849,7 @@
 {
     font-size: 23px;
 
-    padding: 11px 19px;
+    padding: 15px 24px;
 
     border-radius: 6px;
 }
@@ -6973,7 +6973,7 @@
     overflow: hidden;
 
     height: 1px;
-    margin: 11.5px 0;
+    margin: 12px 0;
 
     background-color: #e5e5e5;
 }
@@ -6993,7 +6993,7 @@
 }
 .wvusUikit .nav-tabs > li > a
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     margin-right: 2px;
 
@@ -7187,7 +7187,7 @@
     position: relative;
 
     min-height: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 
     border: 1px solid transparent;
 }
@@ -7329,12 +7329,12 @@
 .wvusUikit .navbar-brand
 {
     font-size: 23px;
-    line-height: 25px;
+    line-height: 26px;
 
     float: left;
 
     height: 50px;
-    padding: 12.5px 10px;
+    padding: 12px 10px;
 }
 .wvusUikit .navbar-brand:hover,
 .wvusUikit .navbar-brand:focus
@@ -7395,11 +7395,11 @@
 }
 .wvusUikit .navbar-nav
 {
-    margin: 6.25px -10px;
+    margin: 6px -10px;
 }
 .wvusUikit .navbar-nav > li > a
 {
-    line-height: 25px;
+    line-height: 26px;
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -7426,7 +7426,7 @@
     }
     .wvusUikit .navbar-nav .open .dropdown-menu > li > a
     {
-        line-height: 25px;
+        line-height: 26px;
     }
     .wvusUikit .navbar-nav .open .dropdown-menu > li > a:hover,
   .wvusUikit .navbar-nav .open .dropdown-menu > li > a:focus
@@ -7448,15 +7448,15 @@
     }
     .wvusUikit .navbar-nav > li > a
     {
-        padding-top: 12.5px;
-        padding-bottom: 12.5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 .wvusUikit .navbar-form
 {
-    margin-top: 7.5px;
+    margin-top: 5px;
     margin-right: -10px;
-    margin-bottom: 7.5px;
+    margin-bottom: 5px;
     margin-left: -10px;
     padding: 10px 10px;
 
@@ -7576,13 +7576,13 @@
 }
 .wvusUikit .navbar-btn
 {
-    margin-top: 7.5px;
-    margin-bottom: 7.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .wvusUikit .navbar-btn.btn-sm
 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .wvusUikit .navbar-btn.btn-xs
 {
@@ -7591,8 +7591,8 @@
 }
 .wvusUikit .navbar-text
 {
-    margin-top: 12.5px;
-    margin-bottom: 12.5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 @media (min-width: 768px)
 {
@@ -7871,7 +7871,7 @@
 }
 .wvusUikit .breadcrumb
 {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding: 8px 15px;
 
     list-style: none;
@@ -7899,7 +7899,7 @@
 {
     display: inline-block;
 
-    margin: 25px 0;
+    margin: 26px 0;
     padding-left: 0;
 
     border-radius: 4px;
@@ -7911,14 +7911,14 @@
 .wvusUikit .pagination > li > a,
 .wvusUikit .pagination > li > span
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     position: relative;
 
     float: left;
 
     margin-left: -1px;
-    padding: 4px 12px;
+    padding: 6px 16px;
 
     text-decoration: none;
 
@@ -7982,7 +7982,7 @@
 {
     font-size: 23px;
 
-    padding: 11px 19px;
+    padding: 15px 24px;
 }
 .wvusUikit .pagination-lg > li:first-child > a,
 .wvusUikit .pagination-lg > li:first-child > span
@@ -8001,7 +8001,7 @@
 {
     font-size: 16px;
 
-    padding: 2px 10px;
+    padding: 4px 12px;
 }
 .wvusUikit .pagination-sm > li:first-child > a,
 .wvusUikit .pagination-sm > li:first-child > span
@@ -8017,7 +8017,7 @@
 }
 .wvusUikit .pager
 {
-    margin: 25px 0;
+    margin: 26px 0;
     padding-left: 0;
 
     list-style: none;
@@ -8036,7 +8036,7 @@
     padding: 5px 14px;
 
     border: 1px solid #ddd;
-    border-radius: 15px;
+    border-radius: 4px;
     background-color: #fff;
 }
 .wvusUikit .pager li > a:hover,
@@ -8267,11 +8267,11 @@
 }
 .wvusUikit .thumbnail
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     display: block;
 
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding: 4px;
 
     -webkit-transition: border .2s ease-in-out;
@@ -8301,7 +8301,7 @@
 }
 .wvusUikit .alert
 {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding: 15px;
 
     border: 1px solid transparent;
@@ -8422,8 +8422,8 @@
 {
     overflow: hidden;
 
-    height: 25px;
-    margin-bottom: 25px;
+    height: 26px;
+    margin-bottom: 26px;
 
     border-radius: 4px;
     background-color: #f5f5f5;
@@ -8432,7 +8432,7 @@
 .wvusUikit .progress-bar
 {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 26px;
 
     float: left;
 
@@ -8756,7 +8756,7 @@
 }
 .wvusUikit .panel
 {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 
     border: 1px solid transparent;
     border-radius: 4px;
@@ -8996,7 +8996,7 @@
 }
 .wvusUikit .panel-group
 {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .wvusUikit .panel-group .panel
 {
@@ -9342,7 +9342,7 @@
 }
 .wvusUikit .modal-header
 {
-    min-height: 16.42857143px;
+    min-height: 16.44444444px;
     padding: 15px;
 
     border-bottom: 1px solid #e5e5e5;
@@ -9353,7 +9353,7 @@
 }
 .wvusUikit .modal-title
 {
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     margin: 0;
 }
@@ -9567,7 +9567,7 @@
     font-family: 'Gill Sans W01 Book', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: normal;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     position: absolute;
     z-index: 1060;
@@ -9847,7 +9847,7 @@
 
     opacity: .5;
     color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: none;
 
     filter: alpha(opacity=50);
 }
@@ -9976,7 +9976,7 @@
     text-align: center;
 
     color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: none;
 }
 .wvusUikit .carousel-caption .btn
 {
@@ -10593,16 +10593,6 @@
     background-color: #666;
     background-image: none;
 }
-.wvusUikit .btn-default,
-.wvusUikit .btn-primary,
-.wvusUikit .btn-success,
-.wvusUikit .btn-info,
-.wvusUikit .btn-warning,
-.wvusUikit .btn-danger
-{
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
-    text-shadow: -1px 1px 0 rgba(0, 0, 0, .2);
-}
 .wvusUikit .btn-default:active,
 .wvusUikit .btn-primary:active,
 .wvusUikit .btn-success:active,
@@ -10616,122 +10606,12 @@
 .wvusUikit .btn-warning.active,
 .wvusUikit .btn-danger.active
 {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-}
-.wvusUikit .btn:active,
-.wvusUikit .btn.active
-{
-    background-image: none;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, .125);
 }
 .wvusUikit .btn-default
 {
     border-color: #ccc;
-    background-repeat: repeat-x;
     text-shadow: 0 1px 0 #fff;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .btn-default:hover,
-.wvusUikit .btn-default:focus
-{
-    background-color: #eee;
-    background-position: 0 -15px;
-}
-.wvusUikit .btn-default:active,
-.wvusUikit .btn-default.active
-{
-    border-color: #e9e9e9;
-    background-color: #eee;
-}
-.wvusUikit .btn-primary
-{
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .btn-primary:hover,
-.wvusUikit .btn-primary:focus
-{
-    background-color: #f60;
-    background-position: 0 -15px;
-}
-.wvusUikit .btn-primary:active,
-.wvusUikit .btn-primary.active
-{
-    border-color: #f56200;
-    background-color: #f60;
-}
-.wvusUikit .btn-success
-{
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .btn-success:hover,
-.wvusUikit .btn-success:focus
-{
-    background-color: #5cb85c;
-    background-position: 0 -15px;
-}
-.wvusUikit .btn-success:active,
-.wvusUikit .btn-success.active
-{
-    border-color: #55b555;
-    background-color: #5cb85c;
-}
-.wvusUikit .btn-info
-{
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .btn-info:hover,
-.wvusUikit .btn-info:focus
-{
-    background-color: #69c;
-    background-position: 0 -15px;
-}
-.wvusUikit .btn-info:active,
-.wvusUikit .btn-info.active
-{
-    border-color: #5e94c9;
-    background-color: #69c;
-}
-.wvusUikit .btn-warning
-{
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .btn-warning:hover,
-.wvusUikit .btn-warning:focus
-{
-    background-color: #f0ad4e;
-    background-position: 0 -15px;
-}
-.wvusUikit .btn-warning:active,
-.wvusUikit .btn-warning.active
-{
-    border-color: #efa945;
-    background-color: #f0ad4e;
-}
-.wvusUikit .btn-danger
-{
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .btn-danger:hover,
-.wvusUikit .btn-danger:focus
-{
-    background-color: #d9534f;
-    background-position: 0 -15px;
-}
-.wvusUikit .btn-danger:active,
-.wvusUikit .btn-danger.active
-{
-    border-color: #d74b47;
-    background-color: #d9534f;
 }
 .wvusUikit .thumbnail,
 .wvusUikit .img-thumbnail
@@ -10975,6 +10855,12 @@
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);
 }
+.wvusUikit .label
+{
+    font-weight: normal;
+
+    padding: .3em .7em .3em;
+}
 .wvusUikit .list-group
 {
     border-radius: 4px;
@@ -11073,7 +10959,7 @@
 }
 .wvusUikit .carousel-control.right i[class*='fa']
 {
-    right: 13px;
+    right: 11px;
 }
 .wvusUikit .carousel-control.left
 {
@@ -11084,7 +10970,22 @@
 }
 .wvusUikit .carousel-control.left i[class*='fa']
 {
-    right: 15px;
+    left: 18px;
+}
+.wvusUikit .carousel-control.right,
+.wvusUikit .carousel-control.left
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e65c00;
+}
+.wvusUikit .carousel-control.right:active,
+.wvusUikit .carousel-control.left:active,
+.wvusUikit .carousel-control.right .active,
+.wvusUikit .carousel-control.left .active
+{
+    border-color: #a84300;
+    background-color: #cc5200;
 }
 .wvusUikit .carousel-control i[class*='fa']
 {
@@ -11587,8 +11488,8 @@
 .wvusUikit .datepicker table tr td.today.disabled:hover
 {
     color: #000;
-    border-color: #ffb733;
-    background-color: #ffdb99;
+    border-color: #999;
+    background-color: #ccc;
 }
 .wvusUikit .datepicker table tr td.today:hover,
 .wvusUikit .datepicker table tr td.today:hover:hover,
@@ -11616,8 +11517,8 @@
 .wvusUikit .open > .dropdown-toggle.datepicker table tr td.today.disabled:hover
 {
     color: #000;
-    border-color: #f59e00;
-    background-color: #ffc966;
+    border-color: #7a7a7a;
+    background-color: #b3b3b3;
 }
 .wvusUikit .datepicker table tr td.today:active,
 .wvusUikit .datepicker table tr td.today:hover:active,
@@ -11707,15 +11608,15 @@
 .wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled.active,
 .wvusUikit fieldset[disabled] .datepicker table tr td.today.disabled:hover.active
 {
-    border-color: #ffb733;
-    background-color: #ffdb99;
+    border-color: #999;
+    background-color: #ccc;
 }
 .wvusUikit .datepicker table tr td.today .badge,
 .wvusUikit .datepicker table tr td.today:hover .badge,
 .wvusUikit .datepicker table tr td.today.disabled .badge,
 .wvusUikit .datepicker table tr td.today.disabled:hover .badge
 {
-    color: #ffdb99;
+    color: #ccc;
     background-color: #000;
 }
 .wvusUikit .datepicker table tr td.today:hover:hover
@@ -12366,7 +12267,7 @@
 .wvusUikit .input-daterange .input-group-addon
 {
     font-weight: normal;
-    line-height: 1.42857143;
+    line-height: 1.44444444;
 
     width: auto;
     min-width: 16px;
