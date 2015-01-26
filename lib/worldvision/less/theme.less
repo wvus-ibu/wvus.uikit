@@ -9,34 +9,34 @@
 .btn-info,
 .btn-warning,
 .btn-danger {
-  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+  //text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.2);
+  //box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
 
   // Reset the shadow
   &:active,
   &.active {
-    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,.125);
   }
 }
 
 // Mixin for generating new styles
 .btn-styles(@btn-color: #555) {
   //text-shadow: -1px 1px 0 fade(@btn-color, 50%);
-  #gradient > .vertical(@start-color: lighten(@btn-color, 12%); @end-color: @btn-color);
-  .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
-  background-repeat: repeat-x;
-  border-color: darken(@btn-color, 4%);
+  //#gradient > .vertical(@start-color: lighten(@btn-color, 12%); @end-color: @btn-color);
+  //.reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
+  //background-repeat: repeat-x;
+  //border-color: darken(@btn-color, 4%);
 
   &:hover,
   &:focus  {
-    background-color: @btn-color;
-    background-position: 0 -15px;
+    //background-color: lighten(@btn-color, 10%);
+    // background-position: 0 -15px;
   }
 
   &:active,
   &.active {
-    background-color: @btn-color;
-    border-color: darken(@btn-color, 2%);
+    //background-color: @btn-color;
+    //border-color: darken(@btn-color, 2%);
   }
 }
 
@@ -45,7 +45,7 @@
   // Remove the gradient for the pressed/active state
   &:active,
   &.active {
-    background-image: none;
+    //background-image: none;
   }
 }
 
