@@ -10622,82 +10622,22 @@
 .wvusUikit .dropdown-menu > li > a:focus
 {
     background-color: #069;
-    background-image: -webkit-linear-gradient(top, #0077b3 0%, #069 100%);
-    background-image:         linear-gradient(to bottom, #0077b3 0%, #069 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0077b3', endColorstr='#ff006699', GradientType=0);
 }
 .wvusUikit .dropdown-menu > .active > a,
 .wvusUikit .dropdown-menu > .active > a:hover,
 .wvusUikit .dropdown-menu > .active > a:focus
 {
     background-color: #f60;
-    background-image: -webkit-linear-gradient(top, #ff751a 0%, #f60 100%);
-    background-image:         linear-gradient(to bottom, #ff751a 0%, #f60 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff751a', endColorstr='#ffff6600', GradientType=0);
 }
 .wvusUikit .navbar-default
 {
     border-radius: 4px;
-    background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
-    background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
-    background-repeat: repeat-x;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .navbar-default .navbar-nav > .active > a
-{
-    background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
-    background-image:         linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 100%);
-    background-repeat: repeat-x;
-    box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
-}
-.wvusUikit .navbar-brand,
-.wvusUikit .navbar-nav > li > a
-{
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
-}
-.wvusUikit .navbar-inverse
-{
-    background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
-    background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.wvusUikit .navbar-inverse .navbar-nav > .active > a
-{
-    background-image: -webkit-linear-gradient(top, #222 0%, #282828 100%);
-    background-image:         linear-gradient(to bottom, #222 0%, #282828 100%);
-    background-repeat: repeat-x;
-    box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff282828', GradientType=0);
-}
-.wvusUikit .navbar-inverse .navbar-brand,
-.wvusUikit .navbar-inverse .navbar-nav > li > a
-{
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
 }
 .wvusUikit .navbar-worldvision
 {
-    border: none;
+    border-color: #e65c00;
     border-radius: 4px;
-    background-image: -webkit-linear-gradient(top, #ff8533 0%, #f60 100%);
-    background-image:         linear-gradient(to bottom, #ff8533 0%, #f60 100%);
-    background-repeat: repeat-x;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8533', endColorstr='#ffff6600', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-color: #f60;
 }
 .wvusUikit .navbar-worldvision .navbar-brand
 {
@@ -10706,7 +10646,7 @@
 .wvusUikit .navbar-worldvision .navbar-brand:hover,
 .wvusUikit .navbar-worldvision .navbar-brand:focus
 {
-    color: #e6e6e6;
+    color: #eee;
     background-color: transparent;
 }
 .wvusUikit .navbar-worldvision .navbar-text
@@ -10722,13 +10662,7 @@
 {
     color: #f60;
     background-color: #fff;
-    background-image: -webkit-linear-gradient(top, #ff8533 0%, #fff 100%);
-    background-image:         linear-gradient(to bottom, #ff8533 0%, #fff 100%);
-    background-repeat: repeat-x;
     background-position: 0 -30px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .125);
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8533', endColorstr='#ffffffff', GradientType=0);
 }
 .wvusUikit .navbar-worldvision .navbar-nav > .active > a,
 .wvusUikit .navbar-worldvision .navbar-nav > .active > a:hover,
@@ -10736,8 +10670,6 @@
 {
     color: #fff;
     background-color: #e65c00;
-    background-image: none;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, .175);
 }
 .wvusUikit .navbar-worldvision .navbar-nav > .disabled > a,
 .wvusUikit .navbar-worldvision .navbar-nav > .disabled > a:hover,
@@ -10766,94 +10698,21 @@
 {
     border-radius: 0;
 }
-.wvusUikit .alert
-{
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .2);
-}
 .wvusUikit .alert-success
 {
     border-color: #b2dba1;
-    background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
-    background-image:         linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
 }
 .wvusUikit .alert-info
 {
     border-color: #9acfea;
-    background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
-    background-image:         linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
 }
 .wvusUikit .alert-warning
 {
     border-color: #f5e79e;
-    background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
-    background-image:         linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
 }
 .wvusUikit .alert-danger
 {
     border-color: #dca7a7;
-    background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
-    background-image:         linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
-}
-.wvusUikit .progress
-{
-    background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
-    background-image:         linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0);
-}
-.wvusUikit .progress-bar
-{
-    background-image: -webkit-linear-gradient(top, #f60 0%, #cc5200 100%);
-    background-image:         linear-gradient(to bottom, #f60 0%, #cc5200 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff6600', endColorstr='#ffcc5200', GradientType=0);
-}
-.wvusUikit .progress-bar-success
-{
-    background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
-    background-image:         linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);
-}
-.wvusUikit .progress-bar-info
-{
-    background-image: -webkit-linear-gradient(top, #69c 0%, #407fbf 100%);
-    background-image:         linear-gradient(to bottom, #69c 0%, #407fbf 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6699cc', endColorstr='#ff407fbf', GradientType=0);
-}
-.wvusUikit .progress-bar-warning
-{
-    background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
-    background-image:         linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);
-}
-.wvusUikit .progress-bar-danger
-{
-    background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);
-    background-image:         linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);
 }
 .wvusUikit .label
 {
@@ -10871,74 +10730,10 @@
 .wvusUikit .list-group-item.active:focus
 {
     border-color: #d95700;
-    background-image: -webkit-linear-gradient(top, #f60 0%, #d95700 100%);
-    background-image:         linear-gradient(to bottom, #f60 0%, #d95700 100%);
-    background-repeat: repeat-x;
-    text-shadow: 0 -1px 0 #cc5200;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff6600', endColorstr='#ffd95700', GradientType=0);
-}
-.wvusUikit .panel
-{
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-}
-.wvusUikit .panel-default > .panel-heading
-{
-    background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
-    background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
-}
-.wvusUikit .panel-primary > .panel-heading
-{
-    background-image: -webkit-linear-gradient(top, #f60 0%, #e65c00 100%);
-    background-image:         linear-gradient(to bottom, #f60 0%, #e65c00 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff6600', endColorstr='#ffe65c00', GradientType=0);
-}
-.wvusUikit .panel-success > .panel-heading
-{
-    background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
-    background-image:         linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);
-}
-.wvusUikit .panel-info > .panel-heading
-{
-    background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
-    background-image:         linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
-}
-.wvusUikit .panel-warning > .panel-heading
-{
-    background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
-    background-image:         linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);
-}
-.wvusUikit .panel-danger > .panel-heading
-{
-    background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
-    background-image:         linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
-    background-repeat: repeat-x;
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
 }
 .wvusUikit .well
 {
     border-color: #dcdcdc;
-    background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
-    background-image:         linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
-    background-repeat: repeat-x;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
 }
 .wvusUikit .carousel-control
 {
