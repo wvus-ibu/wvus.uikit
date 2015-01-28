@@ -137,7 +137,7 @@ html {
 }
 .wvusUikit .callout {
   border: 1px solid #333333;
-  padding: 4px 12px;
+  padding: 6px 16px;
   margin: 10px auto;
   border-radius: 4px;
 }
@@ -265,7 +265,7 @@ html {
   padding-bottom: 5px;
 }
 .wvusUikit #docs-nav .nav li.active a {
-  background-color: #006699;
+  background-color: #ff6600;
   color: #ffffff;
 }
 .wvusUikit #docs-nav .nav li a,
