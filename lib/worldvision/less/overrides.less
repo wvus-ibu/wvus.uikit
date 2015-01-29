@@ -1,0 +1,30 @@
+.datepicker table tr td {
+  &.active,
+  &.active:hover,
+  &.active.disabled,
+  &.active.disabled:hover {
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+      background-color: @btn-primary-bg;
+    }
+  }
+  span {
+    &.active,
+    &.active:hover,
+    &.active.disabled,
+    &.active.disabled:hover {
+      &:hover,
+      &:focus,
+      &.focus,
+      &:active,
+      &.active,
+      .open > .dropdown-toggle& {
+        background-color: @btn-primary-bg;
+      }
+    }
+  }
+}
