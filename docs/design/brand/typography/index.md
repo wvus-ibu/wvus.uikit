@@ -7,6 +7,8 @@ path: ../../../
 ---
 Although the World Vision corporate identity calls for Gill Sans as the corporate typeface, rendering the font as html text may not always be possible. In these cases, Arial has been selected as the substitute font for Web page content. In situations where text can be applied over a graphic or background, corporate identity standards apply. Gill Sans should be used in these instances.
 
+Our fonts are provided via a service from [Fonts.com]({{site.fonts-link}}). There is a snippet of JavaScript that will download the fonts for authorized domains.
+
 Text should be rendered in HTML in most cases, except where specifically noted.
 
 **Text applied to an image**
