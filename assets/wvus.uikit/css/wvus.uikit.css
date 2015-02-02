@@ -1,4 +1,4 @@
-/*! wvus.uikit - v3.0.0 - 2015-01-26
+/*! wvus.uikit - v3.0.0-1 - 2015-02-02
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2015 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -342,7 +342,7 @@
 }
 .wvusUikit body
 {
-    font-family: 'Gill Sans W01 Book', Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans W01', Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.44444444;
 
@@ -2031,7 +2031,7 @@
 {
     border-bottom-width: 2px;
 }
-.wvusUikit .table-striped > tbody > tr:nth-child(odd)
+.wvusUikit .table-striped > tbody > tr:nth-of-type(odd)
 {
     background-color: #eee;
 }
@@ -2378,14 +2378,22 @@
     .wvusUikit input[type='date'].input-sm,
   .wvusUikit input[type='time'].input-sm,
   .wvusUikit input[type='datetime-local'].input-sm,
-  .wvusUikit input[type='month'].input-sm
+  .wvusUikit input[type='month'].input-sm,
+  .wvusUikit .input-group-sm input[type='date'],
+  .wvusUikit .input-group-sm input[type='time'],
+  .wvusUikit .input-group-sm input[type='datetime-local'],
+  .wvusUikit .input-group-sm input[type='month']
     {
         line-height: 34px;
     }
     .wvusUikit input[type='date'].input-lg,
   .wvusUikit input[type='time'].input-lg,
   .wvusUikit input[type='datetime-local'].input-lg,
-  .wvusUikit input[type='month'].input-lg
+  .wvusUikit input[type='month'].input-lg,
+  .wvusUikit .input-group-lg input[type='date'],
+  .wvusUikit .input-group-lg input[type='time'],
+  .wvusUikit .input-group-lg input[type='datetime-local'],
+  .wvusUikit .input-group-lg input[type='month']
     {
         line-height: 58px;
     }
@@ -2484,7 +2492,27 @@
     padding-right: 0;
     padding-left: 0;
 }
-.wvusUikit .input-sm,
+.wvusUikit .input-sm
+{
+    font-size: 16px;
+    line-height: 1.5;
+
+    height: 34px;
+    padding: 4px 12px;
+
+    border-radius: 3px;
+}
+.wvusUikit select.input-sm
+{
+    line-height: 34px;
+
+    height: 34px;
+}
+.wvusUikit textarea.input-sm,
+.wvusUikit select[multiple].input-sm
+{
+    height: auto;
+}
 .wvusUikit .form-group-sm .form-control
 {
     font-size: 16px;
@@ -2495,21 +2523,46 @@
 
     border-radius: 3px;
 }
-.wvusUikit select.input-sm,
 .wvusUikit select.form-group-sm .form-control
 {
     line-height: 34px;
 
     height: 34px;
 }
-.wvusUikit textarea.input-sm,
 .wvusUikit textarea.form-group-sm .form-control,
-.wvusUikit select[multiple].input-sm,
 .wvusUikit select[multiple].form-group-sm .form-control
 {
     height: auto;
 }
-.wvusUikit .input-lg,
+.wvusUikit .form-group-sm .form-control-static
+{
+    font-size: 16px;
+    line-height: 1.5;
+
+    height: 34px;
+    padding: 4px 12px;
+}
+.wvusUikit .input-lg
+{
+    font-size: 23px;
+    line-height: 1.11;
+
+    height: 58px;
+    padding: 15px 24px;
+
+    border-radius: 6px;
+}
+.wvusUikit select.input-lg
+{
+    line-height: 58px;
+
+    height: 58px;
+}
+.wvusUikit textarea.input-lg,
+.wvusUikit select[multiple].input-lg
+{
+    height: auto;
+}
 .wvusUikit .form-group-lg .form-control
 {
     font-size: 23px;
@@ -2520,19 +2573,24 @@
 
     border-radius: 6px;
 }
-.wvusUikit select.input-lg,
 .wvusUikit select.form-group-lg .form-control
 {
     line-height: 58px;
 
     height: 58px;
 }
-.wvusUikit textarea.input-lg,
 .wvusUikit textarea.form-group-lg .form-control,
-.wvusUikit select[multiple].input-lg,
 .wvusUikit select[multiple].form-group-lg .form-control
 {
     height: auto;
+}
+.wvusUikit .form-group-lg .form-control-static
+{
+    font-size: 23px;
+    line-height: 1.11;
+
+    height: 58px;
+    padding: 15px 24px;
 }
 .wvusUikit .has-feedback
 {
@@ -3306,7 +3364,7 @@
     font-family: 'Glyphicons Halflings';
 
     src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .wvusUikit .glyphicon
 {
@@ -4124,13 +4182,245 @@
 {
     content: '\e200';
 }
+.wvusUikit .glyphicon-cd:before
+{
+    content: '\e201';
+}
+.wvusUikit .glyphicon-save-file:before
+{
+    content: '\e202';
+}
+.wvusUikit .glyphicon-open-file:before
+{
+    content: '\e203';
+}
+.wvusUikit .glyphicon-level-up:before
+{
+    content: '\e204';
+}
+.wvusUikit .glyphicon-copy:before
+{
+    content: '\e205';
+}
+.wvusUikit .glyphicon-paste:before
+{
+    content: '\e206';
+}
+.wvusUikit .glyphicon-alert:before
+{
+    content: '\e209';
+}
+.wvusUikit .glyphicon-equalizer:before
+{
+    content: '\e210';
+}
+.wvusUikit .glyphicon-king:before
+{
+    content: '\e211';
+}
+.wvusUikit .glyphicon-queen:before
+{
+    content: '\e212';
+}
+.wvusUikit .glyphicon-pawn:before
+{
+    content: '\e213';
+}
+.wvusUikit .glyphicon-bishop:before
+{
+    content: '\e214';
+}
+.wvusUikit .glyphicon-knight:before
+{
+    content: '\e215';
+}
+.wvusUikit .glyphicon-baby-formula:before
+{
+    content: '\e216';
+}
+.wvusUikit .glyphicon-tent:before
+{
+    content: '\26fa';
+}
+.wvusUikit .glyphicon-blackboard:before
+{
+    content: '\e218';
+}
+.wvusUikit .glyphicon-bed:before
+{
+    content: '\e219';
+}
+.wvusUikit .glyphicon-apple:before
+{
+    content: '\f8ff';
+}
+.wvusUikit .glyphicon-erase:before
+{
+    content: '\e221';
+}
+.wvusUikit .glyphicon-hourglass:before
+{
+    content: '\231b';
+}
+.wvusUikit .glyphicon-lamp:before
+{
+    content: '\e223';
+}
+.wvusUikit .glyphicon-duplicate:before
+{
+    content: '\e224';
+}
+.wvusUikit .glyphicon-piggy-bank:before
+{
+    content: '\e225';
+}
+.wvusUikit .glyphicon-scissors:before
+{
+    content: '\e226';
+}
+.wvusUikit .glyphicon-bitcoin:before
+{
+    content: '\e227';
+}
+.wvusUikit .glyphicon-yen:before
+{
+    content: '\00a5';
+}
+.wvusUikit .glyphicon-ruble:before
+{
+    content: '\20bd';
+}
+.wvusUikit .glyphicon-scale:before
+{
+    content: '\e230';
+}
+.wvusUikit .glyphicon-ice-lolly:before
+{
+    content: '\e231';
+}
+.wvusUikit .glyphicon-ice-lolly-tasted:before
+{
+    content: '\e232';
+}
+.wvusUikit .glyphicon-education:before
+{
+    content: '\e233';
+}
+.wvusUikit .glyphicon-option-horizontal:before
+{
+    content: '\e234';
+}
+.wvusUikit .glyphicon-option-vertical:before
+{
+    content: '\e235';
+}
+.wvusUikit .glyphicon-menu-hamburger:before
+{
+    content: '\e236';
+}
+.wvusUikit .glyphicon-modal-window:before
+{
+    content: '\e237';
+}
+.wvusUikit .glyphicon-oil:before
+{
+    content: '\e238';
+}
+.wvusUikit .glyphicon-grain:before
+{
+    content: '\e239';
+}
+.wvusUikit .glyphicon-sunglasses:before
+{
+    content: '\e240';
+}
+.wvusUikit .glyphicon-text-size:before
+{
+    content: '\e241';
+}
+.wvusUikit .glyphicon-text-color:before
+{
+    content: '\e242';
+}
+.wvusUikit .glyphicon-text-background:before
+{
+    content: '\e243';
+}
+.wvusUikit .glyphicon-object-align-top:before
+{
+    content: '\e244';
+}
+.wvusUikit .glyphicon-object-align-bottom:before
+{
+    content: '\e245';
+}
+.wvusUikit .glyphicon-object-align-horizontal:before
+{
+    content: '\e246';
+}
+.wvusUikit .glyphicon-object-align-left:before
+{
+    content: '\e247';
+}
+.wvusUikit .glyphicon-object-align-vertical:before
+{
+    content: '\e248';
+}
+.wvusUikit .glyphicon-object-align-right:before
+{
+    content: '\e249';
+}
+.wvusUikit .glyphicon-triangle-right:before
+{
+    content: '\e250';
+}
+.wvusUikit .glyphicon-triangle-left:before
+{
+    content: '\e251';
+}
+.wvusUikit .glyphicon-triangle-bottom:before
+{
+    content: '\e252';
+}
+.wvusUikit .glyphicon-triangle-top:before
+{
+    content: '\e253';
+}
+.wvusUikit .glyphicon-console:before
+{
+    content: '\e254';
+}
+.wvusUikit .glyphicon-superscript:before
+{
+    content: '\e255';
+}
+.wvusUikit .glyphicon-subscript:before
+{
+    content: '\e256';
+}
+.wvusUikit .glyphicon-menu-left:before
+{
+    content: '\e257';
+}
+.wvusUikit .glyphicon-menu-right:before
+{
+    content: '\e258';
+}
+.wvusUikit .glyphicon-menu-down:before
+{
+    content: '\e259';
+}
+.wvusUikit .glyphicon-menu-up:before
+{
+    content: '\e260';
+}
 @font-face {
     font-family: 'FontAwesome';
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
 }
 .wvusUikit .fa
 {
@@ -4138,6 +4428,10 @@
     font-size: inherit;
 
     display: inline-block;
+
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
 
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -4224,6 +4518,11 @@
 {
     -webkit-animation: fa-spin 2s infinite linear;
             animation: fa-spin 2s infinite linear;
+}
+.wvusUikit .fa-pulse
+{
+    -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8);
 }
 @-webkit-keyframes fa-spin
 {
@@ -4927,6 +5226,7 @@
 {
     content: '\f099';
 }
+.wvusUikit .fa-facebook-f:before,
 .wvusUikit .fa-facebook:before
 {
     content: '\f09a';
@@ -5781,7 +6081,8 @@
 {
     content: '\f183';
 }
-.wvusUikit .fa-gittip:before
+.wvusUikit .fa-gittip:before,
+.wvusUikit .fa-gratipay:before
 {
     content: '\f184';
 }
@@ -6130,6 +6431,7 @@
 {
     content: '\f1da';
 }
+.wvusUikit .fa-genderless:before,
 .wvusUikit .fa-circle-thin:before
 {
     content: '\f1db';
@@ -6321,6 +6623,167 @@
 {
     content: '\f20c';
 }
+.wvusUikit .fa-buysellads:before
+{
+    content: '\f20d';
+}
+.wvusUikit .fa-connectdevelop:before
+{
+    content: '\f20e';
+}
+.wvusUikit .fa-dashcube:before
+{
+    content: '\f210';
+}
+.wvusUikit .fa-forumbee:before
+{
+    content: '\f211';
+}
+.wvusUikit .fa-leanpub:before
+{
+    content: '\f212';
+}
+.wvusUikit .fa-sellsy:before
+{
+    content: '\f213';
+}
+.wvusUikit .fa-shirtsinbulk:before
+{
+    content: '\f214';
+}
+.wvusUikit .fa-simplybuilt:before
+{
+    content: '\f215';
+}
+.wvusUikit .fa-skyatlas:before
+{
+    content: '\f216';
+}
+.wvusUikit .fa-cart-plus:before
+{
+    content: '\f217';
+}
+.wvusUikit .fa-cart-arrow-down:before
+{
+    content: '\f218';
+}
+.wvusUikit .fa-diamond:before
+{
+    content: '\f219';
+}
+.wvusUikit .fa-ship:before
+{
+    content: '\f21a';
+}
+.wvusUikit .fa-user-secret:before
+{
+    content: '\f21b';
+}
+.wvusUikit .fa-motorcycle:before
+{
+    content: '\f21c';
+}
+.wvusUikit .fa-street-view:before
+{
+    content: '\f21d';
+}
+.wvusUikit .fa-heartbeat:before
+{
+    content: '\f21e';
+}
+.wvusUikit .fa-venus:before
+{
+    content: '\f221';
+}
+.wvusUikit .fa-mars:before
+{
+    content: '\f222';
+}
+.wvusUikit .fa-mercury:before
+{
+    content: '\f223';
+}
+.wvusUikit .fa-transgender:before
+{
+    content: '\f224';
+}
+.wvusUikit .fa-transgender-alt:before
+{
+    content: '\f225';
+}
+.wvusUikit .fa-venus-double:before
+{
+    content: '\f226';
+}
+.wvusUikit .fa-mars-double:before
+{
+    content: '\f227';
+}
+.wvusUikit .fa-venus-mars:before
+{
+    content: '\f228';
+}
+.wvusUikit .fa-mars-stroke:before
+{
+    content: '\f229';
+}
+.wvusUikit .fa-mars-stroke-v:before
+{
+    content: '\f22a';
+}
+.wvusUikit .fa-mars-stroke-h:before
+{
+    content: '\f22b';
+}
+.wvusUikit .fa-neuter:before
+{
+    content: '\f22c';
+}
+.wvusUikit .fa-facebook-official:before
+{
+    content: '\f230';
+}
+.wvusUikit .fa-pinterest-p:before
+{
+    content: '\f231';
+}
+.wvusUikit .fa-whatsapp:before
+{
+    content: '\f232';
+}
+.wvusUikit .fa-server:before
+{
+    content: '\f233';
+}
+.wvusUikit .fa-user-plus:before
+{
+    content: '\f234';
+}
+.wvusUikit .fa-user-times:before
+{
+    content: '\f235';
+}
+.wvusUikit .fa-hotel:before,
+.wvusUikit .fa-bed:before
+{
+    content: '\f236';
+}
+.wvusUikit .fa-viacoin:before
+{
+    content: '\f237';
+}
+.wvusUikit .fa-train:before
+{
+    content: '\f238';
+}
+.wvusUikit .fa-subway:before
+{
+    content: '\f239';
+}
+.wvusUikit .fa-medium:before
+{
+    content: '\f23a';
+}
 .wvusUikit .caret
 {
     display: inline-block;
@@ -6335,6 +6798,7 @@
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
+.wvusUikit .dropup,
 .wvusUikit .dropdown
 {
     position: relative;
@@ -6492,7 +6956,7 @@
     top: auto;
     bottom: 100%;
 
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 @media (min-width: 768px)
 {
@@ -6583,13 +7047,13 @@
 {
     border-radius: 0;
 }
-.wvusUikit .btn-group > .btn-group:first-child > .btn:last-child,
-.wvusUikit .btn-group > .btn-group:first-child > .dropdown-toggle
+.wvusUikit .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.wvusUikit .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle
 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.wvusUikit .btn-group > .btn-group:last-child > .btn:first-child
+.wvusUikit .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child
 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -7569,6 +8033,8 @@
 }
 .wvusUikit .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu
 {
+    margin-bottom: 0;
+
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 0;
@@ -8504,6 +8970,20 @@
 {
     margin-top: 0;
 }
+.wvusUikit .media,
+.wvusUikit .media-body
+{
+    overflow: hidden;
+    zoom: 1;
+}
+.wvusUikit .media-body
+{
+    width: 10000px;
+}
+.wvusUikit .media-object
+{
+    display: block;
+}
 .wvusUikit .media-right,
 .wvusUikit .media > .pull-right
 {
@@ -8788,7 +9268,11 @@
 
     color: inherit;
 }
-.wvusUikit .panel-title > a
+.wvusUikit .panel-title > a,
+.wvusUikit .panel-title > small,
+.wvusUikit .panel-title > .small,
+.wvusUikit .panel-title > small > a,
+.wvusUikit .panel-title > .small > a
 {
     color: inherit;
 }
@@ -9419,7 +9903,7 @@
 }
 .wvusUikit .tooltip
 {
-    font-family: 'Gill Sans W01 Book', Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans W01', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.4;
@@ -9564,7 +10048,7 @@
 }
 .wvusUikit .popover
 {
-    font-family: 'Gill Sans W01 Book', Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans W01', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: normal;
     line-height: 1.44444444;
@@ -9910,6 +10394,7 @@
 .wvusUikit .carousel-control .icon-next
 {
     font-family: serif;
+    line-height: 1;
 
     width: 20px;
     height: 20px;
