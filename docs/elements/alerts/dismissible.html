@@ -1,23 +1,23 @@
 ---
 layout: default
-title: Alerts - Dismissable
+title: Alerts - Dismissible
 snippet: alerts
 group: alerts
 hasJs: false
-name: alerts-dismissable
+name: alerts-dismissible
 path: ../../../
-bootstrap: /components/#alerts-dismissable
+bootstrap: /components/#alerts-dismissible
 ---
 <header class="page-header" id="headerTitle">
   <h1>{{page.title}}</h1>
   <p class="subheader lead">
-    Wrap any text in <code>.alert-success</code> for a success alert message.
+    Add the option to close an alert by added <code>.alert-dismissible</code>
   </p>
 </header>
 <!-- Preview -->
 <div class="docs-example">
-  <div class="alert alert-success alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <strong>Well done!</strong> You successfully read this important alert message.
   </div>
 </div>
@@ -25,8 +25,8 @@ bootstrap: /components/#alerts-dismissable
 <!-- HTML Code -->
 <div class="docs-html">
   {% highlight html %}
-  <div class="alert alert-success alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <strong>Well done!</strong> You successfully read this important alert message.
   </div>
   {% endhighlight %}
