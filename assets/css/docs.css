@@ -132,9 +132,6 @@ html {
 .wvusUikit .docs-example [class^=col-] {
   margin-bottom: 10px;
 }
-.wvusUikit .docs-example .close {
-  float: none;
-}
 .wvusUikit .callout {
   border: 1px solid #333333;
   padding: 6px 16px;

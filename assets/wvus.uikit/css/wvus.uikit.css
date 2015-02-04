@@ -1,4 +1,4 @@
-/*! wvus.uikit - v3.0.0-1 - 2015-02-02
+/*! wvus.uikit - v3.0.0-1 - 2015-02-04
 * http://wvus-ibu.github.io/wvus.uikit/
 * Copyright (c) 2015 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
@@ -12563,176 +12563,6 @@
     background-color: #eee;
     text-shadow: 0 1px 0 #fff;
 }
-.wvusUikit .sector
-{
-    display: inline-block;
-
-    width: 60px;
-    height: 60px;
-
-    text-indent: -999em;
-
-    direction: ltr;
-}
-.wvusUikit .no-svg .sector
-{
-    background-image: url('../img/sector/sectors.png');
-    background-repeat: no-repeat;
-}
-.wvusUikit .sector-sm
-{
-    width: 30px;
-    height: 30px;
-}
-.wvusUikit .sector-lg
-{
-    width: 120px;
-    height: 120px;
-}
-.wvusUikit .svg .sector.disaster
-{
-    background-image: url('../img/sector/svg/disaster.svg');
-}
-.wvusUikit .svg .sector.child
-{
-    background: url('../img/sector/svg/child.svg');
-}
-.wvusUikit .svg .sector.economic
-{
-    background: url('../img/sector/svg/economic.svg');
-}
-.wvusUikit .svg .sector.education
-{
-    background: url('../img/sector/svg/education.svg');
-}
-.wvusUikit .svg .sector.faith
-{
-    background: url('../img/sector/svg/faith.svg');
-}
-.wvusUikit .svg .sector.food
-{
-    background: url('../img/sector/svg/food.svg');
-}
-.wvusUikit .svg .sector.health
-{
-    background: url('../img/sector/svg/health.svg');
-}
-.wvusUikit .svg .sector.us
-{
-    background: url('../img/sector/svg/us.svg');
-}
-.wvusUikit .svg .sector.water
-{
-    background: url('../img/sector/svg/water.svg');
-}
-.wvusUikit .no-svg .sector.disaster
-{
-    background-position: -60px -120px;
-}
-.wvusUikit .no-svg .sector.child
-{
-    background-position: 0 -120px;
-}
-.wvusUikit .no-svg .sector.economic
-{
-    background-position: 0 -240px;
-}
-.wvusUikit .no-svg .sector.education
-{
-    background-position: -180px -240px;
-}
-.wvusUikit .no-svg .sector.faith
-{
-    background-position: -240px -240px;
-}
-.wvusUikit .no-svg .sector.food
-{
-    background-position: -330px -240px;
-}
-.wvusUikit .no-svg .sector.health
-{
-    background-position: -390px -240px;
-}
-.wvusUikit .no-svg .sector.us
-{
-    background-position: -150px 0;
-}
-.wvusUikit .no-svg .sector.water
-{
-    background-position: -450px -270px;
-}
-.wvusUikit .no-svg .sector-sm.disaster
-{
-    background-position: -360px 0;
-}
-.wvusUikit .no-svg .sector-sm.child
-{
-    background-position: -210px 0;
-}
-.wvusUikit .no-svg .sector-sm.economic
-{
-    background-position: 0 -30px;
-}
-.wvusUikit .no-svg .sector-sm.education
-{
-    background-position: -210px -30px;
-}
-.wvusUikit .no-svg .sector-sm.faith
-{
-    background-position: -360px -120px;
-}
-.wvusUikit .no-svg .sector-sm.food
-{
-    background-position: -300px -240px;
-}
-.wvusUikit .no-svg .sector-sm.health
-{
-    background-position: -450px -240px;
-}
-.wvusUikit .no-svg .sector-sm.us
-{
-    background-position: 0 0;
-}
-.wvusUikit .no-svg .sector-sm.water
-{
-    background-position: -480px -240px;
-}
-.wvusUikit .no-svg .sector-lg.disaster
-{
-    background-position: -120px -120px;
-}
-.wvusUikit .no-svg .sector-lg.child
-{
-    background-position: -240px 0;
-}
-.wvusUikit .no-svg .sector-lg.economic
-{
-    background-position: -240px -120px;
-}
-.wvusUikit .no-svg .sector-lg.education
-{
-    background-position: -60px -240px;
-}
-.wvusUikit .no-svg .sector-lg.faith
-{
-    background-position: -390px 0;
-}
-.wvusUikit .no-svg .sector-lg.food
-{
-    background-position: -390px -120px;
-}
-.wvusUikit .no-svg .sector-lg.health
-{
-    background-position: -180px -300px;
-}
-.wvusUikit .no-svg .sector-lg.us
-{
-    background-position: -30px 0;
-}
-.wvusUikit .no-svg .sector-lg.water
-{
-    background-position: -300px -300px;
-}
 .wvusUikit .datepicker table tr td.active:hover,
 .wvusUikit .datepicker table tr td.active:hover:hover,
 .wvusUikit .datepicker table tr td.active.disabled:hover,
@@ -12786,4 +12616,174 @@
 .wvusUikit .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover
 {
     background-color: #f60;
+}
+.wvusUikit .sector
+{
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+
+    text-indent: -999em;
+
+    direction: ltr;
+}
+.wvusUikit.no-svg .sector
+{
+    background-image: url('../img/sector/sectors.png');
+    background-repeat: no-repeat;
+}
+.wvusUikit .sector-sm
+{
+    width: 30px;
+    height: 30px;
+}
+.wvusUikit .sector-lg
+{
+    width: 120px;
+    height: 120px;
+}
+.wvusUikit.svg .sector.disaster
+{
+    background-image: url('../img/sector/svg/disaster.svg');
+}
+.wvusUikit.svg .sector.child
+{
+    background-image: url('../img/sector/svg/child.svg');
+}
+.wvusUikit.svg .sector.economic
+{
+    background-image: url('../img/sector/svg/economic.svg');
+}
+.wvusUikit.svg .sector.education
+{
+    background-image: url('../img/sector/svg/education.svg');
+}
+.wvusUikit.svg .sector.faith
+{
+    background-image: url('../img/sector/svg/faith.svg');
+}
+.wvusUikit.svg .sector.food
+{
+    background-image: url('../img/sector/svg/food.svg');
+}
+.wvusUikit.svg .sector.health
+{
+    background-image: url('../img/sector/svg/health.svg');
+}
+.wvusUikit.svg .sector.us
+{
+    background-image: url('../img/sector/svg/us.svg');
+}
+.wvusUikit.svg .sector.water
+{
+    background-image: url('../img/sector/svg/water.svg');
+}
+.wvusUikit.no-svg .sector.disaster
+{
+    background-position: -60px -120px;
+}
+.wvusUikit.no-svg .sector.child
+{
+    background-position: 0 -120px;
+}
+.wvusUikit.no-svg .sector.economic
+{
+    background-position: 0 -240px;
+}
+.wvusUikit.no-svg .sector.education
+{
+    background-position: -180px -240px;
+}
+.wvusUikit.no-svg .sector.faith
+{
+    background-position: -240px -240px;
+}
+.wvusUikit.no-svg .sector.food
+{
+    background-position: -330px -240px;
+}
+.wvusUikit.no-svg .sector.health
+{
+    background-position: -390px -240px;
+}
+.wvusUikit.no-svg .sector.us
+{
+    background-position: -150px 0;
+}
+.wvusUikit.no-svg .sector.water
+{
+    background-position: -450px -270px;
+}
+.wvusUikit.no-svg .sector-sm.disaster
+{
+    background-position: -360px 0;
+}
+.wvusUikit.no-svg .sector-sm.child
+{
+    background-position: -210px 0;
+}
+.wvusUikit.no-svg .sector-sm.economic
+{
+    background-position: 0 -30px;
+}
+.wvusUikit.no-svg .sector-sm.education
+{
+    background-position: -210px -30px;
+}
+.wvusUikit.no-svg .sector-sm.faith
+{
+    background-position: -360px -120px;
+}
+.wvusUikit.no-svg .sector-sm.food
+{
+    background-position: -300px -240px;
+}
+.wvusUikit.no-svg .sector-sm.health
+{
+    background-position: -450px -240px;
+}
+.wvusUikit.no-svg .sector-sm.us
+{
+    background-position: 0 0;
+}
+.wvusUikit.no-svg .sector-sm.water
+{
+    background-position: -480px -240px;
+}
+.wvusUikit.no-svg .sector-lg.disaster
+{
+    background-position: -120px -120px;
+}
+.wvusUikit.no-svg .sector-lg.child
+{
+    background-position: -240px 0;
+}
+.wvusUikit.no-svg .sector-lg.economic
+{
+    background-position: -240px -120px;
+}
+.wvusUikit.no-svg .sector-lg.education
+{
+    background-position: -60px -240px;
+}
+.wvusUikit.no-svg .sector-lg.faith
+{
+    background-position: -390px 0;
+}
+.wvusUikit.no-svg .sector-lg.food
+{
+    background-position: -390px -120px;
+}
+.wvusUikit.no-svg .sector-lg.health
+{
+    background-position: -180px -300px;
+}
+.wvusUikit.no-svg .sector-lg.us
+{
+    background-position: -30px 0;
+}
+.wvusUikit.no-svg .sector-lg.water
+{
+    background-position: -300px -300px;
 }
