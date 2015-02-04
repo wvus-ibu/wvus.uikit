@@ -1,0 +1,43 @@
+---
+layout: default
+title: Buttons - Justified (links)
+snippet: group
+group: buttons
+hasJs: false
+name: buttons-group-justified-links
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Just wrap a series of <code>.btns</code> in <code>.btn-group.btn-group-justified</code>.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="btn-group btn-group-justified">
+      <a class="btn btn-default">Left</a>
+      <a class="btn btn-default">Middle</a>
+      <a class="btn btn-default">Right</a>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="btn-group btn-group-justified">
+    <a class="btn btn-default">Left</a>
+    <a class="btn btn-default">Middle</a>
+    <a class="btn btn-default">Right</a>
+</div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
