@@ -1,6 +1,6 @@
-/*! wvus.uikit - v2.0.0 - 2014-05-19
+/*! wvus.uikit - v3.0.0 - 2015-02-04
 * http://wvus-ibu.github.io/wvus.uikit/
-* Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
+* Copyright (c) 2015 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
 .wvusUikit html
 {
@@ -117,8 +117,7 @@
 }
 .wvusUikit hr
 {
-    -moz-box-sizing: content-box;
-         box-sizing: content-box;
+    box-sizing: content-box;
     height: 0;
 }
 .wvusUikit pre
@@ -182,8 +181,7 @@
 .wvusUikit input[type='checkbox'],
 .wvusUikit input[type='radio']
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0;
 }
 .wvusUikit input[type='number']::-webkit-inner-spin-button,
@@ -193,8 +191,7 @@
 }
 .wvusUikit input[type='search']
 {
-    -moz-box-sizing: content-box;
-         box-sizing: content-box;
+    box-sizing: content-box;
 
     -webkit-appearance: textfield;
 }
@@ -327,14 +324,12 @@
 }
 .wvusUikit *
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wvusUikit *:before,
 .wvusUikit *:after
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wvusUikit html
 {
@@ -344,7 +339,7 @@
 }
 .wvusUikit body
 {
-    font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans W01 Book', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.42857143;
 
@@ -2218,8 +2213,7 @@
 }
 .wvusUikit input[type='search']
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wvusUikit input[type='radio'],
 .wvusUikit input[type='checkbox']
@@ -10130,8 +10124,7 @@
 {
     z-index: 2000;
 
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     min-width: 100%;
 }
 .wvusUikit .bootstrap-select.btn-group .dropdown-menu.inner
@@ -10282,8 +10275,7 @@
     position: absolute;
     bottom: 5px;
 
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     width: 96%;
     min-height: 26px;
     margin: 0 2%;
@@ -10337,8 +10329,7 @@
 {
     float: left;
 
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
 }
 .wvusUikit .bootstrap-select-searchbox + .bs-actionsbox

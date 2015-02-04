@@ -447,8 +447,7 @@
 Enable buttons via JavaScript:
     </p>
 </header>
-            <div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;.nav-tabs&#39;</span><span class="p">).</span><span class="nx">button</span><span class="p">()</span>
-</code></pre></div>
+            <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;.nav-tabs&#39;</span><span class="p">).</span><span class="nx">button</span><span class="p">()</span></code></pre></div>
 
             <h4>Markup</h4>
             <p>Data attributes are integral to the button plugin. Check out the example code below for the various markup types.</p>
@@ -463,13 +462,11 @@ Enable buttons via JavaScript:
               <strong>Heads up!</strong>
               You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
             </div>
-            <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>…<span class="nt">&lt;/button&gt;</span>
-</code></pre></div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>…<span class="nt">&lt;/button&gt;</span></code></pre></div>
             <h5>wvusUikit().button('loading')</h5>
             <p>Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
             </p>
-            <div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-loading-text=</span><span class="s">&quot;loading stuff...&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/button&gt;</span>
-</code></pre></div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-loading-text=</span><span class="s">&quot;loading stuff...&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/button&gt;</span></code></pre></div>
             <div class="alert alert-info">
               <strong>Heads up!</strong>
               <a href="https://github.com/twbs/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
@@ -478,11 +475,10 @@ Enable buttons via JavaScript:
             <p>Resets button state - swaps text to original text.</p>
             <h5>wvusUikit().button(string)</h5>
             <p>Resets button state - swaps text to any data defined text state.</p>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-complete-text=</span><span class="s">&quot;finished!&quot;</span> <span class="nt">&gt;</span>...<span class="nt">&lt;/button&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">data-complete-text=</span><span class="s">&quot;finished!&quot;</span> <span class="nt">&gt;</span>...<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;script&gt;</span>
   <span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;.btn&#39;</span><span class="p">).</span><span class="nx">button</span><span class="p">(</span><span class="s1">&#39;complete&#39;</span><span class="p">)</span>
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
       </div>
     </div>
@@ -501,8 +497,6 @@ Enable buttons via JavaScript:
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
-              <li class="muted">&middot;</li>
-              <li><a href="../../../../1.2.0/">Version 1.2.0</a></li>
             </ul>
           </div>
         </div>

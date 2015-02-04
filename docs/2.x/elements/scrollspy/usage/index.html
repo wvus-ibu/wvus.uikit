@@ -415,7 +415,7 @@
   <a href="#" data-toggle="collapse" data-target="#scrollspy">ScrollSpy <i class="fa fa-caret-right"></i></a>
   <ul class="nav collapse  in " id="scrollspy">
     <li><a href="../../../elements/scrollspy/navbar">Example in navbar</a></li>
-    <li class="active"><a href="../../../elements/scrollspy/usage">Usage</a></li>
+    <li><a href="../../../elements/scrollspy/usage">Usage</a></li>
   </ul>
 </li>
 <li>
@@ -453,11 +453,10 @@
 
   <h3>Via data attributes</h3>
   <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
-<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
   <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">&quot;scroll&quot;</span> <span class="na">data-target=</span><span class="s">&quot;.navbar-example&quot;</span><span class="nt">&gt;</span>
+<span class="p">}</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">&quot;scroll&quot;</span> <span class="na">data-target=</span><span class="s">&quot;.navbar-example&quot;</span><span class="nt">&gt;</span>
   ...
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;navbar-example&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;nav nav-tabs&quot;</span><span class="nt">&gt;</span>
@@ -465,13 +464,11 @@
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   ...
-<span class="nt">&lt;/body&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;/body&gt;</span></code></pre></div>
 
   <h3>Via JavaScript</h3>
   <p>After adding <code>position: relative;</code> in your CSS, call the scrollspy via JavaScript:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">({</span> <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;.navbar-example&#39;</span> <span class="p">})</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">({</span> <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;.navbar-example&#39;</span> <span class="p">})</span></code></pre></div>
 
   <div class="bs-callout bs-callout-danger">
     <h4>Resolvable ID targets required</h4>
@@ -485,10 +482,9 @@
   <h3>Methods</h3>
   <h4>.scrollspy('refresh')</h4>
   <p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;[data-spy=&quot;scroll&quot;]&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;[data-spy=&quot;scroll&quot;]&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">$spy</span> <span class="o">=</span> <span class="nx">wvusUikit</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">(</span><span class="s1">&#39;refresh&#39;</span><span class="p">)</span>
-<span class="p">})</span>
-</code></pre></div>
+<span class="p">})</span></code></pre></div>
 
 
   <h3>Options</h3>
@@ -531,10 +527,9 @@
       </tbody>
     </table>
   </div><!-- ./bs-table-responsive -->
-<div class="highlight"><pre><code class="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myScrollspy&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;activate.bs.scrollspy&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;#myScrollspy&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;activate.bs.scrollspy&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
-<span class="p">})</span>
-</code></pre></div>
+<span class="p">})</span></code></pre></div>
 </div>
 
       </div>
@@ -554,8 +549,6 @@
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
-              <li class="muted">&middot;</li>
-              <li><a href="../../../1.2.0/">Version 1.2.0</a></li>
             </ul>
           </div>
         </div>
