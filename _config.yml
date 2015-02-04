@@ -9,6 +9,7 @@ pygments: true
 permalink: pretty
 
 developerdocs: elements/
+elements: elements/
 designerdocs: design/
 develop: develop/
 files: /assets/files
