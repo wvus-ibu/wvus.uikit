@@ -14,12 +14,7 @@
    bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/js/',
    fontAwesomePath:  '<%= uikit.libPath %>font-awesome/',
    jqueryPath:  '<%= uikit.libPath %>jquery/dist/',
-   jqueryMobilePath:  '<%= uikit.libPath %>jquery-mobile/',
    datepickerPath:  '<%= uikit.libPath %>bootstrap-datepicker/',
-   modernizrPath: '<%= uikit.libPath %>modernizr/',
-   videojsPath:  '<%= uikit.libPath %>video.js/',
-   videojsYoutubePath:  '<%= uikit.libPath %>videojs-youtube/',
-   spinjsPath:  '<%= uikit.libPath %>spin.js/',
    worldVisionPath: '<%= uikit.libPath %>worldvision/',
  };
 
@@ -57,11 +52,7 @@
         '<%= uikit.bootstrapJsPath %>tab.js',
         '<%= uikit.bootstrapJsPath %>affix.js',
         '<%= uikit.datepickerPath %>js/bootstrap-datepicker.js',
-        '<%= uikit.bootstrapSelectPath %>bootstrap-select.js',
-        '<%= uikit.videojsPath %>video.dev.js',
-        '<%= uikit.videojsYoutubePath %>src/media.youtube.js',
-        '<%= uikit.spinjsPath %>spin.js',
-        '<%= uikit.spinjsPath %>jquery.spin.js',
+        '<%= uikit.bootstrapSelectPath %>bootstrap-select.js'
         ],
 
         dest: '<%= uikit.distPath %>js/<%= pkg.name %>.js'
@@ -75,14 +66,6 @@
       jquery: {
         src: '<%= uikit.jqueryPath %>jquery.js',
         dest: '<%= uikit.distPath %>js/jquery.min.js'
-      },
-      jqueryMobile: {
-        src: '<%= uikit.jqueryMobilePath %>jquery.mobile.custom.js',
-        dest: '<%= uikit.distPath %>js/jquery.mobile.custom.min.js'
-      },
-      modernizr: {
-        src: '<%= uikit.modernizrPath %>modernizr.js',
-        dest: '<%= uikit.distPath %>js/modernizr.min.js'
       },
       uikit: {
         src: '<%= concat.uikit.dest %>',
@@ -260,10 +243,6 @@
         files: [
         {expand: true, cwd: '<%= uikit.fontAwesomePath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'},
         {expand: true, cwd: '<%= uikit.jqueryPath %>', src: 'jquery.js', dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.jqueryMobilePath %>', src: '**', dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.modernizrPath %>', src: '**', dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.videojsPath %>', src: "video-js.swf", dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.videojsPath %>font', src: '**', dest: '<%= uikit.distPath %>fonts'},
         {expand: true, cwd: '<%= uikit.bootstrapPath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'}
         ]
       },
