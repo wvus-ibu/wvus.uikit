@@ -1,13 +1,13 @@
     <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="{{ page.path }}assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="{{ site.changelog }}" title="Releases" class="label label-default">v{{ site.docs-version }} {{ site.release-date }}</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="{{ site.changelog }}" title="Releases" class="small">Current v{{ site.docs-version }}</a>
+          </div>
         </div>
       </div>
     </header>
@@ -42,5 +42,5 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
