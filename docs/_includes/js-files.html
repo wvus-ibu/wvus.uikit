@@ -6,9 +6,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '{{ page.path }}assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '{{ page.path }}assets/js/jquery.mobile.js',
         load: [
         '{{ page.path }}assets/wvus.uikit/js/wvus.uikit.min.js',
+        '{{ page.path }}assets/js/spin.min.js',
+        '{{ page.path }}assets/js/jquery.spin.js',
         '{{ page.path }}assets/js/application.js'
         ]
     });
