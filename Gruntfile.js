@@ -353,8 +353,7 @@
   grunt.registerTask('docs-build', ['dist', 'clean:docs', 'less:docs', 'jekyll']);
   grunt.registerTask('serve', ['docs-build', 'connect', 'watch'] );
 
-  // Default task. Compile, concatenate, min, and build zip
-  //grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
+  grunt.registerTask('test', []);
 
   //compiles less for errors, runs js thorugh
   //grunt.registerTask('test', ['compile', 'csslint' ,'jshint', 'qunit']);
