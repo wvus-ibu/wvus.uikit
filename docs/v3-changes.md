@@ -7,7 +7,7 @@ path: ../
 
 #### Removal of 3rd party libraries
 
-Some 3rd party libraries are being removed to reduce the size and avoid conficts with other libraries. These libraries already work as stand alone libraries and are suggested when using UiKit. However, they will not be supported or included in v3.
+Some 3rd party libraries are being removed to reduce the size and avoid conflicts with other libraries. These libraries already work as stand alone libraries and are suggested when using UiKit. However, they will not be supported or included in v3.
 
 The following list of libraries are deprecated and will be removed in version 3:
 
@@ -17,5 +17,6 @@ The following list of libraries are deprecated and will be removed in version 3:
 * [VideoJS Youtube plugin](https://github.com/eXon/videojs-youtube): Removed to reduce size and conflicts. The plugin will be removed since the native YouTube player will be used.
 
 
-*Speical Note*: The jQuery namespace and library will be removed. The namespace is being removed to stop the alteration of core libraries. These include Bootstrap jQuery plugins and 3rd party Bootstrap plugins. This will make updating these libraries simple.
-jQuery will be removed from the UiKit, but will still be a dependency. The recommended version will be available through [Bower](http://bower.io/) and when installing UiKit with Bower, will download the supported version.
+*Special Note*: The jQuery namespace and library will be removed. The namespace is being changed to be an alias of the jQuery object. This will stop the alteration of core libraries like Bootstrap JS plugins and 3rd party Bootstrap plugins. This will make updating these libraries simple.
+
+The packaged jQuery library will be removed from the UiKit, but will still be a dependency. The recommended version will be available through [Bower](http://bower.io/) and when installing UiKit with Bower, will download the supported version. Currently, UiKit follows Bootstrap's conventions and dependencies.
