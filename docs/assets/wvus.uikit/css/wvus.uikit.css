@@ -1,6 +1,6 @@
-/*! wvus.uikit - v2.0.1 - 2014-09-08
+/*! wvus.uikit - v2.1.0 - 2015-02-04
 * http://wvus-ibu.github.io/wvus.uikit/
-* Copyright (c) 2014 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
+* Copyright (c) 2015 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
 .wvusUikit html
 {
@@ -117,8 +117,7 @@
 }
 .wvusUikit hr
 {
-    -moz-box-sizing: content-box;
-         box-sizing: content-box;
+    box-sizing: content-box;
     height: 0;
 }
 .wvusUikit pre
@@ -182,8 +181,7 @@
 .wvusUikit input[type='checkbox'],
 .wvusUikit input[type='radio']
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0;
 }
 .wvusUikit input[type='number']::-webkit-inner-spin-button,
@@ -193,8 +191,7 @@
 }
 .wvusUikit input[type='search']
 {
-    -moz-box-sizing: content-box;
-         box-sizing: content-box;
+    box-sizing: content-box;
 
     -webkit-appearance: textfield;
 }
@@ -327,14 +324,12 @@
 }
 .wvusUikit *
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wvusUikit *:before,
 .wvusUikit *:after
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wvusUikit html
 {
@@ -2218,8 +2213,7 @@
 }
 .wvusUikit input[type='search']
 {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 }
 .wvusUikit input[type='radio'],
 .wvusUikit input[type='checkbox']
@@ -10026,53 +10020,11 @@
 {
     background-color: #f60;
 }
-.wvusUikit .bootstrap-select.btn-group:not(.input-group-btn),
-.wvusUikit .bootstrap-select.btn-group[class*='span']
-{
-    display: inline-block;
-    float: none;
-
-    margin-bottom: 10px;
-    margin-left: 0;
-}
-.wvusUikit .form-search .bootstrap-select.btn-group,
-.wvusUikit .form-inline .bootstrap-select.btn-group,
-.wvusUikit .form-horizontal .bootstrap-select.btn-group
-{
-    margin-bottom: 0;
-}
-.wvusUikit .bootstrap-select.form-control
-{
-    margin-bottom: 0;
-    padding: 0;
-
-    border: none;
-}
-.wvusUikit .bootstrap-select.btn-group.pull-right,
-.wvusUikit .bootstrap-select.btn-group[class*='span'].pull-right,
-.wvusUikit .row-fluid .bootstrap-select.btn-group[class*='span'].pull-right
-{
-    float: right;
-}
-.wvusUikit .input-append .bootstrap-select.btn-group
-{
-    margin-left: -1px;
-}
-.wvusUikit .input-prepend .bootstrap-select.btn-group
-{
-    margin-right: -1px;
-}
-.wvusUikit .bootstrap-select:not([class*='span']):not([class*='col-']):not([class*='form-control']):not(.input-group-btn)
-{
-    width: 220px;
-}
 .wvusUikit .bootstrap-select
 {
-    width: 220px\0;
-}
-.wvusUikit .bootstrap-select.form-control:not([class*='span'])
-{
-    width: 100%;
+  /*width: 220px\9; IE8 and below*/
+    width: 220px \0;
+  /*IE9 and below*/
 }
 .wvusUikit .bootstrap-select > .btn
 {
@@ -10083,9 +10035,17 @@
 {
     border: 1px solid #b94a48;
 }
-.wvusUikit .bootstrap-select.show-menu-arrow.open > .btn
+.wvusUikit .control-group.error .bootstrap-select .dropdown-toggle
 {
-    z-index: 2051;
+    border-color: #b94a48;
+}
+.wvusUikit .bootstrap-select.fit-width
+{
+    width: auto !important;
+}
+.wvusUikit .bootstrap-select:not([class*='col-']):not([class*='form-control']):not(.input-group-btn)
+{
+    width: 220px;
 }
 .wvusUikit .bootstrap-select .btn:focus
 {
@@ -10093,10 +10053,66 @@
     outline: 5px auto -webkit-focus-ring-color !important;
     outline-offset: -2px;
 }
+.wvusUikit .bootstrap-select.form-control
+{
+    margin-bottom: 0;
+    padding: 0;
+
+    border: none;
+}
+.wvusUikit .bootstrap-select.form-control:not([class*='col-'])
+{
+    width: 100%;
+}
+.wvusUikit .bootstrap-select.btn-group:not(.input-group-btn),
+.wvusUikit .bootstrap-select.btn-group[class*='col-']
+{
+    display: inline-block;
+    float: none;
+
+    margin-left: 0;
+}
+.wvusUikit .bootstrap-select.btn-group.dropdown-menu-right,
+.wvusUikit .bootstrap-select.btn-group[class*='col-'].dropdown-menu-right,
+.wvusUikit .row-fluid .bootstrap-select.btn-group[class*='col-'].dropdown-menu-right
+{
+    float: right;
+}
+.wvusUikit .form-search .bootstrap-select.btn-group,
+.wvusUikit .form-inline .bootstrap-select.btn-group,
+.wvusUikit .form-horizontal .bootstrap-select.btn-group,
+.wvusUikit .form-group .bootstrap-select.btn-group
+{
+    margin-bottom: 0;
+}
+.wvusUikit .form-group-lg .bootstrap-select.btn-group.form-control,
+.wvusUikit .form-group-sm .bootstrap-select.btn-group.form-control
+{
+    padding: 0;
+}
+.wvusUikit .form-inline .bootstrap-select.btn-group .form-control
+{
+    width: 100%;
+}
+.wvusUikit .input-append .bootstrap-select.btn-group
+{
+    margin-left: -1px;
+}
+.wvusUikit .input-prepend .bootstrap-select.btn-group
+{
+    margin-right: -1px;
+}
+.wvusUikit .bootstrap-select.btn-group > .disabled
+{
+    cursor: not-allowed;
+}
+.wvusUikit .bootstrap-select.btn-group > .disabled:focus
+{
+    outline: none !important;
+}
 .wvusUikit .bootstrap-select.btn-group .btn .filter-option
 {
     display: inline-block;
-    float: left;
     overflow: hidden;
 
     width: 100%;
@@ -10113,25 +10129,15 @@
 
     vertical-align: middle;
 }
-.wvusUikit .bootstrap-select.btn-group > .disabled,
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li.disabled > a
-{
-    cursor: not-allowed;
-}
-.wvusUikit .bootstrap-select.btn-group > .disabled:focus
-{
-    outline: none !important;
-}
-.wvusUikit .bootstrap-select.btn-group[class*='span'] .btn
+.wvusUikit .bootstrap-select.btn-group[class*='col-'] .btn
 {
     width: 100%;
 }
 .wvusUikit .bootstrap-select.btn-group .dropdown-menu
 {
-    z-index: 2000;
+    z-index: 1035;
 
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     min-width: 100%;
 }
 .wvusUikit .bootstrap-select.btn-group .dropdown-menu.inner
@@ -10145,67 +10151,95 @@
     border-radius: 0;
     box-shadow: none;
 }
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu dt
-{
-    display: block;
-
-    padding: 3px 20px;
-
-    cursor: default;
-}
-.wvusUikit .bootstrap-select.btn-group .div-contain
-{
-    overflow: hidden;
-}
 .wvusUikit .bootstrap-select.btn-group .dropdown-menu li
 {
     position: relative;
 }
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li > a.opt
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) a:hover small,
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) a:focus small,
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) a small
 {
-    position: relative;
-
-    padding-left: 35px;
+    color: #64b1d8;
+    color: rgba(100, 177, 216, .4);
 }
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li > a
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li.disabled a
+{
+    cursor: not-allowed;
+}
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li a
 {
     cursor: pointer;
 }
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li > dt small
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li a.opt
 {
-    font-weight: normal;
+    position: relative;
+
+    padding-left: 2.25em;
 }
-.wvusUikit .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li a span.check-mark
+{
+    display: none;
+}
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li a span.text
+{
+    display: inline-block;
+}
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu li small
+{
+    padding-left: .5em;
+}
+.wvusUikit .bootstrap-select.btn-group .dropdown-menu .notify
+{
+    position: absolute;
+    bottom: 5px;
+
+    box-sizing: border-box;
+    width: 96%;
+    min-height: 26px;
+    margin: 0 2%;
+    padding: 3px 5px;
+
+    pointer-events: none;
+
+    opacity: .9;
+    border: 1px solid #e3e3e3;
+    background: #f5f5f5;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.wvusUikit .bootstrap-select.btn-group .no-results
+{
+    margin: 0 5px;
+    padding: 3px;
+
+    background: #f5f5f5;
+}
+.wvusUikit .bootstrap-select.btn-group.fit-width .btn .filter-option
+{
+    position: static;
+}
+.wvusUikit .bootstrap-select.btn-group.fit-width .btn .caret
+{
+    position: static;
+    top: auto;
+
+    margin-top: -1px;
+}
+.wvusUikit .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark
 {
     position: absolute;
     right: 15px;
 
     display: inline-block;
 
-    margin-top: 2.5px;
-}
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li a i.check-mark
-{
-    display: none;
+    margin-top: 5px;
 }
 .wvusUikit .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text
 {
     margin-right: 34px;
 }
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li small
+.wvusUikit .bootstrap-select.show-menu-arrow.open > .btn
 {
-    padding-left: .5em;
-}
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:hover small,
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:focus small,
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) > a small
-{
-    color: #64b1d8;
-    color: rgba(255, 255, 255, .4);
-}
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu li > dt small
-{
-    font-weight: normal;
+    z-index: 1036;
 }
 .wvusUikit .bootstrap-select.show-menu-arrow .dropdown-toggle:before
 {
@@ -10213,14 +10247,15 @@
     bottom: -4px;
     left: 9px;
 
-    display: inline-block;
     display: none;
 
     content: '';
 
     border-right: 7px solid transparent;
-    border-bottom: 7px solid #ccc;
-    border-bottom-color: rgba(0, 0, 0, .2);
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    border-bottom-color: rgba(204, 204, 204, .2);
     border-left: 7px solid transparent;
 }
 .wvusUikit .bootstrap-select.show-menu-arrow .dropdown-toggle:after
@@ -10229,7 +10264,6 @@
     bottom: -4px;
     left: 10px;
 
-    display: inline-block;
     display: none;
 
     content: '';
@@ -10243,8 +10277,10 @@
     top: -3px;
     bottom: auto;
 
-    border-top: 7px solid #ccc;
-    border-top-color: rgba(0, 0, 0, .2);
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-top-color: #ccc;
+    border-top-color: rgba(204, 204, 204, .2);
     border-bottom: 0;
 }
 .wvusUikit .bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:after
@@ -10252,7 +10288,7 @@
     top: -3px;
     bottom: auto;
 
-    border-top: 6px solid #fff;
+    border-top: 6px solid white;
     border-bottom: 0;
 }
 .wvusUikit .bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:before
@@ -10270,31 +10306,30 @@
 {
     display: block;
 }
-.wvusUikit .bootstrap-select.btn-group .no-results
+.wvusUikit .bs-searchbox,
+.wvusUikit .bs-actionsbox
 {
-    margin: 0 5px;
-    padding: 3px;
-
-    background: #f5f5f5;
+    padding: 4px 8px;
 }
-.wvusUikit .bootstrap-select.btn-group .dropdown-menu .notify
+.wvusUikit .bs-actionsbox
 {
-    position: absolute;
-    bottom: 5px;
+    float: left;
 
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
-    width: 96%;
-    min-height: 26px;
-    margin: 0 2%;
-    padding: 3px 5px;
-
-    pointer-events: none;
-
-    opacity: .9;
-    border: 1px solid #e3e3e3;
-    background: #f5f5f5;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    width: 100%;
+}
+.wvusUikit .bs-actionsbox .btn-group button
+{
+    width: 50%;
+}
+.wvusUikit .bs-searchbox + .bs-actionsbox
+{
+    padding: 0 8px 4px;
+}
+.wvusUikit .bs-searchbox input.form-control
+{
+    width: 100%;
+    margin-bottom: 0;
 }
 .wvusUikit .mobile-device
 {
@@ -10308,50 +10343,6 @@
     height: 100% !important;
 
     opacity: 0;
-}
-.wvusUikit .bootstrap-select.fit-width
-{
-    width: auto !important;
-}
-.wvusUikit .bootstrap-select.btn-group.fit-width .btn .filter-option
-{
-    position: static;
-}
-.wvusUikit .bootstrap-select.btn-group.fit-width .btn .caret
-{
-    position: static;
-    top: auto;
-
-    margin-top: -1px;
-}
-.wvusUikit .control-group.error .bootstrap-select .dropdown-toggle
-{
-    border-color: #b94a48;
-}
-.wvusUikit .bootstrap-select-searchbox,
-.wvusUikit .bootstrap-select .bs-actionsbox
-{
-    padding: 4px 8px;
-}
-.wvusUikit .bootstrap-select .bs-actionsbox
-{
-    float: left;
-
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
-    width: 100%;
-}
-.wvusUikit .bootstrap-select-searchbox + .bs-actionsbox
-{
-    padding: 0 8px 4px;
-}
-.wvusUikit .bootstrap-select-searchbox input
-{
-    margin-bottom: 0;
-}
-.wvusUikit .bootstrap-select .bs-actionsbox .btn-group button
-{
-    width: 50%;
 }
 .wvusUikit .vjs-default-skin
 {

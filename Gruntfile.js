@@ -57,7 +57,7 @@
         '<%= uikit.bootstrapJsPath %>tab.js',
         '<%= uikit.bootstrapJsPath %>affix.js',
         '<%= uikit.datepickerPath %>js/bootstrap-datepicker.js',
-        '<%= uikit.bootstrapSelectPath %>bootstrap-select.js',
+        '<%= uikit.bootstrapSelectPath %>js/bootstrap-select.js',
         '<%= uikit.videojsPath %>video.dev.js',
         '<%= uikit.videojsYoutubePath %>src/media.youtube.js',
         '<%= uikit.spinjsPath %>spin.js',
