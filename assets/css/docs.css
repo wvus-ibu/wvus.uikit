@@ -132,12 +132,9 @@ html {
 .wvusUikit .docs-example [class^=col-] {
   margin-bottom: 10px;
 }
-.wvusUikit .docs-example .close {
-  float: none;
-}
 .wvusUikit .callout {
   border: 1px solid #333333;
-  padding: 4px 12px;
+  padding: 6px 16px;
   margin: 10px auto;
   border-radius: 4px;
 }
@@ -173,6 +170,10 @@ html {
 .wvusUikit #favorite-icons [class*="col-"]:hover i,
 .wvusUikit #favorite-icons [class*="col-"]:focus i {
   font-size: 30px;
+}
+.wvusUikit .docs-example > .btn-group {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .wvusUikit body {
   margin-bottom: 100px;
@@ -251,6 +252,7 @@ html {
 }
 .wvusUikit .site-title {
   margin-top: 0;
+  margin-bottom: 0;
   vertical-align: top;
 }
 .wvusUikit #sector .row {
@@ -265,7 +267,7 @@ html {
   padding-bottom: 5px;
 }
 .wvusUikit #docs-nav .nav li.active a {
-  background-color: #006699;
+  background-color: #ff6600;
   color: #ffffff;
 }
 .wvusUikit #docs-nav .nav li a,

@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/569c96b8-28b5-4e11-8e74-5b6922bf01c0.css"/>
     <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
@@ -16,6 +17,7 @@
 
     <!-- Modernizr with Shiv -->
     <script type="text/javascript" src="../../../assets/wvus.uikit/js/modernizr.js"></script>
+
 
 
     <!-- Le fav and touch icons -->
@@ -30,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -95,7 +97,7 @@
     <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="fa fa-caret-right"></i></a>
     <ul class="nav collapse  in " id="typography">
       <li><a href="../../../elements/typography/headings">Headings</a></li>
-      <li class="active"><a href="../../../elements/typography/body">Body Text</a></li>
+      <li><a href="../../../elements/typography/body">Body Text</a></li>
       <li><a href="../../../elements/typography/bold">Bold</a></li>
       <li><a href="../../../elements/typography/italics">Italics</a></li>
       <li><a href="../../../elements/typography/alignment">Alignment</a></li>
@@ -158,6 +160,7 @@
       <li><a href="../../../elements/forms/radio-styled">Styled Radio Buttons</a></li>
       <li><a href="../../../elements/forms/inline-form">Inline form</a></li>
       <li><a href="../../../elements/forms/horizontal-form">Horizontal form</a></li>
+      <li><a href="../../../elements/forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
@@ -205,7 +208,8 @@
           <li><a href="../../../elements/buttons/group/vertical">Vertical</a></li>
           <li><a href="../../../elements/buttons/group/sizing">Sizing</a></li>
           <li><a href="../../../elements/buttons/group/nesting">Nesting</a></li>
-          <li><a href="../../../elements/buttons/group/justified">Justified</a></li>
+          <li><a href="../../../elements/buttons/group/justified-links">Justified <code>&lt;a&gt;</code></a></li>
+          <li><a href="../../../elements/buttons/group/justified-button">Justified<code>&lt;button&gt;</code></a></li>
 
         </ul>
       </li>
@@ -312,7 +316,7 @@
   <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="fa fa-caret-right"></i></a>
   <ul class="nav collapse " id="alerts">
     <li><a href="../../../elements/alerts/default">Default</a></li>
-    <li><a href="../../../elements/alerts/dismissable">Dismissable</a></li>
+    <li><a href="../../../elements/alerts/dismissible">Dismissible</a></li>
     <li><a href="../../../elements/alerts/links">Links</a></li>
     <li><a href="../../../elements/alerts/javascript">JavaScript</a></li>
   </ul>
@@ -441,10 +445,19 @@
         </div>
       </div>
       <div class="col-md-9">
-        <header class="page-header" id="headerTitle">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
+        <div class="alert alert-info" role="alert">
+
+  <p><i class="fa fa-info-circle"></i> Gill Sans is provided via <a href="http://www.fonts.com/">Fonts.com</a> a web font service. A snippet of JavaScript needs to be obtained before the fonts can be used.</p>
+</div>
+<header class="page-header" id="headerTitle">
   <h1>Typography - Body copy</h1>
   <p class="subheader lead">
-    UiKit's global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).
+    UiKit's global default <code>font-size</code> is <strong>18px</strong>, with a <code>line-height</code> of <strong>26px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (13px by default).
   </p>
 </header>
 
@@ -461,15 +474,13 @@
 
 <!-- HTML Code -->
 <div class="docs-html">
-  <div class="highlight"><pre><code class="html">  <span class="nt">&lt;p&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>
     Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 
     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
 
     Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-  <span class="nt">&lt;/p&gt;</span>
-  
-</code></pre></div>
+  <span class="nt">&lt;/p&gt;</span></code></pre></div>
 </div>
 
 
@@ -490,11 +501,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../../../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../../../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -509,9 +522,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../../../assets/js/jquery.mobile.js',
         load: [
         '../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../assets/js/spin.min.js',
+        '../../../assets/js/jquery.spin.js',
         '../../../assets/js/application.js'
         ]
     });

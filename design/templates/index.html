@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/569c96b8-28b5-4e11-8e74-5b6922bf01c0.css"/>
     <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../assets/css/pygments.css">
@@ -16,6 +17,7 @@
 
     <!-- Modernizr with Shiv -->
     <script type="text/javascript" src="../../assets/wvus.uikit/js/modernizr.js"></script>
+
 
 
     <!-- Le fav and touch icons -->
@@ -30,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -111,7 +113,7 @@
     <a href="../../design/brand/typography/">Typography</a>
   </li>
   <li>Web Tools</li>
-  <li  class="active" >
+  <li >
     <a href="../../design/templates">Templates</a>
   </li>
   <li >
@@ -130,21 +132,23 @@
         </div>
       </div>
       <div class="col-md-9">
+        
           <header class="page-header">
     <h1>Templates</h1>
   </header>
   <div id="main">
-    <h3 id="12column_grid">12-column grid</h3>
+    <h3 id="column-grid">12-column grid</h3>
 
-<p>Every page on the World Vision website is 940 px wide and laid out within a 12 column grid. Each column has a width size of 60 px with a 20 px gutter between each column. Page elements should be sized and laid out to fit within these boundaries. Flexibility of layout is encouraged so long as all elements fit within the grid.</p>
+<p>Every page on the World Vision website is 940 px wide and laid out within a 12 column grid. Each column has a width size of 60 px with a 20 px gutter between each column. Page elements should be sized and laid out to fit within these boundaries.  Flexibility of layout is encouraged so long as all elements fit within the grid.</p>
 
-<p><span class='label label-info'>FYI:</span> An example with code can be found <a href="../../elements//grid/basic">here</a></p>
+<p><span class="label label-info">FYI:</span> An example with code can be found <a href="../../elements//grid/basic">here</a></p>
 
 <h4 id="example">Example</h4>
 
 <p>Below is an example showing a page using the grid.</p>
 
 <p><img src="../../assets/img/wvus/grid-sample.png" alt="Grid Example" /></p>
+
   </div>
 
       </div>
@@ -161,11 +165,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -180,9 +186,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../../assets/js/jquery.mobile.js',
         load: [
         '../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../assets/js/spin.min.js',
+        '../../assets/js/jquery.spin.js',
         '../../assets/js/application.js'
         ]
     });

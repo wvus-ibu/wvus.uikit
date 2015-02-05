@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/569c96b8-28b5-4e11-8e74-5b6922bf01c0.css"/>
     <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
@@ -16,6 +17,7 @@
 
     <!-- Modernizr with Shiv -->
     <script type="text/javascript" src="../../../assets/wvus.uikit/js/modernizr.js"></script>
+
 
 
     <!-- Le fav and touch icons -->
@@ -30,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -85,7 +87,7 @@
   <li>
     <a href="#" data-toggle="collapse" data-target="#grid-nav">Grid <i class="fa fa-caret-right"></i></a>
     <ul class="nav collapse  in " id="grid-nav">
-      <li class="active"><a href="../../../elements/grid/basic">Basic</a></li>
+      <li><a href="../../../elements/grid/basic">Basic</a></li>
       <li><a href="../../../elements/grid/nested">Nested</a></li>
       <li><a href="../../../elements/grid/offset">Offset</a></li>
     </ul>
@@ -158,6 +160,7 @@
       <li><a href="../../../elements/forms/radio-styled">Styled Radio Buttons</a></li>
       <li><a href="../../../elements/forms/inline-form">Inline form</a></li>
       <li><a href="../../../elements/forms/horizontal-form">Horizontal form</a></li>
+      <li><a href="../../../elements/forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
@@ -205,7 +208,8 @@
           <li><a href="../../../elements/buttons/group/vertical">Vertical</a></li>
           <li><a href="../../../elements/buttons/group/sizing">Sizing</a></li>
           <li><a href="../../../elements/buttons/group/nesting">Nesting</a></li>
-          <li><a href="../../../elements/buttons/group/justified">Justified</a></li>
+          <li><a href="../../../elements/buttons/group/justified-links">Justified <code>&lt;a&gt;</code></a></li>
+          <li><a href="../../../elements/buttons/group/justified-button">Justified<code>&lt;button&gt;</code></a></li>
 
         </ul>
       </li>
@@ -312,7 +316,7 @@
   <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="fa fa-caret-right"></i></a>
   <ul class="nav collapse " id="alerts">
     <li><a href="../../../elements/alerts/default">Default</a></li>
-    <li><a href="../../../elements/alerts/dismissable">Dismissable</a></li>
+    <li><a href="../../../elements/alerts/dismissible">Dismissible</a></li>
     <li><a href="../../../elements/alerts/links">Links</a></li>
     <li><a href="../../../elements/alerts/javascript">JavaScript</a></li>
   </ul>
@@ -441,12 +445,90 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../../../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
         <header class="page-header" id="headerTitle">
   <h1>Grid - Basic</h1>
   <p class="subheader lead">
-    The default  grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without responsive features enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.
+    The default grid system utilizes <strong>12 columns</strong>, and is built for mobile first by incorporating a grid for each device into one. The table below defines how the grid system works and how the 4 grids work with different screen sizes.
   </p>
 </header>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>
+          Extra small devices
+          <small>Phones (&lt;768px and lower)</small>
+        </th>
+        <th>
+          Small devices
+          <small>Tablets (&ge;768px and up)</small>
+        </th>
+        <th>
+          Medium devices
+          <small>Desktops (&ge;992px and up)</small>
+        </th>
+        <th>
+          Large devices
+          <small>Desktops (&ge;1200px and up)</small>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Grid behavior</th>
+        <td>Horizontal at all times</td>
+        <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+      </tr>
+      <tr>
+        <th>Container width</th>
+        <td>None (auto)</td>
+        <td>750px</td>
+        <td>970px</td>
+        <td>1170px</td>
+      </tr>
+      <tr>
+        <th>Class prefix</th>
+        <td><code>.col-xs-</code></td>
+        <td><code>.col-sm-</code></td>
+        <td><code>.col-md-</code></td>
+        <td><code>.col-lg-</code></td>
+      </tr>
+      <tr>
+        <th># of columns</th>
+        <td colspan="4">12</td>
+      </tr>
+      <tr>
+        <th>Column width</th>
+        <td class="text-muted">Auto</td>
+        <td>60px</td>
+        <td>78px</td>
+        <td>95px</td>
+      </tr>
+      <tr>
+        <th>Gutter width</th>
+        <td colspan="4">30px (15px on each side of a column)</td>
+      </tr>
+      <tr>
+        <th>Nestable</th>
+        <td colspan="4">Yes</td>
+      </tr>
+      <tr>
+        <th>Offsets</th>
+        <td colspan="4">Yes</td>
+      </tr>
+      <tr>
+        <th>Column ordering</th>
+        <td colspan="4">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <!-- Preview -->
 <div class="docs-example" >
@@ -508,7 +590,7 @@
 
 
 <!-- HTML Code -->
-  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
 
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-1&quot;</span><span class="nt">&gt;</span>
     .col-md-1
@@ -587,9 +669,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-6&quot;</span><span class="nt">&gt;</span>
     .col-md-6
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-  
-</code></pre></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
 
@@ -609,11 +689,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../../../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../../../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -628,9 +710,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../../../assets/js/jquery.mobile.js',
         load: [
         '../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../assets/js/spin.min.js',
+        '../../../assets/js/jquery.spin.js',
         '../../../assets/js/application.js'
         ]
     });

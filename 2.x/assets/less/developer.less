@@ -1,0 +1,126 @@
+/*
+*  This LESS is for the developer documentation.
+*  None of this is need to make the UiKit work
+*/
+
+
+.subheader{
+  margin: 20px 0 30px 0;
+}
+
+// Spin example
+// -------------
+.spin-example {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+
+
+
+
+// Grid Example
+.grid-example{
+  margin-bottom: 20px;
+  [class*="col-"]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: @well-bg;
+    border: 1px solid @well-border;
+  }
+}
+
+
+
+// Scrollspy Example
+.scrollspy-example {
+  height: 200px;
+  overflow: auto;
+  position: relative;
+}
+
+
+#docs-nav{
+  margin-top: 10px;
+}
+
+.docs-example > .dropdown > .dropdown-menu{
+  display: block;
+  position: static;
+  margin-bottom: 5px;
+}
+
+// Styles for examples
+// ------------------------------
+
+
+
+.docs-example{
+  margin-bottom: 20px;
+  background-color: #fff;
+  .clearfix();
+
+  [class^=col-] {
+    margin-bottom: 10px;
+  }
+  .close{
+    float: none;
+  }
+
+}
+.callout {
+  border: 1px solid @gray-dark;
+  padding: @padding-base-vertical @padding-base-horizontal;
+  margin: 10px auto;
+  border-radius: @border-radius-base;
+}
+
+
+.context-bg-example{
+  p{
+    padding: 20px;
+  }
+}
+
+#myCarousel {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#demo-collapse {
+  margin-top: 20px;
+}
+
+.tooltip-example .btn {
+  margin-right: 10px;
+}
+
+.popover-example .btn {
+  margin-right: 10px;
+}
+
+#favorite-icons {
+  [class*="col-"]{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: @border-radius-base;
+    &:hover{
+      background-color: @brand-secondary;
+      color: #fff;
+    }
+    .fa {
+      line-height: 32px;
+    }
+    &:hover i,
+    &:focus i {
+      font-size: 30px;
+    }
+  }
+}
+
+
+
+

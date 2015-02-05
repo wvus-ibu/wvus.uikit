@@ -3,7 +3,6 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 (function($){
-  $(document).ready(function(){
 
     var $window = $(window);
   // Offcanvas Sidenav
@@ -176,6 +175,6 @@ $('#docs-nav .collapse').on('hide.bs.collapse', function(){
  $(this).prev().find("i").removeClass('fa-caret-down').addClass('fa-caret-right');
 });
 
-});
+$('.datepicker').datepicker();
 
 }(window.wvusUikit));

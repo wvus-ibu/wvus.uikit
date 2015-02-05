@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/569c96b8-28b5-4e11-8e74-5b6922bf01c0.css"/>
     <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
@@ -16,6 +17,7 @@
 
     <!-- Modernizr with Shiv -->
     <script type="text/javascript" src="../../../assets/wvus.uikit/js/modernizr.js"></script>
+
 
 
     <!-- Le fav and touch icons -->
@@ -30,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -85,7 +87,7 @@
   <li>
     <a href="#" data-toggle="collapse" data-target="#logo"><i class="fa fa-caret-right"></i> Logo</a>
     <ul class="nav collapse  in " id="logo">
-      <li  class="active" >
+      <li >
         <a href="../../../design/brand/logo/">Overview</a>
       </li>
       <li >
@@ -130,6 +132,7 @@
         </div>
       </div>
       <div class="col-md-9">
+        
           <header class="page-header">
     <h1>World Vision Logo</h1>
   </header>
@@ -138,21 +141,18 @@
 
 <p>All of the graphic elements (horizon, logotype, cross/star, white background, and registration mark) must always be shown together as displayed here. None of the constituent elements of the logo may be shown separately in any context.</p>
 
-<h3 id="logo_use">Logo use</h3>
+<h3 id="logo-use">Logo use</h3>
 
 <ul>
-<li>The World Vision logo must always be reproduced from the original .eps vector or original .jpg bitmap artwork. Never recreate the World Vision logo.</li>
-
-<li>The World Vision logo should always appear in the upper left corner of the website, with the horizontal tagline “lock-up”.</li>
-
-<li>When the World Vision logo is used on external sites, the logo should always link to <a href="http://www.worldvision.org">worldvision.org</a>.</li>
-
-<li>The World Vision logo must always appear on a solid white background.</li>
-
-<li>The World Vision logo must always have adequate “padding” around the edges. Use the measurements below to ensure adequate protected space between the logo and any surrounding text or images.</li>
+  <li>The World Vision logo must always be reproduced from the original .eps vector or original .jpg bitmap artwork. Never recreate the World Vision logo.</li>
+  <li>The World Vision logo should always appear in the upper left corner of the website, with the horizontal tagline “lock-up”.</li>
+  <li>When the World Vision logo is used on external sites, the logo should always link to <a href="http://www.worldvision.org">worldvision.org</a>.</li>
+  <li>The World Vision logo must always appear on a solid white background.</li>
+  <li>The World Vision logo must always have adequate “padding” around the edges. Use the measurements below to ensure adequate protected space between the logo and any surrounding text or images.</li>
 </ul>
 
 <p><img src="../../../assets/img/wvus/wvlogo-spacing.png" alt="Logo spacing" /></p>
+
   </div>
 
       </div>
@@ -169,11 +169,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../../../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../../../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -188,9 +190,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../../../assets/js/jquery.mobile.js',
         load: [
         '../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../assets/js/spin.min.js',
+        '../../../assets/js/jquery.spin.js',
         '../../../assets/js/application.js'
         ]
     });

@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/569c96b8-28b5-4e11-8e74-5b6922bf01c0.css"/>
     <link href="../../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../../../../assets/css/pygments.css">
@@ -16,6 +17,7 @@
 
     <!-- Modernizr with Shiv -->
     <script type="text/javascript" src="../../../../assets/wvus.uikit/js/modernizr.js"></script>
+
 
 
     <!-- Le fav and touch icons -->
@@ -30,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -130,11 +132,12 @@
         </div>
       </div>
       <div class="col-md-9">
+        
           <header class="page-header">
     <h1>Typography Examples</h1>
   </header>
   <div id="main">
-    <table class='table table-striped table-hover table-bordered'>
+    <table class="table table-striped table-hover table-bordered">
   <thead>
     <tr>
       <th>
@@ -452,13 +455,13 @@
         Gill Sans Bold, 16pt, 20pt
       </td>
       <td>
-        White (#FFFFFF) w/ right angle bracket (>)
+        White (#FFFFFF) w/ right angle bracket (&gt;)
       </td>
       <td>
         N/A
       </td>
       <td>
-        Example >
+        Example &gt;
       </td>
     </tr>
     <tr>
@@ -548,17 +551,15 @@
     </tr>
   </tbody>
 </table>
+
 <ul>
-<li>Text link colors are blue with no underline until mouse over. On mouse over, all text links should render as blue (#006699) with underline.</li>
-
-<li>Depending on style, a header link should not include an underline until mouse over.</li>
-
-<li>Footer (bottom corporate navigation) is blue (#006699) with no underline until mouse over.</li>
-
-<li>Visited link colors do not need to be defined as a different color.</li>
-
-<li>Lists of items, especially, should not have underlined links. The items that are links may, of course, underline when the user hovers over the link.</li>
+  <li>Text link colors are blue with no underline until mouse over. On mouse over, all text links should render as blue (#006699) with underline.</li>
+  <li>Depending on style, a header link should not include an underline until mouse over.</li>
+  <li>Footer (bottom corporate navigation) is blue (#006699) with no underline until mouse over.</li>
+  <li>Visited link colors do not need to be defined as a different color.</li>
+  <li>Lists of items, especially, should not have underlined links. The items that are links may, of course, underline when the user hovers over the link.</li>
 </ul>
+
   </div>
 
       </div>
@@ -575,11 +576,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../../../../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../../../../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -594,9 +597,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../../../../assets/js/jquery.mobile.js',
         load: [
         '../../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../../assets/js/spin.min.js',
+        '../../../../assets/js/jquery.spin.js',
         '../../../../assets/js/application.js'
         ]
     });

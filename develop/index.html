@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <!-- Main css -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/569c96b8-28b5-4e11-8e74-5b6922bf01c0.css"/>
     <link href="../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
     <!-- CSS libraries -->
     <link rel="stylesheet" type="text/css" href="../assets/css/pygments.css">
@@ -16,6 +17,7 @@
 
     <!-- Modernizr with Shiv -->
     <script type="text/javascript" src="../assets/wvus.uikit/js/modernizr.js"></script>
+
 
 
     <!-- Le fav and touch icons -->
@@ -30,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -72,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -81,7 +83,7 @@
         <div class="panel panel-default">
           
           <ul class="nav ">
-  <li  class="active" >
+  <li >
     <a href="../develop/">Develop Info</a>
   </li>
   <li >
@@ -105,6 +107,11 @@
         </div>
       </div>
       <div class="col-md-9">
+        
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="../v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        
           <header class="page-header">
     <h1>Develop with the World Vision UiKit</h1>
   </header>
@@ -112,13 +119,15 @@
     <p>The UiKit is only one part of the World Vision Web Style Guide. The UiKit is a collection of web components and widgets designed to easily provide the styles needed to create a World Vision branded web site.</p>
 
 <h3 id="download">Download</h3>
-<div class='row clearfix'>
-  <div class='col-xs-12'>
-    <a class='btn btn-primary pull-left' href='https://github.com/wvus-ibu/wvus.uikit/releases/download/v2.0.0/wvus.uikit-2.0.0.zip' style='margin-right: 20px;'>Compiled Code</a>
+<div class="row clearfix">
+  <div class="col-xs-12">
+    <a href="https://github.com/wvus-ibu/wvus.uikit/releases/download/v3.0.0/wvus.uikit-3.0.0.zip" class="btn btn-primary pull-left" style="margin-right: 20px;">Compiled Code</a>
 
-    <a class='btn btn-default' href='https://github.com/wvus-ibu/wvus.uikit/archive/v2.0.0.zip'>Source Code</a>
+    <a href="https://github.com/wvus-ibu/wvus.uikit/archive/v3.0.0.zip" class="btn btn-default">Source Code</a>
   </div>
 </div>
+
+
   </div>
 
       </div>
@@ -135,11 +144,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -154,9 +165,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../assets/js/jquery.mobile.js',
         load: [
         '../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../assets/js/spin.min.js',
+        '../assets/js/jquery.spin.js',
         '../assets/js/application.js'
         ]
     });
