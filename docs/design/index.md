@@ -2,6 +2,7 @@
 layout: content
 title: Intro
 name: intro
+path: ../
 ---
 This website should be used as a guideline to develop and maintain all World Vision U.S. digital properties, including the interface for the WorldVision.org corporate website, microsites, mobile site and social media channels.
 

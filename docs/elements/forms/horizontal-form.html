@@ -5,86 +5,93 @@ snippet: horizontal-form
 group: forms
 hasJs: false
 name: forms-horizontal-form
+path: ../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Right align labels and float them to the left to make them appear on the same line as controls. Requires the most markup changes from a default form:
-    </p>
-    <ul>
-      <li>Add <code>.form-horizontal</code> to the form</li>
-      <li>Wrap labels and controls in <code>.control-group</code></li>
-      <li>Add <code>.control-label</code> to the label</li>
-      <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
-    </ul>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Right align labels and float them to the left to make them appear on the same line as controls. Requires the most markup changes from a default form:
+  </p>
+  <ul>
+    <li>Add <code>.form-horizontal</code> to the form</li>
+    <li>Wrap labels and controls in <code>.form-group</code></li>
+    <li>Add <code>.control-label</code> to the label</li>
+    <li>Wrap any associated controls with the proper grid <code>col-md-*</code> for sizing</li>
+  </ul>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <form class="form-horizontal">
-                <div class="control-group">
-                  <label class="control-label" for="inputEmail">Email</label>
-                  <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Email">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="inputPassword">Password</label>
-                  <div class="controls">
-                    <input type="password" id="inputPassword" placeholder="Password">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="controls">
-                    <label class="checkbox">
-                      <input type="checkbox"> Remember me
-                    </label>
-                    <button type="submit" class="btn">Sign in</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="inputEmail">Email</label>
+      <div class="col-sm-10">
+        <input type="text" id="inputEmail" placeholder="Email" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="inputPassword">Password</label>
+      <div class="col-sm-10">
+        <input type="password" id="inputPassword" placeholder="Password" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<form class="form-horizontal">
-  <div class="control-group">
-    <label class="control-label" for="inputEmail">Email</label>
-    <div class="controls">
-      <input type="text" id="inputEmail" placeholder="Email">
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+ <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="inputEmail">Email</label>
+      <div class="col-sm-10">
+        <input type="text" id="inputEmail" placeholder="Email" class="form-control">
+      </div>
     </div>
-  </div>
-  <div class="control-group">
-    <label class="control-label" for="inputPassword">Password</label>
-    <div class="controls">
-      <input type="password" id="inputPassword" placeholder="Password">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="inputPassword">Password</label>
+      <div class="col-sm-10">
+        <input type="password" id="inputPassword" placeholder="Password" class="form-control">
+      </div>
     </div>
-  </div>
-  <div class="control-group">
-    <div class="controls">
-      <label class="checkbox">
-        <input type="checkbox"> Remember me
-      </label>
-      <button type="submit" class="btn">Sign in</button>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
     </div>
-  </div>
-</form>
-{% endhighlight %}
-            </div>
-          </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </div>
+    </div>
+  </form>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

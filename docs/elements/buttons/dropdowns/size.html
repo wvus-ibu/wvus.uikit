@@ -5,103 +5,100 @@ snippet: dropdown
 group: buttons
 hasJs: false
 name: buttons-dropdown-size
+path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Button dropdowns work at any size: <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code>.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Button dropdowns work at any size: <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code>.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <!-- Large -->
-              <div class="btn-group">
-                <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large <i class="icon-caret-down"></i></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#" tabindex="-1">Action</a></li>
-                  <li><a href="#" tabindex="-1">Action Two</a></li>
-                </ul>
-              </div>
+<!-- Preview -->
+<div class="docs-example">
+  <!-- Large -->
+  <div class="btn-group">
+    <button class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">Large <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
 
-              <!-- Default -->
-              <div class="btn-group">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Default <i class="icon-caret-down"></i></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="" tabindex="-1">Action</a></li>
-                  <li><a href="" tabindex="-1">Action Two</a></li>
-                </ul>
-              </div>
+  <!-- Default -->
+  <div class="btn-group">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
 
-              <!-- Small -->
-              <div class="btn-group">
-                <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Small <i class="icon-caret-down"></i></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="" tabindex="-1">Action</a></li>
-                  <li><a href="" tabindex="-1">Action Two</a></li>
-                </ul>
-              </div>
+  <!-- Small -->
+  <div class="btn-group">
+    <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Small <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
 
-              <!-- Mini -->
-              <div class="btn-group">
-                <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Mini <i class="icon-caret-down"></i></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="" tabindex="-1">Action</a></li>
-                  <li><a href="" tabindex="-1">Action Two</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<!-- Large -->
-<div class="btn-group">
-  <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large <i class="icon-caret-down"></i></button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="#" tabindex="-1">Action</a></li>
-    <li><a href="#" tabindex="-1">Action Two</a></li>
-  </ul>
+  <!-- Mini -->
+  <div class="btn-group">
+    <button class="btn btn-default btn-xs  dropdown-toggle" data-toggle="dropdown">Mini <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
 </div>
 
-<!-- Default -->
-<div class="btn-group">
-  <button class="btn dropdown-toggle" data-toggle="dropdown">Default <i class="icon-caret-down"></i></button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="" tabindex="-1">Action</a></li>
-    <li><a href="" tabindex="-1">Action Two</a></li>
-  </ul>
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+   <!-- Large -->
+  <div class="btn-group">
+    <button class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">Large <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+
+  <!-- Default -->
+  <div class="btn-group">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+
+  <!-- Small -->
+  <div class="btn-group">
+    <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Small <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+
+  <!-- Mini -->
+  <div class="btn-group">
+    <button class="btn btn-default btn-xs  dropdown-toggle" data-toggle="dropdown">Mini <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="" tabindex="-1">Action</a></li>
+      <li><a href="" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  {% endhighlight %}
 </div>
 
-<!-- Small -->
-<div class="btn-group">
-  <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Small <i class="icon-caret-down"></i></button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="" tabindex="-1">Action</a></li>
-    <li><a href="" tabindex="-1">Action Two</a></li>
-  </ul>
-</div>
 
-<!-- Mini -->
-<div class="btn-group">
-  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Mini <i class="icon-caret-down"></i></button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="" tabindex="-1">Action</a></li>
-    <li><a href="" tabindex="-1">Action Two</a></li>
-  </ul>
-</div>
-{% endhighlight %}
-            </div>
-          </div>
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-js">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}

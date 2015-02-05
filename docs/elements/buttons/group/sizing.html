@@ -1,0 +1,68 @@
+---
+layout: default
+title: Buttons - Sizing
+snippet: group
+group: buttons
+hasJs: false
+name: buttons-group-sizing
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Wrap a series of buttons with a <code>.btn-group</code>.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example ">
+  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+    <button class="btn btn-default">Left</button>
+    <button class="btn btn-default">Center</button>
+    <button class="btn btn-default">Right</button>
+  </div>
+  <br/>
+  <div class="btn-group" role="group" aria-label="Regular button group">
+    <button class="btn btn-default">Left</button>
+    <button class="btn btn-default">Center</button>
+    <button class="btn btn-default">Right</button>
+  </div>
+  <br/>
+  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+    <button class="btn btn-default">Left</button>
+    <button class="btn btn-default">Center</button>
+    <button class="btn btn-default">Right</button>
+  </div>
+  <br/>
+  <div class="btn-group btn-group-xs" role="group" aria-label="Extra Small button group">
+    <button class="btn btn-default">Left</button>
+    <button class="btn btn-default">Center</button>
+    <button class="btn btn-default">Right</button>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="btn-group btn-group-lg">
+    ...
+  </div>
+  <div class="btn-group">
+    ...
+  </div>
+  <div class="btn-group btn-group-sm">
+    ...
+  </div>
+  <div class="btn-group btn-group-xs">
+    ...
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}

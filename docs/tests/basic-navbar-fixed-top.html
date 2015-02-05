@@ -3,84 +3,89 @@ layout: test
 name: navbar-fixed
 group: navbar
 ---
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li ><a href="#">Inactive</a></li>
-              <li ><a href="{{ site.baseurl }}/tests/basic-navbar-static-top">Basic Navbar Static</a></li>
-              <li class="active"><a href="{{ site.baseurl }}/tests/basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav pull-right">
-              <li><a href="{{ site.baseurl }}/tests/navbar/">Default</a></li>
-              <li><a href="{{ site.baseurl }}/tests/navbar-static-top/">Static top</a></li>
-              <li class="active"><a href="{{ site.baseurl }}/tests/navbar-fixed-top/">Fixed top</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
     </div>
 
-    <div class="container">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Inactive</a></li>
+        <li><a href="../basic-navbar-static-top">Basic Navbar Static</a></li>
+        <li class="active"><a href="../basic-navbar-fixed-top">Basic Navbar Fixed</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Default</a></li>
+        <li><a href="../navbar-static-top/">Static top</a></li>
+        <li class="active"><a href="../navbar-fixed-top/">Fixed top</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
+      <div class="jumbotron">
         <h1>Navbar example</h1>
         <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>
-          <a class="btn btn-large btn-primary" href="{{ site.baseurl }}/ui-elements/#navbar">View navbar docs &raquo;</a>
+          <a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/ui-elements/#navbar">View navbar docs &raquo;</a>
         </p>
       </div>
-        <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero fermentum lectus aliquam semper vel non orci. Vivamus leo risus, sagittis at ligula in, consequat tempus ligula. Mauris pulvinar mi vitae sodales lobortis. Praesent ultrices lorem felis, at volutpat enim dignissim et. Phasellus rutrum tellus nunc, nec tempor ligula varius et. Duis eu feugiat risus. Vivamus euismod auctor turpis, in porttitor nisl molestie ut. Phasellus sit amet fringilla elit, porta placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non blandit tortor. Morbi aliquam lorem quis neque vulputate luctus. Pellentesque nec metus ac augue mattis volutpat ut id quam. Integer venenatis, tellus at commodo congue, dolor nisi elementum diam, eu convallis arcu tortor nec est. Ut commodo purus ac venenatis malesuada. Donec eget hendrerit dui.
-  </p>
-  <p>
-    Suspendisse egestas, dui eget malesuada elementum, metus eros condimentum nisl, vel lacinia sem risus in risus. Integer adipiscing et nisi non vehicula. Nulla condimentum felis id enim porta, sed cursus felis placerat. Sed ultricies libero purus, eu ullamcorper lacus ultrices non. Phasellus gravida ligula vehicula laoreet fringilla. Nullam ultrices enim eros, nec tempus diam aliquet ac. Nunc vestibulum risus ut magna iaculis porttitor. Donec nec pretium felis, id ultrices orci. Etiam commodo viverra mauris ut vehicula.
-  </p>
-  <p>
-    Donec vitae lobortis arcu. Phasellus rutrum mollis eros, in placerat massa. Duis a lacus at metus luctus iaculis. Donec sollicitudin justo nisl, eu venenatis turpis consequat a. Praesent non molestie purus. Aenean dignissim pretium sem nec tempor. Phasellus volutpat rutrum egestas. Phasellus quis dignissim nulla, non volutpat nisl. Donec pulvinar auctor nisl ac lacinia. Sed odio odio, molestie sed nisl sed, imperdiet scelerisque enim.
-  </p>
-  <p>
-    Donec ut dui dui. Pellentesque congue quis elit a aliquet. Morbi vel congue erat, a accumsan dolor. Quisque suscipit at nulla a auctor. Integer at lacus mauris. Aenean faucibus fringilla tortor, bibendum aliquam mi mollis quis. Nulla neque metus, elementum sit amet sollicitudin sodales, congue sit amet tortor. Ut ut eros eget arcu varius tincidunt sit amet vel sapien. In ornare rhoncus aliquet. Vestibulum ullamcorper augue sit amet nisi lobortis, quis consequat nulla faucibus.
-  </p>
-  <p>
-  Vestibulum posuere eget velit et posuere. Vivamus viverra pulvinar dolor, nec viverra augue adipiscing cursus. Aliquam eget tortor pretium, eleifend lacus molestie, pulvinar massa. Maecenas accumsan ac augue sed vulputate. Donec sed tincidunt est, vel dapibus dui. Nullam id mi nibh. Mauris eget orci dapibus, rhoncus erat ut, elementum arcu. Nunc non venenatis velit. Sed nec ullamcorper tellus, vitae pharetra felis. Phasellus ut congue elit. Integer aliquam adipiscing augue ut pharetra. Proin eu condimentum eros, iaculis convallis sapien. Fusce ac dolor elit. Suspendisse a enim vitae enim volutpat varius a eleifend purus. Maecenas scelerisque aliquam ipsum et dapibus.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero fermentum lectus aliquam semper vel non orci. Vivamus leo risus, sagittis at ligula in, consequat tempus ligula. Mauris pulvinar mi vitae sodales lobortis. Praesent ultrices lorem felis, at volutpat enim dignissim et. Phasellus rutrum tellus nunc, nec tempor ligula varius et. Duis eu feugiat risus. Vivamus euismod auctor turpis, in porttitor nisl molestie ut. Phasellus sit amet fringilla elit, porta placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non blandit tortor. Morbi aliquam lorem quis neque vulputate luctus. Pellentesque nec metus ac augue mattis volutpat ut id quam. Integer venenatis, tellus at commodo congue, dolor nisi elementum diam, eu convallis arcu tortor nec est. Ut commodo purus ac venenatis malesuada. Donec eget hendrerit dui.
-  </p>
-  <p>
-    Suspendisse egestas, dui eget malesuada elementum, metus eros condimentum nisl, vel lacinia sem risus in risus. Integer adipiscing et nisi non vehicula. Nulla condimentum felis id enim porta, sed cursus felis placerat. Sed ultricies libero purus, eu ullamcorper lacus ultrices non. Phasellus gravida ligula vehicula laoreet fringilla. Nullam ultrices enim eros, nec tempus diam aliquet ac. Nunc vestibulum risus ut magna iaculis porttitor. Donec nec pretium felis, id ultrices orci. Etiam commodo viverra mauris ut vehicula.
-  </p>
-  <p>
-    Donec vitae lobortis arcu. Phasellus rutrum mollis eros, in placerat massa. Duis a lacus at metus luctus iaculis. Donec sollicitudin justo nisl, eu venenatis turpis consequat a. Praesent non molestie purus. Aenean dignissim pretium sem nec tempor. Phasellus volutpat rutrum egestas. Phasellus quis dignissim nulla, non volutpat nisl. Donec pulvinar auctor nisl ac lacinia. Sed odio odio, molestie sed nisl sed, imperdiet scelerisque enim.
-  </p>
-  <p>
-    Donec ut dui dui. Pellentesque congue quis elit a aliquet. Morbi vel congue erat, a accumsan dolor. Quisque suscipit at nulla a auctor. Integer at lacus mauris. Aenean faucibus fringilla tortor, bibendum aliquam mi mollis quis. Nulla neque metus, elementum sit amet sollicitudin sodales, congue sit amet tortor. Ut ut eros eget arcu varius tincidunt sit amet vel sapien. In ornare rhoncus aliquet. Vestibulum ullamcorper augue sit amet nisi lobortis, quis consequat nulla faucibus.
-  </p>
-  <p>
-  Vestibulum posuere eget velit et posuere. Vivamus viverra pulvinar dolor, nec viverra augue adipiscing cursus. Aliquam eget tortor pretium, eleifend lacus molestie, pulvinar massa. Maecenas accumsan ac augue sed vulputate. Donec sed tincidunt est, vel dapibus dui. Nullam id mi nibh. Mauris eget orci dapibus, rhoncus erat ut, elementum arcu. Nunc non venenatis velit. Sed nec ullamcorper tellus, vitae pharetra felis. Phasellus ut congue elit. Integer aliquam adipiscing augue ut pharetra. Proin eu condimentum eros, iaculis convallis sapien. Fusce ac dolor elit. Suspendisse a enim vitae enim volutpat varius a eleifend purus. Maecenas scelerisque aliquam ipsum et dapibus.
-  </p>
-    </div> <!-- /container -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero fermentum lectus aliquam semper vel non orci. Vivamus leo risus, sagittis at ligula in, consequat tempus ligula. Mauris pulvinar mi vitae sodales lobortis. Praesent ultrices lorem felis, at volutpat enim dignissim et. Phasellus rutrum tellus nunc, nec tempor ligula varius et. Duis eu feugiat risus. Vivamus euismod auctor turpis, in porttitor nisl molestie ut. Phasellus sit amet fringilla elit, porta placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non blandit tortor. Morbi aliquam lorem quis neque vulputate luctus. Pellentesque nec metus ac augue mattis volutpat ut id quam. Integer venenatis, tellus at commodo congue, dolor nisi elementum diam, eu convallis arcu tortor nec est. Ut commodo purus ac venenatis malesuada. Donec eget hendrerit dui.
+      </p>
+      <p>
+        Suspendisse egestas, dui eget malesuada elementum, metus eros condimentum nisl, vel lacinia sem risus in risus. Integer adipiscing et nisi non vehicula. Nulla condimentum felis id enim porta, sed cursus felis placerat. Sed ultricies libero purus, eu ullamcorper lacus ultrices non. Phasellus gravida ligula vehicula laoreet fringilla. Nullam ultrices enim eros, nec tempus diam aliquet ac. Nunc vestibulum risus ut magna iaculis porttitor. Donec nec pretium felis, id ultrices orci. Etiam commodo viverra mauris ut vehicula.
+      </p>
+      <p>
+        Donec vitae lobortis arcu. Phasellus rutrum mollis eros, in placerat massa. Duis a lacus at metus luctus iaculis. Donec sollicitudin justo nisl, eu venenatis turpis consequat a. Praesent non molestie purus. Aenean dignissim pretium sem nec tempor. Phasellus volutpat rutrum egestas. Phasellus quis dignissim nulla, non volutpat nisl. Donec pulvinar auctor nisl ac lacinia. Sed odio odio, molestie sed nisl sed, imperdiet scelerisque enim.
+      </p>
+      <p>
+        Donec ut dui dui. Pellentesque congue quis elit a aliquet. Morbi vel congue erat, a accumsan dolor. Quisque suscipit at nulla a auctor. Integer at lacus mauris. Aenean faucibus fringilla tortor, bibendum aliquam mi mollis quis. Nulla neque metus, elementum sit amet sollicitudin sodales, congue sit amet tortor. Ut ut eros eget arcu varius tincidunt sit amet vel sapien. In ornare rhoncus aliquet. Vestibulum ullamcorper augue sit amet nisi lobortis, quis consequat nulla faucibus.
+      </p>
+      <p>
+        Vestibulum posuere eget velit et posuere. Vivamus viverra pulvinar dolor, nec viverra augue adipiscing cursus. Aliquam eget tortor pretium, eleifend lacus molestie, pulvinar massa. Maecenas accumsan ac augue sed vulputate. Donec sed tincidunt est, vel dapibus dui. Nullam id mi nibh. Mauris eget orci dapibus, rhoncus erat ut, elementum arcu. Nunc non venenatis velit. Sed nec ullamcorper tellus, vitae pharetra felis. Phasellus ut congue elit. Integer aliquam adipiscing augue ut pharetra. Proin eu condimentum eros, iaculis convallis sapien. Fusce ac dolor elit. Suspendisse a enim vitae enim volutpat varius a eleifend purus. Maecenas scelerisque aliquam ipsum et dapibus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero fermentum lectus aliquam semper vel non orci. Vivamus leo risus, sagittis at ligula in, consequat tempus ligula. Mauris pulvinar mi vitae sodales lobortis. Praesent ultrices lorem felis, at volutpat enim dignissim et. Phasellus rutrum tellus nunc, nec tempor ligula varius et. Duis eu feugiat risus. Vivamus euismod auctor turpis, in porttitor nisl molestie ut. Phasellus sit amet fringilla elit, porta placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non blandit tortor. Morbi aliquam lorem quis neque vulputate luctus. Pellentesque nec metus ac augue mattis volutpat ut id quam. Integer venenatis, tellus at commodo congue, dolor nisi elementum diam, eu convallis arcu tortor nec est. Ut commodo purus ac venenatis malesuada. Donec eget hendrerit dui.
+      </p>
+      <p>
+        Suspendisse egestas, dui eget malesuada elementum, metus eros condimentum nisl, vel lacinia sem risus in risus. Integer adipiscing et nisi non vehicula. Nulla condimentum felis id enim porta, sed cursus felis placerat. Sed ultricies libero purus, eu ullamcorper lacus ultrices non. Phasellus gravida ligula vehicula laoreet fringilla. Nullam ultrices enim eros, nec tempus diam aliquet ac. Nunc vestibulum risus ut magna iaculis porttitor. Donec nec pretium felis, id ultrices orci. Etiam commodo viverra mauris ut vehicula.
+      </p>
+      <p>
+        Donec vitae lobortis arcu. Phasellus rutrum mollis eros, in placerat massa. Duis a lacus at metus luctus iaculis. Donec sollicitudin justo nisl, eu venenatis turpis consequat a. Praesent non molestie purus. Aenean dignissim pretium sem nec tempor. Phasellus volutpat rutrum egestas. Phasellus quis dignissim nulla, non volutpat nisl. Donec pulvinar auctor nisl ac lacinia. Sed odio odio, molestie sed nisl sed, imperdiet scelerisque enim.
+      </p>
+      <p>
+        Donec ut dui dui. Pellentesque congue quis elit a aliquet. Morbi vel congue erat, a accumsan dolor. Quisque suscipit at nulla a auctor. Integer at lacus mauris. Aenean faucibus fringilla tortor, bibendum aliquam mi mollis quis. Nulla neque metus, elementum sit amet sollicitudin sodales, congue sit amet tortor. Ut ut eros eget arcu varius tincidunt sit amet vel sapien. In ornare rhoncus aliquet. Vestibulum ullamcorper augue sit amet nisi lobortis, quis consequat nulla faucibus.
+      </p>
+      <p>
+        Vestibulum posuere eget velit et posuere. Vivamus viverra pulvinar dolor, nec viverra augue adipiscing cursus. Aliquam eget tortor pretium, eleifend lacus molestie, pulvinar massa. Maecenas accumsan ac augue sed vulputate. Donec sed tincidunt est, vel dapibus dui. Nullam id mi nibh. Mauris eget orci dapibus, rhoncus erat ut, elementum arcu. Nunc non venenatis velit. Sed nec ullamcorper tellus, vitae pharetra felis. Phasellus ut congue elit. Integer aliquam adipiscing augue ut pharetra. Proin eu condimentum eros, iaculis convallis sapien. Fusce ac dolor elit. Suspendisse a enim vitae enim volutpat varius a eleifend purus. Maecenas scelerisque aliquam ipsum et dapibus.
+      </p>
+    </div>
+  </div>
+</div> <!-- /container -->
 

@@ -5,44 +5,42 @@ snippet: blockquotes
 group: typography
 hasJs: false
 name: typography-blockquotes-source
+path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in &lt;cite&gt;.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in &lt;cite&gt;.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <small>Someone famous <cite title="Source Title">Source Title</cite></small>
-              </blockquote>
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+  </blockquote>
+</div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<blockquote>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  <small>Someone famous <cite title="Source Title">Source Title</cite></small>
-</blockquote>
-{% endhighlight %}
-            </div>
-          </div>
+<!-- HTML Code -->
+
+<div class="docs-html">
+  {% highlight html  %}
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+  </blockquote>
+  {% endhighlight %}
+</div>
+
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
 
-{% endhighlight %}
-            </div>
-          </div>
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

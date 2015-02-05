@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
+	 height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<g id="Layer_1">
+	<g id="hover">
+		<g>
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-408" y1="904" x2="-408" y2="1198" gradientTransform="matrix(1 0 0 -1 558 1201)">
+				<stop  offset="0" style="stop-color:#FF6F05"/>
+				<stop  offset="1" style="stop-color:#FD9E21"/>
+			</linearGradient>
+			<path fill="url(#SVGID_1_)" d="M150,297C68.943,297,3,231.057,3,150S68.943,3,150,3c81.056,0,147,65.943,147,147
+				S231.056,297,150,297z"/>
+			<g>
+				<path fill="#FE8613" d="M150,6c38.464,0,74.625,14.979,101.822,42.177C279.021,75.375,294,111.536,294,150
+					s-14.979,74.625-42.178,101.823C224.625,279.021,188.464,294,150,294c-38.465,0-74.625-14.979-101.823-42.177S6,188.464,6,150
+					S20.979,75.375,48.177,48.177S111.537,6,150,6 M150,0C67.156,0,0,67.157,0,150s67.156,150,150,150c82.843,0,150-67.157,150-150
+					S232.843,0,150,0L150,0z"/>
+			</g>
+		</g>
+		<polygon fill="#FFFFFF" stroke="#FE8613" stroke-width="6" stroke-miterlimit="10" points="101.725,74.023 235.276,151.13 
+			101.725,228.236 		"/>
+	</g>
+	<g id="static">
+		<g>
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-408" y1="904" x2="-408" y2="1198" gradientTransform="matrix(1 0 0 -1 558 1201)">
+				<stop  offset="0" style="stop-color:#FF6A01"/>
+				<stop  offset="1" style="stop-color:#FD9E21"/>
+			</linearGradient>
+			<path fill="url(#SVGID_2_)" d="M150,297C68.943,297,3,231.057,3,150S68.943,3,150,3c81.056,0,147,65.943,147,147
+				S231.056,297,150,297z"/>
+			<g>
+				<path fill="#FE8613" d="M150,6c38.464,0,74.625,14.979,101.822,42.177C279.021,75.375,294,111.536,294,150
+					s-14.979,74.625-42.178,101.823C224.625,279.021,188.464,294,150,294c-38.465,0-74.625-14.979-101.823-42.177S6,188.464,6,150
+					S20.979,75.375,48.177,48.177S111.537,6,150,6 M150,0C67.156,0,0,67.157,0,150s67.156,150,150,150c82.843,0,150-67.157,150-150
+					S232.843,0,150,0L150,0z"/>
+			</g>
+		</g>
+		<polygon fill="#FFFFFF" stroke="#FE8613" stroke-width="6" stroke-miterlimit="10" points="101.725,74.023 235.276,151.13 
+			101.725,228.236 		"/>
+	</g>
+</g>
+<g id="Layer_1_copy" display="none">
+	<g id="hover_1_" display="inline">
+		<g>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-408" y1="904" x2="-408" y2="1198" gradientTransform="matrix(1 0 0 -1 558 1201)">
+				<stop  offset="0" style="stop-color:#FF6F05"/>
+				<stop  offset="1" style="stop-color:#FD9E21"/>
+			</linearGradient>
+			<path fill="url(#SVGID_3_)" d="M150,297C68.943,297,3,231.057,3,150S68.943,3,150,3c81.056,0,147,65.943,147,147
+				S231.056,297,150,297z"/>
+			<g>
+				<path fill="#FE8613" d="M150,6c38.464,0,74.625,14.979,101.822,42.177C279.021,75.375,294,111.536,294,150
+					s-14.979,74.625-42.178,101.823C224.625,279.021,188.464,294,150,294c-38.465,0-74.625-14.979-101.823-42.177S6,188.464,6,150
+					S20.979,75.375,48.177,48.177S111.537,6,150,6 M150,0C67.156,0,0,67.157,0,150s67.156,150,150,150c82.843,0,150-67.157,150-150
+					S232.843,0,150,0L150,0z"/>
+			</g>
+		</g>
+		<polygon fill="#FFFFFF" stroke="#FE8613" stroke-width="6" stroke-miterlimit="10" points="101.725,74.023 235.276,151.13 
+			101.725,228.236 		"/>
+	</g>
+	<g id="static_1_" display="inline">
+		<g>
+			
+				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-408" y1="904" x2="-408" y2="1198" gradientTransform="matrix(1 0 0 -1 558 1201)">
+				<stop  offset="0" style="stop-color:#FF8D40"/>
+				<stop  offset="1" style="stop-color:#FEB659"/>
+			</linearGradient>
+			<path fill="url(#SVGID_4_)" d="M150,297C68.943,297,3,231.057,3,150S68.943,3,150,3c81.056,0,147,65.943,147,147
+				S231.056,297,150,297z"/>
+			<g>
+				<path fill="#FE8613" d="M150,6c38.464,0,74.625,14.979,101.822,42.177C279.021,75.375,294,111.536,294,150
+					s-14.979,74.625-42.178,101.823C224.625,279.021,188.464,294,150,294c-38.465,0-74.625-14.979-101.823-42.177S6,188.464,6,150
+					S20.979,75.375,48.177,48.177S111.537,6,150,6 M150,0C67.156,0,0,67.157,0,150s67.156,150,150,150c82.843,0,150-67.157,150-150
+					S232.843,0,150,0L150,0z"/>
+			</g>
+		</g>
+		<polygon fill="#FFFFFF" stroke="#FE8613" stroke-width="6" stroke-miterlimit="10" points="101.725,74.023 235.276,151.13 
+			101.725,228.236 		"/>
+	</g>
+</g>
+</svg>

@@ -6,42 +6,42 @@ group: progressbars
 snippet: progress
 hasJs: false
 name: progressbars-animated
+path: ../../../
+bootstrap: /components/#progress-animated
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <div class="progress progress-striped active">
-                <div class="bar" style="width: 80%"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<div class="progress progress-striped active">
-  <div class="bar" style="width: 80%"></div>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="progress progress-striped active">
+    <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+      <span class="sr-only">45% Complete</span>
+    </div>
+  </div>
 </div>
-{% endhighlight %}
-            </div>
-          </div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="progress progress-striped active">
+    <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+      <span class="sr-only">45% Complete</span>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

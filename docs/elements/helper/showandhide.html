@@ -1,0 +1,47 @@
+---
+layout: default
+title: Helper classes - Show/Hide Content
+snippet: helperclasses
+group: helper
+hasJs: false
+name: helper-show-hide
+path: ../../../
+bootstrap: /css/#helper-classes-show-hide
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Make an element be shown or hidden (<strong>including for screen readers</strong>). This can only be used for block level toggling.
+  </p>
+</header>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+    <div class="show">...</div>
+    <div class="hidden">...</div>
+  {% endhighlight %}
+</div>
+
+{% highlight scss %}
+// Classes
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// Usage as mixins
+.element {
+  .show();
+}
+.another-element {
+  .hidden();
+}
+{% endhighlight %}
+

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Helper classes - Center Content Blocks
+snippet: helperclasses
+group: helper
+hasJs: false
+name: helper-center-blocks
+path: ../../../
+bootstrap: /css/#helper-classes-center
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Quickly center block content
+  </p>
+  <div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <strong>Looking to Center Text:</strong> Go to <a class="alert-link" href="{{page.path}}{{site.elements}}typography/alignment">Typography/Alignment</a> to center text
+  </div>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+    <img class="center-block" data-src="holder.js/280x280" src="data:image/png;base64," alt="media">
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="center-block">...</div>
+  {% endhighlight %}
+</div>
+
+{% highlight scss %}
+// Classes
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Usage as mixins
+.element {
+  .center-block();
+}
+{% endhighlight %}
+

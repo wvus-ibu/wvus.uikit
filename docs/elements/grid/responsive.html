@@ -1,0 +1,215 @@
+---
+layout: default
+title: Responsive
+group: grid
+hasJs: false
+name: responsive
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="lead">The UiKit grid supports four different screen sizes. The table below describes how to use these screen sizes.</p>
+</header>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>
+          Extra small devices
+          <small>Phones (&lt;768px and lower)</small>
+        </th>
+        <th>
+          Small devices
+          <small>Tablets (&ge;768px and up)</small>
+        </th>
+        <th>
+          Medium devices
+          <small>Desktops (&ge;992px and up)</small>
+        </th>
+        <th>
+          Large devices
+          <small>Desktops (&ge;1200px and up)</small>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Grid behavior</th>
+        <td>Horizontal at all times</td>
+        <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+      </tr>
+      <tr>
+        <th>Container width</th>
+        <td>None (auto)</td>
+        <td>750px</td>
+        <td>970px</td>
+        <td>1170px</td>
+      </tr>
+      <tr>
+        <th>Class prefix</th>
+        <td><code>.col-xs-</code></td>
+        <td><code>.col-sm-</code></td>
+        <td><code>.col-md-</code></td>
+        <td><code>.col-lg-</code></td>
+      </tr>
+      <tr>
+        <th># of columns</th>
+        <td colspan="4">12</td>
+      </tr>
+      <tr>
+        <th>Column width</th>
+        <td class="text-muted">Auto</td>
+        <td>60px</td>
+        <td>78px</td>
+        <td>95px</td>
+      </tr>
+      <tr>
+        <th>Gutter width</th>
+        <td colspan="4">30px (15px on each side of a column)</td>
+      </tr>
+      <tr>
+        <th>Nestable</th>
+        <td colspan="4">Yes</td>
+      </tr>
+      <tr>
+        <th>Offsets</th>
+        <td colspan="4">Yes</td>
+      </tr>
+      <tr>
+        <th>Column ordering</th>
+        <td colspan="4">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<section id="grid-responsive">
+  <p>The <a href="{{ page.path }}{{ site.developerdocs }}grid/basic">basic grid</a> provides an example to using the grid on one device. However, the responsive grids are actually 4 grids in one.</p>
+  <p>The following example shows a grid with two screen sizes -- extra small and medium.</p>
+
+  <h2>Mobile and Desktop</h2>
+
+  <div class="docs-example grid-example">
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+        .col-md-8 .col-xs-12
+      </div>
+      <div class="col-md-4 col-xs-6">
+        .col-md-4 .col-xs-6
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-xs-6">
+        .col-md-4 .col-xs-6
+      </div>
+      <div class="col-md-4 col-xs-6">
+        .col-md-4 .col-xs-6
+      </div>
+      <div class="col-md-4 col-xs-6">
+        .col-md-4 .col-xs-6
+      </div>
+    </div>
+  </div>
+
+  <p>The responsive grids have an implicit range when used together. In the example above, the first row has 2 <code>div</code>s. The first <code>div</code> labeled <code>.col-md-8 .col-xs-12</code> specifies two different column widths for two devices. However, since the <code>md</code> and <code>xs</code> classes have two screen limits, they create an implicit range.</p>
+  <p>For example:</p>
+
+
+  <dl class="dl-horizontal">
+    <dt><code>.col-md-8.col-xs-12</code></dt>
+    <dd>Screen widths below <code>md</code> (&le;991px) are 12 columns wide<br>
+      Screen widths above <code>md</code> (&ge;992px) are 8 columns wide
+    </dd>
+    <dt><code>.col-md-4.col-xs-6</code></dt>
+    <dd>Screen widths below <code>md</code> (&le;991px) are 6 columns wide<br>
+      Screen widths above <code>md</code> (&ge;992px) are 4 columns wide
+    </dd>
+  </dl>
+
+  <h2>Phone, Tablet and Desktop</h2>
+  <p>To cover all screen sizes with the responsive grid, up to four <code>col-*</code> classes can be added. Just like above the class will apply to the lowest size screen.</p>
+
+  <div class="docs-example grid-example">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        .col-md-8 .col-sm-6 .col-xs-12
+      </div>
+      <div class="col-md-4 col-xs-6">
+        .col-md-4 .col-xs-6
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-xs-6">
+        .col-sm-4 .col-xs-6
+      </div>
+      <div class="col-sm-4 col-xs-6">
+        .col-sm-4 .col-xs-6
+      </div>
+      <div class="col-sm-4 col-xs-6">
+        .col-sm-4 .col-xs-6
+      </div>
+    </div>
+  </div>
+
+  <dl >
+    <dt><code>.col-md-8 .col-sm-6 .col-xs-12</code></dt>
+    <dd>
+      Screen widths <code>xs</code> (&lt;768px and below) are 12 columns wide<br>
+      Screen widths <code>sm</code> - <code>md</code>  (768px - 991px) are 6 columns wide<br>
+      Scree widths <code>md</code> (992px and above) are 8 columns
+    </dd>
+  </dl>
+
+  <h2>Column Resets</h2>
+  <p>Naturally, columns will float to other columns. This can become and issue when columns become different sizes. Then the sibling columns wraps. Doesn't look good. </p>
+  <p>To solve this, add a <code>.clearfix</code> to an empty <code>div</code> between the wrapping columns.</p>
+
+
+  <div class="docs-example grid-example clearfix">
+    <h4>The Problem:</h4>
+    <div class="row">
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6<br>
+        Resize the viewport for the example.
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6
+      </div>
+        <!-- This column will wrap to the previous -->
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6
+      </div>
+    </div>
+  </div>
+
+
+  <div class="docs-example grid-example">
+      <h4>The Fix:</h4>
+    <div class="row">
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6<br>
+        Resize the viewport for the example.
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6
+      </div>
+
+      <!-- Add the clearfix and show it on the require viewport -->
+      <div class="clearfix visible-xs"></div>
+
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        .col-sm-3 .col-xs-6
+      </div>
+    </div>
+  </div>
+
+
+</section>

@@ -2,10 +2,9 @@ language: node_js
 node_js:
 - "0.10"
 before_install:
-- cd src
 - npm install -g grunt-cli
-- gem install jekyll
-env:
-  global:
-  - secure: CVNBGlK55AfA2+s7Z99kaTdXKyf70/yIPZwaJ+ZAT0plOuIN7oJyRQGN7Wh4qI/lw77PSgNIOneqgvZTdcXRu0VB8AIFHvm2aSmg1U5FjQ7sfglMwgJ6PZBzuiuZbD/GH9dlVPNbCcZUNVv4XklEzto5lJPUtgXVY/AkXeQWTMI=
-  - secure: GgMDe+alHQFeykmn7PHgmfEJtVqtn6bKYv1bffyYpxkQihZUbNv+yYTI/zhhyVKQuRocjpvq3Z+iygABh6DjEN3MFUpaugiuYJ5rLK6RVyFgLqvuDQNzn0xhF0WtIwIuZo0NEY3tzomujk2C/nDx2/Sy5f8r/bmdi5zq+siD4So=
+#- gem install jekyll
+#blacklist
+branches:
+  except:
+    - wip-2.0

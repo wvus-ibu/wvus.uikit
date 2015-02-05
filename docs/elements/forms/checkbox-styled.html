@@ -1,0 +1,78 @@
+---
+layout: default
+title: Styled Checkboxes
+snippet: forms
+group: forms
+hasJs: false
+name: checkbox-styled
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Styled checkboxes provide consistency across the site. Just add <code>.checkbox-styled</code> to the <code>.checkbox</code>.
+  </p>
+</header>
+<div class="callout">
+  Note: You must use labels and the control must be first in markup. See example.
+</div>
+
+<!-- Preview -->
+<div class="docs-example">
+  <form role="form">
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" id="checkbox1" checked="checked">
+      <label for="checkbox1">Checkbox - Checked</label>
+    </div>
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox2">Checkbox</label>
+    </div>
+  </form>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <form role="form">
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" name="sample" id="checkbox1" checked="checked">
+      <label for="checkbox1">Checkbox - Checked</label>
+    </div>
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" name="sample" id="checkbox2">
+      <label for="checkbox2">Checkbox</label>
+    </div>
+  </form>
+  {% endhighlight %}
+</div>
+
+<h3>Disabled checkbox</h3>
+<div class="docs-example">
+  <form rol="form">
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" name="disabled" id="checkbox3" disabled>
+      <label for="checkbox3">Checkbox Disabled</label>
+    </div>
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" name="disabled" id="checkbox4" disabled checked="checked">
+      <label for="checkbox4">Checkbox Disabled &amp; Checked</label>
+    </div>
+  </form>
+</div>
+
+
+<div class="docs-html">
+  {% highlight html%}
+  <form role="form">
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" name="sample" id="checkbox1" checked="checked">
+      <label for="checkbox1">Checkbox Disabled</label>
+    </div>
+    <div class="checkbox checkbox-styled">
+      <input type="checkbox" name="sample" id="checkbox2">
+      <label for="checkbox2">Checkbox Disabled &amp; Checked</label>
+    </div>
+  </form>
+  {% endhighlight %}
+</div>

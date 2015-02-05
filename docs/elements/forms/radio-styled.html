@@ -1,0 +1,78 @@
+---
+layout: default
+title: Styled Radio Buttons
+snippet: forms
+group: forms
+hasJs: false
+name: radio-styled
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Styled radio buttons provide consistency across the site. Just add <code>.radio-styled</code> to the <code>.radio</code>.
+  </p>
+</header>
+<div class="callout">
+  Note: You must use labels and the control must be first in markup. See example.
+</div>
+
+<!-- Preview -->
+<div class="docs-example">
+  <form role="form">
+    <div class="radio radio-styled">
+      <input type="radio" name="sample" id="radio1" checked="checked">
+      <label for="radio1">Radio 1</label>
+    </div>
+    <div class="radio radio-styled">
+      <input type="radio" name="sample" id="radio2">
+      <label for="radio2">Radio 2</label>
+    </div>
+  </form>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <form role="form">
+    <div class="radio radio-styled">
+      <input type="radio" name="sample" id="radio1" checked="checked">
+      <label for="radio1">Radio 1</label>
+    </div>
+    <div class="radio radio-styled">
+      <input type="radio" name="sample" id="radio2">
+      <label for="radio2">Radio 2</label>
+    </div>
+  </form>
+  {% endhighlight %}
+</div>
+
+<h3>Disabled Radio</h3>
+<div class="docs-example">
+  <form rol="form">
+    <div class="radio radio-styled">
+      <input type="radio" name="disabled" id="radio3" disabled>
+      <label for="radio3">Radio 3</label>
+    </div>
+    <div class="radio radio-styled">
+      <input type="radio" name="disabled" id="radio4" disabled checked="checked">
+      <label for="radio4">Radio 4</label>
+    </div>
+  </form>
+</div>
+
+
+<div class="docs-html">
+  {% highlight html%}
+  <form role="form">
+    <div class="radio radio-styled">
+      <input type="radio" name="sample" id="radio1" checked="checked">
+      <label for="radio1">Radio 1</label>
+    </div>
+    <div class="radio radio-styled">
+      <input type="radio" name="sample" id="radio2">
+      <label for="radio2">Radio 2</label>
+    </div>
+  </form>
+  {% endhighlight %}
+</div>

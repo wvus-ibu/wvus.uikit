@@ -1,0 +1,51 @@
+---
+layout: default
+title: Helper classes - Context Colors
+snippet: helperclasses
+group: helper
+hasJs: false
+name: helper-context-colors
+path: ../../../
+bootstrap: /css/#helper-classes-colors
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Quickly change the color of any text with these classes
+  </p>
+  <div class="callout">
+    Text colors can be overriden by other classes. If this occurs wrap the targeted text with a span.
+  </div>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <p class="text-primary">Ex, impedit quis. Rerum, soluta, exercitationem</p>
+  <p class="text-success">Excepturi nobis pariatur cumque amet nemo quis facilis </p>
+  <p class="text-info">Doloribus explicabo asperiores quae at. Ea, facere, nihil.</p>
+  <p class="text-warning">In sagittis dui enim, eu venenatis diam facilisis a.</p>
+  <p class="text-danger">Nunc rhoncus urna non dolor ultricies accumsan</p>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <p class="text-primary">Ex, impedit quis. Rerum, soluta, exercitationem</p>
+  <p class="text-success">Excepturi nobis pariatur cumque amet nemo quis facilis </p>
+  <p class="text-info">Doloribus explicabo asperiores quae at. Ea, facere, nihil.</p>
+  <p class="text-warning">In sagittis dui enim, eu venenatis diam facilisis a.</p>
+  <p class="text-danger">Nunc rhoncus urna non dolor ultricies accumsan</p>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

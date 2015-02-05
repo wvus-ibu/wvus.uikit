@@ -1,0 +1,47 @@
+---
+layout: default
+title: Progress Bars - Label
+group: progressbars
+snippet: progress
+hasJs: false
+name: progressbars-label
+path: ../../../
+bootstrap: /components/#progress-label
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Default progress bar with a vertical gradient.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-value="0" aria-valuemax="100" style="width: 60%">
+      60%
+    </div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-value="0" aria-valuemax="100" style="width: 60%">
+      60%
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+
+

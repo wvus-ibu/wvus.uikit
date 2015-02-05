@@ -1,0 +1,80 @@
+---
+layout: default
+title: Tabs - Justified
+snippet: tabs
+group: tabs
+hasJs: true
+name: tabs-justified
+path: ../../../
+bootstrap: /components/#nav-justified
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Align tabs to the right with <code>.tabs-right</code>
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active">
+      <a href="#">Section 1</a>
+    </li>
+    <li>
+      <a href="#">Section 2</a>
+    </li>
+    <li>
+      <a href="#">Section 3</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active">
+      <p>I'm Section 1</p>
+    </div>
+    <div class="tab-pane">
+      <p>Howdy, I'm Section 2.</p>
+    </div>
+    <div class="tab-pane">
+      <p>Section 3</p>
+    </div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active">
+      <a href="#">Section 1</a>
+    </li>
+    <li>
+      <a href="#">Section 2</a>
+    </li>
+    <li>
+      <a href="#">Section 3</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active">
+      <p>I'm Section 1</p>
+    </div>
+    <div class="tab-pane">
+      <p>Howdy, I'm Section 2.</p>
+    </div>
+    <div class="tab-pane">
+      <p>Section 3</p>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

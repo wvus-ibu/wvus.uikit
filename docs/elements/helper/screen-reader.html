@@ -1,0 +1,31 @@
+---
+layout: default
+title: Helper classes - Screen Reader Content
+snippet: helperclasses
+group: helper
+hasJs: false
+name: helper-screen-reader
+path: ../../../
+bootstrap: /css/#helper-classes-screen-readers
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Hide an element visually with <code>.sr-only</code>. The element is still read by screen readers but doesn't render. Used for accessibility best practices.
+  </p>
+</header>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <a class="sr-only" href="#content">Skip to main content</a>
+  {% endhighlight %}
+</div>
+
+{% highlight scss %}
+// Usage as a Mixin
+.skip-navigation {
+  .sr-only();
+}
+{% endhighlight %}
+

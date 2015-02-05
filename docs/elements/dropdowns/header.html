@@ -1,0 +1,58 @@
+---
+layout: default
+title: Dropdowns - Header
+snippet: dropdowns
+group: dropdowns
+hasJs: false
+name: dropdowns-header
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Group menu items with <code>.dropdown-header</code>
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <!-- Basic Dropdown -->
+  <div class="dropdown clearfix">
+    <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenuBtn" data-toggle="dropdown">Dropdown <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuBtn" id="dropdownMenu">
+      <li role="presentation" class="dropdown-header">Dropdown Header</li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" class=""href="#">Action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="dropdown">
+    <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenuBtn" data-toggle="dropdown">Dropdown <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuBtn" id="dropdownMenu">
+      <li role="presentation" class="dropdown-header">Dropdown Header</li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" class=""href="#">Action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

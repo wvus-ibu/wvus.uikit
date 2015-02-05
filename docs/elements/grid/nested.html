@@ -5,123 +5,56 @@ snippet: grid
 group: grid
 hasJs: false
 name: grid-nested
+path: ../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-<p class="subheader lead">To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-*</code> columns within an existing <code>.col-*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
 </header>
 <!-- Preview -->
-    <div id="gridExample">
-      <div class="row-fluid">
-        <div class="span12">
-          .span12
-          <div class="row-fluid">
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-            <div class="span1">
-              1
-            </div>
-          </div>
+<div class="grid-example">
+  <div class="row">
+    <div class="col-md-12">
+      .col-md-12
+      <div class="row">
+        {% for i in (1..12) %}
+        <div class="col-md-1">
+          .col-md-1
         </div>
-      </div>
-    </div>
-
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<!-- 1. Create a new row -->
-<div class="row-fluid">
-  <!-- 2. Set parent column width -->
-  <div class="span12">
-    .span12
-    <!-- 3. Create a new row inside that column -->
-    <div class="row-fluid">
-      <!-- 4. Specify the nested columns -->
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
-      </div>
-      <div class="span1">
-        1
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
-{% endhighlight %}
-            </div>
-          </div>
+
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="row">
+    <div class="col-md-12">
+      .col-md-12
+      <div class="row">
+        {% for i in (1..12) %}
+        <div class="col-md-1">
+          .col-md-1
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-js">
-{% highlight js %}
+<!-- JS Code -->
+<div class="row">
+  <div class="docs-js">
+    {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+    {% endhighlight %}
+  </div>
+</div>
 {% endif %}
 
 

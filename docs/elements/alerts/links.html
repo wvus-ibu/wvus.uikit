@@ -1,0 +1,63 @@
+---
+layout: default
+title: Alerts - Links
+snippet: alerts
+group: alerts
+hasJs: false
+name: alerts-links
+path: ../../../
+bootstrap: /components/#alerts-links
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      In an <code>.alert</code>, add <code>.alert-link</code> to a link to make it stand out.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="alert alert-success">
+    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message.</a>
+</div>
+<div class="alert alert-info">
+    <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+</div>
+<div class="alert alert-warning">
+    <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good.</a>
+
+</div>
+<div class="alert alert-danger">
+    <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+</div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+    {% highlight html  %}
+    <div class="alert alert-success">
+        <a href="#" class="alert-link">...</a>
+    </div>
+    <div class="alert alert-info">
+        <a href="#" class="alert-link">...</a>
+    </div>
+    <div class="alert alert-warning">
+        <a href="#" class="alert-link">...</a>
+    </div>
+    <div class="alert alert-danger">
+        <a href="#" class="alert-link">...</a>
+    </div>
+    {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+
+
+

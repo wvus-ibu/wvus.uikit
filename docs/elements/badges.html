@@ -4,51 +4,51 @@ title: Badges
 snippet: labelsandbadges
 hasJs: false
 name: badges
+path: ../../
+bootstrap: /components/#badges
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      CSS to add to <code>span</code> tags.
-    </p>
-    <p>
-      For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Highlight new or unread items with <code>&lt;span class="badge"&gt;</code>
+  </p>
+  <p>
+    For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <span class="badge">1</span>
-              <span class="badge badge-success">2</span>
-              <span class="badge badge-warning">4</span>
-              <span class="badge badge-important">6</span>
-              <span class="badge badge-info">8</span>
-              <span class="badge badge-inverse">10</span>
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <span class="badge">1</span>
+</div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<span class="badge">1</span>
-<span class="badge badge-success">2</span>
-<span class="badge badge-warning">4</span>
-<span class="badge badge-important">6</span>
-<span class="badge badge-info">8</span>
-<span class="badge badge-inverse">10</span>
-{% endhighlight %}
-            </div>
-          </div>
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <span class="badge">1</span>
+  {% endhighlight %}
+</div>
 
-{% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-js">
-{% highlight js %}
+<div class="docs-example">
+  <a href="#">Inbox <span class="badge">31</span></a>
+</div>
+<div class="docs-html">
+  {% highlight html %}
+  <a href="#">Inbox <span class="badge">31</span></a>
+  {% endhighlight %}
+</div>
 
-{% endhighlight %}
-            </div>
-          </div>
-{% endif %}
-
+<div class="docs-example">
+  <ul class="nav nav-pills nav-stacked" style="max-width: 400px;">
+    <li class="active"><a href="#">Messages <span class="badge pull-right">13</span></a></li>
+    <li><a href="#">News <span class="badge pull-right">2</span></a></li>
+  </ul>
+</div>
+<div class="docs-html">
+  {% highlight html %}
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Messages <span class="badge pull-right">13</span></a></li>
+    <li><a href="#">News <span class="badge pull-right">2</span></a></li>
+  </ul>
+  {% endhighlight %}
+</div>
 

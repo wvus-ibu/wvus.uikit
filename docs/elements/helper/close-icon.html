@@ -1,0 +1,36 @@
+---
+layout: default
+title: Close icon
+snippet: closeicon
+group: helper
+hasJs: false
+name: helper-close-icon
+path: ../../../
+bootstrap: /css/#helper-classes-close
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+    <p class="subheader lead">
+      Use the generic close icon for dismissing content like modals and alerts.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example" style="overflow: hidden;">
+    <button type="button" class="close" aria-hidden="true">&times;</button>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+    {% highlight html  %}
+    <button type="button" class="close" aria-hidden="true">&times;</button>
+    {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+    {% highlight js %}
+
+    {% endhighlight %}
+</div>
+{% endif %}

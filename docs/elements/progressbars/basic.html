@@ -5,42 +5,42 @@ group: progressbars
 snippet: progress
 hasJs: false
 name: progressbars-basic
+path: ../../../
+bootstrap: /components/#progress
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Default progress bar with a vertical gradient.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Default progress bar with a vertical gradient.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-<div class="progress">
-  <div class="bar" style="width: 60%"></div>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-value="0" aria-valuemax="100" style="width: 60%">
+      <span class="sr-only">60% Complete</span>
+    </div>
+  </div>
 </div>
-            </div>
-          </div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<div class="progress">
-  <div class="bar" style="width: 60%"></div>
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-value="0" aria-valuemax="100" style="width: 60%">
+      <span class="sr-only">60% Complete</span>
+    </div>
+  </div>
+  {% endhighlight %}
 </div>
-{% endhighlight %}
-            </div>
-          </div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

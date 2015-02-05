@@ -5,38 +5,34 @@ snippet: italics
 group: typography
 hasJs: false
 name: typography-italics
+path: ../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      For emphasizing a snippet of text with italics.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    For adding stress to a string of text with italics.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-            </div>
-          </div>
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-{% endhighlight %}
-            </div>
-          </div>
+<!-- Preview -->
+<div class="docs-example">
+  <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

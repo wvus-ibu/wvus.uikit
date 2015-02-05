@@ -1,0 +1,90 @@
+---
+layout: default
+title: Thumbnails - Custom
+snippet: thumbnails
+group: thumbnails
+hasJs: false
+name: thumbnails-custom
+path: ../../../
+bootstrap: /components/#thumbnails-custom-content
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Basic thumbnails with custom or default sizing.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <h3>Thumbnail Heading</h3>
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+        <div class="caption">
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <h3>Thumbnail Heading</h3>
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+        <div class="caption">
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <h3>Thumbnail Heading</h3>
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+        <div class="caption">
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <h3>Thumbnail Heading</h3>
+        <img data-src="holder.js/100%x120" src="data:image/png;base64," alt="">
+        <div class="caption">
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+  <div class="docs-html">
+    {% highlight html  %}
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <h3>Thumbnail Heading</h3>
+          <img data-src="holder.js/100%x120"  alt="...">
+          <div class="caption">
+            <p>...</p>
+            <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endhighlight %}
+  </div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+  <div class="docs-html">
+    {% highlight js %}
+
+    {% endhighlight %}
+  </div>
+{% endif %}
+
+

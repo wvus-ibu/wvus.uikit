@@ -1,0 +1,58 @@
+---
+layout: default
+title: Dropdowns - Alignment
+snippet: dropdowns
+group: dropdowns
+hasJs: false
+name: dropdowns-alignment
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Align a dropdown to the right of its parent by adding <code>.dropdown-menu-right</code> to a <code>.dropdown-menu</code>
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <!-- Basic Dropdown -->
+  <div class="dropdown clearfix">
+    <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenuBtn" data-toggle="dropdown">Dropdown <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu" id="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+<div class="docs-example">
+  <div class="dropdown">
+    <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenuBtn" data-toggle="dropdown">Dropdown <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu" id="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

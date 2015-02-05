@@ -5,49 +5,16 @@ snippet: tables
 group: tables
 hasJs: false
 name: tables-default
+path: ../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-               <table class="table">
-                <thead>
-                  <tr>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
-                  </tr>
-                </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>3</td>
-                    </tr>
-                     <tr>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>3</td>
-                    </tr>
-                     <tr>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>3</td>
-                    </tr>
-                  </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
+<!-- Preview -->
+<div class="docs-example">
  <table class="table">
   <thead>
     <tr>
@@ -56,38 +23,66 @@ name: tables-default
       <th>C</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
         <td>1</td>
         <td>2</td>
         <td>3</td>
       </tr>
-       <tr>
+      <tr>
         <td>1</td>
         <td>2</td>
         <td>3</td>
       </tr>
-       <tr>
+      <tr>
         <td>1</td>
         <td>2</td>
         <td>3</td>
       </tr>
     </tbody>
-</table>
+  </table>
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

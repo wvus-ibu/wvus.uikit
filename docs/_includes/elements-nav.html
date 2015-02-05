@@ -1,350 +1,358 @@
-<ul class="nav nav-list" id="elementList">
-  <li class="nav-header">Styles</li>
+<ul class="nav " id="elementList">
+  <li>Styles</li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#grid-nav">Grid <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'grid'%} in {% endif %}" id="grid-nav">
-      <li{% if page.name == "grid-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/basic">Basic</a></li>
-      <li{% if page.name == "grid-nested" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/nested">Nested</a></li>
-      <li{% if page.name == "grid-offset" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/offset">Offset</a></li>
-      <li{% if page.name == "grid-fluid" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/grid/fluid">Fluid</a></li>
+    <a href="#" data-toggle="collapse" data-target="#grid-nav">Grid <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'grid'%} in {% endif %}" id="grid-nav">
+      <li{% if page.name == "grid-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/basic">Basic</a></li>
+      <li{% if page.name == "grid-nested" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/nested">Nested</a></li>
+      <li{% if page.name == "grid-offset" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}grid/offset">Offset</a></li>
     </ul>
   </li>
-  <li {% if page.name == "responsive" %}class="active"{% endif %}><a href="{{ site.developerdocs }}/responsive/">Responsive</a></li>
+  <li class=" {% if page.name == 'responsive' %}active{% endif %}"><a href="{{ page.path }}{{ site.developerdocs }}grid/responsive/">Responsive</a></li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'typography'%} in {% endif %}" id="typography">
-      <li{% if page.name == "typography-headings" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/headings">Headings</a></li>
-      <li{% if page.name == "typography-body" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/body">Body Text</a></li>
-      <li{% if page.name == "typography-bold" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/bold">Bold</a></li>
-      <li{% if page.name == "typography-italics" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/italics">Italics</a></li>
-      <li{% if page.name == "typography-de-emphasize" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/de-emphasize">De-Emphasize</a></li>
+    <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'typography'%} in {% endif %}" id="typography">
+      <li{% if page.name == "typography-headings" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/headings">Headings</a></li>
+      <li{% if page.name == "typography-body" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/body">Body Text</a></li>
+      <li{% if page.name == "typography-bold" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/bold">Bold</a></li>
+      <li{% if page.name == "typography-italics" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/italics">Italics</a></li>
+      <li{% if page.name == "typography-alignment" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/alignment">Alignment</a></li>
+      <li{% if page.name == "typography-de-emphasize" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/de-emphasize">De-Emphasize</a></li>
       <li>
-        <a href="#" data-toggle="collapse" data-target="#abbreviations">Abbreviations <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.snippet == 'abbreviations'%} in {% endif %}" id="abbreviations">
-          <li{% if page.name == "typography-abbreviations-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/abbreviations/default">Default</a></li>
-          <li{% if page.name == "typography-abbreviations-initialism" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/abbreviations/initialism">Initialism</a></li>
+        <a href="#" data-toggle="collapse" data-target="#abbreviations">Abbreviations <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'abbreviations'%} in {% endif %}" id="abbreviations">
+          <li{% if page.name == "typography-abbreviations-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/abbreviations/default">Default</a></li>
+          <li{% if page.name == "typography-abbreviations-initialism" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/abbreviations/initialism">Initialism</a></li>
         </ul>
       </li>
-      <li{% if page.name == "typography-address" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/address">Address</a></li>
+      <li{% if page.name == "typography-address" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/address">Address</a></li>
       <li>
-        <a href="#" data-toggle="collapse" data-target="#blockquotes">Blockquotes <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.snippet == 'blockquotes'%} in {% endif %}" id="blockquotes">
-          <li{% if page.name == "typography-blockquotes-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/default">Default</a></li>
-          <li{% if page.name == "typography-blockquotes-source" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/source">Cite Source</a></li>
-          <li{% if page.name == "typography-blockquotes-alignment" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/blockquotes/alignment">Alignment</a></li>
+        <a href="#" data-toggle="collapse" data-target="#blockquotes">Blockquotes <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'blockquotes'%} in {% endif %}" id="blockquotes">
+          <li{% if page.name == "typography-blockquotes-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/blockquotes/default">Default</a></li>
+          <li{% if page.name == "typography-blockquotes-source" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/blockquotes/source">Cite Source</a></li>
+          <li{% if page.name == "typography-blockquotes-alignment" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/blockquotes/alignment">Alignment</a></li>
         </ul>
       </li>
       <li>
-        <a href="#" data-toggle="collapse" data-target="#lists">Lists <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.snippet == 'lists'%} in {% endif %}" id="lists">
-          <li{% if page.name == "typography-lists-unordered" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/unordered">Unordered</a></li>
-          <li{% if page.name == "typography-lists-ordered" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/ordered">Ordered</a></li>
-          <li{% if page.name == "typography-lists-unstyled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/unstyled">Unstyled</a></li>
-          <li{% if page.name == "typography-lists-inline" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/inline">Inline</a></li>
-          <li{% if page.name == "typography-lists-description" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/description">Description</a></li>
-          <li{% if page.name == "typography-lists-horizontal" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/lists/horizontal">Horizontal Description</a></li>
+        <a href="#" data-toggle="collapse" data-target="#lists">Lists <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'lists'%} in {% endif %}" id="lists">
+          <li{% if page.name == "typography-lists-unordered" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/lists/unordered">Unordered</a></li>
+          <li{% if page.name == "typography-lists-ordered" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/lists/ordered">Ordered</a></li>
+          <li{% if page.name == "typography-lists-unstyled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/lists/unstyled">Unstyled</a></li>
+          <li{% if page.name == "typography-lists-inline" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/lists/inline">Inline</a></li>
+          <li{% if page.name == "typography-lists-description" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/lists/description">Description</a></li>
+          <li{% if page.name == "typography-lists-horizontal" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/lists/horizontal">Horizontal Description</a></li>
         </ul>
       </li>
-      <li{% if page.name == "typography-code" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/code">Code</a></li>
-      <li{% if page.name == "typography-hero-unit" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/hero-unit">Hero Unit</a></li>
-      <li{% if page.name == "typography-page-header" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typography/page-header">Page Header</a></li>
+      <li{% if page.name == "typography-code" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/code">Code</a></li>
+      <li{% if page.name == "typography-jumbotron" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/jumbotron">Jumbotron</a></li>
+      <li{% if page.name == "typography-page-header" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}typography/page-header">Page Header</a></li>
     </ul>
   </li>
   <li>
-    <a href="#" data-target="#tables" data-toggle="collapse">Tables <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'tables'%} in {% endif %}" id="tables">
-      <li{% if page.name == "tables-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/default">Default</a></li>
-      <li{% if page.name == "tables-striped" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/striped">Striped</a></li>
-      <li{% if page.name == "tables-bordered" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/bordered">Bordered</a></li>
-      <li{% if page.name == "tables-hover" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/hover">Hover</a></li>
-      <li{% if page.name == "tables-condensed" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/condensed">Condensed</a></li>
-      <li{% if page.name == "tables-context" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/context">Contextual Styles</a></li>
+    <a href="#" data-target="#tables" data-toggle="collapse">Tables <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'tables'%} in {% endif %}" id="tables">
+      <li{% if page.name == "tables-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/default">Default</a></li>
+      <li{% if page.name == "tables-striped" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/striped">Striped</a></li>
+      <li{% if page.name == "tables-bordered" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/bordered">Bordered</a></li>
+      <li{% if page.name == "tables-hover" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/hover">Hover</a></li>
+      <li{% if page.name == "tables-condensed" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/condensed">Condensed</a></li>
+      <li{% if page.name == "tables-context" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/context">Contextual Styles</a></li>
+      <li{% if page.name == "tables-responsive" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/responsive">Responsive</a></li>
       <li>
-        <a href="#" data-target="#table-sizing" data-toggle="collapse">Sizing <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.group == 'tables'%} in {% endif %}" id="table-sizing">
-          <li{% if page.name == "tables-sizing-grid" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/sizing/grid">Grid</a></li>
-          <li{% if page.name == "tables-sizing-non-grid" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tables/sizing/non-grid">Non-grid</a></li>
+        <a href="#" data-target="#table-sizing" data-toggle="collapse">Sizing <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.group == 'tables'%} in {% endif %}" id="table-sizing">
+          <li{% if page.name == "tables-sizing-grid" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/sizing/grid">Grid</a></li>
+          <li{% if page.name == "tables-sizing-non-grid" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tables/sizing/non-grid">Non-grid</a></li>
         </uL>
       </li>
     </ul>
   </li>
-  <li><a href="#" data-target="#forms" data-toggle="collapse">Forms <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'forms'%} in {% endif %}" id="forms">
-      <li{% if page.name == "forms-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/default">Default Styles</a></li>
-      <li{% if page.name == "forms-search-form" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/search-form">Search form</a></li>
-      <li{% if page.name == "forms-inline-form" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/inline-form">Inline form</a></li>
-      <li{% if page.name == "forms-horizontal-form" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/horizontal-form">Horizontal form</a></li>
-      <li{% if page.name == "forms-contact-us" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/contact-us">Contact Us form</a></li>
-      <li{% if page.name == "forms-newsletter-signup-form" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/forms/newsletter-signup-form">Newsletter Sign-up</a></li>
+  <li class=" "><a href="#" data-target="#forms" data-toggle="collapse">Forms <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'forms'%} in {% endif %}" id="forms">
+      <li{% if page.name == "forms-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/default">Default Styles</a></li>
+      <li{% if page.name == "checkbox-styled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/checkbox-styled">Styled Checkboxes</a></li>
+      <li{% if page.name == "radio-styled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/radio-styled">Styled Radio Buttons</a></li>
+      <li{% if page.name == "forms-inline-form" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/inline-form">Inline form</a></li>
+      <li{% if page.name == "forms-horizontal-form" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/horizontal-form">Horizontal form</a></li>
+      <li{% if page.name == "date-picker" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#selects">Select <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'select'%} in {% endif %}" id="selects">
-      <li{% if page.name == "selects-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/selects/default">Default</a></li>
-      <li{% if page.name == "selects-multiselect" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/selects/multiselect">Multi-Select</a></li>
-      <li{% if page.name == "selects-optiongroup" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/selects/optiongroup">Option Group</a></li>
-      <li{% if page.name == "selects-disabled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/selects/disabled">Disabled</a></li>
-      <li{% if page.name == "selects-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/selects/usage">Usage</a></li>
+    <a href="#" data-toggle="collapse" data-target="#selects">Select <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'select'%} in {% endif %}" id="selects">
+      <li{% if page.name == "selects-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}selects/default">Default</a></li>
+      <li{% if page.name == "selects-multiselect" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}selects/multiselect">Multi-Select</a></li>
+      <li{% if page.name == "selects-optiongroup" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}selects/optiongroup">Option Group</a></li>
+      <li{% if page.name == "selects-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}selects/disabled">Disabled</a></li>
+      <li{% if page.name == "selects-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}selects/usage">Usage</a></li>
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#images">Images <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'images'%} in {% endif %}" id="images">
-      <li{% if page.name == "images-rounded" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/rounded">Rounded</a></li>
-      <li{% if page.name == "images-circle" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/circle">Circle</a></li>
-      <li{% if page.name == "images-polariod" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/polariod">Polariod</a></li>
-      <li{% if page.name == "images-caption" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/images/caption">Caption</a></li>
+    <a href="#" data-toggle="collapse" data-target="#images">Images <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'images'%} in {% endif %}" id="images">
+      <li{% if page.name == "images-rounded" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}images/rounded">Rounded</a></li>
+      <li{% if page.name == "images-circle" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}images/circle">Circle</a></li>
+      <li{% if page.name == "images-thumbnail" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}images/thumbnail">Thumbnail</a></li>
+      <li{% if page.name == "images-responsive" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}images/responsive">Responsive</a></li>
     </ul>
   </li>
-  <li class="divider"></li>
-  <li class="nav-header">UI Elements</li>
+  <li>UI Elements</li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#dropdowns">Dropdowns <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'dropdowns'%} in {% endif %}" id="dropdowns">
-      <li{% if page.name == "dropdowns-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/basic">Basic</a></li>
-      <li{% if page.name == "dropdowns-disabled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/disabled">Disabled</a></li>
-      <li{% if page.name == "dropdowns-basic-submenu" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/basic-submenu">Basic Submenu</a></li>
-      <li{% if page.name == "dropdowns-left-submenu" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/left-submenu">Left Submenu</a></li>
-      <li{% if page.name == "dropdowns-dropup-submenu" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/dropup-submenu">Drop Up Submenu</a></li>
-      <li{% if page.name == "dropdowns-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/usage">Usage</a></li>
-      <li{% if page.name == "dropdowns-javascript" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/dropdowns/javascript">JavaScript</a></li>
-    </ul>
-  </li>
-  <li><a href="#" data-toggle="collapse" data-target="#buttons">Buttons <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'buttons'%} in {% endif %}" id="buttons">
-      <li{% if page.name == "buttons-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/basic">Basic</a></li>
-      <li{% if page.name == "buttons-sizes" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/sizes">Sizes</a></li>
-      <li{% if page.name == "buttons-block" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/block">Block</a></li>
-      <li{% if page.name == "buttons-multiple-tags" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/multiple-tags">Multiple Tags</a></li>
-      <li{% if page.name == "buttons-disabled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/disabled">Disabled</a></li>
-      <li{% if page.name == "buttons-groups" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/groups">Groups</a></li>
-      <li{% if page.name == "buttons-toolbar" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/toolbar">Toolbar</a></li>
-      <li{% if page.name == "buttons-vertical" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/vertical">Vertical Toolbar</a></li>
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#button-dropdown">Dropdowns <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.snippet == 'dropdown'%} in {% endif %}" id="button-dropdown">
-          <li{% if page.name == "buttons-dropdowns-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/basic">Basic</a></li>
-          <li{% if page.name == "buttons-dropdowns-dropup" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropup">Dropup</a></li>
-          <li{% if page.name == "buttons-dropdown-size" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/dropdown-size">Sizing</a></li>
-          <li{% if page.name == "buttons-dropdowns-split-dropdown" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
-          <li{% if page.name == "buttons-dropdowns-split-dropups" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropups">Split Dropups</a></li>
-          <li{% if page.name == "buttons-dropdowns-split-dropdown-size" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/dropdowns/split-dropdown-size">Split Dropdown Size</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#button-effects">Effects <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.snippet == 'effects' and page.group == 'buttons' %} in {% endif %}" id="button-effects">
-          <li{% if page.name == "buttons-effects-stateful" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/stateful">Stateful</a></li>
-          <li{% if page.name == "buttons-effects-single-toggle" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/single-toggle">Single Toggle</a></li>
-          <li{% if page.name == "buttons-effects-checkbox" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/checkbox">Checkbox</a></li>
-          <li{% if page.name == "buttons-effects-radio" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/buttons/effects/radio">Radio</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#tabs">Tabs <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'tabs'%} in {% endif %}" id="tabs">
-      <li{% if page.name == "tabs-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/basic">Basic</a></li>
-      <li{% if page.name == "tabs-direction" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/direction">Direction</a></li>
-      <li{% if page.name == "tabs-disabled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/disabled">Disabled</a></li>
-      <li{% if page.name == "tabs-stacked" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/stacked">Stacked</a></li>
-      <li{% if page.name == "tabs-dropdowns" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/dropdowns">Dropdowns</a></li>
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#tabs-tabbable">Tabbable <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.snippet == 'tabbable'%} in {% endif %}" id="tabs-tabbable">
-          <li{% if page.name == "tabs-tabbable-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/basic">Basic</a></li>
-          <li{% if page.name == "tabs-tabbable-bottom" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/bottom">Bottom</a></li>
-          <li{% if page.name == "tabs-tabbable-left" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/left">Left</a></li>
-          <li{% if page.name == "tabs-tabbable-right" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/right">Right</a></li>
-          <li{% if page.name == "tabs-tabbable-nested" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tabs/tabbable/nested">Nested</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#pills">Pills <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'pills'%} in {% endif %}" id="pills">
-      <li{% if page.name == "pills-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/basic">Basic</a></li>
-      <li{% if page.name == "pills-disabled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/disabled">Disabled</a></li>
-      <li{% if page.name == "pills-direction" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/direction">Direction</a></li>
-      <li{% if page.name == "pills-stacked" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/stacked">Stacked</a></li>
-      <li{% if page.name == "pills-dropdowns" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/dropdowns">Dropdowns</a></li>
-      <li{% if page.name == "pills-tabbable" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pills/tabbable">Tabbable</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#navbar">Navbar <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'navbar'%} in {% endif %}" id="navbar">
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#navbar-basic">Basic <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'basic' %} in {% endif %}" id="navbar-basic">
-          <li{% if page.name == "navbar-basic-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/default">Default</a></li>
-          <li{% if page.name == "navbar-basic-inverse" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/inverse">Inverse</a></li>
-          <li{% if page.name == "navbar-basic-wv-navbar" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/basic/wv-navbar">WV Style</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#navbar-fixed">Fixed <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'fixed' %} in {% endif %}" id="navbar-fixed">
-          <li{% if page.name == "navbar-fixed-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/default">Default</a></li>
-          <li{% if page.name == "navbar-fixed-wv-fixed" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/fixed/wv-fixed">WV Style</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" data-toggle="collapse" data-target="#navbar-static">Static <i class="icon-caret-right"></i></a>
-        <ul class="nav nav-list collapse {% if page.group == 'navbar' and page.snippet == 'static' %} in {% endif %}" id="navbar-static">
-          <li{% if page.name == "navbar-static-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static/default">Default</a></li>
-          <li{% if page.name == "navbar-static-wv-static" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/navbar/static/wv-static">WV Style</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li {% if page.name == "breadcrumbs" %}class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/breadcrumbs">Breadcrumbs</a></li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#pagination">Pagination <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'pagination'%} in {% endif %}" id="pagination">
-      <li{% if page.name == "pagination-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pagination/default">Default</a></li>
-      <li{% if page.name == "pagination-disabledandactive" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pagination/disabledandactive">Disabled and Active States</a></li>
-      <li{% if page.name == "pagination-sizes" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pagination/sizes">Sizes</a></li>
-      <li{% if page.name == "pagination-alignment" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pagination/alignment">Alignment</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#pager">Pager <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'pager'%} in {% endif %}" id="pager">
-      <li{% if page.name == "pager-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pager/default">Default</a></li>
-      <li{% if page.name == "pager-disabled" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pager/disabled">Disabled</a></li>
-      <li{% if page.name == "pager-alignment" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/pager/alignment">Alignment</a></li>
-    </ul>
-  </li>
-  <li{% if page.name == "labels" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/labels">Labels</a></li>
-  <li{% if page.name == "badges" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/badges">Badges</a></li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'thumbnails'%} in {% endif %}" id="thumbnails">
-      <li{% if page.name == "thumbnails-grid" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails/grid">Grid Sizing</a></li>
-      <li{% if page.name == "thumbnails-no-grid" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/thumbnails/no-grid">No Grid Sizing</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'alerts'%} in {% endif %}" id="alerts">
-      <li{% if page.name == "alerts-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/default">Default</a></li>
-      <li{% if page.name == "alerts-success" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/success">Success</a></li>
-      <li{% if page.name == "alerts-info" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/info">Info</a></li>
-      <li{% if page.name == "alerts-warning" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/warning">Warning</a></li>
-      <li{% if page.name == "alerts-error" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/error">Error</a></li>
-      <li{% if page.name == "alerts-js" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/alerts/js">JavaScript</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#progressbars">Progress Bars <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'progressbars'%} in {% endif %}" id="progressbars">
-      <li{% if page.name == "progressbars-basic" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/basic">Basic</a></li>
-      <li{% if page.name == "progressbars-striped" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/striped">Striped</a></li>
-      <li{% if page.name == "progressbars-animated" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/animated">Animated</a></li>
-      <li{% if page.name == "progressbars-colors" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/colors">Colors</a></li>
-      <li{% if page.name == "progressbars-colorsstriped" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/colorsstriped">Colors Striped</a></li>
-      <li{% if page.name == "progressbars-colorsanimated" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/colorsanimated">Colors Animated</a></li>
-      <li{% if page.name == "progressbars-stacked" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/progressbars/stacked">Stacked</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#mediaobject">Media Object <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'mediaobject'%} in {% endif %}" id="mediaobject">
-      <li{% if page.name == "mediaobject-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/mediaobject/default">Default</a></li>
-      <li{% if page.name == "mediaobject-medialist" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/mediaobject/medialist">Media List</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#misc">Miscellaneous <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'misc'%} in {% endif %}" id="misc">
-      <li{% if page.name == "misc-clearfix" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/clearfix">Clearfix</a></li>
-      <li{% if page.name == "misc-muted" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/muted">Muted</a></li>
-      <li{% if page.name == "misc-pull-left" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/pull-left">Pull-Left</a></li>
-      <li{% if page.name == "misc-pull-right" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/pull-right">Pull-Right</a></li>
-      <li{% if page.name == "misc-wells" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/wells">Wells</a></li>
-      <li{% if page.name == "misc-close-icon" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/misc/close-icon">Close icon</a></li>
-    </ul>
+    <a href="#" data-toggle="collapse" data-target="#dropdowns">Dropdowns <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'dropdowns'%} in {% endif %}" id="dropdowns">
+      <li{% if page.name == "dropdowns-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}dropdowns/basic">Basic</a></li>
+      <li{% if page.name == "dropdowns-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}dropdowns/disabled">Disabled</a></li>
+      <li{% if page.name == "dropdowns-alignment" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}dropdowns/alignment">Alignment</a></li>
 
+      <li{% if page.name == "dropdowns-headers" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}dropdowns/header">Header</a></li>
+    </ul>
   </li>
-  <li class="divider"></li>
-  <li class="nav-header">Widgets</li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#modal">Modal <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'modal'%} in {% endif %}" id="modal">
-      <li{% if page.name == "modal-html" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/modal/html">Data attributes</a></li>
-      <li{% if page.name == "modal-js" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/modal/js">JavaScript</a></li>
-      <li{% if page.name == "modal-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/modal/usage">Usage</a></li>
+  <li><a href="#" data-toggle="collapse" data-target="#buttons">Buttons <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'buttons'%} in {% endif %}" id="buttons">
+      <li{% if page.name == "buttons-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/basic">Basic</a></li>
+      <li{% if page.name == "buttons-sizes" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/sizes">Sizes</a></li>
+      <li{% if page.name == "buttons-block" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/block">Block</a></li>
+      <li{% if page.name == "buttons-multiple-tags" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/multiple-tags">Multiple Tags</a></li>
+      <li{% if page.name == "buttons-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/disabled">Disabled</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-group">Groups <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'group'%} in {% endif %}" id="button-group">
+          <li{% if page.name == "buttons-groups" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/">Groups</a></li>
+          <li{% if page.name == "buttons-toolbar" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/toolbar">Toolbar</a></li>
+          <li{% if page.name == "buttons-vertical" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/vertical">Vertical</a></li>
+          <li{% if page.name == "buttons-group-sizing" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/sizing">Sizing</a></li>
+          <li{% if page.name == "buttons-group-nesting" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/nesting">Nesting</a></li>
+          <li{% if page.name == "buttons-group-justified-links" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/justified-links">Justified <code>&lt;a&gt;</code></a></li>
+          <li{% if page.name == "buttons-group-justified-button" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/justified-button">Justified<code>&lt;button&gt;</code></a></li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-dropdown">Dropdowns <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'dropdown'%} in {% endif %}" id="button-dropdown">
+          <li{% if page.name == "buttons-dropdowns-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/basic">Basic</a></li>
+          <li{% if page.name == "buttons-dropdowns-dropup" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/dropup">Dropup</a></li>
+          <li{% if page.name == "buttons-dropdown-size" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/size">Sizing</a></li>
+          <li{% if page.name == "buttons-dropdowns-split-dropdown" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
+          <li{% if page.name == "buttons-dropdowns-split-dropups" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/dropdowns/split-dropups">Split Dropups</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-effects">Effects <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'effects' and page.group == 'buttons' %} in {% endif %}" id="button-effects">
+          <li{% if page.name == "buttons-effects-stateful" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/effects/stateful">Stateful</a></li>
+          <li{% if page.name == "buttons-effects-single-toggle" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/effects/single-toggle">Single Toggle</a></li>
+          <li{% if page.name == "buttons-effects-checkbox" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/effects/checkbox">Checkbox</a></li>
+          <li{% if page.name == "buttons-effects-radio" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/effects/radio">Radio</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#carousel">Carousel <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'carousel'%} in {% endif %}" id="carousel">
-      <li{% if page.name == "carousel-html" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/carousel/html">Data Attributes</a></li>
-      <li{% if page.name == "carousel-js" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/carousel/js">JavaScript</a></li>
-      <li{% if page.name == "carousel-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/carousel/usage">Usage</a></li>
+    <a href="#" data-toggle="collapse" data-target="#tabs">Tabs <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'tabs'%} in {% endif %}" id="tabs">
+      <li{% if page.name == "tabs-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/basic">Basic</a></li>
+      <li{% if page.name == "tabs-direction" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/direction">Direction</a></li>
+      <li{% if page.name == "tabs-justified" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/justified">Justified</a></li>
+      <li{% if page.name == "tabs-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/disabled">Disabled</a></li>
+      <li{% if page.name == "tabs-dropdowns" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/dropdowns">Dropdowns</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#tabs-tabbable">Tabbable <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.snippet == 'tabbable'%} in {% endif %}" id="tabs-tabbable">
+          <li{% if page.name == "tabs-tabbable-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/basic">Basic</a></li>
+
+          <li{% if page.name == "tabs-tabbable-nested" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tabs/tabbable/nested">Nested</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#typeahead">Typeahead <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'typeahead'%} in {% endif %}" id="typeahead">
-      <li{% if page.name == "typeahead-html" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typeahead/html">Data Attributes</a></li>
-      <li{% if page.name == "typeahead-js" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typeahead/js">JavaScript</a></li>
-      <li{% if page.name == "typeahead-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/typeahead/usage">Usage</a></li>
+    <a href="#" data-toggle="collapse" data-target="#pills">Pills <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'pills'%} in {% endif %}" id="pills">
+      <li{% if page.name == "pills-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/basic">Basic</a></li>
+      <li{% if page.name == "pills-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/disabled">Disabled</a></li>
+      <li{% if page.name == "pills-direction" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/direction">Direction</a></li>
+      <li{% if page.name == "pills-stacked" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/stacked">Stacked</a></li>
+      <li{% if page.name == "pills-dropdowns" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pills/dropdowns">Dropdowns</a></li>
     </ul>
   </li>
   <li>
-    <a href="#" data-toggle="collapse" data-target="#collapse">Collapse <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'collapse'%} in {% endif %}" id="collapse">
-      <li{% if page.name == "collapse-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/collapse/default">Default</a></li>
-      <li{% if page.name == "collapse-accordion" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/collapse/accordion">Accordion</a></li>
-      <li{% if page.name == "collapse-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/collapse/usage">Usage</a></li>
-    </ul>
-  </li>
-  <li class="divider"></li>
-  <li class="nav-header">Effects</li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#tooltips">Tooltips <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'tooltip'%} in {% endif %}" id="tooltips">
-      <li{% if page.name == "tooltips-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/default">Default</a></li>
-      <li{% if page.name == "tooltips-positions" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/positions">Positions</a></li>
-      <li{% if page.name == "tooltips-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/tooltips/usage">Usage</a></li>
-    </uL>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#popovers">Popovers <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'popover'%} in {% endif %}" id="popovers">
-      <li{% if page.name == "popovers-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/default">Default</a></li>
-      <li{% if page.name == "popovers-positions" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/positions">Positions</a></li>
-      <li{% if page.name == "popovers-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/popovers/usage">Usage</a></li>
-    </uL>
-  </li>
-  <li>
-  <a href="#" data-toggle="collapse" data-target="#scrollspy">ScrollSpy <i class="icon-caret-right"></i></a>
-  <ul class="nav nav-list collapse {% if page.group == 'scrollspy'%} in {% endif %}" id="scrollspy">
-    <li{% if page.name == "scrollspy-navbar" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy/navbar">Example in navbar</a></li>
-    <li{% if page.name == "scrollspy-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/scrollspy/usage">Usage</a></li>
+    <a href="#" data-toggle="collapse" data-target="#navbar">Navbar <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse {% if page.group == 'navbar'%} in {% endif %}" id="navbar">
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#navbar-basic">Basic <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.group == 'navbar' and page.snippet == 'basic' %} in {% endif %}" id="navbar-basic">
+          <li{% if page.name == "navbar-basic-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/basic/default">Default</a></li>
+          <li{% if page.name == "navbar-basic-inverse" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/basic/inverse">Inverse</a></li>
+          <li{% if page.name == "navbar-basic-wv-navbar" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/basic/wv-navbar">WV Style</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#navbar-fixed">Fixed <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse {% if page.group == 'navbar' and page.snippet == 'fixed' %} in {% endif %}" id="navbar-fixed">
+          <li{% if page.name == "navbar-fixed-bottom" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/fixed/fixed-to-bottom">Bottom</a></li>
+          <li{% if page.name == "navbar-fixed-top" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}navbar/fixed/fixed-to-top">Top</a></li>
+        </ul>
+      </li>
+      <li{% if page.name == "navbar-static-top" %} class="active"{% endif %}>
+      <a href="{{ page.path }}{{ site.developerdocs }}navbar/static">Static Top</a>
+    </li>
   </ul>
-  </li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#affix">Affix <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == 'affix'%} in {% endif %}" id="affix">
-      <li{% if page.name == "affix-default" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/affix/default">Default</a></li>
-      <li{% if page.name == "affix-usage" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/affix/usage">Usage</a></li>
-    </ul>
-  </li>
-  <li class="divider"></li>
-  <li class="nav-header">Glyphs</li>
-  <li>
-    <a href="#" data-toggle="collapse" data-target="#icons">Icons <i class="icon-caret-right"></i></a>
-    <ul class="nav nav-list collapse {% if page.group == "icons"%} in {% endif %}" id="icons">
-      <li{% if page.name == "icons-fontawesome" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/fontawesome">Font Glyphs</a></li>
-      <li{% if page.name == "icons-favoriteicons" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/favoriteicons">Most Used Icons</a></li>
-      <li{% if page.name == "icons-othericons" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/othericons">Other Icons</a></li>
-      <li{% if page.name == "icons-graphics" %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ site.developerdocs }}/icons/graphics">Graphics</a></li>
-    </ul>
-  </li>
+</li>
+<li class=" {% if page.name == 'breadcrumbs' %}active{% endif %}"><a href="{{ page.path }}{{ site.developerdocs }}breadcrumbs">Breadcrumbs</a></li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#pagination">Pagination <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'pagination'%} in {% endif %}" id="pagination">
+    <li{% if page.name == "pagination-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pagination/default">Default</a></li>
+    <li{% if page.name == "pagination-disabledandactive" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pagination/disabledandactive">Disabled and Active States</a></li>
+    <li{% if page.name == "pagination-sizes" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pagination/sizes">Sizes</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#pager">Pager <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'pager'%} in {% endif %}" id="pager">
+    <li{% if page.name == "pager-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pager/default">Default</a></li>
+    <li{% if page.name == "pager-disabled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pager/disabled">Disabled</a></li>
+    <li{% if page.name == "pager-alignment" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}pager/alignment">Alignment</a></li>
+  </ul>
+</li>
+<li class=" {% if page.name == 'labels' %}active{% endif %}"><a href="{{ page.path }}{{ site.developerdocs }}labels">Labels</a></li>
+<li class=" {% if page.name == 'badges' %}active{% endif %}"><a href="{{ page.path }}{{ site.developerdocs }}badges">Badges</a></li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'thumbnails'%} in {% endif %}" id="thumbnails">
+    <li{% if page.name == "thumbnails-grid" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}thumbnails/grid">Grid Sizing</a></li>
+    <li{% if page.name == "thumbnails-custom" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}thumbnails/custom">Custom</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'alerts'%} in {% endif %}" id="alerts">
+    <li{% if page.name == "alerts-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/default">Default</a></li>
+    <li{% if page.name == "alerts-dismissible" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/dismissible">Dismissible</a></li>
+    <li{% if page.name == "alerts-links" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/links">Links</a></li>
+    <li{% if page.name == "alerts-js" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/javascript">JavaScript</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#progressbars">Progress Bars <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'progressbars'%} in {% endif %}" id="progressbars">
+    <li{% if page.name == "progressbars-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}progressbars/basic">Basic</a></li>
+    <li{% if page.name == "progressbars-label" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}progressbars/label">Label</a></li>
+    <li{% if page.name == "progressbars-colors" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}progressbars/colors">Colors</a></li>
+    <li{% if page.name == "progressbars-striped" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}progressbars/striped">Striped</a></li>
+    <li{% if page.name == "progressbars-animated" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}progressbars/animated">Animated</a></li>
+    <li{% if page.name == "progressbars-stacked" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}progressbars/stacked">Stacked</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#panels">Panels <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'panels'%} in {% endif %}" id="panels">
+    <li{% if page.name == "panel" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}panel/basic">Basic</a></li>
+    <li{% if page.name == "panel-heading" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}panel/panel-heading">Heading</a></li>
+    <li{% if page.name == "panel-footer" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}panel/panel-footer">Footers</a></li>
+    <li{% if page.name == "panel-context" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}panel/panel-context">Context Colors</a></li>
+    <li{% if page.name == "panel-list-group" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}panel/panel-list-group">List Group</a></li>
+    <li{% if page.name == "panel-tables" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}panel/panel-tables">Tables</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#list-group">List Groups <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'list-group'%} in {% endif %}" id="list-group">
+    <li{% if page.name == "list-group-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}list-group/basic">Basic</a></li>
+    <li{% if page.name == "list-group-badges" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}list-group/badges">Badges</a></li>
+    <li{% if page.name == "list-group-linked-itemss" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}list-group/linked-items">Linked Items</a></li>
+    <li{% if page.name == "list-group-context" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}list-group/context">Context Colors</a></li>
+    <li{% if page.name == "list-group-custom" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}list-group/custom">Custom</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#mediaobject">Media Object <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'mediaobject'%} in {% endif %}" id="mediaobject">
+    <li{% if page.name == "mediaobject-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}mediaobject/default">Default</a></li>
+    <li{% if page.name == "mediaobject-medialist" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}mediaobject/medialist">Media List</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#helper">Helper Classes <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'helper'%} in {% endif %}" id="helper">
+    <li{% if page.name == "helper-context-colors" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/context-colors">Context Colors</a></li>
+    <li{% if page.name == "helper-context-backgrounds" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/context-backgrounds">Context Backgrounds</a></li>
+    <li{% if page.name == "helper-clearfix" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/clearfix">Clearfix</a></li>
+    <li{% if page.name == "helper-floats" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/floats">Floats</a></li>
+    <li{% if page.name == "helper-center-blocks" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/center-blocks">Center Blocks</a></li>
+    <li{% if page.name == "helper-show-hide" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/showandhide">Show/hide Content</a></li>
+    <li{% if page.name == "helper-screen-reader" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/screen-reader">Screen Reader Content</a></li>
+    <li{% if page.name == "helper-image-replace" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/image-replace">Image replacement</a></li>
+    <li{% if page.name == "helper-close-icon" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}helper/close-icon">Close icon</a></li>
+  </ul>
+
+</li>
+<li>Widgets</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#modal">Modal <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'modal'%} in {% endif %}" id="modal">
+    <li{% if page.name == "modal" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}modal/basic">Basic</a></li>
+    <li{% if page.name == "modal-sizes" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}modal/sizes">Sizes</a></li>
+    <li{% if page.name == "modal-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}modal/usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#carousel">Carousel <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'carousel'%} in {% endif %}" id="carousel">
+    <li{% if page.name == "carousel-basic" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}carousel/basic">Basic</a></li>
+    <li{% if page.name == "carousel-caption" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}carousel/caption">Caption</a></li>
+    <li{% if page.name == "carousel-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}carousel/usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#collapse">Collapse <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'collapse'%} in {% endif %}" id="collapse">
+    <li{% if page.name == "collapse-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}collapse/default">Default</a></li>
+    <li{% if page.name == "collapse-accordion" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}collapse/accordion">Accordion</a></li>
+    <li{% if page.name == "collapse-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}collapse/usage">Usage</a></li>
+  </ul>
+</li>
+<li>Effects</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#tooltips">Tooltips <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'tooltip'%} in {% endif %}" id="tooltips">
+    <li{% if page.name == "tooltips-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tooltips/default">Default</a></li>
+    <li{% if page.name == "tooltips-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}tooltips/usage">Usage</a></li>
+  </uL>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#popovers">Popovers <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'popover'%} in {% endif %}" id="popovers">
+    <li{% if page.name == "popovers-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}popovers/default">Default</a></li>
+    <li{% if page.name == "popovers-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}popovers/usage">Usage</a></li>
+  </uL>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#scrollspy">ScrollSpy <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'scrollspy'%} in {% endif %}" id="scrollspy">
+    <li{% if page.name == "scrollspy-navbar" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}scrollspy/navbar">Example in navbar</a></li>
+    <li{% if page.name == "scrollspy-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}scrollspy/usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#affix">Affix <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == 'affix'%} in {% endif %}" id="affix">
+    <li{% if page.name == "affix-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}affix/default">Default</a></li>
+    <li{% if page.name == "affix-usage" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}affix/usage">Usage</a></li>
+  </ul>
+</li>
+<li>Glyphs</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#icons">Icons <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse {% if page.group == "icons"%} in {% endif %}" id="icons">
+    <li{% if page.name == "icons-fontawesome" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}icons/fontawesome">Font Awesome</a></li>
+    <li{% if page.name == "icons-favoriteicons" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}icons/favoriteicons">Most Used Icons</a></li>
+    <li{% if page.name == "icons-othericons" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}icons/othericons">Other Icons</a></li>
+    <li{% if page.name == "icons-graphics" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}icons/graphics">Graphics</a></li>
+  </ul>
+</li>
 </ul>

@@ -5,50 +5,45 @@ snippet: dropdown
 group: buttons
 hasJs: false
 name: buttons-dropdowns-basic
+path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <div class="btn-group">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="icon-caret-down"></i></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#" tabindex="-1">Action</a></li>
-                  <li><a href="#" tabindex="-1">Action Two</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<div class="btn-group">
-  <button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="icon-caret-down"></i></button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="#" tabindex="-1">Action</a></li>
-    <li><a href="#" tabindex="-1">Action Two</a></li>
-  </ul>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="btn-group">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
 </div>
-{% endhighlight %}
-            </div>
-          </div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="btn-group">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <i class="fa fa-caret-down"></i></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#" tabindex="-1">Action</a></li>
+      <li><a href="#" tabindex="-1">Action Two</a></li>
+    </ul>
+  </div>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-js">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

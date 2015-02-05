@@ -3,8 +3,11 @@ layout: content
 title: Typography
 group: typography
 name: typography
+path: ../../../
 ---
 Although the World Vision corporate identity calls for Gill Sans as the corporate typeface, rendering the font as html text may not always be possible. In these cases, Arial has been selected as the substitute font for Web page content. In situations where text can be applied over a graphic or background, corporate identity standards apply. Gill Sans should be used in these instances.
+
+Our fonts are provided via a service from [Fonts.com]({{site.fonts-link}}). There is a snippet of JavaScript that will download the fonts for authorized domains.
 
 Text should be rendered in HTML in most cases, except where specifically noted.
 
@@ -21,8 +24,8 @@ For consistency, each instance of HTML text on the homepage have an assigned siz
 
 **Font Awesome Icons**
 
-[The following icons]({{ site.baseurl }}{{ site.developerdocs }}/icons/favoriteicons) have been selected from the [Font Awesome 3.2.1 Icon library]({{ site.font-awesome }}/3.2.1). Only the selected icons will be available via the World Vision UI Kit. Additional icons, or an updated 4.0 version, are available [here]({{ site.font-awesome }}).
+[Font Awesome]({{ site.font-awesome }}) provides over 400+ icons as font glyphs. These icons are provided as a font and can be used on any element. World Vision has created a [list of mostly used icons]({{ page.path }}{{ site.developerdocs }}icons/favoriteicons/), as well as a [list of all the icons]({{ page.path }}{{ site.developerdocs }}icons/othericons/) provided by [Font Awesome]({{ site.font-awesome }}).
 
 **Examples**
 
-For examples, visit the [typography elements section]({{ site.baseurl }}{{ site.developerdocs }}/typography/headings)
+For examples, visit the [typography elements section]({{ page.path }}{{ site.developerdocs }}typography/headings)

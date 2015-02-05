@@ -1,0 +1,72 @@
+---
+layout: default
+title: Tables - Responsive
+snippet: tables
+group: tables
+hasJs: false
+name: tables-responsive
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Make any table responsive by wrapping a table in <code>.table-responsive</code>. It will add an <code>overflow</code> on small devices (768px &amp; below).
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Table heading</th>
+          <th>Table heading</th>
+          <th>Table heading</th>
+          <th>Table heading</th>
+          <th>Table heading</th>
+          <th>Table heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+        </tr>
+        <tr>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+          <td>Table Row</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- /.table-responsive -->
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="table-responsive">
+    <table class="table">
+      ...
+    </table>
+  </div> <!-- /.table-responsive -->
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

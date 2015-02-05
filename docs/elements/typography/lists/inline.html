@@ -5,46 +5,42 @@ snippet: lists
 group: typography
 hasJs: false
 name: typography-lists-inline
+path: ../../../../
 ---
 <header class="page-header" id="headerTitle">
-    <h1>{{page.title}}</h1>
-    <p class="subheader lead">
-      Place all list items on a single line with inline-block and some light padding.
-    </p>
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Place all list items on a single line with inline-block and some light padding.
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <ul class="inline">
-                <li>Lorem ipsum</li>
-                <li>Phasellus iaculis</li>
-                <li>Nulla volutpat</li>
-              </ul>
-            </div>
-          </div>
+<!-- Preview -->
 
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<ul class="inline">
-  <li>Lorem ipsum</li>
-  <li>Phasellus iaculis</li>
-  <li>Nulla volutpat</li>
-</ul>
-{% endhighlight %}
-            </div>
-          </div>
+<div class="docs-example">
+  <ul class="list-inline">
+    <li>Lorem ipsum</li>
+    <li>Phasellus iaculis</li>
+    <li>Nulla volutpat</li>
+  </ul>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <ul class="list-inline">
+    <li>Lorem ipsum</li>
+    <li>Phasellus iaculis</li>
+    <li>Nulla volutpat</li>
+  </ul>
+  {% endhighlight %}
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+  {% endhighlight %}
+</div>
 {% endif %}
 
 

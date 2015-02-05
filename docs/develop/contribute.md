@@ -2,8 +2,8 @@
 layout: content
 title: Contribute
 name: contribute
+path: ../../
 ---
-### Contribute
 
 Whether you're a WVUS developer or a vendor, we can always make improvements. The UiKit was created to be platform independent and easily extended.
 
@@ -13,7 +13,7 @@ In order to build the World Vision UiKit, there are a couple of prerequisites th
 
 1. Install the [Node.js Package Manager (npm)](http://nodejs.org/)
 2. Install [Grunt](http://gruntjs.com/) using `npm install -g grunt-cli`
-3. Run `npm install` in `/path/to/wvus.uikit/src` to install all development dependencies
+3. Run `npm install` in `/path/to/wvus.uikit` to install all development dependencies
 
 You’re ready to start building out the uikit!
 
@@ -28,17 +28,11 @@ The UiKit uses [Grunt](http://gruntjs.com/) to build out and quickly run tasks t
 
 ### Available Grunt Commands
 
-`grunt` build out the uikit; run tests, copy files, compile and minify less, concatenate and minify js, create zip package
+`grunt dist-css`: Compiles LESS into CSS. This includes minified and source maps
 
-`grunt test` run the tests independently; compiles less (checks for errors), runs jshint, qunit
+`grunt dist-js`: Concatenates and minifies JS
 
-`grunt compile` compile the less and concatenate the js independently,
-
-`grunt watch` convenience task to compile less, in real time, as it is edited
-
-`grunt docs` serves the docs locally; must have Jekyll installed (see github docs readme)
-
-`grunt validate` validates the html of the docs
+`grunt dist`: Combines `dist-css` and `dist-js`. Creates a zip for distribution.
 
 ### Dependencies
-The UiKit depends on several libraries which provide the base functionality.  Thanks go out to the developers behind [Twitter Bootstrap]({{ site.bootstrap }}), [Font Awesome]({{ site.font-awesome }}) and [jQuery]({{ site.jquery }}). Ideas were also inspired by [Zurb Foundation](http://foundation.zurb.com/) and [Fuel UX](http://exacttarget.github.io/fuelux/).
+The UiKit depends on several libraries which provide the base functionality.  Thanks go out to the developers behind [Twitter Bootstrap]({{ site.bootstrap }}), [Font Awesome]({{ site.font-awesome }}) and [jQuery]({{ site.jquery }}). Some ideas were also inspired by [Zurb Foundation](http://foundation.zurb.com/).

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="wvus-uikit">
+<html lang="en" class="wvusUikit">
   <head>
     <meta charset="utf-8">
     <title>WV UiKit, {{ page.group }}</title>
@@ -7,7 +7,12 @@
 
 
     <!-- Le styles -->
-    <link href="{{ site.baseurl }}/assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+
+
+
+
     {% case page.group %}
       {% when "navbar" %}
         {% include tests/test-navbar-style.html %}
@@ -19,19 +24,19 @@
         {% include tests/test-form-responsive.html %}
       {% endcase %}
 
-    <link href="{{ site.baseurl }}/assets/wvus.uikit/css/wvus.uikit.responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+
     <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/wvus.uikit/img/ico/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+                    <link rel="apple-touch-icon" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+                                   <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.png">
   </head>
 
   <body>
@@ -42,8 +47,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="{{ site.baseurl }}/assets/wvus.uikit/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="../../assets/wvus.uikit/js/jquery-custom.min.js"></script>
+    <script src="../../assets/wvus.uikit/js/wvus.uikit.js"></script>
+    <script src="../../assets/wvus.uikit/js/modernizer.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/holder/holder.js"></script>
+
 
     {% case page.group %}
         {% when "css-tests" %}
@@ -52,13 +61,12 @@
           {% include tests/test-css-test-js.html %}
         {% when "media" %}
           {% include tests/test-css-test-js.html %}
-        {% when "carousel" %}
-          {% include tests/test-css-test-js.html %}
+
         {% when "nav" %}
           {% include tests/test-css-test-js.html %}
     {% endcase %}
 
-  
+
     {% if page.group == "buttons" %}
       <!-- Button JS Test -->
         <script type="text/javascript">
@@ -81,25 +89,25 @@
         </script>
     {% endif %}
 
-    
+
     {% if page.group == "accordion" %}
     <!-- Accordion JS Test -->
         <script type="text/javascript">
         wvusUikit(document).ready(function(){
-      
-          wvusUikit('.collapse').on('show', function(){
-            wvusUikit(this).prev().find('.accordion-toggle > i')
-            .removeClass('icon-plus').addClass('icon-minus');
+
+          wvusUikit('.collapse').on('show.bs.collapse', function(){
+            wvusUikit(this).prev().find('i')
+            .removeClass('fa-plus-circle').addClass('fa-minus-circle');
           });
-          wvusUikit('.collapse').on('hide', function(){
-            wvusUikit(this).prev().find('.accordion-toggle > i')
-            .removeClass('icon-minus').addClass('icon-plus');
+          wvusUikit('.collapse').on('hide.bs.collapse', function(){
+            wvusUikit(this).prev().find('i')
+            .removeClass('fa-minus-circle').addClass('fa-plus-circle');
           });
         });
       </script>
     {% endif %}
 
-    
+
     {% if page.group == "tooltip" %}
     <!-- Tooltip JS Test -->
       <script type="text/javascript">
@@ -128,7 +136,7 @@
       </script>
     {% endif %}
 
-    
+
     {% if page.group == "modal" %}
     <!-- Modal JS Test -->
       <script type="text/javascript">
@@ -145,9 +153,21 @@
       });
       </script>
     {% endif %}
+
+
     {% if page.group == "carousel" %}
       <script type="text/javascript">
+
+
         wvusUikit(document).ready(function(){
+          wvusUikit('.carousel').on('swipeleft', function(){
+            wvusUikit(this).carousel('next');
+          });
+          wvusUikit('.carousel').on('swiperight', function(){
+            wvusUikit(this).carousel('prev');
+          });
+
+
           var jsCarousel = wvusUikit('#jsCarousel');
           jsCarousel.carousel({
             interval: 2000,
@@ -174,6 +194,43 @@
           wvusUikit('#jsPip3').click(function() {
             jsCarousel.carousel(2);
           });
+        });
+      </script>
+    {% endif %}
+
+    {% if page.group == "datepicker" %}
+      <script type="text/javascript">
+          wvusUikit(document).ready(function() {
+            wvusUikit('.input-group.date').datepicker({});
+            wvusUikit('.input-group.input-daterange').datepicker({ todayBtn: "linked", todayHighlight: true, format: "mm/yyyy", startView: 2, minViewMode: 1 });
+            wvusUikit('#datepicker').datepicker({ startView: 1, todayBtn: true, multidate: true, todayHighlight: true});
+          });
+      </script>
+    {% endif %}
+
+    {% if page.group == "select" %}
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          (function($){
+            $('.selectpicker').selectpicker();
+          })(wvusUikit);
+        });
+      </script>
+    {% endif %}
+
+    {% if page.group == "spin" %}
+      <script type="text/javascript">
+        wvusUikit(document).ready(function(){
+          var button = wvusUikit('.btn.btn-danger');
+          button.click(function(){
+            button.button('loading');
+            wvusUikit('.spinner').spin({right: 0, color: "#f60"});
+              setTimeout(function(){
+                button.button('complete');
+                wvusUikit('.spinner').spin(false);
+              }, 3000)
+          });
+
         });
       </script>
     {% endif %}

@@ -1,0 +1,49 @@
+{
+  "name": "wvus.uikit",
+  "version": "3.0.0",
+  "description": "Base UI styles and controls for worldvision.org",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "homepage": "http://wvus-ibu.github.io/wvus.uikit/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wvus-ibu/wvus.uikit.git"
+  },
+  "keywords": [
+    "World",
+    "Vision",
+    "UI",
+    "Kit",
+    "Bootstrap"
+  ],
+  "author": {
+    "name": "Web Development and Delivery, Internet Business Unit, World Vision United States",
+    "url": "http://www.worldvision.org"
+  },
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-autoprefixer": "^0.7.6",
+    "grunt-banner": "^0.2.3",
+    "grunt-contrib-clean": "^0.4.1",
+    "grunt-contrib-compress": "^0.5.3",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-copy": "^0.4.1",
+    "grunt-contrib-csslint": "^0.2.0",
+    "grunt-contrib-jshint": "^0.6.5",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-qunit": "^0.2.2",
+    "grunt-contrib-uglify": "^0.2.7",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-csscomb": "^2.0.1",
+    "grunt-html-validation": "^0.1.16",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-stripcomments": "^0.2.0",
+    "grunt-text-replace": "^0.3.12",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.2"
+  }
+}

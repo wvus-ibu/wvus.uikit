@@ -1,37 +1,46 @@
-    <header class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <a href="#" class="logo"><img src="{{ site.baseurl }}/assets/img/wvus/logo.png" alt="World Vision UiKit"></a>
+    <header class="container-fluid" id="site-header">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="{{ page.path }}assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="{{ site.changelog }}" title="Releases" class="small">Current v{{ site.docs-version }}</a>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- Navbar
     ================================================== -->
-    <nav class="navbar wv-navbar navbar-static-top">
-      <div class="navbar-inner">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <nav class="navbar navbar-worldvision navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="nav-collapse collapse">
-            <div class="container-fluid">
-              <ul class="nav">
-                <li>
-                  <a href="{{ site.baseurl }}">Home</a>
-                </li>
-                <li {% if page.url contains site.designerdocs %}class="active"{% endif %}>
-                  <a href="{{ site.baseurl }}{{ site.designerdocs }}">Design</a>
-                </li>
-                <li {% if page.url contains site.develop %}class="active"{% endif %}>
-                  <a href="{{ site.baseurl }}{{site.develop}}">Develop</a>
-                </li>
-                <li {% if page.url contains site.developerdocs %}class="active"{% endif %}>
-                 <a href="{{ site.baseurl }}{{ site.developerdocs }}">Elements</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </nav>
+        </div>
+
+        <div class="navbar-collapse collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="{{ page.path }}">Home</a>
+            </li>
+            <li {% if page.url contains site.designerdocs %}class="active"{% endif %}>
+              <a href="{{ page.path }}{{ site.designerdocs }}">Design</a>
+            </li>
+            <li {% if page.url contains site.develop %}class="active"{% endif %}>
+              <a href="{{ page.path }}{{site.develop}}">Develop</a>
+            </li>
+            <li {% if page.url contains site.developerdocs %}class="active"{% endif %}>
+             <a href="{{ page.path }}{{ site.developerdocs }}">Elements</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+

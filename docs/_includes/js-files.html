@@ -1,12 +1,20 @@
-        <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="{{ site.baseurl }}/assets/wvus.uikit/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/wvus.uikit/js/wvus.uikit.min.js"></script>
+<script src="{{ page.path }}assets/wvus.uikit/js/jquery.min.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.touch,
+        yep: '{{ page.path }}assets/js/jquery.mobile.js',
+        load: [
+        '{{ page.path }}assets/wvus.uikit/js/wvus.uikit.min.js',
+        '{{ page.path }}assets/js/spin.min.js',
+        '{{ page.path }}assets/js/jquery.spin.js',
+        '{{ page.path }}assets/js/application.js'
+        ]
+    });
+</script>
 
-    <!-- external Libraries -->
-    <script src="{{ site.baseurl }}/assets/js/holder/holder.js"></script>
-
-        <!-- Bootstrap Docs JS file (ONLY USED FOR THEIR DOCS) -->
-    <script src="{{ site.baseurl }}/assets/js/application.js"></script>
+<!-- external Libraries -->
+<script src="{{ page.path }}assets/js/holder/holder.js"></script>

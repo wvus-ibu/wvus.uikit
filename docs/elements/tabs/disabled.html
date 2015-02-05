@@ -5,55 +5,51 @@ snippet: tabs
 group: tabs
 hasJs: false
 name: tabs-disabled
+path: ../../../
+bootstrap: /components/#nav-disabled-links
 ---
 <header class="page-header" id="headerTitle">
     <h1>{{page.title}}</h1>
     <p class="subheader lead">
       Add <code>.disabled</code> for <strong>gray links and no hover effects</strong>.
-    </p>
-    <p>
+  </p>
+  <p>
       Links will remain clickable, however, unless you remove the <code>href</code> attribute. Alternatively, you could implement custom JavaScript to prevent those clicks.
-    </p>
+  </p>
 </header>
-          <!-- Preview -->
-          <div class="row-fluid">
-            <div class="docs-example">
-              <ul class="nav nav-tabs">
-                <li>
-                  <a href="#">Clickable</a>
-                </li>
-                <li class="disabled">
-                  <a href="#">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- HTML Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight html  %}
-<ul class="nav nav-tabs">
-  <li>
-    <a href="#">Clickable</a>
+<!-- Preview -->
+<div class="docs-example">
+  <ul class="nav nav-tabs">
+    <li>
+      <a href="#">Clickable</a>
   </li>
   <li class="disabled">
-    <a href="#">Disabled</a>
+      <a href="#">Disabled</a>
   </li>
 </ul>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+    {% highlight html  %}
+    <ul class="nav nav-tabs">
+      <li>
+        <a href="#">Clickable</a>
+    </li>
+    <li class="disabled">
+        <a href="#">Disabled</a>
+    </li>
+</ul>
 {% endhighlight %}
-            </div>
-          </div>
+</div>
 
 {% if page.hasJs %}
-          <!-- JS Code -->
-          <div class="row-fluid">
-            <div class="docs-html">
-{% highlight js %}
+<!-- JS Code -->
+<div class="docs-html">
+    {% highlight js %}
 
-{% endhighlight %}
-            </div>
-          </div>
+    {% endhighlight %}
+</div>
 {% endif %}
 
 

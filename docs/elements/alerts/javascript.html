@@ -1,0 +1,54 @@
+---
+layout: default
+title: Alerts - Javascript
+snippet: alerts
+group: alerts
+hasJs: false
+name: alerts-js
+path: ../../../
+bootstrap: /javascript/#alerts
+---
+<header class="page-header" id="headerTitle">
+    <h1>{{page.title}}</h1>
+</header>
+<p>Enable dismissal of an alert via JavaScript:</p>
+
+{% highlight js %}wvusUikit(".alert").alert(){% endhighlight %}
+
+<h4>Markup</h4>
+<p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
+{% highlight html %}<a class="close" data-dismiss="alert" href="#">&amp;times;</a>{% endhighlight %}
+
+<h4>Methods</h4>
+<h5>wvusUikit().alert()</h5>
+<p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+<h5>.alert('close')</h5>
+<p>Closes an alert.</p>
+{% highlight js %}wvusUikit(".alert").alert('close'){% endhighlight %}
+
+
+<h4>Events</h4>
+<p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
+<table class="table table-bordered table-striped">
+  <thead>
+   <tr>
+     <th style="width: 150px;">Event</th>
+     <th>Description</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+     <td>close.bs.alert</td>
+     <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+   </tr>
+   <tr>
+     <td>closed.bs.alert</td>
+     <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
+   </tr>
+  </tbody>
+</table>
+{% highlight js %}
+wvusUikit('#my-alert').bind('closed.bs.alert', function () {
+  // do something…
+})
+{% endhighlight %}

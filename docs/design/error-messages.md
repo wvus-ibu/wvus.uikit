@@ -2,6 +2,7 @@
 layout: content
 title: Error Messages
 name: error-messages
+path: ../../
 ---
 * Error messages should appear within view (not above or below the fold)
 * The page should jump to the point on the page where the first error occurs (except when validating fields inline)

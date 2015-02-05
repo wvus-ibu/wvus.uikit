@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>Progress Bars - Colors | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Vision UiKit Documentation">
+    <meta name="author" content="World Vision US, Internet Business Unit">
+
+    <!-- Le styles -->
+    <!-- Main css -->
+    <link href="../../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+    <!-- CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/docs.css">
+
+    <!-- Modernizr with Shiv -->
+    <script type="text/javascript" src="../../../assets/wvus.uikit/js/modernizr.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="../../../assets/wvus.uikit/img/ico/favicon.ico">
+  </head>
+
+<body>
+
+      <header class="container-fluid" id="site-header">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
+          <h1 class="site-title">Digital Style Guide</h1>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar
+    ================================================== -->
+    <nav class="navbar navbar-worldvision navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../">Home</a>
+            </li>
+            <li >
+              <a href="../../../design/">Design</a>
+            </li>
+            <li >
+              <a href="../../../develop/">Develop</a>
+            </li>
+            <li class="active">
+             <a href="../../../elements/">Elements</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+    </nav>
+
+
+  <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
+        <div class="panel panel-default">
+          
+          <ul class="nav " id="elementList">
+  <li>Styles</li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#grid-nav">Grid <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="grid-nav">
+      <li><a href="../../../elements/grid/basic">Basic</a></li>
+      <li><a href="../../../elements/grid/nested">Nested</a></li>
+      <li><a href="../../../elements/grid/offset">Offset</a></li>
+    </ul>
+  </li>
+  <li class=" "><a href="../../../elements/grid/responsive/">Responsive</a></li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#typography">Typography <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="typography">
+      <li><a href="../../../elements/typography/headings">Headings</a></li>
+      <li><a href="../../../elements/typography/body">Body Text</a></li>
+      <li><a href="../../../elements/typography/bold">Bold</a></li>
+      <li><a href="../../../elements/typography/italics">Italics</a></li>
+      <li><a href="../../../elements/typography/alignment">Alignment</a></li>
+      <li><a href="../../../elements/typography/de-emphasize">De-Emphasize</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#abbreviations">Abbreviations <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="abbreviations">
+          <li><a href="../../../elements/typography/abbreviations/default">Default</a></li>
+          <li><a href="../../../elements/typography/abbreviations/initialism">Initialism</a></li>
+        </ul>
+      </li>
+      <li><a href="../../../elements/typography/address">Address</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#blockquotes">Blockquotes <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="blockquotes">
+          <li><a href="../../../elements/typography/blockquotes/default">Default</a></li>
+          <li><a href="../../../elements/typography/blockquotes/source">Cite Source</a></li>
+          <li><a href="../../../elements/typography/blockquotes/alignment">Alignment</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#lists">Lists <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="lists">
+          <li><a href="../../../elements/typography/lists/unordered">Unordered</a></li>
+          <li><a href="../../../elements/typography/lists/ordered">Ordered</a></li>
+          <li><a href="../../../elements/typography/lists/unstyled">Unstyled</a></li>
+          <li><a href="../../../elements/typography/lists/inline">Inline</a></li>
+          <li><a href="../../../elements/typography/lists/description">Description</a></li>
+          <li><a href="../../../elements/typography/lists/horizontal">Horizontal Description</a></li>
+        </ul>
+      </li>
+      <li><a href="../../../elements/typography/code">Code</a></li>
+      <li><a href="../../../elements/typography/jumbotron">Jumbotron</a></li>
+      <li><a href="../../../elements/typography/page-header">Page Header</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-target="#tables" data-toggle="collapse">Tables <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="tables">
+      <li><a href="../../../elements/tables/default">Default</a></li>
+      <li><a href="../../../elements/tables/striped">Striped</a></li>
+      <li><a href="../../../elements/tables/bordered">Bordered</a></li>
+      <li><a href="../../../elements/tables/hover">Hover</a></li>
+      <li><a href="../../../elements/tables/condensed">Condensed</a></li>
+      <li><a href="../../../elements/tables/context">Contextual Styles</a></li>
+      <li><a href="../../../elements/tables/responsive">Responsive</a></li>
+      <li>
+        <a href="#" data-target="#table-sizing" data-toggle="collapse">Sizing <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="table-sizing">
+          <li><a href="../../../elements/tables/sizing/grid">Grid</a></li>
+          <li><a href="../../../elements/tables/sizing/non-grid">Non-grid</a></li>
+        </uL>
+      </li>
+    </ul>
+  </li>
+  <li class=" "><a href="#" data-target="#forms" data-toggle="collapse">Forms <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="forms">
+      <li><a href="../../../elements/forms/default">Default Styles</a></li>
+      <li><a href="../../../elements/forms/checkbox-styled">Styled Checkboxes</a></li>
+      <li><a href="../../../elements/forms/radio-styled">Styled Radio Buttons</a></li>
+      <li><a href="../../../elements/forms/inline-form">Inline form</a></li>
+      <li><a href="../../../elements/forms/horizontal-form">Horizontal form</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#selects">Select <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="selects">
+      <li><a href="../../../elements/selects/default">Default</a></li>
+      <li><a href="../../../elements/selects/multiselect">Multi-Select</a></li>
+      <li><a href="../../../elements/selects/optiongroup">Option Group</a></li>
+      <li><a href="../../../elements/selects/disabled">Disabled</a></li>
+      <li><a href="../../../elements/selects/usage">Usage</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#images">Images <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="images">
+      <li><a href="../../../elements/images/rounded">Rounded</a></li>
+      <li><a href="../../../elements/images/circle">Circle</a></li>
+      <li><a href="../../../elements/images/thumbnail">Thumbnail</a></li>
+      <li><a href="../../../elements/images/responsive">Responsive</a></li>
+    </ul>
+  </li>
+  <li>UI Elements</li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#dropdowns">Dropdowns <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="dropdowns">
+      <li><a href="../../../elements/dropdowns/basic">Basic</a></li>
+      <li><a href="../../../elements/dropdowns/disabled">Disabled</a></li>
+      <li><a href="../../../elements/dropdowns/alignment">Alignment</a></li>
+
+      <li><a href="../../../elements/dropdowns/header">Header</a></li>
+    </ul>
+  </li>
+  <li><a href="#" data-toggle="collapse" data-target="#buttons">Buttons <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="buttons">
+      <li><a href="../../../elements/buttons/basic">Basic</a></li>
+      <li><a href="../../../elements/buttons/sizes">Sizes</a></li>
+      <li><a href="../../../elements/buttons/block">Block</a></li>
+      <li><a href="../../../elements/buttons/multiple-tags">Multiple Tags</a></li>
+      <li><a href="../../../elements/buttons/disabled">Disabled</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-group">Groups <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="button-group">
+          <li><a href="../../../elements/buttons/group/">Groups</a></li>
+          <li><a href="../../../elements/buttons/group/toolbar">Toolbar</a></li>
+          <li><a href="../../../elements/buttons/group/vertical">Vertical</a></li>
+          <li><a href="../../../elements/buttons/group/sizing">Sizing</a></li>
+          <li><a href="../../../elements/buttons/group/nesting">Nesting</a></li>
+          <li><a href="../../../elements/buttons/group/justified">Justified</a></li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-dropdown">Dropdowns <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="button-dropdown">
+          <li><a href="../../../elements/buttons/dropdowns/basic">Basic</a></li>
+          <li><a href="../../../elements/buttons/dropdowns/dropup">Dropup</a></li>
+          <li><a href="../../../elements/buttons/dropdowns/size">Sizing</a></li>
+          <li><a href="../../../elements/buttons/dropdowns/split-dropdown">Split Dropdown</a></li>
+          <li><a href="../../../elements/buttons/dropdowns/split-dropups">Split Dropups</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#button-effects">Effects <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="button-effects">
+          <li><a href="../../../elements/buttons/effects/stateful">Stateful</a></li>
+          <li><a href="../../../elements/buttons/effects/single-toggle">Single Toggle</a></li>
+          <li><a href="../../../elements/buttons/effects/checkbox">Checkbox</a></li>
+          <li><a href="../../../elements/buttons/effects/radio">Radio</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#tabs">Tabs <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="tabs">
+      <li><a href="../../../elements/tabs/basic">Basic</a></li>
+      <li><a href="../../../elements/tabs/direction">Direction</a></li>
+      <li><a href="../../../elements/tabs/justified">Justified</a></li>
+      <li><a href="../../../elements/tabs/disabled">Disabled</a></li>
+      <li><a href="../../../elements/tabs/dropdowns">Dropdowns</a></li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#tabs-tabbable">Tabbable <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="tabs-tabbable">
+          <li><a href="../../../elements/tabs/tabbable/basic">Basic</a></li>
+
+          <li><a href="../../../elements/tabs/tabbable/nested">Nested</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#pills">Pills <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="pills">
+      <li><a href="../../../elements/pills/basic">Basic</a></li>
+      <li><a href="../../../elements/pills/disabled">Disabled</a></li>
+      <li><a href="../../../elements/pills/direction">Direction</a></li>
+      <li><a href="../../../elements/pills/stacked">Stacked</a></li>
+      <li><a href="../../../elements/pills/dropdowns">Dropdowns</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" data-toggle="collapse" data-target="#navbar">Navbar <i class="fa fa-caret-right"></i></a>
+    <ul class="nav collapse " id="navbar">
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#navbar-basic">Basic <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="navbar-basic">
+          <li><a href="../../../elements/navbar/basic/default">Default</a></li>
+          <li><a href="../../../elements/navbar/basic/inverse">Inverse</a></li>
+          <li><a href="../../../elements/navbar/basic/wv-navbar">WV Style</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="collapse" data-target="#navbar-fixed">Fixed <i class="fa fa-caret-right"></i></a>
+        <ul class="nav collapse " id="navbar-fixed">
+          <li><a href="../../../elements/navbar/fixed/fixed-to-bottom">Bottom</a></li>
+          <li><a href="../../../elements/navbar/fixed/fixed-to-top">Top</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="../../../elements/navbar/static">Static Top</a>
+    </li>
+  </ul>
+</li>
+<li class=" "><a href="../../../elements/breadcrumbs">Breadcrumbs</a></li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#pagination">Pagination <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="pagination">
+    <li><a href="../../../elements/pagination/default">Default</a></li>
+    <li><a href="../../../elements/pagination/disabledandactive">Disabled and Active States</a></li>
+    <li><a href="../../../elements/pagination/sizes">Sizes</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#pager">Pager <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="pager">
+    <li><a href="../../../elements/pager/default">Default</a></li>
+    <li><a href="../../../elements/pager/disabled">Disabled</a></li>
+    <li><a href="../../../elements/pager/alignment">Alignment</a></li>
+  </ul>
+</li>
+<li class=" "><a href="../../../elements/labels">Labels</a></li>
+<li class=" "><a href="../../../elements/badges">Badges</a></li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#thumbnails">Thumbnails <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="thumbnails">
+    <li><a href="../../../elements/thumbnails/grid">Grid Sizing</a></li>
+    <li><a href="../../../elements/thumbnails/custom">Custom</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="alerts">
+    <li><a href="../../../elements/alerts/default">Default</a></li>
+    <li><a href="../../../elements/alerts/dismissable">Dismissable</a></li>
+    <li><a href="../../../elements/alerts/links">Links</a></li>
+    <li><a href="../../../elements/alerts/javascript">JavaScript</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#progressbars">Progress Bars <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse  in " id="progressbars">
+    <li><a href="../../../elements/progressbars/basic">Basic</a></li>
+    <li><a href="../../../elements/progressbars/label">Label</a></li>
+    <li><a href="../../../elements/progressbars/colors">Colors</a></li>
+    <li><a href="../../../elements/progressbars/striped">Striped</a></li>
+    <li><a href="../../../elements/progressbars/animated">Animated</a></li>
+    <li><a href="../../../elements/progressbars/stacked">Stacked</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#panels">Panels <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="panels">
+    <li><a href="../../../elements/panel/basic">Basic</a></li>
+    <li><a href="../../../elements/panel/panel-heading">Heading</a></li>
+    <li><a href="../../../elements/panel/panel-footer">Footers</a></li>
+    <li><a href="../../../elements/panel/panel-context">Context Colors</a></li>
+    <li><a href="../../../elements/panel/panel-list-group">List Group</a></li>
+    <li><a href="../../../elements/panel/panel-tables">Tables</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#list-group">List Groups <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="list-group">
+    <li><a href="../../../elements/list-group/basic">Basic</a></li>
+    <li><a href="../../../elements/list-group/badges">Badges</a></li>
+    <li><a href="../../../elements/list-group/linked-items">Linked Items</a></li>
+    <li><a href="../../../elements/list-group/context">Context Colors</a></li>
+    <li><a href="../../../elements/list-group/custom">Custom</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#mediaobject">Media Object <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="mediaobject">
+    <li><a href="../../../elements/mediaobject/default">Default</a></li>
+    <li><a href="../../../elements/mediaobject/medialist">Media List</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#helper">Helper Classes <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="helper">
+    <li><a href="../../../elements/helper/context-colors">Context Colors</a></li>
+    <li><a href="../../../elements/helper/context-backgrounds">Context Backgrounds</a></li>
+    <li><a href="../../../elements/helper/clearfix">Clearfix</a></li>
+    <li><a href="../../../elements/helper/floats">Floats</a></li>
+    <li><a href="../../../elements/helper/center-blocks">Center Blocks</a></li>
+    <li><a href="../../../elements/helper/showandhide">Show/hide Content</a></li>
+    <li><a href="../../../elements/helper/screen-reader">Screen Reader Content</a></li>
+    <li><a href="../../../elements/helper/image-replace">Image replacement</a></li>
+    <li><a href="../../../elements/helper/close-icon">Close icon</a></li>
+  </ul>
+
+</li>
+<li>Widgets</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#modal">Modal <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="modal">
+    <li><a href="../../../elements/modal/basic">Basic</a></li>
+    <li><a href="../../../elements/modal/sizes">Sizes</a></li>
+    <li><a href="../../../elements/modal/usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#carousel">Carousel <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="carousel">
+    <li><a href="../../../elements/carousel/basic">Basic</a></li>
+    <li><a href="../../../elements/carousel/caption">Caption</a></li>
+    <li><a href="../../../elements/carousel/usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#collapse">Collapse <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="collapse">
+    <li><a href="../../../elements/collapse/default">Default</a></li>
+    <li><a href="../../../elements/collapse/accordion">Accordion</a></li>
+    <li><a href="../../../elements/collapse/usage">Usage</a></li>
+  </ul>
+</li>
+<li>Effects</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#tooltips">Tooltips <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="tooltips">
+    <li><a href="../../../elements/tooltips/default">Default</a></li>
+    <li><a href="../../../elements/tooltips/usage">Usage</a></li>
+  </uL>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#popovers">Popovers <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="popovers">
+    <li><a href="../../../elements/popovers/default">Default</a></li>
+    <li><a href="../../../elements/popovers/usage">Usage</a></li>
+  </uL>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#scrollspy">ScrollSpy <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="scrollspy">
+    <li><a href="../../../elements/scrollspy/navbar">Example in navbar</a></li>
+    <li><a href="../../../elements/scrollspy/usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#affix">Affix <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="affix">
+    <li><a href="../../../elements/affix/default">Default</a></li>
+    <li><a href="../../../elements/affix/usage">Usage</a></li>
+  </ul>
+</li>
+<li>Glyphs</li>
+<li>
+  <a href="#" data-toggle="collapse" data-target="#icons">Icons <i class="fa fa-caret-right"></i></a>
+  <ul class="nav collapse " id="icons">
+    <li><a href="../../../elements/icons/fontawesome">Font Awesome</a></li>
+    <li><a href="../../../elements/icons/favoriteicons">Most Used Icons</a></li>
+    <li><a href="../../../elements/icons/othericons">Other Icons</a></li>
+    <li><a href="../../../elements/icons/graphics">Graphics</a></li>
+  </ul>
+</li>
+</ul>
+
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+        <header class="page-header" id="headerTitle">
+  <h1>Progress Bars - Colors</h1>
+  <p class="subheader lead">
+    Progress bars use some of the same button and alert classes for consistent styles.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+      <span class="sr-only">40% Complete (success)</span>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+      <span class="sr-only">20% Complete</span>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+      <span class="sr-only">60% Complete (warning)</span>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+      <span class="sr-only">80% Complete</span>
+    </div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+  <div class="docs-html">
+    <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar progress-bar-success&quot;</span> <span class="na">role=</span><span class="s">&quot;progressbar&quot;</span> <span class="na">aria-valuenow=</span><span class="s">&quot;40&quot;</span> <span class="na">aria-valuemin=</span><span class="s">&quot;0&quot;</span> <span class="na">aria-valuemax=</span><span class="s">&quot;100&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 40%&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>40% Complete (success)<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar progress-bar-info&quot;</span> <span class="na">role=</span><span class="s">&quot;progressbar&quot;</span> <span class="na">aria-valuenow=</span><span class="s">&quot;20&quot;</span> <span class="na">aria-valuemin=</span><span class="s">&quot;0&quot;</span> <span class="na">aria-valuemax=</span><span class="s">&quot;100&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 20%&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>20% Complete<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar progress-bar-warning&quot;</span> <span class="na">role=</span><span class="s">&quot;progressbar&quot;</span> <span class="na">aria-valuenow=</span><span class="s">&quot;60&quot;</span> <span class="na">aria-valuemin=</span><span class="s">&quot;0&quot;</span> <span class="na">aria-valuemax=</span><span class="s">&quot;100&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 60%&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>60% Complete (warning)<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar progress-bar-danger&quot;</span> <span class="na">role=</span><span class="s">&quot;progressbar&quot;</span> <span class="na">aria-valuenow=</span><span class="s">&quot;80&quot;</span> <span class="na">aria-valuemin=</span><span class="s">&quot;0&quot;</span> <span class="na">aria-valuemax=</span><span class="s">&quot;100&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 80%&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>80% Complete<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+  </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+      <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
+            <ul class="footer-links">
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="../../../assets/wvus.uikit/js/jquery.min.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.touch,
+        yep: '../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        load: [
+        '../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../assets/js/application.js'
+        ]
+    });
+</script>
+
+<!-- external Libraries -->
+<script src="../../../assets/js/holder/holder.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+---
+layout: default
+title: Date Picker
+snippet: forms
+group: forms
+hasJs: true
+name: date-picker
+path: ../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Bootstrap-datepicker provides a flexible datepicker widget in the Twitter bootstrap style.
+    <br>
+    Powered by <a href="https://github.com/eternicode/bootstrap-datepicker">bootstrap-datapicker</a>
+  </p>
+</header>
+
+<!-- Preview -->
+<div class="docs-example" >
+  <form>
+    <div class="form-group">
+      <label for="example1" class="sr-only">JavaScript</label>
+      <input type="text" value="01-01-2015" class="datepicker form-control">
+    </div>
+    <div class="form-group">
+      <label for="example2" class="sr-only">Data Attributes</label>
+      <input type="text" id="example2" placeholder="Date" data-provide="datepicker" data-date-format="mm/dd/yyyy" data-date-today-highlight="true" class="form-control">
+    </div>
+  </form>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+<form>
+  <div class="form-group">
+    <label for="example1" class="sr-only">JavaScript</label>
+    <input type="text" value="01-01-2015" class="datepicker form-control">
+  </div>
+  <div class="form-group">
+    <label for="example2" class="sr-only">Data Attributes</label>
+    <input type="text" id="example2" placeholder="Date" data-provide="datepicker" data-date-format="mm/dd/yyyy" data-date-today-highlight="true" class="form-control">
+  </div>
+</form>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+  $('.datepicker').datepicker();
+  {% endhighlight %}
+</div>
+{% endif %}
+
+

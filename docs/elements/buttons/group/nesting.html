@@ -1,0 +1,61 @@
+---
+layout: default
+title: Buttons - Nesting
+snippet: group
+group: buttons
+hasJs: false
+name: buttons-group-nesting
+path: ../../../../
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Wrap a series of buttons with a <code>.btn-group</code>.
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example">
+  <div class="btn-group" role="group">
+    <button class="btn btn-default">1</button>
+    <button class="btn btn-default">2</button>
+
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        Dropdown <i class="fa fa-caret-down"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Dropdown Link</a></li>
+        <li><a href="#">Dropdown Link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <div class="btn-group">
+    <button class="btn btn-default">1</button>
+    <button class="btn btn-default">2</button>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        Dropdown <i class="fa fa-caret-down"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Dropdown Link</a></li>
+        <li><a href="#">Dropdown Link</a></li>
+      </ul>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-js">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}

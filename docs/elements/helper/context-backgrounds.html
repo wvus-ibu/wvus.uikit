@@ -1,0 +1,44 @@
+---
+layout: default
+title: Helper classes - Context Backgrounds
+snippet: helperclasses
+group: helper
+hasJs: false
+name: helper-context-backgrounds
+path: ../../../
+bootstrap: /css/#helper-classes-backgrounds
+---
+<header class="page-header" id="headerTitle">
+  <h1>{{page.title}}</h1>
+  <p class="subheader lead">
+    Add background color to any element with these classes
+  </p>
+</header>
+<!-- Preview -->
+<div class="docs-example context-bg-example">
+  <p class="bg-primary">Ex, impedit quis. Rerum, soluta, exercitationem</p>
+  <p class="bg-success">Excepturi nobis pariatur cumque amet nemo quis facilis </p>
+  <p class="bg-info">Doloribus explicabo asperiores quae at. Ea, facere, nihil.</p>
+  <p class="bg-warning">In sagittis dui enim, eu venenatis diam facilisis a.</p>
+  <p class="bg-danger">Nunc rhoncus urna non dolor ultricies accumsan</p>
+</div>
+
+<!-- HTML Code -->
+<div class="docs-html">
+  {% highlight html  %}
+  <p class="bg-primary">Ex, impedit quis. Rerum, soluta, exercitationem</p>
+  <p class="bg-success">Excepturi nobis pariatur cumque amet nemo quis facilis </p>
+  <p class="bg-info">Doloribus explicabo asperiores quae at. Ea, facere, nihil.</p>
+  <p class="bg-warning">In sagittis dui enim, eu venenatis diam facilisis a.</p>
+  <p class="bg-danger">Nunc rhoncus urna non dolor ultricies accumsan</p>
+  {% endhighlight %}
+</div>
+
+{% if page.hasJs %}
+<!-- JS Code -->
+<div class="docs-html">
+  {% highlight js %}
+
+  {% endhighlight %}
+</div>
+{% endif %}

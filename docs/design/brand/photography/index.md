@@ -3,8 +3,9 @@ layout: content
 title: Photography
 group: photography
 name: photography
+path: ../../../
 ---
-<img src="{{ site.baseurl }}/assets/img/wvus/photography.png" alt="Photography" class="pull-right">
+<img src="{{ page.path }}assets/img/wvus/photography.png" alt="Photography" class="pull-right">
 
 Photographs provide evidence of who we are, what we do, and what we care about most. Authentic photography conveys integrity; quality photography demonstrates professionalism; intimate images display empathy; and accurate photographs provide clarity.
 
@@ -12,39 +13,50 @@ World Vision imagery is key to communicating the needs and hopes of the children
 
 
 
-
-<div class="row-fluid clearfix" id="photo-examples">
- <h4>Examples</h4>
-  <ul class="thumbnails">
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-reallife.png" alt="Real Life">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-exuberant.png" alt="Exuberant">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-staff.png" alt="Staff">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-natural.png" alt="Natural Light">
-    </li>
-  </ul>
+<div class="row clearfix" id="photo-examples">
+  <h4>Examples</h4>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-reallife.png" alt="Real Life">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-exuberant.png" alt="Exuberant">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-staff.png" alt="Staff">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-natural.png" alt="Natural Light">
+    </div>
+  </div>
 </div>
-<div class="row-fluid">
-  <ul class="thumbnails">
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-hopeful2.png" alt="Hopeful">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-joyful2.png" alt="Joyful">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-eyecontact.png" alt="Eye Contact">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/photography-sensitivity.png" alt="Sensitivity">
-    </li>
-  </ul>
+<div class="row">
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-hopeful2.png" alt="Hopeful">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-joyful2.png" alt="Joyful">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-eyecontact.png" alt="Eye Contact">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/photography-sensitivity.png" alt="Sensitivity">
+    </div>
+  </div>
 </div>
 
 To download World Vision images, visit the [World Vision Digital Media Centre](http://dmc.merlinone.net/) (password-protected access). All users of World Vision photographs are required to read and abide by the [Photo Policy](http://worldvisionbrand.org/visuals/photography/photo-policy/) on this website to ensure appropriate usage of images.
@@ -57,38 +69,49 @@ As a general rule, stock photography should never feature people. One occasional
 
 All stock photography should share the same general look, feel, and style of official World Vision photography.
 
-<div class="row-fluid" id="stock-photos">
-  <ul class="thumbnails">
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/donors.png" alt="Donors">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/generic.png" alt="Generic">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/holiday-imagery.png" alt="Holiday">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/sector-imagery.png" alt="Sector">
-    </li>
-
-  </ul>
+<div class="row" id="stock-photos">
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/donors.png" alt="Donors">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/generic.png" alt="Generic">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/holiday-imagery.png" alt="Holiday">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/sector-imagery.png" alt="Sector">
+    </div>
+  </div>
 </div>
-<div class="row-fluid">
-  <ul class="thumbnails">
-      <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/maps.png" alt="Maps">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/textures-backgrounds.png" alt="Texture">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/us-children.png" alt="Children">
-    </li>
-    <li class="span3">
-      <img src="{{ site.baseurl }}/assets/img/wvus/stock_photos/vector-illustrations.png" alt="Illustrations">
-    </li>
-  </ul>
+<div class="row">
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/maps.png" alt="Maps">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/textures-backgrounds.png" alt="Texture">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/us-children.png" alt="Children">
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="thumbnail">
+      <img src="{{ page.path }}assets/img/wvus/stock_photos/vector-illustrations.png" alt="Illustrations">
+    </div>
+  </div>
 </div>
 
 
@@ -100,7 +123,7 @@ In cases of sudden-onset HEAs that require immediate coverage on World Vision's 
 
 
 
-<img src="{{ site.baseurl }}/assets/img/wvus/photography-credit-reuters.png" alt="Credit Reuters" class="pull-right">
+<img src="{{ page.path }}assets/img/wvus/photography-credit-reuters.png" alt="Credit Reuters" class="pull-right">
 ### Photo Credits
 
 Stock images should be credited in accordance with the specifications of the site from which they were purchased. Images purchased from news services like Reuters must be credited exactly as specified by the owner of the work, and the credit must be clearly visible anywhere that the image is used on World Vision's website, even if it's used in multiple locations. Failure to do so could jeopardize World Vision's rights to purchase and use photography from external sources in the future. Images purchased from ThinkStock.com do not require a photo credit.
@@ -114,7 +137,7 @@ We are advocates for the people we photograph and whose images we use. They trus
 
 
 ### Guiding principles
-<img src="{{ site.baseurl }}/assets/img/wvus/photography-trust.png" alt="Trust" class="pull-right">
+<img src="{{ page.path }}assets/img/wvus/photography-trust.png" alt="Trust" class="pull-right">
 *Basic questions to consider when making a decision about images*
 
 <div class="indent">
