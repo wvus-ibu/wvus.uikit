@@ -16,6 +16,11 @@
         </div>
       </div>
       <div class="col-md-9">
+        {% if page.url contains site.developerdocs or page.url contains site.develop %}
+          <div class="alert alert-warning" role="alert">
+            Some 3rd party libraries are being deprecated and will be removed in the next major version. <a href="{{ page.path }}v3-changes">Click Here</a> to find out what is going away.
+          </div>
+        {% endif %}
         {{content}}
       </div>
     </div>

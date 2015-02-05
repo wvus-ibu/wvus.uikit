@@ -41,6 +41,7 @@
   @import "@{bootstrapPath}media.less";
   @import "@{bootstrapPath}list-group.less";
   @import "@{bootstrapPath}panels.less";
+  @import "@{bootstrapPath}responsive-embed.less";
   @import "@{bootstrapPath}wells.less";
   @import "@{bootstrapPath}close.less";
 
@@ -56,20 +57,26 @@
 
   // Styled Radios and Checkboxes
   @import "checkboxes.less";
-    // World Vision Theme
+  // World Vision Theme
   @import "theme.less";
 
 
   // Bootstrap-select
-  @import (less) "@{bootstrapSelectPath}bootstrap-select.css";
+  @import "@{bootstrapSelectPath}less/bootstrap-select.less";
 
-  // Video JS
-  @import "video-js-skin.less";
 
-  // @import "wv-images.less";
+  //@import "wv-images.less";
 
   // Bootstrap-datepicker
-  @import "@{datepickerPath}datepicker3.less";
+  @import "datepicker3.less";
 
   // Sector Icons
-  @import "sector-svg.less";
+  //@import "sector-svg.less";
+
+  // Video JS
+  // --------------
+  // @import "video-js-skin.less";
+
+  // Overrides
+  // For overriding styles in 3rd party libraries
+  @import "overrides.less";

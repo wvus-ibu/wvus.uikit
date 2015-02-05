@@ -14,19 +14,20 @@ wvus.uikit/
     │   ├── wvus.uikit.css.map
     │   └── wvus.uikit.min.css
     ├── js/
-    │   ├── jquery-custom.js
-    │   ├── jquery-custom.min.js
-    │   ├── modernizer.js
     │   ├── wvus.uikit.js
     │   └── wvus.uikit.min.js
     ├── img/
     │   └── ico/
     │       └── (favicons)
+    |   └── checkbox-radio
+    |   └── sector
+    |   └── play
     ├── less/
     │   ├── variables.less
     │   └── mixins.less
+    │   └── mixins/
+    │       └── (mixins in module files)
     └── fonts/
-        ├── (VideoJS)
         ├── (Bootstrap Glyphicon)
         └── (Font Awesome)
 {% endhighlight %}
@@ -67,11 +68,11 @@ Add the CSS namespace:
 <span class="label label-info">Note:</span> the UiKit uses a CSS and JavaScript namespace. See [namespace]({{ page.path }}{{ site.develop }}/namespace) section.
 
 ## Responsive
-Tell browsers how they should scale to your site by including a <code>&lt;meta name="viewport"&gt;</code> 
+Tell browsers how they should scale to your site by including a <code>&lt;meta name="viewport"&gt;</code>
 
 {% highlight html %}
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 {% endhighlight %}
 

@@ -76,6 +76,7 @@
       <li{% if page.name == "radio-styled" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/radio-styled">Styled Radio Buttons</a></li>
       <li{% if page.name == "forms-inline-form" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/inline-form">Inline form</a></li>
       <li{% if page.name == "forms-horizontal-form" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/horizontal-form">Horizontal form</a></li>
+      <li{% if page.name == "date-picker" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}forms/date-picker">Date Picker</a></li>
     </ul>
   </li>
   <li>
@@ -123,7 +124,8 @@
           <li{% if page.name == "buttons-vertical" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/vertical">Vertical</a></li>
           <li{% if page.name == "buttons-group-sizing" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/sizing">Sizing</a></li>
           <li{% if page.name == "buttons-group-nesting" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/nesting">Nesting</a></li>
-          <li{% if page.name == "buttons-group-justified" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/justified">Justified</a></li>
+          <li{% if page.name == "buttons-group-justified-links" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/justified-links">Justified <code>&lt;a&gt;</code></a></li>
+          <li{% if page.name == "buttons-group-justified-button" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}buttons/group/justified-button">Justified<code>&lt;button&gt;</code></a></li>
 
         </ul>
       </li>
@@ -230,7 +232,7 @@
   <a href="#" data-toggle="collapse" data-target="#alerts">Alerts <i class="fa fa-caret-right"></i></a>
   <ul class="nav collapse {% if page.group == 'alerts'%} in {% endif %}" id="alerts">
     <li{% if page.name == "alerts-default" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/default">Default</a></li>
-    <li{% if page.name == "alerts-dismissable" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/dismissable">Dismissable</a></li>
+    <li{% if page.name == "alerts-dismissible" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/dismissible">Dismissible</a></li>
     <li{% if page.name == "alerts-links" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/links">Links</a></li>
     <li{% if page.name == "alerts-js" %} class="active"{% endif %}><a href="{{ page.path }}{{ site.developerdocs }}alerts/javascript">JavaScript</a></li>
   </ul>

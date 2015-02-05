@@ -9,3 +9,6 @@ _site
 
 #Editor specific
 *.sublime*
+
+# UIKIT Binary File (zip folder)
+/*.zip

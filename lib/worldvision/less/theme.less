@@ -9,34 +9,34 @@
 .btn-info,
 .btn-warning,
 .btn-danger {
-  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+  //text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.2);
+  //box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
 
   // Reset the shadow
   &:active,
   &.active {
-    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,.125);
   }
 }
 
 // Mixin for generating new styles
 .btn-styles(@btn-color: #555) {
   //text-shadow: -1px 1px 0 fade(@btn-color, 50%);
-  #gradient > .vertical(@start-color: lighten(@btn-color, 12%); @end-color: @btn-color);
-  .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
-  background-repeat: repeat-x;
-  border-color: darken(@btn-color, 4%);
+  //#gradient > .vertical(@start-color: lighten(@btn-color, 12%); @end-color: @btn-color);
+  //.reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
+  //background-repeat: repeat-x;
+  //border-color: darken(@btn-color, 4%);
 
   &:hover,
   &:focus  {
-    background-color: @btn-color;
-    background-position: 0 -15px;
+    //background-color: lighten(@btn-color, 10%);
+    // background-position: 0 -15px;
   }
 
   &:active,
   &.active {
-    background-color: @btn-color;
-    border-color: darken(@btn-color, 2%);
+    //background-color: @btn-color;
+    //border-color: darken(@btn-color, 2%);
   }
 }
 
@@ -45,7 +45,7 @@
   // Remove the gradient for the pressed/active state
   &:active,
   &.active {
-    background-image: none;
+    //background-image: none;
   }
 }
 
@@ -76,13 +76,13 @@
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  #gradient > .vertical(@start-color: lighten(@dropdown-link-hover-bg, 5%); @end-color: @dropdown-link-hover-bg);
+  //#gradient > .vertical(@start-color: lighten(@dropdown-link-hover-bg, 5%); @end-color: @dropdown-link-hover-bg);
   background-color: @dropdown-link-hover-bg;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  #gradient > .vertical(@start-color: lighten(@dropdown-link-active-bg, 5%); @end-color: @dropdown-link-active-bg);
+  //#gradient > .vertical(@start-color: lighten(@dropdown-link-active-bg, 5%); @end-color: @dropdown-link-active-bg);
   background-color: @dropdown-link-active-bg;
 }
 
@@ -94,34 +94,34 @@
 
 // Default navbar
 .navbar-default {
-  #gradient > .vertical(@start-color: lighten(@navbar-default-bg, 10%); @end-color: @navbar-default-bg);
-  .reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
+  //#gradient > .vertical(@start-color: lighten(@navbar-default-bg, 10%); @end-color: @navbar-default-bg);
+  //.reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
   border-radius: @navbar-border-radius;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+  //box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
 
   .navbar-nav > .active > a {
-    #gradient > .vertical(@start-color: darken(@navbar-default-bg, 5%); @end-color: darken(@navbar-default-bg, 2%));
-    box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
+    //#gradient > .vertical(@start-color: darken(@navbar-default-bg, 5%); @end-color: darken(@navbar-default-bg, 2%));
+    //box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
   }
 }
 .navbar-brand,
 .navbar-nav > li > a {
-  text-shadow: 0 1px 0 rgba(255,255,255,.25);
+  //text-shadow: 0 1px 0 rgba(255,255,255,.25);
 }
 
 // Inverted navbar
 .navbar-inverse {
-  #gradient > .vertical(@start-color: lighten(@navbar-inverse-bg, 10%); @end-color: @navbar-inverse-bg);
-  .reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
+  //#gradient > .vertical(@start-color: lighten(@navbar-inverse-bg, 10%); @end-color: @navbar-inverse-bg);
+  //.reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
 
   .navbar-nav > .active > a {
-    #gradient > .vertical(@start-color: @navbar-inverse-bg; @end-color: lighten(@navbar-inverse-bg, 2.5%));
-    box-shadow: inset 0 3px 9px rgba(0,0,0,.25);
+    //#gradient > .vertical(@start-color: @navbar-inverse-bg; @end-color: lighten(@navbar-inverse-bg, 2.5%));
+    //box-shadow: inset 0 3px 9px rgba(0,0,0,.25);
   }
 
   .navbar-brand,
   .navbar-nav > li > a {
-    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    //text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 
 
   }
@@ -131,11 +131,12 @@
 // ------------------------
 
 .navbar-worldvision{
-  #gradient > .vertical(@start-color: lighten(@navbar-wv-bg, 10%); @end-color: @navbar-wv-bg);
-  .reset-filter();
+  //#gradient > .vertical(@start-color: lighten(@navbar-wv-bg, 10%); @end-color: @navbar-wv-bg);
+  //.reset-filter();
   border-radius: @navbar-border-radius;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
-  border: none;
+  //box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+  border-color: darken(@navbar-wv-bg, 5%);
+  background-color: @brand-primary;
 
 
   .navbar-brand {
@@ -158,21 +159,20 @@
       &:hover,
       &:focus {
         color: @navbar-wv-link-hover-color;
-        #gradient > .vertical(lighten(@navbar-wv-bg, 10%), #fff);
+        //#gradient > .vertical(lighten(@navbar-wv-bg, 10%), #fff);
         background-position: 0 -30px;
         background-color: @navbar-wv-link-hover-bg;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.125);
+        //box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.125);
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        @shadow: inset 0 0 10px rgba(0,0,0,.175);
-        box-shadow: @shadow;
+        //box-shadow: inset 0 0 10px rgba(0,0,0,.175);
         color: @navbar-wv-link-active-color;
         background-color: @navbar-wv-link-active-bg;
-        #gradient > .remove();
+        //#gradient > .remove();
       }
     }
     > .disabled > a {
@@ -214,13 +214,13 @@
 
 // Common styles
 .alert {
-  text-shadow: 0 1px 0 rgba(255,255,255,.2);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);
+  //text-shadow: 0 1px 0 rgba(255,255,255,.2);
+  //box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);
 }
 
 // Mixin for generating new styles
 .alert-styles(@color) {
-  #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 7.5%));
+  //#gradient > .vertical(@start-color: @color; @end-color: darken(@color, 7.5%));
   border-color: darken(@color, 15%);
 }
 
@@ -238,12 +238,12 @@
 
 // Give the progress background some depth
 .progress {
-  #gradient > .vertical(@start-color: darken(@progress-bg, 4%); @end-color: @progress-bg)
+  //#gradient > .vertical(@start-color: darken(@progress-bg, 4%); @end-color: @progress-bg)
 }
 
 // Mixin for generating new styles
 .progress-bar-styles(@color) {
-  #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 10%));
+  //#gradient > .vertical(@start-color: @color; @end-color: darken(@color, 10%));
 }
 
 // Apply the mixin to the progress bars
@@ -253,7 +253,13 @@
 .progress-bar-warning    { .progress-bar-styles(@progress-bar-warning-bg); }
 .progress-bar-danger     { .progress-bar-styles(@progress-bar-danger-bg); }
 
-
+//
+// Labels
+// --------------------------------------------------
+.label {
+  font-weight: normal;
+  padding: .3em .7em .3em;
+}
 
 //
 // List groups
@@ -266,8 +272,8 @@
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  text-shadow: 0 -1px 0 darken(@list-group-active-bg, 10%);
-  #gradient > .vertical(@start-color: @list-group-active-bg; @end-color: darken(@list-group-active-bg, 7.5%));
+  //text-shadow: 0 -1px 0 darken(@list-group-active-bg, 10%);
+  //#gradient > .vertical(@start-color: @list-group-active-bg; @end-color: darken(@list-group-active-bg, 7.5%));
   border-color: darken(@list-group-active-border, 7.5%);
 }
 
@@ -279,12 +285,12 @@
 
 // Common styles
 .panel {
-  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  //box-shadow: 0 1px 2px rgba(0,0,0,.05);
 }
 
 // Mixin for generating new styles
 .panel-heading-styles(@color) {
-  #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 5%));
+  //#gradient > .vertical(@start-color: @color; @end-color: darken(@color, 5%));
 }
 
 // Apply the mixin to the panel headings only
@@ -302,9 +308,9 @@
 // --------------------------------------------------
 
 .well {
-  #gradient > .vertical(@start-color: darken(@well-bg, 5%); @end-color: @well-bg);
+  //#gradient > .vertical(@start-color: darken(@well-bg, 5%); @end-color: @well-bg);
   border-color: darken(@well-bg, 10%);
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+  //box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
 }
 
 //
@@ -323,7 +329,7 @@
     margin-top: -20px;
     margin-right: 20px;
     & i[class*="fa"]{
-      right: 13px;
+      right: 11px;
     }
   }
 
@@ -332,7 +338,20 @@
     margin-top: -20px;
     margin-left: 20px;
     & i[class*="fa"]{
-      right: 15px;
+      left: 18px;
+    }
+  }
+
+  &.right,
+  &.left {
+    border-style: solid;
+    border-width: 1px;
+    border-color: @carousel-control-border;
+    &:active,
+    .active {
+      background-color: darken(@carousel-control-bg, 10%);
+      border-color: darken(@carousel-control-border, 12%);
+
     }
   }
 

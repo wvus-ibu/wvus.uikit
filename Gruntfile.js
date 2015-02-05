@@ -11,15 +11,10 @@
    bootstrapPath: '<%= uikit.libPath %>bootstrap/',
    bootstrapLessPath:  '<%= uikit.bootstrapPath %>less/',
    bootstrapJsPath:  '<%= uikit.bootstrapPath %>js/',
-   bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/',
+   bootstrapSelectPath:  '<%= uikit.libPath %>bootstrap-select/js/',
    fontAwesomePath:  '<%= uikit.libPath %>font-awesome/',
    jqueryPath:  '<%= uikit.libPath %>jquery/dist/',
-   jqueryMobilePath:  '<%= uikit.libPath %>jquery-mobile/',
    datepickerPath:  '<%= uikit.libPath %>bootstrap-datepicker/',
-   modernizrPath: '<%= uikit.libPath %>modernizr/',
-   videojsPath:  '<%= uikit.libPath %>video-js/',
-   videojsYoutubePath:  '<%= uikit.libPath %>videojs-youtube/',
-   spinjsPath:  '<%= uikit.libPath %>spin.js/',
    worldVisionPath: '<%= uikit.libPath %>worldvision/',
  };
 
@@ -57,11 +52,7 @@
         '<%= uikit.bootstrapJsPath %>tab.js',
         '<%= uikit.bootstrapJsPath %>affix.js',
         '<%= uikit.datepickerPath %>js/bootstrap-datepicker.js',
-        '<%= uikit.bootstrapSelectPath %>bootstrap-select.js',
-        '<%= uikit.videojsPath %>video.dev.js',
-        '<%= uikit.videojsYoutubePath %>src/media.youtube.js',
-        '<%= uikit.spinjsPath %>spin.js',
-        '<%= uikit.spinjsPath %>jquery.spin.js',
+        '<%= uikit.bootstrapSelectPath %>bootstrap-select.js'
         ],
 
         dest: '<%= uikit.distPath %>js/<%= pkg.name %>.js'
@@ -75,14 +66,6 @@
       jquery: {
         src: '<%= uikit.jqueryPath %>jquery.js',
         dest: '<%= uikit.distPath %>js/jquery.min.js'
-      },
-      jqueryMobile: {
-        src: '<%= uikit.jqueryMobilePath %>jquery.mobile.custom.js',
-        dest: '<%= uikit.distPath %>js/jquery.mobile.custom.min.js'
-      },
-      modernizr: {
-        src: '<%= uikit.modernizrPath %>modernizr.js',
-        dest: '<%= uikit.distPath %>js/modernizr.min.js'
       },
       uikit: {
         src: '<%= concat.uikit.dest %>',
@@ -253,22 +236,19 @@
       variables: {
         files: [
         {expand:true, flatten: true, cwd: '<%= uikit.srcPath %>', src: ['<%= uikit.worldVisionPath %>less/variables.less', '<%= uikit.worldVisionPath %>less/mixins.less'], dest: '<%= uikit.distPath %>less'},
+        {expand: true, cwd: '<%= uikit.worldVisionPath %>less/mixins', src: '**', dest: '<%= uikit.distPath %>less/mixins/'}
         ]
       },
       lib: {
         files: [
         {expand: true, cwd: '<%= uikit.fontAwesomePath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'},
         {expand: true, cwd: '<%= uikit.jqueryPath %>', src: 'jquery.js', dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.jqueryMobilePath %>', src: '**', dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.modernizrPath %>', src: '**', dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.videojsPath %>', src: "video-js.swf", dest: '<%= uikit.distPath %>js/'},
-        {expand: true, cwd: '<%= uikit.videojsPath %>font', src: '**', dest: '<%= uikit.distPath %>fonts'},
         {expand: true, cwd: '<%= uikit.bootstrapPath %>fonts', src: '**', dest: '<%= uikit.distPath %>fonts'}
         ]
       },
       docs: {
         files: [
-        {expand: true, cwd: '<%= uikit.distPath %>', src: '**/*', dest: '<%= uikit.docsPath %>/assets/wvus.uikit'}
+        {expand: true, cwd: '<%= uikit.distPath %>', src: '**/*', dest: '<%= uikit.docsPath %>/assets/wvus.uikit'},
         ]
       }
     },
@@ -341,24 +321,19 @@
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
   require('time-grunt')(grunt);
 
-  grunt.registerTask('dist-css', ['comments', 'less', 'autoprefixer', 'csscomb', 'usebanner', 'clean:precompile']);
+  grunt.registerTask('dist-css', ['comments', 'less:precompile', 'less:dist', 'less:minify', 'autoprefixer', 'csscomb', 'usebanner', 'clean:precompile']);
   grunt.registerTask('dist-js', ['concat', 'replace', 'uglify']);
 
   // TODO: add tests to this task when implemented
-  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress', 'replace']);
+  grunt.registerTask('dist', ['dist-css', 'dist-js', 'copy', 'compress']);
   grunt.registerTask('default', ['dist']);
 
-  grunt.registerTask('serve',['clean:docs', 'copy:docs', 'less:docs', 'jekyll', 'connect', 'watch'] );
+  // Docs
+  grunt.registerTask('docs-build', ['dist', 'clean:docs', 'less:docs', 'jekyll']);
+  grunt.registerTask('serve', ['docs-build', 'connect', 'watch'] );
 
-  grunt.registerTask('docs-build', ['clean:docs', 'copy:docs', 'less:docs', 'jekyll']);
-
-  // Default task. Compile, concatenate, min, and build zip
-  //grunt.registerTask('default', ['compile', 'copy:variables', 'jshint', 'copy:zipsrc', 'compress', 'clean:dist']);
+  grunt.registerTask('test', []);
 
   //compiles less for errors, runs js thorugh
   //grunt.registerTask('test', ['compile', 'csslint' ,'jshint', 'qunit']);
-
-  // Compiles and concatenates js and less, then copies jquery, the js and css to the docs and to the tests
-  grunt.registerTask('compile', ['concat', 'replace', 'less:dist', 'less:distResponsive', 'csscomb', 'less:minify', 'uglify','copy:docs', 'copy:tests']);
-
 };
