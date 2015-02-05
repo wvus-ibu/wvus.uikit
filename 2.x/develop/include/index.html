@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>Including the files | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Vision UiKit Documentation">
+    <meta name="author" content="World Vision US, Internet Business Unit">
+
+    <!-- Le styles -->
+    <!-- Main css -->
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+    <!-- CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/docs.css">
+
+    <!-- Modernizr with Shiv -->
+    <script type="text/javascript" src="../../assets/wvus.uikit/js/modernizr.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.ico">
+  </head>
+
+<body>
+
+      <header class="container-fluid" id="site-header">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="../../assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
+          <h1 class="site-title">Digital Style Guide</h1>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar
+    ================================================== -->
+    <nav class="navbar navbar-worldvision navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../">Home</a>
+            </li>
+            <li >
+              <a href="../../design/">Design</a>
+            </li>
+            <li class="active">
+              <a href="../../develop/">Develop</a>
+            </li>
+            <li >
+             <a href="../../elements/">Elements</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+    </nav>
+
+
+  <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
+        <div class="panel panel-default">
+          
+          <ul class="nav ">
+  <li >
+    <a href="../../develop/">Develop Info</a>
+  </li>
+  <li >
+    <a href="../../develop/include">Include the UiKit</a>
+  </li>
+  <li >
+    <a href="../../develop/namespace">Namespace</a>
+  </li>
+    <li >
+    <a href="../../develop/version">Version</a>
+  </li>
+  <li >
+    <a href="../../develop/contribute">Contribute</a>
+  </li>
+    <li >
+    <a href="../../develop/external-libraries">External Libraries</a>
+  </li>
+</ul>
+
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+          <header class="page-header">
+    <h1>Including the files</h1>
+  </header>
+  <div id="main">
+    <h2 id="file-structure">File Structure</h2>
+<p>The compiled library contains the necessary files to get up and running:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">wvus.uikit/
+    ├── css/
+    │   ├── wvus.uikit.css
+    │   ├── wvus.uikit.css.map
+    │   └── wvus.uikit.min.css
+    ├── js/
+    │   ├── jquery-custom.js
+    │   ├── jquery-custom.min.js
+    │   ├── modernizer.js
+    │   ├── wvus.uikit.js
+    │   └── wvus.uikit.min.js
+    ├── img/
+    │   └── ico/
+    │       └── (favicons)
+    ├── less/
+    │   ├── variables.less
+    │   └── mixins.less
+    └── fonts/
+        ├── (VideoJS)
+        ├── (Bootstrap Glyphicon)
+        └── (Font Awesome)</code></pre></div>
+
+<h2 id="include">Include</h2>
+<p>Including the UiKit is simple:</p>
+
+<p>Add the CSS files:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="c">&lt;!-- CSS (use minified versions on production sites) --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;/path/to/uikit/css/wvus.uikit.min.css&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+...</code></pre></div>
+
+<p>Add the JavaScript files:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">...
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/path/to/uikit/js/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/path/to/uikit/js/wvus.uikit.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>Add the CSS namespace:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="hll"><span class="nt">&lt;html</span> <span class="na">class=</span><span class="s">&quot;wvusUikit&quot;</span><span class="nt">&gt;</span>
+</span>  <span class="nt">&lt;head&gt;</span>
+...</code></pre></div>
+
+<p><span class="label label-info">Note:</span> the UiKit uses a CSS and JavaScript namespace. See <a href="../../develop//namespace">namespace</a> section.</p>
+
+<h2 id="responsive">Responsive</h2>
+<p>Tell browsers how they should scale to your site by including a <code>&lt;meta name="viewport"&gt;</code> </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;/head&gt;</span></code></pre></div>
+
+<h2 id="project-use">Project Use</h2>
+
+<p>If the compiled CSS doesn’t provide enough flexibility for your project, we have that covered. The variables.less and mixins.less have been extracted to be included in a projects stylesheet.</p>
+
+<ul>
+  <li>Variables.less contains all of the colors, fonts, and basic sizing</li>
+  <li>Mixins.less contains mixins for easily creating background effects, applying border radius, gradients, etc</li>
+</ul>
+
+<p>Include both of these in a LESS file to use with custom styles for a site. A starter.less can be found in the less folder.</p>
+
+<p>Example less file:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* Start a less file by importing the variables.less and mixins.less */</span>
+<span class="k">@import</span> <span class="s2">&quot;/path/to/uikit/less/variables.less&quot;</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">&quot;/path/to/uikit/less/mixins.less&quot;</span><span class="p">;</span>
+
+<span class="c">/* Start LESS code */</span></code></pre></div>
+
+<p><span class="label label-info">FYI:</span> Be sure to checkout the <a href="http://www.lesscss.org/">LESS docs</a> for more help</p>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
+            <ul class="footer-links">
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="../../assets/wvus.uikit/js/jquery.min.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.touch,
+        yep: '../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        load: [
+        '../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../assets/js/application.js'
+        ]
+    });
+</script>
+
+<!-- external Libraries -->
+<script src="../../assets/js/holder/holder.js"></script>
+
+</body>
+</html>

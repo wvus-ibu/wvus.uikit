@@ -19,6 +19,7 @@
     <script type="text/javascript" src="../../../assets/wvus.uikit/js/modernizr.js"></script>
 
 
+
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
@@ -31,14 +32,14 @@
 
       <header class="container-fluid" id="site-header">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="pull-left logo">
             <a href="http://www.worldvision.org"><img src="../../../assets/img/wvus/logo.png" alt="World Vision"></a>
           </div>
-          <h1 class="site-title">Digital Style Guide</h1>
-          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v3.0.0-1 05-2014</a>
-
+          <div class="pull-left">
+            <h1 class="site-title">Digital Style Guide</h1>
+            <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="small">Current v3.0.0</a>
+          </div>
         </div>
       </div>
     </header>
@@ -73,7 +74,7 @@
          </ul>
        </div>
      </div>
-    </nav>
+   </nav>
 
 
   <div class="container-fluid">
@@ -503,11 +504,13 @@
           <div class="col-md-12">
             <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
             <ul class="footer-links">
+              <li>Current v3.0.0</a></li>
+              <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
               <li class="muted">&middot;</li>
               <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
               <li class="muted">&middot;</li>
-              <li><a href="../../../1.2.0/">Version 1.2.0</a></li>
+              <li><a href="../../../2.x/">v2.0.1 docs</a></li>
             </ul>
           </div>
         </div>
@@ -522,9 +525,11 @@
 <script type="text/javascript">
     Modernizr.load({
         test: Modernizr.touch,
-        yep: '../../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        yep: '../../../assets/js/jquery.mobile.js',
         load: [
         '../../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../../assets/js/spin.min.js',
+        '../../../assets/js/jquery.spin.js',
         '../../../assets/js/application.js'
         ]
     });

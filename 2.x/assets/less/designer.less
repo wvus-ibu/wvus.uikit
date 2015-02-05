@@ -1,0 +1,80 @@
+
+// logo/colors
+.colors{
+  color: #fff;
+  width: 100%;
+  margin: 10px 0;
+  .clearfix();
+  .row div{
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    min-height: 106px;
+  }
+}
+
+.orange {  background-color: #ff6600;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  height: 120px;
+}
+.blue {
+  background-color: #006699;
+
+}
+.white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+
+}
+.dark-gray {
+  background-color: #666;
+}
+.black {
+  background-color: #000;
+}
+.gold {
+  background-color: #fc3;
+}
+.green {
+  background-color: #999933;
+}
+.light-blue {
+  background-color: #9cf;
+}
+.dark-blue {
+  background-color: #0c4972;
+}
+.terra-cotta {
+  background-color: #630;
+}
+.warm-gray {
+  background-color: #999;
+}
+
+p > img{
+  padding: 10px;
+}
+
+img {
+  .img-responsive();
+}
+
+.indent{
+  padding-left: 40px;
+}
+
+#photo-examples{
+  margin-top: 100px;
+}
+
+// Don't show border and shadow on small devices
+// The border has too much padding on these screen sizes
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+  .thumbnail{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

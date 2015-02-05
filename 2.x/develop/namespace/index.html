@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="wvusUikit">
+  <head>
+    <meta charset="utf-8">
+    <title>Namespace | WVUS.UiKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Vision UiKit Documentation">
+    <meta name="author" content="World Vision US, Internet Business Unit">
+
+    <!-- Le styles -->
+    <!-- Main css -->
+    <link href="../../assets/wvus.uikit/css/wvus.uikit.css" rel="stylesheet">
+    <!-- CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/docs.css">
+
+    <!-- Modernizr with Shiv -->
+    <script type="text/javascript" src="../../assets/wvus.uikit/js/modernizr.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/wvus.uikit/img/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="../../assets/wvus.uikit/img/ico/favicon.ico">
+  </head>
+
+<body>
+
+      <header class="container-fluid" id="site-header">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="pull-left logo">
+            <a href="http://www.worldvision.org"><img src="../../assets/img/wvus/logo.png" alt="World Vision"></a>
+          </div>
+          <h1 class="site-title">Digital Style Guide</h1>
+          <a href="https://github.com/wvus-ibu/wvus.uikit/releases" title="Releases" class="label label-default">v2.0.0 05-2014</a>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar
+    ================================================== -->
+    <nav class="navbar navbar-worldvision navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="site-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../">Home</a>
+            </li>
+            <li >
+              <a href="../../design/">Design</a>
+            </li>
+            <li class="active">
+              <a href="../../develop/">Develop</a>
+            </li>
+            <li >
+             <a href="../../elements/">Elements</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+    </nav>
+
+
+  <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 sidebar-offcanvas" id="docs-nav">
+        <div class="panel panel-default">
+          
+          <ul class="nav ">
+  <li >
+    <a href="../../develop/">Develop Info</a>
+  </li>
+  <li >
+    <a href="../../develop/include">Include the UiKit</a>
+  </li>
+  <li >
+    <a href="../../develop/namespace">Namespace</a>
+  </li>
+    <li >
+    <a href="../../develop/version">Version</a>
+  </li>
+  <li >
+    <a href="../../develop/contribute">Contribute</a>
+  </li>
+    <li >
+    <a href="../../develop/external-libraries">External Libraries</a>
+  </li>
+</ul>
+
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+          <header class="page-header">
+    <h1>Namespace</h1>
+  </header>
+  <div id="main">
+    <p>The UiKit uses a namespace to stop CSS and JavaScript collisions.</p>
+
+<h3 id="less">Less</h3>
+<p>The namespace used for the less is <code>wvusUikit</code>.  Apply this class to the <code>&lt;html&gt;</code> element in your site.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="hll"><span class="nt">&lt;html</span> <span class="na">class=</span><span class="s">&quot;wvusUikit&quot;</span><span class="nt">&gt;</span>
+</span>...</code></pre></div>
+
+<p>If adding UiKit elements on parts of a site, prepend with <code>wvusUikit</code>.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wvusUikit panel panel-default&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<h3 id="jquery">jQuery</h3>
+
+<p>The UiKit uses the popular <a href="http://jquery.com/">jQuery</a> library.  Normally, jQuery uses the <code>$</code> alias and the <code>jQuery</code> object.  This has been removed in the UiKit to stop 3rd party jQuery code from conflicting the UiKit components and widgets. At the beginning of the <code>wvus.uikit.js</code>, <code>jQuery.noConflict(true)</code> called to assign the jQuery object to the <code>wvusUikit</code> object.</p>
+
+<p>To use the UiKit jQuery plugins, substitute the <code>$</code> or <code>jQuery</code> objects with <code>wvusUikit</code>.</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Standard jQuery syntax</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="c1">// do stuff</span>
+<span class="p">});</span>
+
+<span class="c1">// UiKit syntax</span>
+<span class="nx">wvusUikit</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="c1">// do stuff</span>
+<span class="p">};</span></code></pre></div>
+
+<p>For writing longer JavaScript files using the UiKit plugins, use an <a href="http://learn.jquery.com/javascript-101/functions/#immediately-invoked-function-expression-iife">Immediately Invoked Function Expression</a>.  This expression is commonly used when creating plugins and will allow the use of an alias for easier development.</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// $ is the alias</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">){</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// do stuff</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// wvusUikit is the namespace</span>
+<span class="p">})(</span><span class="nx">wvusUikit</span><span class="p">);</span></code></pre></div>
+
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Built on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://fontawesome.io/">Font Awesome</a></p>
+            <ul class="footer-links">
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/issues?state=open">Issues</a></li>
+              <li class="muted">&middot;</li>
+              <li><a href="https://github.com/wvus-ibu/wvus.uikit/releases">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="../../assets/wvus.uikit/js/jquery.min.js"></script>
+<script type="text/javascript">
+    Modernizr.load({
+        test: Modernizr.touch,
+        yep: '../../assets/wvus.uikit/js/jquery.mobile.custom.js',
+        load: [
+        '../../assets/wvus.uikit/js/wvus.uikit.min.js',
+        '../../assets/js/application.js'
+        ]
+    });
+</script>
+
+<!-- external Libraries -->
+<script src="../../assets/js/holder/holder.js"></script>
+
+</body>
+</html>
