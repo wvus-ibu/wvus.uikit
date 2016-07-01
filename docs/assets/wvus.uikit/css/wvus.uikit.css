@@ -1,6 +1,6 @@
-/*! wvus.uikit - v3.0.0 - 2015-02-04
+/*! wvus.uikit - v3.0.0 - 2016-07-01
 * http://wvus-ibu.github.io/wvus.uikit/
-* Copyright (c) 2015 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
+* Copyright (c) 2016 Web Development and Delivery, Internet Business Unit, World Vision United States; Licensed  */
 
 .wvusUikit html
 {
@@ -11283,6 +11283,43 @@
 .wvusUikit .carousel-indicators li
 {
     background-color: #f60;
+}
+.wvusUikit .btn-play-orange
+{
+    display: inline-block;
+
+    background-image: url('../img/play/play-button-orange-lg.svg');
+    background-repeat: no-repeat;
+}
+.wvusUikit .btn-play-white
+{
+    display: inline-block;
+
+    background-image: url('../img/play/play-button-orange-sm.svg');
+    background-repeat: no-repeat;
+}
+.wvusUikit .btn-play-blue
+{
+    display: inline-block;
+
+    background-image: url('../img/play/play-button-blue-sm.svg');
+    background-repeat: no-repeat;
+}
+.wvusUikit .btn-play-orange:hover,
+.wvusUikit .btn-play-white:hover,
+.wvusUikit .btn-play-blue:hover
+{
+    opacity: .6;
+}
+.wvusUikit .btn-play-sm
+{
+    width: 30px;
+    height: 30px;
+}
+.wvusUikit .btn-play-lg
+{
+    width: 60px;
+    height: 60px;
 }
 .wvusUikit .bootstrap-select
 {

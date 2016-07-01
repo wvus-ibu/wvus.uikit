@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>play-button-blue-sm</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.4990234,40.5 C31.5447184,40.5 40.4990234,31.545695 40.4990234,20.5 C40.4990234,9.454305 31.5447184,0.5 20.4990234,0.5 C9.45332844,0.5 0.499023438,9.454305 0.499023438,20.5 C0.499023438,31.545695 9.45332844,40.5 20.4990234,40.5 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="40" height="40" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play-button-blue-sm">
+            <use id="Oval-166" stroke="#D0D0D0" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <path d="M16.9616413,29.1481969 C16.0254349,29.7379701 15.2664897,29.3304321 15.2664897,28.209255 L15.2664897,12.7865833 C15.2664897,11.6782468 16.0315455,11.2616574 16.9616413,11.8475078 L28.9989116,19.4295659 C29.935118,20.0192653 29.9290074,20.9792661 28.9989116,21.5651899 L16.9616413,29.1481969 Z" id="Triangle-7" fill="#006699"></path>
+        </g>
+    </g>
+</svg>
